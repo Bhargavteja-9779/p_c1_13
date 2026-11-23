@@ -29,6 +29,16 @@
   statistic + within-eye permutation calibration (exact type-I control, borrowed from classification permutation test).
 - PhysioNet 2019 sepsis data partially downloaded in data_raw/ (S3 mirror physionet-open) - fallback topic only.
 
+- Pilot rounds 0-1 (detection power) -> no remarkable gain; pivot to risk-controlled VF test DEFERRAL (see
+  Target_Journal_Submission/journal_selection/novelty_escalation_log.md). External data found:
+  * Artes 2014 retest data (30 glaucoma pts x 12 weekly VFs) in CRAN visualFields_1.0.7 data/vfpwgRetest24d2.rda
+    (download https://cloud.r-project.org/src/contrib/visualFields_1.0.7.tar.gz; read with pyreadr) -> true no-change data.
+  * GRAPE (Sci Data 2023, CC0) figshare file 41670009 "VF and clinical information.xlsx" (263 eyes, ~4 visits, clinical
+    progression labels PLR2/PLR3/MD) -> external validation. Stored in data_raw/ext (gitignored).
+- Background agents launched: journal benchmark (writes journal_benchmark.csv, style_raw_notes.md) and novelty map
+  (novelty_map.csv, novelty_search_log.md; told to prioritise G5 = VF scheduling/deferral + conformal risk control).
+  If they did not finish (files missing), redo those tasks.
+
 ## NEXT ACTION
-STEP 1: journal_benchmark.csv (>=25 Ophthalmol Ther papers, prioritise AI/glaucoma/progression), journal_level_profile.md, style_notes.md.
-Then STEP 2 (problem story, real-problem test) and STEP 3 (novelty map >=30 papers, scorecard).
+1) Pilot the deferral idea on VALIDATION split (savings vs delay; baselines fixed thinning, severity rule).
+2) When agents finish: journal_level_profile.md, style_notes.md, novelty scorecard, STEP 2 story file.
