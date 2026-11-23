@@ -25,10 +25,16 @@ The analysis plan (`experiments/protocol.md`) was time-stamped in version contro
 4. GRAPE D5 calibration: the plan named leave-one-patient-out; amendment A2 (before final results) changed this to five-fold patient-level cross-fitting.
 5. D8 features: the plan listed example features (MD level/slope/z, PLR counts, PoPLR S, worst region slope, range, SD); the implemented set of 14 features (`tab_features` in `code/src/models/detectors.py`) uses mean sensitivity level, change, slope and its t statistic, pointwise-regression summaries (share of locations with fast significant loss, share with p < 0.05, mean −log p, mean of the worst 10% of slopes, slope SD), test-to-test variability, range, number of tests and follow-up time; it does not include the PoPLR statistic or a regional slope.
 6. Pre-specified secondary GRAPE labels (PLR2, PLR3, any) are reported in Table S4 (they had been omitted from the first draft).
-7. Post hoc analyses added after review (not in the plan): future-only reference (Table S3); GRAPE eyes with at least k + 2 visits (Table S4); exact intervals (Table S1); minimum detectable difference.
+7. Post hoc analyses added after review (not in the original plan): future-only reference (Table S3); GRAPE eyes with at least k + 2 visits (Table S4); exact intervals (Table S1); minimum detectable difference; and analyses P1–P3 (Table S5), whose plan and expectations were added to `experiments/protocol.md` before they were run.
 8. The bootstrap interval for the shuffle-audit correlation resamples detector × test-number cells, which are not independent; it is approximate.
 
 Note on D4: PoPLR is deterministic for k ≤ 7; its between-seed variation on true no-change data comes only from the random assignment of test dates (amendment A1), which used different random draws for different seeds.
+
+## Supplementary Fig. S1. Participant flow
+
+![Participant flow](../figures/figS1_flow.png)
+
+Numbers from results/descriptives.json. E1–E4: evaluation sets (see Methods).
 
 ## Table S1. Seed variability, secondary (PoPLR-based) reference and strict validity
 
@@ -345,3 +351,68 @@ Patient-cluster bootstrap 95% CIs. Progressor: later-test slope of mean total de
 | 4 | D8 ML tabular | any | yes | 50 (16) | 37.5 (13.3–61.1) | 94.1 (84.4–100.0) |
 
 MD, PLR2, PLR3: progression labels supplied with the GRAPE data set; any: any of the three. Patient-cluster bootstrap 95% CIs.
+
+## Table S5. Post hoc analyses P1–P3 (seed 0)
+
+| Analysis | Detector | Tests | Rate, % (95% CI) |
+|---|---|---|---|
+| P1 GRAPE shuffle audit, flag rate | D1 OLS-MD | 3 | 5.2 (4.0–6.4) |
+| P1 GRAPE shuffle audit, flag rate | D1 OLS-MD | 4 | 6.1 (4.8–7.3) |
+| P1 GRAPE shuffle audit, flag rate | D2 MD rate | 3 | 19.6 (16.9–22.4) |
+| P1 GRAPE shuffle audit, flag rate | D2 MD rate | 4 | 13.0 (10.4–15.8) |
+| P1 GRAPE shuffle audit, flag rate | D3 PLR-3 | 3 | 4.0 (2.5–5.6) |
+| P1 GRAPE shuffle audit, flag rate | D3 PLR-3 | 4 | 1.6 (0.9–2.3) |
+| P1 GRAPE shuffle audit, flag rate | D4 PoPLR | 3 | 0.0 (0.0–0.0) |
+| P1 GRAPE shuffle audit, flag rate | D4 PoPLR | 4 | 4.4 (3.4–5.5) |
+| P1 GRAPE shuffle audit, flag rate | D5 Pooled-shuffle conformal | 3 | 5.2 (4.0–6.4) |
+| P1 GRAPE shuffle audit, flag rate | D5 Pooled-shuffle conformal | 4 | 6.3 (5.1–7.5) |
+| P1 GRAPE shuffle audit, flag rate | D7 Event analysis | 3 | 0.0 (0.0–0.0) |
+| P1 GRAPE shuffle audit, flag rate | D7 Event analysis | 4 | 4.4 (2.8–6.2) |
+| P1 GRAPE shuffle audit, flag rate | D8 ML tabular | 3 | 40.9 (36.2–45.9) |
+| P1 GRAPE shuffle audit, flag rate | D8 ML tabular | 4 | 10.8 (9.0–12.7) |
+| P2 no-change + fluctuation, false alarms | D1 OLS-MD | 3 | 4.9 (4.1–5.7) |
+| P2 no-change + fluctuation, false alarms | D1 OLS-MD | 4 | 5.4 (4.7–6.3) |
+| P2 no-change + fluctuation, false alarms | D1 OLS-MD | 5 | 5.8 (5.0–6.5) |
+| P2 no-change + fluctuation, false alarms | D1 OLS-MD | 6 | 5.1 (4.2–6.0) |
+| P2 no-change + fluctuation, false alarms | D2 MD rate | 3 | 12.1 (11.0–13.3) |
+| P2 no-change + fluctuation, false alarms | D2 MD rate | 4 | 4.5 (3.8–5.3) |
+| P2 no-change + fluctuation, false alarms | D2 MD rate | 5 | 2.2 (1.5–3.0) |
+| P2 no-change + fluctuation, false alarms | D2 MD rate | 6 | 1.2 (0.8–1.6) |
+| P2 no-change + fluctuation, false alarms | D3 PLR-3 | 3 | 2.9 (2.5–3.4) |
+| P2 no-change + fluctuation, false alarms | D3 PLR-3 | 4 | 2.3 (1.8–2.8) |
+| P2 no-change + fluctuation, false alarms | D3 PLR-3 | 5 | 1.4 (0.8–2.0) |
+| P2 no-change + fluctuation, false alarms | D3 PLR-3 | 6 | 0.8 (0.5–1.0) |
+| P2 no-change + fluctuation, false alarms | D4 PoPLR | 3 | 0.0 (0.0–0.0) |
+| P2 no-change + fluctuation, false alarms | D4 PoPLR | 4 | 4.2 (3.5–5.0) |
+| P2 no-change + fluctuation, false alarms | D4 PoPLR | 5 | 4.7 (3.9–5.5) |
+| P2 no-change + fluctuation, false alarms | D4 PoPLR | 6 | 5.0 (4.2–6.0) |
+| P2 no-change + fluctuation, false alarms | D5 Pooled-shuffle conformal | 3 | 4.7 (3.8–5.5) |
+| P2 no-change + fluctuation, false alarms | D5 Pooled-shuffle conformal | 4 | 5.4 (4.7–6.3) |
+| P2 no-change + fluctuation, false alarms | D5 Pooled-shuffle conformal | 5 | 5.7 (5.0–6.4) |
+| P2 no-change + fluctuation, false alarms | D5 Pooled-shuffle conformal | 6 | 5.0 (4.1–6.0) |
+| P2 no-change + fluctuation, false alarms | D6 Pooled-detrended conformal | 3 | 20.9 (19.3–22.5) |
+| P2 no-change + fluctuation, false alarms | D6 Pooled-detrended conformal | 4 | 5.3 (4.6–6.1) |
+| P2 no-change + fluctuation, false alarms | D6 Pooled-detrended conformal | 5 | 5.2 (4.2–6.2) |
+| P2 no-change + fluctuation, false alarms | D6 Pooled-detrended conformal | 6 | 5.1 (4.0–6.4) |
+| P2 no-change + fluctuation, false alarms | D7 Event analysis | 3 | 0.0 (0.0–0.0) |
+| P2 no-change + fluctuation, false alarms | D7 Event analysis | 4 | 4.2 (1.9–7.4) |
+| P2 no-change + fluctuation, false alarms | D7 Event analysis | 5 | 6.9 (2.8–12.1) |
+| P2 no-change + fluctuation, false alarms | D7 Event analysis | 6 | 8.6 (3.6–15.2) |
+| P2 no-change + fluctuation, false alarms | D8 ML tabular | 3 | 19.4 (15.7–23.4) |
+| P2 no-change + fluctuation, false alarms | D8 ML tabular | 4 | 5.1 (3.8–6.4) |
+| P2 no-change + fluctuation, false alarms | D8 ML tabular | 5 | 25.2 (21.4–29.0) |
+| P2 no-change + fluctuation, false alarms | D8 ML tabular | 6 | 11.1 (9.7–12.5) |
+| P2 no-change + fluctuation, false alarms | D9 ML sequence (GRU) | 3 | 10.3 (4.3–17.9) |
+| P2 no-change + fluctuation, false alarms | D9 ML sequence (GRU) | 4 | 4.1 (1.6–7.2) |
+| P2 no-change + fluctuation, false alarms | D9 ML sequence (GRU) | 5 | 14.3 (6.6–22.6) |
+| P2 no-change + fluctuation, false alarms | D9 ML sequence (GRU) | 6 | 4.4 (1.5–7.9) |
+| P2 no-change + fluctuation, false alarms | D10 Self-supervised order | 3 | 0.0 (0.0–0.0) |
+| P2 no-change + fluctuation, false alarms | D10 Self-supervised order | 4 | 3.9 (3.1–4.6) |
+| P2 no-change + fluctuation, false alarms | D10 Self-supervised order | 5 | 4.2 (3.4–4.9) |
+| P2 no-change + fluctuation, false alarms | D10 Self-supervised order | 6 | 5.3 (4.6–6.0) |
+| P3 shuffle-calibrated D8: sensitivity / specificity / true no-change false alarms | D8s | 3 | 15.4 (3.7–29.6) / 100.0 (100.0–100.0) / 7.2 (4.9–9.8); vs D1 1 vs 2 discordant, p = 1.00 |
+| P3 shuffle-calibrated D8: sensitivity / specificity / true no-change false alarms | D8s | 4 | 34.6 (16.0–53.6) / 100.0 (100.0–100.0) / 6.9 (4.2–9.7); vs D1 4 vs 3 discordant, p = 1.00 |
+| P3 shuffle-calibrated D8: sensitivity / specificity / true no-change false alarms | D8s | 5 | 38.5 (20.8–56.0) / 100.0 (100.0–100.0) / 5.1 (2.5–7.9); vs D1 0 vs 1 discordant, p = 1.00 |
+| P3 shuffle-calibrated D8: sensitivity / specificity / true no-change false alarms | D8s | 6 | 65.4 (45.8–84.6) / 100.0 (100.0–100.0) / 1.9 (0.5–3.7); vs D1 4 vs 2 discordant, p = 0.69 |
+
+P1, GRAPE shuffle audit (first k tests re-ordered, 10 times per eye). P2, Artes no-change windows with an added global visit shift (SD 1.13 dB). P3, tabular model with threshold at the 95th percentile of scores on shuffled training series (E1, UWHVF test set; E2, true no-change). Patient-cluster bootstrap 95% CIs. Single seed, so the machine-learning rows in P2 differ from Table 1 partly because of seed variation.

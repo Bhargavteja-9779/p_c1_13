@@ -13,9 +13,9 @@ Blocking items that only the authors can resolve:
    (placeholders "[TO BE COMPLETED BY THE AUTHORS]" in manuscript and cover letter).
 2. A statement of how the authors verified AI-written code and analyses (journal AI policy).
 3. Decision on APC (USD 8,050) and direct JCR quartile check (UNVERIFIED here).
-Scientific items still open (would strengthen the paper; see REVIEW/response_to_reviews.md): variance-inflated no-change
-null (I08), nested-CV machine-learning thresholds (I10), GRAPE shuffle audit and refitted D8 (I11-I12), published
-comparators VFI/ANSWERS (I21), flow diagram and TRIPOD+AI checklist.
+Post hoc analyses P1-P3 (GRAPE shuffle audit, no-change arm with long-term fluctuation, shuffle-calibrated ML threshold)
+were planned, run and reported (Table S5). Scientific items still open: nested-CV ML, refitted D8 on GRAPE (I11),
+published comparators VFI/ANSWERS (I21), flow diagram and TRIPOD+AI checklist.
 
 ## Top desk-rejection risks
 | Risk | Likelihood | Mitigation |

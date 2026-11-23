@@ -176,7 +176,17 @@ def supp_tables():
     for r in PH['grape_restricted_and_labels']:
         g = lambda key: '–' if key not in r else f"{100 * r[key]:.1f} ({100 * r[key + '_lo']:.1f}–{100 * r[key + '_hi']:.1f})"
         gr.append(f"| {r['k']} | {SHORT[r['detector'].split()[0]]} | {r['label']} | {'yes' if r['restricted'] else 'no'} | {r['n']} ({r['n_pos']}) | {g('sens')} | {g('spec')} |")
-    return '\n'.join(out), '\n'.join(pt), '\n'.join(fo), cnt, '\n'.join(gr)
+    px = ['| Analysis | Detector | Tests | Rate, % (95% CI) |', '|---|---|---|---|']
+    g = lambda r: f"{100 * r['est']:.1f} ({100 * r['lo']:.1f}–{100 * r['hi']:.1f})"
+    for ev, lab in (('P1', 'P1 GRAPE shuffle audit, flag rate'), ('P2', 'P2 no-change + fluctuation, false alarms')):
+        for c in ORDER:
+            for k in (3, 4, 5, 6):
+                r = PX[ev].get(f"{det(c)}|{k}")
+                if r: px.append(f"| {lab} | {SHORT[c]} | {k} | {g(r)} |")
+    for k in (3, 4, 5, 6):
+        r = PX['P3'][f"D8s ML-tabular, shuffle-calibrated threshold|{k}"]; mc = r['vs_D1']
+        px.append(f"| P3 shuffle-calibrated D8: sensitivity / specificity / true no-change false alarms | D8s | {k} | {g(r['sens'])} / {g(r['spec'])} / {g(r['fpr_true_null'])}; vs D1 {mc['only_D8s']} vs {mc['only_D1']} discordant, p = {pval(mc['p_mcnemar'])} |")
+    return '\n'.join(out), '\n'.join(pt), '\n'.join(fo), cnt, '\n'.join(gr), '\n'.join(px)
 
 CIT = re.compile(r'\[(\d+(?:\s*[,–-]\s*\d+)*)\]')
 def expand(g):
@@ -209,7 +219,7 @@ def renumber(text):
 def fill(text):
     def sub(mm):
         k = mm.group(1).strip()
-        if k in ('TABLE1', 'TABLE2', 'TABLE3', 'REFS', 'SUPP_T1', 'SUPP_T2', 'SUPP_T3', 'SUPP_T3N', 'SUPP_T4', 'INTRO_METHODS'): return mm.group(0)
+        if k in ('TABLE1', 'TABLE2', 'TABLE3', 'REFS', 'SUPP_T1', 'SUPP_T2', 'SUPP_T3', 'SUPP_T3N', 'SUPP_T4', 'SUPP_T5', 'INTRO_METHODS'): return mm.group(0)
         return resolve(k)
     return re.sub(r'\{\{([^}]+)\}\}', sub, text)
 
@@ -226,8 +236,8 @@ if __name__ == '__main__':
         src = open(os.path.join(HERE, f'template_{name}.{"md" if name == "cover_letter" else "json"}')).read()
         src = fill(src); assert '{{' not in src
         open(os.path.join(HERE, f'{name}_filled.md' if name == 'cover_letter' else 'figure_legends.json'), 'w').write(src)
-    st1, st2, st3, cnt, st4 = supp_tables()
-    sup = fill(open(os.path.join(HERE, 'template_supplementary.md')).read()).replace('{{SUPP_T1}}', st1).replace('{{SUPP_T2}}', st2).replace('{{SUPP_T3}}', st3).replace('{{SUPP_T3N}}', cnt).replace('{{SUPP_T4}}', st4)
+    st1, st2, st3, cnt, st4, st5 = supp_tables()
+    sup = fill(open(os.path.join(HERE, 'template_supplementary.md')).read()).replace('{{SUPP_T1}}', st1).replace('{{SUPP_T2}}', st2).replace('{{SUPP_T3}}', st3).replace('{{SUPP_T3N}}', cnt).replace('{{SUPP_T4}}', st4).replace('{{SUPP_T5}}', st5)
     os.makedirs(os.path.join(ROOT, 'supplementary'), exist_ok=True)
     open(os.path.join(ROOT, 'supplementary', 'Supplementary_Material.md'), 'w').write(sup)
     open(os.path.join(HERE, 'claim_check_log.txt'), 'w').write('\n'.join(CHECKS) + f"\n{len(CHECKS)} checks passed\nreferences cited (original ids in order): {order}\n")

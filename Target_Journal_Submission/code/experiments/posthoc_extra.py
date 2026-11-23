@@ -98,7 +98,7 @@ def main():
                                 P = rng3.permutation(k)
                                 rec(name, k, 'P1', f"{g['pid']}{g['eye']}|{r}", gd.flag(g['t'][:k], g['sens'][:k][P]))
             print(name, 'GRAPE shuffle done', round(time.time() - t0), flush=True)
-    R = pd.DataFrame(rows); R.to_csv(os.path.join(RES, 'posthoc_extra_raw.csv'), index=False)
+    R = pd.DataFrame(rows); R.to_csv(os.path.join(RES, 'posthoc_extra_raw.csv.gz'), index=False)
     def cl(ev, u):
         return u.split('|')[0] if ev in ('P2', 'E2') else (u.split('|')[0][:-2] if ev == 'P1' else u[:-1])
     R['cluster'] = [cl(e, u) for e, u in zip(R['eval'], R['unit'])]

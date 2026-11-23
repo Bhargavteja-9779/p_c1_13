@@ -92,10 +92,18 @@
   audits/citation_audit.md, audits/reproducibility_audit.md, risk_report.md.
   FINAL DECISION: NOT READY FOR SUBMISSION (author-only items + open scientific items I08, I10-I12, I21);
   label NOT REMARKABLE: honest strongest result.
+- Session 3 continued: post hoc plan P1-P3 appended to protocol.md (committed BEFORE running), run via
+  code/experiments/posthoc_extra.py (seed 0, 213 s) -> results/posthoc_extra.json, posthoc_extra_raw.csv.gz.
+  P1 GRAPE shuffle k3: D1 5.2%, D2 19.6%, D8 40.9%. P2 Artes + global fluctuation (SD 1.13 dB): p-value tests ~5%,
+  D2 12.1% k3, D7 8.6% k6. P3 shuffle-calibrated D8: false alarms 7.2/6.9/5.1/1.9%, no sensitivity difference vs D1.
+  Added to Results ("Post hoc robustness analyses"), limitations, Table S5; flow diagram Supplementary Fig. S1
+  (code/src/visualization/flow.py). Full raw re-run reproduced exactly.
 ## NEXT ACTION
-1. Full re-run reproducibility check DONE: raw results identical (audits/reproducibility_audit.md).
-2. Optional scientific upgrades (REVIEW/response_to_reviews.md OPEN rows): GRAPE shuffle audit, variance-inflated null,
-   nested-CV ML thresholds, VFI/ANSWERS comparators. After any change: python -m src.statistics.summarise;
-   python -m src.statistics.descriptives; python -m src.statistics.sensitivity; cd ../manuscript; python fill_values.py;
-   python build_docx.py; soffice --headless --convert-to pdf Final_Manuscript.docx.
-3. Author items: names/affiliations/funding/COI/AI-verification statement/repo URL; JCR quartile; APC decision.
+1. Remaining optional science: VFI/ANSWERS comparators (I21), nested-CV ML (I10), refit D8 on GRAPE (I11),
+   TRIPOD+AI checklist (needs the official item list; do not invent item numbers).
+2. Rebuild after any change: cd Target_Journal_Submission/code; python -m src.statistics.summarise (needs gunzip -k of
+   raw); python -m src.statistics.descriptives; python -m src.statistics.sensitivity; cd ../manuscript;
+   python fill_values.py; python build_docx.py; soffice --headless --convert-to pdf Final_Manuscript.docx;
+   supplementary: pandoc Supplementary_Material.md --resource-path=. -o Supplementary_Material.docx.
+3. Author items (only the user): names/affiliations/funding/COI/AI-verification statement/repo URL; JCR quartile; APC.
+FINAL DECISION still NOT READY (author items). Label NOT REMARKABLE: honest strongest result.

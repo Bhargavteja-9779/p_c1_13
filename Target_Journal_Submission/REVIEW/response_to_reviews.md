@@ -12,10 +12,10 @@ Status key: DONE = changed in manuscript/code; PARTLY = addressed in text, analy
 | I05 clustering | DONE/PARTLY | Paired-difference CIs now patient-cluster bootstrap (summarise.py); McNemar independence stated as limitation. |
 | I06 degenerate CIs | DONE | Exact Clopper-Pearson intervals in Table S1; table footnote. D9 k6 no longer drives any conclusion. |
 | I07 shuffle audit | DONE | "H3 not supported" stated; misses/over-flags listed; prior work (PoPLR, Artes 2014) credited; called a screening tool. Removed from Key Summary Points. |
-| I08 weekly null lacks long-term fluctuation | PARTLY | Limitation added (rate-based rules may look more valid). Variance-inflated null not run. OPEN. |
-| I10 ML training size / threshold reuse | PARTLY | Methods + limitation state it; "common practice" citations removed ("a common choice"). Nested CV not done. OPEN. |
+| I08 weekly null lacks long-term fluctuation | DONE (post hoc P2) | Added global visit fluctuation (SD 1.13 dB): p-value tests stay ~5%; rate rule 12.1% at k3, event analysis 8.6% at k6. Results + limitation updated. |
+| I10 ML training size / threshold reuse | DONE/PARTLY | Methods + limitation; post hoc P3: shuffle-calibrated threshold gives 1.9-7.2% false alarms and no sensitivity gain over D1. Nested CV not done. |
 | I11 D8 covariate shift on GRAPE | PARTLY | Limitation. Not refitted. OPEN. |
-| I12 D6/D9/D10 not on GRAPE; no external null | PARTLY | Stated in Results and limitations. GRAPE shuffle audit not run. OPEN. |
+| I12 D6/D9/D10 not on GRAPE; no external null | DONE/PARTLY | Post hoc P1 GRAPE shuffle audit: D1 5.2%, D2 19.6%, D8 40.9% at k3. D6/D9/D10 still not applicable to GRAPE. |
 | I13 "pre-registered" | DONE | Now "time-stamped in version control, not registered"; quick run disclosed with times (S2). |
 | I14 deviations | DONE | Full list in S2 (8 items). |
 | I15 secondary reference | DONE | Rewritten with numbers; D6/D10/D8 point estimates above D1 at k6 stated; untested. |
