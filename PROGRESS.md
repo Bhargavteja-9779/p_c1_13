@@ -100,6 +100,27 @@
 - Round-2 editor desk review applied (see response_to_reviews.md Round 3). Title now "False Progression Flags and
   Treatment Escalation in Glaucoma: ...". Main text ~4,070 words excl. tables; 4 main figures, 3 main tables.
 
-## NEXT ACTION (new session)
-User fills [AUTHORS ...] fields; rebuild: cd Target_Journal_Submission/manuscript && python3 fill_values.py && python3 build_docx.py
-Remaining risks in risk_report.md (scope, small reference, exploratory A3, code on request).
+## NEXT ACTION (new session / new account) — STATE AT HANDOVER 2026-11-23
+Package is COMPLETE and committed on branch claude/fervent-maxwell-9itfp8. Final files:
+  Target_Journal_Submission/manuscript/Final_Manuscript.docx/.pdf, cover_letter.docx, supplementary/, figures/ (png+tif),
+  risk_report.md (final decision + risks), REVIEW/ (13 reviews + response_to_reviews.md rounds 1-3).
+Current title: "False Progression Flags and Treatment Escalation in Glaucoma: Benchmarking Visual Field Detectors and
+  Calibrating Them on a Clinic's Own Data". Journal: Ophthalmology and Therapy (user confirmed).
+User decisions: code on request; no funding; no competing interests.
+
+To EDIT TEXT: change manuscript/manuscript_template.md (title/abstract/KSP/results/discussion/declarations) or
+  manuscript/sections_intro_methods.md (intro+methods), NEVER type numbers by hand (use {{keys}} from values.json), then:
+  cd Target_Journal_Submission/manuscript && python3 fill_values.py && python3 build_docx.py
+  && soffice --headless --convert-to pdf Final_Manuscript.docx
+Dependencies: pip install scipy scikit-learn lightgbm matplotlib pyreadr openpyxl python-docx pandas
+  (+ torch CPU only if re-running detectors). Re-running analyses needs data (all public):
+  GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/uw-biomedical-ml/uwhvf /home/user/uw-biomedical-ml/uwhvf
+  mkdir -p data_raw/ext/grape && cd data_raw/ext && curl -sLO https://cloud.r-project.org/src/contrib/visualFields_1.0.7.tar.gz && tar xzf visualFields_1.0.7.tar.gz
+  curl -sL -o grape/vf_clinical.xlsx https://ndownloader.figshare.com/files/41670009
+  (fill_values.py / build_docx.py need NO raw data: all result json files are committed.)
+
+Remaining TODO:
+1. User must fill [AUTHORS ...] placeholders (names, affiliations, ORCID, corresponding address, CRediT contributions,
+   per-author COI sentence, confirm AI-assistance statement) in manuscript_template.md and sections_intro_methods.md.
+2. Optional: pre-submission enquiry to the editor about scope (main desk-rejection risk); Fig. 3 (GRAPE) label overlap;
+   public code deposit if user changes mind; further trimming (main text ~4,070 words excl. tables).
