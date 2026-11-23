@@ -76,3 +76,33 @@ GRAPE was measured with a different perimeter (59 analysable points after removi
 from Humphrey). Therefore on GRAPE: D5 calibration pool and D7 change limits come from GRAPE itself by 5-fold
 patient-level cross-fitting ("own-clinic calibration"); D8 is the UWHVF-trained model applied unchanged (transfer
 test, grid-agnostic features); D6, D9, D10 (24-2 specific) are not evaluated on GRAPE.
+
+## Amendment B (2026-11-23, written and committed BEFORE any of the analyses below were run)
+Motivation: round-1 results showed that detectors thresholded on reference-stable eyes (D6, D8, D9) have excess false
+alarms on true no-change data, and that comparisons at unequal false-alarm rates are uninformative. Amendment B tests a
+remedy and a fair comparison. All analyses below are NEW and labelled as such in the paper.
+
+B1 No-change calibration (NCC). For each continuous-score detector — D1 (trend z statistic), D2 (minus MD slope),
+   D6 (raw worst-region trend statistic, no pooled p-value), D8 (LightGBM probability), D9 (GRU output) — replace the
+   original threshold by the 95th percentile of the detector's score on no-change series, from two label-free sources:
+   (a) SHUFFLE calibration (SC): scores on the clinic's own TRAIN eyes with their first k tests randomly re-ordered
+       (5 shuffles per eye); needs no retest data and no labels;
+   (b) RETEST calibration (RC): scores on Artes windows (same 10 donor time-label draws per window as E2), with 5-fold
+       patient-level cross-fitting so that every Artes window is evaluated with a threshold from other patients.
+   Seeds: D6, D8, D9 seeds 0-4 (models re-fitted with the same code/seeds as the main run); D1, D2 deterministic.
+B2 Outcomes (k = 3..6): true no-change false-alarm rate (Artes; for RC the cross-fitted rate), sensitivity and
+   specificity on UW-test reference eyes (E1); RC threshold for E1 = 95th percentile over ALL Artes windows.
+Hypotheses (pre-stated):
+   HB1: after RC, every detector's Artes false-alarm 95% CI includes 5% (no excess false alarms) at every k.
+   HB2: after SC, false-alarm rates are within 3 percentage points of 5% for most detector x k cells (>= 75%).
+   HB3 (matched-false-alarm comparison, the main new test): at RC thresholds, no detector flags >= 10 percentage points
+        more reference progressors than RC-calibrated D1 with Holm-adjusted exact McNemar p < 0.05 (Holm within k over
+        D2, D6, D8, D9). Falsified if one does.
+B3 All eligible eyes (precision for untrained detectors): D1, D2, D3, D4 need no training, so their sensitivity and
+   specificity are also computed on ALL UWHVF eyes with >= 8 tests (train + val + test), same reference; paired
+   comparisons vs D1 as in the main analysis. Exploratory.
+B4 Time-label sensitivity analysis (A1): Artes false-alarm rates for D1, D2, D3, D7 recomputed with (i) the real weekly
+   Artes dates rescaled to annual spacing (test i at year i-1) and (ii) donors restricted to reference-stable eyes.
+   Exploratory.
+Statistics as in the main analysis (patient-cluster bootstrap 2,000; seed-averaged flags; McNemar on majority flags).
+No threshold, reference, detector or seed will be changed after seeing B results.
