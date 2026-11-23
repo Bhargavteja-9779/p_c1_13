@@ -1,0 +1,43 @@
+title,doi,received,accepted,days
+Network-Aware Optimization for Efficient Data Placement in Geo-Distributed Cloud Systems,10.1007/s10723-025-09818-1,2025-02-20,2025-11-14,267
+Bridging Continual Learning and Green Cloud Computing: Foundations for Sustainable Time Series Anomaly Detection,10.1007/s10723-026-09846-5,2026-01-25,2026-08-12,199
+Fog Device Deployment for Enhanced Edge Communication and Network Cohesion using JAYA,10.1007/s10723-026-09832-x,2025-11-10,2026-04-22,163
+Edge Server Layout and Task Offloading in Dynamic Environment Based on Grey Numbers,10.1007/s10723-026-09840-x,2026-04-27,2026-06-19,53
+MAMO-Edge: A Mobility-Aware Multi-Objective Approach to Improve QoS &amp; Faulty Services in Federated Edges,10.1007/s10723-026-09822-z,2025-06-16,2026-01-04,202
+Cloud–Edge Collaborative Object Detection and Semantic Segmentation in Intelligent Transportation Systems,10.1007/s10723-026-09828-7,2025-12-24,2026-03-15,81
+KubeIntellect: A Modular LLM-Orchestrated Agent Framework for End-to-End Kubernetes Management,10.1007/s10723-026-09837-6,2025-08-21,2026-06-04,287
+Weight-based Disk I/O Scaling for Serverless Containers,10.1007/s10723-026-09838-5,2025-09-30,2026-06-08,251
+Adaptive Resource Scheduling in Multi-Cloud Computing Using Recurrent Neural Forecasting and Memory-Based Metaheuristic Optimization,10.1007/s10723-025-09812-7,2025-07-01,2025-09-27,88
+Optimizing Computation Offloading in IoV Environments: A Hybrid Learning Automata and Deep Recurrent Q-Network Approach,10.1007/s10723-026-09841-w,2026-01-28,2026-06-23,146
+Task Offloading and Resource Scheduling in a Vehicle-RSU-Cloud Resource Environment,10.1007/s10723-026-09843-8,2026-03-20,2026-07-04,106
+Event-Driven Neuromorphic-Inspired Task Offloading for Energy-Efficient Edge-IoT Systems,10.1007/s10723-026-09845-6,2026-04-24,2026-07-19,86
+A Multi-Resource-Aware and Load-Balanced Scheduling Strategy for Heterogeneous Edge Clusters,10.1007/s10723-025-09817-2,2025-06-20,2025-11-14,147
+Pod Scheduling and Proactive Resource Management in an Edge Cluster using MCDM and Federated Learning,10.1007/s10723-025-09811-8,2025-04-10,2025-08-22,134
+Virtual Machine Placement in Cloud Data Centers Using Enhanced Binary Manta Ray Foraging Optimization Algorithm,10.1007/s10723-026-09830-z,2025-05-27,2026-04-15,323
+Adaptive Multi-Objective Virtual Machine Consolidation for Energy-Efficient Cloud Data Centers,10.1007/s10723-025-09808-3,2024-10-22,2025-05-10,200
+"Cost, Performance and Makespan-Aware Spark Application Scheduling via DRL-based Resource Optimization in Cloud Environment",10.1007/s10723-026-09827-8,2025-09-26,2026-03-15,170
+A Novel Approach to Partial Offloading in Fog Computing Based on Competitive Cournot Game Theory,10.1007/s10723-026-09851-8,2026-06-26,2026-10-19,115
+GQAT-Net: A Calibrated Attention Model for Failure Prediction in Large-Scale Distributed Systems,10.1007/s10723-025-09813-6,2025-05-15,2025-09-30,138
+Adaptive Resource Allocation for Cloud-native Microservice via Meta-learning and Hyper-heuristic Algorithms,10.1007/s10723-025-09814-5,2025-06-13,2025-10-02,111
+LightCam: Lightweight Secure Collaborative Learning and Resource-Aware Aggregation in Camera Networks,10.1007/s10723-026-09835-8,2025-12-11,2026-05-21,161
+RBAC-ESCAPE: Bounded SMT Verification of Kubernetes RBAC Escalations with Replayable Witnesses and Large-Scale Artifact Evaluation,10.1007/s10723-026-09849-2,2026-06-08,2026-09-25,109
+MacroCarbon: A CVaR-Constrained Grid Resource Broker for Agentic LLM DAG Workflows on Geo-Distributed Heterogeneous Computing Grids,10.1007/s10723-026-09844-7,2026-03-10,2026-07-18,130
+Interoperable Integration of High-Performance Computing Systems into the ALICE Grid across Multiple Security Domains for the HL-LHC Era,10.1007/s10723-026-09824-x,2025-08-15,2026-02-22,191
+Performance Impact of Failure and Recovery Mechanisms in LoRa Sensors,10.1007/s10723-026-09847-4,2026-07-01,2026-09-15,76
+"OTM: An Efficient Task Management and Offloading Scheme Using Proximity-Based Clustering, Fuzzy Logic, and Optimization in Edge-Cloud IoT Systems",10.1007/s10723-025-09820-7,2025-03-20,2025-11-28,253
+A Hybrid Scheduling for Multi-Objective Optimization using Prediction Approach,10.1007/s10723-025-09809-2,2025-03-02,2025-07-07,127
+A Self-Adaptive Runtime for Data-Intensive Graph Analytics in Geo-Distributed Cloud–Edge Systems,10.1007/s10723-026-09839-4,2026-01-09,2026-06-18,160
+Intelligent Function Scheduling for Serverless Architectures using Proximal Policy Optimization,10.1007/s10723-026-09834-9,2025-06-20,2026-05-15,329
+QBD and QBDRL: 3D Bin Packing Novel Approaches for Virtual Machine Placement using Reinforcement Learning for Energy Optimization in Cloud Computing I,10.1007/s10723-026-09829-6,2025-11-26,2026-03-19,113
+An Improved Heat Transfer Relation-based Optimization Algorithm for Energy-Efficient Internet of Things’ Resource Allocation,10.1007/s10723-026-09826-9,2025-08-12,2026-03-07,207
+Cerebrum: A Proactive Federated Learning Framework for Multi-Objective Edge Workflow Scheduling,10.1007/s10723-025-09816-3,2025-06-18,2025-11-14,149
+QUANTUM Based Latency and Cost Aware Task Scheduling in a Multi-Cloud Environment,10.1007/s10723-026-09825-w,2025-06-05,2026-02-22,262
+Cognitive Computing Continuum: State-of-the-Art Review and ENACT Vision &amp; Approach,10.1007/s10723-025-09810-9,2025-03-29,2025-07-11,104
+Closed-Form Dynamic Localization Algorithm in Distributed Edge Computing Systems with Inaccuracies Edge Nodes,10.1007/s10723-026-09836-7,2026-01-08,2026-05-22,134
+Dynamic and Resource-aware Task Scheduling in Fog-Cloud Environments via an Improved Priority-aware Genetic Algorithm,10.1007/s10723-025-09821-6,2025-05-30,2025-12-02,186
+"Proximal Policy Optimization for Vehicular Big Data Offloading Across Edge, Regional, and Cloud Layers",10.1007/s10723-025-09815-4,2025-07-12,2025-10-17,97
+DUAL: An Efficient Task Scheduling Approach for Fog Computing Environment,10.1007/s10723-025-09819-0,2025-03-05,2025-11-24,264
+VRRT–DCM: Low–Latency Edge–Cloud Sensor Analytics for Real–Time Violin Performance under 6G–Inspired Architectures,10.1007/s10723-026-09831-y,2026-02-11,2026-04-19,67
+A Three-tier Load Balancing Model with Dynamic Data Partitioning Strategy for Distributed Stream Processing,10.1007/s10723-026-09823-y,2025-09-11,2026-01-05,116
+Queue-Stable Dynamic Deployment for UAV-Assisted Edge Networks via Lyapunov-Guided Deep Reinforcement Learning,10.1007/s10723-026-09848-3,2026-06-01,2026-09-24,115
+Behavior-aware Federated Learning Client Profiling and Selection in Sustainable Crowd-powered Edge Computing,10.1007/s10723-026-09852-7,2026-04-26,2026-10-20,177
