@@ -92,8 +92,13 @@
   cumulative FA: D1 15.3%, D7 3.3%, D8 50.8%; rho cell-CI; GRAPE PLR labels). 49 claim checks pass. risk_report.md written:
   FINAL DECISION = NOT READY (author-only blockers); label NOT REMARKABLE: honest strongest result; rescored 19/30.
 
+- USER REQUEST (2026-11-23): "make paper very strong, avoid desk rejection, more experiments/new models OK, APC OK,
+  code available on request". -> STUDY 2 started. Protocol: code/experiments/protocol_v2.md (commit e51bd2b, 10:51,
+  before any run). Code: code/study2.py (5-fold cross-fit over all UWHVF: 150 R1 progressors / 164 stable; shuffle
+  calibration S1-S7, Order-LightGBM, cumulative-controlled Q1-Q4, GRAPE local recalibration). Full run launched in
+  background: `cd code && python3 study2.py --mode full > ../results/study2_full.log` (~1 h). If lost: rerun.
+  Rotterdam longitudinal VF data (139 pts) would be a strong 2nd cohort but rodrep.com unreachable -> ask user.
+
 ## NEXT ACTION (new session)
-Package is complete pending author-only items (risk_report.md "Blocking items"). Optional: second independent review
-round on revised manuscript; STARD-style flow figure; trim main text toward 4,000 words. Do NOT rerun build_refs.py
-(manual reference fixes in references.json). Rebuild: cd manuscript && python3 fill_values.py && python3
-build_supplementary.py && python3 build_docx.py (needs results/extra_stats.json; raw_results.csv for extra_stats).
+1. If results/study2_raw.csv missing: rerun study2.py --mode full. 2. python3 scripts/summarise_study2.py.
+3. Rewrite manuscript around Study 1 + Study 2 (fill script + checks), data availability "on request", reviews round 2.

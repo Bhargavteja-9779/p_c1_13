@@ -2,3 +2,7 @@ data_raw/
 Target_Journal_Submission/results/full_run.log
 Target_Journal_Submission/results/raw_results.csv
 __pycache__/
+Target_Journal_Submission/results/study2_raw.csv
+Target_Journal_Submission/results/study2_raw_quick.csv
+Target_Journal_Submission/results/study2_full.log
+Target_Journal_Submission/results/raw_results.csv

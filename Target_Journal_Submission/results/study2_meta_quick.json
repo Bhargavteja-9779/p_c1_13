@@ -1,0 +1,14 @@
+{
+ "mode": "quick",
+ "folds": [
+  0
+ ],
+ "seeds": [
+  0
+ ],
+ "n_rows": 26528,
+ "n_eval_eyes": 153,
+ "n_R1_prog": 29,
+ "n_R1_stable": 42,
+ "runtime_s": 13.599640130996704
+}
