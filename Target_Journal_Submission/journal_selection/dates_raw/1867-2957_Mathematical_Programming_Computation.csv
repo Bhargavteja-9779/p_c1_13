@@ -1,0 +1,57 @@
+title,doi,received,accepted,days
+Accelerated nested proximal gradient algorithm for structured sparse optimization with capped-$$\ell _1$$ penalty,10.1007/s12532-026-00321-6,2025-04-16,2026-03-25,343
+An adaptive relaxation-refinement scheme for multi-objective mixed-integer nonconvex optimization,10.1007/s12532-025-00299-7,2024-08-19,2025-11-17,455
+Condensed interior-point methods for scalable nonlinear programming on GPUs,10.1007/s12532-026-00335-0,2025-08-13,2026-07-12,333
+Adaptive sampling-based bi-fidelity stochastic trust region method for stochastic derivative-free optimization,10.1007/s12532-026-00332-3,2024-08-21,2026-06-09,657
+Variable aggregation for nonlinear optimization problems,10.1007/s12532-026-00345-y,2025-02-19,2026-09-21,579
+Graph-Based modeling and decomposition of hierarchical optimization problems,10.1007/s12532-026-00315-4,2025-01-05,2026-03-19,438
+A novel linear optimization presolve technique based on Fourier-Motzkin elimination,10.1007/s12532-026-00316-3,2024-03-20,2026-03-17,727
+Automatic generation of GPU kernels for evaluators of McCormick-based relaxations and subgradients,10.1007/s12532-026-00339-w,2025-07-16,2026-08-05,385
+Sparse quadratically constrained quadratic programming via semismooth newton method,10.1007/s12532-026-00317-2,2025-03-25,2026-03-22,362
+Edge expansion of a graph: SDP-based computational strategies,10.1007/s12532-025-00297-9,2024-04-25,2025-11-17,571
+libDIPS – discretization-based semi-infinite and bilevel programming solvers,10.1007/s12532-026-00308-3,2024-11-13,2026-02-11,455
+The boosted difference of convex functions algorithm for value-at-risk constrained portfolio optimization,10.1007/s12532-026-00327-0,2024-02-27,2026-05-08,801
+Fix-and-propagate heuristics using low-precision first-order LP solutions for large-scale mixed-integer linear optimization,10.1007/s12532-026-00312-7,2025-03-22,2026-03-04,347
+Enhancing presolve in mixed integer programming by combining probing and dual fixing,10.1007/s12532-026-00336-z,2025-04-13,2026-07-11,454
+Improving the solution of indefinite quadratic programs and linear programs with complementarity constraints by a progressive MIP method,10.1007/s12532-025-00290-2,2024-08-24,2025-08-14,355
+Accelerating Benders decomposition for solving a sequence of sample average approximation replications,10.1007/s12532-026-00324-3,2024-11-13,2026-04-27,530
+BOBILib: Bilevel Optimization (Benchmark) Instance Library,10.1007/s12532-025-00294-y,2025-07-09,2025-10-22,105
+A Frank-Wolfe-based primal heuristic for quadratic mixed-integer optimization,10.1007/s12532-026-00340-3,2025-10-21,2026-08-10,293
+RiNNAL+: a Riemannian ALM Solver for SDP-RLT Relaxations of Mixed-Binary Quadratic Programs,10.1007/s12532-026-00303-8,2025-04-18,2026-01-05,262
+A preconditioned interior point method for support vector machines using an ANOVA decomposition and NFFT-based matrix–vector products,10.1007/s12532-026-00323-4,2023-11-30,2026-04-24,876
+Accurate linear cutting-plane relaxations for ACOPF,10.1007/s12532-025-00287-x,2024-07-10,2025-05-16,310
+Detecting and handling reflection symmetries in mixed-integer (nonlinear) programming and beyond,10.1007/s12532-025-00289-9,2024-05-14,2025-06-11,393
+A novel Pareto-optimal cut selection strategy for Benders Decomposition,10.1007/s12532-025-00291-1,2023-09-26,2025-08-23,697
+Clarabel: An interior-point solver for conic programs with quadratic objectives,10.1007/s12532-026-00320-7,2024-05-23,2026-04-03,680
+Implementing a unified solver for nonlinearly constrained optimization,10.1007/s12532-026-00310-9,2024-06-19,2026-02-22,613
+A decision diagram approach for the parallel machine scheduling problem with chance constraints,10.1007/s12532-026-00330-5,2025-04-24,2026-06-02,404
+Solving the market split problem with lattice enumeration,10.1007/s12532-026-00328-z,2025-08-11,2026-05-12,274
+Efficient Implementation of Third-order Tensor Methods with Adaptive Regularization for Unconstrained Optimization,10.1007/s12532-026-00313-6,2025-02-28,2026-03-09,374
+Pessimistic bilevel optimization approach for decision–focused learning,10.1007/s12532-026-00344-z,2025-01-22,2026-09-09,595
+A decomposable branch-and-price formulation for optimal classification trees,10.1007/s12532-026-00343-0,2025-07-21,2026-09-08,414
+"Support matrix machine: exploring sample sparsity, low rank, and adaptive sieving in high-performance computing",10.1007/s12532-026-00306-5,2024-12-09,2026-02-05,423
+Kernel pump,10.1007/s12532-026-00333-2,2025-03-03,2026-06-12,466
+Convex mixed-integer optimization with Frank–Wolfe methods,10.1007/s12532-025-00288-w,2023-04-16,2025-04-27,742
+Stronger cuts for Benders’ decomposition for stochastic Unit Commitment Problems based on interval variables,10.1007/s12532-026-00334-1,2025-08-06,2026-06-29,327
+An efficient second-order cone programming approach for dynamic optimal transport on staggered grid discretization,10.1007/s12532-026-00329-y,2025-01-23,2026-05-20,482
+Parallelized Conflict Graph Cut Generation,10.1007/s12532-026-00307-4,2024-03-20,2026-02-13,695
+Tighter yet more tractable relaxations and nontrivial instance generation for sparse standard quadratic optimization,10.1007/s12532-025-00285-z,2024-06-03,2025-03-20,290
+GeNIOS: an (almost) second-order operator-splitting solver for large-scale convex optimization,10.1007/s12532-025-00301-2,2025-07-21,2025-12-02,134
+Political districting to maximize whole counties,10.1007/s12532-026-00342-1,2025-10-10,2026-09-01,326
+PDLP: a practical first-order method for large-scale linear programming,10.1007/s12532-026-00309-2,2025-01-17,2026-02-22,401
+QOCO-GPU: a quadratic objective conic optimizer with GPU acceleration,10.1007/s12532-026-00338-x,2026-03-30,2026-08-08,131
+HPR-LP: An implementation of an HPR method for solving linear programming,10.1007/s12532-025-00292-0,2024-08-20,2025-09-18,394
+Symmetry Detection in Mixed-Integer Conic Programming,10.1007/s12532-025-00293-z,2024-04-10,2025-10-10,548
+A penalty-free method with nonmonotone line search for nonlinear optimization,10.1007/s12532-025-00295-x,2024-01-07,2025-10-28,660
+An improved variant of the Iterated Inside Out algorithm for solving the optimal transport DOTmark instances,10.1007/s12532-026-00341-2,2025-10-23,2026-08-27,308
+QOCO: a quadratic objective conic optimizer with custom solver generation,10.1007/s12532-026-00311-8,2025-08-15,2026-03-05,202
+A column generation approach to exact experimental design,10.1007/s12532-026-00326-1,2025-07-31,2026-05-07,280
+Optimal design of resolvent splitting algorithms,10.1007/s12532-026-00304-7,2024-09-03,2026-01-06,490
+Disciplined Geodesically Convex Programming: A Symbolic Framework for Verifying Geodesic Convexity,10.1007/s12532-026-00325-2,2025-08-20,2026-05-04,257
+A sequential Benders-based mixed-integer quadratic programming algorithm and its implementation in the CAMINO toolbox,10.1007/s12532-026-00331-4,2025-08-20,2026-06-02,286
+Damped Proximal Augmented Lagrangian Method for weakly-Convex Problems with Convex Constraints,10.1007/s12532-025-00302-1,2024-08-28,2025-12-03,462
+Interior Point Methods for Structured Quantum Relative Entropy Optimization Problems,10.1007/s12532-025-00296-w,2024-08-08,2025-11-01,450
+Column generation in column-and-constraint generation for adjustable robust optimization with Interdiction-type linking Constraints,10.1007/s12532-025-00300-3,2023-10-09,2025-11-30,783
+"NonOpt: Nonconvex, Nonsmooth Optimizer",10.1007/s12532-026-00322-5,2025-04-01,2026-04-14,378
+Serial and parallel two-column probing for mixed-integer programming,10.1007/s12532-026-00314-5,2024-08-29,2026-03-13,561
+Application of the Lovász-Schrijver Operator to Compact Stable Set Integer Programs,10.1007/s12532-025-00298-8,2024-07-01,2025-11-18,505

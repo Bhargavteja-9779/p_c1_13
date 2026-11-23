@@ -1,0 +1,82 @@
+title,doi,received,accepted,days
+Breakthrough percepts of familiar faces,10.1186/s40708-026-00304-2,2025-07-22,2026-04-11,263
+Emotion recognition using spectral-spatial attention multi-temporal scale network: EEG study,10.1186/s40708-026-00309-x,2025-09-19,2026-05-11,234
+Generalizable and explainable deep learning for brain MRI: a multi-cohort evaluation of 3D architectures for age and sex prediction,10.1186/s40708-026-00316-y,2025-05-05,2026-06-21,412
+Early prediction of in-hospital complications following acute traumatic brain injury: a retrospective study using multiple machine learning models,10.1186/s40708-026-00334-w,2026-05-06,2026-09-08,125
+Investigating functional brain networks in multiple sclerosis patients: a graph theory approach for evaluating working memory impairment,10.1186/s40708-026-00324-y,2025-07-15,2026-07-10,360
+A feasibility study on inferring connectivity changes in frontal lobes of MDD patients via spectral DCM,10.1186/s40708-026-00311-3,2026-03-27,2026-05-24,58
+Reliability of electric field simulations in different age groups: impact of data quality metrics,10.1186/s40708-026-00293-2,2025-08-15,2026-02-08,177
+Brain network classification considering directed propagation mechanisms of dynamic graphs,10.1186/s40708-026-00306-0,2025-11-18,2026-04-13,146
+Brain dysconnectivity patterns associated with chronic back pain development,10.1186/s40708-026-00328-8,2025-11-24,2026-08-07,256
+Discrimination of seizure topographical images utilizing transfer learning approaches,10.1186/s40708-026-00330-0,2026-02-03,2026-08-12,190
+Parallel command principle in sensorimotor control for brain-inspired AI design,10.1186/s40708-026-00333-x,2026-04-16,2026-09-01,138
+"Conditional Gromov–Wasserstein matching across contexts: theory, regularization, and applications to brain connectivity",10.1186/s40708-026-00336-8,2026-07-22,2026-09-25,65
+Enhancing cerebral infarct classification by automatically extracting relevant fMRI features,10.1186/s40708-025-00259-w,2024-11-27,2025-04-28,152
+AI-driven multi-agent reinforcement learning framework for real-time monitoring of physiological signals in stress and depression contexts,10.1186/s40708-025-00262-1,2025-01-17,2025-05-25,128
+Pipeline evaluation of a state-of-the-art AI algorithm for detection of focal cortical dysplasia: insights into potential failure sources,10.1186/s40708-026-00299-w,2025-12-18,2026-03-11,83
+Promptable diffusion-enhanced foundation framework for explainable brain tumor segmentation and classification,10.1186/s40708-026-00341-x,2026-07-16,2026-10-13,89
+Biotuner: A python toolbox integrating music theory and signal processing for harmonic analysis of physiological and natural time series,10.1186/s40708-025-00270-1,2025-02-16,2025-08-11,176
+A deep hybrid CNN-BiLSTM-BiGRU architecture with explainability for mild cognitive impairment detection using EEG,10.1186/s40708-026-00302-4,2025-08-15,2026-04-02,230
+CAE-BrainNet: a statistically validated class-adaptive attention ensemble model for explainable brain tumor classification from MRI,10.1186/s40708-026-00325-x,2026-02-15,2026-07-14,149
+An automated extraction of spectral-temporal and spatial-temporal features of EEG for emotion detection,10.1186/s40708-025-00265-y,2024-12-28,2025-06-19,173
+RDoC-informed explainable AI as a paradigm for multilevel Alzheimer’s disease diagnosis and progression prediction: a systematic review,10.1186/s40708-026-00310-4,2026-01-28,2026-05-24,116
+"Effects of chlorpyrifos exposure on autism-associated genes: an integrative analysis using network toxicology, transcriptomics, and molecular dynamics",10.1186/s40708-026-00329-7,2026-04-04,2026-08-12,130
+Perivascular fluid clearance links choroid plexus changes to cognitive performance in cerebral small vessel disease,10.1186/s40708-026-00297-y,2025-12-10,2026-03-08,88
+Decoding neuronal gene expression: integrative insights from omics and AI,10.1186/s40708-026-00323-z,2025-12-17,2026-07-08,203
+Generative diffusion meets domain adaptation: a framework for EEG cross-subject motor imagery classification,10.1186/s40708-026-00308-y,2026-01-26,2026-05-05,99
+STABLE-BAG: a stability-aware framework for SHAP-based brain age gap decomposition,10.1186/s40708-026-00338-6,2026-07-13,2026-10-02,81
+"Explainable artificial intelligence in air traffic control: effects of expertise on workload, acceptance, and usage intentions",10.1186/s40708-025-00287-6,2025-08-02,2025-11-26,116
+Interpretable brain-age modeling reveals network-level reorganization in functional brain aging,10.1186/s40708-026-00331-z,2026-04-04,2026-08-12,130
+Advancing Alzheimer’s disease detection: a novel convolutional neural network based framework leveraging EEG data and segment length analysis,10.1186/s40708-025-00260-3,2025-02-08,2025-04-30,81
+"Revolutionizing cross professional collaboration outcomes in TBI: emerging trends in diagnostics, personalized medicine, technological innovations and",10.1186/s40708-025-00271-0,2024-10-26,2025-08-16,294
+What does a multimodal EEG–Eye-tracking engagement decoder learn? A leakage-aware audit on the NeuMa dataset,10.1186/s40708-026-00343-9,2026-07-14,2026-10-22,100
+Standardized FlyWire skeletons reveal neuropil-specific organization of synaptic topology,10.1186/s40708-026-00344-8,2026-10-06,2026-10-24,18
+Brain-imager: a multimodal framework for image reconstruction and captioning from human brain activity,10.1186/s40708-025-00282-x,2025-07-18,2025-11-01,106
+Regulation of tau protein by circCwc27: shared pathogenic mechanisms in type 2 diabetes mellitus and Alzheimer’s disease,10.1186/s40708-025-00277-8,2025-09-01,2025-09-19,18
+The independent prognostic value of brain diffusion tensor imaging in comatose patients after cardiac arrest,10.1186/s40708-025-00284-9,2025-09-18,2025-11-09,52
+A single-snapshot inverse solver for two-species graph model of tau pathology spreading in human Alzheimer’s disease,10.1186/s40708-025-00264-z,2025-03-02,2025-06-03,93
+Machine learning with multitype functional connectivity uncovers whole-brain network disruption in primary angle-closure glaucoma,10.1186/s40708-025-00289-4,2025-08-15,2025-12-11,118
+"BrainFusionNet: a deep learning and XAI model to understand local, global, and sequential features of MRI images for improved brain tumour detection",10.1186/s40708-026-00303-3,2026-04-04,2026-04-05,1
+EEG-biometric authentication system using multi-paradigm neurophysiological measurements and artificial intelligence,10.1186/s40708-026-00337-7,2026-03-28,2026-09-25,181
+SegAnyNeuron: a neural image segmentation network with strong generalization performance by modeling image intensity variation,10.1186/s40708-026-00298-x,2025-07-08,2026-03-10,245
+Benchmarking resting state fMRI connectivity pipelines for classification: robust accuracy despite processing variability in cross-site eye state pred,10.1186/s40708-026-00305-1,2025-10-05,2026-04-11,188
+Quantifying emotional arousal through pupillary response: a novel approach for isolating the luminosity effect and predicting affective states,10.1186/s40708-026-00332-y,2026-01-22,2026-08-15,205
+A hybrid neuromarketing approach exploiting EEG graph signal processing and gaze dynamic patterning,10.1186/s40708-025-00272-z,2025-03-31,2025-08-30,152
+Evaluating multi-level membership inference risk in federated EEG learning,10.1186/s40708-026-00313-1,2026-01-08,2026-06-09,152
+A quantitative and precision‑oriented neuronal reconstruction approach based on data grading,10.1186/s40708-026-00314-0,2026-03-01,2026-06-10,101
+Exploring the bidirectional relationships between MRI resting-state functional connectivity networks and cardiovascular diseases: a Mendelian randomiz,10.1186/s40708-025-00285-8,2025-10-05,2025-11-09,35
+Multimodal fusion and explainability of artificial intelligence models in Alzheimer’s Disease detection,10.1186/s40708-025-00291-w,2025-09-05,2025-12-21,107
+Cognitive architecture and behavioral model based on social evidence and resource constraints,10.1186/s40708-026-00294-1,2025-05-22,2026-02-13,267
+A gender-aware saliency prediction system for web interfaces using deep learning and eye-tracking data,10.1186/s40708-025-00274-x,2025-08-07,2025-09-05,29
+Brain-inspired spiking neural network frameworks for multimodal spatiotemporal brain data integration: a case study on EEG-fMRI data,10.1186/s40708-026-00340-y,2026-08-06,2026-10-06,61
+Detecting label noise in longitudinal Alzheimer’s data with explainable artificial intelligence,10.1186/s40708-025-00261-2,2025-03-16,2025-05-24,69
+Diffusion models for brain imaging computing: a survey of frameworks and applications,10.1186/s40708-026-00301-5,2026-02-01,2026-03-25,52
+Parkinson’s disease classification using optimized attention-based deep learning from EEG signals with interpretable sub-band topography,10.1186/s40708-026-00317-x,2025-08-03,2026-06-22,323
+Boosting brain tumor detection with an optimized ResNet and explainability via Grad-CAM and LIME,10.1186/s40708-025-00279-6,2025-03-28,2025-10-11,197
+Personalized rTMS treatment recommendation with retrieval-augmented LLM reasoning,10.1186/s40708-025-00275-w,2025-08-13,2025-09-08,26
+Anatomical-connectivity-guided functional connectivity reveals task-relevant pathways during proactive task-switching via recurrent graph neural netwo,10.1186/s40708-026-00300-6,2025-11-04,2026-03-14,130
+Modeling 3D mesoscaled neuronal complexity through learning-based dynamic morphometric convolution,10.1186/s40708-025-00288-5,2025-09-04,2025-12-04,91
+A deep-learning framework for brain tumor segmentation via three-dimensional mass-preserving geometric transformation,10.1186/s40708-026-00307-z,2025-12-31,2026-04-16,106
+Integrating convolutional variational autoencoders and the Gaussian mixture model for efficient manifold learning and clustering of spatially preserve,10.1186/s40708-026-00327-9,2025-12-13,2026-08-03,233
+Domain Adaptation-enhanced searchlight: enabling classification of brain states from visual perception to mental imagery,10.1186/s40708-025-00263-0,2025-01-27,2025-05-27,120
+Beyond the lab: real-world benchmarking of wearable EEGs for passive brain-computer interfaces,10.1186/s40708-025-00290-x,2025-08-01,2025-12-11,132
+U-Net-based transfer learning for automated tumour segmentation enabling fully automated [18F]F-DOPA PET analysis in paediatric gliomas,10.1186/s40708-026-00296-z,2025-11-13,2026-03-06,113
+Cross-attention-guided subject-adaptive graph learning for multimodal autism classification: integrating structural and functional MRI data,10.1186/s40708-026-00318-w,2025-12-22,2026-06-26,186
+Adaptive frequency band attention-guided CNN–BiLSTM for Spatial–Spectral–Temporal EEG emotion recognition,10.1186/s40708-026-00319-9,2026-02-24,2026-06-29,125
+Enhancing neural signal quality: a spike-denoising model with BiLSTM and attention mechanism,10.1186/s40708-025-00278-7,2025-08-06,2025-09-27,52
+Effiformer: a unified data-efficient vision transformer-CNN framework for interpretable epileptic seizure detection,10.1186/s40708-026-00320-2,2025-06-15,2026-07-01,381
+The brain causal network features in seizures provoked by COVID-19 using EEG,10.1186/s40708-026-00339-5,2026-02-13,2026-10-05,234
+Single-cell reconstruction of whole-brain efferent projections from mouse ventral posteromedial thalamus,10.1186/s40708-026-00315-z,2026-03-24,2026-06-11,79
+Brain-inspired signal processing for detecting stress during mental arithmetic tasks,10.1186/s40708-025-00281-y,2025-06-12,2025-10-27,137
+Synergistic and redundant information dynamics exhibit dissociable alterations across schizophrenia and neurodevelopmental conditions,10.1186/s40708-026-00312-2,2026-02-20,2026-05-29,98
+Filter bank CSP with Riemannian weighting for disability-centric motor imagery brain computer interface,10.1186/s40708-026-00295-0,2025-09-26,2026-02-28,155
+EEG-DBNet: a dual-branch framework for temporal-spectral representation learning of motor imagery electroencephalography,10.1186/s40708-026-00321-1,2026-05-18,2026-07-02,45
+Enhancing neural rehabilitation insights: on the path of bridging artificial and biological neural networks,10.1186/s40708-025-00266-x,2025-02-21,2025-07-08,137
+"Age-informed, attention-based weakly supervised learning for neuropathological image assessment",10.1186/s40708-025-00276-9,2025-02-24,2025-09-19,207
+Learning image derived PDE-phenotypes from fMRI data,10.1186/s40708-025-00283-w,2025-07-17,2025-11-01,107
+Motor imagery decoding network with multisubject dynamic transfer,10.1186/s40708-025-00267-w,2025-06-12,2025-07-11,29
+Synergistic medical genetic evolutionary optimization and deep convolutional generative augmentation with SHAP-driven interpretability for precise Alz,10.1186/s40708-025-00280-z,2025-07-20,2025-10-18,90
+"Vision and convolutional transformers for Alzheimer’s disease diagnosis: a systematic review of architectures, multimodal fusion and critical gaps",10.1186/s40708-025-00286-7,2025-09-08,2025-11-09,62
+DRBD-Mamba for robust and efficient brain tumor segmentation with analytical insights,10.1186/s40708-026-00326-w,2026-05-10,2026-07-29,80
+Hybrid self-supervised EEG emotion representation: masked reconstruction joint with mutual information bounds,10.1186/s40708-026-00322-0,2026-01-15,2026-07-08,174
+Post-stroke brain functional reorganization is associated with glymphatic dysfunction during stroke recovery,10.1186/s40708-025-00273-y,2025-08-06,2025-09-02,27

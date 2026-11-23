@@ -6,7 +6,7 @@
   -> journal dates gathered through Crossref "assertion" metadata (Springer Nature, T&F, etc.) where deposited.
 
 ## Phase status
-- [ ] STEP 0 journal selection
+- [x] STEP 0 journal selection -> Ophthalmology and Therapy (see journal_selection/selected_journal.md)
 - [ ] STEP 1 benchmark/profile/style
 - [ ] STEP 2 problem discovery
 - [ ] STEP 3 novelty map/scorecard
@@ -22,5 +22,13 @@
   journal_selection/scan_summary.txt. If interrupted rerun: xargs -a issns python3 code/scripts/journal_dates.py
 - Springer journal pages are reachable with curl -L + cookie jar (shows IF and first-decision median).
 
+- STEP 0 DONE: selected Ophthalmology and Therapy (IF 4.2, research median 52.5 d / p75 70.25 d, n=266). Critical Care & ICM failed p75.
+- Leading topic idea (not yet gated): glaucoma visual-field progression detection with fewer tests. Data: UWHVF (BSD-3,
+  28,943 VFs, cloned at /home/user/uw-biomedical-ml/uwhvf; re-clone: GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1
+  https://github.com/uw-biomedical-ml/uwhvf). Core idea candidate: self-supervised temporal-order classifier as learned test
+  statistic + within-eye permutation calibration (exact type-I control, borrowed from classification permutation test).
+- PhysioNet 2019 sepsis data partially downloaded in data_raw/ (S3 mirror physionet-open) - fallback topic only.
+
 ## NEXT ACTION
-STEP 0: gather candidate journals, compute received->accepted days from Crossref assertions.
+STEP 1: journal_benchmark.csv (>=25 Ophthalmol Ther papers, prioritise AI/glaucoma/progression), journal_level_profile.md, style_notes.md.
+Then STEP 2 (problem story, real-problem test) and STEP 3 (novelty map >=30 papers, scorecard).

@@ -1,0 +1,121 @@
+title,doi,received,accepted,days
+SD-HRNet: lightweight human pose estimation via spatial grouping and attention alignment distillation,10.1007/s11554-025-01834-4,2025-10-14,2025-12-09,56
+FPGA-based real-time underwater object detection system for AUVs,10.1007/s11554-025-01782-z,2025-06-26,2025-10-01,97
+MHFFNet: a real-time crack segmentation network based on wavelet transform and ASSM,10.1007/s11554-026-01859-3,2025-12-07,2026-02-01,56
+LUW-DETR: a lightweight underwater object detection based on DETR,10.1007/s11554-025-01810-y,2025-08-16,2025-11-14,90
+HMA-DETR: a real-time hybrid multi-scale adaptive feature learning network for steel surface defect detection,10.1007/s11554-026-01951-8,2026-06-14,2026-07-22,38
+LLGSeg: a lightweight leaked gas segmentation network based on RGB-T feature fusion,10.1007/s11554-026-01939-4,2026-06-02,2026-06-29,27
+LHCANet: a lightweight hierarchical collaborative attention and spatial enhancement network for aerial small-object vehicle detection,10.1007/s11554-026-01973-2,2026-05-09,2026-08-24,107
+TDSF-NET: a real-time target-driven sparse fusion network for RGB-infrared small object detection,10.1007/s11554-026-01972-3,2026-05-20,2026-08-24,96
+A lightweight Star-RTDETR for real-time defect detection of steam-exploded tobacco stems in online quality inspection,10.1007/s11554-026-01989-8,2026-05-25,2026-09-18,116
+Hierarchical all-zero block early determination algorithm for low-complexity versatile video coding,10.1007/s11554-025-01787-8,2025-07-20,2025-10-05,77
+LiteGhost-YOLO: scale-aware lightweight traffic sign recognition in complex environments,10.1007/s11554-025-01813-9,2025-09-01,2025-11-19,79
+LAP-Net: a lightweight PCB defect detection network combined with attention mechanisms,10.1007/s11554-025-01749-0,2025-05-16,2025-08-11,87
+EBAD-YOLO: efficient bidirectional adaptive dense network for UAV small-object detection,10.1007/s11554-025-01837-1,2025-09-10,2025-12-15,96
+CTAMNet: an efficient video recognition method on edge devices,10.1007/s11554-026-01909-w,2025-07-16,2026-05-26,314
+Yolo-cd: a lightweight real-time PCB defect detection model for edge deployments,10.1007/s11554-025-01847-z,2025-09-20,2025-12-29,100
+A lightweight real-time image processing framework for Rosa davurica Pall target detection in complex natural scenes,10.1007/s11554-026-01984-z,2026-06-19,2026-09-13,86
+YOLOv11-LCCAP2: deployment-oriented P2 head and contrast-aware attention for metal surface micro-defect detection,10.1007/s11554-026-01885-1,2026-01-20,2026-04-01,71
+A real-time detection method for small-sized solder joint defect detection,10.1007/s11554-025-01722-x,2025-03-31,2025-06-16,77
+YOLO-DBS: a multi-scale feature fusion-based surface defect detection method of small out-line package,10.1007/s11554-025-01755-2,2025-06-24,2025-08-24,61
+An underwater object detection method integrating multi-dimensional attention and task-decoupling mechanism,10.1007/s11554-026-01963-4,2026-04-03,2026-08-07,126
+MSSA-Net: a lightweight VFSS image segmentation network based on multi-scale self-attention,10.1007/s11554-026-01959-0,2026-06-29,2026-08-03,35
+WD-DETR: a lightweight spatial–frequency Transformer for real-time UAV object detection,10.1007/s11554-026-01953-6,2026-05-22,2026-07-27,66
+SCD-Det: a scale-consistent detector for dense small objects in industrial production lines,10.1007/s11554-026-01982-1,2026-07-08,2026-09-06,60
+A lightweight YOLOv11n-based framework for accurate maize seedling detection and counting in field environments,10.1007/s11554-026-01979-w,2026-04-10,2026-08-31,143
+Real-time pulmonary nodule detection using a Dual-Backbone transformer framework,10.1007/s11554-025-01790-z,2025-02-26,2025-10-13,229
+AFENet: a real-time power line and transmission tower segmentation network with adaptive feature enhancement,10.1007/s11554-026-01877-1,2025-03-16,2026-03-18,367
+Rse-yolo: a lightweight steel strip surface defect detection algorithm based on an improved YOLOv11,10.1007/s11554-025-01823-7,2025-08-21,2025-10-06,46
+Acoustic feature-guided sonar object detection via shadow-aware attention and contrast-response enhancement,10.1007/s11554-026-01932-x,2026-05-03,2026-06-25,53
+ARD: attention-guided reweighted knowledge distillation on image-like feature representations for real-time unmanned surface vehicles detection from L,10.1007/s11554-025-01841-5,2025-08-31,2025-12-18,109
+A high-speed PCIe-based data acquisition system for hyperspectral imaging using an FPGA-ARM architecture,10.1007/s11554-026-01913-0,2025-11-27,2026-06-03,188
+HyperEdge-DETR: hypergraph-enhanced edge-aware detection transformer for small object detection in UAV,10.1007/s11554-025-01777-w,2025-07-23,2025-09-29,68
+ELA: efficient location attention for deep convolution neural networks,10.1007/s11554-025-01719-6,2025-04-07,2025-06-13,67
+WCM-DeepLab: a real-time power line segmentation network for aerial images based on convolutional modulation and wavelet attention mechanism,10.1007/s11554-026-01996-9,2026-01-24,2026-09-21,240
+Real-time pill image recognition on edge devices with Adaptive Lightweight Attention,10.1007/s11554-025-01831-7,2025-08-22,2025-12-09,109
+CMCF-DETR: a real-time lightweight DETR model for foreign object detection on coal mine conveyor belts,10.1007/s11554-025-01797-6,2025-09-23,2025-10-27,34
+FAN-YOLO: Real-time driver behavior detection based on full-layer aggregation network of YOLO,10.1007/s11554-025-01720-z,2025-02-24,2025-06-14,110
+Deep learning image compression with multi-channel tANS coding and hardware deployment,10.1007/s11554-025-01795-8,2025-06-25,2025-10-24,121
+EBD-YOLO: a lightweight real-time framework for edge-based defect detection in railway freight bogies,10.1007/s11554-026-01965-2,2026-04-28,2026-08-07,101
+FFKD-Net: lightweight small-object detection based on feature fusion and knowledge distillation,10.1007/s11554-026-01910-3,2026-03-20,2026-05-27,68
+SFC‑DETR: a lightweight transformer with adaptive multi-scale feature fusion for real-time steel surface defect detection,10.1007/s11554-026-01920-1,2026-03-17,2026-06-11,86
+SCS-Mamba: a lightweight Sobel-enhanced content-aware state space model with shared deformable adaptive head for efficient underwater object detection,10.1007/s11554-025-01798-5,2025-07-25,2025-10-31,98
+FSO-YOLO: a feature-enhanced object detection network for real-time impurity inspection in large-volume parenterals,10.1007/s11554-025-01826-4,2025-08-01,2025-12-08,129
+PCASeg: progressive cross-layer attention with adaptive sparsity for real-time semantic segmentation,10.1007/s11554-026-01868-2,2025-10-08,2026-03-03,146
+Lightweight real-time road defect detection algorithm integrating multi-coordinate aggregation attention and shared convolution,10.1007/s11554-025-01747-2,2025-04-17,2025-08-05,110
+"Energy-aware deep learning for real-time video analysis through pruning, quantization, and hardware optimization",10.1007/s11554-025-01703-0,2025-03-07,2025-05-19,73
+Real-time recognition of miner unsafe behaviors via skeleton-based spatiotemporal modeling with Mamba,10.1007/s11554-025-01764-1,2025-06-24,2025-09-03,71
+TOE-YOLO: accurate and efficient detection of tiny objects in UAV imagery,10.1007/s11554-025-01770-3,2025-08-19,2025-09-17,29
+SEDDP-YOLO: a dual-stage pruning and distillation approach for fast and accurate cherry quality detection,10.1007/s11554-026-01869-1,2025-07-15,2026-03-03,231
+USH: an efficient real-time distracted driving detection model,10.1007/s11554-025-01745-4,2025-04-10,2025-08-04,116
+GMO-DETR: a lightweight transformer for accurate and efficient PCBA defect detection,10.1007/s11554-026-01863-7,2025-08-18,2026-02-20,186
+LQ-YOLO11: a lightweight dual-gated network for real-time logistics visual quality inspection,10.1007/s11554-026-01922-z,2026-03-13,2026-06-14,93
+GDE-YOLO: a lightweight real-time detection method for tactile paving obstacle detection,10.1007/s11554-026-01917-w,2025-12-29,2026-06-09,162
+LMFSNet: a lightweight multi-scale collaborative network for fire and smoke detection,10.1007/s11554-026-01957-2,2026-04-02,2026-07-30,119
+WeldFormer: a real-time task-aligned multi-scale framework for automated weld defect detection in industrial environments,10.1007/s11554-026-01958-1,2026-05-16,2026-07-31,76
+SEFNet: an efficient SAR ship detection model for edge deployment,10.1007/s11554-026-01997-8,2026-05-17,2026-09-22,128
+MCPDNet: multi-scale feature fusion network for maize leaf disease and pest detection,10.1007/s11554-026-01865-5,2026-01-04,2026-02-23,50
+CAC-DETR: bridging heavy and light for real-time small object detection on UAVs,10.1007/s11554-025-01830-8,2025-08-19,2025-12-09,112
+ME-DETR: a lightweight multi-scale edge-enhanced detector for real-time UAV object detection,10.1007/s11554-026-01856-6,2025-11-04,2026-01-19,76
+AEP-PEST: adaptive edge-enhanced pyramid network for real-time detection of small and occluded agricultural pests,10.1007/s11554-026-01901-4,2026-03-25,2026-05-10,46
+A hardware and software co-designed architecture for ultra-lightweight CNN acceleration on FPGA: a case study in real-time plant disease recognition,10.1007/s11554-026-01956-3,2026-05-16,2026-07-30,75
+LBF-YOLO: lightweight obstacle detection for UAVs in complex low-altitude environments,10.1007/s11554-026-01961-6,2026-07-07,2026-08-04,28
+SCF-YOLO: scale-sequence context fusion YOLO for dense small pest detection,10.1007/s11554-026-01994-x,2026-06-30,2026-09-21,83
+Implementation of a lightweight fall detection algorithm based on MobileNetV2 on a Zynq platform,10.1007/s11554-025-01824-6,2025-07-27,2025-12-03,129
+LORNet: lightweight unstructured off-road segmentation on embedded devices for mobile robotic and intelligent vehicle,10.1007/s11554-026-01851-x,2025-11-11,2026-01-02,52
+YOLOv8n-PP: a lightweight pose recognition algorithm for photovoltaic array cleaning robot,10.1007/s11554-025-01713-y,2025-01-22,2025-06-06,135
+RailSegNet: real-time semantic segmentation for rail-scene understanding with structure-aware training,10.1007/s11554-026-01929-6,2026-04-14,2026-06-23,70
+Lorad: lightweight causal pose flow for online real-time video anomaly detection,10.1007/s11554-026-01937-6,2026-05-20,2026-06-29,40
+Real-time UAV object detection in foggy environments via dynamic multi-scale feature enhancement and cross-dimensional attention,10.1007/s11554-026-01985-y,2026-04-13,2026-09-15,155
+A real-time multi-security adaptive HEVC selective encryption scheme for traffic surveillance,10.1007/s11554-026-01945-6,2026-03-26,2026-07-07,103
+Improved YOLOv10-based real-time helmet detection algorithm for complex scenarios,10.1007/s11554-025-01775-y,2025-08-19,2025-09-23,35
+EffBirdNet: an efficient and lightweight network based on synergistic feature fusion for fine-grained bird image classification,10.1007/s11554-026-01890-4,2025-12-11,2026-04-09,119
+Deep learning-based real-time spatio-temporal framework for occlusion-robust UAV tracking,10.1007/s11554-026-01852-w,2025-08-13,2026-01-02,142
+LMC-YOLO: a lightweight underwater benthic organism detection network with multi-scale feature extraction,10.1007/s11554-025-01743-6,2025-04-03,2025-07-31,119
+DCC-DETR: a real-time lightweight gesture recognition network for home human–robot interaction,10.1007/s11554-025-01763-2,2025-06-21,2025-09-02,73
+EDet-YOLO: an efficient small object detection algorithm for aerial images,10.1007/s11554-025-01753-4,2025-05-20,2025-08-18,90
+MAPBoost: augmentation-resilient real-time object detection for edge deployment,10.1007/s11554-025-01805-9,2025-09-23,2025-11-07,45
+Edge-FastestDet: a real-time and ultra-lightweight model for detection,10.1007/s11554-025-01731-w,2025-05-22,2025-07-09,48
+LDS-Net: a lightweight detection network for real-time steel surface-defect detection,10.1007/s11554-026-01927-8,2026-04-05,2026-06-21,77
+A high-performance and lightweight framework for real-time solar cell surface defect detection on edge devices,10.1007/s11554-026-01960-7,2026-01-12,2026-08-04,204
+Tiny deep learning models for real-time and efficient embedded driver state detection,10.1007/s11554-025-01836-2,2025-10-17,2025-12-12,56
+EGHT: a lightweight spatiotemporal fusion and dynamic attention model for real-time badminton detection,10.1007/s11554-025-01789-6,2025-06-24,2025-10-13,111
+YOLOv8n-SSSL: a lightweight and efficient model for textile defect detection,10.1007/s11554-025-01780-1,2025-07-11,2025-09-29,80
+SF-YOLO11: a spatial-frequency collaborative network for real-time steel surface defect detection,10.1007/s11554-026-01866-4,2025-12-24,2026-02-24,62
+DBPC-DETR: a lightweight dual backbone network for real-time identification of multi-scale grape leaf diseases under field conditions,10.1007/s11554-025-01844-2,2025-12-01,2025-12-27,26
+AFST: Adaptive Frequency-Spatial Transform for real-time edge vision on resource-constrained microcontrollers,10.1007/s11554-026-01905-0,2026-02-28,2026-05-19,80
+STMFusion: a semantic-guided and texture-enhanced Mamba network for multimodal image fusion,10.1007/s11554-026-01914-z,2026-03-31,2026-06-07,68
+DPCA-Net: a lightweight real-time all-in-one image restoration network via Detail-Preserving Conditional Affine modulation,10.1007/s11554-026-01935-8,2026-03-23,2026-06-28,97
+SBP-YOLO: a lightweight real-time model for detecting speed bumps and potholes toward intelligent vehicle suspension systems,10.1007/s11554-025-01849-x,2025-10-11,2025-12-29,79
+ADF-YOLO: lightweight adaptive network for high-speed pharmaceutical blister pack detection,10.1007/s11554-025-01809-5,2025-08-20,2025-11-13,85
+DNW-YOLO: a cost-effective hardware–software system for small UAVs in complex backgrounds,10.1007/s11554-026-01870-8,2026-01-11,2026-03-04,52
+An optimized lightweight YOLO-MRC framework for enhanced obstacle detection in service robots,10.1007/s11554-025-01756-1,2025-07-30,2025-08-24,25
+Real-time multi-task learning with cross-task attention and edge supervision for autonomous driving perception,10.1007/s11554-026-01955-4,2026-03-12,2026-07-29,139
+Multi-stage differential-aware attention network for real-time underwater salient object detection,10.1007/s11554-025-01814-8,2025-07-20,2025-11-20,123
+YOLO-MSDD: a model for detecting road defects in rainy conditions,10.1007/s11554-025-01723-w,2024-09-25,2025-06-17,265
+Online evolutive learning for real-time image processing: a survey,10.1007/s11554-026-01938-5,2026-05-19,2026-06-29,41
+Rail surface defect detection algorithm based on CSSI-YOLO,10.1007/s11554-026-01876-2,2025-10-07,2026-03-17,161
+Road crack detection algorithm based on fusion structure re-parameterization with multi-scale parallel convolutions and hybrid attention mechanism,10.1007/s11554-025-01766-z,2025-05-26,2025-09-08,105
+EHR-Net: a real-time Edge-Enhanced Hierarchical Residual Network for UAV infrared small target detection,10.1007/s11554-026-01952-7,2026-05-06,2026-07-27,82
+ER-YOLO: enhanced information representation network for UAV-based small-object detection,10.1007/s11554-026-01880-6,2025-09-15,2026-03-23,189
+LE-RTDETR: multi-scale edge enhancement and structural compression for underwater debris detection,10.1007/s11554-026-01980-3,2026-07-15,2026-09-05,52
+VSS-shufflenet: a lightweight framework for real-time steel surface defect detection,10.1007/s11554-026-02001-z,2026-08-06,2026-09-30,55
+Efficient scale reallocation for rotated pedestrian detection in overhead fisheye images,10.1007/s11554-026-01882-4,2026-02-13,2026-03-27,42
+PFSMNet: a lightweight physics-guided frequency-spatial Mamba network for infrared small-target detection,10.1007/s11554-026-01916-x,2026-02-11,2026-06-08,117
+A novel attention-guided inspection approach for minute industrial surface defect based on separate adaptive data augmentation,10.1007/s11554-026-01941-w,2026-01-21,2026-07-03,163
+A novel real-time image defect detection network for photovoltaic modules,10.1007/s11554-026-01862-8,2025-12-30,2026-02-15,47
+ECCFNet: enhanced context-aware cross-resolution fusion network for human pose estimation,10.1007/s11554-026-01853-9,2025-11-28,2026-01-05,38
+BD-ResTransUNet: an efficient boundary-driven framework for real-time segmentation of SLE lesions,10.1007/s11554-026-01894-0,2026-03-15,2026-04-13,29
+LHS-DETR: a lightweight high-speed DETR model for micro-defects detection in industrial specialty materials,10.1007/s11554-026-01871-7,2026-01-07,2026-03-04,56
+A lightweight fabric defect detection method based on improved ShuffleNetV2,10.1007/s11554-025-01839-z,2025-08-05,2025-12-15,132
+Lightweight real-time image captioning for mobile systems: an optimized multimodal framework and benchmarking study,10.1007/s11554-026-01975-0,2026-04-13,2026-08-25,134
+MBS-YOLOv11: a lightweight network for real-time detection of tea plant diseases,10.1007/s11554-026-01867-3,2025-12-31,2026-02-25,56
+Walsh–Hadamard spectra computation on GPU with tensor cores by Cooley–Tukey and constant geometry algorithms,10.1007/s11554-025-01725-8,2025-04-08,2025-06-23,76
+An efficient and lightweight network for detecting bulk material conveyor belts,10.1007/s11554-025-01832-6,2025-05-16,2025-12-09,207
+Benchmarking real-time semantic segmentation models for traffic scene understanding across structured and unstructured environments,10.1007/s11554-026-01928-7,2026-04-01,2026-06-22,82
+SOEM-DETR: an efficient real-time drone infrared image photovoltaic defect detection model,10.1007/s11554-026-01949-2,2026-02-11,2026-07-16,155
+RW-DETR: a multi-domain fusion transformer for real-time weapon detection in public security,10.1007/s11554-026-01919-8,2026-02-12,2026-06-09,117
+Multi-scale feature reconstruction detection transformer (MSFR-DETR): a real-time detector for small objects,10.1007/s11554-026-01892-2,2025-12-19,2026-04-11,113
+DGAF-Net: a dynamic gated adaptive fusion network for real-time steel surface defect detection,10.1007/s11554-026-01983-0,2026-04-03,2026-09-10,160
+Slim-HRNet: a lightweight pose estimation network based on structural pruning and multi-scale feature enhancement fusion,10.1007/s11554-026-01897-x,2026-02-13,2026-04-16,62
+PGCI-YOLO: a railway fastener detection algorithm based on improved YOLOv8n,10.1007/s11554-025-01762-3,2025-04-24,2025-09-02,131

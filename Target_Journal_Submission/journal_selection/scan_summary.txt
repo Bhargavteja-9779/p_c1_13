@@ -328,3 +328,388 @@
 1612-9059 | Esophagus | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=119 p75=155.5 max=405
 1558-8211 | Current Hematologic Malignancy Reports | Springer Science and Business Media LLC | n_items=17 n_dated=13 | median=48 p75=53.0 max=104
 1615-5262 | International Journal of Information Security | Springer Science and Business Media LLC | n_items=120 n_dated=73 | median=162 p75=298.0 max=906
+1560-2745 | Fungal Diversity | BioAcademic Press Ltd. | n_items=21 no dates
+1615-3375 | Foundations of Computational Mathematics | Springer Science and Business Media LLC | n_items=52 n_dated=51 | median=417 p75=496.0 max=1237
+1619-7070 ERR HTTP Error 429: Too Many Requests
+1658-8185 | Journal of Umm Al-Qura University for Applied Sciences | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=124.5 p75=185.0 max=672
+1563-0854 | Asian Journal of Civil Engineering | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=32.0 p75=70.5 max=306
+1618-954X | Clean Technologies and Environmental Policy | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=217.5 p75=340.75 max=816
+1674-7305 | Science China Life Sciences | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=100.0 p75=155.0 max=347
+1568-7767 | Phytochemistry Reviews | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=210.5 p75=353.5 max=881
+1654-9880 | Global Health Action | Informa UK Limited | n_items=120 n_dated=120 | median=132.5 p75=214.5 max=524
+1687-4714 |  |  | n_items=0 no dates
+1570-5870 |  |  | n_items=0 no dates
+1674-2818 |  |  | n_items=0 no dates
+1735-6865 | International Journal of Environmental Research | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=200.0 p75=293.5 max=476
+1574-020X | Language Resources and Evaluation | Springer Science and Business Media LLC | n_items=120 n_dated=97 | median=320 p75=401.0 max=1524
+1674-9782 |  |  | n_items=0 no dates
+1741-7007 | BMC Biology | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=206 p75=275.0 max=549
+1594-0667 |  |  | n_items=0 no dates
+1723-7785 ERR HTTP Error 429: Too Many Requests
+1740-1526 | Nature Reviews Microbiology | Springer Science and Business Media LLC | n_items=120 no dates
+1742-4755 | Reproductive Health | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=218 p75=387.0 max=1025
+1612-510X | Landslides | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=169 p75=226.5 max=541
+1742-2094 | Journal of Neuroinflammation | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=103.5 p75=148.25 max=348
+1743-0003 | Journal of NeuroEngineering and Rehabilitation | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=169 p75=250.5 max=539
+1742-5255 | Expert Opinion on Drug Metabolism &amp; Toxicology | Informa UK Limited | n_items=113 n_dated=110 | median=105.0 p75=172.75 max=521
+1615-147X | Structural and Multidisciplinary Optimization | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=134 p75=196.0 max=426
+1744-859X | Annals of General Psychiatry | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=180 p75=253.5 max=622
+1744-4292 | Molecular Systems Biology | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=176 p75=243.0 max=493
+1615-7591 | Bioprocess and Biosystems Engineering | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=96.5 p75=121.75 max=354
+1745-6150 | Biology Direct | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=71.5 p75=110.5 max=275
+1745-2473 | Nature Physics | Springer Science and Business Media LLC | n_items=120 n_dated=62 | median=301.5 p75=380.25 max=1069
+1644-9665 |  |  | n_items=0 no dates
+1746-0441 ERR HTTP Error 429: Too Many Requests
+1747-1028 ERR HTTP Error 429: Too Many Requests
+1749-4885 | Nature Photonics | Springer Science and Business Media LLC | n_items=120 n_dated=77 | median=255 p75=322.0 max=731
+1745-8323 |  |  | n_items=0 no dates
+1673-1581 | Journal of Zhejiang University-SCIENCE B | Zhejiang University Press | n_items=120 n_dated=120 | median=119.0 p75=161.0 max=371
+1749-9518 | Georisk: Assessment and Management of Risk for Engineered Systems and Geohazards | Informa UK Limited | n_items=120 n_dated=115 | median=204 p75=290.0 max=636
+1746-4358 | International Breastfeeding Journal | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=173.0 p75=220.5 max=485
+1674-800X | Protein &amp; Cell | Oxford University Press (OUP) | n_items=120 no dates
+1750-2799 ERR HTTP Error 429: Too Many Requests
+1752-1505 | Conflict and Health | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=144.5 p75=236.5 max=700
+1748-5908 | Implementation Science | Springer Science and Business Media LLC | n_items=112 n_dated=106 | median=130.5 p75=196.25 max=431
+1720-8424 |  |  | n_items=0 no dates
+1754-9493 | Patient Safety in Surgery | Springer Science and Business Media LLC | n_items=79 n_dated=78 | median=52.0 p75=73.0 max=279
+1749-8546 | Chinese Medicine | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=112.0 p75=154.0 max=457
+1738-2696 | Tissue Engineering and Regenerative Medicine | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=99 p75=142.5 max=295
+1756-5529 ERR HTTP Error 429: Too Many Requests
+1756-994X ERR HTTP Error 429: Too Many Requests
+1757-4749 | Gut Pathogens | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=106.5 p75=155.75 max=289
+1750-1326 | Molecular Neurodegeneration | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=155.5 p75=204.5 max=532
+1741-7015 | BMC Medicine | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=170.5 p75=221.0 max=1527
+1758-5996 | Diabetology &amp; Metabolic Syndrome | Springer Science and Business Media LLC | n_items=120 n_dated=113 | median=89 p75=165.0 max=412
+1752-0894 | Nature Geoscience | Springer Science and Business Media LLC | n_items=120 n_dated=76 | median=287.5 p75=417.5 max=1448
+1742-5247 | Expert Opinion on Drug Delivery | Informa UK Limited | n_items=120 n_dated=120 | median=78.0 p75=111.75 max=1056
+1759-4774 | Nature Reviews Clinical Oncology | Springer Science and Business Media LLC | n_items=120 no dates
+1754-1611 | Journal of Biological Engineering | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=103 p75=138.0 max=331
+1743-8977 | Particle and Fibre Toxicology | Springer Science and Business Media LLC | n_items=85 n_dated=83 | median=142 p75=216.0 max=517
+1759-5002 | Nature Reviews Cardiology | Springer Science and Business Media LLC | n_items=120 no dates
+1756-0381 | BioData Mining | Springer Science and Business Media LLC | n_items=120 n_dated=115 | median=105 p75=152.0 max=426
+1744-8603 | Globalization and Health | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=167.0 p75=254.75 max=617
+1759-8753 | Mobile DNA | Springer Science and Business Media LLC | n_items=61 n_dated=59 | median=120 p75=172.0 max=268
+1756-8935 | Epigenetics &amp; Chromatin | Springer Science and Business Media LLC | n_items=116 n_dated=113 | median=119 p75=162.5 max=334
+1745-6673 | Journal of Occupational Medicine and Toxicology | Springer Science and Business Media LLC | n_items=72 n_dated=68 | median=80.0 p75=102.75 max=301
+1773-0155 | Agronomy for Sustainable Development | Springer Science and Business Media LLC | n_items=120 n_dated=92 | median=285.0 p75=401.75 max=871
+1757-4676 | EMBO Molecular Medicine | Springer Science and Business Media LLC | n_items=71 n_dated=71 | median=177 p75=235.0 max=812
+1746-4269 | Journal of Ethnobiology and Ethnomedicine | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=85.5 p75=116.75 max=326
+1861-1125 | Acta Geotechnica | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=198.0 p75=261.75 max=740
+1758-2946 | Journal of Cheminformatics | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=136.0 p75=173.75 max=459
+1748-3387 | Nature Nanotechnology | Springer Science and Business Media LLC | n_items=120 n_dated=78 | median=269.0 p75=364.25 max=911
+1862-4057 | Sustainability Science | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=238.0 p75=311.5 max=632
+1759-4758 | Nature Reviews Neurology | Springer Science and Business Media LLC | n_items=120 no dates
+1749-7922 | World Journal of Emergency Surgery | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=94.0 p75=140.25 max=474
+1865-0473 | Earth Science Informatics | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=133 p75=175.0 max=404
+1759-4812 | Nature Reviews Urology | Springer Science and Business Media LLC | n_items=120 no dates
+1750-0680 | Carbon Balance and Management | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=188 p75=267.0 max=810
+1866-9956 | Cognitive Computation | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=253.0 p75=378.25 max=1035
+1759-5045 | Nature Reviews Gastroenterology &amp; Hepatology | Springer Science and Business Media LLC | n_items=120 no dates
+1751-7192 | Green Chemistry Letters and Reviews | Informa UK Limited | n_items=111 n_dated=109 | median=175 p75=255.0 max=533
+1867-1306 | Probiotics and Antimicrobial Proteins | Springer Science and Business Media LLC | n_items=120 n_dated=97 | median=107 p75=162.5 max=442
+1772-9890 |  |  | n_items=0 no dates
+1752-4458 | International Journal of Mental Health Systems | Springer Science and Business Media LLC | n_items=75 n_dated=73 | median=233 p75=342.5 max=735
+1755-4330 | Nature Chemistry | Springer Science and Business Media LLC | n_items=120 n_dated=82 | median=286.5 p75=382.0 max=975
+1813-7253 | European Review of Aging and Physical Activity | Springer Science and Business Media LLC | n_items=1 n_dated=1 | median=203 p75=203 max=203
+1868-6478 | Evolving Systems | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=296.0 p75=421.5 max=1271
+1756-8722 ERR HTTP Error 429: Too Many Requests
+1861-8200 | Journal of Real-Time Image Processing | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=86.0 p75=122.5 max=367
+1757-2215 | Journal of Ovarian Research | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=124 p75=186.5 max=451
+1869-1897 | Science China Earth Sciences | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=174.5 p75=230.75 max=475
+1864-5909 | Evolutionary Intelligence | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=144 p75=217.0 max=863
+1869-1927 | Science China Physics, Mechanics &amp; Astronomy | Springer Science and Business Media LLC | n_items=120 n_dated=111 | median=70 p75=95.0 max=195
+1757-6512 | Stem Cell Research &amp; Therapy | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=155 p75=233.0 max=410
+1871-4080 | Cognitive Neurodynamics | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=132 p75=205.0 max=566
+1758-9193 | Alzheimer's Research &amp; Therapy | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=123 p75=188.0 max=513
+1866-7910 | Food Engineering Reviews | Springer Science and Business Media LLC | n_items=58 n_dated=58 | median=145.0 p75=181.75 max=468
+1878-7479 | Neurotherapeutics | Elsevier BV | n_items=120 no dates
+1759-4790 | Nature Reviews Rheumatology | Springer Science and Business Media LLC | n_items=120 no dates
+1867-1071 | Japanese Journal of Radiology | Springer Science and Business Media LLC | n_items=120 n_dated=112 | median=71.0 p75=118.75 max=249
+1884-4049 | NPG Asia Materials | Springer Science and Business Media LLC | n_items=1 n_dated=1 | median=186 p75=186 max=186
+1759-5029 | Nature Reviews Endocrinology | Springer Science and Business Media LLC | n_items=120 no dates
+1867-2957 | Mathematical Programming Computation | Springer Science and Business Media LLC | n_items=59 n_dated=56 | median=418.5 p75=568.5 max=876
+1935-5130 | Food and Bioprocess Technology | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=87 p75=118.0 max=264
+1768-6733 | Quantitative InfraRed Thermography Journal | Informa UK Limited | n_items=32 n_dated=29 | median=174 p75=257.5 max=537
+1868-7075 |  |  | n_items=0 no dates
+1793-2068 ERR HTTP Error 429: Too Many Requests
+1936-3761 | Current Fungal Infection Reports | Springer Science and Business Media LLC | n_items=41 n_dated=32 | median=72.0 p75=98.75 max=254
+1861-2776 | Intelligent Service Robotics | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=208.0 p75=301.0 max=729
+1869-1919 | Science China Information Sciences | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=180.0 p75=244.5 max=793
+1863-2483 |  |  | n_items=0 no dates
+1939-8425 | Rice | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=99 p75=137.5 max=448
+1869-6961 | Diabetes Therapy | Springer Science and Business Media LLC | n_items=120 n_dated=115 | median=60 p75=87.0 max=303
+1866-1947 |  |  | n_items=0 no dates
+1949-1042 | Nucleus | Informa UK Limited | n_items=40 n_dated=38 | median=114.0 p75=154.5 max=580
+1878-5077 |  |  | n_items=0 no dates
+1867-0687 | World Journal of Pediatrics | Springer Science and Business Media LLC | n_items=120 n_dated=114 | median=112.5 p75=154.25 max=337
+1976-4251 | Carbon Letters | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=96 p75=139.0 max=290
+1880-6791 |  |  | n_items=0 no dates
+1996-3599 | Building Simulation | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=81.5 p75=106.0 max=377
+1867-1462 | Interdisciplinary Sciences: Computational Life Sciences | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=200 p75=266.0 max=509
+1933-9747 | Fire Ecology | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=160.5 p75=246.25 max=623
+1868-6966 ERR HTTP Error 429: Too Many Requests
+1869-1900 ERR HTTP Error 429: Too Many Requests
+2001-1326 | Clinical and Translational Medicine | Wiley | n_items=120 no dates
+1936-0533 ERR HTTP Error 429: Too Many Requests
+1869-5450 | Social Network Analysis and Mining | Springer Science and Business Media LLC | n_items=1 n_dated=1 | median=548 p75=548 max=548
+1936-6582 | Flexible Services and Manufacturing Journal | Springer Science and Business Media LLC | n_items=77 n_dated=55 | median=368 p75=535.0 max=1392
+2040-2392 | Molecular Autism | Springer Science and Business Media LLC | n_items=82 n_dated=78 | median=163.5 p75=220.0 max=414
+1876-4517 | Food Security | Springer Science and Business Media LLC | n_items=120 n_dated=113 | median=288 p75=394.0 max=925
+1947-5705 | Geomatics, Natural Hazards and Risk | Informa UK Limited | n_items=120 n_dated=120 | median=150.0 p75=215.0 max=564
+2041-4889 | Cell Death &amp; Disease | Springer Science and Business Media LLC | n_items=120 n_dated=114 | median=202.0 p75=244.25 max=867
+1879-4238 | Organic Agriculture | Springer Science and Business Media LLC | n_items=77 n_dated=75 | median=181 p75=275.0 max=592
+1976-0485 |  |  | n_items=0 no dates
+1933-6950 | Channels | Informa UK Limited | n_items=46 n_dated=45 | median=85 p75=105.5 max=201
+2044-4052 | Nutrition &amp; Diabetes | Springer Science and Business Media LLC | n_items=94 n_dated=93 | median=314 p75=379.5 max=545
+1995-8218 | Neuroscience Bulletin | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=118.0 p75=150.0 max=374
+1935-9748 | Current Reviews in Musculoskeletal Medicine | Springer Science and Business Media LLC | n_items=89 n_dated=79 | median=29 p75=49.0 max=279
+2045-8118 | Fluids and Barriers of the CNS | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=116.5 p75=150.0 max=320
+2000-2297 | Journal of Oral Microbiology | Informa UK Limited | n_items=120 n_dated=117 | median=110 p75=143.0 max=978
+1936-6442 | Peer-to-Peer Networking and Applications | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=166 p75=233.0 max=1082
+2046-4177 | Journal of Marine Engineering &amp; Technology | Informa UK Limited | n_items=103 n_dated=102 | median=166.5 p75=264.0 max=816
+2036-3176 |  |  | n_items=0 no dates
+2047-2994 ERR HTTP Error 429: Too Many Requests
+1947-5411 | International Journal of Smart and Nano Materials | Informa UK Limited | n_items=54 n_dated=53 | median=66 p75=87.0 max=177
+2048-7010 | Agriculture &amp; Food Security | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=224 p75=343.5 max=772
+2041-1723 | Nature Communications | Springer Science and Business Media LLC | n_items=120 n_dated=113 | median=257 p75=384.0 max=1011
+2050-3369 | Arrhythmia &amp; Electrophysiology Review | Radcliffe Medical Media Ltd | n_items=60 no dates
+1976-0280 | BioChip Journal | Springer Science and Business Media LLC | n_items=66 n_dated=63 | median=107 p75=146.0 max=317
+2042-6410 | Biology of Sex Differences | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=106.5 p75=151.5 max=316
+2052-0492 | Journal of Intensive Care | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=73 p75=101.0 max=183
+1995-8196 | Transactions of Tianjin University | Springer Science and Business Media LLC | n_items=78 n_dated=73 | median=51 p75=70.5 max=144
+2045-3701 | Cell &amp; Bioscience | Springer Science and Business Media LLC | n_items=120 n_dated=115 | median=129 p75=169.0 max=505
+1998-0000 | Nano Research | Tsinghua University Press | n_items=120 no dates
+2052-7276 | Horticulture Research | Oxford University Press (OUP) | n_items=120 no dates
+2046-4053 | Systematic Reviews | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=280 p75=405.5 max=822
+2001-3078 | Journal of Extracellular Vesicles | Wiley | n_items=120 no dates
+2055-1010 | npj Primary Care Respiratory Medicine | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=120.5 p75=170.25 max=811
+2047-2501 | Health Information Science and Systems | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=166.5 p75=286.75 max=831
+2041-1480 | Journal of Biomedical Semantics | Springer Science and Business Media LLC | n_items=37 n_dated=37 | median=189 p75=249.0 max=958
+2056-5909 | Clinical Hypertension | XMLink | n_items=50 n_dated=49 | median=100 p75=130.0 max=249
+2047-9158 | Translational Neurodegeneration | Springer Science and Business Media LLC | n_items=107 n_dated=105 | median=167 p75=214.0 max=375
+2041-7128 |  |  | n_items=0 no dates
+2056-676X | Nature Reviews Disease Primers | Springer Science and Business Media LLC | n_items=120 no dates
+2049-3002 | Cancer &amp; Metabolism | Springer Science and Business Media LLC | n_items=67 n_dated=65 | median=152 p75=200.5 max=503
+2044-5385 | Blood Cancer Journal | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=114 p75=161.0 max=432
+2056-7936 | npj Science of Learning | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=176.0 p75=234.0 max=474
+2051-5960 ERR HTTP Error 429: Too Many Requests
+2052-4463 | Scientific Data | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=192 p75=250.5 max=611
+2045-9769 | Cell Regeneration | Springer Science and Business Media LLC | n_items=68 n_dated=63 | median=94 p75=127.0 max=310
+2057-3960 | npj Computational Materials | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=132.5 p75=209.0 max=623
+2055-0464 | Echo Research &amp; Practice | Springer Science and Business Media LLC | n_items=66 n_dated=63 | median=155 p75=236.0 max=387
+2047-2382 | Environmental Evidence | Springer Science and Business Media LLC | n_items=34 n_dated=32 | median=204.0 p75=252.25 max=517
+2058-5276 | Nature Microbiology | Springer Science and Business Media LLC | n_items=120 n_dated=73 | median=287 p75=379.0 max=1439
+2055-7434 | Microsystems &amp; Nanoengineering | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=121 p75=154.0 max=267
+2047-7538 | Light: Science &amp; Applications | Springer Science and Business Media LLC | n_items=120 n_dated=108 | median=168.0 p75=206.75 max=454
+2058-8437 | Nature Reviews Materials | Springer Science and Business Media LLC | n_items=120 no dates
+2059-7037 | npj Clean Water | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=71 p75=88.5 max=176
+2049-2618 | Microbiome | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=197.0 p75=259.5 max=796
+2056-6387 | npj Quantum Information | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=215 p75=278.5 max=587
+2093-9868 | Biomedical Engineering Letters | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=106 p75=145.0 max=296
+2056-7529 | Research Involvement and Engagement | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=133 p75=179.0 max=315
+2050-7771 | Biomarker Research | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=97 p75=131.0 max=257
+2095-8293 | International Journal of Coal Science &amp; Technology | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=395 p75=587.0 max=918
+2056-807X | BDJ Open | Springer Science and Business Media LLC | n_items=120 n_dated=114 | median=75.0 p75=105.5 max=224
+2052-1847 | BMC Sports Science, Medicine and Rehabilitation | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=107 p75=191.0 max=994
+2110-5820 | Annals of Intensive Care | Elsevier BV | n_items=120 no dates
+2057-7540 | Cardiac Failure Review | Radcliffe Medical Media Ltd | n_items=55 no dates
+2055-0278 | Nature Plants | Springer Science and Business Media LLC | n_items=120 n_dated=66 | median=268.0 p75=352.25 max=980
+2150-5594 | Virulence | Informa UK Limited | n_items=120 n_dated=118 | median=184.5 p75=245.5 max=634
+2058-7716 | Cell Death Discovery | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=141 p75=189.0 max=451
+2055-5008 | npj Biofilms and Microbiomes | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=178.0 p75=226.0 max=576
+2158-3188 | Translational Psychiatry | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=251.0 p75=348.25 max=668
+2059-3635 | Signal Transduction and Targeted Therapy | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=195.5 p75=257.75 max=547
+2056-5968 | Cell Discovery | Springer Science and Business Media LLC | n_items=120 n_dated=109 | median=175 p75=216.0 max=535
+2162-4968 | Current Obesity Reports | Springer Science and Business Media LLC | n_items=120 n_dated=98 | median=81.5 p75=132.5 max=257
+2093-5552 | Journal of Pharmaceutical Investigation | Springer Science and Business Media LLC | n_items=96 n_dated=95 | median=89 p75=110.0 max=281
+2056-7189 | npj Systems Biology and Applications | Springer Science and Business Media LLC | n_items=120 n_dated=115 | median=165 p75=215.0 max=442
+2168-1015 | Journal of Industrial and Production Engineering | Informa UK Limited | n_items=68 n_dated=65 | median=224 p75=300.5 max=749
+2095-8226 | Science China Materials | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=52 p75=76.0 max=141
+2056-7944 | npj Genomic Medicine | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=178.0 p75=242.0 max=567
+2190-393X | Drug Delivery and Translational Research | Springer Science and Business Media LLC | n_items=120 n_dated=88 | median=110.5 p75=144.5 max=382
+2096-5524 | Bio-Design and Manufacturing | Zhejiang University Press | n_items=97 n_dated=94 | median=102.5 p75=128.0 max=249
+2057-3995 | npj Regenerative Medicine | Springer Science and Business Media LLC | n_items=108 n_dated=106 | median=214.0 p75=274.5 max=632
+2190-5495 ERR HTTP Error 429: Too Many Requests
+2190-7439 | Photonic Sensors | Tsinghua University Press | n_items=51 no dates
+2150-5551 | Nano-Micro Letters | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=85 p75=98.0 max=142
+2058-7546 | Nature Energy | Springer Science and Business Media LLC | n_items=120 n_dated=54 | median=268.0 p75=321.25 max=1009
+2157-9024 | Oncogenesis | Springer Science and Business Media LLC | n_items=109 n_dated=102 | median=174.0 p75=226.5 max=405
+2192-1709 | Ecological Processes | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=138.0 p75=185.25 max=427
+2059-0105 | npj Vaccines | Springer Science and Business Media LLC | n_items=120 n_dated=115 | median=132 p75=184.0 max=606
+2092-9196 |  |  | n_items=0 no dates
+2162-3619 | Experimental Hematology &amp; Oncology | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=125 p75=186.0 max=333
+2192-662X | International Journal of Multimedia Information Retrieval | Springer Science and Business Media LLC | n_items=57 n_dated=57 | median=165 p75=223.0 max=466
+2095-4700 |  |  | n_items=0 no dates
+2167-8707 |  |  | n_items=0 no dates
+2193-6536 | Neurology and Therapy | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=61.0 p75=86.0 max=215
+2096-0433 | Computational Visual Media | Tsinghua University Press | n_items=120 no dates
+2169-3277 | Production &amp; Manufacturing Research | Informa UK Limited | n_items=58 n_dated=56 | median=184.0 p75=314.5 max=689
+2194-1459 | Materials for Renewable and Sustainable Energy | Springer Science and Business Media LLC | n_items=94 n_dated=94 | median=102.0 p75=149.75 max=508
+2150-1203 | Mycology | Informa UK Limited | n_items=82 n_dated=78 | median=80.5 p75=115.75 max=271
+2190-5452 | Journal of Civil Structural Health Monitoring | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=244 p75=317.0 max=675
+2195-7185 | Review Journal of Autism and Developmental Disorders | Springer Science and Business Media LLC | n_items=101 n_dated=94 | median=316.0 p75=439.0 max=878
+2152-4041 |  |  | n_items=0 no dates
+2190-6815 | Biomass Conversion and Biorefinery | Springer Science and Business Media LLC | n_items=120 n_dated=114 | median=233.0 p75=312.5 max=526
+2196-2952 | Current Addiction Reports | Springer Science and Business Media LLC | n_items=120 n_dated=103 | median=112 p75=175.0 max=413
+2161-3311 | Current Nutrition Reports | Springer Science and Business Media LLC | n_items=120 n_dated=95 | median=158 p75=201.0 max=636
+2191-2203 | Mineral Economics | Springer Science and Business Media LLC | n_items=120 n_dated=113 | median=191 p75=263.5 max=652
+2196-5412 | Current Environmental Health Reports | Springer Science and Business Media LLC | n_items=83 n_dated=74 | median=164.5 p75=237.5 max=380
+2165-5979 | Bioengineered | Informa UK Limited | n_items=120 n_dated=2 | median=253.5 p75=255.75 max=255
+2192-6352 | Progress in Artificial Intelligence | Springer Science and Business Media LLC | n_items=119 n_dated=119 | median=254 p75=388.0 max=913
+2196-7091 | Smart Learning Environments | Springer Science and Business Media LLC | n_items=88 n_dated=86 | median=199.5 p75=274.0 max=555
+2168-1163 | Computer Methods in Biomechanics and Biomedical Engineering: Imaging &amp; Visualization | Informa UK Limited | n_items=44 n_dated=44 | median=172.5 p75=243.0 max=1801
+2193-6382 | Infectious Diseases and Therapy | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=64.0 p75=98.5 max=250
+2197-8670 | Geoenvironmental Disasters | Springer Science and Business Media LLC | n_items=93 n_dated=91 | median=148 p75=205.0 max=585
+2190-4715 | Environmental Sciences Europe | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=120 p75=165.0 max=391
+2193-8245 | Ophthalmology and Therapy | Springer Science and Business Media LLC | n_items=120 n_dated=113 | median=53 p75=69.0 max=279
+2198-4034 | International Journal of Implant Dentistry | Springer Science and Business Media LLC | n_items=106 n_dated=104 | median=96.5 p75=144.5 max=486
+2190-5991 | Journal of Cachexia, Sarcopenia and Muscle | Wiley | n_items=120 n_dated=114 | median=195.0 p75=275.0 max=706
+2194-7791 | Molecular and Cellular Pediatrics | Springer Science and Business Media LLC | n_items=75 n_dated=73 | median=103 p75=137.5 max=268
+2198-9761 | Sports Medicine - Open | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=210 p75=352.5 max=600
+2190-9172 | Dermatology and Therapy | Springer Science and Business Media LLC | n_items=120 n_dated=114 | median=54.0 p75=83.75 max=203
+2196-0763 | EPJ Quantum Technology | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=116 p75=174.0 max=500
+2211-1662 | Technology, Knowledge and Learning | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=239.5 p75=326.5 max=864
+2192-2209 | Natural Products and Bioprospecting | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=74.0 p75=100.5 max=216
+2196-5404 | Nano Convergence | Springer Science and Business Media LLC | n_items=95 n_dated=93 | median=66 p75=88.5 max=224
+2222-1751 | Emerging Microbes &amp; Infections | Informa UK Limited | n_items=120 n_dated=114 | median=121.5 p75=152.5 max=305
+2193-2697 | Environmental Systems Research | Springer Science and Business Media LLC | n_items=89 n_dated=87 | median=54 p75=72.0 max=290
+2196-5641 | Chemical and Biological Technologies in Agriculture | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=89.0 p75=125.25 max=210
+2234-0726 |  |  | n_items=0 no dates
+2193-8237 | Pain and Therapy | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=62.0 p75=86.0 max=345
+2197-5620 | Forest Ecosystems | Elsevier BV | n_items=120 no dates
+2277-9078 | CSI Transactions on ICT | Springer Science and Business Media LLC | n_items=16 n_dated=14 | median=237.0 p75=480.25 max=851
+2194-7511 | International Journal of Bipolar Disorders | Springer Science and Business Media LLC | n_items=64 n_dated=62 | median=95.0 p75=152.25 max=290
+2198-4026 ERR HTTP Error 429: Too Many Requests
+2198-7505 | Environmental Processes | Springer Science and Business Media LLC | n_items=112 n_dated=111 | median=122 p75=148.0 max=446
+2314-7172 | Journal of Electrical Systems and Information Technology | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=169.5 p75=282.25 max=590
+2195-9706 ERR HTTP Error 429: Too Many Requests
+2196-2987 | Current Developmental Disorders Reports | Springer Science and Business Media LLC | n_items=41 n_dated=23 | median=165 p75=202.0 max=402
+2210-5433 | Philosophy &amp; Technology | Springer Science and Business Media LLC | n_items=120 n_dated=112 | median=89.5 p75=182.25 max=337
+2321-3868 |  |  | n_items=0 no dates
+2196-5420 ERR HTTP Error 429: Too Many Requests
+2197-4365 | Bioresources and Bioprocessing | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=88.0 p75=114.5 max=172
+2213-7467 | Advanced Modeling and Simulation in Engineering Sciences | Springer Science and Business Media LLC | n_items=46 n_dated=46 | median=139.5 p75=225.25 max=614
+2330-8249 | Reviews in Fisheries Science &amp; Aquaculture | Informa UK Limited | n_items=42 no dates
+2198-0802 | Fashion and Textiles | Springer Science and Business Media LLC | n_items=79 n_dated=76 | median=186.0 p75=264.75 max=535
+2226-4108 | Journal of Advanced Ceramics | Tsinghua University Press | n_items=120 no dates
+2364-1541 | Data Science and Engineering | Springer Science and Business Media LLC | n_items=83 n_dated=80 | median=171.5 p75=238.5 max=424
+2198-6592 ERR HTTP Error 429: Too Many Requests
+2199-4536 | Complex &amp; Intelligent Systems | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=161 p75=241.0 max=1029
+2274-5807 | The Journal of Prevention of Alzheimer's Disease | Elsevier BV | n_items=120 no dates
+2364-8961 | Topics in Current Chemistry | Springer Science and Business Media LLC | n_items=68 n_dated=68 | median=121.5 p75=173.0 max=486
+2211-7938 | International Journal of Networked and Distributed Computing | Springer Science and Business Media LLC | n_items=73 n_dated=72 | median=147.0 p75=215.5 max=459
+2288-8586 | Maxillofacial Plastic and Reconstructive Surgery | Springer Science and Business Media LLC | n_items=69 n_dated=68 | median=60.0 p75=84.0 max=233
+2373-8057 | npj Parkinson's Disease | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=159.5 p75=241.25 max=382
+2223-7690 | Friction | Tsinghua University Press | n_items=120 no dates
+2314-8535 |  |  | n_items=0 no dates
+2374-6149 | Advances in Physics: X | Informa UK Limited | n_items=60 n_dated=60 | median=68.5 p75=88.5 max=192
+2253-1556 | ImmunoTargets and Therapy | Informa UK Limited | n_items=120 no dates
+2327-0012 | Journal of Management Analytics | Informa UK Limited | n_items=52 n_dated=52 | median=408.0 p75=713.75 max=1740
+2397-2106 | npj Materials Degradation | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=112.5 p75=153.5 max=386
+2288-6206 | International Journal of Precision Engineering and Manufacturing-Green Technology | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=123.0 p75=146.0 max=291
+2363-9520 | Progress in Additive Manufacturing | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=120 p75=173.5 max=611
+2397-3366 ERR HTTP Error 429: Too Many Requests
+2397-4621 | npj Flexible Electronics | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=110.5 p75=163.5 max=405
+2314-7245 |  |  | n_items=0 no dates
+2364-4974 ERR HTTP Error 429: Too Many Requests
+2367-0983 | Protection and Control of Modern Power Systems | Institute of Electrical and Electronics Engineers (IEEE) | n_items=111 no dates
+2397-768X | npj Precision Oncology | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=178.0 p75=255.25 max=473
+2326-0254 | Eye and Vision | Springer Science and Business Media LLC | n_items=79 n_dated=77 | median=150 p75=186.5 max=368
+2374-4677 | npj Breast Cancer | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=167.0 p75=243.5 max=731
+2399-3650 | Communications Physics | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=194.5 p75=246.0 max=633
+2363-8427 | Geomechanics and Geophysics for Geo-Energy and Geo-Resources | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=157 p75=229.0 max=1161
+2397-0642 ERR HTTP Error 429: Too Many Requests
+2397-3358 | Nature Reviews Chemistry | Springer Science and Business Media LLC | n_items=120 no dates
+2470-5314 | Journal of Structural Integrity and Maintenance | Informa UK Limited | n_items=68 no dates
+2364-4168 | International Journal of Data Science and Analytics | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=192 p75=309.0 max=788
+2397-3722 | npj Climate and Atmospheric Science | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=117.0 p75=156.75 max=334
+2509-4696 | Journal of Analysis and Testing | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=112.0 p75=141.0 max=254
+2365-7464 | Cognitive Research: Principles and Implications | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=188.5 p75=274.5 max=629
+2397-7132 | npj 2D Materials and Applications | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=138.0 p75=181.0 max=400
+2511-2104 ERR HTTP Error 429: Too Many Requests
+2520-811X | Nanomanufacturing and Metrology | Springer Science and Business Media LLC | n_items=59 n_dated=59 | median=91 p75=117.0 max=145
+2373-8065 | npj Microgravity | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=190.5 p75=280.75 max=650
+2399-3642 | Communications Biology | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=226.5 p75=299.0 max=603
+2522-008X | Astrodynamics | Springer Science and Business Media LLC | n_items=88 n_dated=85 | median=126 p75=164.0 max=365
+2468-2039 | Sustainable Environment Research | Springer Science and Business Media LLC | n_items=58 n_dated=58 | median=320.0 p75=396.75 max=640
+2522-5820 | Nature Reviews Physics | Springer Science and Business Media LLC | n_items=120 no dates
+2396-8370 | npj Science of Food | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=142.0 p75=192.75 max=406
+2474-9508 | Geology, Ecology, and Landscapes | Informa UK Limited | n_items=47 n_dated=46 | median=456.5 p75=637.75 max=1230
+2523-3963 |  |  | n_items=0 no dates
+2397-334X | Nature Ecology &amp; Evolution | Springer Science and Business Media LLC | n_items=120 n_dated=68 | median=241.5 p75=334.0 max=535
+2524-4671 | Animal Microbiome | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=169.5 p75=228.0 max=503
+2509-9434 | Earth Systems and Environment | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=98 p75=155.0 max=424
+2397-3374 | Nature Human Behaviour | Springer Science and Business Media LLC | n_items=120 n_dated=77 | median=342 p75=459.0 max=1046
+2524-7867 | Biochar | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=153.5 p75=190.75 max=490
+2520-1158 | Nature Catalysis | Springer Science and Business Media LLC | n_items=120 n_dated=71 | median=335 p75=422.0 max=948
+2397-4648 | npj Quantum Materials | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=148.5 p75=210.0 max=527
+2524-7948 | Arthroplasty | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=102 p75=128.0 max=260
+2520-8438 | Iran Journal of Computer Science | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=154 p75=195.0 max=401
+2398-9629 | Nature Sustainability | Springer Science and Business Media LLC | n_items=120 n_dated=66 | median=293.5 p75=397.25 max=870
+2661-8001 | npj Urban Sustainability | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=202.5 p75=289.0 max=768
+2522-5812 | Nature Metabolism | Springer Science and Business Media LLC | n_items=120 n_dated=63 | median=319 p75=436.0 max=1048
+2399-3669 | Communications Chemistry | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=139.0 p75=189.5 max=388
+2661-8974 | Food Production, Processing and Nutrition | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=123 p75=169.0 max=381
+2522-8765 | Automotive Innovation | Springer Science and Business Media LLC | n_items=103 n_dated=100 | median=183.5 p75=252.75 max=391
+2473-3938 | Science and Medicine in Football | Informa UK Limited | n_items=69 n_dated=3 | median=192 p75=318.0 max=318
+2662-138X | Nature Reviews Earth &amp; Environment | Springer Science and Business Media LLC | n_items=120 no dates
+2524-4167 | Phytopathology Research | Springer Science and Business Media LLC | n_items=120 n_dated=109 | median=119 p75=163.5 max=445
+2509-9280 | European Radiology Experimental | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=148.0 p75=186.0 max=586
+2662-4044 | CABI Agriculture and Bioscience | CABI Publishing | n_items=120 n_dated=81 | median=140 p75=204.0 max=497
+2524-6372 | Environmental Microbiome | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=156 p75=211.0 max=454
+2520-1131 | Nature Electronics | Springer Science and Business Media LLC | n_items=120 n_dated=58 | median=368.0 p75=468.5 max=1278
+2662-7671 | BMC Complementary Medicine and Therapies | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=234 p75=371.0 max=969
+2524-7921 | Advanced Fiber Materials | Springer Science and Business Media LLC | n_items=120 n_dated=115 | median=92 p75=108.0 max=246
+2520-8195 | Remote Sensing in Earth Systems Sciences | Springer Science and Business Media LLC | n_items=89 n_dated=87 | median=189 p75=269.0 max=595
+2662-8465 | Nature Aging | Springer Science and Business Media LLC | n_items=120 n_dated=65 | median=298 p75=401.0 max=879
+2522-0128 | Advanced Composites and Hybrid Materials | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=111.5 p75=147.75 max=422
+2639-5940 | Environmental Pollutants and Bioavailability | Informa UK Limited | n_items=93 n_dated=92 | median=80.5 p75=108.25 max=233
+2730-5953 | AI and Ethics | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=102 p75=132.0 max=420
+2522-5839 | Nature Machine Intelligence | Springer Science and Business Media LLC | n_items=120 n_dated=85 | median=248 p75=310.0 max=687
+2661-8028 | Tungsten | Springer Science and Business Media LLC | n_items=94 n_dated=92 | median=70.0 p75=89.0 max=225
+2730-664X | Communications Medicine | Springer Science and Business Media LLC | n_items=120 n_dated=114 | median=238.0 p75=381.25 max=657
+2523-8922 | Environmental Sustainability | Springer Science and Business Media LLC | n_items=120 n_dated=111 | median=343 p75=458.0 max=689
+2662-1355 | Nature Food | Springer Science and Business Media LLC | n_items=120 n_dated=59 | median=384 p75=512.0 max=692
+2731-0450 | Stress Biology | Springer Science and Business Media LLC | n_items=113 n_dated=110 | median=125.5 p75=176.25 max=496
+2524-4906 | Quantum Machine Intelligence | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=209.0 p75=292.0 max=606
+2662-1746 | Marine Life Science &amp; Technology | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=231 p75=335.0 max=521
+2731-0809 | Discover Artificial Intelligence | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=127.0 p75=155.75 max=325
+2524-7891 | Waste Disposal &amp; Sustainable Energy | Springer Science and Business Media LLC | n_items=88 n_dated=88 | median=159.5 p75=207.75 max=408
+2662-4443 | Communications Materials | Springer Science and Business Media LLC | n_items=120 n_dated=115 | median=158 p75=207.0 max=446
+2731-3786 | Journal of Anesthesia, Analgesia and Critical Care | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=70.0 p75=102.5 max=232
+2639-5908 | Ecosystems and People | Informa UK Limited | n_items=78 n_dated=75 | median=248 p75=346.0 max=647
+2662-8457 | Nature Computational Science | Springer Science and Business Media LLC | n_items=120 n_dated=59 | median=260 p75=326.0 max=547
+2731-6068 | npj Aging | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=139.5 p75=194.75 max=333
+2661-801X | BMC Chemistry | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=103.0 p75=177.5 max=549
+2730-583X | Phenomics | Springer Science and Business Media LLC | n_items=104 n_dated=103 | median=216 p75=275.0 max=889
+2731-6092 | Nature Reviews Bioengineering | Springer Science and Business Media LLC | n_items=120 no dates
+2662-1347 | Nature Cancer | Springer Science and Business Media LLC | n_items=120 n_dated=65 | median=325 p75=461.0 max=737
+2730-647X | Discover Water | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=115.0 p75=154.5 max=304
+2731-9229 | Discover Nano | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=141.0 p75=185.0 max=268
+2662-1738 | aBIOTECH | Elsevier BV | n_items=120 no dates
+2730-7727 | Discover Materials | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=124.0 p75=159.0 max=422
+2754-6993 | Schizophrenia | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=114.5 p75=147.0 max=358
+2662-4435 | Communications Earth &amp; Environment | Springer Science and Business Media LLC | n_items=120 n_dated=113 | median=186 p75=252.0 max=607
+2731-0590 ERR HTTP Error 429: Too Many Requests
+2731-3654 ERR HTTP Error 429: Too Many Requests
+2731-4812 | Biomedical Materials &amp; Devices | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=109 p75=145.0 max=316
+2948-1546 ERR HTTP Error 429: Too Many Requests
+3004-9261 | Discover Applied Sciences | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=122.0 p75=161.0 max=245
+2662-8449 | Nature Reviews Methods Primers | Springer Science and Business Media LLC | n_items=120 no dates
+2731-6084 | Nature Water | Springer Science and Business Media LLC | n_items=120 n_dated=62 | median=188.5 p75=294.75 max=821
+2662-8651 | Molecular Biomedicine | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=227.0 p75=284.5 max=634
+2731-913X | BMC Global and Public Health | Springer Science and Business Media LLC | n_items=120 n_dated=110 | median=180.0 p75=256.5 max=532
+2730-6151 | ISME Communications | Oxford University Press (OUP) | n_items=120 no dates
+2731-9598 | Discover Agriculture | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=164.0 p75=219.25 max=475
+2730-7239 | Discover Internet of Things | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=138.5 p75=179.75 max=349
+2948-1201 | Nature Reviews Electrical Engineering | Springer Science and Business Media LLC | n_items=120 no dates
+2731-0582 | Nature Synthesis | Springer Science and Business Media LLC | n_items=120 n_dated=71 | median=226 p75=285.0 max=583
+3004-8958 | Journal of Materials Science: Materials in Engineering | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=111 p75=160.0 max=367
+2731-3395 | Communications Engineering | Springer Science and Business Media LLC | n_items=120 n_dated=114 | median=214.5 p75=292.5 max=950
+2731-4286 | Discover Food | Springer Science and Business Media LLC | n_items=120 n_dated=118 | median=151.5 p75=213.0 max=381
+2731-6076 | Nature Mental Health | Springer Science and Business Media LLC | n_items=120 n_dated=78 | median=254.0 p75=315.25 max=650
+2731-9121 | Communications Psychology | Springer Science and Business Media LLC | n_items=120 n_dated=116 | median=192.0 p75=255.0 max=916
+2731-9431 | Discover Environment | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=141 p75=196.0 max=356
+2948-1198 | Nature Chemical Engineering | Springer Science and Business Media LLC | n_items=120 n_dated=31 | median=307 p75=376.0 max=757
+3004-8311 | Discover Cities | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=176 p75=222.0 max=319
+3005-0731 | Interactions | Springer Science and Business Media LLC | n_items=120 n_dated=111 | median=69 p75=110.0 max=384

@@ -39,5 +39,6 @@ def main():
             print(f'{issn} | {jname} | {pub} | n_items={len(items)} n_dated={len(d)} | median={statistics.median(d)} p75={q[2]} max={max(d)}')
         else:
             print(f'{issn} | {jname} | {pub} | n_items={len(items)} no dates')
-        time.sleep(2.5)
-main()
+        time.sleep(4)
+if __name__ == '__main__':
+    main()

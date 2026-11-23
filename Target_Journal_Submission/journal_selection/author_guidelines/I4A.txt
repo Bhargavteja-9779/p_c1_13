@@ -1,0 +1,1354 @@
+Contents
+
+JOURNAL INFORMATION ...................................................................................................................... 3
+PRESUBMISSION CHECKLIST ................................................................................................................. 3
+ Information Checklist .......................................................................................................................... 3
+ File Checklist ....................................................................................................................................... 5
+PRESUBMISSION ENQUIRIES ................................................................................................................ 5
+ARTICLE TYPES ...................................................................................................................................... 5
+ Original Research/Brief Reports ......................................................................................................... 5
+ Reviews ............................................................................................................................................... 6
+ Case Series .......................................................................................................................................... 6
+ Case Reports ....................................................................................................................................... 7
+ Commentaries..................................................................................................................................... 7
+ Patient and Physician Perspectives..................................................................................................... 7
+ Podcast Articles ................................................................................................................................... 8
+ Trial Designs/Study Protocols ............................................................................................................. 8
+ Practical Approaches........................................................................................................................... 9
+ Summary of Research Articles (SRAs) ................................................................................................. 9
+ Guidelines ......................................................................................................................................... 11
+ Letters to the Editor .......................................................................................................................... 11
+TOPICAL COLLECTIONS AND SUPPLEMENTS ...................................................................................... 11
+DIGITAL FEATURES.............................................................................................................................. 12
+PREPRINTS .......................................................................................................................................... 12
+OPEN ACCESS AND COPYRIGHT.......................................................................................................... 12
+FEES .................................................................................................................................................... 13
+MANUSCRIPT STRUCTURE .................................................................................................................. 13
+ General.............................................................................................................................................. 13
+ Title Page........................................................................................................................................... 14
+ Abstract ............................................................................................................................................. 15
+ Plain Language Summaries (Optional) .............................................................................................. 15
+ Keywords........................................................................................................................................... 16
+ Key Summary Points ......................................................................................................................... 16
+ Introduction ...................................................................................................................................... 16
+ Methods ............................................................................................................................................ 17
+
+
+1
+ Results ............................................................................................................................................... 17
+ Discussion.......................................................................................................................................... 17
+ Conclusion ......................................................................................................................................... 18
+ Acknowledgements........................................................................................................................... 18
+    Funding ......................................................................................................................................... 18
+    Medical Writing, Editorial, and Other Assistance ......................................................................... 18
+    Authorship .................................................................................................................................... 19
+    Author Contributions .................................................................................................................... 19
+    Conflict of Interest ........................................................................................................................ 20
+    Ethics/Ethical Approval ................................................................................................................. 20
+    Data Availability ............................................................................................................................ 21
+    Thanking Patient Participant(s) ..................................................................................................... 22
+    Patient Involvement...................................................................................................................... 22
+ References ........................................................................................................................................ 22
+ Figures and Illustrations .................................................................................................................... 23
+ Tables ................................................................................................................................................ 23
+ Supplementary Material ................................................................................................................... 24
+Ethical Responsibilities of Authors ..................................................................................................... 24
+MANUSCRIPT SUBMISSION ................................................................................................................ 26
+ Editorial Manager Sites ..................................................................................................................... 26
+AFTER SUBMISSION ............................................................................................................................ 27
+ Peer Review ...................................................................................................................................... 27
+ Copyediting, Typesetting, and Proofing............................................................................................ 27
+ Publication ........................................................................................................................................ 28
+ Press Releases ................................................................................................................................... 28
+REPRINTS AND E-PRINTS .................................................................................................................... 28
+CONTACT US ....................................................................................................................................... 28
+
+
+
+
+2
+JOURNAL INFORMATION
+
+For more information on individual Adis Rapid+ journals including aims and scope, publication fees,
+contact information, and Editorial and Advisory board members, please visit the journal websites.
+
+Advances in Therapy
+Cardiology and Therapy
+Dermatology and Therapy
+Diabetes Therapy
+Infectious Diseases and Therapy
+Neurology and Therapy
+Oncology and Therapy
+Ophthalmology and Therapy
+Pain and Therapy
+Pulmonary Therapy
+Rheumatology and Therapy
+
+Please note that there is a Rapid Service Fee associated with publication across the entire Adis
+Rapid+ journals portfolio. This is a mandatory fee that must be paid upon article acceptance. For
+more information on compulsory fees, please see each journal website, using the links above.
+Information regarding fees can then be found under the “Aims and Scopes” heading on each of the
+journal websites.
+
+PRESUBMISSION CHECKLIST
+
+Manuscripts should be submitted through the Editorial Manager online submission system. Please
+ensure that your submission meets our editorial policies by following the below instructions. Prior
+to submission, please use the below checklists to make sure you have the necessary information
+and files that are required to submit your manuscript. We cannot proceed with the submission
+until we receive all of the necessary requirements outlined below.
+
+Further information on how to submit your article can be found here.
+
+Information Checklist
+
+The below details should be given in the appropriate fields in the online submission system:
+
+✔ Article type (see here);
+✔ Article title;
+✔ Author information, including affiliations, and email addresses for all authors;
+✔ Abstract (including the trial registration number, if applicable);
+✔ Three to ten keywords;
+✔ Confirmation that your submission complies with the following requirements:
+     o The manuscript is not being considered for publication by another journal, nor will it be
+         submitted elsewhere while under consideration by this journal;
+
+
+3
+        o   The manuscript has not been published previously (partly or in full);
+        o   No tables/figures/images/other material that infringe the copyright of another
+            publisher/individual are included in the manuscript (or if there are such items included
+            in the manuscript, permission to reproduce [both in print and online for the lifetime of
+            product] has been sought and received for publication in this manuscript);
+        o   All co-authors are aware of the submission to this journal, and agree to allow the
+            corresponding author to serve as the primary correspondent with the editorial office
+            and to review and sign off on the final proofs for publication;
+        o   The authors whose names appear on the submission have contributed sufficiently to
+            the manuscript (concept and planning of the work described; acquisition, analysis and
+            interpretation of the data; drafting and/or critical revision of the manuscript; and
+            approved the final submitted version of the manuscript) and, therefore, share
+            collective responsibility and accountability for the manuscript;
+        o   No deserving authors have been omitted from the authorship list;
+        o   All persons who made substantial contributions to the manuscript but who do not fulfil
+            the authorship criteria are listed with their specific contributions in the
+            Acknowledgements section of the manuscript, and all persons named in the
+            Acknowledgements section have given written permission to be named in the
+            manuscript.
+✔ Additional information (failure to provide this information at submission may lead to delays in
+  processing):
+     o Name, email, postal address, telephone number, and VAT number (where applicable; for
+         registered EU companies) for financial correspondence;
+     o Details of and reasons for any specific publication deadline;
+     o Information on where you heard about the journal;
+     o The email address of anyone, other than the corresponding author, who should receive
+         manuscript correspondence throughout the publication process;
+     o Details of any digital features;
+     o Details of the ethics statements applicable to the study;
+     o   If the trial was registered, please include details of the trial registration including a
+         clinical trials number, beneath the abstract (e.g. Trial registration: ClinicalTrials.gov
+         identifier, NCT12345678). For trials that were registered retrospectively, please also
+         include the date of registration and the words “retrospectively registered” beneath the
+         abstract. We strongly encourage prospective registration of clinical trials.
+     o Advances in Therapy ONLY: Whether you require the article to be published open access;
+         all other journals in the portfolio are fully open access.
+✔ Details (name, affiliation, and email address) of up to three suggested reviewers for your
+  submission (optional). Recommended reviewers should not be from any of the authors'
+  affiliations or institutions or have any potential conflicts of interests that may affect their ability
+  to provide an unbiased review of the article. Please note that, although your help is
+  appreciated and may speed up the selection of appropriate reviewers, the Editorial Team
+  reserves the right to select reviewers.
+
+
+
+
+4
+File Checklist
+
+The following files are needed during the submission process. Each item in the checklist should be
+saved as a separate file.
+
+✔ Manuscript including title page, abstract, keywords, 4-5 key summary points, main text,
+  acknowledgements, references, tables, figure legends, and line numbers;
+✔ Figures (each figure should be submitted as a separate file either as a JPG or TIFF file);
+✔ Any supplementary material (optional);
+✔ Any digital features (optional).
+
+PRESUBMISSION ENQUIRIES
+
+Please contact the journal’s Editorial Team to address any queries you may have prior to, during, or
+after manuscript submission. In particular, contact the Editorial Team regarding enquiries for
+manuscripts with specific, important publication deadlines, or in instances where you are unsure of
+a manuscript’s suitability for the journal.
+
+For enquiries specifically related to one of the Adis Rapid+ journals, you are also welcome to
+contact the Managing Editor directly (see links to journal-specific websites at the beginning of this
+document).
+
+ARTICLE TYPES
+
+The journals publish a variety of article types. All article types described below are subject to peer
+review.
+
+Original Research/Brief Reports
+
+We recommend that manuscripts reporting on original research conform to the CONSORT
+guidelines, whenever possible, although this is not mandatory. Research articles are welcome
+across the clinical research pathway (including post-marketing research, observational studies, and
+health economics and outcomes research).
+
+As a guide, Original Research articles should be around, but not limited to, 4000 words.
+
+Brief Reports describing a clinical study, or new insights into clinical management, diagnosis, or
+treatment are welcome. Brief Reports describe studies that are smaller in scale and patient
+numbers, and may report limited pilot data that warrant the need for further investigation.
+Authors are encouraged to use these sections when submitting the manuscript: Introduction
+(including the research hypothesis), Methods, Results, Discussion, and Conclusion. As a guide, Brief
+Reports should be around, but not limited to, 2000-3000 words.
+
+The abstract and main text of all Original Research articles and Brief Reports should be structured
+as follows: Introduction (including the research hypothesis), Methods, Results, Conclusion.
+
+
+
+5
+For all studies involving human participants, we encourage all authors to follow the Sex and
+Gender Equity in Research (SAGER) guidelines, and to include sex and gender considerations where
+relevant. Authors should use the terms sex (biological attribute) and gender (shaped by social and
+cultural circumstances) carefully to prevent confusion between both terms. Article titles and/or
+abstracts should indicate what sex(es) the study applies to. Authors should also describe in the
+background, whether sex and/or gender differences may be expected; report how sex and/or
+gender were accounted for in the design of the study; provide disaggregated data by sex and/or
+gender, where appropriate; and discuss respective results. If a sex and/or gender analysis was not
+conducted, the rationale should be given in the Discussion. We recommend that authors consult
+the full guidelines before submission.
+
+If reporting findings from a disproportionality analysis in an individual case safety reports database,
+please follow the READUS-PV guidelines.
+
+Reviews
+
+If submitting a Review, please indicate in the title the format of the Review (e.g. systematic,
+narrative). There is no word limit for Reviews submitted to the Adis Rapid+ journals.
+
+Narrative Review
+Provides an authoritative, balanced, comprehensive, fully referenced and critical review of the
+literature.
+
+Systemic Review
+Collates all empirical evidence that fits pre-specified eligibility criteria to answer a specific research
+question. It uses explicit, systematic methods that are selected with a view to minimizing bias, thus
+providing reliable findings from which conclusions can be drawn and decisions made. Please follow
+the reporting guidelines of PRISMA.
+
+Case Series
+
+Manuscripts describing a number of interesting, unusual, or novel individual medical cases focusing
+on the same indication are welcome in the form of a Case Series. Manuscripts are encouraged to
+follow the CARE guidelines for reporting cases, although this is not mandatory. Authors should
+make clear the importance of their particular cases, summarise previous research in the condition,
+explain the implications for future therapy, and how the Case Series adds to the medical literature.
+Manuscripts must meet at least one of the following criteria to be eligible for consideration:
+
+    ●   Unreported or unusual side effects or adverse interactions involving medications;
+    ●   Unexpected or unusual presentations of a disease;
+    ●   New associations or variations in disease processes;
+    ●   Presentations, diagnoses, and/or management of new and emerging diseases;
+    ●   An unexpected association between diseases or symptoms;
+    ●   An unexpected event in the course of observing or treating a patient;
+    ●   Findings that shed new light on the possible pathogenesis of a disease or an adverse effect.
+
+
+
+
+6
+Case Series should have the following structure: Abstract; Introduction (including a summary of
+why the cases are unique/important with reference to relevant medical literature); Case
+presentations (including patient information, clinical findings, timeline, diagnostic assessment,
+therapeutic intervention, follow-up, and outcomes, etc.); Discussion; Conclusion(s) (including the
+primary “take-away” lessons from the case series); Acknowledgements; References. As a guide,
+case series should be around, but not limited to, 3000 words.
+
+Consent to publish must be obtained from the patients or the patients’ parents, relatives,
+guardian, etc. A consent form can be requested from the Editorial Team. Note: We do not require
+this form as part of the submission, but it must be declared in the manuscript that written
+informed consent for the publication of the patients’ clinical details was obtained and that a copy
+of the consent form is available for review by the Editor.
+
+Case Reports
+
+Please note that Advances in Therapy does not accept Case Reports.
+
+All other Adis Rapid+ journals will consider unique individual Case Reports but these should meet
+the same eligibility criteria and ethical requirements regarding consent given above for Case Series.
+Manuscripts are encouraged to follow the CARE guidelines for reporting cases.
+
+As a guide, Case Reports should be around, but not limited to 2000 words.
+
+Commentaries
+
+Commentary articles are designed to allow an author to put a particular topic/research into their
+own perspective, drawing on their own experiences and insights, and backing up their arguments
+with existing evidence. There is no mandatory structure and authors are encouraged to structure
+their Commentary in a way that best suits their voice. As a guide, Commentaries should be around,
+but not limited to, 2000-3000 words.
+
+Patient and Physician Perspectives
+
+These commentary-style articles are designed to highlight patient experiences and raise healthcare
+professional awareness of the patient perspective and best practices for patient-centricity. The first
+half of the piece is written by a patient, describing their experience of living with a particular
+condition. For example, day-to-day experiences, the journey to a correct diagnosis, response to
+treatment, psychosocial aspects of the condition, side effect management, quality of life issues, or
+anything that is important and relevant to them. This section may also be written (or co-written)
+by the carer or guardian of the patient. The second half of the article is written by an expert
+physician or any other healthcare practitioner(s). This would usually be the patient’s own treating
+physician; however, if this is not possible, another healthcare practitioner who is familiar with the
+condition could write the accompanying perspective. This section may also be written (or co-
+written) by other healthcare professionals and should be underpinned with evidence referenced
+from available literature. As indicated above, these articles can include multiple perspectives and
+are not limited to patients and physicians. As a guide, Patient and Physician Perspectives should be
+around, but not limited to 2000-3000 words.
+
+
+7
+Physicians should discuss with their patients the potential consequences of identifiable personal
+and medical information being published open access, so that patients can choose in a fully
+informed way whether to co-author in an open access publication. If requested,
+patients/caregivers/parents can choose to remain anonymous.
+
+An example of a Patient and Physician Perspective article can be found below:
+https://link.springer.com/article/10.1007/s40487-020-00132-2
+
+‘Commentary’ should be selected as the article type at submission.
+
+
+Podcast Articles
+
+Podcast articles follow a commentary style of publication, and typically feature a Q&A expert
+discussion with the author (or authors) around a topic of clinical interest, such as clinical data or
+real-life expert experience and opinions.
+
+Adis Podcasts are published on SpringerLink. If open access, the podcast audio will also be
+published on Figshare and a number of popular podcast platforms (including Apple, Spotify,
+Deezer, and GooglePlay). Podcast articles are also indexed on PubMed.
+
+The SpringerLink-hosted version consists of the audio podcast, along with the verbatim transcript.
+This transcript is typeset and published as a regular article within the journal with a DOI. Abstracts
+for Podcast articles are optional.
+
+The journal strongly encourages authors to contact the relevant journal with a presubmission
+enquiry before initiating a Podcast article, and to read the Adis ”Guidelines for Digital Features and
+Plain Language Summaries”, which can be found under the submission guidelines on the relevant
+journal’s homepage. Please note that podcast articles carry an additional processing fee.
+
+An example of a Podcast article is provided below:
+https://link.springer.com/article/10.1007/s40120-021-00266-z
+
+Trial Designs/Study Protocols
+
+Study Protocols for any proposed or ongoing trials may also be submitted. All protocols will
+undergo peer review prior to publication. It is recommended that the article be structured as
+follows: Abstract (summarising the introduction [background/objectives], methods, planned
+outcomes); Introduction (background, objectives, trial design); Methods (study design, sample
+selection, measurements, planned outcomes, data collection, data analysis); Strengths and
+Limitations; Ethics; and Dissemination. For further information on protocol reporting, please read
+the SPIRIT statement. As a guide, Study Protocols should be around, but not limited to, 2000-3000
+words.
+
+Study Protocols are not only limited to clinical trials; they can also apply to real-
+world/observational studies or other types of future planned research.
+
+8
+Publication of original research relating to study protocols that have already been published in an
+Adis Rapid+ journal is entitled to a 20% discount on the journal’s Rapid Service Fee. This should be
+highlighted in your cover letter when submitting.
+
+Practical Approaches
+
+Practical Approach articles intend to provide innovative and novel evidence-based practical
+guidance on difficult clinical management issues. Each article aims to provide a succinct and
+accessible overview of a key topic for the broad range of healthcare professionals working with
+patients, including nurses and primary care physicians, and encompassing engaged patients and
+their caregivers where appropriate. The objective of these articles is to concisely review the most
+recent evidence relating to a clinical care situation and place this into a practical context. The use
+of flow charts, demonstrative videos, and visual material is encouraged in these articles to help
+readers digest the key information. As a guide, Practical Approach articles should be around, but
+not limited to, 2000 words.
+
+
+Summary of Research Articles (SRAs)
+
+A Summary of Research Article (SRA) is a standalone summary of a source article previously
+published in an Adis journal, or in a journal from another publisher. The SRA allows the key
+information to be understood more quickly and by a wider audience than that intended for the
+source article. It should provide a balanced and accurate representation of the study
+findings/source article: nothing key from the parent article should be left out and new content not
+previously included in the source article should not be added in.
+
+SRAs must be a maximum of 4 PDF pages (more detail provided in ‘Word count and formatting’
+section). This shorter format is essential to better engage a wider, less-specialised audience of
+healthcare professionals with the scientific content and implications of the source article,
+considering their limited familiarity with the subject area and time constraints.
+
+All Adis journals can consider SRAs for publication. The SRA will usually be based on an original
+research source article; SRAs based on other source article types will be considered on a case-by-
+case basis.
+
+We strongly encourage pre-submission enquiries for SRAs: please contact us with information
+regarding the source article, the proposed authors and target journal.
+
+Intended readership: SRAs should be written for a readership that is less specialised than that
+intended for the source article. They are primarily intended for healthcare professionals (HCPs)
+who are non-specialists in the specific subject area of the source article, but they may also be of
+interest to other readers looking for a concise and accessible summary in plain language. Jargon,
+
+
+
+
+9
+    abbreviations, data-heavy tables and complex graphs should be avoided, while medical/scientific
+    precision should be maintained.1
+
+    Authorship: SRAs submitted to the Adis journals for consideration must include at least one author
+    from the source publication.2 Other authors not previously involved in the primary publication are
+    permitted but must meet ICMJE criteria for authorship.
+
+    Article details:
+         • SRAs can either be graphic-based and formatted as a single figure with an introductory
+             sentence linking to the figure, or text-based with figures/tables.
+         • The title of the article must include the term “Summary of Research:” as the prefix,
+             followed by the title of the source article being summarised.
+        • There should be a brief abstract which includes a statement explaining that this is a
+             summary of the source article.
+        • The first sentence in the main text should also state that this is a summary of the source
+             article and include a citation to the source article. If this is a graphic-based summary, this
+             sentence must conclude with “figure 1” (where figure 1 is the graphic summary).
+        • The source publication should be the primary (and usually only) reference.
+        • The SRA should not recycle segments of text from the source article. SRAs will be screened
+             with plagiarism software in the same way as any other article type.
+        • SRAs should not include a Plain Language Summary abstract, as the SRA itself is a summary
+             in plain language.
+        • Other article information requirements are as for a standard article in the journal,
+             including Acknowledgements, Author information and Ethics declarations. Any funding or
+             editorial assistance for the SRA should be declared. Further information on these
+             requirements may be found in the relevant journal’s Submission Guidelines.
+        • For a graphic-based SRA, the Adis logo and Peer Reviewed stamp should be included. This
+             can be requested from the journal team prior to submission or can be added in during
+             production.
+        • Colour combinations should enhance reader accessibility and not detract from the content.
+        • ‘Commentary’ should be selected as the article type at submission. This will be changed to
+             ‘Summary of Research’ during production.
+        • The final complete article should be a maximum of 4 published pages in length.
+        • SRAs published open access are published under CC BY-NC copyright.
+
+    Permissions: We recommend that authors contact the publisher of the source article at the outset
+    to seek permission to publish the SRA in an Adis journal. Authors wishing to include figures and
+    tables that have previously been published are required to obtain the necessary permissions from
+    the copyright owner(s), and to confirm that the necessary permissions have been granted when
+
+
+
+     1
+     Examples:
+    “Stomach” or “Abdomen” (not “tummy”)
+    Not necessary to define common scientific terms such as “placebo” “Initial light sleep stage” (not “stage N1
+sleep”)
+
+2
+ Adis also publishes Adis-authored SRAs, selected and developed by the Editorial staff of Drugs & Therapy
+Perspectives: https://www.springer.com/journal/40267.
+Please contact adisjournals@springernature.com copying Clare Cook (clare.cook@springernature.com) for
+further information.
+
+    10
+submitting the SRA. All material received without such evidence will be assumed to have been
+originated by the authors.
+
+Post publication: All SRAs are published on SpringerLink and in a standard issue of the journal. In
+addition, SRAs are also included within a collection of all SRAs available on SpringerLink.
+
+
+Guidelines
+
+Guidelines provide a comprehensive guide to the optimum management of a disease, disorder, or
+situation which highlight clinically relevant considerations and recommendations. These articles
+may be affiliated with societies but this is not a requirement. If guidelines are from a particular
+society, this should be highlighted in the article title. For Guidelines, we also ask that the following
+disclaimer is included within the acknowledgements section of the article: “Springer Healthcare is
+not responsible for the validity of guidelines it publishes.”. As a guide, Guidelines should be around,
+but not limited to, 10,000-15,000 words.
+
+Letters to the Editor
+
+Letters will be considered on a case-by-case basis and reviewed by the journal’s Editorial Board.
+Letters should comment on a recently published article in the journal and are limited to one
+comment and one response by the authors of the original paper, should they wish to respond. As a
+guide, Letters to the Editor should be around, but not limited to, 1000 words.
+
+
+
+TOPICAL COLLECTIONS AND SUPPLEMENTS
+
+Adis Rapid+ journals welcome supplements. Material appropriate for supplements includes:
+sponsored meeting proceedings, roundtable discussions, workshop reports, case series, and
+collections of articles on the same topic.
+
+The journals also support topical collections, which aim to collate articles on a certain topic, making
+them easily accessible to interested readers. Articles in a topical collection are published in a
+standard journal issue; however, they are also accessible through a dedicated topical collection
+page on the website.
+
+Proposals for supplements and topical collections are welcome and should be addressed to journal
+specific Managing Editors (see list of journal specific links at the beginning of this document).
+
+The peer review process for special/guest-edited issues and topical collections is the same as the
+peer review process of the journal in general. Additionally, if the guest editor(s) authors an article
+in their special issue/ collection, they will not handle the peer review process.
+
+
+
+
+11
+DIGITAL FEATURES
+
+Adis journals can publish a range of peer reviewed digital features alongside articles, including
+animated abstracts, video abstracts (talking heads), slide decks, audio slides, instructional videos,
+infographics, podcasts/audio discussions, and animations. These features are designed to increase
+visibility, readership, and the educational value of the manuscript content. Digital features must
+provide an accurate representation of the article. For further information about digital features,
+please contact the journal editor (see “Contact the Journal” for email address), and see the
+“Guidelines for Digital Features and Plain Language Summaries” document via the journal website.
+
+PREPRINTS
+
+We encourage posting of preprints of primary research manuscripts on preprint servers, authors’
+or institutional websites, and open communications between researchers whether on community
+preprint servers or preprint commenting platforms. Posting of preprints is not considered prior
+publication and will not jeopardize consideration in our journals. Authors should disclose details of
+preprint posting during the submission process or at any other point during consideration in one of
+our journals. Once the manuscript is published, it is the author’s responsibility to ensure that the
+preprint record is updated with a publication reference, including the DOI and a URL link to the
+published version of the article on the journal website.
+
+Please see here for further information on preprint sharing.
+
+Translation Services
+
+Authors should notify the Editorial Office at the time of submission if any part of the manuscript,
+supplementary material, or supporting documentation has been translated, or if translation
+services will be required during the publication process.
+Please note that additional charges will apply for the proofreading of translated content (to or
+from English) and for full translation services. To ensure consistency and quality, all translation and
+translation-proofreading services must be undertaken through the journal's approved translation
+agency. Translations arranged through alternative providers cannot be accepted.
+
+Failure to disclose the use of translated materials at submission may result in delays during
+editorial assessment and production.
+
+
+
+OPEN ACCESS AND COPYRIGHT
+
+All Adis Rapid+ journals are fully open access with the exception of Advances in Therapy, which is
+Open Choice. Advances in Therapy offers an open access option at a flat fee (in addition to the
+mandatory Rapid Service Fee, which is a fixed fee).
+
+When authors publish open access with Adis Rapid+, their article is published under the Creative
+Commons Attribution Non-Commercial (CC BY-NC) License 4.0. This means that anyone can read,
+redistribute, and reuse material from the articles for free, as long as they cite the authors of the
+
+12
+original work properly, provide a link to the license, and indicate if any changes were made. The
+license does not, however, permit use of the material for commercial purposes.
+
+Under the CC-BY-NC license, the non-commercial copyright is retained by the authors. If there are
+instances where the Rights Holder is not the Author(s) themselves (i.e. Work for Hire), please notify
+us upon submission.
+
+For Advances in Therapy articles that are not published open access, the copyright belongs to the
+author(s), under exclusive license to Springer Healthcare Ltd., part of Springer Nature.
+
+FEES
+
+For all Adis Rapid+ journals, authors are required to pay the mandatory Rapid Service Fee upon
+article acceptance. As Advances in Therapy is Open Choice, authors opting for open access
+publication in this journal will be required to pay an additional open access fee. The open access
+fee will be issued through a separate invoice. For full pricing information, please visit the journal
+websites.
+
+The journal will consider fee discounts and waivers for developing countries and this is decided on
+a case-by-case basis. If you would like to request a discount or waiver please do so either ahead of
+submission or at the very start of the submission process. Requests made after this stage will not
+be considered.
+
+MANUSCRIPT STRUCTURE
+
+All articles should follow the guidelines below for the Title page, Abstract, Keywords, Key summary
+points, Introduction, Discussion, Conclusion, Acknowledgements, References, Figures, Tables, and
+Supplementary material. Original Research articles should also follow the guidelines for Methods
+and Results. Abstracts and Key summary points are not mandatory for Letters, Commentaries and
+Editorials and authors can use their discretion for the structure and headings used in these article
+types. Submissions are encouraged to conform to the standards outlined in the
+“Recommendations for the Conduct, Reporting, Editing, and Publication of Scholarly Work in
+Medical Journals,” prepared by the ICMJE.
+
+General
+
+Line Numbers: To facilitate the review process, we request that authors submit a line-numbered
+version of their manuscript.
+
+Drug Names: When drugs are mentioned, the international (generic) name should be used. If the
+proprietary name is required, for example to distinguish between formulations, the manufacturer
+should be stated in full after the first mention of the proprietary name and the unregistered (™) or
+registered (®) trademark symbol should be used. The symbol does not need to be used subsequent
+to the first mention. The source of any new and experimental preparation should also be given.
+
+
+
+
+13
+Spelling, Abbreviations, Nomenclature, and Units: Authors may choose US or UK English spelling.
+However, this must be consistent throughout the manuscript. All standard and nonstandard
+abbreviations in the text must be defined at first mention and used consistently thereafter.
+Symbols should not be used unless first explained in the text (reference guide: Units, Symbols and
+Abbreviations, Royal Society of Medicine, London). Highly sophisticated, specialist terms should
+either be defined or avoided. Intelligibility is a major aim of the journals. For substances, materials,
+and instruments, the correct designation and the manufacturer’s name should be given. The city
+and country of the manufacturer should also be included. For units of measure (International
+System of Units) SI units should be used throughout, except where non-SI units are more common.
+
+Title Page
+
+The title page should include the following elements:
+
+  ●   Title: Should capture the essence of the manuscript in no more than 20 words (within
+      reason). The title should be specific enough for electronic retrieval and searches. Where
+      relevant, the title should include the drug name, indication, and study design. If appropriate,
+      the country- or population-specific (e.g. pediatric) nature of the study should also be clear
+      from the title. Where possible use generic drug names.
+
+  ●   Author Details: The name(s) of all authors and their institutional affiliation(s) and
+      address(es). It is recommended that authors adhere to the guidelines for authorship that are
+      applicable in their specific research field, but in the absence of specific guidelines, authors
+      are encouraged to follow the ICMJE authorship guidelines when considering authorship. All
+      contributors who do not meet the selected criteria for authorship should be listed in the
+      acknowledgements at the end of the manuscript.
+
+  ●   Study Groups: If a manuscript has been produced on behalf of a study group, this should be
+      indicated by including the following text at the end of the author list: ‘on behalf of [INSERT
+      NAME] study group’. We then encourage the list of investigators to be included on the title
+      page of the manuscript. This way the investigator’s names will be included as collaborators
+      on PubMed. If preferred, however, the list of investigators can be included in the
+      Acknowledgments or Supplementary Material. When naming individual investigators or
+      members of a study group (who are not authors on the paper), please ensure you have
+      permission from each individual to include their full name on the publication.
+
+  ●   Correspondence Details: At least one author should be designated as the corresponding
+      author and is responsible for the submission of the article. Their email address and full
+      correspondence address should be provided.
+
+  ●   ORCID iDs: Adis also encourages the use of ORCID iDs, which can be inputted when
+      uploading a submission. To ensure that ORCID iDs are published in articles, authors should
+      ensure that these are listed on the title page of the manuscript for each author (where
+      required).
+
+
+
+
+14
+  ●   Prior Presentation: Presentation at scientific meetings (in the form of abstracts or posters)
+      does not constitute full publication. However, if any part of the manuscript has been
+      previously shared, please highlight that this manuscript is based on work that has been
+      previously presented. The statement should include details of where the contents was
+      presented, (e.g. conference) including relevant dates and location.
+
+
+Abstract
+
+Each paper must include an abstract of up to 300 words that is understandable to the journal’s
+readership without referring to the main text. Abstracts are mandatory for all article types except
+for Letters, Commentaries, and Editorials. For Original Research and Brief Reports, the abstract
+should be presented in a structured format (i.e. Introduction, Methods, Results, Conclusion).
+Abstracts for Review articles do not need to be structured. Abstracts must reflect the content of
+the article accurately. The abstract should not cite any references. Readers should be able to
+understand why the study was done, the question asked, and how the study was carried out. The
+results must contain sufficient data for readers to evaluate the credibility of the conclusion. Not all
+of the data from the methods and results sections need to be presented. The conclusion should be
+an inference, not a summary. The trial registration number, if available, should be provided at the
+end of the abstract.
+
+Plain Language Summaries (Optional)
+
+Authors are welcome to submit a plain language summary (PLS) with their manuscript. A PLS is an
+effective tool to summarise your paper, extending the reach and impact that the paper can have,
+and making it accessible to a wider audience. The aim of the PLS is to assist in understanding the
+scientific content and overall implications of the manuscript. The summary should be aimed at
+non-specialists in the field, including members of the public and non-academics.
+
+To be indexed on PubMed, the PLS should be no more than 250 words, and should be placed
+below the abstract.
+
+  ●   The summary should be based on the abstract of the paper and should be written in an
+      easy-to-understand manner, using accessible language that does not patronise the reader;
+  ●   Sentences should be written in the active voice, rather than the passive voice, and should be
+      short, clear sentences broken up into relevant sections;
+  ●   Keywords from the abstract should be used and defined where needed.
+  ●   Jargon should be avoided other than where absolutely necessary. In which case, it should be
+      explained in full on first use;
+  ●   Abbreviations should be avoided.
+
+Two examples are provided below:
+   • https://link.springer.com/article/10.1007%2Fs40271-020-00460-5
+   • https://link.springer.com/article/10.1007%2Fs12325-020-01377-z
+
+
+
+
+15
+Non-standard PLS, such as those longer than 250 words, graphical PLS, slide sets, or video PLS can
+also be accommodated. For more information on the different types of PLS, please read the
+“Author Information - Guidelines for Digital Features and Plain Language Summaries” document
+available to download on the journal website (under “Submission Guidelines”).
+
+Keywords
+
+A list of 3–10 keywords must be given in alphabetical order after the abstract characterising the
+scope of the paper. These should include any drug names and indication(s) where appropriate.
+
+Key Summary Points
+
+Authors are required to provide 4–5 single-sentence bullet points, below the abstract, summarising
+their paper. Authors should use the following structure for Original Research articles:
+
+Why carry out this study?
+  ● Very brief background leading to the study, including for example disease population,
+      economic burden, and/or unmet need. (1–2 bullet points)
+  ● What did the study ask?/What was the hypothesis of the study? (1 bullet point)
+What was learned from the study?
+ ● What were the study outcomes/conclusions? (data) (1 bullet point)
+ ● What has been learned from the study? This can be any outcome even if it contradicts the
+     initial study hypothesis. If the findings were negative, neutral or purely confirmatory, how
+     might this affect research and/or treatment in future? (1–2 bullet points)
+
+For other article types (e.g. Reviews), 4–5 single-sentence bullet points summarizing the key
+messages from the paper should be provided. For Case Reports/Case Series, authors should state
+what is unique about the case and what it will add to the current literature. If you are unsure what
+should be included in the key summary points please contact the journal’s Editorial Team for more
+information.
+
+The key summary points will sit online alongside your article, and are intended to explain the value
+and relevance of your research. The summary points will undergo peer review with your article and
+so must purely reflect the content within the article.
+
+It is mandatory to provide key summary points for all articles types except for Letters,
+Commentaries, and Editorials. Not providing them will delay your submission being sent for peer
+review.
+
+Introduction
+
+The introduction should provide a brief review of pertinent literature and cite relevant findings
+that led to the current study. Be careful not to exclude relevant findings by other investigators. It
+should discuss the unknowns that remain to be determined or controversies that exist in the
+literature. Controversial findings should be presented in the introduction if they are important to
+the rationale for the study. Explain why the study was undertaken; if appropriate, state the
+proposed hypothesis. End the introduction with a stated aim or question, preferably expressed as a
+
+
+16
+testable hypothesis. For example, if the study is aimed at identifying the color of apples, or asks
+what color are apples, state “We hypothesized that apples will be green rather than red.” The
+reason for this hypothesis should be contained in the rationale.
+
+Methods
+
+The methods should provide sufficient detail such that another investigator can repeat your
+research. This section should describe the procedures used and provide sufficient information
+(subjects, measurements, statistical analyses) so that a reader can evaluate the credibility of
+results and interpretation in the light of possible methodological limitations. If authors have used
+similar methodologies that have been used in a previous study, this should be acknowledged and
+appropriately referenced. Findings should be quantified when possible, and presented with
+appropriate indicators of measurement error or uncertainty (e.g. confidence intervals). Any
+statistical software used during analysis should be identified. If any scales or questionnaires have
+been used, authors should check that the appropriate permissions to use such resources have been
+acquired and this permission should be clearly stated at an appropriate place in the manuscript.
+For literature reviews, authors should include the details of how their search was conducted, i.e.
+when the search was conducted; inclusion/exclusion dates; search terms; databases searched.
+Authors should also include details of how many papers/abstracts were retrieved, and how many
+were discarded and why. Authors should always consider clarity for other researchers when
+detailing how and why a study was done in a particular way.
+
+All articles must contain a statement of ethics compliance within the main body of the text, for
+example, within the methods (or any other appropriate section for articles without a specific
+methods section). This should be the same as the statement given in the “Compliance with Ethics
+Guidelines” sub-section in the acknowledgements (see below).
+
+Results
+
+The results should present the findings in a logical progression through the research process. Tell a
+story; this does not necessarily mean that findings will be presented in the chronological order in
+which they were discovered. Results concerning the primary testable hypothesis should be
+presented first, followed by any secondary outcomes. Do not save the “best” for last. Provide a
+sufficient interpretation of data to lead the reader from one concept to the next, but leave the
+detailed analysis for the discussion section. The results must contain a sufficient summary of data.
+Data should be presented as concisely as possible, if appropriate, in the form of tables and/or
+graphs. Avoid duplication of information particularly of data within text, figures, tables, or in figure
+legends. Save the comparison of the findings with other studies for the discussion.
+
+Discussion
+
+The discussion should include a summary of the main findings from most to least important,
+including a statement on whether the results are consistent with the stated hypothesis. Avoid a
+simple reiteration of background information and results. Discuss how the results confirm or
+contrast with published literature. If the results differ, discuss the possible reasons for this. Details
+of methodology and results of published literature may be appropriate here. Avoid reviewing
+literature outside the scope of the study. Discuss the significance and implications of the new data.
+
+
+17
+Having developed the rationale to define the limits of current knowledge, how does this new
+information advance understanding? The inferences made throughout the discussion must be
+written bearing in mind the constraints of the methodological limitations of the work. Any issues of
+bias should be mentioned, and how these have been dealt with in the design and interpretation of
+the study. A paragraph detailing the limitations of the study must be included in the discussion
+section.
+
+Conclusion
+
+The conclusion is an inference. Within the constraints of the limitations of the study, the authors
+may speculate regarding the significance of the findings, recommendations, and future research.
+However, authors should not make any conclusions that are not supported by the results.
+
+Acknowledgements
+
+Information relating to all Editorial policies can be viewed here.
+
+All manuscripts must contain an acknowledgements section, given before the reference list, which
+contains the following information, where applicable.
+
+Funding
+
+Please list all sources of funding received for the study and publication of the article. All
+institutional and corporate funding sources should be mentioned. The names of funding
+organizations should be written in full, including the city and country. If no funding was received
+this should also be declared.
+
+E.g. “Sponsorship for this study and Rapid Service Fee were funded by Pharma Ltd.” or “No funding
+or sponsorship was received for this study or publication of this article.”
+
+Please ensure that clinical trials sponsored by pharmaceutical companies follow the guidelines on
+Good Publication Practice (GPP).
+
+Medical Writing, Editorial, and Other Assistance
+
+The acknowledgements should include the specific contributions of all persons who have
+substantially contributed to the work reported (e.g. technical assistance, data collection, analysis,
+writing, or editing assistance) but who do not fulfill the selected authorship criteria. Ideally,
+authors should obtain permission from all persons listed in the acknowledgements, although this is
+not mandatory. Medical writers are considered as legitimate contributors and their names, roles,
+affiliations, and source of funding must all be detailed in the acknowledgements. An example of
+suitable text for acknowledging the contribution of a medical writer to a manuscript would be:
+
+“Editorial assistance in the preparation of this article was provided by Dr. Jane Doe of Medical
+Communications Inc. Support for this assistance was funded by Pharma Ltd.”
+
+AI USE: Please describe any use of artificial intelligence (AI) tools in the development of this
+manuscript, including but not limited to drafting, editing, translation, summarization, data analysis,
+
+
+18
+image generation, or other forms of assistance. If no AI tools were used, please state “No AI tools
+were used”. For more information, please refer to our AI policy
+https://link.springer.com/brands/springer/journal-policies#Artificial%20intelligence%20(AI).
+
+
+Authorship
+
+The publisher does not prescribe the kinds of contributions that warrant authorship. It is
+recommended that authors adhere to the guidelines for authorship that are applicable in their
+specific research field. In the absence of specific guidelines, it is recommended to adhere to the
+following guidelines for authorship*:
+
+All authors whose names appear on the submission should have:
+
+     1) Made substantial contributions to the conception or design of the work; or the acquisition,
+        analysis, or interpretation of data; or the creation of new software used in the work;
+     2) Drafted the work or revised it critically for important intellectual content;
+     3) Approved the version to be published; and
+     4) Agreed to be accountable for all aspects of the work in ensuring that questions related to
+        the accuracy of integrity of any part of the work are appropriately investigated and resolved.
+
+*Based on/adapted from:
+ICMJE, Defining the Role of Authors and Contributors,
+Transparency in authors’ contributions and responsibilities to promote integrity in scientific
+publication, McNutt at all, PNAS February 27, 2018
+
+
+
+Large Language Models (LLMs), such as ChatGPT, do not currently satisfy our authorship criteria
+(imprint editorial policy link). Notably an attribution of authorship carries with it accountability for
+the work, which cannot be effectively applied to LLMs. Use of an LLM should be properly
+documented in the Methods section (and if a Methods section is not available, in a suitable
+alternative part) of the manuscript.
+
+
+Author Contributions
+
+In the absence of specific instructions, and in research fields where it is possible to describe
+discrete efforts, the publisher recommends authors to include contribution statements in the work
+that specifies the contribution of every author in order to promote transparency.
+
+For Review articles where discrete statements are less applicable, a statement should be included
+that states who had the idea for the article, who performed the literature search and data analysis,
+and who drafted and/or critically revised the work.
+
+E.g. 1, “Conceptualization: [full name], …; Methodology: [full name], …; Formal analysis and
+investigation: [full name], …; Writing - original draft preparation: [full name, …]; Writing - review
+
+
+
+19
+and editing: [full name], …; Funding acquisition: [full name], …; Resources: [full name], …;
+Supervision: [full name] …”
+
+E.g. 2, “All authors contributed to the study conception and design. Material preparation, data
+collection and analysis were performed by [full name], [full name], and [full name]. The first draft
+of the manuscript was written by [full name] and all authors commented on previous versions of
+the manuscript. All authors read and approved the final manuscript.”
+
+Conflict of Interest
+
+All manuscripts must contain full competing interest information for all listed authors of the
+submission (listing each author separately by name). Within the acknowledgements under the
+subheading “Conflict of Interest”, authors must disclose any commercial or other associations that
+might (or may be perceived to) pose a competing interest in connection with the submitted
+material. Perceptions of competing interests are as important as actual competing interests. All
+funding sources supporting the work should be acknowledged, as should the authors’ institutional
+or corporate affiliations. Articles submitted without a disclosure statement will be returned to the
+author as incomplete.
+
+E.g. “John Smith declares that he has no competing interests. Paula Taylor has received research
+grants from Drug Company A. Mike Schultz has received a speaker honorarium from Drug
+Company B and owns stock in Drug Company C.”
+
+If multiple authors declare no competing interests, this can be done in one sentence.
+
+E.g. “John Smith, Paula Taylor, and Mike Schultz declare that they have no competing interests.”
+
+Editorial Board Members and Editors are required to declare any competing interests and may be
+excluded from the peer review process if a competing interest exists. In addition, they should
+exclude themselves from handling manuscripts in cases where there is a competing interest. This
+may include – but is not limited to – having previously published with one or more of the authors
+and sharing the same institution as one or more of the authors. Where an Editor or Editorial Board
+Member is on the author list, we recommend they declare this in the competing interests section
+on the submitted manuscript. If they are an author or have any other competing interest regarding
+a specific manuscript, another Editor or member of the Editorial Board will be assigned to assume
+responsibility for overseeing peer review. These submissions are subject to the exact same review
+process as any other manuscript. Editorial Board Members are welcome to submit papers to the
+journal. These submissions are not given any priority over other manuscripts, and Editorial Board
+Member status has no bearing on editorial consideration.
+
+
+Ethics/Ethical Approval
+
+Also, within the Acknowledgements section, under a “Ethics/Ethical approval” subheading, authors
+must include a statement of ethics. For studies involving human participants, human data and/or
+human material/samples, authors must:
+
+
+
+20
+     ●   State that they have received approval or a waiver from an institutional review board,
+         providing the name of the ethics committee (including reference numbers). For
+         collaborative research between several institutions, please confirm that the study was
+         approved by all institutions and provide the names of all the ethics committees. This can be
+         provided in table format as a supplementary material file. Please note the name of the
+         “master” ethics committee at the main center should be included in the ethics statement;
+     ●   Advise if ethics committee approval was not required for a particular study by providing a
+         statement to this effect containing as much detail as possible (including proof of legislation
+         where applicable);
+     ●   Confirm that their study was performed in accordance with the Helsinki Declaration of 1964,
+         and its later amendments;
+     ●   Confirm that all subjects provided informed consent to participate in the study;
+     ●   Confirm that participants provided consent for publication if any identifying information is
+         included in the manuscript.
+
+For studies involving animals, please include a statement that clarifies that the research complied
+with institutional, national, or international guidelines. If the study was approved by an
+institutional animal ethics committee, please detail this in the manuscript together with the name
+of the committee.
+
+For Reviews, Commentaries, and Editorials that do not contain studies with human or animal
+subjects performed by the authors, please add a sentence to the effect:
+
+“This article is based on previously conducted studies and does not contain any new studies with
+human participants or animals performed by any of the authors.”
+
+You can view Springer’s ethical policies online here.
+
+The corresponding author should be prepared to collect documentation of compliance with ethical
+standards and send if requested during peer review of after publication.
+
+Data Availability
+
+For Original Research/Brief Reports, we require authors to ensure that their datasets are either
+deposited in publicly available repositories, where possible, or published alongside the paper as
+supplementary material. It is compulsory to include one of the following statements where
+applicable at the end of the acknowledgements section under the title “Data Availability”:
+
+         1. The datasets generated during and/or analyzed during the current study are available in
+            the [NAME] repository, [WEB LINK TO DATASETS].
+         2. All data generated or analyzed during this study are included in this published article/as
+            supplementary information files.
+         3. The datasets generated during and/or analyzed during the current study are available
+            from the corresponding author on reasonable request.
+         4. The datasets generated during and/or analyzed during the current study are not publicly
+            available due [REASON WHY DATA ARE NOT PUBLIC].
+
+
+21
+      5. Data sharing is not applicable to this article as no datasets were generated or analyzed
+         during the current study.
+
+Please note that during the submission process you will be asked about data sharing if the
+submission is an Original Research article/Brief Report and the statement is not present.
+
+Upon request, authors should be prepared to send relevant documentation or data in order to
+verify the validity of the results presented. This could be in the form of raw data, samples, records,
+etc. Sensitive information in the form of confidential or proprietary data is excluded.
+
+Thanking Patient Participant(s)
+
+The journals encourage the author(s) to thank any study participant(s) for their involvement in the
+study in the acknowledgements section; however, this is entirely at the author(s) discretion. If
+included, the statement should not jeopardize patient anonymity.
+
+Patient Involvement
+
+The journals also encourage the author(s) to disclose any patient involvement in the study trial
+design or dissemination of results and, if applicable, to provide details of their involvement. Again,
+this is at the author(s) discretion and should not jeopardize patient anonymity.
+
+References
+
+The list of references should only include works that are cited in the text. Work that is cited should
+have been published or accepted for publication, though other sources can be cited where
+appropriate. Please keep unpublished “data on file” or other unavailable sources to a minimum.
+These types of citations should only be mentioned in the text, and not included in the reference
+list. Citation of conference posters/abstracts and preprints should be clearly identified and kept to
+a minimum. Information from preprints can also be included in the reference list, but these should
+be kept to a minimum and it should be made clear in the text, where cited, that the data originates
+from a preprint. The citation in the reference list should also include the name and location of the
+preprint server and, preferably, the preprint DOI. Data from “predatory” journals should not be
+used to support statements made in the article. Please also be aware of citing material from
+suspicious/misleading sources. For more information on how to avoid predatory publishers, please
+visit the Think, Check, Submit information here.
+
+All references, including those supporting tables and figures, should be supplied using the
+Vancouver system. Their accuracy is the author's responsibility. If up to six authors are listed, all
+should be cited; when more than six authors are given, the names of the first three authors should
+be listed, followed by et al. In-text citations should be given as normal-text numbers (Arabic
+numerals) within square brackets. The reference list should appear in the same sequence as the
+numbers in the text.
+
+E.g. “Hepatitis is an increasing concern in the developing world [1].”
+
+Sample reference list:
+1. Leung AKC, Kellner JD, Davies HD. Hepatitis: a preventable threat. Adv Ther. 2005; 22:578–86.
+
+22
+2. Reilly I, Doran D. Fitness Assessment. In: Reilly T, Williams, eds. Science and Soccer. London:
+   Routledge; 2003:21–41.
+
+Figures and Illustrations
+
+All figures (photographs, graphs, or diagrams) should be cited in the text, and each numbered
+consecutively throughout. Figure parts should be identified by lower case roman letters. There are
+no restrictions on the number of figures per article.
+
+Details that might identify patients should be omitted unless absolutely necessary for scientific
+reasons. Falsification of or altering data should never be used as a means of ensuring anonymity;
+masking of the eye region in photographs of patients is not suitable to protect patient anonymity.
+If identification of patients is unavoidable, the author must confirm that they have received written
+informed consent from the patient or their legal representative for the publication of the image(s).
+
+If an illustration has been previously published, acknowledgement to the original source must be
+made, and written permission from the copyright holder must be submitted with manuscript by
+the authors. It should also be clearly stated in the figure legend that permission was obtained from
+the copyright holder. Any material received without such evidence will be assumed to be original
+from the authors. It is the author’s responsibility to ensure all permissions for illustrations have
+been obtained prior to submission.
+
+All illustrations should be submitted as electronic files, separate from the manuscript document.
+Please ensure that all figures are legible as these will be used as provided in the final publication.
+Authors are encouraged to submit good quality (i.e. text/data are clearly visible when viewed at
+100% scale) color illustrations for publication online without charge.
+
+Figure legends must be brief, self-sufficient explanations of the photographs, graphs, or diagrams,
+and should be provided in the manuscript given after the reference list. Figure Legends should not
+be part of the separate figure file, which should be added to the submission in a JPG or TIFF figure
+file format. All abbreviations, colors, and symbols used in the figure should be explained.
+
+Please note that there are different instructions for graphical abstracts compared to regular figures
+(graphical abstracts and infographics are considered digital features). For more information, please
+read the “Guidelines for Digital Features and Plain Language Summaries” document which is
+available under “Submission Guidelines” on the journal website.
+
+Tables
+
+All tables should be cited in the text, and each numbered consecutively throughout. There are no
+restrictions on the number of tables per article. Tables should have a concise descriptive legend (or
+title). Any additional information (e.g. definitions of abbreviations, footnotes) should be provided
+as table notes beneath the table. All abbreviations used within a table should be defined in the
+table notes. Footnotes should be indicated in superscript lower-case letters. Data presented in
+tables should not then be repeated in the text. Please provide tables in an editable format (e.g.
+Word) and not as, for example, an image (JPEG).
+
+
+23
+If a table has been previously published, acknowledgement to the original source must be made
+and written permission from the copyright holder must be submitted with the manuscript by the
+authors. Any material received without such evidence will be assumed to be original from the
+authors. It is the author’s responsibility to ensure all permissions for tables have been obtained
+prior to submission.
+
+Supplementary Material
+
+Supplementary material can be hosted alongside the online version of your manuscript. There is no
+additional charge for this service. Supplementary material can be additional information that is not
+required in the main text including appendices, supplementary tables, and supplementary figures.
+Supplementary material should be compiled into one separate document (in Word format) and a
+cover page should be included. The cover page should include the following: title, authors, author
+affiliations, corresponding author, and corresponding author email address.
+
+Please note, when referring to supplementary figures or tables please use the notation “S” to avoid
+any confusion with the tables and figures in the main text.
+
+E.g.       “See Table S1 in the electronic supplementary material for details.”
+           “… (see the appendix in the electronic supplementary material).”
+
+
+
+Ethical Responsibilities of Authors
+
+Authors must not misrepresent research results, or manipulate data in any way that would damage
+the trust in the journal, the professionalism of scientific authorship, and ultimately the entire
+scientific endeavour. Maintaining integrity of the research and its presentation is helped by
+following the rules of good scientific practice, which include*:
+
+       •    The manuscript should not be submitted to more than one journal for simultaneous
+            consideration.
+       •    The submitted work should be original and should not have been published elsewhere in
+            any form or language (partially or in full), unless the new work concerns an expansion of
+            previous work. (Please provide transparency on the re-use of material to avoid the
+            concerns about text-recycling (‘self-plagiarism’).
+       •    A single study should not be split up into several parts to increase the quantity of
+            submissions, and then submitted to various journals or to one journal over time (i.e.
+            ‘salami-slice publishing’).
+       •    Concurrent or secondary publication is sometimes justifiable provided certain conditions
+            are met. Acceptable examples may include translations or a manuscript that is intended for
+            a different group of readers.
+       •    Results should be presented clearly, honestly, and without fabrication, falsification or
+            inappropriate data manipulation (including image-based manipulation). Authors should
+            adhere to discipline-specific rules for acquiring, selecting and processing data.
+
+
+
+24
+       •    No data, text, or theories by others should be presented as if they were the author’s own
+            (‘plagiarism’). Proper acknowledgements to other works must be given, including material
+            that is closely copied (near verbatim), summarized and/or paraphrased. Quotation marks
+            should be used to indicate words taken from another source (especially when material is
+            copied verbatim), permissions must be secured for material that is copyrighted.
+
+
+
+ Important note: All Adis Rapid+ journals use anti-plagiarism software (iThenticate®) to check all
+submissions before peer review.
+
+
+
+   •       Authors should make sure they have permissions for the use of software,
+           questionnaires/(web) surveys and scales in their studies (if appropriate).
+   •       Research articles and non-research articles (e.g. Opinion, Review, and Commentary articles)
+           must cite appropriate and relevant literature in support of the claims made. Excessive and
+           inappropriate self-citation or coordinated efforts among several authors to collectively self-
+           cite is strongly discouraged.
+   •       Authors should take care to avoid including any untrue statements about an entity (either an
+           individual person or a company) or descriptions of their behavior or actions that could
+           potentially be seen as personal attacks or allegations about that person.
+   •       Research that may be misapplied to pose a threat to public health or national security
+           should be clearly identified in the manuscript (e.g. dual use of research). Examples include
+           the creation of harmful consequences of biological agents or toxins, disruption of immunity
+           of vaccines, unusual hazards in the use of chemicals, and the weaponization of
+           research/technology (amongst others).
+   •       Authors are strongly advised to ensure the author group, the Corresponding Author, and the
+           order of authors are all correct at submission. Adding and/or deleting authors during the
+           revision stages is generally not permitted, although in exceptional cases may be warranted.
+           Reasons for changes in authorship should be explained in detail. Please note that changes to
+           authorship cannot be made after acceptance of a manuscript.
+
+ *All of the above are provided as guidelines. It is the responsibility of authors to ensure that third-
+ party rights such as copyright and/or moral rights are respected.
+
+ Upon request, authors should be prepared to send relevant documentation or data in order to
+ verify the validity of the results presented. This could be in the form of raw data, samples, records,
+ etc. However, sensitive information in the form of confidential or proprietary data is excluded.
+
+ If there is suspicion of any misbehavior or alleged fraud, the Journal and/or Publisher will carry out
+ an investigation in accordance with COPE guidelines. If there are valid concerns following
+ investigation, the relevant author(s) will be contacted via email and given the opportunity to
+ address the issue. Depending on the situation, this may result in the Journal and/or Publisher
+ implementing the following (or other) measures:
+      • If the manuscript is still under consideration, it may be rejected and returned to the
+          author.
+
+
+ 25
+     •   If the article has already been published online, depending on the nature and severity of
+         the infraction:
+                  I.   an erratum/correction may be placed with the article
+                 II.   an expression of concern may be placed with the article
+                III.   or in severe cases retraction of the article may occur.
+
+The reason for the decision will be included in the published erratum/correction, expression of
+concern or retraction note. Please note that “retraction” means that the article will be maintained
+on the platform watermarked “retracted”, and the explanation for the retraction will be provided
+in a note linked to the watermarked article. In addition:
+
+     •   The author’s institution may be informed
+     •   A notice of suspected transgression of ethical standards in the peer-review system may be
+         included as part of the author’s and article’s bibliographic record.
+
+Fundamental errors
+Authors have an obligation to correct mistakes once they discover any significant error or
+inaccuracy in their published article. In such cases the author(s) is/are requested to contact the
+journal as soon as possible to explain the error and how this impacts the article. A decision on how
+to correct the literature will depend on the nature of the error. This may be a correction or
+retraction. Any retraction note deemed necessary will explain the error and provide transparency
+regarding the parts of the article that are impacted by the error.
+
+
+
+MANUSCRIPT SUBMISSION
+
+Manuscript submission can be done through Editorial Manager. You will be asked to fill in relevant
+details and upload your manuscript as instructed by the system. The Editorial Manager submission
+and review system offers easy and straightforward log-in and submission procedures.
+
+Editorial Manager Sites
+
+Advances in Therapy
+Cardiology and Therapy
+Dermatology and Therapy
+Diabetes Therapy
+Infectious Diseases and Therapy
+Neurology and Therapy
+Oncology and Therapy
+Ophthalmology and Therapy
+Pain and Therapy
+Pulmonary Therapy
+Rheumatology and Therapy
+
+
+
+
+26
+It is recommended that authors submit their manuscript through the Editorial Manager system to
+ensure that we are provided with all of the information we require to process the submission.
+However, as part of our service we offer to upload manuscripts on an author’s behalf.
+
+If you would like us to do this then please contact us with as much information regarding your
+submission as possible (please see the presubmission checklist). We will get in touch for any
+missing information or if clarification is required. If you are not the corresponding author, but
+would like to submit the article on their behalf, please contact us and we would be more than
+happy to help you with this.
+
+AFTER SUBMISSION
+
+Peer Review
+
+All articles undergo single-blind peer review, conducted by at least two independent experts in the
+field. Articles are evaluated for medical and scientific accuracy, clinical relevance, and to ensure the
+paper is balanced, objective, and methodologically sound. In support of concerns raised in the GPP
+guidelines relating to publication bias, Adis Rapid+ aims to publish results from all well-designed
+and balanced studies, whether they report positive, negative, confirmatory or inconclusive data, or
+data from halted trials; and whether they relate to an international and/or a country-specific
+audience. We do not consider lack of interest or novelty to be in itself a reason for rejection.
+
+Copyediting, Typesetting, and Proofing
+
+Should your submission be accepted for publication following peer review and author
+amendments, your submission will be copyedited and typeset by Springer’s production
+department (spr_corrections@striave.com). The corresponding author should receive typeset
+proofs for approval within the next ten working days from acceptance of their article.
+Proofreading, and submission of the final corrections, is the responsibility of the corresponding
+author. During the submission process, the corresponding author may request other contacts to
+receive the proofs; however, ultimately, it is the responsibility of the corresponding author to
+submit the final corrections. Therefore, please ensure this is carefully coordinated between all
+involved. Corrections should be clear; standard correction marks should be used. Corrections that
+lead to a change in the page layout should be avoided. The author is entitled to formal corrections
+only (i.e. minor corrections and errors introduced during typesetting). Substantial changes in
+content are not allowed without the approval of the responsible editor. In such a case, please
+contact us before returning the proofs to the corrections team.
+
+For accepted submissions to Advances in Therapy only, once the proofs have been typeset, the
+corresponding author will receive a link by email to complete the publishing agreement, prior to
+receiving the article proofs. This must be completed before the typeset proofs can be released. The
+publishing agreement will be sent to the corresponding author only and only the corresponding
+author can complete the publishing agreement.
+
+
+
+
+27
+Publication
+
+Articles are published online as “Online First” shortly after the author approves their proofs. Once
+your article is online, it has full pagination and a DOI number, making it instantly citable and is
+made available as an “Epub Ahead of Print” entry on PubMed for PubMed listed journals.
+Paginated issues are collated at regular time intervals, which vary by journal (see the links for the
+journal specific websites at the beginning of this document). Articles are published in full-text
+HTML and PDF versions.
+
+Metrics are also available on SpringerLink including accesses, citations, and the article’s Altmetric
+score. Further metrics for articles and digital features are available on request.
+
+Press Releases
+
+If you wish to issue a press release relating to your research prior to acceptance for publication in
+our journals, the below points must be followed:
+
+     •   The press release can only include data that has been previously presented (e.g. at
+         congresses, as long as the abstract/poster presentation is appropriately referenced);
+     •   The press release can also include data that is in the public domain (e.g. the results cited
+         on the trial registry site);
+     •   Until the article is accepted for publication, the journal name should not be mentioned in
+         the press release.
+
+For any queries regarding press releases, please contact the journal.
+
+REPRINTS AND E-PRINTS
+
+Reprints can be ordered as soon as the author has approved the final proofs. Reprints can be
+ordered by contacting Springer Healthcare: christopher.bassett@springer.com.
+
+
+
+CONTACT US
+
+For journal specific contacts and information, please visit the journal websites as listed at the
+beginning of this document. For general presubmission and other enquiries, contact:
+
+Editorial Office
+Springer Healthcare Ltd HQ Offices,
+Third Floor, Suite B
+58 Nicholas Street
+Chester
+CH1 2NP, UK
+e-mail: adisrapidplus@springer.com
+
+
+
+
+28
+

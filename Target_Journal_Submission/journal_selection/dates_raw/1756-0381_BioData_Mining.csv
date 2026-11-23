@@ -1,0 +1,116 @@
+title,doi,received,accepted,days
+Cross-cohort genetic risk prediction for Alzheimer’s disease: a transfer learning approach using GWAS and deep learning models,10.1186/s13040-025-00506-0,2025-04-22,2025-11-29,221
+A biology-based quality-diversity algorithm for drug repurposing in Alzheimer’s disease using automated machine learning,10.1186/s13040-026-00550-4,2025-10-26,2026-03-17,142
+Early differentiation between paroxysmal and persistent atrial fibrillation based on interpretable machine learning: a multicenter retrospective study,10.1186/s13040-026-00525-5,2025-08-05,2026-01-30,178
+Multimodal deep learning for survival prediction and biomarker discovery in non-small cell lung cancer,10.1186/s13040-026-00522-8,2025-11-06,2026-01-14,69
+Multi-output LSTM-based prediction of postoperative delirium: integrating baseline and perioperative data for enhanced risk stratification in older sp,10.1186/s13040-026-00531-7,2025-10-27,2026-02-13,109
+Optimizing accuracy and dimensionality: a swarm intelligence strategy for robust cancer genomics classification,10.1186/s13040-025-00503-3,2025-09-19,2025-11-01,43
+scTrans-SVD: dual-view learning with a low-rank representation for label-limited cell type annotation in single-cell transcriptomics,10.1186/s13040-026-00602-9,2026-06-24,2026-09-10,78
+MediNet: ensemble transfer learning approach for classification of medical drugs-related text reviews using significant combined-embeddings,10.1186/s13040-025-00448-7,2025-03-22,2025-04-28,37
+Methylation age-associated signature remodelling based on vae-diffusion model: algorithm development and multi-dimensional validation,10.1186/s13040-026-00621-6,2026-06-10,2026-11-07,150
+Tree-based ensemble learning models for protein-protein interactions detection: a review and experimental evaluation,10.1186/s13040-025-00501-5,2025-09-22,2025-10-30,38
+Bioinformatics analysis of Rickettsia typhi autoimmune associations and screening of Streptomyces-derived inhibitors,10.1186/s13040-025-00499-w,2025-04-01,2025-10-27,209
+Adapting multiscale EDN representation into sequence-specific node embeddings for De Bruijn graph learning,10.1186/s13040-026-00616-3,2026-07-29,2026-10-19,82
+BioAug-Net: a bioimage sensor-driven attention-augmented segmentation framework with physiological coupling for early prostate cancer detection in T2-,10.1186/s13040-025-00467-4,2025-05-25,2025-07-22,58
+SBT-Net: a tri-cue guided multimodal fusion framework for depression recognition,10.1186/s13040-025-00498-x,2025-09-24,2025-10-27,33
+A probabilistic approach for building disease phenotypes across electronic health records,10.1186/s13040-025-00454-9,2025-02-13,2025-05-30,106
+Chest-X-ray based deep feature-driven framework for anemia detection insights from a large hospital cohort,10.1186/s13040-026-00588-4,2026-01-06,2026-07-15,190
+Machine learning-based assessment of the healthy human gut mycobiota landscape using ITS1 DNA metabarcoding data,10.1186/s13040-026-00532-6,2025-10-01,2026-02-19,141
+Geospatial analysis of short sleep duration and cognitive disability in US adults: a multi-state study using machine learning techniques,10.1186/s13040-025-00456-7,2025-03-25,2025-06-08,75
+FARFOOD: a database of potential interactions between food compounds and drugs,10.1186/s13040-025-00493-2,2025-06-24,2025-10-08,106
+Recent advances in deep learning for protein-protein interaction: a review,10.1186/s13040-025-00457-6,2025-04-08,2025-06-08,61
+Deep learning to predict emergency department revisit using static and dynamic features (Deep Revisit): development and validation study,10.1186/s13040-025-00509-x,2025-08-22,2025-12-12,112
+Explainable AI-driven graph-based neural networks for mucopolysaccharidoses diagnosis,10.1186/s13040-026-00523-7,2025-07-21,2026-01-14,177
+GraphRAG-ADR: a knowledge graph–enhanced approach for extracting Adverse Drug Reactions (ADRs) from patient narratives,10.1186/s13040-026-00597-3,2026-05-10,2026-08-08,90
+"Interpretable machine learning for Parkinson’s disease diagnosis, staging, and biological mechanism exploration: a multicenter analysis",10.1186/s13040-026-00574-w,2026-02-20,2026-06-01,101
+Patent-augmented knowledge graph drug repurposing for duchenne muscular dystrophy: a time-sliced evaluation,10.1186/s13040-026-00605-6,2026-04-17,2026-09-10,146
+Deep survival analysis from adult and pediatric electrocardiograms: a multi-center benchmark study,10.1186/s13040-025-00510-4,2025-09-12,2025-12-12,91
+TASC: a time-aware sequence clustering framework with uncertainty quantification for electronic health record trajectories,10.1186/s13040-026-00569-7,2025-12-14,2026-05-22,159
+Exploring the use of machine and deep learning in genome-wide association studies: a comprehensive review,10.1186/s13040-026-00584-8,2025-11-17,2026-07-04,229
+Improving classification on imbalanced genomic data via KDE–based synthetic sampling,10.1186/s13040-025-00474-5,2025-04-23,2025-08-15,114
+Exo-Tox: Identifying Exotoxins from secreted bacterial proteins,10.1186/s13040-025-00469-2,2025-04-11,2025-07-24,104
+fourSynergy: ensemble-based interaction calling on 4C-seq data using gradient-free optimization,10.1186/s13040-026-00596-4,2026-05-29,2026-08-01,64
+Deep learning-based EEG seizure classification using comparative time–frequency spectral representations,10.1186/s13040-026-00613-6,2026-03-18,2026-10-10,206
+A machine learning–based prediction model for early pregnancy loss after IVF/ICSI: a retrospective cohort study,10.1186/s13040-026-00599-1,2026-03-08,2026-08-19,164
+Enhance autism spectrum disorder detection using stacking ensemble learning model with explainable AI,10.1186/s13040-026-00570-0,2025-12-06,2026-05-27,172
+"The ethics of data mining in healthcare: challenges, frameworks, and future directions",10.1186/s13040-025-00461-w,2025-04-19,2025-06-17,59
+Deep learning-driven TCR$$\beta$$ repertoire analysis enhances diagnosis and enables mining of immunological biomarkers in systemic lupus erythematosu,10.1186/s13040-025-00490-5,2025-03-28,2025-09-29,185
+A peak-oriented diffusion model for high-fidelity electrocardiogram reconstruction from photoplethysmogram: development and usability study,10.1186/s13040-026-00544-2,2025-09-26,2026-03-17,172
+Discovery of postoperative clinical states linked to cardiac surgery-associated acute kidney injury,10.1186/s13040-026-00572-y,2026-02-14,2026-05-27,102
+A compact encoding of the genome suitable for machine learning prediction of traits and genetic risk scores,10.1186/s13040-025-00459-4,2024-04-16,2025-06-16,426
+"A simple guide to the use of Student’s t-test, Mann-Whitney U test, Chi-squared test, and Kruskal-Wallis test in biostatistics",10.1186/s13040-025-00465-6,2025-06-03,2025-07-20,47
+Harnessing machine learning with auditory tests and demographic factors to forecast children’s reading abilities in children living with and without H,10.1186/s13040-026-00545-1,2025-10-16,2026-03-17,152
+Network analysis of longitudinal electronic health records using linear mixed models,10.1186/s13040-025-00508-y,2025-10-17,2025-12-10,54
+scDECA: integrating gene-cell interactions with global priors and local structures in single-cell transcriptomics,10.1186/s13040-026-00607-4,2026-06-04,2026-09-19,107
+Early prediction of longitudinal treatment adherence in obstructive sleep apnea using machine learning approaches,10.1186/s13040-026-00554-0,2026-01-16,2026-03-30,73
+Deep learning multi-omics integration identifies new molecular subtypes of lung cancer,10.1186/s13040-026-00563-z,2026-01-13,2026-04-26,103
+MPGR-Net: multi-scale patch graph reasoning for weakly supervised pathological image segmentation,10.1186/s13040-026-00580-y,2026-05-05,2026-06-10,36
+A novel Vector-Symbolic Architecture for graph encoding and its application to viral pangenome-based species classification,10.1186/s13040-026-00561-1,2025-12-02,2026-04-24,143
+Optical coherence tomographic retinal differences across stages of chronic kidney disease,10.1186/s13040-026-00592-8,2025-12-12,2026-07-27,227
+DBSCAN and DBCV application to open medical records heterogeneous data for identifying clinically significant clusters of patients with neuroblastoma,10.1186/s13040-025-00455-8,2025-04-16,2025-06-03,48
+Identification of severity related mutation hotspots in SARS-CoV-2 using a density-based clustering approach,10.1186/s13040-025-00476-3,2025-03-28,2025-08-15,140
+Divide-and-conquer analysis reveals hidden immune cell influencers across the placenta in preeclampsia,10.1186/s13040-026-00556-y,2026-01-21,2026-04-18,87
+DAG-VAERL: a novel causal inference method for building causal gene regulatory networks,10.1186/s13040-026-00571-z,2025-12-01,2026-05-27,177
+Differentiable latent structure discovery for interpretable forecasting in clinical time series,10.1186/s13040-026-00606-5,2026-03-09,2026-09-10,185
+subMG automates data submission for metagenomics studies,10.1186/s13040-025-00453-w,2025-03-28,2025-05-30,63
+Disease- and gene-specific deep learning for pathogenicity prediction of rare missense variants in cancer predisposition genes,10.1186/s13040-026-00533-5,2025-12-13,2026-02-20,69
+An efficient hybrid federated learning framework for pneumonia diagnosis with proximal optimization and parameter-efficient adaptation,10.1186/s13040-026-00543-3,2026-01-02,2026-03-14,71
+Heart rate transition patterns reveal autonomic dysfunction in heart failure with renal function decline: a symbolic and Markov model approach,10.1186/s13040-025-00460-x,2025-05-22,2025-06-16,25
+An unsupervised tool for biomarker discovery and cancer subtyping applied to glioblastoma,10.1186/s13040-025-00500-6,2025-05-28,2025-10-30,155
+Distinguishing cancer patients’ mild and severe symptoms in radiotherapy via zero-shot and few-shot large language model-based probabilistic prompts,10.1186/s13040-026-00547-z,2025-08-10,2026-03-17,219
+BPX-Net: biomarker-preserved explainable networks for disease diagnosis and prognosis,10.1186/s13040-026-00537-1,2025-12-20,2026-02-26,68
+TENTACLES: a consensus machine learning tool for robust biomarker discovery in heterogeneous data,10.1186/s13040-026-00568-8,2026-01-29,2026-05-14,105
+AI-Driven SaO2 prediction from pulse oximetry and electronic health records,10.1186/s13040-025-00511-3,2025-05-15,2025-12-12,211
+Learning a distance for the clustering of patients with amyotrophic lateral sclerosis,10.1186/s13040-026-00579-5,2025-10-09,2026-06-10,244
+Clustering-based low-rank matrix approximation for multimodal medical image compression,10.1186/s13040-026-00541-5,2025-11-11,2026-03-14,123
+Deep vision in agriculture: assessing the function of YOLO in the classification of plant leaf diseases (PLDs),10.1186/s13040-025-00497-y,2025-08-14,2025-10-24,71
+A graph-theoretic framework for quantitative analysis of angiogenic networks,10.1186/s13040-025-00478-1,2025-07-05,2025-08-20,46
+An intelligent healthcare system for rare disease diagnosis utilizing electronic health records based on a knowledge-guided multimodal transformer fra,10.1186/s13040-025-00487-0,2025-07-27,2025-09-15,50
+TLEUDS: a cascade Dual-Transfer learning system with quality- and knowledge-enhanced for precise fetal CHD screening,10.1186/s13040-026-00535-3,2026-01-21,2026-02-20,30
+"Navigating the uncharted: AI-driven advances in protein structure, dynamics, interactions and ligand interactions for understudied families",10.1186/s13040-026-00577-7,2026-01-13,2026-06-09,147
+Simulation-based Bayesian deep learning enables uncertainty-aware tumor fraction estimation in cell-free DNA,10.1186/s13040-026-00595-5,2026-05-19,2026-08-01,74
+Clinically aligned multi-modal image-text model for pan-cancer prognosis prediction,10.1186/s13040-025-00495-0,2025-07-31,2025-10-16,77
+Deep learning-enabled ECG system for detecting left ventricular hypertrophy and predicting cardiovascular prognoses,10.1186/s13040-026-00536-2,2025-12-26,2026-02-26,62
+An explainable machine learning model for predicting postoperative cholangitis in pediatric surgical patients with pancreaticobiliary maljunction,10.1186/s13040-025-00491-4,2025-08-14,2025-10-08,55
+Hierarchical machine learning models for predicting antenatal care utilisation among Nigerian women: Identifying actionable insights for health policy,10.1186/s13040-026-00538-0,2026-01-15,2026-02-26,42
+An evolutionary guided framework for robust latent representation learning in gastrointestinal endoscopy images: EvoLatent-FS,10.1186/s13040-026-00609-2,2026-02-11,2026-09-23,224
+EMMA-STRAT: a multi-omics based machine learning framework for stratification of endometrial carcinoma molecular subtypes and MSI status,10.1186/s13040-026-00587-5,2026-04-17,2026-07-15,89
+Generalization or mirage? Data leakage and reported performance in neonatal EEG seizure detection models: a systematic review,10.1186/s13040-025-00516-y,2025-09-09,2025-12-26,108
+From retina to heart: explainable machine learning using OCT and Clinical covariates for heart failure screening,10.1186/s13040-026-00529-1,2025-11-13,2026-02-13,92
+Development of an AI-powered AR glasses system for real-time first aid guidance in emergency situations,10.1186/s13040-025-00473-6,2025-06-30,2025-08-15,46
+Benchmarking genomic foundation models for binary classification of gene fusion breakpoints from DNA sequences,10.1186/s13040-026-00553-1,2025-12-14,2026-03-30,106
+Prognostic biomarker discovery in pancreatic cancer through hybrid ensemble feature selection and multi-omics data,10.1186/s13040-026-00546-0,2025-10-21,2026-03-17,147
+"Proteome mining of Yersinia Enterocolitica for drug targets and computational inhibitor identification with ADMET, anti-inflammation potential and for",10.1186/s13040-025-00482-5,2025-05-17,2025-08-29,104
+Cross-regional radiomics: a novel framework for relationship-based feature extraction with validation in Parkinson’s disease motor subtyping,10.1186/s13040-025-00483-4,2025-08-04,2025-09-03,30
+Can open source large language models be used for tumor documentation in Germany?—An evaluation on urological doctors’ notes,10.1186/s13040-025-00463-8,2025-01-21,2025-06-26,156
+SeqHIVE: a Python package to convert the biological sequences to informative vectors for sequence property predictions,10.1186/s13040-026-00534-4,2025-12-23,2026-02-20,59
+circGPAcorr: an integrative tool for functional annotation of circular RNAs using expression data,10.1186/s13040-025-00468-3,2024-08-16,2025-07-22,340
+Using artificial intelligence (AI) to model clinical variant reporting for next generation sequencing (NGS) oncology assays,10.1186/s13040-025-00489-y,2025-06-02,2025-09-29,119
+Short- and long-term weekly patient-reported outcomes prediction undergoing radiotherapy: single-patient time series model vs. transformer-based multi,10.1186/s13040-025-00464-7,2025-04-21,2025-06-30,70
+Iron homeostasis landscape informs patient survival and neoadjuvant chemotherapy response in cancer,10.1186/s13040-026-00589-3,2026-03-03,2026-07-16,135
+A multi-metric evaluation of readability in psychiatric discharge summaries,10.1186/s13040-026-00528-2,2025-12-16,2026-02-06,52
+Adaptive drift-aware multi-stage deep learning framework for EEG-based schizophrenia diagnosis,10.1186/s13040-026-00560-2,2025-12-30,2026-04-24,115
+Temporal phenotyping and prognostic stratification of patients with sepsis through longitudinal clustering,10.1186/s13040-025-00480-7,2025-06-13,2025-08-26,74
+Cardio-respiratory deep learning model to predict hospital admission from emergency department electrocardiogram images and respiration videos: a pros,10.1186/s13040-026-00583-9,2026-01-06,2026-07-01,176
+Automatic clear cell renal cell carcinoma grading framework using histopathological images via artificial intelligence: a benchmarking study,10.1186/s13040-026-00524-6,2025-11-07,2026-01-19,73
+Hierarchical sparse Bayesian multitask learning for disease prediction in pooled microbiome studies,10.1186/s13040-026-00600-x,2026-05-21,2026-08-22,93
+When uncertainty quantification fails: structural vulnerabilities and corrections for selective prediction under clinical class imbalance,10.1186/s13040-026-00618-1,2026-07-15,2026-10-25,102
+FISM: harnessing deep learning and reinforcement learning for precision detection of microaneurysms and retinal exudates for early diabetic retinopath,10.1186/s13040-025-00485-2,2025-07-30,2025-09-06,38
+Large-scale transcriptomic data mining using explainable XGBoost and SHAP reveals shared biomarkers and molecular mechanisms between type-2 diabetes a,10.1186/s13040-026-00575-9,2026-02-21,2026-06-09,108
+Radio Frequency Tagging–enabled patient monitoring: integrating mobility tracking with early warning systems for enhanced safety,10.1186/s13040-025-00504-2,2025-08-24,2025-11-05,73
+Investigating causal effects of HDL-C on cognitive function through cross-sectional and Mendelian randomization analyses: concentration–response patte,10.1186/s13040-025-00484-3,2025-06-26,2025-09-03,69
+XenoScan1 enables alignment-free discovery of horizontal gene transfer through reference-relative genomic discordance,10.1186/s13040-026-00624-3,2026-07-12,2026-11-17,128
+Automatic extraction of mesenchymal stromal cells from single-cell RNA-sequencing data of human dental pulp,10.1186/s13040-026-00581-x,2026-03-04,2026-07-01,119
+Decoding ancestry-specific genetic risk: interpretable deep feature selection reveals prostate cancer SNP disparities in diverse populations,10.1186/s13040-025-00470-9,2025-03-08,2025-08-01,146
+Quantum Angle–distance kernel for ECG classification and anomaly detection: a quantum-inspired framework for biomedical signal analysis,10.1186/s13040-026-00519-3,2025-10-21,2026-01-08,79
+Genotype subtyping approach to identify unnoticed variants in diseases from GWAS data,10.1186/s13040-025-00512-2,2025-06-11,2025-12-13,185
+Computational insights into the natural phage endolysin linker landscape,10.1186/s13040-026-00526-4,2025-05-27,2026-01-31,249
+Identifying clinical diagnostic trajectories associated with suicide death using temporal sequence mining of linked claims and mortality data,10.1186/s13040-026-00608-3,2026-06-09,2026-09-23,106
+AVSeg-XAI: Deep learning framework for A/V segmentation with vascular features reveals retinal oculomics as biomarker for cardiovascular disease,10.1186/s13040-026-00573-x,2026-01-11,2026-05-27,136
+Clinically actionable classification tool for childhood and adult atopic dermatitis via explainable AI: a retrospective cross-sectional study optimizi,10.1186/s13040-026-00565-x,2025-12-03,2026-05-14,162
+GenRefBR: bridging the genetic information gap for Brazilian biodiversity,10.1186/s13040-026-00611-8,2025-11-26,2026-09-28,306
+Integrative evidence-knowledge marker selection enhances LLM-based cell type annotation in single-cell RNA-seq analysis,10.1186/s13040-026-00593-7,2026-03-10,2026-08-01,144
+From visual saliency to anatomical explanation: generating textual diagnostic reports from brain MRIs with saliency-grounded LLMs,10.1186/s13040-026-00601-w,2026-05-05,2026-09-03,121
+Skin in the game: a review of computational models of the skin,10.1186/s13040-025-00471-8,2025-05-16,2025-08-06,82
+Drug repurposing for Alzheimer’s disease using a graph-of-thoughts based large language model to infer drug-disease relationships in a comprehensive k,10.1186/s13040-025-00466-5,2025-05-07,2025-07-22,76
+Construction and validation of a machine learning-based model predicting early readmission in patients with decompensated cirrhosis: a prospective two,10.1186/s13040-025-00479-0,2025-06-07,2025-08-22,76

@@ -1,0 +1,47 @@
+title,doi,received,accepted,days
+Theoretical investigations and methodology for modeling and direct simulation of electrochemical pulse plating in the diffusion boundary layer,10.1186/s40323-025-00309-2,2025-02-20,2025-08-18,179
+Truss structure optimization via hierarchical tree search,10.1186/s40323-026-00320-1,2025-12-19,2026-03-09,80
+A robust population mean estimation method in stratified sampling using auxiliary attributes under real and simulated populations,10.1186/s40323-026-00339-4,2026-05-22,2026-08-09,79
+Machine learning-based reduced order modeling for thermal simulation calibration in wire arc additive manufacturing,10.1186/s40323-026-00341-w,2026-03-23,2026-09-06,167
+A phase-field-informed interfacial area-tensor model for immiscible biphasic flows and casting applications,10.1186/s40323-026-00342-9,2026-09-14,2026-09-28,14
+An efficient Quantum Approximate Optimization Algorithm with fixed linear ramp schedule for truss structure optimization,10.1186/s40323-025-00298-2,2025-02-18,2025-05-21,92
+Two-stage ROM: a hybrid reduced order model for offline and online efficiency,10.1186/s40323-026-00322-z,2025-10-13,2026-04-13,182
+The role of auto-catalysis reaction and thermal radiation on dynamics of CNTs nanoparticles in a rotating system,10.1186/s40323-025-00303-8,2024-08-09,2025-06-26,321
+Advancing deformation calculation: a physics-informed deep graph learning framework for hyperelastic materials,10.1186/s40323-025-00304-7,2024-10-11,2025-06-25,257
+PDE-constrained Gaussian process surrogate modeling with uncertain data locations,10.1186/s40323-025-00308-3,2024-12-31,2025-08-20,232
+Transient structural analysis with proper generalized decomposition,10.1186/s40323-026-00328-7,2025-11-24,2026-05-06,163
+Projection-based reduced order model and hyper-reduction of linear sloshing with geometric parameters using isogeometric analysis,10.1186/s40323-025-00307-4,2025-05-07,2025-08-02,87
+Quadratic unconstrained binary optimization for environmental control system equipment design and assessment,10.1186/s40323-025-00310-9,2025-07-04,2025-09-02,60
+Data-driven non-intrusive reduced order modelling of selective laser melting additive manufacturing process using proper orthogonal decomposition and ,10.1186/s40323-025-00305-6,2025-05-20,2025-07-26,67
+Foam property prediction and inception via a hybrid machine learning and model order reduction framework,10.1186/s40323-026-00338-5,2026-03-29,2026-07-17,110
+Local/global non-intrusive coupling strategy for robust design: a first attempt,10.1186/s40323-025-00302-9,2025-05-10,2025-06-23,44
+A black box variational inference scheme for inverse problems with demanding physics-based models,10.1186/s40323-026-00335-8,2026-03-24,2026-06-08,76
+Artificial intelligence-driven physics-informed feature engineering for multiaxial fatigue life prediction of metallic materials with Bayesian optimiz,10.1186/s40323-026-00334-9,2026-04-04,2026-06-04,61
+A methodology for the automated estimation of footprint-derived seismic behaviour modifiers in building exposure assessment,10.1186/s40323-026-00323-y,2026-01-30,2026-04-17,77
+Meshgraphnets informed locally by thermodynamics for the simulation of flows around arbitrarily shaped objects,10.1186/s40323-025-00311-8,2025-07-30,2025-09-02,34
+Predicting rolling shear failure of cross-laminated panels using a multiscale domain decomposition approach,10.1186/s40323-026-00318-9,2025-03-31,2026-01-26,301
+Development of a digital twin of a powertrain for efficiency estimations with machine learning and physical modeling,10.1186/s40323-026-00333-w,2025-10-30,2026-05-27,209
+Graph neural network structural limitation for thermal simulation and architecture optimization through rating system,10.1186/s40323-025-00306-5,2025-03-09,2025-07-16,129
+A strategy with reduced models dedicated to parametrized nonlinear strongly coupled thermo-poroelasticity problems,10.1186/s40323-025-00314-5,2025-05-12,2025-09-23,134
+Experiment–simulation synergy on multiscale breakup dynamics in wire arc spray atomization,10.1186/s40323-025-00317-2,2025-09-11,2025-11-10,60
+"A new framework for generative design, real-time prediction, and inverse design optimization: application to microstructure",10.1186/s40323-026-00326-9,2025-08-28,2026-05-01,246
+A tail-adjusted reliability index for non-Gaussian structural systems,10.1186/s40323-026-00321-0,2026-01-20,2026-03-23,62
+Machine learning (ML) based reduced order modelling (ROM) for linear and non-linear solid and structural mechanics,10.1186/s40323-025-00299-1,2024-10-18,2025-05-29,223
+Augmented DIC and FE analyses: a two-field approach to damage localization,10.1186/s40323-025-00296-4,2024-06-06,2025-05-06,334
+Hybrid physics: data framework for real-time forecasting of atmospheric pollutants,10.1186/s40323-026-00331-y,2026-01-22,2026-05-17,115
+Multiphysics modelling and interface optimization of PEDOT:PSS OECTs for stable and sensitive biosensing,10.1186/s40323-026-00336-7,2026-01-29,2026-06-11,133
+First order explicit time integration scheme with large time steps for parabolic problems using irregular grids,10.1186/s40323-025-00312-7,2025-03-07,2025-09-09,186
+Remaining useful life of power transformers using efficient surrogates and deep learning techniques,10.1186/s40323-026-00329-6,2025-09-12,2026-05-12,242
+Virtual viscometer based on Physics-Informed mCRE formulation using Deep-Learning with Finite-Volume Multiple-Mesh Training. Part I: steady flow CNN-a,10.1186/s40323-026-00343-8,2026-06-24,2026-10-01,99
+Variationally consistent self-stabilized Virtual Elements for 2D locking-free elastoplasticity,10.1186/s40323-025-00297-3,2025-04-14,2025-05-15,31
+Structural natural frequency-embedded Fourier feature physics-informed neural networks for earthquake dynamic response prediction,10.1186/s40323-026-00324-x,2026-01-05,2026-04-21,106
+A comprehensive study on estimating the primary crack spacing of flexural reinforced concrete components using machine learning techniques,10.1186/s40323-026-00330-z,2025-09-17,2026-05-16,241
+Using DIC-based FEM to determine work-hardening parameters in structural steels,10.1186/s40323-025-00292-8,2024-02-29,2025-03-26,391
+Generative surrogate modelling for the efficient design optimization of an RF component,10.1186/s40323-026-00340-x,2026-02-04,2026-09-06,214
+Advancing blind hyperspectral unmixing in remote sensing: comparing deep-inspired subspace learning methods,10.1186/s40323-025-00313-6,2025-04-24,2025-09-16,145
+Comparison of multi-fidelity surrogate models for multi-objective aerodynamic optimization in turbomachinery under extreme cost imbalance,10.1186/s40323-025-00316-3,2025-09-01,2025-11-04,64
+Vehicle crash simulation models for reinforcement learning driven crash-detection algorithm calibration,10.1186/s40323-025-00288-4,2023-06-20,2025-02-23,614
+A compact microwave CSRR resonator for non-invasive glucose sensing enhanced by machine learning,10.1186/s40323-026-00327-8,2025-11-16,2026-05-05,170
+Implicit numerical technique for solving fractional Navier-Stoks equation with non-singular kernel,10.1186/s40323-025-00300-x,2024-07-30,2025-06-17,322
+An extension of the modified constitutive relation error concept for the robust multi-physics offshore wind turbine model calibration from in situ dat,10.1186/s40323-026-00319-8,2025-10-02,2026-03-02,151
+Magneto-thermally coupled field simulation of homogenized foil winding models,10.1186/s40323-025-00315-4,2025-03-13,2025-09-26,197

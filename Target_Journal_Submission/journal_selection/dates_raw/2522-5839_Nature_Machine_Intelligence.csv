@@ -1,0 +1,86 @@
+title,doi,received,accepted,days
+Accelerating protein engineering with fitness landscape modelling and reinforcement learning,10.1038/s42256-025-01103-w,2024-11-01,2025-07-31,272
+Enabling large language models for real-world materials discovery,10.1038/s42256-025-01058-y,2024-06-25,2025-05-05,314
+Neural sampling from cognitive maps enables goal-directed imagination and planning,10.1038/s42256-026-01254-4,2025-08-06,2026-05-11,278
+Pretraining a foundation model for small-molecule natural products,10.1038/s42256-026-01226-8,2025-05-16,2026-03-24,312
+NucleicBERT interprets RNA sequence space through self-supervised language modelling,10.1038/s42256-026-01295-9,2025-12-14,2026-07-23,221
+Cooperative multi-view integration with a scalable and interpretable model explainer,10.1038/s42256-025-01111-w,2025-01-11,2025-08-09,210
+Harnessing the power of single-cell large language models with parameter-efficient fine-tuning using scPEFT,10.1038/s42256-025-01170-z,2025-02-25,2025-12-04,282
+An adaptive autoregressive diffusion approach to design active humanized antibodies and nanobodies,10.1038/s42256-025-01120-9,2024-11-05,2025-08-28,296
+Fractal basin geometry and the limits to predictability and reproducibility in deep learning,10.1038/s42256-026-01336-3,2025-10-02,2026-10-05,368
+Tailored structured peptide design with a key-cutting machine approach,10.1038/s42256-025-01119-2,2025-02-04,2025-08-27,204
+Emulating human-like adaptive vision for efficient and flexible machine visual perception,10.1038/s42256-025-01130-7,2025-03-02,2025-09-09,191
+End-to-end cryo-EM complex structure determination with high accuracy and ultra-fast speed,10.1038/s42256-025-01056-0,2025-01-06,2025-05-09,123
+Towards the explainability of protein language models,10.1038/s42256-026-01232-w,2025-06-10,2026-02-05,240
+Parallel hierarchical encoding of linguistic representations in the human auditory cortex and recurrent automatic speech recognition systems,10.1038/s42256-026-01185-0,2025-01-14,2026-01-09,360
+Modelling drug-induced cellular perturbation responses with a biologically informed dual-branch transformer,10.1038/s42256-025-01165-w,2025-05-08,2025-12-02,208
+Capable language models can outgrow the benefits of collaboration,10.1038/s42256-026-01268-y,2025-12-20,2026-06-04,166
+Integrating multimodal cancer data using deep latent variable path modelling,10.1038/s42256-025-01052-4,2024-08-13,2025-05-07,267
+Tensegrity continuum robots enable task-adaptive morphologies for cooperative behaviours,10.1038/s42256-026-01335-4,2026-03-11,2026-10-02,205
+Reusability report: A distributed strategy for solving combinatorial optimization problems with hypergraph neural networks,10.1038/s42256-025-01141-4,2025-03-04,2025-10-07,217
+Conditional generation of real antigen-specific T cell receptor sequences,10.1038/s42256-025-01096-6,2024-12-14,2025-07-14,212
+An interaction-derived graph learning framework for scoring protein–peptide complexes,10.1038/s42256-025-01136-1,2024-12-25,2025-09-17,266
+A roadmap for end-to-end task-agnostic exoskeleton control,10.1038/s42256-026-01297-7,2025-12-18,2026-07-28,222
+Overcoming classic challenges for artificial neural networks by providing incentives and practice,10.1038/s42256-025-01121-8,2024-12-15,2025-08-22,250
+A multi-joint soft exosuit improves shoulder and elbow motor functions in individuals with spinal cord injury,10.1038/s42256-025-01105-8,2024-11-25,2025-07-31,248
+Reusability report: Optimizing T count in general quantum circuits with AlphaTensor-Quantum,10.1038/s42256-025-01166-9,2025-03-07,2025-12-03,271
+Algebraic language models for inverse design of metamaterials via diffusion transformers,10.1038/s42256-026-01218-8,2025-07-30,2026-03-10,223
+A psychometric framework for evaluating and shaping personality traits in large language models,10.1038/s42256-025-01115-6,2023-09-25,2025-08-12,687
+Predicting and interpreting cell-type-specific drug responses in the small-data regime using inductive priors,10.1038/s42256-026-01202-2,2024-11-17,2026-02-07,447
+Densing law of LLMs,10.1038/s42256-025-01137-0,2025-01-11,2025-09-22,254
+Towards principled knowledge editing methods for large language model reasoning,10.1038/s42256-026-01276-y,2025-10-09,2026-06-14,248
+Beyond representational alignment with brain-guided language models for robust reasoning,10.1038/s42256-026-01278-w,2025-10-14,2026-07-01,260
+Target-specific de novo design of drug candidate molecules with graph-transformer-based generative adversarial networks,10.1038/s42256-025-01082-y,2024-07-26,2025-06-23,332
+Empowering biomedical evidence exploration and synthesis with deep knowledge graph research,10.1038/s42256-026-01266-0,2026-01-25,2026-06-04,130
+Towards general auditory intelligence for machine listening and speaking,10.1038/s42256-026-01281-1,2025-09-30,2026-07-02,275
+Improving diffusion-based protein backbone generation with global-geometry-aware latent encoding,10.1038/s42256-025-01059-x,2024-10-03,2025-05-12,221
+Bridging three-dimensional molecular structures and artificial intelligence with a conformation description language,10.1038/s42256-026-01250-8,2026-01-13,2026-05-07,114
+Solving sparse finite element problems on neuromorphic hardware,10.1038/s42256-025-01143-2,2025-02-20,2025-10-07,229
+Flow matching for generative modelling in bioinformatics and computational biology,10.1038/s42256-026-01220-0,2025-08-16,2026-02-14,182
+A large-scale unified deep learning model for peptide mass spectrum interpretation trained on multimodal data,10.1038/s42256-026-01234-8,2025-06-26,2026-04-09,287
+A benchmarking framework for embodied neuromorphic agents,10.1038/s42256-026-01197-w,2025-02-22,2026-01-16,328
+Learning to adapt through bio-inspired gait strategies for versatile quadruped locomotion,10.1038/s42256-025-01065-z,2024-12-03,2025-05-21,169
+Towards compute-efficient Byzantine-robust federated learning with fully homomorphic encryption,10.1038/s42256-025-01107-6,2024-09-25,2025-08-05,314
+Histopathology-based protein multiplex generation using deep learning,10.1038/s42256-025-01074-y,2024-12-06,2025-06-10,186
+Reusability report: Assessment of reproducibility and applicability to external datasets for RXNGraphormer,10.1038/s42256-026-01257-1,2025-11-29,2026-05-13,165
+Towards deployment-centric multimodal AI beyond vision and language,10.1038/s42256-025-01116-5,2025-03-28,2025-08-15,140
+Reverse predictivity for bidirectional comparison of neural networks and biological brains,10.1038/s42256-026-01204-0,2025-08-10,2026-02-09,183
+Flow matching for accelerated simulation of atomic transport in crystalline materials,10.1038/s42256-025-01125-4,2025-02-20,2025-09-04,196
+Reinforcement learning-based design of sequential drug treatment targeting the evolving tumour landscape with SequenTx,10.1038/s42256-026-01192-1,2025-08-05,2026-01-19,167
+Conditional diffusion with locality-aware modal alignment for generating diverse protein conformational ensembles,10.1038/s42256-026-01198-9,2025-02-27,2026-01-29,336
+Designing metamaterials with programmable nonlinear responses and geometric constraints in graph space,10.1038/s42256-025-01067-x,2024-10-24,2025-05-29,217
+"Informed protein–ligand docking via geodesic guidance in translational, rotational and torsional spaces",10.1038/s42256-025-01091-x,2024-11-19,2025-07-07,230
+Force-free molecular dynamics through autoregressive equivariant networks,10.1038/s42256-026-01227-7,2025-03-30,2026-03-25,360
+A federated graph learning method to realize multi-party collaboration for molecular discovery,10.1038/s42256-026-01184-1,2024-11-29,2026-01-09,406
+Competing Biases underlie Overconfidence and Underconfidence in LLMs,10.1038/s42256-026-01217-9,2025-07-02,2026-03-09,250
+Towards generalizable and interpretable three-dimensional tracking with inverse neural rendering,10.1038/s42256-025-01083-x,2024-09-03,2025-06-23,293
+When large language models are reliable for judging empathic communication,10.1038/s42256-025-01169-6,2025-06-11,2025-12-03,175
+Resolving data bias improves generalization in binding affinity prediction,10.1038/s42256-025-01124-5,2024-12-03,2025-09-04,275
+Multimodal cell foundation models require synergistic integration beyond alignment,10.1038/s42256-026-01328-3,2026-03-02,2026-09-25,207
+SpecGP as a transformer-based model for predicting energy-adaptable structural spectra of glycopeptides,10.1038/s42256-026-01246-4,2025-05-20,2026-04-21,336
+Classifying multipartite continuous-variable entanglement structures through data-augmented neural networks,10.1038/s42256-026-01284-y,2025-08-27,2026-07-03,310
+Machine learning global atomic representations with Euclidean fast attention,10.1038/s42256-026-01195-y,2024-12-12,2026-01-27,411
+Two-dimensional geometric template diffusion for boosting single-sequence protein structure prediction,10.1038/s42256-026-01210-2,2025-07-02,2026-02-25,238
+Preconditioned inexact stochastic ADMM for deep models,10.1038/s42256-026-01182-3,2025-02-14,2026-01-03,323
+Electron-density-informed effective and reliable de novo molecular design and optimization with ED2Mol,10.1038/s42256-025-01095-7,2024-12-20,2025-07-08,200
+A unifying framework from neural superposition to sparse interpretable codes,10.1038/s42256-026-01259-z,2025-03-21,2026-05-27,432
+The future of open human feedback,10.1038/s42256-025-01038-2,2024-09-04,2025-04-08,216
+Next-generation phenotyping of inherited retinal diseases from multimodal imaging with Eye2Gene,10.1038/s42256-025-01040-8,2024-09-09,2025-04-11,214
+A knowledge-driven framework for predicting single-cell responses for unprofiled drugs,10.1038/s42256-026-01286-w,2026-03-02,2026-07-03,123
+Generalized biological foundation model with unified nucleic acid and protein language,10.1038/s42256-025-01044-4,2024-09-09,2025-04-29,232
+Molecular deep learning at the edge of chemical space,10.1038/s42256-026-01216-w,2025-08-01,2026-03-06,217
+Principled approaches for extending neural architectures to function spaces for operator learning,10.1038/s42256-026-01267-z,2025-07-30,2026-06-05,310
+"A multimodal conversational agent for DNA, RNA and protein tasks",10.1038/s42256-025-01047-1,2024-05-15,2025-04-30,350
+Large language models to accelerate organic chemistry synthesis,10.1038/s42256-025-01066-y,2024-06-06,2025-05-27,355
+A semantic-enhanced multi-modal remote sensing foundation model for Earth observation,10.1038/s42256-025-01078-8,2024-11-15,2025-06-16,213
+A roadmap for AI in robotics,10.1038/s42256-025-01050-6,2024-11-28,2025-05-05,158
+Regional climate risk assessment from climate models using probabilistic machine learning,10.1038/s42256-026-01308-7,2026-05-12,2026-08-26,106
+Guiding large language models to predict edit sequences for molecular synthesizability optimization,10.1038/s42256-026-01304-x,2025-12-29,2026-08-21,235
+Multi-resolution enhancement for full-spectrum neural representations,10.1038/s42256-026-01287-9,2025-10-14,2026-07-06,265
+Quantitative and interface-aware prediction of peptide–protein interactions by VITAL,10.1038/s42256-026-01291-z,2026-01-26,2026-07-09,164
+Deciphering RNA–ligand binding specificity with GerNA-Bind,10.1038/s42256-025-01154-z,2025-02-26,2025-11-05,252
+A family of large language models for materials research with insights into model adaptability in continued pretraining,10.1038/s42256-026-01199-8,2025-04-03,2026-01-29,301
+A collaborative constrained graph diffusion model for the generation of realistic synthetic molecules,10.1038/s42256-026-01229-5,2025-05-21,2026-03-26,309
+A multimodal cell-free RNA language model for liquid biopsy applications,10.1038/s42256-025-01148-x,2025-04-16,2025-10-30,197
+Programmable RNA translation through deep learning-driven IRES discovery and de novo generation,10.1038/s42256-026-01213-z,2025-03-31,2026-03-06,340
+Brain-inspired warm-up training with random noise for uncertainty calibration,10.1038/s42256-026-01215-x,2025-04-02,2026-03-09,341

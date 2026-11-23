@@ -1,0 +1,58 @@
+title,doi,received,accepted,days
+Enhancing Facial Beauty Prediction via a Dual-Pathway Hybrid Architecture Integrating Vmamba and ViT,10.1007/s13735-025-00387-3,2025-06-25,2025-10-06,103
+Zero-shot quantization for object detection via scene-aware synthesis and instance-guided alignment,10.1007/s13735-026-00412-z,2026-02-11,2026-06-16,125
+A hierarchical multi-modal injection architecture for synergistic music understanding and generation,10.1007/s13735-026-00410-1,2025-12-18,2026-06-09,173
+ACPNet: adaptive concept-prototype network for interpretable fine-grained image classification,10.1007/s13735-026-00419-6,2025-06-04,2026-08-21,443
+Feature-NeuS: Neural Implicit Surface Reconstruction Using Feature Multi-View Consistency Constraint,10.1007/s13735-025-00379-3,2024-12-25,2025-07-31,218
+GEMA-M2SF: adaptive noise-aware fusion for multimodal aspect-based sentiment analysis,10.1007/s13735-026-00427-6,2026-04-27,2026-10-05,161
+TFANet: three-stage image-text feature alignment network for robust referring image segmentation,10.1007/s13735-025-00393-5,2025-04-30,2025-12-12,226
+A Comprehensive Review of Multimodal Visual Representation Learning: Tracing the Evolution from CNNs to Transformers and Beyond,10.1007/s13735-025-00382-8,2025-05-17,2025-09-26,132
+Enhancing multimodal recommendation via contrastive self-supervised modality-preserving learning,10.1007/s13735-026-00411-0,2025-09-07,2026-06-09,275
+Multiple object tracking under occlusions based on the stage-wise association strategy with weak cues,10.1007/s13735-025-00392-6,2025-04-30,2025-12-03,217
+Semantic Fusion and Contrastive Generation for Generalized Zero-Shot Learning,10.1007/s13735-025-00372-w,2024-09-28,2025-06-10,255
+"A survey of multimodal recommender systems: methods, challenges, and future directions",10.1007/s13735-026-00406-x,2025-10-24,2026-05-04,192
+EGA-Net: An enhanced gated attention network for pixel-level image tampering localization,10.1007/s13735-026-00399-7,2025-12-25,2026-03-08,73
+Multi-scale object detection with feature enhancement for traffic scenes,10.1007/s13735-025-00396-2,2025-04-24,2025-12-29,249
+Partial multimodal hashing with multi-level semantics and adversarial learning,10.1007/s13735-026-00400-3,2025-12-27,2026-04-03,97
+Deep supervised hashing with multiscale object-driven knowledge distillation for image retrieval,10.1007/s13735-025-00380-w,2024-06-19,2025-08-04,411
+A similarity-optimized and semantic-aligned method for unsupervised cross-modal hashing retrieval,10.1007/s13735-025-00376-6,2025-02-28,2025-07-10,132
+Hierarchical multi-modal fusion with vision transformers for robust action recognition in infrared-visible videos,10.1007/s13735-025-00386-4,2025-05-17,2025-10-06,142
+ECMFC-Net:An enhanced causal modeling and feature consensus framework for temporal action detection,10.1007/s13735-025-00395-3,2025-07-25,2025-12-29,157
+MCDINO: Self-supervised learning of masks based on combination of multi-path channel attention and local feature weighting,10.1007/s13735-025-00371-x,2025-02-05,2025-06-02,117
+Weighted semantic feature based self-supervised deep cross-modal hashing,10.1007/s13735-025-00378-4,2025-01-07,2025-07-22,196
+TPE-YOLO: improved low-light object detection using a two-way pyramid enhancement network,10.1007/s13735-025-00374-8,2025-04-28,2025-06-17,50
+DSF-DET: a dual-domain feature fusion network for RGB-infrared object detection,10.1007/s13735-026-00428-5,2026-03-19,2026-10-15,210
+Adaptive frequency reasoning for fine-grained sketch-based image retrieval,10.1007/s13735-026-00420-z,2026-06-13,2026-09-06,85
+ETG: the graph convolutional network was enhanced with an EA-transformer for aspect sentiment triplet extraction,10.1007/s13735-025-00377-5,2024-09-28,2025-07-15,290
+CSAM: Capsule spatial attention mask network for visual question answering,10.1007/s13735-025-00394-4,2024-12-08,2025-12-18,375
+Temporal and visual joint representation for time series class-incremental learning,10.1007/s13735-026-00426-7,2026-05-30,2026-10-01,124
+Person search: a comprehensive survey on image-based person search using deep learning,10.1007/s13735-026-00416-9,2026-03-10,2026-08-13,156
+Global and local label-constrained alignment for image-text matching,10.1007/s13735-025-00397-1,2025-07-15,2025-12-29,167
+Multi-view Multi-label Canonical Correlation Analysis with Dual Correlations for Cross-modal Multimedia Retrieval,10.1007/s13735-025-00384-6,2025-06-07,2025-09-28,113
+Enhancing action recognition via dynamic cross-frame differential modeling,10.1007/s13735-026-00398-8,2025-06-30,2026-01-25,209
+An implicit layout-aware transformer for full-page end-to-end optical music recognition,10.1007/s13735-025-00385-5,2025-03-28,2025-09-28,184
+Ultra fast-inference depth completion with linear attention-based cascaded hourglass network,10.1007/s13735-025-00381-9,2025-03-19,2025-09-15,180
+The evolution of deep learning models for instance segmentation: a critical review and analysis of future trajectories,10.1007/s13735-026-00407-w,2025-11-17,2026-05-19,183
+AILMIR: Agent and incremental learning-based multimodal information retrieval for complex multi-hop multimedia queries,10.1007/s13735-026-00413-y,2026-05-25,2026-07-01,37
+Zero-to-few shot music genre classification via prototype calibration and prompt learning in audio–language models,10.1007/s13735-026-00414-x,2026-02-05,2026-07-20,165
+A robust multilingual text-based person search framework via correspondence noise correction,10.1007/s13735-026-00422-x,2026-05-02,2026-09-07,128
+"Language-driven models for video anomaly detection: taxonomy, datasets, and future horizons",10.1007/s13735-026-00415-w,2026-04-13,2026-07-20,98
+Robust visual recommendation via graph pairwise training,10.1007/s13735-025-00388-2,2025-05-24,2025-10-10,139
+Probabilistic von Mises–Fisher representation learning for few-shot remote sensing scene classification,10.1007/s13735-026-00418-7,2025-12-02,2026-08-21,262
+$$HF^{2}\text {-}Net$$: hybrid fine-tuning heterogeneous fusion network for visible-infrared person Re-identification,10.1007/s13735-025-00389-1,2025-03-28,2025-11-03,220
+H-ARN: A holo-attentive relational network for holistic facial beauty prediction via distribution learning,10.1007/s13735-026-00401-2,2025-11-24,2026-04-08,135
+Enhanced YOLOv10 for small object detection with context-aware and adaptive modules,10.1007/s13735-025-00373-9,2024-11-06,2025-06-11,217
+AATransID : enhancing cross-domain person re-identification with low-rank adaptation and sequence sampling,10.1007/s13735-026-00402-1,2025-11-05,2026-04-23,169
+Chameleon: A Multimodal Learning Framework Robust to Missing Modalities,10.1007/s13735-025-00370-y,2025-01-24,2025-04-25,91
+Learning human visual attention on 3D surfaces through geometry-queried semantic priors,10.1007/s13735-026-00421-y,2026-05-04,2026-09-06,125
+Optimized data-cube search for enhanced video summarization via shot boundary detection,10.1007/s13735-026-00403-0,2025-08-11,2026-04-29,261
+A Reproducibility Study of Multimodal Embeddings for Recommender Systems,10.1007/s13735-026-00408-9,2026-02-03,2026-05-21,107
+ForgetUNet: a novel hybrid architecture with forgetting transformer and cross-gating for medical image segmentation,10.1007/s13735-026-00417-8,2026-04-11,2026-08-13,124
+Remote Sensing Image Change Captioning: A Comprehensive Review,10.1007/s13735-025-00375-7,2025-04-16,2025-07-03,78
+Quantifying and reducing the modality gap in both contrastive and generative multimodal vision–language models,10.1007/s13735-026-00423-w,2025-12-20,2026-09-11,265
+"Multi-objective reinforcement learning for recommender systems: a comprehensive survey of methods, challenges, and future directions",10.1007/s13735-025-00383-7,2025-07-24,2025-09-26,64
+Optimising few-shot class-incremental learning for fine-grained visual recognition,10.1007/s13735-026-00409-8,2025-08-03,2026-05-22,292
+A new method of MED-MobileNetV3 for facial expression recognition,10.1007/s13735-026-00430-x,2025-07-17,2026-10-26,466
+"FME-24: A film, music, and emotion dataset",10.1007/s13735-026-00404-z,2025-12-05,2026-04-29,145
+ANROT-HELANet: adverserially and naturally robust attention-based aggregation network via the hellinger distance for few-shot classification,10.1007/s13735-025-00390-8,2024-10-27,2025-11-03,372
+Joint temporal–structural learning for music emotion recognition using LSTM–GAT networks,10.1007/s13735-026-00405-y,2025-12-26,2026-05-01,126

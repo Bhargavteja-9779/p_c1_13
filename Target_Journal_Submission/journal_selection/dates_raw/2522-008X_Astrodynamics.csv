@@ -1,0 +1,86 @@
+title,doi,received,accepted,days
+Fast trajectory replanning for cooperative vehicles using sequential convex programming,10.1007/s42064-024-0208-6,2024-01-03,2024-03-03,60
+Field-of-view constrained three-dimensional impact time and angle guidance via dual-step joint approach,10.1007/s42064-025-0280-6,2024-12-13,2025-05-23,161
+Trajectory design in multi-body models via homotopic convex optimization,10.1007/s42064-025-0300-6,2025-09-05,2025-12-02,88
+Hierarchical control framework for multi-legged extraterrestrial exploration robot based on model predictive and virtual model control,10.1007/s42064-025-0290-4,2024-12-19,2025-08-14,238
+Data-driven stability enhanced tube-based robust model predictive control with disturbance compensation for FFSR post-capture,10.1007/s42064-026-0322-8,2025-11-03,2026-05-27,205
+Leveraging the Hill restricted four-body problem to investigate the ephemeris transition characteristics in the Earth-Moon L2 halo orbit region,10.1007/s42064-024-0250-4,2024-06-18,2024-10-31,135
+Design of natural Lissajous formations with nearly constant baselines,10.1007/s42064-025-0277-1,2025-01-06,2025-05-06,120
+Multi-constraint spacecraft close-range observation effectiveness evaluation and optimization via a feedback-coefficient scheduled RLNNA,10.1007/s42064-026-0309-5,2025-09-30,2026-02-27,150
+Disturbance observer-based fixed-time control for space tether system with prescribed performance after capturing debris,10.1007/s42064-025-0271-7,2024-08-30,2025-04-07,220
+Bounds of relative motion for resonant solar-sail halo orbits in Earth–Moon system,10.1007/s42064-024-0258-9,2024-01-18,2024-11-26,313
+Observer-based dual hybrid nonfragile tracking control for satellite swarm reconstruction,10.1007/s42064-024-0242-4,2024-05-08,2024-09-02,117
+Hazardous asteroid deflection based on “space billiard” mode: Mission analysis and trajectory design,10.1007/s42064-024-0221-9,2024-03-12,2024-05-15,64
+Multi-target spacecraft mission design using convex optimization and binary integer programming,10.1007/s42064-025-0274-4,2025-02-22,2025-04-07,44
+Review of homotopy methods for aerospace trajectory optimization,10.1007/s42064-026-0315-7,2025-12-11,2026-04-13,123
+Differential corrections algorithm for initial orbit determination in the cislunar region using angle-only measurements,10.1007/s42064-026-0302-z,2025-07-30,2026-01-13,167
+Optimal outbound transfer windows for Artemis III and beyond,10.1007/s42064-024-0254-0,2024-08-09,2024-11-16,99
+Attention-driven reinforcement learning for multi-satellite collaborative orbital interception strategy solution,10.1007/s42064-024-0246-0,2024-07-24,2024-10-06,74
+Orbit reconstruction for HERMES-SP/TP satellite mission,10.1007/s42064-025-0289-x,2025-01-11,2025-07-21,191
+Fully-distributed autonomous scheduling for Earth-observing constellations,10.1007/s42064-024-0253-1,2024-08-29,2024-11-11,74
+Disturbance-Free Payload spacecraft modeling and control: Non-contact architecture for high-precision space missions,10.1007/s42064-025-0266-4,2024-11-21,2025-01-27,67
+Terminal guidance and control algorithms for kinetic impact missions on 30-m-diameter asteroids,10.1007/s42064-024-0239-z,2024-03-13,2024-08-18,158
+Radar initial orbit determination method from angular track and Doppler shift measurements,10.1007/s42064-025-0276-2,2024-12-06,2025-05-07,152
+Attitude reference generation for spacecraft with rotating solar arrays and pointing constraints,10.1007/s42064-024-0245-1,2024-07-14,2024-10-04,82
+A geometric approach to optimal motion planning for close-range rendezvous and synchronization,10.1007/s42064-025-0273-5,2024-12-18,2025-04-11,114
+AI-assisted hazard detection for safe lunar landing,10.1007/s42064-025-0288-y,2025-03-01,2025-07-18,139
+Residual-learning-based landing control with gravity estimation for quadruped robot in low-gravity scenarios,10.1007/s42064-025-0298-9,2024-11-03,2025-11-03,365
+Autonomous contingency station-keeping for lunar halo orbits via reinforcement meta-learning,10.1007/s42064-026-0307-7,2025-09-04,2026-02-23,172
+Dynamic modeling and active vibration control of an on-orbit assembled planar phased array antenna with numerous revolute clearance hinges,10.1007/s42064-025-0286-0,2025-02-27,2025-07-07,130
+Revisiting dust dynamics in Europa’s plumes based on Galileo detection data,10.1007/s42064-024-0240-6,2024-06-07,2024-08-22,76
+Neural networks-based solution of the two-body problem,10.1007/s42064-024-0230-8,2024-01-08,2024-06-03,147
+Advanced thermal insulation strategies for liquid hydrogen storage tanks in Martian environments,10.1007/s42064-024-0248-y,2024-01-30,2024-10-30,274
+Implementation and analysis of different geomagnetic field models for attitude determination and control system (ADCS) of a satellite,10.1007/s42064-025-0283-3,2025-01-09,2025-06-15,157
+AI-enabled crater-based navigation for lunar mapping,10.1007/s42064-025-0294-0,2025-05-01,2025-09-16,138
+Equivalent dynamic modeling and analysis for a novel dual-ring truss space antenna,10.1007/s42064-026-0310-z,2025-11-04,2026-03-06,122
+Current status and trends of orbit determination technologies for space gravitational wave detectors,10.1007/s42064-026-0311-y,2025-11-08,2026-03-13,125
+MasconCube: Fast and accurate gravity modeling with an explicit representation,10.1007/s42064-025-0301-5,2025-09-10,2025-12-25,106
+Real-time autonomous guidance generation around small bodies via Sequential Convex Programming,10.1007/s42064-025-0281-5,2025-02-07,2025-05-23,105
+Distributed composite state observer-based cooperative control for spacecraft swarm,10.1007/s42064-024-0243-3,2024-05-03,2024-09-04,124
+Real-time onboard orbit propagator for planetary missions,10.1007/s42064-025-0264-6,2024-09-04,2025-01-14,132
+Trajectory design for optical on-orbit inspection missions in geostationary Earth orbit,10.1007/s42064-025-0299-8,2025-02-13,2025-11-25,285
+Robust trajectory maneuver scheduling near the flyby of small celestial bodies on the basis of proximal policy optimization,10.1007/s42064-024-0252-2,2024-05-10,2024-11-11,185
+WaveMars-LiteNet: A wavelet-based lightweight multi-scale network for Martian rock segmentation,10.1007/s42064-026-0328-2,2026-02-25,2026-07-04,129
+Random Fibonacci sampling and region division: A numerical analysis of constellation coverage,10.1007/s42064-025-0268-2,2024-10-14,2025-02-17,126
+Analysis of deployment and operational strategies for Starlink Stage I LEO constellation based on TLE,10.1007/s42064-025-0293-1,2025-02-22,2025-09-15,205
+Robust twistor-based spacecraft relative pose estimation using unscented Kalman filter,10.1007/s42064-024-0228-2,2023-10-10,2024-05-31,234
+Finite-time fault-tolerant consensus control for multiple solar sail formation flying around heliocentric inclined elliptic displaced orbits,10.1007/s42064-025-0272-6,2024-12-03,2025-04-07,125
+Deep visual odometry and pose reconstruction through single image depth map and triangulation for terrain relative navigation,10.1007/s42064-025-0282-4,2025-02-14,2025-06-05,111
+TABLF-based finite-time cooperative guidance law for a maneuvering target with a field-of-view constraint,10.1007/s42064-025-0265-5,2024-09-28,2025-01-14,108
+Review of trajectory design and optimization methods for ice giant exploration,10.1007/s42064-026-0308-6,2025-11-26,2026-02-25,91
+Vectorized dynamic-size genetic algorithm for rapid generation of optimal and suboptimal flyby sequences,10.1007/s42064-026-0317-5,2025-11-06,2026-04-30,175
+Decision making for lunar landing applications using AI agents and reinforcement learning,10.1007/s42064-025-0292-2,2025-03-01,2025-08-26,178
+Time-series modeling and prediction of tethered-net contact dynamics for space tumbling debris,10.1007/s42064-026-0304-x,2025-10-13,2026-01-29,108
+Dynamics modeling and optimization of an asymmetric two-stage torsion pendulum for drag-free testing in the Taiji mission,10.1007/s42064-025-0270-8,2024-12-16,2025-03-28,102
+Guidance and control networks with periodic activation functions,10.1007/s42064-025-0285-1,2025-02-12,2025-07-06,144
+Dynamics and control of a sub-CubeSat swarm for distributed beamforming,10.1007/s42064-026-0306-8,2025-09-03,2026-01-30,149
+SPTN: Transformer-based spacecraft pose estimation network for space objects tracking,10.1007/s42064-024-0260-2,2024-08-31,2024-12-17,108
+Adaptive model-free prescribed performance control for spacecraft proximity operations with safety concerns,10.1007/s42064-025-0269-1,2024-05-31,2025-03-26,299
+Augmented Lagrangian methods for handling terminal constraints in spacecraft trajectory optimization,10.1007/s42064-025-0287-z,2025-04-01,2025-07-17,107
+Energy efficiency analysis of Spiking Neural Networks for space applications,10.1007/s42064-024-0256-y,2024-08-17,2024-11-24,99
+Application of singular perturbation theory to space flight dynamics problems,10.1007/s42064-024-0233-5,2024-05-03,2024-06-24,52
+Self-organized control of spacecraft formation flying on irregular curves for cooperative observation,10.1007/s42064-025-0284-2,2025-03-10,2025-06-20,102
+A data analysis method for tactile sensors of manipulator tools based on a BP neural network,10.1007/s42064-026-0303-y,2025-04-27,2026-01-16,264
+Sustainable AI in and for space robotics: A review,10.1007/s42064-026-0323-7,2026-02-27,2026-06-01,94
+Concurrent optimization of modular robots for planetary landforms: A terrain-guided approach based on STGCN-GA,10.1007/s42064-024-0259-8,2024-08-27,2024-12-03,98
+Learning-efficient orbit decision via reinforcement learning with astrodynamics-informed action parameterization,10.1007/s42064-026-0313-9,2025-11-28,2026-04-09,132
+Trajectory design for awaiting comets on invariant manifolds with optimal control,10.1007/s42064-024-0236-2,2024-03-29,2024-07-02,95
+Descent-trajectory planning of a multi-node flexible small celestial body lander in hazardous terrains,10.1007/s42064-024-0244-2,2024-05-28,2024-09-30,125
+Combined trajectory and time-planning strategy for rendezvous missions using low-thrust transfer,10.1007/s42064-024-0222-8,2023-12-14,2024-05-20,158
+Target marker deployment strategies for Hayabusa2 extended mission to fast rotator 1998 KY26,10.1007/s42064-024-0229-1,2023-10-30,2024-06-03,217
+Energy-optimal low thrust optimization using finite-Fourier parametrization with nonstationary spectrum,10.1007/s42064-026-0312-x,2025-09-16,2026-03-13,178
+Thermal deformation analysis and shape control of a novel large-scale two-dimensional planar phased array antenna,10.1007/s42064-024-0238-0,2024-03-15,2024-07-22,129
+Trajectory prediction algorithm based on maneuver analysis for hypersonic glide vehicles in a deep neural network,10.1007/s42064-024-0257-x,2024-08-20,2024-11-20,92
+Augmented temporal grid for graph neural networks and anomaly detection in spacecraft,10.1007/s42064-025-0278-0,2025-03-01,2025-05-12,72
+Optimization and deployment method of cislunar communication and navigation constellation based on libration point orbits,10.1007/s42064-025-0279-z,2025-01-15,2025-05-18,123
+Earth–Moon transfer via the L1 Lagrangian point using the theory of functional connections,10.1007/s42064-025-0297-x,2025-09-12,2025-10-27,45
+Hopping exploration on the microgravity asteroid with a flexible lander,10.1007/s42064-025-0291-3,2024-10-20,2025-08-22,306
+Reduced-order uncertainty propagation for heliocentric gravitational wave observatories using semi-analytical sensitive directions,10.1007/s42064-024-0255-z,2024-07-09,2024-11-21,135
+Improved two-phase sequential convex programming for reentry trajectory optimization,10.1007/s42064-026-0316-6,2026-02-06,2026-04-29,82
+Comprehensive classification of non-periodic relative motion styles of spacecraft: A geometric approach and applications,10.1007/s42064-025-0263-7,2024-10-15,2025-01-08,85
+Intelligent strategy resolution methods and mechanism analysis in two-on-one impulsive orbital pursuit–evasion games,10.1007/s42064-025-0262-8,2024-07-30,2024-12-29,152
+Vision-guided optic flow navigation for small lunar missions,10.1007/s42064-026-0305-9,2025-11-24,2026-01-30,67
+Minimum admissible region for orbit determination: Theory and applications,10.1007/s42064-025-0295-3,2025-04-27,2025-10-15,171
+Analysis of the optimal transfer time under uncertainty of regular structure asteroids,10.1007/s42064-025-0261-9,2024-07-29,2024-12-28,152
+A review of model extensions and solution methods for space orbital games,10.1007/s42064-026-0320-x,2026-01-10,2026-05-19,129
+Trajectory design for comet 67P/Churyumov–Gerasimenko mission: Multiple gravity assist analysis using Tisserand Graph,10.1007/s42064-025-0275-3,2025-01-22,2025-04-25,93

@@ -1,0 +1,120 @@
+title,doi,received,accepted,days
+m6ADP-GCNPUAS: m6A-Disease Prediction via Graph Convolutional Network and Positive-Unlabeled Learning with Self-Adaptive Sampling,10.1007/s12539-025-00760-0,2024-11-09,2025-07-25,258
+Predicting piRNA-Disease Associations Based on Dual-View Learning and Multi-head Self-Attention Mechanism Fusion,10.1007/s12539-026-00854-3,2025-12-26,2026-05-11,136
+HRD-Informed Digital Histology Model for Predicting Platinum Chemo-Response and Prognosis in High-Grade Serous Ovarian Cancer,10.1007/s12539-025-00809-0,2025-09-07,2025-12-15,99
+GraphTransDTA: Drug-Target Affinity Prediction with Graph Transformer for Multimodal Data Fusion,10.1007/s12539-026-00823-w,2025-01-23,2026-02-04,377
+scDGCN: A Graph-Based Deep Clustering Framework for Single-Cell Transcriptomics via Neighborhood-Enhanced Context Representation Learning,10.1007/s12539-026-00884-x,2026-02-07,2026-09-04,209
+3D UXFormer: Dual-Branch Feature Fusion for Precise Breast MRI Multi-Tissue Segmentation,10.1007/s12539-026-00864-1,2025-05-05,2026-06-01,392
+EASNet: Edge-aware Segmentation Network for Skin Lesion Segmentation with Boundary-aware and Frequency Attention Mechanisms,10.1007/s12539-025-00796-2,2025-02-12,2025-11-12,273
+MPMB-DR: Meta-path Integration of Multi-source Biological Information for Drug Repositioning,10.1007/s12539-025-00771-x,2024-11-16,2025-08-31,288
+iALP: Identification of Allergenic Proteins Based on Large Language Model and Gate Linear Unit,10.1007/s12539-025-00734-2,2024-05-07,2025-06-03,392
+"AlzhiNet: Traversing from 2D-CNN to 3D-CNN, Towards Early Detection and Diagnosis of Alzheimer’s Disease",10.1007/s12539-025-00764-w,2024-11-06,2025-07-28,264
+hERG-MFFGNN: An Explainable Deep Learning Model for Predicting Cardiotoxicity Using Multi-feature Fusion and Graph Neural Networks,10.1007/s12539-025-00768-6,2025-04-24,2025-08-21,119
+NeuroPpred-MSN: A Neuropeptide Prediction Model Based on Multi-feature Fusion and Siamese Networks,10.1007/s12539-025-00730-6,2024-10-05,2025-05-13,220
+Accurately Predicting Cell Type Abundance from Spatial Histology Image Through HPCell,10.1007/s12539-025-00757-9,2025-03-27,2025-07-19,114
+Predicting circRNA-Drug Sensitivity Using Integrated Hybrid Graph and Molecular Features,10.1007/s12539-026-00870-3,2026-03-03,2026-07-21,140
+SpatioFreq: A Deep Learning Framework for Decoding Cellular and Tissue Landscapes Across Organisms Using Spatial Transcriptomics,10.1007/s12539-025-00811-6,2025-03-08,2025-12-23,290
+A Hierarchical KAN-Augmented Graph Convolutional Model for Inferring Cell-Type-Specific Gene Regulations in Single-Cell Omics,10.1007/s12539-026-00890-z,2026-04-18,2026-10-08,173
+Unveiling the Impact of Copper Metabolism on Epithelial-Mesenchymal Transition of Triple-Negative Breast Cancer: Identification of Therapeutic Targets,10.1007/s12539-026-00835-6,2024-11-21,2026-03-10,474
+A Novel Cancer Driver Genes Identification Method Based on Self-Supervised Dual Masked Graph Autoencoder,10.1007/s12539-026-00866-z,2025-04-18,2026-06-30,438
+DiM2-DRP: Dual-Input Multi-View Dynamic Contrastive Learning Framework for Drug Response Prediction,10.1007/s12539-026-00880-1,2026-03-17,2026-08-27,163
+BrainDEC: An M/EEG Unsupervised Representation Learning Framework with Disentangled Equivariance Constraint,10.1007/s12539-026-00834-7,2025-09-01,2026-03-08,188
+Intelligent Recognition Network for Difficult Airway Based on Multi-View Input and Attention Aggregation,10.1007/s12539-025-00784-6,2025-03-27,2025-10-08,195
+Hybrid Encoding and Adaptive Guidance for Enhanced Single-Cell Multi-omics Clustering,10.1007/s12539-026-00827-6,2025-04-10,2026-02-20,316
+EMMVEP: An Ensemble Method for Protein Missense Variant Effect Prediction Based on Multi-Source Feature Fusion,10.1007/s12539-025-00812-5,2025-02-25,2025-12-24,302
+UniPept: A Universal Model for Predicting Peptide Properties Based on Atom-Residue Dual-Scale Integration,10.1007/s12539-026-00863-2,2025-08-21,2026-05-25,277
+SSLCNV: A Semi-supervised Learning Framework for Accurate Copy Number Variation Detection,10.1007/s12539-025-00795-3,2025-07-14,2025-10-31,109
+A Framework Integrating Spiking Cortical Circuit Modeling and Simulation-Based Inference to Probe Biomarkers of Cortical Dysfunction in Alzheimer’s Di,10.1007/s12539-026-00817-8,2025-08-26,2026-01-12,139
+Inferring Phenotypes of Single Cells Based on the Expression Profiles of Phenotype-Associated Marker Genes in Bulks and Single Cells,10.1007/s12539-025-00803-6,2025-05-29,2025-11-27,182
+MDL-HTI: A Multimodal Deep Learning Approach for Predicting Herb-Target Interactions,10.1007/s12539-025-00772-w,2025-03-19,2025-08-31,165
+ViruSeg: Harnessing the Power of Large Language-Image Model for Enhanced Virus Image Segmentation,10.1007/s12539-025-00711-9,2024-10-15,2025-04-05,172
+OptimDase: An Algorithm for Predicting DNA Binding Sites with Combined Feature Encoding,10.1007/s12539-025-00704-8,2024-12-03,2025-03-13,100
+Electroencephalography Alpha-Band Oscillations as Potential Indicators of Executive Subcomponents Dysfunction correlating to the Severity of Cerebral ,10.1007/s12539-026-00885-w,2026-07-13,2026-09-22,71
+Musical Peptide: Fragmentation of Musical Protein for AI-driven Bioactive Peptide Discovery Based on a New DeepPepQSAR Pipeline,10.1007/s12539-026-00882-z,2026-04-07,2026-08-27,142
+MeDiCNet: Integrating Multi-scale Dynamic Convolution and Enhanced Position-Aware Transformer for DNA Methylation Site Prediction,10.1007/s12539-026-00836-5,2025-06-02,2026-03-10,281
+A Re-parameterized Network-Based Lightweight Multimodal Fusion Network for Early Lung Cancer Risk Prediction,10.1007/s12539-026-00873-0,2026-01-02,2026-08-16,226
+CDM-UNet: Content-Driven Enhanced Mamba Model for Medical Image Segmentation,10.1007/s12539-026-00841-8,2025-06-29,2026-03-22,266
+MOPSOGAT: Predicting CircRNA-Disease Associations via Improved Multi-objective Particle Swarm Optimization and Graph Attention Network,10.1007/s12539-025-00725-3,2024-08-05,2025-05-04,272
+GapSense: Similarity Estimation-Based Gap Filler with TGS-Reads for Genome Assemblies,10.1007/s12539-025-00770-y,2024-11-03,2025-08-31,301
+Advanced Multi-Level Bidirectional Attention Network for Retinal Vessel Segmentation,10.1007/s12539-025-00793-5,2025-04-12,2025-10-23,194
+Protein-DNA Binding Sites Prediction via Integrating Pretrained Large Language Models and Contrastive Learning,10.1007/s12539-025-00788-2,2025-03-24,2025-10-10,200
+Joint Low Rank Representation with Symmetric Orthogonal Decomposition for Clustering of scRNA-seq Data,10.1007/s12539-025-00767-7,2024-03-23,2025-08-14,509
+Enhancing the Feature Representation of Protein Sequence Descriptors in Protein-Protein Interaction Prediction,10.1007/s12539-025-00723-5,2024-10-10,2025-04-28,200
+IMF-DDI: Information Mapping and Fusion Framework for Drug-drug Interaction Prediction,10.1007/s12539-025-00781-9,2025-03-12,2025-09-29,201
+DiTSim: A Diffusion-Transformers Based Single-Cell ATAC-seq Data Simulator,10.1007/s12539-025-00773-9,2025-04-14,2025-08-31,139
+MKLNID: Identifying Melanoma-related Pathogenic Genes Through Multiple Kernel Learning and Network Impulsive Dynamics,10.1007/s12539-025-00755-x,2025-04-28,2025-07-16,79
+Classification of Brain Tumors in MRI Images with Brain-CNXSAMNet: Integrating Hybrid ConvNeXt and Spatial Attention Module Networks,10.1007/s12539-025-00743-1,2024-11-05,2025-07-01,238
+Diffusion Model-Based Multi-Channel EEG Representation and Forecasting for Early Epileptic Seizure Warning,10.1007/s12539-025-00750-2,2025-02-01,2025-07-09,158
+BEST: Basic Embedding Search Tool Enhancing Discovery of Novel Enzyme,10.1007/s12539-025-00753-z,2024-11-15,2025-07-16,243
+A Deep Learning Framework for Accurate lncRNA-Protein Interaction Prediction via Multi-Kernel Graph Embeddings and Self-Attention,10.1007/s12539-026-00872-1,2025-08-14,2026-08-04,355
+KGLAR: Deconvoluting Spatial Transcriptomics Data with Single-cell Transcriptomes through Knowledge-guided NMF and Least Angle Regression,10.1007/s12539-026-00815-w,2025-02-05,2026-01-12,341
+Focal-DenseNet: A Risk Assessment Framework for Alzheimer’s Disease in Heterogeneous MRI Data,10.1007/s12539-026-00833-8,2025-04-21,2026-03-08,321
+ResNet-Powered Multi-Class Identification of Sequence Patterns for Genome Replication Timing Analysis,10.1007/s12539-025-00797-1,2025-05-04,2025-11-04,184
+Multi-Modal Fusion with Supervised Contrastive Learning Model for Early Alzheimer’s Disease Diagnosis and Multi-Modal Biomarker Identification,10.1007/s12539-025-00805-4,2025-07-20,2025-12-02,135
+IIC-DTI: A Contrastive Learning Enhanced Inter–Intra Molecular Fusing Framework for Drug–Target Interaction Prediction,10.1007/s12539-025-00799-z,2025-04-29,2025-11-25,210
+Relevance of 3D Rotationally Equivariant Neural Networks for Predicting Protein-Ligand Binding Affinities,10.1007/s12539-025-00745-z,2024-12-05,2025-06-30,207
+A Bimodal Graph Neural Network with Transfer Learning and Contrastive Learning for Protein-Protein Interaction Site Prediction,10.1007/s12539-026-00842-7,2025-08-23,2026-03-22,211
+MED-PPIS: Multi-order Moments External Graph Attention Network with Dual-Axis Attention for Protein–Protein Interaction Site Prediction,10.1007/s12539-025-00780-w,2025-05-20,2025-09-18,121
+Predicting Potential Microbe-Disease Associations Based on Heterogeneous Graph Random Attention Neural Network and Neural Collaborative Filtering,10.1007/s12539-025-00776-6,2025-06-02,2025-08-31,90
+Deep3D-DTA: A Tri-Modal Deep Learning Framework for Binding Affinity Prediction Leveraging 3D Structural Representations of Drugs and Targets,10.1007/s12539-026-00839-2,2025-06-19,2026-03-22,276
+ProtFormer-Site: Ultra-fast and Accurate Prediction of Protein-Protein Interaction Sites with Protein Language Model,10.1007/s12539-026-00848-1,2025-07-09,2026-03-30,264
+MOGANet: A Multi-omics Graph Attention Network for Cancer Diagnosis and Biomarker Identification,10.1007/s12539-026-00828-5,2025-09-17,2026-02-20,156
+MLWNNR: LncRNA-Disease Association Prediction with Multi-Kernel Learning-Driven Weighted Nuclear Norm Regularization,10.1007/s12539-025-00717-3,2024-05-08,2025-04-18,345
+Automated Brain Tumor Classification and Grading Using Multi-scale Graph Neural Network with Spatio-Temporal Transformer Attention Through MRI Scans,10.1007/s12539-025-00718-2,2024-05-30,2025-04-18,323
+SpliceDetector: A Splice Sites Detection Method Based on Biology Attention and Ensemble Module,10.1007/s12539-026-00878-9,2026-03-20,2026-08-27,160
+GATRSyn: Advancing Anticancer Drug Synergy Prediction Through Graph Attention Networks and Transformer-based Feature Re-embedding,10.1007/s12539-025-00798-0,2025-04-14,2025-11-07,207
+Multi-Network Co-expression Analysis Enhances Biological Insights from Single-Cell Gene Expression,10.1007/s12539-025-00806-3,2025-02-22,2025-12-03,284
+ESM-PsyPred: Leveraging Protein Language Models for Accurate Prediction of Psychrophilic Proteins,10.1007/s12539-025-00810-7,2025-06-06,2025-12-23,200
+DEAPLOG: Differential Expression Analysis and Pseudo-Temporal Locating and Ordering of Genes in Single-Cell Transcriptomic Data,10.1007/s12539-025-00778-4,2025-01-18,2025-09-09,234
+Hierarchical Graph Representation Learning for Protein–Protein Interaction Site Prediction,10.1007/s12539-026-00868-x,2026-01-04,2026-07-15,192
+LLM4PDA: Augmenting piRNA-Disease Association Prediction with Large Language Models,10.1007/s12539-026-00874-z,2026-01-09,2026-08-16,219
+Semi-supervised Medical Image Segmentation Using Heterogeneous Complementary Correction Network and Confidence Contrastive Learning,10.1007/s12539-025-00727-1,2024-11-12,2025-05-04,173
+scIMGCN: an Automatic Single-Cell Type Annotation Method Based on Interpretable Graph Convolutional Network,10.1007/s12539-025-00738-y,2025-01-11,2025-06-16,156
+GMC-DMA: GNN-Mamba Co-Contrastive Optimization for Disease-Metabolite Association Prediction,10.1007/s12539-026-00819-6,2025-07-09,2026-01-27,202
+FHGNet: A Feature-Centric Hierarchical Network with Graph Attention Layer for Supraventricular Tachycardia Classification,10.1007/s12539-025-00802-7,2025-07-31,2025-11-22,114
+DynamicDTA: Drug-Target Binding Affinity Prediction Using Dynamic Descriptors and Graph Representation,10.1007/s12539-025-00729-z,2025-02-12,2025-05-11,88
+DCPPS: Prediction of Kinase-Specific Phosphorylation Sites Using Dynamic Embedding and Cross-Representation Interaction,10.1007/s12539-025-00731-5,2024-10-23,2025-05-13,202
+SANNO: A Graph-Transformer Enhanced Optimal Transport Tool for Spatial Transcriptomic Annotation,10.1007/s12539-025-00752-0,2025-03-26,2025-07-09,105
+Unveiling Putative Functions of Burkholderia pseudomallei K96243 Hypothetical Proteins Via High-Throughput Characterization of Structural Similarities,10.1007/s12539-025-00792-6,2024-11-15,2025-10-23,342
+STFusion: A Spatial-Temporal Dual-Pathway Network with Multi-scale Attention Fusion for Early Diagnosis of Parkinson’s Disease,10.1007/s12539-026-00829-4,2025-11-27,2026-02-25,90
+Semi-supervised Medical Image Segmentation via Perturbation-Aware Mutual Learning and Edge-Aware Uncertainty Loss for Accurate Anatomical Delineation,10.1007/s12539-026-00862-3,2025-10-07,2026-05-25,230
+Integrated Genome-Wide Association Study and Machine Learning Approach for Characterizing the Determinants of Biofilm Formation in Staphylococcus aure,10.1007/s12539-026-00855-2,2025-06-11,2026-05-18,341
+A Scalable and Robust Ensemble Deep Learning Method for Predicting Drug-Target Interactions,10.1007/s12539-025-00774-8,2025-04-22,2025-08-31,131
+scLGGCL: Label-Guided Graph Contrastive Learning for Single-Cell Fusion Clustering,10.1007/s12539-026-00858-z,2025-12-16,2026-05-12,147
+A Novel Dual-Level Momentum Distillation Method with Extreme Thresholding for Imputing Single-Cell RNA Sequencing Data,10.1007/s12539-025-00754-y,2025-01-28,2025-07-16,169
+CMedRAGBot: A Chinese Medical Chatbot Based on Graph RAG and Large Language Models,10.1007/s12539-025-00715-5,2024-11-28,2025-04-13,136
+Spatial Mapping of Single Cells via Correlation and Importance Between Cells and Spots,10.1007/s12539-026-00837-4,2025-10-11,2026-03-10,150
+AMFCL: Predicting miRNA-Disease Associations Through Adaptive Multi-source Modality Fusion and Contrastive Learning,10.1007/s12539-025-00724-4,2024-11-05,2025-04-28,174
+Real-Time Functional Lesion Simulation in Connectomics: Rapid Sensitivity Analysis of Neural Pathways via Traversal Tree-Correlated Cuts,10.1007/s12539-026-00826-7,2025-12-03,2026-02-08,67
+Efficient De Novo Assembly and Recovery of Microbial Genomes from Complex Metagenomes Using a Reduced Set of k-mers,10.1007/s12539-025-00722-6,2024-09-23,2025-04-22,211
+DTANet+: Dual Interaction and Kernel-Diverse Network for Drug-Target Affinity Prediction,10.1007/s12539-026-00851-6,2025-09-24,2026-05-06,224
+Intelligent Medication Recommendation via Dynamic Prescription Modeling and Molecular Substructure Learning,10.1007/s12539-026-00861-4,2025-06-13,2026-05-25,346
+Accurate RNA-Ligand Binding Site Prediction Based on a Multi-Channel Graph Neural Network,10.1007/s12539-026-00883-y,2026-01-17,2026-08-27,222
+STNMAE: Identifying Spatial Domains from Spatial Transcriptomics Data with Neighbor-Aware Multi-view Masked Graph Autoencoder,10.1007/s12539-026-00832-9,2025-04-11,2026-03-08,331
+A Graph Neural Network Framework with Equivariance and Heterogeneity for Drug Repositioning,10.1007/s12539-026-00818-7,2025-07-06,2026-01-28,206
+Interpretable Multi-task Analysis of Single-Cell RNA-seq Data Through Topological Structure Preservation and Data Denoising,10.1007/s12539-025-00765-9,2024-12-12,2025-07-29,229
+GSF-DTA: An Innovative Graph-Sequence Fusion Framework for Drug-Target Affinity Prediction,10.1007/s12539-025-00782-8,2025-05-24,2025-09-26,125
+SPCF-YOLO: An Efficient Feature Optimization Model for Real-Time Lung Nodule Detection,10.1007/s12539-025-00720-8,2024-12-16,2025-04-18,123
+Interpretable Multimodal Molecular Language Model for Drug-Target Interaction Prediction,10.1007/s12539-025-00808-1,2025-07-05,2025-12-15,163
+DNA Methylation Recognition Using Hybrid Deep Learning with Dual Nucleotide Visualization Fusion Feature Encoding,10.1007/s12539-025-00737-z,2024-08-01,2025-06-13,316
+PhaGCN_Cluster: A Scalable and Robust Framework for Automated Classification and Discovery of Viral Dark Matter from Metagenomes,10.1007/s12539-026-00820-z,2025-07-23,2026-02-01,193
+Predicting miRNA-Drug Interactions Based on Multi-source Feature Fusion of Heterogeneous Network,10.1007/s12539-025-00775-7,2025-05-15,2025-09-03,111
+A Multi-modal Drug Target Affinity Prediction Based on Graph Features and Pre-trained Sequence Embeddings,10.1007/s12539-025-00713-7,2024-10-30,2025-04-09,161
+3D Geometric Equivariant Graph Neural Networks with Contrastive Learning for Protein–Ligand Binding Affinity Prediction,10.1007/s12539-026-00867-y,2026-02-04,2026-07-15,161
+UDEDB: A Comprehensive Database for Dynamic Molecular Expression Changes in Uterine Endometrium,10.1007/s12539-026-00814-x,2025-05-06,2026-01-07,246
+AMPred-MFG: Investigating the Mutagenicity of Compounds Using Motif-Based Graph Combined with Molecular Fingerprints and Graph Attention Mechanism,10.1007/s12539-025-00742-2,2025-01-04,2025-06-25,172
+OMIGAT: Multi-Feature Enhanced Collaborative Attention and Graph Convolution Model for Cancer Driver Gene Identification,10.1007/s12539-026-00887-8,2026-01-27,2026-09-29,245
+ST-LDAW: A Topic-Model and Damped Weighted Least-Squares Method for Integrative Deconvolution of Single-Cell and Spatial Transcriptomics,10.1007/s12539-026-00850-7,2025-12-27,2026-04-25,119
+HP-MoleQ: An Effective Predictive Model for High-Throughput Screening of Food-Derived Hepatoprotective Compounds,10.1007/s12539-026-00838-3,2025-10-15,2026-03-10,146
+TransTCR: Integrating TCRs and Transcriptomes Through Optimal Transport for Antigen Specificity Prediction,10.1007/s12539-026-00865-0,2025-11-21,2026-06-30,221
+Subtype-HM: A Novel Cancer Subtype Identification Method Based on Hypergraph Learning and Multi-omics Data,10.1007/s12539-025-00789-1,2025-05-15,2025-10-11,149
+stGNN: Spatially Informed Cell-Type Deconvolution Based on Deep Graph Learning and Statistical Modeling,10.1007/s12539-025-00728-0,2025-01-02,2025-05-11,129
+Multi-scale Multimodal Representation for Enhanced Survival Prediction in Computational Pathology,10.1007/s12539-026-00816-9,2025-07-09,2026-01-12,187
+MVFAN-Kcr: A Multi-View Feature Fusion and Attention-Based Network for Lysine Crotonylation Site Identification,10.1007/s12539-026-00846-3,2025-07-21,2026-03-30,252
+MBPBERT: A Large Language Model for Metal-Binding Peptide Discovery,10.1007/s12539-026-00847-2,2025-10-09,2026-03-30,172
+Adaptive Graph Prompting Meets Contrastive Learning: A Multi-View Framework for Metabolite-Disease Association Prediction,10.1007/s12539-025-00751-1,2025-02-26,2025-07-09,133
+GN-Net: A Geometric and Neighborhood-Aware Network for Predicting Intracranial Aneurysm Rupture Risk and Assisting Clinical Decision-Making,10.1007/s12539-025-00785-5,2025-05-04,2025-10-08,157
+NphosNet: Predicting Protein N-Phosphorylation Sites via xLSTM and Enhanced PLM Features with a Weighted Three-Channel Cross-Attention Mechanism,10.1007/s12539-026-00849-0,2025-06-23,2026-04-08,289
+Attention-Guided Multi-View Contrastive Learning for Predicting Sparse Drug–Gene Associations,10.1007/s12539-026-00843-6,2025-08-25,2026-03-22,209
+MDCL: Multi-source Information Fusion and Collaborative Contrastive Learning for Inferring miRNA-Drug Sensitivity and Resistance Associations,10.1007/s12539-026-00879-8,2026-04-07,2026-08-27,142
+Parameter Estimation in Cellular Radiation Effects Using PSO-SQP and GA-SQP Hybrid Methods,10.1007/s12539-025-00736-0,2024-05-16,2025-06-10,390

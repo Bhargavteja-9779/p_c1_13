@@ -1,0 +1,38 @@
+title,doi,received,accepted,days
+Terminology binding with SNOMED CT to bridge differences in information structures: a feasibility study,10.1186/s13326-026-00357-6,2026-01-23,2026-05-18,115
+Representing dental caries and dysbiosis within the oral microbiome in the Oral Health and Disease Ontology,10.1186/s13326-026-00350-z,2025-07-31,2026-03-16,228
+Three-layered semantic framework for public health intelligence,10.1186/s13326-025-00338-1,2025-01-28,2025-08-15,199
+Semantic classification of Indonesian consumer health questions,10.1186/s13326-025-00334-5,2024-06-02,2025-06-15,378
+"Queryome: orchestrating retrieval, reasoning, and synthesis across biomedical literature",10.1186/s13326-026-00366-5,2026-04-24,2026-08-06,104
+An application-based ontological knowledge base of medications to support health literacy and adherence for the consumer population: an aging populati,10.1186/s13326-026-00347-8,2023-05-20,2026-01-02,958
+BabelFSH—a toolkit for an effective HL7 FHIR-based terminology provision,10.1186/s13326-025-00343-4,2025-06-27,2025-11-16,142
+Utilizing BERTopic modeling for concept discovery in the domain of gerotranscendence and solitude,10.1186/s13326-026-00348-7,2025-08-15,2026-03-12,209
+Ontology development and use for cholangiocarcinoma risk factors and predictions: a term enrichment data analysis and machine learning classification,10.1186/s13326-025-00345-2,2025-08-13,2025-12-05,114
+The CLEAR Principle: organizing data and metadata into semantically meaningful types of FAIR Digital Objects to increase their human explorability and,10.1186/s13326-025-00340-7,2024-11-28,2025-10-04,310
+A pragmatist approach to bridging tables and ontologies through LinkML and punning,10.1186/s13326-026-00359-4,2025-10-28,2026-06-07,222
+Prenatal monitoring in primary health care: a design science research-based approach to FHIR interoperability,10.1186/s13326-026-00356-7,2025-09-16,2026-05-05,231
+FAIRness assessment of the metadata of omics datasets in online repositories,10.1186/s13326-026-00368-3,2025-10-09,2026-08-25,320
+A fourfold pathogen reference ontology suite,10.1186/s13326-025-00333-6,2024-12-31,2025-06-15,166
+Towards reliable Spanish clinical text de-identification through comparative evaluation of language model approaches,10.1186/s13326-026-00362-9,2026-03-04,2026-06-29,117
+Advancing the bioassay ontology through integrated PK/PD and safety pharmacology representation,10.1186/s13326-025-00342-5,2025-08-15,2025-11-06,83
+ClarID: a human-readable and compact identifier specification for biomedical metadata integration,10.1186/s13326-026-00349-6,2025-11-05,2026-03-13,128
+ACCELERATE-BASSO: early experiences and emerging best practices for ontology development in behavioral and social science research,10.1186/s13326-026-00363-8,2026-04-21,2026-07-07,77
+Knowledge graph embedding and alignment of incomplete electronic health records for critical care applications,10.1186/s13326-026-00351-y,2025-04-01,2026-03-31,364
+BASIL DB: bioactive semantic integration and linking database,10.1186/s13326-025-00336-3,2025-03-05,2025-08-06,154
+Annotating and indexing scientific articles with rare diseases,10.1186/s13326-025-00346-1,2025-06-30,2025-12-12,165
+Mapping between clinical and preclinical terminologies: eTRANSAFE’s Rosetta stone approach,10.1186/s13326-025-00337-2,2024-09-16,2025-08-12,330
+Ontology creation and management tools: the case of anatomical connectivity,10.1186/s13326-026-00358-5,2026-01-05,2026-05-18,133
+ECLed– a tool supporting the effective use of the SNOMED CT Expression Constraint Language,10.1186/s13326-025-00344-3,2025-05-12,2025-11-17,189
+Tuning knowledge graph embeddings in clustering with LISE1,10.1186/s13326-026-00367-4,2025-12-01,2026-08-25,267
+Benchmarking MeSH-augmented embeddings for biomedical document similarity,10.1186/s13326-026-00365-6,2026-03-13,2026-08-01,141
+FAIR in practice: minimum metadata schema for bioinformatics analytics by machines,10.1186/s13326-026-00354-9,2025-04-07,2026-04-29,387
+medicX-KG: a knowledge graph for pharmacists’ drug information needs,10.1186/s13326-025-00332-7,2024-10-28,2025-06-15,230
+BERTopic-driven term extraction from biomedical texts toward ontology population: evaluating vaccine ontology with Plotkin’s vaccines corpus,10.1186/s13326-026-00353-w,2025-09-17,2026-04-14,209
+"Immune biomarkers, profiles, and responses: a vaccine ontology perspective",10.1186/s13326-026-00360-x,2025-06-28,2026-06-07,344
+A prototype ETL pipeline that uses HL7 FHIR RDF resources when deploying pure functions to enrich knowledge graph patient data,10.1186/s13326-025-00335-4,2024-12-16,2025-07-01,197
+A practical and nuanced framework for entity linking evaluation,10.1186/s13326-025-00339-0,2025-04-22,2025-09-26,157
+OnTEPT: a multimodal OWL ontology for post-traumatic stress disorder,10.1186/s13326-026-00361-w,2026-04-22,2026-06-22,61
+SimSUM – simulated benchmark with structured and unstructured medical records,10.1186/s13326-025-00341-6,2025-05-28,2025-10-06,131
+Representing dental restoration materials in the oral health and disease ontology,10.1186/s13326-026-00352-x,2025-08-14,2026-04-01,230
+From narrative evidence to computable knowledge: a decision-relevant corpus for medicinal herb–disease relationships,10.1186/s13326-026-00355-8,2026-01-22,2026-05-05,103
+Introducing the TOP framework: a novel phenotyping solution for collaborative phenotype algorithm development and application,10.1186/s13326-026-00364-7,2026-06-12,2026-07-11,29
