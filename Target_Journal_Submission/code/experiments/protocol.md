@@ -65,3 +65,14 @@ and endpoint. Effect: difference in proportions with paired bootstrap 95% CI. Va
 RQ3: per-cell absolute difference E3-E2 and Spearman rho across cells (bootstrap CI). Unit of analysis = eye for
 E1/E4 with patient-cluster bootstrap; window clusters within patient for E2. All seeds reported (mean +- SD).
 No result-dependent change of thresholds, references or detectors after this date; any deviation will be reported.
+
+## Amendment A1 (2026-11-23, before any final result)
+Artes tests are one week apart. Rate-based rules (D2, D3, D7, D8, D9) are not invariant to the time scale, so each
+Artes window of k tests is assigned the test times of a randomly drawn UW-test eye with >= k tests (10 draws per
+window). Under true no change the time labels carry no signal, so this keeps the arm a valid null at clinical spacing.
+
+## Amendment A2 (2026-11-23, before any final result)
+GRAPE was measured with a different perimeter (59 analysable points after removing points coded -1; dB scale differs
+from Humphrey). Therefore on GRAPE: D5 calibration pool and D7 change limits come from GRAPE itself by 5-fold
+patient-level cross-fitting ("own-clinic calibration"); D8 is the UWHVF-trained model applied unchanged (transfer
+test, grid-agnostic features); D6, D9, D10 (24-2 specific) are not evaluated on GRAPE.

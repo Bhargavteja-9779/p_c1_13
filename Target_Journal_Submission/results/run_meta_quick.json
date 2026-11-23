@@ -1,0 +1,18 @@
+{
+ "mode": "quick",
+ "ks": [
+  4
+ ],
+ "seeds": [
+  0
+ ],
+ "n_train": 441,
+ "n_val": 313,
+ "n_test": 314,
+ "n_test_ref": 29,
+ "n_test_prog": 13,
+ "n_test_stable": 16,
+ "n_artes": 30,
+ "n_grape": 263,
+ "runtime_s": 11.683697938919067
+}
