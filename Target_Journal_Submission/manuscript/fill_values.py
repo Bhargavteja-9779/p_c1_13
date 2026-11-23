@@ -25,6 +25,7 @@ J = lambda *p: json.load(open(os.path.join(ROOT, *p)))
 M = J('results', 'metrics.json'); ST = J('results', 'statistics.json'); DE = J('results', 'descriptives.json')
 META = J('results', 'run_meta_full.json'); REFS = J('manuscript', 'references.json')
 PT = ST['paired_tests']; RQ3 = ST['rq3_audit_concordance']
+EX = J('results', 'extra_stats.json')
 EP = {'sens': 'sensitivity', 'fp': 'false positives (1-spec)', 'gsens': 'GRAPE sensitivity', 'gfp': 'GRAPE false positives'}
 
 def det_name(code):
@@ -39,6 +40,8 @@ def pair(ep, code, k):
     assert len(r) == 1, (ep, code, k); return r[0]
 def valid(code, k):
     r = row(code, k); return r['fpr_true_null_lo'] <= 0.05 and r['fpr_true_null_hi'] <= 0.10
+def borderline(code, k):
+    r = row(code, k); return (not valid(code, k)) and r['fpr_true_null_lo'] <= 0.05 and round(100 * r['fpr_true_null_hi'], 1) <= 10.0
 def pc(x): return f"{100 * x:.1f}"
 def pv(p):
     return '< 0.001' if p < 0.001 else f"= {p:.3f}" if p < 0.01 else f"= {p:.2f}"
@@ -61,7 +64,7 @@ def T_main():
         for code in [f'D{i}' for i in range(1, 11)]:
             r = row(code, k)
             out.append(f"| {SHORT[code]} | {k} | {pc(r['sens'])} ({pc(r['sens_lo'])}–{pc(r['sens_hi'])}) | {pc(r['spec'])} | "
-                       f"{pc(r['fpr_true_null'])} ({pc(r['fpr_true_null_lo'])}–{pc(r['fpr_true_null_hi'])}) | {pc(r['fpr_shuffle'])} | {'yes' if valid(code, k) else '**no**'} |")
+                       f"{pc(r['fpr_true_null'])} ({pc(r['fpr_true_null_lo'])}–{pc(r['fpr_true_null_hi'])}) | {pc(r['fpr_shuffle'])} | {'yes' if valid(code, k) else ('no (borderline)' if borderline(code, k) else '**no**')} |")
     return '\n'.join(out)
 
 def T_cohort():
@@ -71,6 +74,7 @@ def T_cohort():
         '| Characteristic | UWHVF reference progressors | UWHVF reference stable | Artes retest (true no change) | GRAPE (external) |', '|---|---|---|---|---|',
         f"| Patients / eyes, n | {P['n_patients']} / {P['n_eyes']} | {S['n_patients']} / {S['n_eyes']} | {A['n_patients']} / {A['n_series']} | {G['n_patients']} / {G['n_eyes']} |",
         f"| Age at first test, years | {mq(P['age0'])} | {mq(S['age0'])} | not used | {mq(G['age'])} |",
+        f"| Female patients, n (%) | {P['female_patients']} ({100 * P['female_patients'] / P['n_patients']:.0f}%) | {S['female_patients']} ({100 * S['female_patients'] / S['n_patients']:.0f}%) | not available | {G['female_patients']} ({100 * G['female_patients'] / G['n_patients']:.0f}%) |",
         f"| Tests per eye, n | {mq(P['n_tests'], 0)} | {mq(S['n_tests'], 0)} | {A['n_fields'] // A['n_series']} | {mq(G['n_visits'], 0)} |",
         f"| Follow-up, years | {mq(P['followup_y'])} | {mq(S['followup_y'])} | {mq(dict((k, v / 365.25) for k, v in A['span_days'].items() if k in ('median', 'q1', 'q3')), 2)} | {mq(G['followup_y'])} |",
         f"| Time from first to third test, years | {mq(P['years_to_test3'])} | {mq(S['years_to_test3'])} | 2 weeks by design | not computed |",
@@ -107,6 +111,22 @@ def sub(m):
                 f"Holm-adjusted p {pv(r['p_holm'])})")
     if t == 'ttd': return f"{100 * DE['time_to_detection_ref_progressors'][det_name(a[1])]['detected_by6_mean']:.0f}%"
     if t == 'table': return TABLES[a[1]]()
+    if t == 'x':
+        w = a[1]
+        if w == 'cum': return f"{100 * EX['cumulative_false_alarm_artes_start0'][a[2]]['any_flag_k3_to_6']:.1f}%"
+        if w == 'mdd_pp': return f"{100 * EX['min_significant_gain']['gain']:.1f}"
+        if w == 'mdd_eyes': return str(EX['min_significant_gain']['discordant_eyes'])
+        if w == 'rho_ci': lo, hi = EX['rho_cell_bootstrap_ci']; return f"{lo:.2f} to {hi:.2f}"
+        if w == 'd1hi': return ', '.join(f"{100 * EX['D1_fpr_hi_by_k'][str(k)]:.1f}%" for k in (3, 4, 5, 6))
+        if w == 'strict_list':
+            cells = {}
+            for c in EX['strict_valid_cells']:
+                d, k = c.split('@'); cells.setdefault(d, []).append(k)
+            return '; '.join(f"{SHORT[d]} (k = {', '.join(sorted(v))})" for d, v in sorted(cells.items(), key=lambda kv: int(kv[0][1:])))
+        if w == 'gplr': return f"{100 * EX['grape_secondary_labels'][a[2] + '@' + a[3]][a[4]][a[5]]:.1f}%"
+        if w == 'grape_3visit': return str(DE['grape']['n_eyes'] - DE['grape']['eyes_ge4'])
+        if w == 'sec_ref_prog': return str(int(row('D1', 3)['sens_ref2_n']))
+        raise KeyError(m.group(0))
     if t == 'REFERENCES': return m.group(0)
     raise KeyError(m.group(0))
 
@@ -157,6 +177,20 @@ def CHECKS():
     c['shuffle underestimates D9 k3'] = val('fpr_shuffle', 'D9', 3) < val('fpr_true_null', 'D9', 3)
     c['GRAPE D3,D4,D7 sens <=5% at k3'] = all(val('grape_sens', d, 3) <= 0.05 for d in ('D3', 'D4', 'D7'))
     c['D6 spec >= 95% at k3'] = val('spec', 'D6', 3) >= 0.95
+    c['D9 k6 borderline'] = borderline('D9', 6)
+    sv = set(EX['strict_valid_cells'])
+    c['strict rule: D1 fails all k'] = not any(f'D1@{k}' in sv for k in ks)
+    c['strict rule: no strict-valid detector has significant sens gain'] = not any(f'{d}@{k}' in sv and pair('sens', d, k)['p_holm'] < 0.05 and pair('sens', d, k)['diff'] > 0 for d in others for k in ks)
+    cum = EX['cumulative_false_alarm_artes_start0']
+    c['D7 lowest cumulative FA among D1,D2,D6,D7,D8'] = min(cum[d]['any_flag_k3_to_6'] for d in ('D1', 'D2', 'D6', 'D7', 'D8')) == cum['D7']['any_flag_k3_to_6']
+    c['D6,D8 highest cumulative FA'] = sorted(cum, key=lambda d: -cum[d]['any_flag_k3_to_6'])[:2] == ['D8', 'D6']
+    c['D7 sens >= D1 at k5,k6'] = val('sens', 'D7', 5) >= val('sens', 'D1', 5) and val('sens', 'D7', 6) >= val('sens', 'D1', 6)
+    c['D7 sens gain at k5 not significant'] = pair('sens', 'D7', 5)['p_holm'] >= 0.05
+    c['ref2 valid D7,D10,D8 > D1 at k6'] = all(val('sens_ref2', d, 6) > val('sens_ref2', 'D1', 6) and valid(d, 6) for d in ('D7', 'D10', 'D8'))
+    c['shuffle lower than true for D6 at k6'] = val('fpr_shuffle', 'D6', 6) < val('fpr_true_null', 'D6', 6)
+    c['GRAPE PLR2 spec D8 < D1'] = EX['grape_secondary_labels']['D8@3']['PLR2']['spec'] < EX['grape_secondary_labels']['D1@3']['PLR2']['spec']
+    c['D1 misses most at k3,k4'] = val('sens', 'D1', 3) < 0.5 and val('sens', 'D1', 4) < 0.5
+    c['D8 highest sens at k6'] = max(val('sens', d, 6) for d in ['D1'] + others) == val('sens', 'D8', 6)
     bad = [k for k, v in c.items() if not v]
     assert not bad, f'CLAIM CHECK FAILED: {bad}'
     return c

@@ -20,6 +20,15 @@ T = pd.DataFrame(json.load(open(os.path.join(ROOT, 'results', 'statistics.json')
 s3 = ['| k | Endpoint | Detector | n | Difference vs D1, pp (95% CI) | Only detector | Only D1 | p | Holm p |', '|---|---|---|---|---|---|---|---|---|']
 for _, r in T.iterrows():
     s3.append(f"| {r.k} | {r.endpoint} | {r.detector} | {r.n} | {100 * r['diff']:.1f} ({100 * r.diff_lo:.1f} to {100 * r.diff_hi:.1f}) | {r.only_det} | {r.only_D1} | {r.p:.3g} | {r.p_holm:.3g} |")
+EX = json.load(open(os.path.join(ROOT, 'results', 'extra_stats.json')))
+s4 = ['| Detector | k | PLR2 sens % (n+) | PLR2 spec % (n−) | PLR3 sens % (n+) | PLR3 spec % (n−) |', '|---|---|---|---|---|---|']
+for key, v in sorted(EX['grape_secondary_labels'].items(), key=lambda kv: (int(kv[0].split('@')[1]), int(kv[0].split('@')[0][1:]))):
+    d, k = key.split('@')
+    s4.append(f"| {d} | {k} | {pc(v['PLR2']['sens'])} ({v['PLR2']['n_pos']}) | {pc(v['PLR2']['spec'])} ({v['PLR2']['n_neg']}) | {pc(v['PLR3']['sens'])} ({v['PLR3']['n_pos']}) | {pc(v['PLR3']['spec'])} ({v['PLR3']['n_neg']}) |")
+cum = EX['cumulative_false_alarm_artes_start0']
+s5 = ['| Detector | Flagged at least once, k = 3–6, % | Mean per-look false-alarm rate, % |', '|---|---|---|']
+for d in sorted(cum, key=lambda x: int(x[1:])):
+    s5.append(f"| {d} | {pc(cum[d]['any_flag_k3_to_6'])} | {pc(cum[d]['per_look_mean'])} |")
 log = open(os.path.join(ROOT, 'journal_selection', 'novelty_escalation_log.md')).read()
 log = log.replace('# Novelty escalation log (D6) — every idea tried, including failures', '').strip()
 prot = open(os.path.join(ROOT, 'code', 'experiments', 'protocol.md')).read()
@@ -34,7 +43,13 @@ md = '\n\n'.join([
     '## S3. Full results', 'Table S1. All metrics by detector and number of tests (k). Seed SD: standard deviation across five seeds (stochastic detectors only). FA, false-alarm rate; PoPLR ref, secondary reference standard; pp, percentage points.',
     '\n'.join(s2),
     'Table S2. All paired comparisons with D1 (exact McNemar test; Holm correction within each k and endpoint).',
-    '\n'.join(s3)])
+    '\n'.join(s3),
+    'Table S3. External clinic (GRAPE): agreement with the secondary PLR2 and PLR3 progression labels (point estimates; seed means for D8).',
+    '\n'.join(s4),
+    '## S4. Analyses added after internal review (not in the protocol)',
+    'Table S4. Cumulative false alarms on true no-change series (Artes windows starting at the first test; same donor-date draw index across k, donor dates redrawn for each k, so the estimate is approximate).',
+    '\n'.join(s5),
+    f"Validity under the strict literal protocol rule (upper 95% CI limit of the false-alarm rate at or below 5%) was met only by: {', '.join(EX['strict_valid_cells'])}. The smallest sensitivity gain over D1 that could reach Holm-adjusted significance was {EX['min_significant_gain']['discordant_eyes']} of {EX['min_significant_gain']['n_progressors']} progressors ({100 * EX['min_significant_gain']['gain']:.1f} percentage points). Bootstrap 95% CI for the shuffle-audit Spearman correlation, resampling detector–k cells: {EX['rho_cell_bootstrap_ci'][0]:.2f} to {EX['rho_cell_bootstrap_ci'][1]:.2f}."])
 open(os.path.join(OUT, 'Supplementary_Material.md'), 'w').write(md)
 d = styled_doc(); d.styles['Normal'].paragraph_format.line_spacing = 1.15
 add_markdown(d, md); d.save(os.path.join(OUT, 'Supplementary_Material.docx')); print('supplementary built')

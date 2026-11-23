@@ -35,5 +35,17 @@
  "shuffle flags D6,D8 at k3 (>10%)": true,
  "shuffle underestimates D9 k3": true,
  "GRAPE D3,D4,D7 sens <=5% at k3": true,
- "D6 spec >= 95% at k3": true
+ "D6 spec >= 95% at k3": true,
+ "D9 k6 borderline": true,
+ "strict rule: D1 fails all k": true,
+ "strict rule: no strict-valid detector has significant sens gain": true,
+ "D7 lowest cumulative FA among D1,D2,D6,D7,D8": true,
+ "D6,D8 highest cumulative FA": true,
+ "D7 sens >= D1 at k5,k6": true,
+ "D7 sens gain at k5 not significant": true,
+ "ref2 valid D7,D10,D8 > D1 at k6": true,
+ "shuffle lower than true for D6 at k6": true,
+ "GRAPE PLR2 spec D8 < D1": true,
+ "D1 misses most at k3,k4": true,
+ "D8 highest sens at k6": true
 }

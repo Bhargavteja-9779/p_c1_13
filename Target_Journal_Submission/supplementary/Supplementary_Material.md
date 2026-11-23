@@ -236,3 +236,41 @@ Table S2. All paired comparisons with D1 (exact McNemar test; Holm correction wi
 | 6 | false positives (1-spec) | D7 Event analysis (GPA-like) | 26 | 0.0 (0.0 to 0.0) | 0 | 0 | 1 | 1 |
 | 6 | false positives (1-spec) | D8 ML-tabular (LightGBM) | 26 | 0.0 (0.0 to 0.0) | 0 | 0 | 1 | 1 |
 | 6 | false positives (1-spec) | D9 ML-sequence (GRU) | 26 | 7.7 (0.0 to 19.2) | 2 | 0 | 0.5 | 1 |
+
+Table S3. External clinic (GRAPE): agreement with the secondary PLR2 and PLR3 progression labels (point estimates; seed means for D8).
+
+| Detector | k | PLR2 sens % (n+) | PLR2 spec % (n−) | PLR3 sens % (n+) | PLR3 spec % (n−) |
+|---|---|---|---|---|---|
+| D1 | 3 | 17.5 (40) | 92.8 (223) | 21.4 (14) | 92.0 (249) |
+| D2 | 3 | 45.0 (40) | 78.5 (223) | 57.1 (14) | 76.7 (249) |
+| D3 | 3 | 17.5 (40) | 98.2 (223) | 28.6 (14) | 97.2 (249) |
+| D4 | 3 | 0.0 (40) | 100.0 (223) | 0.0 (14) | 100.0 (249) |
+| D5 | 3 | 17.5 (40) | 93.3 (223) | 21.4 (14) | 92.4 (249) |
+| D7 | 3 | 0.0 (40) | 100.0 (223) | 0.0 (14) | 100.0 (249) |
+| D8 | 3 | 61.0 (40) | 61.9 (223) | 72.9 (14) | 60.2 (249) |
+| D1 | 4 | 16.1 (31) | 94.7 (132) | 16.7 (12) | 93.4 (151) |
+| D2 | 4 | 38.7 (31) | 86.4 (132) | 50.0 (12) | 84.1 (151) |
+| D3 | 4 | 16.1 (31) | 100.0 (132) | 33.3 (12) | 99.3 (151) |
+| D4 | 4 | 22.6 (31) | 97.0 (132) | 33.3 (12) | 95.4 (151) |
+| D5 | 4 | 20.6 (31) | 94.2 (132) | 23.3 (12) | 92.6 (151) |
+| D7 | 4 | 16.1 (31) | 97.0 (132) | 33.3 (12) | 96.7 (151) |
+| D8 | 4 | 43.9 (31) | 83.3 (132) | 53.3 (12) | 80.7 (151) |
+
+## S4. Analyses added after internal review (not in the protocol)
+
+Table S4. Cumulative false alarms on true no-change series (Artes windows starting at the first test; same donor-date draw index across k, donor dates redrawn for each k, so the estimate is approximate).
+
+| Detector | Flagged at least once, k = 3–6, % | Mean per-look false-alarm rate, % |
+|---|---|---|
+| D1 | 15.3 | 5.2 |
+| D2 | 6.7 | 1.7 |
+| D3 | 2.3 | 0.7 |
+| D4 | 14.5 | 4.9 |
+| D5 | 15.0 | 4.7 |
+| D6 | 39.4 | 11.4 |
+| D7 | 3.3 | 2.5 |
+| D8 | 50.8 | 17.2 |
+| D9 | 22.9 | 8.1 |
+| D10 | 11.6 | 3.5 |
+
+Validity under the strict literal protocol rule (upper 95% CI limit of the false-alarm rate at or below 5%) was met only by: D10@3, D2@3, D3@3, D4@3, D7@3, D2@4, D3@4, D4@4, D7@4, D9@4, D2@5, D3@5, D7@5, D2@6, D3@6, D7@6. The smallest sensitivity gain over D1 that could reach Holm-adjusted significance was 9 of 26 progressors (34.6 percentage points). Bootstrap 95% CI for the shuffle-audit Spearman correlation, resampling detector–k cells: 0.35 to 0.85.

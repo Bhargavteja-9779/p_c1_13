@@ -1,6 +1,6 @@
 """Run the full benchmark. Usage: python run_all.py --mode quick|full
 Writes ../results/raw_results.csv (one row per detector x seed x k x evaluation unit) and ../results/run_meta.json,
-then calls src/statistics/summarise.py and src/visualization/figures.py."""
+Statistics, figures and manuscript files are produced by the separate steps listed in README.md."""
 import sys, os, json, time, argparse, hashlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import numpy as np, pandas as pd
