@@ -26,3 +26,25 @@ scheduled test; defer that test when the risk is low; choose the deferral thresh
 risk-control procedure (Learn-then-Test / conformal risk control) so the share of progressing eyes whose detection is
 delayed stays below a pre-set level with high probability. Outcome: % VF tests avoided at a guaranteed delay risk.
 Status: pilot pending.
+Pilot (results/pilot_deferral.json, experiments/pilot_deferral_curve.py, VALIDATION halves): rules that need >= 5
+tests make almost every early deferral delay detection. Full-schedule event rate 20%. Severity rule MD > -10 dB:
+18.7% tests saved, 55% of progressing eyes delayed; risk model (LightGBM, 15 history features) at lambda 0.04:
+18.8% saved, 60% delayed -> no gain over a simple rule. Learn-then-Test could not certify any lambda at eps <= 0.2
+(31 event eyes in calibration half). -> REJECTED (structural: fewer tests = slower count-based detection).
+
+## Round 3 — detection with population-calibrated null vs FUTURE reference (results/pilot_v2.json)
+Val eyes with >= 8 tests (n=145; reference progressors 31, reference stable 39 by full-series MD slope).
+Sensitivity / specificity at alpha 0.05:
+ k=3: MD pop-detrended 19.4% / 94.9%; within-eye 0% / 100% (no valid test possible).
+ k=4: MD pop-detrended 22.6% / 87.2%; MD within-eye 12.9% / 97.4%.
+ k=5: all MD variants 41.9% / 92.3%.
+Gain only at 3-4 tests; small sample. Not a step change at >= 5 tests.
+
+## Round 4 — alternative problem: nAMD anti-VEGF (Moorfields CC0 data via Zenodo mirrors; Dryad file downloads
+blocked by Dryad's anti-bot check). Tested whether year-1 injection rhythm adds prognostic value for 3-year VA
+(n=2,664 eyes; 80/20 patient split): baseline-only R2 0.272; + year-1 VA R2 0.531 (AUROC >=15-letter loss 0.762);
++ rhythm R2 0.529 (0.760). -> rhythm adds nothing. REJECTED as a finding.
+
+## Status after restart 1 (glaucoma detection/deferral) and part of restart 2
+No "remarkable" candidate yet. Best methodological candidate: population-calibrated (conformal) progression
+testing that is valid from the 3rd field (gain limited to 3-4 tests).

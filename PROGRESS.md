@@ -39,6 +39,13 @@
   (novelty_map.csv, novelty_search_log.md; told to prioritise G5 = VF scheduling/deferral + conformal risk control).
   If they did not finish (files missing), redo those tasks.
 
+- Benchmark agent DONE: journal_benchmark.csv (37 papers), style_raw_notes.md. ML subgroup median: 1 dataset,
+  2 comparators, 4/14 external validation, 3/14 calibration, 2/14 code. -> our paper must exceed these.
+- Moorfields CC0 datasets downloaded from Zenodo mirrors into data_raw/moorfields/z<record> (records 4247292 12-yr
+  nAMD 7,802 eyes; 3962247 DMO 4-yr; 4361633 nAMD report 2; 4509402 OCT volumes + VA; 4088863 OCT baseline;
+  3965967 nAMD report 1; 4086324 10-yr). Download: zenodo.org/api/records/<id> -> files links.
+- Pilots rounds 2-4 failed to show a step change (see escalation log).
+
 ## NEXT ACTION
-1) Pilot the deferral idea on VALIDATION split (savings vs delay; baselines fixed thinning, severity rule).
-2) When agents finish: journal_level_profile.md, style_notes.md, novelty scorecard, STEP 2 story file.
+Wait for novelty agent (novelty_map.csv). Then decide final topic (leading: population-calibrated VF progression
+testing valid from 3rd test, with Artes retest true-null + GRAPE external) or one more restart; write protocol.md.
