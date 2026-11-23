@@ -31,7 +31,11 @@ def styled_doc():
     st.paragraph_format.space_after = Pt(6); st.paragraph_format.line_spacing = 2.0
     for name, size in (('Heading 1', 14), ('Heading 2', 12), ('Heading 3', 12), ('Title', 16)):
         h = d.styles[name]; h.font.name = 'Times New Roman'; h.font.size = Pt(size); h.font.bold = True
-        h.font.color.rgb = RGBColor(0, 0, 0); h.element.rPr.rFonts.set(qn('w:eastAsia'), 'Times New Roman')
+        h.font.color.rgb = RGBColor(0, 0, 0)
+        rf = h.element.rPr.rFonts
+        for a in ('w:asciiTheme', 'w:hAnsiTheme', 'w:eastAsiaTheme', 'w:cstheme'):
+            if rf.get(qn(a)) is not None: del rf.attrib[qn(a)]
+        for a in ('w:ascii', 'w:hAnsi', 'w:eastAsia', 'w:cs'): rf.set(qn(a), 'Times New Roman')
         h.paragraph_format.space_before = Pt(12); h.paragraph_format.space_after = Pt(6); h.paragraph_format.keep_with_next = True
         if name == 'Heading 3': h.font.italic = True
     sec = d.sections[0]; sec.page_height, sec.page_width = Cm(29.7), Cm(21.0)

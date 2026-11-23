@@ -2,11 +2,11 @@
 
 **Running title:** False alarms in visual-field progression detection
 
-**Authors:** P N Bhargav Teja¹; [SECOND AUTHOR NAME]¹*
+**Authors:** P N Bhargav Teja¹; [SECOND AUTHOR NAME]¹∗
 
 ¹ [Department], Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India
 
-\* **Corresponding author:** [SECOND AUTHOR NAME], [Department], Vellore Institute of Technology (VIT), Vellore 632014, Tamil Nadu, India. E-mail: [CORRESPONDING AUTHOR E-MAIL]
+**Corresponding author (marked ∗):** [SECOND AUTHOR NAME], [Department], Vellore Institute of Technology (VIT), Vellore 632014, Tamil Nadu, India. E-mail: [CORRESPONDING AUTHOR E-MAIL]
 
 **Article type:** Original Research
 
