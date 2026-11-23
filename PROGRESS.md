@@ -94,8 +94,9 @@
   (shuffle-calibrated thresholds SCT for D2/D6/D8/D9; confirmation rule; enlarged reference for training-free D1-D4).
   Scripts: code/experiments/amendment_a3.py (-> results/a3_raw.csv.gz, ~15 min) and summarise_a3.py (-> a3_summary.json).
 
+- A3 DONE (a3_raw.csv.gz, a3_summary.json, fig5). Manuscript rewritten around shuffle calibration (title changed),
+  supplementary S6-S8, response_to_reviews round 2, risk_report rescored 22/30.
+
 ## NEXT ACTION (new session)
-1. If results/a3_raw.csv.gz missing: cd code && python3 experiments/amendment_a3.py ; then python3 experiments/summarise_a3.py
-2. Rewrite manuscript around constructive message (SCT fix + confirmation + powered comparison of rule-based detectors),
-   trim to ~4,000-4,500 words, report A3 as post-review pre-specified amendment, whatever the results.
-3. Rebuild docx, update response_to_reviews.md / risk_report.md, commit.
+1. Optional fresh editor/desk review of the new version (REVIEW/review_round2_editor.md) and fix.
+2. User fills [AUTHORS ...] fields; rebuild: cd Target_Journal_Submission/manuscript && python3 fill_values.py && python3 build_docx.py

@@ -6,7 +6,11 @@
 corresponding address, CRediT contributions, per-author competing-interest sentence, confirmation of the AI-assistance
 statement). Nothing else in the package is a placeholder.
 
-**Novelty label: NOT REMARKABLE — honest strongest result.** After 6 development rounds and 2 restarts
+**Novelty label (revised after amendment A3): NOT REMARKABLE by the brief's bar, but now with a constructive,
+reusable idea** — "set any progression detector's threshold on shuffled copies of the clinic's own fields" — which
+removed excess false alarms in all tested detectors and restored external specificity (61% -> 95%) without labels.
+It does not add sensitivity (no step change), so the "remarkable" criteria (big real-world gain) are still unmet.
+Previous label: NOT REMARKABLE — honest strongest result. After 6 development rounds and 2 restarts
 (journal_selection/novelty_escalation_log.md, Supplementary Note S1) no method idea produced a valid step change.
 The paper reports an evaluation finding instead: in this benchmark, the largest apparent early-detection gains came with
 excess false alarms that specificity in reference-stable eyes missed, and no valid detector was significantly better
@@ -22,11 +26,12 @@ than the simple trend test (with wide intervals).
 | Strength of evidence | 3 | Locked test split, 3 data sets, exact reproduction of deterministic detectors; but 26/26 reference, 30 retest patients, D6 Artes result not independent |
 | Generality | 3 | One retest cohort, one external set with circular labels |
 | Journal level match | 3 | Above the journal's median evidence level (benchmark: 1 data set, 2 comparators), but weak therapy scope |
-| **Total** | **19 / 30** | Below the 22 start gate and far below the 26 "remarkable" bar |
+| **Total (round 1)** | **19 / 30** | Below the 22 start gate |
+| **Total after A3** | **22 / 30** | distance 4 (shuffle-calibrated thresholds for arbitrary detector scores not found in our search), evidence 3, depth 4 (mechanism tested by calibration), generality 4 (works across perimeters), problem 4, journal match 3 |
 
 ## Top rejection risks (in order)
 
-1. **Scope (desk rejection):** *Ophthalmology and Therapy* publishes therapy, device and outcomes research; this is a
+1. **Scope (desk rejection):** reduced by the constructive clinic-level recommendation (calibrate before using flags to escalate), but *Ophthalmology and Therapy* publishes therapy, device and outcomes research; this is a
    methods/evaluation paper without treatment or outcome data. Mitigation: framed around escalation decisions;
    consider a pre-submission enquiry to the editorial team (the guidelines invite this). User confirmed the journal.
 2. **Underpowered main comparison:** 26 progressors; gains of up to 42 percentage points lay within the confidence intervals of valid detectors (values.json: max_gain_hi), and reviewer 01 estimated that only gains of about 35 points or more could reach significance. Stated

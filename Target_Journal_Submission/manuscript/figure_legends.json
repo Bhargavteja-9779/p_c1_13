@@ -1,7 +1,7 @@
 [
  [
   "fig1_study_design.png",
-  "**Fig. 1** Study design. Ten detectors were given only the first 3\u20136 fields of each series. E1: sensitivity and specificity against a future-confirmed reference in held-out UWHVF eyes; E2: false-alarm rate on true no-change series (12 weekly fields per patient); E3: shuffle audit (false-alarm rate after randomly re-ordering each eye's fields); E4: external data set (GRAPE, Octopus G1 perimeter) with the rule-based progression labels supplied with the data."
+  "**Fig. 1** Study design. Ten detectors were given only the first 3\u20136 fields of each series. E1: sensitivity and specificity against a future-confirmed reference in held-out UWHVF eyes; E2: false-alarm rate on true no-change series (12 weekly fields per patient); E3: shuffle audit (false-alarm rate after randomly re-ordering each eye's fields), which was also used to calibrate thresholds (amendment A3); E4: external data set (GRAPE, Octopus G1 perimeter) with the rule-based progression labels supplied with the data."
  ],
  [
   "fig2_validity_vs_power.png",
@@ -14,5 +14,9 @@
  [
   "fig4_grape_external.png",
   "**Fig. 4** External data set (GRAPE). Sensitivity versus 1 \u2212 specificity against the MD progression label supplied with the data set, using the first three (left) or four (right) fields; bars are 95% bootstrap confidence intervals. D6, D9 and D10 require the 24-2 pattern and were not applied."
+ ],
+ [
+  "fig5_shuffle_calibration.png",
+  "**Fig. 5** Shuffle calibration (amendment A3). Panels 1\u20134: sensitivity against the future-confirmed reference versus false-alarm rate on true no-change series with the nominal threshold (open symbols) and with the threshold reset to a 5% flag rate on shuffled series of the clinic's own validation eyes (filled symbols, arrows), for three to six fields; D1 (trend test) is shown for comparison. The shaded band marks false-alarm rates at or below 5%. Right panel: specificity in the external data set (GRAPE, three fields) with nominal and own-clinic shuffle-calibrated thresholds."
  ]
 ]

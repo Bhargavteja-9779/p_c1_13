@@ -32,7 +32,7 @@ def ci(lo, hi, d=0):
 
 def pval(p):
     if p < 0.001: return '< 0.001'
-    return f'= {p:.3f}' if p < 0.01 else f'= {p:.2f}'
+    return f'= {p:.3f}' if p < 0.10 else f'= {p:.2f}'
 
 
 def fmt_n(x): return f'{int(x):,}'
@@ -148,6 +148,40 @@ for k in (3, 4):
     V[f'g_np_{k}'] = str(int(r.grape_sens_n)); V[f'g_ns_{k}'] = str(int(r.grape_spec_n))
 ab = DS['artes']['span_days']
 V['artes_span_q'] = f"{ab['q1']:.0f}–{ab['q3']:.0f}"; V['artes_span_max'] = f"{ab['max']:.0f}"
+# ---- amendment A3 (post-review, pre-specified before running)
+A3 = json.load(open(os.path.join(ROOT, 'results', 'a3_summary.json')))
+X = pd.DataFrame(A3['A3a_sct']); X['id'] = X.detector.str.split().str[0]
+for _, r in X.iterrows():
+    s_ = f"{r.id}_{int(r.k)}"
+    V[f'xs_{s_}'] = pc(r.sens); V[f'xsci_{s_}'] = ci(r.sens_lo, r.sens_hi); V[f'xsp_{s_}'] = pc(r.spec)
+    V[f'xf_{s_}'] = pc(r.fpr_true_null, 1); V[f'xfci_{s_}'] = ci(r.fpr_true_null_lo, r.fpr_true_null_hi, 1)
+    if not pd.isna(r.get('grape_spec', np.nan)):
+        V[f'xgp_{s_}'] = pc(r.grape_spec); V[f'xgpci_{s_}'] = ci(r.grape_spec_lo, r.grape_spec_hi); V[f'xgs_{s_}'] = pc(r.grape_sens)
+V['x_nvalid'] = str(int(X.valid.sum())); V['x_ncells'] = str(len(X)); V['x_nexcess'] = str(int(X.excess.sum()))
+V['x_invalid_list'] = ', '.join(f"{r.id} with {int(r.k)} fields" for _, r in X[~X.valid].iterrows()) or 'none'
+XT = pd.DataFrame(A3['A3a_tests']); XT['id'] = XT.detector.str.split().str[0]
+for _, r in XT.iterrows():
+    tag = {'sensitivity': 'xdS', 'GRAPE sensitivity': 'xdGS', 'GRAPE false positives': 'xdGF'}[r.endpoint]; s_ = f"{r.id}_{int(r.k)}"
+    V[f'{tag}_{s_}'] = f"{100 * r['diff']:+.0f}"; V[f'{tag}a_{s_}'] = f"{abs(100 * r['diff']):.0f}"
+    V[f'{tag}ci_{s_}'] = f"{100 * r.diff_lo:.0f} to {100 * r.diff_hi:.0f}"; V[f'{tag}p_{s_}'] = pval(r.p_holm)
+    V[f'{tag}pn_{s_}'] = pval(r.p_holm).replace('= ', '')
+xs = XT[XT.endpoint == 'sensitivity']
+V['x_max_gain_hi'] = f"{100 * xs.diff_hi.max():.0f}"; V['x_n_sig_gain'] = str(int(((xs['diff'] > 0) & (xs.p_holm < 0.05)).sum()))
+V['H5'] = 'supported' if A3['H5_supported'] else 'not supported'; V['H6'] = 'was falsified' if A3['H6_falsified'] else 'was not falsified'
+V['H8'] = 'supported' if A3['H8_supported'] else 'not supported'
+CF = pd.DataFrame(A3['A3b_confirmation']); CF['id'] = CF.detector.str.split().str[0]
+for _, r in CF.iterrows():
+    tag = 'cfs' if r.measure.startswith('sens') else 'cff'; d_ = 0 if tag == 'cfs' else 1
+    V[f'{tag}_{r.id}_{int(r.k)}'] = pc(r.est, d_); V[f'{tag}ci_{r.id}_{int(r.k)}'] = ci(r.lo, r.hi, d_)
+EN = pd.DataFrame(A3['A3c_enlarged']); EN['id'] = EN.detector.str.split().str[0]
+for _, r in EN.iterrows():
+    s_ = f"{r.id}_{int(r.k)}"; V[f'ens_{s_}'] = pc(r.sens); V[f'ensci_{s_}'] = ci(r.sens_lo, r.sens_hi); V[f'ensp_{s_}'] = pc(r.spec)
+V['en_np'] = str(int(EN.n_prog.iloc[0])); V['en_ns'] = str(int(EN.n_stable.iloc[0]))
+ET = pd.DataFrame(A3['A3c_tests']); ET['id'] = ET.detector.str.split().str[0]
+for _, r in ET.iterrows():
+    tag = 'endS' if r.endpoint == 'sensitivity' else 'endF'; s_ = f"{r.id}_{int(r.k)}"
+    V[f'{tag}_{s_}'] = f"{abs(100 * r['diff']):.0f}"; V[f'{tag}ci_{s_}'] = f"{100 * r.diff_lo:.0f} to {100 * r.diff_hi:.0f}"; V[f'{tag}p_{s_}'] = pval(r.p_holm)
+V['a3_runtime'] = f"{A3['meta']['runtime_s'] / 60:.0f}"
 V['REFERENCES'] = '{{REFERENCES}}'  # replaced after renumbering
 
 # ---------------- tables ----------------
@@ -206,10 +240,14 @@ def md_table(rows):
 V['TABLE1'] = md_table(table1()); V['TABLE2'] = md_table(table2()); V['TABLE3'] = md_table(table3())
 
 # ---------------- substitution ----------------
+def _minus(v):
+    return re.sub(r'(?<![\w.])-(?=\d)', '−', v) if isinstance(v, str) else v
+
+
 def substitute(text):
     missing = sorted(set(k for k in re.findall(r'\{\{(\w+)\}\}', text) if V.get(k) is None))
     if missing: raise SystemExit(f'UNFILLED placeholders: {missing}')
-    return re.sub(r'\{\{(\w+)\}\}', lambda m: V[m.group(1)], text)
+    return re.sub(r'\{\{(\w+)\}\}', lambda m: _minus(V[m.group(1)]) if not m.group(1).startswith('TABLE') else V[m.group(1)], text)
 
 
 CIT = re.compile(r'\[(\d+(?:\s*[–,-]\s*\d+)*)\]')

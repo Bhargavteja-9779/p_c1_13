@@ -67,7 +67,7 @@ def fig_design():
     boxes = [(0.02, 0.55, 'UWHVF (Seattle)\n24-2, 28,943 fields\npatient split 60/20/20'), (0.02, 0.08, 'Artes retest (Halifax)\n30 patients x 12 weekly\nfields: true no change'),
              (0.36, 0.55, '10 detectors\nclassical, permutation,\nconformal, event, ML'), (0.36, 0.08, 'GRAPE (Hangzhou)\nOctopus G1, 263 eyes,\nrule-based labels'),
              (0.70, 0.70, 'E1 sensitivity / specificity\nvs future reference'), (0.70, 0.40, 'E2 false alarms on\ntrue no-change series'),
-             (0.70, 0.10, 'E3 shuffle audit  |  E4 external\n(first 3-6 tests only)')]
+             (0.70, 0.10, 'E3 shuffle audit & calibration\nE4 external (first 3-6 tests)')]
     for x, y, s in boxes:
         ax.add_patch(plt.Rectangle((x, y), 0.27, 0.3, fc='#f3f3f1', ec='#52514e', lw=0.8, transform=ax.transAxes))
         ax.text(x + 0.135, y + 0.15, s, ha='center', va='center', fontsize=7.5, transform=ax.transAxes)
@@ -76,10 +76,48 @@ def fig_design():
         ax.annotate('', xy=(x1, y1), xytext=(x0, y0), xycoords='axes fraction', arrowprops=dict(arrowstyle='->', color='#52514e', lw=0.8))
     fig.savefig(os.path.join(FIG, 'fig1_study_design.png'), bbox_inches='tight'); plt.close(fig)
 
+def fig_sct(M):
+    """Fig. 5: nominal threshold -> shuffle-calibrated threshold (amendment A3a), true no-change FPR vs sensitivity,
+    and GRAPE specificity with own-clinic calibration."""
+    p = os.path.join(ROOT, 'results', 'a3_summary.json')
+    if not os.path.exists(p): return
+    S = pd.DataFrame(json.load(open(p))['A3a_sct']); ks = [3, 4, 5, 6]
+    fig = plt.figure(figsize=(12.0, 3.4)); gs = fig.add_gridspec(1, 5, width_ratios=[1, 1, 1, 1, 1.25], wspace=0.45)
+    for i, k in enumerate(ks):
+        ax = fig.add_subplot(gs[0, i]); ax.axvspan(0, 0.05, color='#e9e9e6', zorder=0); ax.axvline(0.05, color='#52514e', lw=0.8, ls='--')
+        d1 = M[(M.k == k) & (M.detector.str.startswith('D1 '))].iloc[0]
+        ax.plot(d1.fpr_true_null, d1.sens, 'o', color='#2a78d6', ms=6, mec='white', mew=1.2, zorder=4)
+        ax.annotate('D1', (d1.fpr_true_null, d1.sens), xytext=(4, -9), textcoords='offset points', fontsize=7)
+        for _, r in S[S.k == k].iterrows():
+            nm = r.detector.split()[0]; fam, col, mk = FAM[nm]
+            o = M[(M.k == k) & (M.detector == r.detector)].iloc[0]
+            ax.annotate('', xy=(r.fpr_true_null, r.sens), xytext=(o.fpr_true_null, o.sens),
+                        arrowprops=dict(arrowstyle='->', color=col, lw=1.0, alpha=0.8))
+            ax.plot(o.fpr_true_null, o.sens, mk, color=col, ms=5, mfc='white', mew=1.0, zorder=3)
+            ax.plot(r.fpr_true_null, r.sens, mk, color=col, ms=6, mec='white', mew=1.0, zorder=4)
+            ax.annotate(nm, (o.fpr_true_null, o.sens), xytext=(4, 3), textcoords='offset points', fontsize=7, color='#52514e')
+        ax.set_title(f'{k} fields', fontsize=9); ax.set_ylim(0, 1); ax.set_xlim(0, 0.30); ax.grid(axis='y', color='#e9e9e6', lw=0.6)
+        ax.set_xlabel('False-alarm rate, true no-change', fontsize=8)
+        if i == 0: ax.set_ylabel('Sensitivity, future-confirmed progressors')
+    ax = fig.add_subplot(gs[0, 4]); g3 = S[(S.k == 3) & S.grape_spec.notna()]
+    bars = [('D1', M[(M.k == 3) & M.detector.str.startswith('D1 ')].iloc[0].grape_spec, '#2a78d6', None)]
+    for _, r in g3.iterrows():
+        nm = r.detector.split()[0]; o = M[(M.k == 3) & (M.detector == r.detector)].iloc[0]; col = FAM[nm][1]
+        bars += [(f'{nm}\nnom.', o.grape_spec, col, '//'), (f'{nm}\ncal.', r.grape_spec, col, None)]
+    for j, (lab, v, col, h) in enumerate(bars):
+        ax.bar(j, v, color='white' if h else col, edgecolor=col, hatch=h, lw=1.0)
+        ax.text(j, v + 0.015, f'{100 * v:.0f}', ha='center', fontsize=7)
+    ax.set_xticks(range(len(bars))); ax.set_xticklabels([b[0] for b in bars], fontsize=7); ax.set_ylim(0, 1.08)
+    ax.set_ylabel('Specificity, GRAPE (3 fields)', labelpad=2); ax.set_title('External data set', fontsize=9)
+    hs = [plt.Line2D([], [], marker='o', ls='', mfc='white', mec='#52514e', label='nominal threshold'),
+          plt.Line2D([], [], marker='o', ls='', color='#52514e', label='shuffle-calibrated threshold')]
+    fig.legend(handles=hs, loc='upper center', ncol=2, frameon=False, bbox_to_anchor=(0.42, 1.06), fontsize=8)
+    fig.savefig(os.path.join(FIG, 'fig5_shuffle_calibration.png'), bbox_inches='tight'); plt.close(fig)
+
 def main():
     os.makedirs(FIG, exist_ok=True)
     M = pd.DataFrame(json.load(open(os.path.join(ROOT, 'results', 'metrics.json'))))
-    fig_design(); fig_validity_power(M); fig_audit(M)
+    fig_design(); fig_validity_power(M); fig_audit(M); fig_sct(M)
     if 'grape_sens' in M: fig_grape(M)
     print('figures written to', FIG)
 

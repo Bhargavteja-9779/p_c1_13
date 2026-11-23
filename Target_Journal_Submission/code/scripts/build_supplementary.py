@@ -11,14 +11,22 @@ M.to_csv(os.path.join(S, 'Table_S1_all_metrics.csv'), index=False)
 shutil.copy(os.path.join(ROOT, 'tables', 'table_paired_tests_vs_D1.csv'), os.path.join(S, 'Table_S2_paired_tests_vs_D1.csv'))
 D = json.load(open(os.path.join(ROOT, 'results', 'descriptives.json')))
 pd.DataFrame(D['tests_to_first_detection']).to_csv(os.path.join(S, 'Table_S3_tests_to_first_detection.csv'), index=False)
+for n, m in (('table_A3a_sct.csv', 'Table_S6a_shuffle_calibration.csv'), ('table_A3a_sct_tests_vs_D1.csv', 'Table_S6b_shuffle_calibration_tests.csv'),
+             ('table_A3b_confirmation.csv', 'Table_S7_confirmation.csv'), ('table_A3c_enlarged_reference.csv', 'Table_S8a_enlarged_reference.csv'),
+             ('table_A3c_tests_vs_D1.csv', 'Table_S8b_enlarged_reference_tests.csv')):
+    shutil.copy(os.path.join(ROOT, 'tables', n), os.path.join(S, m))
 for n in ('table_S4_posthoc_later_reference.csv', 'table_S5_posthoc_later_reference_tests.csv'):
     shutil.copy(os.path.join(ROOT, 'tables', n), os.path.join(S, n.replace('table_', 'Table_')))
-with pd.ExcelWriter(os.path.join(S, 'Supplementary_Tables_S1-S5.xlsx')) as w:
+with pd.ExcelWriter(os.path.join(S, 'Supplementary_Tables_S1-S8.xlsx')) as w:
     M.to_excel(w, sheet_name='S1 all metrics', index=False)
     pd.read_csv(os.path.join(S, 'Table_S2_paired_tests_vs_D1.csv')).to_excel(w, sheet_name='S2 paired vs D1', index=False)
     pd.DataFrame(D['tests_to_first_detection']).to_excel(w, sheet_name='S3 tests to first flag', index=False)
     pd.read_csv(os.path.join(ROOT, 'tables', 'table_S4_posthoc_later_reference.csv')).to_excel(w, sheet_name='S4 post hoc later ref', index=False)
     pd.read_csv(os.path.join(ROOT, 'tables', 'table_S5_posthoc_later_reference_tests.csv')).to_excel(w, sheet_name='S5 post hoc tests', index=False)
+    for n, sh in (('table_A3a_sct.csv', 'S6a shuffle calibration'), ('table_A3a_sct_tests_vs_D1.csv', 'S6b calibration tests'),
+                  ('table_A3b_confirmation.csv', 'S7 confirmation'), ('table_A3c_enlarged_reference.csv', 'S8a enlarged reference'),
+                  ('table_A3c_tests_vs_D1.csv', 'S8b enlarged ref tests')):
+        pd.read_csv(os.path.join(ROOT, 'tables', n)).to_excel(w, sheet_name=sh, index=False)
 F = os.path.join(ROOT, 'figures')
 for f in sorted(os.listdir(F)):
     if f.endswith('.png'):
