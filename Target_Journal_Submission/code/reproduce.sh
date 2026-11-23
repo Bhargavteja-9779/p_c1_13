@@ -9,5 +9,8 @@ gzip -c ../results/raw_results.csv > ../results/raw_results.csv.gz
 python3 -m src.statistics.summarise ../results/raw_results.csv.gz   # first-round outputs (kept for the record)
 python3 -m src.statistics.summarise_v2                 # revised statistics used in the manuscript
 python3 -m src.statistics.describe                     # cohort counts and real-world measures
+python3 experiments/amendment_b.py                    # amendment B scores (~7 min)
+python3 -m src.statistics.amendment_b_stats
 python3 -m src.visualization.figures
+python3 -m src.visualization.fig5_calibration
 cd ../manuscript && python3 fill_values.py && python3 build_docx.py

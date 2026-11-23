@@ -154,7 +154,7 @@ Against the pointwise PLR2 label, which is not based on mean deviation, D1 flagg
 
 ## No-Change Calibration and Matched Comparison (Amendment B)
 
-Retest calibration brought every detector to about the nominal false-alarm rate: none of the {{b.hyp.HB1_cells}} detector–test-number cells had excess false alarms (HB1 supported; Table 5). Shuffle calibration came within 3 percentage points of 5% in {{b.hyp.HB2_SC_share_within_3pp}} of cells, short of the pre-specified 75% (HB2 not supported); it was very conservative for the rate score (D2 false alarms {{b.fprrange.SC.D2.lo}} to {{b.fprrange.SC.D2.hi}}).
+Retest calibration brought every detector to about the nominal false-alarm rate: none of the {{b.hyp.HB1_cells}} detector–test-number cells had excess false alarms (HB1 supported; Table 5, Fig. 5). Shuffle calibration came within 3 percentage points of 5% in {{b.hyp.HB2_SC_share_within_3pp}} of cells, short of the pre-specified 75% (HB2 not supported); it was very conservative for the rate score (D2 false alarms {{b.fprrange.SC.D2.lo}} to {{b.fprrange.SC.D2.hi}}).
 
 At retest-matched false-alarm rates, the conformal and machine-learning detectors (D6, D8, D9) no longer flagged more progressors than D1: differences ranged from {{b.range.RC.D6+D8+D9.lo}} to {{b.range.RC.D6+D8+D9.hi}} percentage points, with no significant difference (smallest Holm-adjusted p {{b.minholm.RC.D6+D8+D9}}). For example, with three tests, retest-calibrated D8 had {{b.mci.D8.3.RC.fpr_true_null}} false alarms and flagged {{b.m.D8.3.RC.sens}} of progressors, compared with {{b.m.D1.3.RC.sens}} for D1.
 

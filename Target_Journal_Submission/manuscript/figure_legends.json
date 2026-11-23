@@ -14,5 +14,9 @@
  [
   "fig4_grape_external.png",
   "**Fig. 4** External clinic (GRAPE, Hangzhou, China): sensitivity against 1 \u2212 specificity for the clinicians' mean-deviation progression label, using the first 3 (left) or 4 (right) tests. Bars are patient-level bootstrap 95% confidence intervals. D5 and D7 were re-calibrated on GRAPE by cross-fitting; D8 was transferred unchanged from UWHVF; D6, D9 and D10 were not applicable. Note the different x-axis scales."
+ ],
+ [
+  "fig5_no_change_calibration.png",
+  "**Fig. 5** No-change calibration (amendment B). Each detector's continuous score was thresholded at the 95th percentile of its scores on no-change series, and sensitivity for future-confirmed progressors (UWHVF test set) is shown by number of tests. **A** Thresholds set on the Artes weekly retest data; every detector then had about 5% false alarms on held-out retest patients. **B** Thresholds set on the clinic's own training eyes with their tests randomly re-ordered; false alarms on the retest data then ranged from very low (D2) to slightly above 5% (Table 5). The rate-of-change rule (D2) ranks first or last depending on the calibration source; the trend test (D1) is nearly unchanged. Values are means over five seeds for D8 and D9."
  ]
 ]
