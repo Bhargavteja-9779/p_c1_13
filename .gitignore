@@ -5,3 +5,4 @@ __pycache__/
 *.pyc
 Target_Journal_Submission/results/full_run_repro.log
 results/amendB/*.log
+Target_Journal_Submission/results/amendB/run.log
