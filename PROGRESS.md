@@ -82,6 +82,11 @@
   Key wording facts: D9 k=6 FPR upper CI 10.0002% -> invalid by rule (text says "only just exceeded"); D5 = D1 sens at k3-5.
   Placeholders left for AUTHORS: names/affiliations, funding, contributions, COI, repo URL, prior presentation.
 
+- Step 5 in progress: REVIEW/citation_audit.md DONE (agent). references.json metadata fixed by hand (field manual_fix;
+  do NOT rerun build_refs.py without re-applying). TRIPOD+AI now 10.1136/bmj-2023-078378. UWHVF: release README says
+  7,428 eyes (our count), data paper says 7,248 -> state both. Text fixes from citation audit still TO APPLY in templates
+  (prevalence wording ages 40-80; ML-threshold citation -> orig refs 18(TVST? check) & 21... see citation_audit.md).
+  Reviews 01-05+stakeholder and 06-10 launched as agents (check REVIEW/ for files; redo missing ones).
 ## NEXT ACTION (new session)
 Step 5: REVIEW/ folder: 10 adversarial reviews + stakeholder review (agents may have written some: check REVIEW/), then fix
 round on templates (never hand-type numbers), citation-content audit (REVIEW/citation_audit.md), consistency +

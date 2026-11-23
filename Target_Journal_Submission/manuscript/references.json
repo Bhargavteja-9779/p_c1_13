@@ -24,7 +24,8 @@
   "year": 2002,
   "venue": "Arch Ophthalmol",
   "type": "journal-article",
-  "vancouver": "Heijl A. Reduction of Intraocular Pressure and Glaucoma Progression. Arch Ophthalmol. 2002;120(10):1268. https://doi.org/10.1001/archopht.120.10.1268"
+  "vancouver": "Heijl A, Leske MC, Bengtsson B, Hyman L, Bengtsson B, Hussein M; Early Manifest Glaucoma Trial Group. Reduction of intraocular pressure and glaucoma progression: results from the Early Manifest Glaucoma Trial. Arch Ophthalmol. 2002;120(10):1268-1279. https://doi.org/10.1001/archopht.120.10.1268",
+  "manual_fix": "Crossref lists first author only; full author list/subtitle from article (citation audit)"
  },
  {
   "doi": "10.1136/bjo.2007.135012",
@@ -60,7 +61,8 @@
   "year": 2014,
   "venue": "Ophthalmology",
   "type": "journal-article",
-  "vancouver": "Artes PH, O'Leary N, Nicolela MT, Chauhan BC, Crabb DP. Visual Field Progression in Glaucoma. Ophthalmology. 2014;121(10):2023-2027. https://doi.org/10.1016/j.ophtha.2014.04.015"
+  "vancouver": "Artes PH, O'Leary N, Nicolela MT, Chauhan BC, Crabb DP. Visual field progression in glaucoma: what is the specificity of the Guided Progression Analysis? Ophthalmology. 2014;121(10):2023-2027. https://doi.org/10.1016/j.ophtha.2014.04.015",
+  "manual_fix": "full title (citation audit)"
  },
  {
   "doi": "10.1016/j.ophtha.2014.01.020",
@@ -132,7 +134,8 @@
   "year": 2023,
   "venue": "Sci Data",
   "type": "journal-article",
-  "vancouver": "Huang X, Kong X, Shen Z, Ouyang J, Li Y, Jin K, et al. GRAPE: A multi-modal dataset of longitudinal follow-up visual field and fundus images for glaucoma management. Sci Data. 2023;10(1). https://doi.org/10.1038/s41597-023-02424-4"
+  "vancouver": "Huang X, Kong X, Shen Z, Ouyang J, Li Y, Jin K, et al. GRAPE: A multi-modal dataset of longitudinal follow-up visual field and fundus images for glaucoma management. Sci Data. 2023;10(1):520. https://doi.org/10.1038/s41597-023-02424-4",
+  "manual_fix": "article number from OpenAlex"
  },
  {
   "doi": "10.1167/tvst.10.7.27",
@@ -177,7 +180,8 @@
   "year": 2019,
   "venue": "Sci Rep",
   "type": "journal-article",
-  "vancouver": "Berchuck SI, Mukherjee S, Medeiros FA. Estimating Rates of Progression and Predicting Future Visual Fields in Glaucoma Using a Deep Variational Autoencoder. Sci Rep. 2019;9(1). https://doi.org/10.1038/s41598-019-54653-6"
+  "vancouver": "Berchuck SI, Mukherjee S, Medeiros FA. Estimating rates of progression and predicting future visual fields in glaucoma using a deep variational autoencoder. Sci Rep. 2019;9(1):18113. https://doi.org/10.1038/s41598-019-54653-6",
+  "manual_fix": "article number from OpenAlex"
  },
  {
   "doi": "10.1167/tvst.5.3.2",
@@ -279,13 +283,14 @@
   "vancouver": "Angelopoulos AN, Bates S. Conformal Prediction: A Gentle Introduction. Foundations and Trends\u00ae in Machine Learning. 2023;16(4):494-591. https://doi.org/10.1561/2200000101"
  },
  {
-  "doi": "10.1136/bmj.q902",
+  "doi": "10.1136/bmj-2023-078378",
   "verified": true,
   "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
   "year": 2024,
   "venue": "BMJ",
   "type": "journal-article",
-  "vancouver": ". TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ. 2024:q902. https://doi.org/10.1136/bmj.q902"
+  "vancouver": "Collins GS, Moons KGM, Dhiman P, Riley RD, Beam AL, Van Calster B, et al. TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ. 2024;385:e078378. https://doi.org/10.1136/bmj-2023-078378",
+  "manual_fix": "original article instead of correction notice; Crossref-verified"
  },
  {
   "doi": "10.1214/19-aoas1241",
