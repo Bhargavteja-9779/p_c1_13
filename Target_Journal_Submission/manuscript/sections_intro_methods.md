@@ -22,9 +22,9 @@ We used three data sets (Fig. 1).
 
 *UWHVF (development and future-reference evaluation).* The University of Washington Humphrey Visual Field data set contains {{n_uw_fields}} 24-2 tests from {{n_uw_eyes}} eyes of {{n_uw_patients}} patients seen in routine care [14]. It includes sensitivities, age and laterality, but no diagnosis or reliability indices. We split patients, not tests, into training (60%), validation (20%) and test (20%) sets using a fixed hash of the patient identifier. Both eyes of a patient were always in the same set. The test set was used once, for the final analysis.
 
-*Artes retest data (true no-change arm).* Thirty patients with glaucoma from Halifax, Canada, had 12 visual fields in 12 consecutive weeks [7]. Glaucoma does not change in 12 weeks in a measurable way, so any "progression" flag in these series is a false alarm. The data are distributed with the visualFields R package (version 1.0.7).
+*Artes retest data (true no-change arm).* Thirty patients with glaucoma from Halifax, Canada, had 12 visual fields in 12 consecutive weeks [7]. Glaucoma does not change in 12 weeks in a measurable way, so any "progression" flag in these series is a false alarm. The data are distributed with the visualFields R package (version 1.0.7) [37].
 
-*GRAPE (external clinic).* The GRAPE data set contains {{n_grape_records}} visual-field records from {{n_grape_eyes}} eyes of patients with glaucoma followed in Hangzhou, China [15]. Fields were measured with a different perimeter, and each eye carries progression labels assigned with three criteria (mean deviation, and two pointwise linear regression rules). We used the mean-deviation label as the primary label.
+*GRAPE (external clinic).* The GRAPE data set contains {{n_grape_records}} visual-field records from {{n_grape_eyes}} eyes of {{n_grape_pat}} patients with glaucoma followed in Hangzhou, China [15]. Fields were measured with the G1 pattern of the Octopus 900 perimeter (Haag-Streit, Köniz, Switzerland), not the Humphrey 24-2 pattern. The data set authors labelled each eye with three rule-based criteria applied to the whole follow-up: a negative slope of mean deviation with p < 0.05 (MD label), and at least two or three locations with a significant negative pointwise slope (PLR2, PLR3) [15]. We used the MD label as the primary label. These labels are not clinicians' judgements, and with a median of {{grape_visits}} visits per eye the first three or four fields make up most of the series on which each label was computed.
 
 ## Reference standard (UWHVF)
 
@@ -41,11 +41,10 @@ Each detector saw only the first k tests of a series (k = 3, 4, 5 or 6) and retu
 - **D5 pooled-shuffle conformal test:** the trend statistic of D1 is compared with the same statistic computed on shuffled series of other patients in the training set, matched by number of tests and mean sensitivity (a conformal p-value [31]).
 - **D6 pooled-detrended conformal regional test:** as D5, but uses the worst of four regional trends and builds the reference from detrended, shuffled series [30]. This variant was the most sensitive approach during development.
 - **D7 event analysis:** a location is "deteriorated" if its loss from the baseline (mean of tests 1 and 2) is beyond the 5th percentile of short-interval test–retest change in training eyes with similar sensitivity; progression requires at least three deteriorated locations on two consecutive follow-up tests, similar in spirit to Guided Progression Analysis [13].
-- **D8 machine learning, tabular:** gradient-boosted trees on 14 summary features of the first k tests, trained to predict the reference label; threshold set at 95% specificity on validation-set stable eyes, as is common in machine-learning studies.
+- **D8 machine learning, tabular:** gradient-boosted trees on 14 summary features of the first k tests, trained to predict the reference label; threshold set at 95% specificity on validation-set reference-stable eyes.
 - **D9 machine learning, sequence:** a gated recurrent unit network on the raw k fields and test intervals, with the same labels, threshold rule and tuning budget (12 configurations) as D8.
 - **D10 self-supervised order network:** a network trained, without labels, to recognise the true time order of an eye's tests among shuffled orders; its score was used as a PoPLR-type permutation statistic [33].
 
-Stochastic detectors (D4–D6, D8–D10) were run with five seeds.
 
 ## Evaluation
 
@@ -55,11 +54,17 @@ Stochastic detectors (D4–D6, D8–D10) were run with five seeds.
 
 *E3 shuffle audit.* In UWHVF test-set eyes, we randomly re-ordered the first k tests (ten times) and re-ran each detector. Shuffling removes any true trend, so the flag rate estimates the false-alarm rate without retest data.
 
-*E4 external clinic.* In GRAPE, we applied the detectors to the first three or four tests of each eye and compared flags with the clinicians' labels. D5 and D7 were re-calibrated on GRAPE itself by five-fold patient-level cross-fitting, because the perimeter differs; D8 was transferred unchanged from UWHVF; the 24-2-specific detectors (D6, D9, D10) were not applied (amendment A2).
+*E4 external clinic.* In GRAPE, we applied the detectors to the first three or four tests of each eye and compared flags with the data set's progression labels. D5 and D7 were re-calibrated on GRAPE itself by five-fold patient-level cross-fitting, because the perimeter differs; D8 was transferred unchanged from UWHVF; the 24-2-specific detectors (D6, D9, D10) were not applied (amendment A2).
+
+*Real-world measures (pre-specified).* We expressed false alarms as expected false progression flags per 1,000 stable eyes at one review, and earliness as the number of fields until the first flag among reference progressors (followed until six fields; eyes not flagged by six fields were counted as seven). Because the fields in UWHVF were a median of {{ref_int}} years apart, we also give this time in years.
 
 ## Statistical analysis
 
-Proportions are reported with 95% confidence intervals from 2,000 bootstrap resamples of patients, which accounts for two eyes per patient and repeated windows per patient. We compared each detector with D1 on the same eyes using the exact McNemar test and corrected p-values for the nine comparisons within each number of tests with the Holm method. A detector was considered valid if the upper limit of its false-alarm confidence interval on true no-change data did not exceed 10% and its point estimate did not exceed 5% by more than sampling error. Agreement between the shuffle audit and the true no-change false-alarm rate was summarised by the Spearman correlation across detector–test-number cells and by their absolute difference. Analyses used Python 3.13 with NumPy, SciPy, scikit-learn, LightGBM and PyTorch.
+Proportions are reported with 95% confidence intervals from 2,000 bootstrap resamples of patients, which accounts for two eyes per patient and repeated windows per patient. We compared each detector with D1 on the same eyes using the exact McNemar test and corrected p-values for the nine comparisons within each number of tests with the Holm method. A detector was considered valid if the upper limit of its false-alarm confidence interval on true no-change data did not exceed 10% and its point estimate did not exceed 5% by more than sampling error. Agreement between the shuffle audit and the true no-change false-alarm rate was summarised by the Spearman correlation across detector–test-number cells and by their absolute difference. Stochastic detectors were run with {{n_seeds}} seeds; we report the seed mean and the largest seed standard deviation. Analyses used Python 3.13 with NumPy, SciPy, scikit-learn, LightGBM and PyTorch; the full run took {{runtime_min}} minutes on four central processing unit cores. The permutation p-values included the observed order, so they are never zero [29].
+
+## Use of software assistance
+
+The analysis code and a first draft of the text were prepared with the help of an AI coding and writing assistant (Claude Code, Anthropic). All numbers in this article are generated by the code from the result files; the authors checked the code, the results and the text and take full responsibility for them. [AUTHORS TO CONFIRM AND EDIT THIS STATEMENT]
 
 ## Ethics
 

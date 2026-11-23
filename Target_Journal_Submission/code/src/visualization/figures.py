@@ -57,15 +57,15 @@ def fig_grape(M):
                         yerr=[[r.grape_sens - r.grape_sens_lo], [r.grape_sens_hi - r.grape_sens]], fmt=mk, color=col, ms=6,
                         elinewidth=0.8, mec='white', mew=1.2)
             ax.annotate(short(r.detector), (1 - r.grape_spec, r.grape_sens), xytext=(4, 3), textcoords='offset points', fontsize=7)
-        ax.set_title(f'GRAPE, {k} tests', fontsize=9); ax.set_xlabel('1 - specificity (clinician label)'); ax.set_xlim(left=0); ax.set_ylim(0, 1)
+        ax.set_title(f'GRAPE, {k} tests', fontsize=9); ax.set_xlabel('1 - specificity (data-set MD label)'); ax.set_xlim(left=0); ax.set_ylim(0, 1)
         ax.grid(axis='y', color='#e9e9e6', lw=0.6)
-    axs[0].set_ylabel('Sensitivity (clinician MD criterion)')
+    axs[0].set_ylabel('Sensitivity (data-set MD label)')
     fig.tight_layout(); fig.savefig(os.path.join(FIG, 'fig4_grape_external.png'), bbox_inches='tight'); plt.close(fig)
 
 def fig_design():
     fig, ax = plt.subplots(figsize=(7.2, 2.6)); ax.axis('off')
     boxes = [(0.02, 0.55, 'UWHVF (Seattle)\n24-2, 28,943 fields\npatient split 60/20/20'), (0.02, 0.08, 'Artes retest (Halifax)\n30 patients x 12 weekly\nfields: true no change'),
-             (0.36, 0.55, '10 detectors\nclassical, permutation,\nconformal, event, ML'), (0.36, 0.08, 'GRAPE (Hangzhou)\n263 eyes, clinician\nprogression labels'),
+             (0.36, 0.55, '10 detectors\nclassical, permutation,\nconformal, event, ML'), (0.36, 0.08, 'GRAPE (Hangzhou)\nOctopus G1, 263 eyes,\nrule-based labels'),
              (0.70, 0.70, 'E1 sensitivity / specificity\nvs future reference'), (0.70, 0.40, 'E2 false alarms on\ntrue no-change series'),
              (0.70, 0.10, 'E3 shuffle audit  |  E4 external\n(first 3-6 tests only)')]
     for x, y, s in boxes:

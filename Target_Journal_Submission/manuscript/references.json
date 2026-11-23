@@ -322,5 +322,14 @@
   "venue": "Ophthalmology Science",
   "type": "journal-article",
   "vancouver": "Mohammadzadeh V, Li L, Fei Z, Davis T, Morales E, Wu K, et al. Efficacy of Smoothing Algorithms to Enhance Detection of Visual Field Progression in Glaucoma. Ophthalmology Science. 2024;4(2):100423. https://doi.org/10.1016/j.xops.2023.100423"
+ },
+ {
+  "doi": "10.1167/13.4.10",
+  "verified": true,
+  "title": "The visualFields package: A tool for analysis and visualization of visual fields",
+  "year": 2013,
+  "venue": "Journal of Vision",
+  "type": "journal-article",
+  "vancouver": "Marin-Franch I, Swanson WH. The visualFields package: A tool for analysis and visualization of visual fields. Journal of Vision. 2013;13(4):10-10. https://doi.org/10.1167/13.4.10"
  }
 ]
