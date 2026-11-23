@@ -1,0 +1,11 @@
+detector,n,flagged_by6,flagged_by6_sd,median_first,mean_first_capped7
+D1 OLS-MD,26,0.6923076923,0.0,5.0,5.1923076923
+D10 Self-supervised order net + permutation,26,0.6307692308,0.0210662522,5.5,5.6615384615
+D2 MD-rate <= -1 dB/yr,26,0.4615384615,0.0,7.0,5.3076923077
+D3 PLR >=3 points,26,0.3846153846,0.0,7.0,6.0769230769
+D4 PoPLR (within-eye permutation),26,0.5384615385,0.0,6.0,6.0384615385
+D5 Pooled-shuffle conformal MD,26,0.6846153846,0.0172005229,5.0,5.2
+D6 Pooled-detrended conformal region-max,26,0.7692307692,0.0,3.0,4.4307692308
+D7 Event analysis (GPA-like),26,0.5769230769,0.0,5.5,5.6923076923
+D8 ML-tabular (LightGBM),26,0.7846153846,0.0344010458,4.0,4.8076923077
+D9 ML-sequence (GRU),26,0.5923076923,0.043852901,6.0,5.6615384615
