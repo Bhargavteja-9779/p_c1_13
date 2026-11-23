@@ -1,0 +1,326 @@
+[
+ {
+  "doi": "10.1016/j.ophtha.2014.05.013",
+  "verified": true,
+  "title": "Global Prevalence of Glaucoma and Projections of Glaucoma Burden through 2040",
+  "year": 2014,
+  "venue": "Ophthalmology",
+  "type": "journal-article",
+  "vancouver": "Tham YC, Li X, Wong TY, Quigley HA, Aung T, Cheng CY. Global Prevalence of Glaucoma and Projections of Glaucoma Burden through 2040. Ophthalmology. 2014;121(11):2081-2090. https://doi.org/10.1016/j.ophtha.2014.05.013"
+ },
+ {
+  "doi": "10.1001/jama.2014.3192",
+  "verified": true,
+  "title": "The Pathophysiology and Treatment of Glaucoma",
+  "year": 2014,
+  "venue": "JAMA",
+  "type": "journal-article",
+  "vancouver": "Weinreb RN, Aung T, Medeiros FA. The Pathophysiology and Treatment of Glaucoma. JAMA. 2014;311(18):1901. https://doi.org/10.1001/jama.2014.3192"
+ },
+ {
+  "doi": "10.1001/archopht.120.10.1268",
+  "verified": true,
+  "title": "Reduction of Intraocular Pressure and Glaucoma Progression",
+  "year": 2002,
+  "venue": "Arch Ophthalmol",
+  "type": "journal-article",
+  "vancouver": "Heijl A. Reduction of Intraocular Pressure and Glaucoma Progression. Arch Ophthalmol. 2002;120(10):1268. https://doi.org/10.1001/archopht.120.10.1268"
+ },
+ {
+  "doi": "10.1136/bjo.2007.135012",
+  "verified": true,
+  "title": "Practical recommendations for measuring rates of visual field change in glaucoma",
+  "year": 2008,
+  "venue": "British Journal of Ophthalmology",
+  "type": "journal-article",
+  "vancouver": "Chauhan BC, Garway-Heath DF, Goni FJ, Rossetti L, Bengtsson B, Viswanathan AC, et al. Practical recommendations for measuring rates of visual field change in glaucoma. British Journal of Ophthalmology. 2008;92(4):569-573. https://doi.org/10.1136/bjo.2007.135012"
+ },
+ {
+  "doi": "10.1038/eye.2017.1",
+  "verified": true,
+  "title": "Surveillance of sight loss due to delay in ophthalmic treatment or review: frequency, cause and outcome",
+  "year": 2017,
+  "venue": "Eye",
+  "type": "journal-article",
+  "vancouver": "Foot B, MacEwen C. Surveillance of sight loss due to delay in ophthalmic treatment or review: frequency, cause and outcome. Eye. 2017;31(5):771-775. https://doi.org/10.1038/eye.2017.1"
+ },
+ {
+  "doi": "10.1167/iovs.12-10049",
+  "verified": true,
+  "title": "Visual Field Progression in Glaucoma: Estimating the Overall Significance of Deterioration with Permutation Analyses of Pointwise Linear Regression (PoPLR)",
+  "year": 2012,
+  "venue": "Invest. Ophthalmol. Vis. Sci.",
+  "type": "journal-article",
+  "vancouver": "O'Leary N, Chauhan BC, Artes PH. Visual Field Progression in Glaucoma: Estimating the Overall Significance of Deterioration with Permutation Analyses of Pointwise Linear Regression (PoPLR). Invest. Ophthalmol. Vis. Sci.. 2012;53(11):6776. https://doi.org/10.1167/iovs.12-10049"
+ },
+ {
+  "doi": "10.1016/j.ophtha.2014.04.015",
+  "verified": true,
+  "title": "Visual Field Progression in Glaucoma",
+  "year": 2014,
+  "venue": "Ophthalmology",
+  "type": "journal-article",
+  "vancouver": "Artes PH, O'Leary N, Nicolela MT, Chauhan BC, Crabb DP. Visual Field Progression in Glaucoma. Ophthalmology. 2014;121(10):2023-2027. https://doi.org/10.1016/j.ophtha.2014.04.015"
+ },
+ {
+  "doi": "10.1016/j.ophtha.2014.01.020",
+  "verified": true,
+  "title": "Assessment of the Reliability of Standard Automated Perimetry in Regions of Glaucomatous Damage",
+  "year": 2014,
+  "venue": "Ophthalmology",
+  "type": "journal-article",
+  "vancouver": "Gardiner SK, Swanson WH, Goren D, Mansberger SL, Demirel S. Assessment of the Reliability of Standard Automated Perimetry in Regions of Glaucomatous Damage. Ophthalmology. 2014;121(7):1359-1369. https://doi.org/10.1016/j.ophtha.2014.01.020"
+ },
+ {
+  "doi": "10.1167/iovs.15-16957",
+  "verified": true,
+  "title": "More Accurate Modeling of Visual Field Progression in Glaucoma: ANSWERS",
+  "year": 2015,
+  "venue": "Invest. Ophthalmol. Vis. Sci.",
+  "type": "journal-article",
+  "vancouver": "Zhu H, Crabb DP, Ho T, Garway-Heath DF. More Accurate Modeling of Visual Field Progression in Glaucoma: ANSWERS. Invest. Ophthalmol. Vis. Sci.. 2015;56(10):6077. https://doi.org/10.1167/iovs.15-16957"
+ },
+ {
+  "doi": "10.1167/tvst.10.14.13",
+  "verified": true,
+  "title": "Visual Field Progression in Glaucoma: Comparison Between PoPLR and ANSWERS",
+  "year": 2021,
+  "venue": "Trans. Vis. Sci. Tech.",
+  "type": "journal-article",
+  "vancouver": "Mar\u00edn-Franch I, Artes PH, Turpin A, Racette L. Visual Field Progression in Glaucoma: Comparison Between PoPLR and ANSWERS. Trans. Vis. Sci. Tech.. 2021;10(14):13. https://doi.org/10.1167/tvst.10.14.13"
+ },
+ {
+  "doi": "10.1167/tvst.7.4.20",
+  "verified": true,
+  "title": "Comparison of Visual Field Point-Wise Event-Based and Global Trend-Based Analysis for Detecting Glaucomatous Progression",
+  "year": 2018,
+  "venue": "Trans. Vis. Sci. Tech.",
+  "type": "journal-article",
+  "vancouver": "Wu Z, Medeiros FA. Comparison of Visual Field Point-Wise Event-Based and Global Trend-Based Analysis for Detecting Glaucomatous Progression. Trans. Vis. Sci. Tech.. 2018;7(4):20. https://doi.org/10.1167/tvst.7.4.20"
+ },
+ {
+  "doi": "10.1016/j.ajo.2007.09.038",
+  "verified": true,
+  "title": "A Visual Field Index for Calculation of Glaucoma Rate of Progression",
+  "year": 2008,
+  "venue": "American Journal of Ophthalmology",
+  "type": "journal-article",
+  "vancouver": "Bengtsson B, Heijl A. A Visual Field Index for Calculation of Glaucoma Rate of Progression. American Journal of Ophthalmology. 2008;145(2):343-353. https://doi.org/10.1016/j.ajo.2007.09.038"
+ },
+ {
+  "doi": "10.1016/j.ophtha.2008.02.005",
+  "verified": true,
+  "title": "A Comparison of Visual Field Progression Criteria of 3 Major Glaucoma Trials in Early Manifest Glaucoma Trial Patients",
+  "year": 2008,
+  "venue": "Ophthalmology",
+  "type": "journal-article",
+  "vancouver": "Heijl A, Bengtsson B, Chauhan BC, Lieberman MF, Cunliffe I, Hyman L, et al. A Comparison of Visual Field Progression Criteria of 3 Major Glaucoma Trials in Early Manifest Glaucoma Trial Patients. Ophthalmology. 2008;115(9):1557-1565. https://doi.org/10.1016/j.ophtha.2008.02.005"
+ },
+ {
+  "doi": "10.1167/tvst.11.1.1",
+  "verified": true,
+  "title": "UWHVF: A Real-World, Open Source Dataset of Perimetry Tests From the Humphrey Field Analyzer at the University of Washington",
+  "year": 2022,
+  "venue": "Trans. Vis. Sci. Tech.",
+  "type": "journal-article",
+  "vancouver": "Montesano G, Chen A, Lu R, Lee CS, Lee AY. UWHVF: A Real-World, Open Source Dataset of Perimetry Tests From the Humphrey Field Analyzer at the University of Washington. Trans. Vis. Sci. Tech.. 2022;11(1):2. https://doi.org/10.1167/tvst.11.1.1"
+ },
+ {
+  "doi": "10.1038/s41597-023-02424-4",
+  "verified": true,
+  "title": "GRAPE: A multi-modal dataset of longitudinal follow-up visual field and fundus images for glaucoma management",
+  "year": 2023,
+  "venue": "Sci Data",
+  "type": "journal-article",
+  "vancouver": "Huang X, Kong X, Shen Z, Ouyang J, Li Y, Jin K, et al. GRAPE: A multi-modal dataset of longitudinal follow-up visual field and fundus images for glaucoma management. Sci Data. 2023;10(1). https://doi.org/10.1038/s41597-023-02424-4"
+ },
+ {
+  "doi": "10.1167/tvst.10.7.27",
+  "verified": true,
+  "title": "Development and Comparison of Machine Learning Algorithms to Determine Visual Field Progression",
+  "year": 2021,
+  "venue": "Trans. Vis. Sci. Tech.",
+  "type": "journal-article",
+  "vancouver": "Saeedi O, Boland MV, D'Acunto L, Swamy R, Hegde V, Gupta S, et al. Development and Comparison of Machine Learning Algorithms to Determine Visual Field Progression. Trans. Vis. Sci. Tech.. 2021;10(7):27. https://doi.org/10.1167/tvst.10.7.27"
+ },
+ {
+  "doi": "10.1016/j.ophtha.2020.12.020",
+  "verified": true,
+  "title": "Assessing Glaucoma Progression Using Machine Learning Trained on Longitudinal Visual Field and Clinical Data",
+  "year": 2021,
+  "venue": "Ophthalmology",
+  "type": "journal-article",
+  "vancouver": "Dixit A, Yohannan J, Boland MV. Assessing Glaucoma Progression Using Machine Learning Trained on Longitudinal Visual Field and Clinical Data. Ophthalmology. 2021;128(7):1016-1026. https://doi.org/10.1016/j.ophtha.2020.12.020"
+ },
+ {
+  "doi": "10.1167/iovs.18-25568",
+  "verified": true,
+  "title": "An Artificial Intelligence Approach to Detect Visual Field Progression in Glaucoma Based on Spatial Pattern Analysis",
+  "year": 2019,
+  "venue": "Invest. Ophthalmol. Vis. Sci.",
+  "type": "journal-article",
+  "vancouver": "Wang M, Shen LQ, Pasquale LR, Petrakos P, Formica S, Boland MV, et al. An Artificial Intelligence Approach to Detect Visual Field Progression in Glaucoma Based on Spatial Pattern Analysis. Invest. Ophthalmol. Vis. Sci.. 2019;60(1):365. https://doi.org/10.1167/iovs.18-25568"
+ },
+ {
+  "doi": "10.1371/journal.pone.0214875",
+  "verified": true,
+  "title": "Forecasting future Humphrey Visual Fields using deep learning",
+  "year": 2019,
+  "venue": "PLoS ONE",
+  "type": "journal-article",
+  "vancouver": "Wen JC, Lee CS, Keane PA, Xiao S, Rokem AS, Chen PP, et al. Forecasting future Humphrey Visual Fields using deep learning. PLoS ONE. 2019;14(4):e0214875. https://doi.org/10.1371/journal.pone.0214875"
+ },
+ {
+  "doi": "10.1038/s41598-019-54653-6",
+  "verified": true,
+  "title": "Estimating Rates of Progression and Predicting Future Visual Fields in Glaucoma Using a Deep Variational Autoencoder",
+  "year": 2019,
+  "venue": "Sci Rep",
+  "type": "journal-article",
+  "vancouver": "Berchuck SI, Mukherjee S, Medeiros FA. Estimating Rates of Progression and Predicting Future Visual Fields in Glaucoma Using a Deep Variational Autoencoder. Sci Rep. 2019;9(1). https://doi.org/10.1038/s41598-019-54653-6"
+ },
+ {
+  "doi": "10.1167/tvst.5.3.2",
+  "verified": true,
+  "title": "Unsupervised Gaussian Mixture-Model With Expectation Maximization for Detecting Glaucomatous Progression in Standard Automated Perimetry Visual Fields",
+  "year": 2016,
+  "venue": "Trans. Vis. Sci. Tech.",
+  "type": "journal-article",
+  "vancouver": "Yousefi S, Balasubramanian M, Goldbaum MH, Medeiros FA, Zangwill LM, Weinreb RN, et al. Unsupervised Gaussian Mixture-Model With Expectation Maximization for Detecting Glaucomatous Progression in Standard Automated Perimetry Visual Fields. Trans. Vis. Sci. Tech.. 2016;5(3):2. https://doi.org/10.1167/tvst.5.3.2"
+ },
+ {
+  "doi": "10.1371/journal.pone.0357179",
+  "verified": true,
+  "title": "Labeling matters: A multicenter machine learning study on visual field progression in Glaucoma",
+  "year": 2026,
+  "venue": "PLoS One",
+  "type": "journal-article",
+  "vancouver": "Kim H, Kim E, Moon S, Jin SW, Kim JL, Lee SU, et al. Labeling matters: A multicenter machine learning study on visual field progression in Glaucoma. PLoS One. 2026;21(8):e0357179. https://doi.org/10.1371/journal.pone.0357179"
+ },
+ {
+  "doi": "10.64898/2026.11.16.26368187",
+  "verified": true,
+  "title": "Earlier confirmation of glaucoma progression with risk-weighted visual field and OCT scheduling",
+  "year": 2026,
+  "venue": "medRxiv",
+  "type": "posted-content",
+  "vancouver": "Chen L, Fujita A, Moradi M, Eslami M, Elze T, Zebardast N. Earlier confirmation of glaucoma progression with risk-weighted visual field and OCT scheduling. medRxiv. 2026. https://doi.org/10.64898/2026.11.16.26368187"
+ },
+ {
+  "doi": "10.1007/978-3-032-05182-0_53",
+  "verified": true,
+  "title": "Reliable and\u00a0Interpretable Visual Field Progression Prediction with\u00a0Diffusion Models and\u00a0Conformal Risk Control",
+  "year": 2025,
+  "venue": "Lecture Notes in Computer Science",
+  "type": "book-chapter",
+  "vancouver": "Si W, Lin V, Sun B, Jang KJ, Xing R, Saeed A, et al. Reliable and\u00a0Interpretable Visual Field Progression Prediction with\u00a0Diffusion Models and\u00a0Conformal Risk Control. Lecture Notes in Computer Science. 2025:543-552. https://doi.org/10.1007/978-3-032-05182-0_53"
+ },
+ {
+  "doi": "10.1016/j.ophtha.2017.01.027",
+  "verified": true,
+  "title": "Frequency of Testing to Detect Visual Field Progression Derived Using a Longitudinal Cohort of Glaucoma Patients",
+  "year": 2017,
+  "venue": "Ophthalmology",
+  "type": "journal-article",
+  "vancouver": "Wu Z, Saunders LJ, Daga FB, Diniz-Filho A, Medeiros FA. Frequency of Testing to Detect Visual Field Progression Derived Using a Longitudinal Cohort of Glaucoma Patients. Ophthalmology. 2017;124(6):786-792. https://doi.org/10.1016/j.ophtha.2017.01.027"
+ },
+ {
+  "doi": "10.1167/iovs.12-9476",
+  "verified": true,
+  "title": "Intervals between Visual Field Tests When Monitoring the Glaucomatous Patient: Wait-and-See Approach",
+  "year": 2012,
+  "venue": "Invest. Ophthalmol. Vis. Sci.",
+  "type": "journal-article",
+  "vancouver": "Crabb DP, Garway-Heath DF. Intervals between Visual Field Tests When Monitoring the Glaucomatous Patient: Wait-and-See Approach. Invest. Ophthalmol. Vis. Sci.. 2012;53(6):2770. https://doi.org/10.1167/iovs.12-9476"
+ },
+ {
+  "doi": "10.1016/j.ogla.2025.11.004",
+  "verified": true,
+  "title": "Time to Identify Glaucoma Progression Given Typical Visual Field Testing Frequencies in a US Nationwide Insured Population",
+  "year": 2026,
+  "venue": "Ophthalmology Glaucoma",
+  "type": "journal-article",
+  "vancouver": "Stagg BC, Brintz BJ, Stein JD, Hess R, Kawamoto K, Jammal AA, et al. Time to Identify Glaucoma Progression Given Typical Visual Field Testing Frequencies in a US Nationwide Insured Population. Ophthalmology Glaucoma. 2026;9(3):250-256. https://doi.org/10.1016/j.ogla.2025.11.004"
+ },
+ {
+  "doi": "10.1167/tvst.10.13.21",
+  "verified": true,
+  "title": "The Frontloading Fields Study (FFS): Detecting Changes in Mean Deviation in Glaucoma Using Multiple Visual Field Tests Per Clinical Visit",
+  "year": 2021,
+  "venue": "Trans. Vis. Sci. Tech.",
+  "type": "journal-article",
+  "vancouver": "Phu J, Kalloniatis M. The Frontloading Fields Study (FFS): Detecting Changes in Mean Deviation in Glaucoma Using Multiple Visual Field Tests Per Clinical Visit. Trans. Vis. Sci. Tech.. 2021;10(13):21. https://doi.org/10.1167/tvst.10.13.21"
+ },
+ {
+  "doi": "10.2202/1544-6115.1585",
+  "verified": true,
+  "title": "Permutation P-values Should Never Be Zero: Calculating Exact P-values When Permutations Are Randomly Drawn",
+  "year": 2010,
+  "venue": "Statistical Applications in Genetics and Molecular Biology",
+  "type": "journal-article",
+  "vancouver": "Phipson B, Smyth GK. Permutation P-values Should Never Be Zero: Calculating Exact P-values When Permutations Are Randomly Drawn. Statistical Applications in Genetics and Molecular Biology. 2010;9(1). https://doi.org/10.2202/1544-6115.1585"
+ },
+ {
+  "doi": "10.1080/07350015.1983.10509354",
+  "verified": true,
+  "title": "A Nonstochastic Interpretation of Reported Significance Levels",
+  "year": 1983,
+  "venue": "Journal of Business &amp; Economic Statistics",
+  "type": "journal-article",
+  "vancouver": "Freedman D, Lane D. A Nonstochastic Interpretation of Reported Significance Levels. Journal of Business &amp; Economic Statistics. 1983;1(4):292-298. https://doi.org/10.1080/07350015.1983.10509354"
+ },
+ {
+  "doi": "10.1561/2200000101",
+  "verified": true,
+  "title": "Conformal Prediction: A Gentle Introduction",
+  "year": 2023,
+  "venue": "Foundations and Trends\u00ae in Machine Learning",
+  "type": "journal-article",
+  "vancouver": "Angelopoulos AN, Bates S. Conformal Prediction: A Gentle Introduction. Foundations and Trends\u00ae in Machine Learning. 2023;16(4):494-591. https://doi.org/10.1561/2200000101"
+ },
+ {
+  "doi": "10.1136/bmj.q902",
+  "verified": true,
+  "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+  "year": 2024,
+  "venue": "BMJ",
+  "type": "journal-article",
+  "vancouver": ". TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ. 2024:q902. https://doi.org/10.1136/bmj.q902"
+ },
+ {
+  "doi": "10.1214/19-aoas1241",
+  "verified": true,
+  "title": "The classification permutation test: A flexible approach to testing for covariate imbalance in observational studies",
+  "year": 2019,
+  "venue": "Ann. Appl. Stat.",
+  "type": "journal-article",
+  "vancouver": "Gagnon-Bartsch J, Shem-Tov Y. The classification permutation test: A flexible approach to testing for covariate imbalance in observational studies. Ann. Appl. Stat.. 2019;13(3):1464-1483. https://doi.org/10.1214/19-aoas1241"
+ },
+ {
+  "doi": "10.1016/j.ophtha.2014.02.021",
+  "verified": true,
+  "title": "Using Filtered Forecasting Techniques to Determine Personalized Monitoring Schedules for Patients with Open-Angle Glaucoma",
+  "year": 2014,
+  "venue": "Ophthalmology",
+  "type": "journal-article",
+  "vancouver": "Schell GJ, Lavieri MS, Helm JE, Liu X, Musch DC, Van Oyen MP, et al. Using Filtered Forecasting Techniques to Determine Personalized Monitoring Schedules for Patients with Open-Angle Glaucoma. Ophthalmology. 2014;121(8):1539-1546. https://doi.org/10.1016/j.ophtha.2014.02.021"
+ },
+ {
+  "doi": "10.1167/tvst.10.12.4",
+  "verified": true,
+  "title": "Hierarchical Censored Bayesian Analysis of Visual Field Progression",
+  "year": 2021,
+  "venue": "Trans. Vis. Sci. Tech.",
+  "type": "journal-article",
+  "vancouver": "Montesano G, Garway-Heath DF, Ometto G, Crabb DP. Hierarchical Censored Bayesian Analysis of Visual Field Progression. Trans. Vis. Sci. Tech.. 2021;10(12):4. https://doi.org/10.1167/tvst.10.12.4"
+ },
+ {
+  "doi": "10.1016/j.xops.2023.100423",
+  "verified": true,
+  "title": "Efficacy of Smoothing Algorithms to Enhance Detection of Visual Field Progression in Glaucoma",
+  "year": 2024,
+  "venue": "Ophthalmology Science",
+  "type": "journal-article",
+  "vancouver": "Mohammadzadeh V, Li L, Fei Z, Davis T, Morales E, Wu K, et al. Efficacy of Smoothing Algorithms to Enhance Detection of Visual Field Progression in Glaucoma. Ophthalmology Science. 2024;4(2):100423. https://doi.org/10.1016/j.xops.2023.100423"
+ }
+]
