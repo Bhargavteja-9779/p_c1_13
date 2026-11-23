@@ -46,6 +46,10 @@
   3965967 nAMD report 1; 4086324 10-yr). Download: zenodo.org/api/records/<id> -> files links.
 - Pilots rounds 2-4 failed to show a step change (see escalation log).
 
+- User offered help (2026-11-23). Asked user for: (1) manual Dryad download of AMD_longitudinal_MEH_v4.csv
+  (doi 10.5061/dryad.8cz8w9h0v) into data_external/; (2) JCR quartile check for Ophthalmol Ther; (3) APC USD 8,050 OK?
+  Hugging Face reachable (mostly image datasets).
+
 ## NEXT ACTION
 Wait for novelty agent (novelty_map.csv). Then decide final topic (leading: population-calibrated VF progression
 testing valid from 3rd test, with Artes retest true-null + GRAPE external) or one more restart; write protocol.md.
