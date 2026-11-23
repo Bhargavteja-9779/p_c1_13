@@ -91,19 +91,13 @@
   positive slope; M7 cumulative true-null FA missing; M8/M9 GRAPE PLR2/PLR3 labels unreported (D1 weak on PLR2);
   M11-M13 disclosure (quick mode touched Artes/GRAPE; D6 failure known from dev; "pre-registered" = git file);
   M16 D4/D7/D10 not applicable at k=3; M14 A1 time-label sensitivity. Decision: NOT READY -> revision R1.
+- REVISION R1 DONE (commits up to 'Title page and heading font fixes'): results/v2/* (summarise_v2.py), manuscript
+  rewritten (Table 4 deviations), authors set by user: P N Bhargav Teja (1st, all code) + [SECOND AUTHOR] (supervision,
+  corresponding), both VIT Vellore; no funding; no competing interests. User asked to remove AI mentions: kept one short
+  AI-use disclosure (Springer Nature policy requires it) - explained to user. risk_report.md: NOT READY (strict), package
+  complete; remaining risks: small n, no published comparator, A1 sensitivity, scope.
 ## NEXT ACTION
-REVISION R1 (do in order, commit after each):
- 1. summarise.py v2 (new file summarise_v2.py, keep v1 outputs): one estimand (seed-mean flags) for proportions AND
-    paired differences; patient-cluster paired bootstrap; McNemar on majority flags (disclosed); N/A at k=3 for D4/D7/D10
-    (excluded from Holm family); both validity rules (literal protocol: CI upper <=5%; operational A3: upper<=10% &
-    lower<=5%; plus 'anti-conservative' = lower>5%) written to JSON; bootstrap CI for audit rho; GRAPE PLR2/PLR3/any
-    labels; secondary-reference specificity; cumulative Artes FA over looks k=3..6 (same window start).
- 2. Exploratory future-only reference (tests k+1..end) on the evaluated E1 eyes.
- 3. Rewrite manuscript: deviations table (A3 validity rule, quick-mode exposure, majority vote, bootstrap fix),
-    'analysis plan committed before final run (commit c0dedb5)' instead of 'pre-registered', restrict claims to tested
-    implementations, estimation language (no 'hard to beat'), define 'stable' = non-declining slope, GRAPE labels
-    'criterion-based', M10 wording, S1 correction (rounds 4-5 used other data), stronger AI statement, plain-language
-    summary (draft in review_stakeholder.md).
- 4. Rebuild docx/pdf, re-run claim audit, second (shorter) review round, risk_report.md, final decision.
-Open user items: author names/affiliations, funding, disclosures, code repo URL, JCR quartile check, APC OK?,
- scope (M24: consider a perimetry/methods journal instead).
+1. When repro run ends: mv results/run_meta_full.json results/run_meta_full_repro.json; git checkout results/run_meta_full.json;
+   compare results/raw_results.csv with raw_results.csv.gz (write results/reproducibility_check.json).
+2. Build Submission_Package.zip (manuscript docx/pdf, cover letter, figures TIFF, supplementary docx, code+results)
+   excluding REVIEW/ and journal_selection/. Give user title, journal, honest desk-rejection assessment.
