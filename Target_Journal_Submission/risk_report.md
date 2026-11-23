@@ -31,7 +31,7 @@ finding is that apparent early-detection gains of the tested conformal and ML de
 3. No published ML/Bayesian comparator (ANSWERS, published deep models) → novelty/generality critique (Reviewer 10: reject). HIGH.
 4. ML feature ablation / threshold variability (M18, M19) not done. MEDIUM.
 5. Scope: therapy journal vs methods content (M24). MEDIUM–HIGH desk-rejection risk.
-6. Unit tests cover only core utilities (M28). LOW for editors, MEDIUM for reviewers.
+6. Unit tests cover only core utilities (M28). (Full re-run reproduced all per-eye outputs exactly: results/reproducibility_check.json.) LOW for editors, MEDIUM for reviewers.
 7. Timeline: p75 70.25 d is close to the 72-day limit; one major revision can exceed it. MEDIUM.
 8. Author items still open: second author name, department, e-mail; suggested reviewers.
 

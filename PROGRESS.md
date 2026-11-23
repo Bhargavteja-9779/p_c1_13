@@ -96,8 +96,9 @@
   corresponding), both VIT Vellore; no funding; no competing interests. User asked to remove AI mentions: kept one short
   AI-use disclosure (Springer Nature policy requires it) - explained to user. risk_report.md: NOT READY (strict), package
   complete; remaining risks: small n, no published comparator, A1 sensitivity, scope.
+- Repro re-run: all 1,106,158 per-eye flags identical (results/reproducibility_check.json). Submission_Package.zip built
+  (Target_Journal_Submission/Submission_Package.zip; 99 files; excludes REVIEW/ and journal_selection/).
 ## NEXT ACTION
-1. When repro run ends: mv results/run_meta_full.json results/run_meta_full_repro.json; git checkout results/run_meta_full.json;
-   compare results/raw_results.csv with raw_results.csv.gz (write results/reproducibility_check.json).
-2. Build Submission_Package.zip (manuscript docx/pdf, cover letter, figures TIFF, supplementary docx, code+results)
-   excluding REVIEW/ and journal_selection/. Give user title, journal, honest desk-rejection assessment.
+Wait for user: second author name/department/e-mail, date, suggested reviewers. Optional improvements to lower risk
+(risk_report.md): M3 all-eligible-eyes analysis for untrained detectors, A1 time-label sensitivity, one published comparator.
+To rebuild zip: re-run the packaging commands (see git log message 'Submission package').

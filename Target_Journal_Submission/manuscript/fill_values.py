@@ -95,6 +95,7 @@ def val(key):
         return f'{100 * b / n:.0f}'
     if t == 'x' and a[0] == 'years_to_flag':
         return f"{(RW[CODE['D1']]['median_tests_to_first_flag'] - 1) * C['uw_ref_interval_y_median']:.0f}"
+    if t == 'rep': return f"{R('reproducibility_check.json')[a[0]]:,}"
     if t == 'meta': return f"{R('run_meta_full.json')[a[0]]:,.0f}"
     raise KeyError(key)
 
