@@ -72,6 +72,10 @@
   * k=4-6: no valid detector clearly beats D1 (D7 event analysis 50% vs 42% at k=5 with FPR 1.2% - check McNemar).
   * RQ3 shuffle audit vs true null: Spearman 0.65, median |diff| 1.0 pp, 80% of cells within 3 pp (H3 partly met).
   * GRAPE k=3: D1 sens 44% / spec 95%; D8 66% / 61%; D2 59% / 79%.
+- 2026-11-23 session 3: data restored (see a1dd394 PROGRESS for commands; needs pip scipy scikit-learn lightgbm
+  matplotlib pyreadr python-docx openpyxl). New script code/src/statistics/descriptives.py -> results/descriptives.json
+  (Table 1 counts + pre-registered real-world measures: tests-to-first-detection, false flags per 1,000). Notable:
+  UWHVF reference eyes median test interval 1.29 yr (6 tests ~ 6.5 yr) -> interpret k in years.
 ## NEXT ACTION (new session)
 Skip steps 1-3 above unless re-running is needed (results are committed). Start at step 4: write Results/Discussion/
 Abstract/KSP from metrics.json + statistics.json via a fill script, then build docx, audits, reviews, cover letter,
