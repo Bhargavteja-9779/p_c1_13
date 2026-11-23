@@ -1,0 +1,18 @@
+[
+ [
+  "fig1_study_design.png",
+  "**Fig. 1** Study design. Ten detectors were developed on the UWHVF training and validation sets and evaluated once on (E1) future-confirmed progressors and stable eyes in the UWHVF test set, (E2) true no-change series from the Artes 12-week retest study, (E3) a shuffle audit in which each test-set eye's first k tests were re-ordered at random, and (E4) the external GRAPE clinic with clinicians' progression labels. Every detector saw only the first 3\u20136 tests of a series. UWHVF, University of Washington Humphrey Visual Field data set; GRAPE, longitudinal glaucoma data set of Huang et al. (Hangzhou, China)."
+ ],
+ [
+  "fig2_validity_vs_power.png",
+  "**Fig. 2** Sensitivity against the future-confirmed reference (26 progressors) versus false-alarm rate on true no-change series, by number of tests. Each point is one detector (D1\u2013D10); bars are 95% confidence intervals from a patient-level bootstrap. The shaded band marks false-alarm rates at or below the nominal 5% (dashed line). Detectors far to the right of the band appear sensitive only because they raise more false alarms. Note the different horizontal scales."
+ ],
+ [
+  "fig3_shuffle_audit_vs_true_null.png",
+  "**Fig. 3** False-alarm rate estimated by the shuffle audit in the UWHVF test set (horizontal) versus the false-alarm rate on true no-change series (vertical). Each point is one detector at one number of tests (40 cells); the dashed line marks perfect agreement. Spearman \u03c1 = 0.65; 80% of cells lie within 3 percentage points."
+ ],
+ [
+  "fig4_grape_external.png",
+  "**Fig. 4** External clinic (GRAPE). Sensitivity for eyes labelled as progressing by the clinicians' mean-deviation criterion versus 1 \u2212 specificity, using the first three (left) or four (right) tests. Bars are 95% confidence intervals. D5 and D7 were calibrated on GRAPE by patient-level cross-fitting; D8 was trained on UWHVF and applied unchanged; D6, D9 and D10 were not applied because they require the 24-2 test grid."
+ ]
+]
