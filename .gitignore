@@ -4,3 +4,4 @@ Target_Journal_Submission/results/raw_results.csv
 __pycache__/
 *.pyc
 Target_Journal_Submission/results/full_run_repro.log
+results/amendB/*.log
