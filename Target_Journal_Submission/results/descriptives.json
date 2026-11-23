@@ -1,0 +1,103 @@
+{
+ "uwhvf": {
+  "n_fields": 28943,
+  "n_eyes": 7428,
+  "n_patients": 3871,
+  "train": {
+   "n_patients": 2302,
+   "n_eyes": 4420,
+   "n_eyes_ge3": 2643,
+   "n_patients_ge3": 1391
+  },
+  "val": {
+   "n_patients": 792,
+   "n_eyes": 1519,
+   "n_eyes_ge3": 940,
+   "n_patients_ge3": 497
+  },
+  "test": {
+   "n_patients": 777,
+   "n_eyes": 1489,
+   "n_eyes_ge3": 869,
+   "n_patients_ge3": 457
+  },
+  "test_ge8": {
+   "n_eyes": 132,
+   "n_patients": 69,
+   "n_prog": 26,
+   "n_stable": 26,
+   "n_excluded": 80,
+   "n_ref_patients": 41,
+   "n_tests": {
+    "median": 11.0,
+    "q1": 9.0,
+    "q3": 12.0
+   },
+   "followup_years": {
+    "median": 12.944558521560573,
+    "q1": 10.069815195071868,
+    "q3": 14.686516084873373
+   },
+   "age_years": {
+    "median": 58.809034907597535,
+    "q1": 50.33949349760438,
+    "q3": 64.37782340862424
+   },
+   "baseline_mtd_db": {
+    "median": -4.358173076923077,
+    "q1": -6.036057692307692,
+    "q3": -3.160336538461539
+   },
+   "interval_years": {
+    "median": 1.0273785078713225,
+    "q1": 0.9965776865160834,
+    "q3": 1.1006160164270966
+   }
+  }
+ },
+ "artes": {
+  "n_patients": 30,
+  "n_eyes": 30,
+  "n_tests": {
+   "median": 12.0,
+   "q1": 12.0,
+   "q3": 12.0
+  },
+  "span_weeks": {
+   "median": 12.000328542094456,
+   "q1": 11.000301163586585,
+   "q3": 13.286078028747433
+  },
+  "windows": {
+   "3": 300,
+   "4": 270,
+   "5": 240,
+   "6": 210
+  }
+ },
+ "grape": {
+  "n_eyes": 263,
+  "n_patients": 144,
+  "n_records": 1115,
+  "n_visits": {
+   "median": 4.0,
+   "q1": 3.0,
+   "q3": 5.0
+  },
+  "n_points": {
+   "median": 59.0,
+   "q1": 56.0,
+   "q3": 59.0
+  },
+  "followup_years": {
+   "median": 2.343065693430657,
+   "q1": 1.7482900136798905,
+   "q3": 3.295003422313484
+  },
+  "n_md_prog": 27,
+  "n_plr2_prog": 40,
+  "n_plr3_prog": 14,
+  "n_ge3": 263,
+  "n_ge4": 163
+ }
+}

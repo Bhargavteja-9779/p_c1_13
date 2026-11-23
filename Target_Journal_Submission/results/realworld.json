@@ -1,0 +1,149 @@
+{
+ "per_detector": {
+  "D1 OLS-MD": {
+   "false_flags_per_1000": {
+    "3": 44.3333333,
+    "4": 37.7777778,
+    "5": 47.0833333,
+    "6": 51.428571399999996
+   },
+   "prog_detected_by_6": 0.6923076923076923,
+   "prog_n": 26,
+   "prog_median_first_k_detected": 4.0,
+   "prog_mean_first_k_detected": 4.388888888888889,
+   "stable_ever_flagged_by_6": 0.038461538461538464,
+   "stable_n": 26
+  },
+  "D10 Self-supervised order net + permutation": {
+   "false_flags_per_1000": {
+    "3": 0.0,
+    "4": 37.6296296,
+    "5": 51.4166667,
+    "6": 57.4285714
+   },
+   "prog_detected_by_6": 0.6538461538461539,
+   "prog_n": 26,
+   "prog_median_first_k_detected": 5.0,
+   "prog_mean_first_k_detected": 4.823529411764706,
+   "stable_ever_flagged_by_6": 0.0,
+   "stable_n": 26
+  },
+  "D2 MD-rate <= -1 dB/yr": {
+   "false_flags_per_1000": {
+    "3": 25.6666667,
+    "4": 6.296296300000001,
+    "5": 7.9166667,
+    "6": 10.0
+   },
+   "prog_detected_by_6": 0.46153846153846156,
+   "prog_n": 26,
+   "prog_median_first_k_detected": 3.0,
+   "prog_mean_first_k_detected": 3.3333333333333335,
+   "stable_ever_flagged_by_6": 0.07692307692307693,
+   "stable_n": 26
+  },
+  "D3 PLR >=3 points": {
+   "false_flags_per_1000": {
+    "3": 14.0,
+    "4": 1.8518519,
+    "5": 5.4166667,
+    "6": 3.3333333
+   },
+   "prog_detected_by_6": 0.38461538461538464,
+   "prog_n": 26,
+   "prog_median_first_k_detected": 4.5,
+   "prog_mean_first_k_detected": 4.6,
+   "stable_ever_flagged_by_6": 0.038461538461538464,
+   "stable_n": 26
+  },
+  "D4 PoPLR (within-eye permutation)": {
+   "false_flags_per_1000": {
+    "3": 0.0,
+    "4": 32.592592599999996,
+    "5": 39.25,
+    "6": 50.0952381
+   },
+   "prog_detected_by_6": 0.5384615384615384,
+   "prog_n": 26,
+   "prog_median_first_k_detected": 5.0,
+   "prog_mean_first_k_detected": 5.214285714285714,
+   "stable_ever_flagged_by_6": 0.0,
+   "stable_n": 26
+  },
+  "D5 Pooled-shuffle conformal MD": {
+   "false_flags_per_1000": {
+    "3": 40.1333333,
+    "4": 36.222222200000004,
+    "5": 43.5,
+    "6": 49.8095238
+   },
+   "prog_detected_by_6": 0.6923076923076923,
+   "prog_n": 26,
+   "prog_median_first_k_detected": 4.0,
+   "prog_mean_first_k_detected": 4.388888888888889,
+   "stable_ever_flagged_by_6": 0.038461538461538464,
+   "stable_n": 26
+  },
+  "D6 Pooled-detrended conformal region-max": {
+   "false_flags_per_1000": {
+    "3": 223.5333333,
+    "4": 51.037037,
+    "5": 61.5,
+    "6": 76.3809524
+   },
+   "prog_detected_by_6": 0.7692307692307693,
+   "prog_n": 26,
+   "prog_median_first_k_detected": 3.0,
+   "prog_mean_first_k_detected": 3.65,
+   "stable_ever_flagged_by_6": 0.038461538461538464,
+   "stable_n": 26
+  },
+  "D7 Event analysis (GPA-like)": {
+   "false_flags_per_1000": {
+    "3": 0.0,
+    "4": 11.111111099999999,
+    "5": 12.5,
+    "6": 19.047618999999997
+   },
+   "prog_detected_by_6": 0.5769230769230769,
+   "prog_n": 26,
+   "prog_median_first_k_detected": 5.0,
+   "prog_mean_first_k_detected": 4.733333333333333,
+   "stable_ever_flagged_by_6": 0.0,
+   "stable_n": 26
+  },
+  "D8 ML-tabular (LightGBM)": {
+   "false_flags_per_1000": {
+    "3": 277.3333333,
+    "4": 94.3703704,
+    "5": 187.9166667,
+    "6": 36.3809524
+   },
+   "prog_detected_by_6": 0.7692307692307693,
+   "prog_n": 26,
+   "prog_median_first_k_detected": 4.0,
+   "prog_mean_first_k_detected": 4.15,
+   "stable_ever_flagged_by_6": 0.038461538461538464,
+   "stable_n": 26
+  },
+  "D9 ML-sequence (GRU)": {
+   "false_flags_per_1000": {
+    "3": 126.8,
+    "4": 19.555555599999998,
+    "5": 75.5,
+    "6": 58.952380999999995
+   },
+   "prog_detected_by_6": 0.6538461538461539,
+   "prog_n": 26,
+   "prog_median_first_k_detected": 5.0,
+   "prog_mean_first_k_detected": 4.823529411764706,
+   "stable_ever_flagged_by_6": 0.07692307692307693,
+   "stable_n": 26
+  }
+ },
+ "rq3_rho_ci": {
+  "rho_ci_lo": 0.3540696864521535,
+  "rho_ci_hi": 0.8525404666333046,
+  "method": "bootstrap over detector x k cells, 2,000 resamples, seed 0"
+ }
+}

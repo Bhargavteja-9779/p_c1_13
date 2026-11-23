@@ -72,6 +72,11 @@
   * k=4-6: no valid detector clearly beats D1 (D7 event analysis 50% vs 42% at k=5 with FPR 1.2% - check McNemar).
   * RQ3 shuffle audit vs true null: Spearman 0.65, median |diff| 1.0 pp, 80% of cells within 3 pp (H3 partly met).
   * GRAPE k=3: D1 sens 44% / spec 95%; D8 66% / 61%; D2 59% / 79%.
+- Session 3 (2026-11-23): data restored (uwhvf clone, GRAPE xlsx, visualFields tarball into data_raw/ext). Added
+  code/src/statistics/descriptives.py -> results/descriptives.json (data counts) + results/realworld.json
+  (pre-registered real-world measures: false flags/1,000, tests to first detection; bootstrap CI for RQ3 rho 0.35-0.85).
+  Note: D5 flags identical to D1 on E1 at every k (conformal pool reproduces the t-test) - report honestly.
+  H2 note: D8 k=6 sens 70.8 vs D1 57.7 (+11.5 pp, Holm p=1.0, FPR 3.6% valid) -> not significant; H2 not falsified.
 ## NEXT ACTION (new session)
 Skip steps 1-3 above unless re-running is needed (results are committed). Start at step 4: write Results/Discussion/
 Abstract/KSP from metrics.json + statistics.json via a fill script, then build docx, audits, reviews, cover letter,
