@@ -42,7 +42,7 @@ def b1():
             fl_e2['RC'].append(pd.Series((e2.score > e2.fold.map(thr_f)).astype(float).to_numpy(), index=e2.unit))
         lab = g[g['eval'] == 'E1'].drop_duplicates('unit').set_index('unit')['label']
         for cal in ('SC', 'RC'):
-            f1 = pd.concat(fl_e1[cal], axis=1).mean(1); f2 = pd.concat(fl_e2[cal], axis=1).mean(1)
+            f1 = pd.concat(fl_e1[cal], axis=1).mean(axis=1); f2 = pd.concat(fl_e2[cal], axis=1).mean(axis=1)
             flags[(det, k, cal)] = f1
             r = dict(detector=det, k=int(k), calibration=cal, n_seeds=len(fl_e1[cal]))
             u1 = pd.DataFrame(dict(flag=f1, label=lab.reindex(f1.index).to_numpy(), cluster=[u[:-1] for u in f1.index]))
@@ -102,12 +102,33 @@ def b4():
         c = ci(g); res.append(dict(detector=det, k=int(k), variant=v, fpr=c['est'], fpr_lo=c['lo'], fpr_hi=c['hi'], n=c['n']))
     return pd.DataFrame(res)
 
+def thresholds_and_ref2():
+    """Calibrated thresholds by source (mean over seeds) and RC-flag sensitivity/specificity vs the secondary (PoPLR) reference."""
+    d = pd.read_csv(os.path.join(OUT, 'scores.csv.gz'), dtype={'unit': str})
+    raw = pd.read_csv(os.path.join(ROOT, 'results', 'raw_results.csv.gz'), dtype={'unit': str, 'extra': str}, low_memory=False)
+    l2 = raw[(raw['eval'] == 'E1') & (raw.detector == 'D1 OLS-MD') & (raw.k == 3)].set_index('unit').extra
+    thr, ref2 = [], []
+    for (det, k), g in d.groupby(['detector', 'k']):
+        rc = [np.quantile(gs[gs['eval'] == 'E2'].score, .95) for _, gs in g.groupby('seed')]
+        sc = [np.quantile(gs[gs['eval'] == 'SC'].score, .95) for _, gs in g.groupby('seed')]
+        thr.append(dict(detector=det, k=int(k), thr_RC=float(np.mean(rc)), thr_SC=float(np.mean(sc)), ratio_SC_RC=float(np.mean(sc) / np.mean(rc))))
+        fl = []
+        for (_, gs), t in zip(g.groupby('seed'), rc):
+            e1 = gs[gs['eval'] == 'E1']; fl.append(pd.Series((e1.score > t).astype(float).to_numpy(), index=e1.unit))
+        f = pd.concat(fl, axis=1).mean(axis=1); lab = l2.reindex(f.index)
+        u = pd.DataFrame(dict(flag=f.to_numpy(), lab=lab.to_numpy(), cluster=[x[:-1] for x in f.index]))
+        cs, cp = ci(u[u.lab == '1']), ci(u[u.lab == '0'])
+        ref2.append(dict(detector=det, k=int(k), sens_ref2=cs['est'], sens_ref2_lo=cs['lo'], sens_ref2_hi=cs['hi'], sens_ref2_n=cs['n'],
+                         spec_ref2=1 - cp['est'], spec_ref2_lo=1 - cp['hi'], spec_ref2_hi=1 - cp['lo'], spec_ref2_n=cp['n']))
+    return pd.DataFrame(thr), pd.DataFrame(ref2)
+
 if __name__ == '__main__':
-    R, T, hb = b1(); R3, T3, c3 = b3(); R4 = b4()
+    R, T, hb = b1(); R3, T3, c3 = b3(); R4 = b4(); TH, RF2 = thresholds_and_ref2()
     out = dict(B1_metrics=json.loads(R.to_json(orient='records')), B1_paired=json.loads(T.to_json(orient='records')), hypotheses=hb,
                B3_metrics=json.loads(R3.to_json(orient='records')), B3_paired=json.loads(T3.to_json(orient='records')), B3_counts=c3,
-               B4_metrics=json.loads(R4.to_json(orient='records')))
+               B4_metrics=json.loads(R4.to_json(orient='records')), thresholds=json.loads(TH.to_json(orient='records')),
+               B1_RC_ref2=json.loads(RF2.to_json(orient='records')))
     json.dump(out, open(os.path.join(OUT, 'amendB.json'), 'w'), indent=1)
     print(R[['detector', 'k', 'calibration', 'sens', 'spec', 'fpr_true_null', 'fpr_true_null_lo', 'fpr_true_null_hi']].round(3).to_string())
     print(T[(T.endpoint == 'sensitivity')][['calibration', 'k', 'detector', 'diff', 'diff_lo', 'diff_hi', 'p_holm']].round(3).to_string())
-    print(hb); print(c3); print(R3.round(3).to_string()); print(T3[T3.endpoint == 'sensitivity'].round(3).to_string()); print(R4.round(3).to_string())
+    print(hb); print(c3); print(R3.round(3).to_string()); print(T3[T3.endpoint == 'sensitivity'].round(3).to_string()); print(R4.round(3).to_string()); print(TH.round(3).to_string()); print(RF2.round(3).to_string())
