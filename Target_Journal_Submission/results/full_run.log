@@ -8,3 +8,6 @@ D4 PoPLR (within-eye permutation) seed 0 done 92s
 D4 PoPLR (within-eye permutation) seed 1 done 169s
 D4 PoPLR (within-eye permutation) seed 2 done 246s
 D4 PoPLR (within-eye permutation) seed 3 done 320s
+D4 PoPLR (within-eye permutation) seed 4 done 393s
+D4 PoPLR (within-eye permutation) GRAPE done 394s
+D5 Pooled-shuffle conformal MD seed 0 done 396s
