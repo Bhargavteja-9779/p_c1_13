@@ -40,7 +40,7 @@ md = '\n\n'.join([
     'This section reproduces the development log kept during the study. All pilot numbers were computed on the training and validation splits of UWHVF (and, in round 5, on the Artes retest data), never on the locked test split. The benchmark reported in the main text was specified after round 5. Round 4 explored a different clinical problem (neovascular age-related macular degeneration) and was abandoned.',
     log.replace('\n## ', '\n### '),
     '## S2. Protocol amendments (made before any final result)', amend.replace('## ', '### '),
-    '## S3. Full results', 'Table S1. All metrics by detector and number of tests (k). Seed SD: standard deviation across five seeds (stochastic detectors only). FA, false-alarm rate; PoPLR ref, secondary reference standard; pp, percentage points.',
+    '## S3. Full results', 'Table S1. All metrics by detector and number of tests (k). Seed SD: standard deviation across five seeds (stochastic detectors only). FA, false-alarm rate; PoPLR ref, secondary reference standard; pp, percentage points. Detector names are the internal code names; D1 OLS-MD = trend test of mean sensitivity, D2 MD-rate = rate rule on mean sensitivity.',
     '\n'.join(s2),
     'Table S2. All paired comparisons with D1 (exact McNemar test; Holm correction within each k and endpoint).',
     '\n'.join(s3),

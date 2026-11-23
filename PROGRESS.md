@@ -7,10 +7,10 @@
 
 ## Phase status
 - [x] STEP 0 journal selection -> Ophthalmology and Therapy (see journal_selection/selected_journal.md)
-- [ ] STEP 1 benchmark/profile/style
-- [ ] STEP 2 problem discovery
-- [ ] STEP 3 novelty map/scorecard
-- [ ] Build v1, D6 loop, protocol, experiments, manuscript, reviews, package
+- [x] STEP 1 benchmark/profile/style
+- [x] STEP 2 problem discovery
+- [x] STEP 3 novelty map/scorecard
+- [x] Build v1, D6 loop, protocol, experiments, manuscript, reviews, package (decision: NOT READY - author items)
 
 ## Decisions log
 - Elsevier/Wiley/IEEE/OUP/SAGE/ACM/CUP article pages blocked (403/418) and Elsevier/Wiley/IEEE do not deposit received/accepted
@@ -87,8 +87,13 @@
   7,428 eyes (our count), data paper says 7,248 -> state both. Text fixes from citation audit still TO APPLY in templates
   (prevalence wording ages 40-80; ML-threshold citation -> orig refs 18(TVST? check) & 21... see citation_audit.md).
   Reviews 01-05+stakeholder and 06-10 launched as agents (check REVIEW/ for files; redo missing ones).
+- STEP 5 DONE (2026-11-23): 10 reviews + stakeholder + citation audit in REVIEW/; revision 1 applied (see
+  REVIEW/response_to_reviews.md). New: code/scripts/extra_stats.py -> results/extra_stats.json (strict validity, MDD 34.6 pp,
+  cumulative FA: D1 15.3%, D7 3.3%, D8 50.8%; rho cell-CI; GRAPE PLR labels). 49 claim checks pass. risk_report.md written:
+  FINAL DECISION = NOT READY (author-only blockers); label NOT REMARKABLE: honest strongest result; rescored 19/30.
+
 ## NEXT ACTION (new session)
-Step 5: REVIEW/ folder: 10 adversarial reviews + stakeholder review (agents may have written some: check REVIEW/), then fix
-round on templates (never hand-type numbers), citation-content audit (REVIEW/citation_audit.md), consistency +
-reproducibility audit, risk_report.md, final decision (expected label NOT REMARKABLE: honest strongest result).
-Step 6: open user requests: Dryad AMD file (no longer needed), JCR quartile check, APC USD 8,050 OK?
+Package is complete pending author-only items (risk_report.md "Blocking items"). Optional: second independent review
+round on revised manuscript; STARD-style flow figure; trim main text toward 4,000 words. Do NOT rerun build_refs.py
+(manual reference fixes in references.json). Rebuild: cd manuscript && python3 fill_values.py && python3
+build_supplementary.py && python3 build_docx.py (needs results/extra_stats.json; raw_results.csv for extra_stats).

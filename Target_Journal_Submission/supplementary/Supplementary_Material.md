@@ -91,7 +91,7 @@ test, grid-agnostic features); D6, D9, D10 (24-2 specific) are not evaluated on 
 
 ## S3. Full results
 
-Table S1. All metrics by detector and number of tests (k). Seed SD: standard deviation across five seeds (stochastic detectors only). FA, false-alarm rate; PoPLR ref, secondary reference standard; pp, percentage points.
+Table S1. All metrics by detector and number of tests (k). Seed SD: standard deviation across five seeds (stochastic detectors only). FA, false-alarm rate; PoPLR ref, secondary reference standard; pp, percentage points. Detector names are the internal code names; D1 OLS-MD = trend test of mean sensitivity, D2 MD-rate = rate rule on mean sensitivity.
 
 | Detector | k | Sens % | Seed SD | Spec % | FA true null % | Seed SD | FA shuffle % | Sens, PoPLR ref % | GRAPE sens % | GRAPE spec % |
 |---|---|---|---|---|---|---|---|---|---|---|

@@ -54,8 +54,8 @@ def fmt(v, f):
     if f == 'pp': return f"{100 * v:.1f} percentage points"
     return f"{v:.{int(f)}f}"
 
-SHORT = {'D1': 'D1 Trend, MD', 'D2': 'D2 MD rate', 'D3': 'D3 PLR-3', 'D4': 'D4 PoPLR', 'D5': 'D5 Pooled conformal',
-         'D6': 'D6 Pooled-detrended', 'D7': 'D7 Event', 'D8': 'D8 LightGBM', 'D9': 'D9 GRU', 'D10': 'D10 Order net'}
+SHORT = {'D1': 'D1 Trend', 'D2': 'D2 Rate rule', 'D3': 'D3 PLR-3', 'D4': 'D4 PoPLR', 'D5': 'D5 Pooled conformal',
+         'D6': 'D6 Pooled-detrended', 'D7': 'D7 Event analysis', 'D8': 'D8 LightGBM', 'D9': 'D9 GRU', 'D10': 'D10 Order network'}
 
 def T_main():
     ks = sorted({r['k'] for r in M}); out = ['| Detector | k | Sensitivity, % (95% CI) | Specificity, % | False alarms, true no-change, % (95% CI) | False alarms, shuffle audit, % | Valid |',
