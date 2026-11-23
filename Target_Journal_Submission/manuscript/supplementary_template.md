@@ -4,7 +4,7 @@
 
 ## S1 Development history: ideas tried and abandoned
 
-Before the final protocol, we tried to develop a new detection method. All development used the UWHVF training and validation sets only; the test set was locked. The full log, with every hypothesis, falsifier and result file, is in the code repository (`journal_selection/novelty_escalation_log.md`; result files `results/pilot_v0.json`, `pilot_v1.json`, `pilot_deferral.json`, `pilot_v2.json`, `d6_round5.json`). In summary:
+Before the final protocol, we tried to develop a new detection method. Rounds 0–3 and 5 used the UWHVF training and validation sets; Round 4 used a different open data set (Moorfields neovascular AMD), and Round 5 also used the Artes retest data. The UWHVF test set and the GRAPE labels were locked. A Round 5 variant (weighted mean sensitivity) had a division-by-zero error; its results were void and it was not carried forward. The full log, with every hypothesis, falsifier and result file, is in the code repository (`journal_selection/novelty_escalation_log.md`; result files `results/pilot_v0.json`, `pilot_v1.json`, `pilot_deferral.json`, `pilot_v2.json`, `d6_round5.json`). In summary:
 
 - **Round 0.** A self-supervised network that recognises the true time order of tests, used as a within-eye permutation statistic (D10 in the final benchmark). It did not flag more eyes than PoPLR or the mean-sensitivity trend. Abandoned as a new method.
 - **Round 1.** A pooled ("population-calibrated") null built from shuffled series of other eyes, to allow valid tests with three fields (D5 in the final benchmark). Gains were small and limited to three or four tests.
@@ -22,3 +22,11 @@ Ideas counted: six rounds, nine candidate method variants. Because no developmen
 ## S3 All paired comparisons with D1
 
 {{TABLES3}}
+
+## S4 GRAPE: PLR3 and any-criterion labels
+
+{{TABLES4}}
+
+## S5 Exploratory future-only reference
+
+{{TABLES5}}

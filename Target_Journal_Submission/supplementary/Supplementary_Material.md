@@ -4,7 +4,7 @@
 
 ## S1 Development history: ideas tried and abandoned
 
-Before the final protocol, we tried to develop a new detection method. All development used the UWHVF training and validation sets only; the test set was locked. The full log, with every hypothesis, falsifier and result file, is in the code repository (`journal_selection/novelty_escalation_log.md`; result files `results/pilot_v0.json`, `pilot_v1.json`, `pilot_deferral.json`, `pilot_v2.json`, `d6_round5.json`). In summary:
+Before the final protocol, we tried to develop a new detection method. Rounds 0–3 and 5 used the UWHVF training and validation sets; Round 4 used a different open data set (Moorfields neovascular AMD), and Round 5 also used the Artes retest data. The UWHVF test set and the GRAPE labels were locked. A Round 5 variant (weighted mean sensitivity) had a division-by-zero error; its results were void and it was not carried forward. The full log, with every hypothesis, falsifier and result file, is in the code repository (`journal_selection/novelty_escalation_log.md`; result files `results/pilot_v0.json`, `pilot_v1.json`, `pilot_deferral.json`, `pilot_v2.json`, `d6_round5.json`). In summary:
 
 - **Round 0.** A self-supervised network that recognises the true time order of tests, used as a within-eye permutation statistic (D10 in the final benchmark). It did not flag more eyes than PoPLR or the mean-sensitivity trend. Abandoned as a new method.
 - **Round 1.** A pooled ("population-calibrated") null built from shuffled series of other eyes, to allow valid tests with three fields (D5 in the final benchmark). Gains were small and limited to three or four tests.
@@ -40,84 +40,94 @@ n = 58 secondary-reference progressors in the UWHVF test set. Mean over seeds fo
 
 | Tests | Endpoint | Detector | n | Difference vs D1, pp (95% CI) | Flagged only by detector / only by D1 | p | Holm p |
 |---|---|---|---|---|---|---|---|
-| 3 | GRAPE false positives | D2 MD rate | 236 | +16.5 (11.0 to 22.0) | 44 / 5 | < 0.001 | < 0.001 |
-| 3 | GRAPE false positives | D3 PLR-3 | 236 | -0.4 (-3.8 to 2.5) | 7 / 8 | 1.00 | 1.00 |
-| 3 | GRAPE false positives | D4 PoPLR | 236 | -4.7 (-7.6 to -2.1) | 0 / 11 | < 0.001 | 0.004 |
-| 3 | GRAPE false positives | D5 Pooled-shuffle conformal | 236 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
-| 3 | GRAPE false positives | D7 Event analysis | 236 | -4.7 (-7.6 to -2.1) | 0 / 11 | < 0.001 | 0.004 |
-| 3 | GRAPE false positives | D8 ML tabular (LightGBM) | 236 | +33.5 (27.5 to 39.4) | 79 / 0 | < 0.001 | < 0.001 |
-| 3 | GRAPE sensitivity | D2 MD rate | 27 | +14.8 (-11.1 to 37.0) | 8 / 4 | 0.39 | 0.78 |
-| 3 | GRAPE sensitivity | D3 PLR-3 | 27 | -40.7 (-63.0 to -18.5) | 1 / 12 | 0.003 | 0.014 |
-| 3 | GRAPE sensitivity | D4 PoPLR | 27 | -44.4 (-63.0 to -25.9) | 0 / 12 | < 0.001 | 0.003 |
-| 3 | GRAPE sensitivity | D5 Pooled-shuffle conformal | 27 | -3.7 (-11.1 to 0.0) | 0 / 1 | 1.00 | 1.00 |
-| 3 | GRAPE sensitivity | D7 Event analysis | 27 | -44.4 (-63.0 to -25.9) | 0 / 12 | < 0.001 | 0.003 |
-| 3 | GRAPE sensitivity | D8 ML tabular (LightGBM) | 27 | +25.9 (0.0 to 48.1) | 10 / 3 | 0.092 | 0.28 |
-| 3 | false positives (1-spec) | D2 MD rate | 26 | +3.8 (0.0 to 11.5) | 1 / 0 | 1.00 | 1.00 |
-| 3 | false positives (1-spec) | D3 PLR-3 | 26 | +0.0 (-11.5 to 11.5) | 1 / 1 | 1.00 | 1.00 |
-| 3 | false positives (1-spec) | D4 PoPLR | 26 | -3.8 (-11.5 to 0.0) | 0 / 1 | 1.00 | 1.00 |
+| 3 | GRAPE MD false positives | D2 MD rate | 236 | +16.5 (11.0 to 22.2) | 44 / 5 | < 0.001 | < 0.001 |
+| 3 | GRAPE MD false positives | D3 PLR-3 | 236 | -0.4 (-4.2 to 3.3) | 7 / 8 | 1.00 | 1.00 |
+| 3 | GRAPE MD false positives | D5 Pooled-shuffle conformal | 236 | -0.1 (-0.3 to 0.0) | 0 / 0 | 1.00 | 1.00 |
+| 3 | GRAPE MD false positives | D8 ML tabular (LightGBM) | 236 | +34.2 (28.3 to 40.6) | 79 / 0 | < 0.001 | < 0.001 |
+| 3 | GRAPE MD sensitivity | D2 MD rate | 27 | +14.8 (-7.8 to 37.0) | 8 / 4 | 0.39 | 0.78 |
+| 3 | GRAPE MD sensitivity | D3 PLR-3 | 27 | -40.7 (-61.5 to -19.2) | 1 / 12 | 0.003 | 0.014 |
+| 3 | GRAPE MD sensitivity | D5 Pooled-shuffle conformal | 27 | -3.0 (-8.5 to 0.0) | 0 / 1 | 1.00 | 1.00 |
+| 3 | GRAPE MD sensitivity | D8 ML tabular (LightGBM) | 27 | +21.5 (-1.5 to 42.9) | 10 / 3 | 0.092 | 0.28 |
+| 3 | GRAPE PLR2 false positives | D2 MD rate | 223 | +14.3 (8.5 to 20.4) | 39 / 7 | < 0.001 | < 0.001 |
+| 3 | GRAPE PLR2 false positives | D3 PLR-3 | 223 | -5.4 (-10.0 to -1.3) | 4 / 16 | 0.012 | 0.024 |
+| 3 | GRAPE PLR2 false positives | D5 Pooled-shuffle conformal | 223 | -0.4 (-1.2 to 0.0) | 0 / 1 | 1.00 | 1.00 |
+| 3 | GRAPE PLR2 false positives | D8 ML tabular (LightGBM) | 223 | +30.9 (24.7 to 37.1) | 70 / 3 | < 0.001 | < 0.001 |
+| 3 | GRAPE PLR2 sensitivity | D2 MD rate | 40 | +27.5 (10.8 to 42.5) | 13 / 2 | 0.007 | 0.022 |
+| 3 | GRAPE PLR2 sensitivity | D3 PLR-3 | 40 | +0.0 (-14.3 to 14.0) | 4 / 4 | 1.00 | 1.00 |
+| 3 | GRAPE PLR2 sensitivity | D5 Pooled-shuffle conformal | 40 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
+| 3 | GRAPE PLR2 sensitivity | D8 ML tabular (LightGBM) | 40 | +43.5 (29.0 to 56.8) | 19 / 0 | < 0.001 | < 0.001 |
+| 3 | false positives (1-spec) | D2 MD rate | 26 | +3.8 (0.0 to 12.5) | 1 / 0 | 1.00 | 1.00 |
+| 3 | false positives (1-spec) | D3 PLR-3 | 26 | +0.0 (-12.0 to 10.4) | 1 / 1 | 1.00 | 1.00 |
 | 3 | false positives (1-spec) | D5 Pooled-shuffle conformal | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
 | 3 | false positives (1-spec) | D6 Pooled-detrended conformal | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
-| 3 | false positives (1-spec) | D7 Event analysis | 26 | -3.8 (-11.5 to 0.0) | 0 / 1 | 1.00 | 1.00 |
-| 3 | false positives (1-spec) | D8 ML tabular (LightGBM) | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
-| 3 | false positives (1-spec) | D9 ML sequence (GRU) | 26 | -3.8 (-11.5 to 0.0) | 0 / 1 | 1.00 | 1.00 |
-| 3 | false positives (1-spec) | D10 Self-supervised order net | 26 | -3.8 (-11.5 to 0.0) | 0 / 1 | 1.00 | 1.00 |
-| 3 | sensitivity | D2 MD rate | 26 | +19.2 (0.0 to 42.3) | 7 / 2 | 0.18 | 0.72 |
-| 3 | sensitivity | D3 PLR-3 | 26 | -15.4 (-30.8 to -3.8) | 0 / 4 | 0.12 | 0.62 |
-| 3 | sensitivity | D4 PoPLR | 26 | -19.2 (-34.6 to -3.8) | 0 / 5 | 0.062 | 0.50 |
+| 3 | false positives (1-spec) | D8 ML tabular (LightGBM) | 26 | +1.5 (0.0 to 5.5) | 0 / 0 | 1.00 | 1.00 |
+| 3 | false positives (1-spec) | D9 ML sequence (GRU) | 26 | +0.8 (-10.8 to 9.7) | 0 / 1 | 1.00 | 1.00 |
+| 3 | sensitivity | D2 MD rate | 26 | +19.2 (-3.4 to 41.7) | 7 / 2 | 0.18 | 0.72 |
+| 3 | sensitivity | D3 PLR-3 | 26 | -15.4 (-28.6 to -4.0) | 0 / 4 | 0.12 | 0.62 |
 | 3 | sensitivity | D5 Pooled-shuffle conformal | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
-| 3 | sensitivity | D6 Pooled-detrended conformal | 26 | +38.5 (19.2 to 57.7) | 10 / 0 | 0.002 | 0.018 |
-| 3 | sensitivity | D7 Event analysis | 26 | -19.2 (-34.6 to -3.8) | 0 / 5 | 0.062 | 0.50 |
-| 3 | sensitivity | D8 ML tabular (LightGBM) | 26 | +7.7 (-11.5 to 26.9) | 4 / 2 | 0.69 | 1.00 |
-| 3 | sensitivity | D9 ML sequence (GRU) | 26 | -3.8 (-23.1 to 15.4) | 3 / 4 | 1.00 | 1.00 |
-| 3 | sensitivity | D10 Self-supervised order net | 26 | -19.2 (-34.6 to -3.8) | 0 / 5 | 0.062 | 0.50 |
-| 4 | GRAPE false positives | D2 MD rate | 145 | +9.7 (4.8 to 15.2) | 16 / 2 | 0.001 | 0.007 |
-| 4 | GRAPE false positives | D3 PLR-3 | 145 | -2.1 (-6.2 to 2.1) | 3 / 6 | 0.51 | 1.00 |
-| 4 | GRAPE false positives | D4 PoPLR | 145 | +0.7 (-4.1 to 5.5) | 6 / 5 | 1.00 | 1.00 |
-| 4 | GRAPE false positives | D5 Pooled-shuffle conformal | 145 | +1.4 (0.0 to 3.4) | 2 / 0 | 0.50 | 1.00 |
-| 4 | GRAPE false positives | D7 Event analysis | 145 | +0.0 (-4.8 to 4.8) | 6 / 6 | 1.00 | 1.00 |
-| 4 | GRAPE false positives | D8 ML tabular (LightGBM) | 145 | +14.5 (9.0 to 20.7) | 21 / 0 | < 0.001 | < 0.001 |
-| 4 | GRAPE sensitivity | D2 MD rate | 18 | +22.2 (-5.6 to 50.0) | 6 / 2 | 0.29 | 1.00 |
-| 4 | GRAPE sensitivity | D3 PLR-3 | 18 | -22.2 (-38.9 to -5.6) | 0 / 4 | 0.12 | 0.75 |
-| 4 | GRAPE sensitivity | D4 PoPLR | 18 | -11.1 (-27.8 to 0.0) | 0 / 2 | 0.50 | 1.00 |
-| 4 | GRAPE sensitivity | D5 Pooled-shuffle conformal | 18 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
-| 4 | GRAPE sensitivity | D7 Event analysis | 18 | -16.7 (-44.4 to 11.1) | 2 / 5 | 0.45 | 1.00 |
-| 4 | GRAPE sensitivity | D8 ML tabular (LightGBM) | 18 | +16.7 (-5.6 to 38.9) | 4 / 1 | 0.38 | 1.00 |
-| 4 | false positives (1-spec) | D2 MD rate | 26 | +3.8 (0.0 to 11.5) | 1 / 0 | 1.00 | 1.00 |
+| 3 | sensitivity | D6 Pooled-detrended conformal | 26 | +37.7 (18.5 to 57.7) | 10 / 0 | 0.002 | 0.012 |
+| 3 | sensitivity | D8 ML tabular (LightGBM) | 26 | +6.9 (-8.6 to 24.6) | 4 / 2 | 0.69 | 1.00 |
+| 3 | sensitivity | D9 ML sequence (GRU) | 26 | -6.9 (-24.4 to 12.0) | 3 / 4 | 1.00 | 1.00 |
+| 4 | GRAPE MD false positives | D2 MD rate | 145 | +9.7 (4.0 to 16.1) | 16 / 2 | 0.001 | 0.007 |
+| 4 | GRAPE MD false positives | D3 PLR-3 | 145 | -2.1 (-6.2 to 2.0) | 3 / 6 | 0.51 | 1.00 |
+| 4 | GRAPE MD false positives | D4 PoPLR | 145 | +0.7 (-3.6 to 5.1) | 6 / 5 | 1.00 | 1.00 |
+| 4 | GRAPE MD false positives | D5 Pooled-shuffle conformal | 145 | +1.4 (0.3 to 3.0) | 2 / 0 | 0.50 | 1.00 |
+| 4 | GRAPE MD false positives | D7 Event analysis | 145 | +0.0 (-4.8 to 4.8) | 6 / 6 | 1.00 | 1.00 |
+| 4 | GRAPE MD false positives | D8 ML tabular (LightGBM) | 145 | +14.3 (8.6 to 21.0) | 21 / 0 | < 0.001 | < 0.001 |
+| 4 | GRAPE MD sensitivity | D2 MD rate | 18 | +22.2 (-5.9 to 52.9) | 6 / 2 | 0.29 | 1.00 |
+| 4 | GRAPE MD sensitivity | D3 PLR-3 | 18 | -22.2 (-42.2 to -5.3) | 0 / 4 | 0.12 | 0.75 |
+| 4 | GRAPE MD sensitivity | D4 PoPLR | 18 | -11.1 (-27.8 to 0.0) | 0 / 2 | 0.50 | 1.00 |
+| 4 | GRAPE MD sensitivity | D5 Pooled-shuffle conformal | 18 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
+| 4 | GRAPE MD sensitivity | D7 Event analysis | 18 | -16.7 (-44.4 to 10.5) | 2 / 5 | 0.45 | 1.00 |
+| 4 | GRAPE MD sensitivity | D8 ML tabular (LightGBM) | 18 | +15.6 (-3.3 to 35.3) | 4 / 1 | 0.38 | 1.00 |
+| 4 | GRAPE PLR2 false positives | D2 MD rate | 132 | +8.3 (2.5 to 14.3) | 14 / 3 | 0.013 | 0.064 |
+| 4 | GRAPE PLR2 false positives | D3 PLR-3 | 132 | -5.3 (-9.2 to -2.1) | 0 / 7 | 0.016 | 0.064 |
+| 4 | GRAPE PLR2 false positives | D4 PoPLR | 132 | -2.3 (-6.9 to 2.2) | 3 / 6 | 0.51 | 1.00 |
+| 4 | GRAPE PLR2 false positives | D5 Pooled-shuffle conformal | 132 | +0.5 (0.0 to 1.0) | 0 / 0 | 1.00 | 1.00 |
+| 4 | GRAPE PLR2 false positives | D7 Event analysis | 132 | -2.3 (-7.3 to 3.0) | 4 / 7 | 0.55 | 1.00 |
+| 4 | GRAPE PLR2 false positives | D8 ML tabular (LightGBM) | 132 | +11.4 (6.4 to 16.6) | 16 / 0 | < 0.001 | < 0.001 |
+| 4 | GRAPE PLR2 sensitivity | D2 MD rate | 31 | +22.6 (6.1 to 40.6) | 8 / 1 | 0.039 | 0.20 |
+| 4 | GRAPE PLR2 sensitivity | D3 PLR-3 | 31 | +0.0 (-15.6 to 16.1) | 3 / 3 | 1.00 | 1.00 |
+| 4 | GRAPE PLR2 sensitivity | D4 PoPLR | 31 | +6.5 (-5.9 to 20.7) | 3 / 1 | 0.62 | 1.00 |
+| 4 | GRAPE PLR2 sensitivity | D5 Pooled-shuffle conformal | 31 | +4.5 (0.0 to 11.3) | 2 / 0 | 0.50 | 1.00 |
+| 4 | GRAPE PLR2 sensitivity | D7 Event analysis | 31 | +0.0 (-21.9 to 19.4) | 4 / 4 | 1.00 | 1.00 |
+| 4 | GRAPE PLR2 sensitivity | D8 ML tabular (LightGBM) | 31 | +27.7 (10.0 to 46.7) | 9 / 1 | 0.021 | 0.13 |
+| 4 | false positives (1-spec) | D2 MD rate | 26 | +3.8 (0.0 to 12.5) | 1 / 0 | 1.00 | 1.00 |
 | 4 | false positives (1-spec) | D3 PLR-3 | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
 | 4 | false positives (1-spec) | D4 PoPLR | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
 | 4 | false positives (1-spec) | D5 Pooled-shuffle conformal | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
 | 4 | false positives (1-spec) | D6 Pooled-detrended conformal | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
 | 4 | false positives (1-spec) | D7 Event analysis | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
-| 4 | false positives (1-spec) | D8 ML tabular (LightGBM) | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
-| 4 | false positives (1-spec) | D9 ML sequence (GRU) | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
+| 4 | false positives (1-spec) | D8 ML tabular (LightGBM) | 26 | +0.8 (0.0 to 2.6) | 0 / 0 | 1.00 | 1.00 |
+| 4 | false positives (1-spec) | D9 ML sequence (GRU) | 26 | +0.8 (0.0 to 2.4) | 0 / 0 | 1.00 | 1.00 |
 | 4 | false positives (1-spec) | D10 Self-supervised order net | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
-| 4 | sensitivity | D2 MD rate | 26 | -7.7 (-23.1 to 7.7) | 1 / 3 | 0.62 | 1.00 |
-| 4 | sensitivity | D3 PLR-3 | 26 | -15.4 (-34.6 to 0.0) | 1 / 5 | 0.22 | 1.00 |
-| 4 | sensitivity | D4 PoPLR | 26 | -26.9 (-46.2 to -11.5) | 0 / 7 | 0.016 | 0.14 |
+| 4 | sensitivity | D2 MD rate | 26 | -7.7 (-23.1 to 7.1) | 1 / 3 | 0.62 | 1.00 |
+| 4 | sensitivity | D3 PLR-3 | 26 | -15.4 (-33.3 to 0.0) | 1 / 5 | 0.22 | 1.00 |
+| 4 | sensitivity | D4 PoPLR | 26 | -26.9 (-44.0 to -11.1) | 0 / 7 | 0.016 | 0.14 |
 | 4 | sensitivity | D5 Pooled-shuffle conformal | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
-| 4 | sensitivity | D6 Pooled-detrended conformal | 26 | -3.8 (-19.2 to 7.7) | 1 / 2 | 1.00 | 1.00 |
-| 4 | sensitivity | D7 Event analysis | 26 | -7.7 (-26.9 to 11.5) | 2 / 4 | 0.69 | 1.00 |
-| 4 | sensitivity | D8 ML tabular (LightGBM) | 26 | +11.5 (-3.8 to 30.8) | 4 / 1 | 0.38 | 1.00 |
-| 4 | sensitivity | D9 ML sequence (GRU) | 26 | -19.2 (-38.5 to 3.8) | 2 / 7 | 0.18 | 1.00 |
-| 4 | sensitivity | D10 Self-supervised order net | 26 | -11.5 (-30.8 to 3.8) | 1 / 4 | 0.38 | 1.00 |
+| 4 | sensitivity | D6 Pooled-detrended conformal | 26 | -5.4 (-18.5 to 8.0) | 1 / 2 | 1.00 | 1.00 |
+| 4 | sensitivity | D7 Event analysis | 26 | -7.7 (-26.9 to 11.1) | 2 / 4 | 0.69 | 1.00 |
+| 4 | sensitivity | D8 ML tabular (LightGBM) | 26 | +10.8 (-7.2 to 30.0) | 4 / 1 | 0.38 | 1.00 |
+| 4 | sensitivity | D9 ML sequence (GRU) | 26 | -19.2 (-40.0 to 1.5) | 2 / 7 | 0.18 | 1.00 |
+| 4 | sensitivity | D10 Self-supervised order net | 26 | -10.8 (-24.4 to 1.7) | 1 / 4 | 0.38 | 1.00 |
 | 5 | false positives (1-spec) | D2 MD rate | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
 | 5 | false positives (1-spec) | D3 PLR-3 | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
 | 5 | false positives (1-spec) | D4 PoPLR | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
 | 5 | false positives (1-spec) | D5 Pooled-shuffle conformal | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
 | 5 | false positives (1-spec) | D6 Pooled-detrended conformal | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
 | 5 | false positives (1-spec) | D7 Event analysis | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
-| 5 | false positives (1-spec) | D8 ML tabular (LightGBM) | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
-| 5 | false positives (1-spec) | D9 ML sequence (GRU) | 26 | +7.7 (0.0 to 19.2) | 2 / 0 | 0.50 | 1.00 |
+| 5 | false positives (1-spec) | D8 ML tabular (LightGBM) | 26 | +0.8 (0.0 to 2.4) | 0 / 0 | 1.00 | 1.00 |
+| 5 | false positives (1-spec) | D9 ML sequence (GRU) | 26 | +6.2 (0.0 to 17.6) | 2 / 0 | 0.50 | 1.00 |
 | 5 | false positives (1-spec) | D10 Self-supervised order net | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
-| 5 | sensitivity | D2 MD rate | 26 | -19.2 (-38.5 to 0.0) | 1 / 6 | 0.12 | 1.00 |
-| 5 | sensitivity | D3 PLR-3 | 26 | -19.2 (-34.6 to -3.8) | 0 / 5 | 0.062 | 0.56 |
-| 5 | sensitivity | D4 PoPLR | 26 | -3.8 (-11.5 to 0.0) | 0 / 1 | 1.00 | 1.00 |
+| 5 | sensitivity | D2 MD rate | 26 | -19.2 (-36.0 to -4.0) | 1 / 6 | 0.12 | 1.00 |
+| 5 | sensitivity | D3 PLR-3 | 26 | -19.2 (-33.3 to -4.3) | 0 / 5 | 0.062 | 0.56 |
+| 5 | sensitivity | D4 PoPLR | 26 | -3.8 (-12.0 to 0.0) | 0 / 1 | 1.00 | 1.00 |
 | 5 | sensitivity | D5 Pooled-shuffle conformal | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
-| 5 | sensitivity | D6 Pooled-detrended conformal | 26 | -11.5 (-30.8 to 7.7) | 2 / 5 | 0.45 | 1.00 |
-| 5 | sensitivity | D7 Event analysis | 26 | +7.7 (-11.5 to 26.9) | 4 / 2 | 0.69 | 1.00 |
-| 5 | sensitivity | D8 ML tabular (LightGBM) | 26 | +11.5 (0.0 to 26.9) | 3 / 0 | 0.25 | 1.00 |
-| 5 | sensitivity | D9 ML sequence (GRU) | 26 | +0.0 (-23.1 to 23.1) | 5 / 5 | 1.00 | 1.00 |
-| 5 | sensitivity | D10 Self-supervised order net | 26 | +7.7 (-7.7 to 23.1) | 3 / 1 | 0.62 | 1.00 |
+| 5 | sensitivity | D6 Pooled-detrended conformal | 26 | -10.8 (-32.6 to 8.8) | 2 / 5 | 0.45 | 1.00 |
+| 5 | sensitivity | D7 Event analysis | 26 | +7.7 (-10.3 to 26.1) | 4 / 2 | 0.69 | 1.00 |
+| 5 | sensitivity | D8 ML tabular (LightGBM) | 26 | +13.8 (3.2 to 28.0) | 3 / 0 | 0.25 | 1.00 |
+| 5 | sensitivity | D9 ML sequence (GRU) | 26 | -1.5 (-21.6 to 17.7) | 5 / 5 | 1.00 | 1.00 |
+| 5 | sensitivity | D10 Self-supervised order net | 26 | +1.5 (-10.4 to 12.9) | 3 / 1 | 0.62 | 1.00 |
 | 6 | false positives (1-spec) | D2 MD rate | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
 | 6 | false positives (1-spec) | D3 PLR-3 | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
 | 6 | false positives (1-spec) | D4 PoPLR | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
@@ -125,16 +135,81 @@ n = 58 secondary-reference progressors in the UWHVF test set. Mean over seeds fo
 | 6 | false positives (1-spec) | D6 Pooled-detrended conformal | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
 | 6 | false positives (1-spec) | D7 Event analysis | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
 | 6 | false positives (1-spec) | D8 ML tabular (LightGBM) | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
-| 6 | false positives (1-spec) | D9 ML sequence (GRU) | 26 | +7.7 (0.0 to 19.2) | 2 / 0 | 0.50 | 1.00 |
-| 6 | false positives (1-spec) | D10 Self-supervised order net | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
-| 6 | sensitivity | D2 MD rate | 26 | -34.6 (-57.7 to -15.4) | 1 / 10 | 0.012 | 0.094 |
-| 6 | sensitivity | D3 PLR-3 | 26 | -34.6 (-53.8 to -19.2) | 0 / 9 | 0.004 | 0.035 |
-| 6 | sensitivity | D4 PoPLR | 26 | -7.7 (-26.9 to 11.5) | 2 / 4 | 0.69 | 1.00 |
-| 6 | sensitivity | D5 Pooled-shuffle conformal | 26 | +0.0 (0.0 to 0.0) | 0 / 0 | 1.00 | 1.00 |
-| 6 | sensitivity | D6 Pooled-detrended conformal | 26 | -3.8 (-19.2 to 11.5) | 2 / 3 | 1.00 | 1.00 |
-| 6 | sensitivity | D7 Event analysis | 26 | +0.0 (-19.2 to 15.4) | 3 / 3 | 1.00 | 1.00 |
-| 6 | sensitivity | D8 ML tabular (LightGBM) | 26 | +11.5 (-7.7 to 30.8) | 5 / 2 | 0.45 | 1.00 |
-| 6 | sensitivity | D9 ML sequence (GRU) | 26 | -11.5 (-38.5 to 11.5) | 4 / 7 | 0.55 | 1.00 |
-| 6 | sensitivity | D10 Self-supervised order net | 26 | +0.0 (-19.2 to 19.2) | 3 / 3 | 1.00 | 1.00 |
+| 6 | false positives (1-spec) | D9 ML sequence (GRU) | 26 | +8.5 (0.0 to 24.8) | 2 / 0 | 0.50 | 1.00 |
+| 6 | false positives (1-spec) | D10 Self-supervised order net | 26 | +0.8 (0.0 to 2.4) | 0 / 0 | 1.00 | 1.00 |
+| 6 | sensitivity | D2 MD rate | 26 | -34.6 (-54.2 to -18.5) | 1 / 10 | 0.012 | 0.094 |
+| 6 | sensitivity | D3 PLR-3 | 26 | -34.6 (-53.8 to -16.0) | 0 / 9 | 0.004 | 0.035 |
+| 6 | sensitivity | D4 PoPLR | 26 | -7.7 (-26.9 to 10.3) | 2 / 4 | 0.69 | 1.00 |
+| 6 | sensitivity | D5 Pooled-shuffle conformal | 26 | -0.8 (-2.3 to 0.0) | 0 / 0 | 1.00 | 1.00 |
+| 6 | sensitivity | D6 Pooled-detrended conformal | 26 | -3.8 (-20.0 to 12.0) | 2 / 3 | 1.00 | 1.00 |
+| 6 | sensitivity | D7 Event analysis | 26 | +0.0 (-20.0 to 17.9) | 3 / 3 | 1.00 | 1.00 |
+| 6 | sensitivity | D8 ML tabular (LightGBM) | 26 | +13.1 (-5.2 to 31.1) | 5 / 2 | 0.45 | 1.00 |
+| 6 | sensitivity | D9 ML sequence (GRU) | 26 | -20.0 (-41.7 to 2.1) | 4 / 7 | 0.55 | 1.00 |
+| 6 | sensitivity | D10 Self-supervised order net | 26 | -3.1 (-20.7 to 12.6) | 3 / 3 | 1.00 | 1.00 |
 
 pp, percentage points. Stochastic detectors: majority flag over five seeds. GRAPE endpoints at 3 and 4 tests only.
+
+## S4 GRAPE: PLR3 and any-criterion labels
+
+**Table S4** GRAPE: sensitivity / specificity, % , against the PLR3 and any-criterion labels
+
+| Tests | Detector | PLR3 sensitivity | PLR3 specificity | Any-criterion sensitivity | Any-criterion specificity |
+|---|---|---|---|---|---|
+| 3 | D1 OLS-MD | 21.4 | 92.0 | 31.5 | 97.1 |
+| 3 | D2 MD rate | 57.1 | 76.7 | 51.9 | 81.8 |
+| 3 | D3 PLR-3 | 28.6 | 97.2 | 13.0 | 98.1 |
+| 3 | D5 Pooled-shuffle conformal | 21.4 | 92.4 | 30.0 | 97.2 |
+| 3 | D8 ML tabular (LightGBM) | 72.9 | 60.2 | 61.9 | 63.6 |
+| 4 | D1 OLS-MD | 16.7 | 93.4 | 19.4 | 96.1 |
+| 4 | D2 MD rate | 50.0 | 84.1 | 44.4 | 89.0 |
+| 4 | D3 PLR-3 | 33.3 | 99.3 | 13.9 | 100.0 |
+| 4 | D4 PoPLR | 33.3 | 95.4 | 19.4 | 96.9 |
+| 4 | D5 Pooled-shuffle conformal | 23.3 | 92.6 | 23.3 | 95.6 |
+| 4 | D7 Event analysis | 33.3 | 96.7 | 13.9 | 96.9 |
+| 4 | D8 ML tabular (LightGBM) | 53.3 | 80.7 | 47.2 | 85.4 |
+
+## S5 Exploratory future-only reference
+
+**Table S5** Exploratory future-only reference (tests k+1 to end; at least 5 tests), among the eyes evaluated in E1
+
+| Tests | Detector | Sensitivity, % (n progressors) | Specificity, % (n stable) |
+|---|---|---|---|
+| 3 | D1 OLS-MD | 5.9 (17) | 94.4 (18) |
+| 3 | D2 MD rate | 17.6 (17) | 88.9 (18) |
+| 3 | D3 PLR-3 | 0.0 (17) | 100.0 (18) |
+| 3 | D5 Pooled-shuffle conformal | 5.9 (17) | 94.4 (18) |
+| 3 | D6 Pooled-detrended conformal | 52.9 (17) | 83.3 (18) |
+| 3 | D8 ML tabular (LightGBM) | 16.5 (17) | 82.2 (18) |
+| 3 | D9 ML sequence (GRU) | 7.1 (17) | 93.3 (18) |
+| 4 | D1 OLS-MD | 21.4 (14) | 92.3 (13) |
+| 4 | D2 MD rate | 7.1 (14) | 92.3 (13) |
+| 4 | D3 PLR-3 | 21.4 (14) | 100.0 (13) |
+| 4 | D4 PoPLR | 7.1 (14) | 100.0 (13) |
+| 4 | D5 Pooled-shuffle conformal | 21.4 (14) | 92.3 (13) |
+| 4 | D6 Pooled-detrended conformal | 21.4 (14) | 92.3 (13) |
+| 4 | D7 Event analysis | 7.1 (14) | 92.3 (13) |
+| 4 | D8 ML tabular (LightGBM) | 20.0 (14) | 83.1 (13) |
+| 4 | D9 ML sequence (GRU) | 5.7 (14) | 93.8 (13) |
+| 4 | D10 Self-supervised order net | 12.9 (14) | 100.0 (13) |
+| 5 | D1 OLS-MD | 33.3 (6) | 85.7 (14) |
+| 5 | D2 MD rate | 16.7 (6) | 92.9 (14) |
+| 5 | D3 PLR-3 | 33.3 (6) | 85.7 (14) |
+| 5 | D4 PoPLR | 33.3 (6) | 85.7 (14) |
+| 5 | D5 Pooled-shuffle conformal | 33.3 (6) | 85.7 (14) |
+| 5 | D6 Pooled-detrended conformal | 16.7 (6) | 85.7 (14) |
+| 5 | D7 Event analysis | 33.3 (6) | 78.6 (14) |
+| 5 | D8 ML tabular (LightGBM) | 50.0 (6) | 72.9 (14) |
+| 5 | D9 ML sequence (GRU) | 40.0 (6) | 82.9 (14) |
+| 5 | D10 Self-supervised order net | 40.0 (6) | 78.6 (14) |
+| 6 | D1 OLS-MD | 25.0 (4) | 75.0 (16) |
+| 6 | D2 MD rate | 0.0 (4) | 75.0 (16) |
+| 6 | D3 PLR-3 | 0.0 (4) | 87.5 (16) |
+| 6 | D4 PoPLR | 25.0 (4) | 75.0 (16) |
+| 6 | D5 Pooled-shuffle conformal | 25.0 (4) | 76.2 (16) |
+| 6 | D6 Pooled-detrended conformal | 50.0 (4) | 62.5 (16) |
+| 6 | D7 Event analysis | 50.0 (4) | 68.8 (16) |
+| 6 | D8 ML tabular (LightGBM) | 75.0 (4) | 66.2 (16) |
+| 6 | D9 ML sequence (GRU) | 15.0 (4) | 70.0 (16) |
+| 6 | D10 Self-supervised order net | 45.0 (4) | 62.5 (16) |
+
+Exploratory: among the E1 eyes (primary or secondary reference), reference recomputed from tests k+1..end only (>= 5 tests required), same thresholds as the primary reference. Sample sizes shrink quickly with k; results are imprecise and shown for completeness.
