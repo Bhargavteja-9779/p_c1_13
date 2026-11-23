@@ -23,7 +23,7 @@ import os, re, json, html
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(os.path.join(HERE, '..'))
 J = lambda *p: json.load(open(os.path.join(ROOT, *p)))
 M = J('results', 'metrics.json'); S = J('results', 'statistics.json'); DESC = J('results', 'descriptives.json')
-RW = J('results', 'realworld.json'); PH = J('results', 'posthoc_sensitivity.json'); META = J('results', 'run_meta_full.json'); REFS = J('manuscript', 'references.json')
+RW = J('results', 'realworld.json'); PH = J('results', 'posthoc_sensitivity.json'); PX = J('results', 'posthoc_extra.json') if os.path.exists(os.path.join(ROOT, 'results', 'posthoc_extra.json')) else None; META = J('results', 'run_meta_full.json'); REFS = J('manuscript', 'references.json')
 CHECKS = []
 
 def det(code):
@@ -77,6 +77,13 @@ def resolve(key):
     if t == 'ph_mdd_pp': return f"{PH['min_discordant_all_one_direction_for_holm']['as_pp_of_26']:.0f}"
     if t == 'fo':
         r = [x for x in PH['future_only_reference'] if x['detector'] == det(a[1]) and x['k'] == int(a[2])][0]; return pct(r[a[3]])
+    if t == 'px':   # px:P2:D1:3[:lo|hi]  or px:P3:3:sens|spec|fpr_true_null[:lo|hi] or px:sig:uw|ar|add or px:P3mc:3:only_D8s|only_D1|p_mcnemar
+        if a[1] == 'sig': return f"{PX[{'uw': 'sigma_uw', 'ar': 'sigma_artes', 'add': 'added_sd'}[a[2]]]:.2f}"
+        if a[1] == 'P3mc':
+            v = PX['P3'][f"D8s ML-tabular, shuffle-calibrated threshold|{a[2]}"]['vs_D1'][a[3]]; return pval(v) if a[3] == 'p_mcnemar' else str(v)
+        if a[1] == 'P3': r = PX['P3'][f"D8s ML-tabular, shuffle-calibrated threshold|{a[2]}"][a[3]]; f = a[4] if len(a) > 4 else 'est'
+        else: r = PX[a[1]][f"{det(a[2])}|{a[3]}"]; f = a[4] if len(a) > 4 else 'est'
+        return pct(r[f])
     if t == 'focount': return str(PH['future_only_counts'][a[1]][a[2]])
     if t == 'gr':
         r = [x for x in PH['grape_restricted_and_labels'] if x['detector'] == det(a[1]) and x['k'] == int(a[2]) and x['label'] == a[3] and x['restricted'] == (a[4] == 'r')][0]
