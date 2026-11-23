@@ -76,7 +76,9 @@
    "mean": 6.621702732585688,
    "sd": 2.2468209705630255,
    "n": 26
-  }
+  },
+  "female_eyes": 19,
+  "female_patients": 16
  },
  "ref_stable": {
   "n_eyes": 26,
@@ -128,9 +130,25 @@
    "mean": 6.4655399357658085,
    "sd": 2.962547584695034,
    "n": 26
-  }
+  },
+  "female_eyes": 15,
+  "female_patients": 12
  },
  "ref_excluded_eyes": 80,
+ "uw_gender_values": [
+  "",
+  "F",
+  "M",
+  "O"
+ ],
+ "labelled_train": {
+  "progressors": 93,
+  "stable": 99
+ },
+ "labelled_val": {
+  "progressors": 31,
+  "stable": 39
+ },
  "artes": {
   "n_patients": 30,
   "n_series": 30,
@@ -185,6 +203,11 @@
    "mean": 41.51330798479088,
    "sd": 15.202915477482284,
    "n": 263
+  },
+  "female_patients": 69,
+  "category": {
+   "OAG": 254,
+   "ACG": 9
   },
   "n_points": {
    "median": 59.0,

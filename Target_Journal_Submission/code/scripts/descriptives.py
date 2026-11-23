@@ -33,14 +33,20 @@ def main():
         md = md_series(s['td'])
         rows.append(dict(label=lab, age0=s['ages'][0], n=len(s['ages']), fu=s['ages'][-1] - s['ages'][0],
                          md0=md[0], gap=float(np.median(np.diff(s['ages']))), t6=s['ages'][min(5, len(s['ages']) - 1)] - s['ages'][0],
-                         t3=s['ages'][2] - s['ages'][0], pid=s['pid']))
+                         t3=s['ages'][2] - s['ages'][0], pid=s['pid'], female=float(str(s['gender']).upper().startswith('F'))))
     R = pd.DataFrame(rows)
     out['uw_test_ge8'] = dict(n_eyes=len(R), n_patients=R.pid.nunique())
     for lab, name in ((1, 'progressors'), (0, 'stable')):
         g = R[R.label == lab]
         out[f'ref_{name}'] = dict(n_eyes=len(g), n_patients=g.pid.nunique(), age0=q(g.age0), n_tests=q(g.n), followup_y=q(g.fu),
-                                  md_baseline_proxy=q(g.md0), years_to_test3=q(g.t3), years_to_test6=q(g.t6))
+                                  md_baseline_proxy=q(g.md0), years_to_test3=q(g.t3), years_to_test6=q(g.t6),
+                                  female_eyes=int(g.female.sum()), female_patients=int(g.groupby('pid').female.max().sum()))
     out['ref_excluded_eyes'] = int(R.label.isna().sum())
+    out['uw_gender_values'] = sorted({str(s['gender']) for s in S})
+    # labelled eyes available to supervised detectors (D8, D9): train/val eyes with >= 8 tests and a reference label
+    for part in ('train', 'val'):
+        labs = [reference(s) for s in S if sp[s['pid']] == part and len(s['ages']) >= 8]
+        out[f'labelled_{part}'] = dict(progressors=sum(l == 1 for l in labs), stable=sum(l == 0 for l in labs))
     # Artes
     A = load_artes()
     out['artes'] = dict(n_patients=len({a['pid'] for a in A}), n_series=len(A), n_fields=int(sum(len(a['t']) for a in A)),
@@ -49,9 +55,15 @@ def main():
                         windows={str(k): int(sum(len(a['t']) - k + 1 for a in A)) for k in (3, 4, 5, 6)})
     # GRAPE
     G = load_grape()
+    from src.data.grape import XLSX
+    b = pd.read_excel(XLSX, 'Baseline', header=None).iloc[2:]
+    gb = {(str(int(r[0])), str(r[1])): r[3] for _, r in b.iterrows()}
+    cat = {(str(int(r[0])), str(r[1])): str(r[10]) for _, r in b.iterrows()}
     out['grape'] = dict(n_eyes=len(G), n_patients=len({g['pid'] for g in G}), n_records=int(sum(len(g['t']) for g in G)),
                         n_visits=q([len(g['t']) for g in G]), followup_y=q([g['t'][-1] for g in G]),
-                        age=q([g['age'] for g in G]), n_points=q([g['sens'].shape[1] for g in G]),
+                        age=q([g['age'] for g in G]),
+                        female_patients=int(len({g['pid'] for g in G if str(gb.get((g['pid'], g['eye']), '')).upper().startswith('F')})),
+                        category=pd.Series([cat.get((g['pid'], g['eye']), 'NA') for g in G]).value_counts().to_dict(), n_points=q([g['sens'].shape[1] for g in G]),
                         md_label_pos=int(sum(g['MD'] == 1 for g in G)), plr2_pos=int(sum(g['PLR2'] == 1 for g in G)),
                         plr3_pos=int(sum(g['PLR3'] == 1 for g in G)), eyes_ge3=int(sum(len(g['t']) >= 3 for g in G)),
                         eyes_ge4=int(sum(len(g['t']) >= 4 for g in G)))
