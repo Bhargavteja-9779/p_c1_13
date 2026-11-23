@@ -1,0 +1,441 @@
+{
+ "1": {
+  "pmid": "24974815",
+  "authors": [
+   "Tham YC",
+   "Li X",
+   "Wong TY",
+   "Quigley HA",
+   "Aung T",
+   "Cheng CY"
+  ],
+  "title": "Global prevalence of glaucoma and projections of glaucoma burden through 2040: a systematic review and meta-analysis.",
+  "source": "Ophthalmology",
+  "pubdate": "2014 Nov"
+ },
+ "2": {
+  "pmid": "24825645",
+  "authors": [
+   "Weinreb RN",
+   "Aung T",
+   "Medeiros FA"
+  ],
+  "title": "The pathophysiology and treatment of glaucoma: a review.",
+  "source": "JAMA",
+  "pubdate": "2014 May 14"
+ },
+ "3": {
+  "pmid": "12365904",
+  "authors": [
+   "Heijl A",
+   "Leske MC",
+   "Bengtsson B",
+   "Hyman L",
+   "Bengtsson B",
+   "Hussein M",
+   "Early Manifest Glaucoma Trial Group"
+  ],
+  "title": "Reduction of intraocular pressure and glaucoma progression: results from the Early Manifest Glaucoma Trial.",
+  "source": "Arch Ophthalmol",
+  "pubdate": "2002 Oct"
+ },
+ "4": {
+  "pmid": "18211935",
+  "authors": [
+   "Chauhan BC",
+   "Garway-Heath DF",
+   "Go\u00f1i FJ",
+   "Rossetti L",
+   "Bengtsson B",
+   "Viswanathan AC",
+   "Heijl A"
+  ],
+  "title": "Practical recommendations for measuring rates of visual field change in glaucoma.",
+  "source": "Br J Ophthalmol",
+  "pubdate": "2008 Apr"
+ },
+ "5": {
+  "pmid": "28128796",
+  "authors": [
+   "Foot B",
+   "MacEwen C"
+  ],
+  "title": "Surveillance of sight loss due to delay in ophthalmic treatment or review: frequency, cause and outcome.",
+  "source": "Eye (Lond)",
+  "pubdate": "2017 May"
+ },
+ "6": {
+  "pmid": "22952123",
+  "authors": [
+   "O'Leary N",
+   "Chauhan BC",
+   "Artes PH"
+  ],
+  "title": "Visual field progression in glaucoma: estimating the overall significance of deterioration with permutation analyses of pointwise linear regression (PoPLR).",
+  "source": "Invest Ophthalmol Vis Sci",
+  "pubdate": "2012 Oct 1"
+ },
+ "7": {
+  "pmid": "24878173",
+  "authors": [
+   "Artes PH",
+   "O'Leary N",
+   "Nicolela MT",
+   "Chauhan BC",
+   "Crabb DP"
+  ],
+  "title": "Visual field progression in glaucoma: what is the specificity of the Guided Progression Analysis?",
+  "source": "Ophthalmology",
+  "pubdate": "2014 Oct"
+ },
+ "8": {
+  "pmid": "24629617",
+  "authors": [
+   "Gardiner SK",
+   "Swanson WH",
+   "Goren D",
+   "Mansberger SL",
+   "Demirel S"
+  ],
+  "title": "Assessment of the reliability of standard automated perimetry in regions of glaucomatous damage.",
+  "source": "Ophthalmology",
+  "pubdate": "2014 Jul"
+ },
+ "9": {
+  "pmid": "26393667",
+  "authors": [
+   "Zhu H",
+   "Crabb DP",
+   "Ho T",
+   "Garway-Heath DF"
+  ],
+  "title": "More Accurate Modeling of Visual Field Progression in Glaucoma: ANSWERS.",
+  "source": "Invest Ophthalmol Vis Sci",
+  "pubdate": "2015 Sep"
+ },
+ "10": {
+  "pmid": "34910103",
+  "authors": [
+   "Mar\u00edn-Franch I",
+   "Artes PH",
+   "Turpin A",
+   "Racette L"
+  ],
+  "title": "Visual Field Progression in Glaucoma: Comparison Between PoPLR and ANSWERS.",
+  "source": "Transl Vis Sci Technol",
+  "pubdate": "2021 Dec 1"
+ },
+ "11": {
+  "pmid": "30159212",
+  "authors": [
+   "Wu Z",
+   "Medeiros FA"
+  ],
+  "title": "Comparison of Visual Field Point-Wise Event-Based and Global Trend-Based Analysis for Detecting Glaucomatous Progression.",
+  "source": "Transl Vis Sci Technol",
+  "pubdate": "2018 Jul"
+ },
+ "12": {
+  "pmid": "18078852",
+  "authors": [
+   "Bengtsson B",
+   "Heijl A"
+  ],
+  "title": "A visual field index for calculation of glaucoma rate of progression.",
+  "source": "Am J Ophthalmol",
+  "pubdate": "2008 Feb"
+ },
+ "13": {
+  "pmid": "18378317",
+  "authors": [
+   "Heijl A",
+   "Bengtsson B",
+   "Chauhan BC",
+   "Lieberman MF",
+   "Cunliffe I",
+   "Hyman L",
+   "Leske MC"
+  ],
+  "title": "A comparison of visual field progression criteria of 3 major glaucoma trials in early manifest glaucoma trial patients.",
+  "source": "Ophthalmology",
+  "pubdate": "2008 Sep"
+ },
+ "14": {
+  "pmid": "34978561",
+  "authors": [
+   "Montesano G",
+   "Chen A",
+   "Lu R",
+   "Lee CS",
+   "Lee AY"
+  ],
+  "title": "UWHVF: A Real-World, Open Source Dataset of Perimetry Tests From the Humphrey Field Analyzer at the University of Washington.",
+  "source": "Transl Vis Sci Technol",
+  "pubdate": "2022 Jan 3"
+ },
+ "15": {
+  "pmid": "37543686",
+  "authors": [
+   "Huang X",
+   "Kong X",
+   "Shen Z",
+   "Ouyang J",
+   "Li Y",
+   "Jin K",
+   "Ye J"
+  ],
+  "title": "GRAPE: A multi-modal dataset of longitudinal follow-up visual field and fundus images for glaucoma management.",
+  "source": "Sci Data",
+  "pubdate": "2023 Aug 5"
+ },
+ "16": {
+  "pmid": "34157101",
+  "authors": [
+   "Saeedi O",
+   "Boland MV",
+   "D'Acunto L",
+   "Swamy R",
+   "Hegde V",
+   "Gupta S",
+   "Venjara A",
+   "Tsai J",
+   "Myers JS",
+   "Wellik SR",
+   "DeMoraes G",
+   "Pasquale LR",
+   "Shen LQ",
+   "Li Y",
+   "Elze T"
+  ],
+  "title": "Development and Comparison of Machine Learning Algorithms to Determine Visual Field Progression.",
+  "source": "Transl Vis Sci Technol",
+  "pubdate": "2021 Jun 1"
+ },
+ "17": {
+  "pmid": "33359887",
+  "authors": [
+   "Dixit A",
+   "Yohannan J",
+   "Boland MV"
+  ],
+  "title": "Assessing Glaucoma Progression Using Machine Learning Trained on Longitudinal Visual Field and Clinical Data.",
+  "source": "Ophthalmology",
+  "pubdate": "2021 Jul"
+ },
+ "18": {
+  "pmid": "30682206",
+  "authors": [
+   "Wang M",
+   "Shen LQ",
+   "Pasquale LR",
+   "Petrakos P",
+   "Formica S",
+   "Boland MV",
+   "Wellik SR",
+   "De Moraes CG",
+   "Myers JS",
+   "Saeedi O",
+   "Wang H",
+   "Baniasadi N",
+   "Li D",
+   "Tichelaar J",
+   "Bex PJ",
+   "Elze T"
+  ],
+  "title": "An Artificial Intelligence Approach to Detect Visual Field Progression in Glaucoma Based on Spatial Pattern Analysis.",
+  "source": "Invest Ophthalmol Vis Sci",
+  "pubdate": "2019 Jan 2"
+ },
+ "19": {
+  "pmid": "30951547",
+  "authors": [
+   "Wen JC",
+   "Lee CS",
+   "Keane PA",
+   "Xiao S",
+   "Rokem AS",
+   "Chen PP",
+   "Wu Y",
+   "Lee AY"
+  ],
+  "title": "Forecasting future Humphrey Visual Fields using deep learning.",
+  "source": "PLoS One",
+  "pubdate": "2019"
+ },
+ "20": {
+  "pmid": "31792321",
+  "authors": [
+   "Berchuck SI",
+   "Mukherjee S",
+   "Medeiros FA"
+  ],
+  "title": "Estimating Rates of Progression and Predicting Future Visual Fields in Glaucoma Using a Deep Variational Autoencoder.",
+  "source": "Sci Rep",
+  "pubdate": "2019 Dec 2"
+ },
+ "21": {
+  "pmid": "27152250",
+  "authors": [
+   "Yousefi S",
+   "Balasubramanian M",
+   "Goldbaum MH",
+   "Medeiros FA",
+   "Zangwill LM",
+   "Weinreb RN",
+   "Liebmann JM",
+   "Girkin CA",
+   "Bowd C"
+  ],
+  "title": "Unsupervised Gaussian Mixture-Model With Expectation Maximization for Detecting Glaucomatous Progression in Standard Automated Perimetry Visual Fields.",
+  "source": "Transl Vis Sci Technol",
+  "pubdate": "2016 May"
+ },
+ "22": {
+  "pmid": "42664209",
+  "authors": [
+   "Kim H",
+   "Kim E",
+   "Moon S",
+   "Jin SW",
+   "Kim JL",
+   "Lee SU",
+   "Park JR",
+   "Lee J"
+  ],
+  "title": "Labeling matters: A multicenter machine learning study on visual field progression in Glaucoma.",
+  "source": "PLoS One",
+  "pubdate": "2026"
+ },
+ "23": null,
+ "24": {
+  "pmid": "42427494",
+  "authors": [
+   "Si W",
+   "Lin V",
+   "Sun B",
+   "Jang KJ",
+   "Xing R",
+   "Saeed A",
+   "Nagatani R",
+   "Sokolsky O",
+   "Lee I",
+   "Al-Aswad L"
+  ],
+  "title": "Reliable and Interpretable Visual Field Progression Prediction with Diffusion Models and Conformal Risk Control.",
+  "source": "Med Image Comput Comput Assist Interv",
+  "pubdate": "2026"
+ },
+ "25": {
+  "pmid": "28268099",
+  "authors": [
+   "Wu Z",
+   "Saunders LJ",
+   "Daga FB",
+   "Diniz-Filho A",
+   "Medeiros FA"
+  ],
+  "title": "Frequency of Testing to Detect Visual Field Progression Derived Using a Longitudinal Cohort of Glaucoma Patients.",
+  "source": "Ophthalmology",
+  "pubdate": "2017 Jun"
+ },
+ "26": {
+  "pmid": "22427597",
+  "authors": [
+   "Crabb DP",
+   "Garway-Heath DF"
+  ],
+  "title": "Intervals between visual field tests when monitoring the glaucomatous patient: wait-and-see approach.",
+  "source": "Invest Ophthalmol Vis Sci",
+  "pubdate": "2012 May 17"
+ },
+ "27": {
+  "pmid": "41314338",
+  "authors": [
+   "Stagg BC",
+   "Brintz BJ",
+   "Stein JD",
+   "Hess R",
+   "Kawamoto K",
+   "Jammal AA",
+   "Medeiros FA"
+  ],
+  "title": "Time to Identify Glaucoma Progression Given Typical Visual Field Testing Frequencies in a US Nationwide Insured Population.",
+  "source": "Ophthalmol Glaucoma",
+  "pubdate": "2026 May-Jun"
+ },
+ "28": {
+  "pmid": "34779836",
+  "authors": [
+   "Phu J",
+   "Kalloniatis M"
+  ],
+  "title": "The Frontloading Fields Study (FFS): Detecting Changes in Mean Deviation in Glaucoma Using Multiple Visual Field Tests Per Clinical Visit.",
+  "source": "Transl Vis Sci Technol",
+  "pubdate": "2021 Nov 1"
+ },
+ "29": {
+  "pmid": "21044043",
+  "authors": [
+   "Phipson B",
+   "Smyth GK"
+  ],
+  "title": "Permutation P-values should never be zero: calculating exact P-values when permutations are randomly drawn.",
+  "source": "Stat Appl Genet Mol Biol",
+  "pubdate": "2010"
+ },
+ "30": null,
+ "31": null,
+ "32": {
+  "pmid": "38636956",
+  "authors": [],
+  "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods.",
+  "source": "BMJ",
+  "pubdate": "2024 Apr 18"
+ },
+ "33": null,
+ "34": {
+  "pmid": "24704136",
+  "authors": [
+   "Schell GJ",
+   "Lavieri MS",
+   "Helm JE",
+   "Liu X",
+   "Musch DC",
+   "Van Oyen MP",
+   "Stein JD"
+  ],
+  "title": "Using filtered forecasting techniques to determine personalized monitoring schedules for patients with open-angle glaucoma.",
+  "source": "Ophthalmology",
+  "pubdate": "2014 Aug"
+ },
+ "35": {
+  "pmid": "34609479",
+  "authors": [
+   "Montesano G",
+   "Garway-Heath DF",
+   "Ometto G",
+   "Crabb DP"
+  ],
+  "title": "Hierarchical Censored Bayesian Analysis of Visual Field Progression.",
+  "source": "Transl Vis Sci Technol",
+  "pubdate": "2021 Oct 4"
+ },
+ "36": {
+  "pmid": "38192682",
+  "authors": [
+   "Mohammadzadeh V",
+   "Li L",
+   "Fei Z",
+   "Davis T",
+   "Morales E",
+   "Wu K",
+   "Lee Ma E",
+   "Afifi A",
+   "Nouri-Mahdavi K",
+   "Caprioli J"
+  ],
+  "title": "Efficacy of Smoothing Algorithms to Enhance Detection of Visual Field Progression in Glaucoma.",
+  "source": "Ophthalmol Sci",
+  "pubdate": "2024 Mar-Apr"
+ }
+}

@@ -142,12 +142,6 @@ In GRAPE (Table 2, Fig. 4), D1 flagged {{mci.D1.3.grape_sens}} of clinician-labe
 
 Table 3 translates the results into clinical units. With D1, {{rw.D1.cum_detected_by_k4}} of future-confirmed progressors were flagged by the fourth test, {{rw.D1.cum_detected_by_k5}} by the fifth and {{rw.D1.cum_detected_by_k6}} by the sixth; the median was {{rw.D1.median_tests_to_first_flag}} tests. D1 produced about {{rw.D1.false_flags_per_1000_k3}} false flags per 1,000 no-change eyes at the three-test review. D6 flagged progressors earlier (median {{rw.D6.median_tests_to_first_flag}} tests) but would raise about {{rw.D6.false_flags_per_1000_k3}} false flags per 1,000 no-change eyes at the three-test review. D8 would raise about {{rw.D8.false_flags_per_1000_k3}}. In a clinic reviewing 1,000 stable eyes, that is roughly {{rw.D6.false_flags_per_1000_k3}} and {{rw.D8.false_flags_per_1000_k3}} unnecessary escalation discussions instead of {{rw.D1.false_flags_per_1000_k3}}.
 
-{{TABLE1}}
-
-{{TABLE2}}
-
-{{TABLE3}}
-
 # Discussion
 
 This benchmark asked a simple question: how early can visual-field progression be detected without raising false alarms? The answer, in two clinics, was that the simple trend of mean sensitivity was hard to beat. More complex detectors did flag more progressors in short series. But when they did, they also raised far more false alarms on eyes that truly did not change. The usual check, specificity on reference-stable eyes, missed these false alarms.
@@ -199,3 +193,11 @@ All data sets are public: UWHVF (https://github.com/uw-biomedical-ml/uwhvf), GRA
 # References
 
 {{REFERENCES}}
+
+# Tables
+
+{{TABLE1}}
+
+{{TABLE2}}
+
+{{TABLE3}}

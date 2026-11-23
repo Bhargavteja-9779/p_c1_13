@@ -142,6 +142,130 @@ In GRAPE (Table 2, Fig. 4), D1 flagged 44.4% (95% CI 25.9–65.4%) of clinician-
 
 Table 3 translates the results into clinical units. With D1, 38% of future-confirmed progressors were flagged by the fourth test, 54% by the fifth and 69% by the sixth; the median was 5 tests. D1 produced about 44 false flags per 1,000 no-change eyes at the three-test review. D6 flagged progressors earlier (median 3 tests) but would raise about 224 false flags per 1,000 no-change eyes at the three-test review. D8 would raise about 277. In a clinic reviewing 1,000 stable eyes, that is roughly 224 and 277 unnecessary escalation discussions instead of 44.
 
+# Discussion
+
+This benchmark asked a simple question: how early can visual-field progression be detected without raising false alarms? The answer, in two clinics, was that the simple trend of mean sensitivity was hard to beat. More complex detectors did flag more progressors in short series. But when they did, they also raised far more false alarms on eyes that truly did not change. The usual check, specificity on reference-stable eyes, missed these false alarms.
+
+The main lesson is about evaluation, not about any one method. Our own development history shows the risk. A pooled-detrended conformal test looked like a clear gain with three tests: it raised sensitivity 3.0-fold, with the same specificity as the trend test on reference-stable eyes. Only the true no-change arm showed that it flagged 22.4% of no-change series. The cause was simple. With three tests, detrending leaves one residual degree of freedom, and the pooled reference does not reflect the eye's own noise. Similar problems can affect any method whose false-alarm rate is set on selected stable eyes rather than on true no-change data.
+
+These findings agree with earlier work. Artes and colleagues used the same retest data to examine the specificity of event-based Guided Progression Analysis [11]. Wu and Medeiros compared pointwise event-based and global trend-based analyses for detecting progression [12]. Machine-learning studies of progression have mostly been evaluated against labels derived from other progression criteria [17–22], and a multicentre study found that results depend strongly on the progression label [26]. Our results add a direct test: with the usual threshold rule, two machine-learning models exceeded the nominal false-alarm rate on true no-change data in short series. The models may still be useful, but their thresholds need to be set on no-change data. Studies of testing frequency show that clinics often need many years to confirm progression [6, 34, 35]. Our real-world measures agree: with about one test per year, the trend test needed a median of 5 tests. Front-loading or clustering tests [5, 36] is therefore likely to help more than a more complex detector.
+
+What should a clinic do? First, the trend of mean sensitivity, with a p-value, remains a sound default. It kept its nominal false-alarm rate and was not beaten by a valid detector. Second, a fast-rate rule without a p-value (D2) had the largest point gain among valid detectors with three tests. But in the external clinic, the same rule raised false positives significantly. Third, before adopting a new detector, a clinic can run a shuffle audit on its own records. In our data the audit caught the largest problems. However, it over-estimated false alarms for rate and event rules and agreed only moderately overall. It is a screen, not a replacement for true no-change data.
+
+For method developers, we suggest three reporting items. Report false alarms on true no-change series, not only specificity on stable eyes. Report sensitivity at a fixed, small number of tests. Report results from a second clinic with its own labels. Our code and data pipeline are open, so new detectors can be added and compared on the same terms.
+
+This study has limitations. First, the reference groups were small (26 progressors and 26 stable eyes), so CIs were wide. We cannot exclude gains of 10–20 percentage points for some valid detectors, such as D2 at three tests and D8 at six tests. Second, the true no-change arm had only 30 patients, tested a week apart. We gave each series the test dates of a clinic eye, which keeps it a valid null but does not reproduce long-term changes in noise, such as cataract or learning. Third, the primary reference is based on mean deviation, which may favour detectors based on mean sensitivity; the PoPLR-based secondary reference gave the same ranking. Fourth, reference-stable eyes were chosen for a very flat course, which makes specificity look better than in typical stable eyes; we regard this as a finding, but it also means our specificity estimates are optimistic. Fifth, UWHVF has no reliability indices or diagnoses, and GRAPE uses a different perimeter, so several detectors had to be re-calibrated or omitted there. Sixth, we re-implemented event analysis and did not test commercial software. Seventh, the machine-learning models used a fixed tuning budget; larger models or other thresholds may behave differently. Finally, we used the Artes data once during development, which we disclose; it did not change the final protocol.
+
+# Conclusions
+
+In this benchmark, no detector with a valid false-alarm rate flagged significantly more future-confirmed progressors than the simple trend of mean sensitivity. Apparent early-detection gains of conformal and machine-learning detectors came with false alarms that specificity on stable eyes did not reveal. Treatment escalation decisions should not rely on a new detector until its false-alarm rate on true no-change data is known. Prospective studies with repeated short-interval testing in more clinics are needed to confirm these findings and to set valid thresholds.
+
+# Declarations
+
+## Acknowledgements
+
+We thank the creators of the UWHVF, GRAPE and Artes retest data sets, and the maintainers of the visualFields R package, for making their data openly available.
+
+## Funding
+
+[AUTHORS TO CONFIRM: No funding or sponsorship was received for this study or publication of this article.] The journal's Rapid Service Fee: [AUTHORS TO CONFIRM WHO PAYS].
+
+## Medical Writing, Editorial and Other Assistance
+
+An AI assistant (Claude, Anthropic) was used to write analysis code and to draft and edit the manuscript under the authors' direction. All numbers were generated by the analysis code from the public data. The authors checked all content and take full responsibility for it.
+
+## Author Contributions
+
+[AUTHORS TO ADD, CRediT format: conceptualisation, methodology, software, formal analysis, writing – original draft, writing – review and editing.]
+
+## Disclosures
+
+[AUTHORS TO ADD. Suggested: The authors declare no competing interests.]
+
+## Compliance With Ethics Guidelines
+
+This study used only publicly available, de-identified data sets released by their custodians under open licences. The original studies obtained ethical approval. No new data were collected, and no further ethical approval was required. This article does not contain any new studies with human participants or animals performed by any of the authors.
+
+## Data Availability
+
+All data sets are public: UWHVF (https://github.com/uw-biomedical-ml/uwhvf), GRAPE (Figshare file 41670009, "VF and clinical information.xlsx", described in [29]) and the Artes retest data (visualFields R package 1.0.7, CRAN). The analysis code, pre-registered protocol, raw per-eye detector outputs and all result files are available from [CODE REPOSITORY URL TO BE ADDED ON SUBMISSION].
+
+# References
+
+1. Tham YC, Li X, Wong TY, Quigley HA, Aung T, Cheng CY. Global Prevalence of Glaucoma and Projections of Glaucoma Burden through 2040. Ophthalmology. 2014;121(11):2081-2090. https://doi.org/10.1016/j.ophtha.2014.05.013
+
+2. Weinreb RN, Aung T, Medeiros FA. The Pathophysiology and Treatment of Glaucoma: A Review. JAMA. 2014;311(18):1901. https://doi.org/10.1001/jama.2014.3192
+
+3. Heijl A, Leske MC, Bengtsson B, Hyman L, Bengtsson B, Hussein M; Early Manifest Glaucoma Trial Group. Reduction of Intraocular Pressure and Glaucoma Progression: Results From the Early Manifest Glaucoma Trial. Arch Ophthalmol. 2002;120(10):1268-1279. https://doi.org/10.1001/archopht.120.10.1268
+
+4. Gardiner SK, Swanson WH, Goren D, Mansberger SL, Demirel S. Assessment of the Reliability of Standard Automated Perimetry in Regions of Glaucomatous Damage. Ophthalmology. 2014;121(7):1359-1369. https://doi.org/10.1016/j.ophtha.2014.01.020
+
+5. Chauhan BC, Garway-Heath DF, Goni FJ, Rossetti L, Bengtsson B, Viswanathan AC, et al. Practical recommendations for measuring rates of visual field change in glaucoma. British Journal of Ophthalmology. 2008;92(4):569-573. https://doi.org/10.1136/bjo.2007.135012
+
+6. Stagg BC, Brintz BJ, Stein JD, Hess R, Kawamoto K, Jammal AA, et al. Time to Identify Glaucoma Progression Given Typical Visual Field Testing Frequencies in a US Nationwide Insured Population. Ophthalmology Glaucoma. 2026;9(3):250-256. https://doi.org/10.1016/j.ogla.2025.11.004
+
+7. Foot B, MacEwen C. Surveillance of sight loss due to delay in ophthalmic treatment or review: frequency, cause and outcome. Eye. 2017;31(5):771-775. https://doi.org/10.1038/eye.2017.1
+
+8. O'Leary N, Chauhan BC, Artes PH. Visual Field Progression in Glaucoma: Estimating the Overall Significance of Deterioration with Permutation Analyses of Pointwise Linear Regression (PoPLR). Invest. Ophthalmol. Vis. Sci. 2012;53(11):6776. https://doi.org/10.1167/iovs.12-10049
+
+9. Bengtsson B, Heijl A. A Visual Field Index for Calculation of Glaucoma Rate of Progression. American Journal of Ophthalmology. 2008;145(2):343-353. https://doi.org/10.1016/j.ajo.2007.09.038
+
+10. Mohammadzadeh V, Li L, Fei Z, Davis T, Morales E, Wu K, et al. Efficacy of Smoothing Algorithms to Enhance Detection of Visual Field Progression in Glaucoma. Ophthalmology Science. 2024;4(2):100423. https://doi.org/10.1016/j.xops.2023.100423
+
+11. Artes PH, O'Leary N, Nicolela MT, Chauhan BC, Crabb DP. Visual Field Progression in Glaucoma: What Is the Specificity of the Guided Progression Analysis? Ophthalmology. 2014;121(10):2023-2027. https://doi.org/10.1016/j.ophtha.2014.04.015
+
+12. Wu Z, Medeiros FA. Comparison of Visual Field Point-Wise Event-Based and Global Trend-Based Analysis for Detecting Glaucomatous Progression. Trans. Vis. Sci. Tech. 2018;7(4):20. https://doi.org/10.1167/tvst.7.4.20
+
+13. Heijl A, Bengtsson B, Chauhan BC, Lieberman MF, Cunliffe I, Hyman L, et al. A Comparison of Visual Field Progression Criteria of 3 Major Glaucoma Trials in Early Manifest Glaucoma Trial Patients. Ophthalmology. 2008;115(9):1557-1565. https://doi.org/10.1016/j.ophtha.2008.02.005
+
+14. Zhu H, Crabb DP, Ho T, Garway-Heath DF. More Accurate Modeling of Visual Field Progression in Glaucoma: ANSWERS. Invest. Ophthalmol. Vis. Sci. 2015;56(10):6077. https://doi.org/10.1167/iovs.15-16957
+
+15. Marín-Franch I, Artes PH, Turpin A, Racette L. Visual Field Progression in Glaucoma: Comparison Between PoPLR and ANSWERS. Trans. Vis. Sci. Tech. 2021;10(14):13. https://doi.org/10.1167/tvst.10.14.13
+
+16. Montesano G, Garway-Heath DF, Ometto G, Crabb DP. Hierarchical Censored Bayesian Analysis of Visual Field Progression. Trans. Vis. Sci. Tech. 2021;10(12):4. https://doi.org/10.1167/tvst.10.12.4
+
+17. Saeedi O, Boland MV, D'Acunto L, Swamy R, Hegde V, Gupta S, et al. Development and Comparison of Machine Learning Algorithms to Determine Visual Field Progression. Trans. Vis. Sci. Tech. 2021;10(7):27. https://doi.org/10.1167/tvst.10.7.27
+
+18. Dixit A, Yohannan J, Boland MV. Assessing Glaucoma Progression Using Machine Learning Trained on Longitudinal Visual Field and Clinical Data. Ophthalmology. 2021;128(7):1016-1026. https://doi.org/10.1016/j.ophtha.2020.12.020
+
+19. Wang M, Shen LQ, Pasquale LR, Petrakos P, Formica S, Boland MV, et al. An Artificial Intelligence Approach to Detect Visual Field Progression in Glaucoma Based on Spatial Pattern Analysis. Invest. Ophthalmol. Vis. Sci. 2019;60(1):365. https://doi.org/10.1167/iovs.18-25568
+
+20. Wen JC, Lee CS, Keane PA, Xiao S, Rokem AS, Chen PP, et al. Forecasting future Humphrey Visual Fields using deep learning. PLoS ONE. 2019;14(4):e0214875. https://doi.org/10.1371/journal.pone.0214875
+
+21. Berchuck SI, Mukherjee S, Medeiros FA. Estimating Rates of Progression and Predicting Future Visual Fields in Glaucoma Using a Deep Variational Autoencoder. Sci Rep. 2019;9(1). https://doi.org/10.1038/s41598-019-54653-6
+
+22. Yousefi S, Balasubramanian M, Goldbaum MH, Medeiros FA, Zangwill LM, Weinreb RN, et al. Unsupervised Gaussian Mixture-Model With Expectation Maximization for Detecting Glaucomatous Progression in Standard Automated Perimetry Visual Fields. Trans. Vis. Sci. Tech. 2016;5(3):2. https://doi.org/10.1167/tvst.5.3.2
+
+23. Chen L, Fujita A, Moradi M, Eslami M, Elze T, Zebardast N. Earlier confirmation of glaucoma progression with risk-weighted visual field and OCT scheduling. medRxiv. 2026. https://doi.org/10.64898/2026.11.16.26368187
+
+24. Si W, Lin V, Sun B, Jang KJ, Xing R, Saeed A, et al. Reliable and Interpretable Visual Field Progression Prediction with Diffusion Models and Conformal Risk Control. Lecture Notes in Computer Science. 2025:543-552. https://doi.org/10.1007/978-3-032-05182-0_53
+
+25. Schell GJ, Lavieri MS, Helm JE, Liu X, Musch DC, Van Oyen MP, et al. Using Filtered Forecasting Techniques to Determine Personalized Monitoring Schedules for Patients with Open-Angle Glaucoma. Ophthalmology. 2014;121(8):1539-1546. https://doi.org/10.1016/j.ophtha.2014.02.021
+
+26. Kim H, Kim E, Moon S, Jin SW, Kim JL, Lee SU, et al. Labeling matters: A multicenter machine learning study on visual field progression in Glaucoma. PLoS One. 2026;21(8):e0357179. https://doi.org/10.1371/journal.pone.0357179
+
+27. Collins GS, Moons KGM, Dhiman P, Riley RD, Beam AL, Van Calster B, et al. TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ. 2024;385:e078378. https://doi.org/10.1136/bmj-2023-078378
+
+28. Montesano G, Chen A, Lu R, Lee CS, Lee AY. UWHVF: A Real-World, Open Source Dataset of Perimetry Tests From the Humphrey Field Analyzer at the University of Washington. Trans. Vis. Sci. Tech. 2022;11(1):2. https://doi.org/10.1167/tvst.11.1.1
+
+29. Huang X, Kong X, Shen Z, Ouyang J, Li Y, Jin K, et al. GRAPE: A multi-modal dataset of longitudinal follow-up visual field and fundus images for glaucoma management. Sci Data. 2023;10(1). https://doi.org/10.1038/s41597-023-02424-4
+
+30. Angelopoulos AN, Bates S. Conformal Prediction: A Gentle Introduction. Foundations and Trends® in Machine Learning. 2023;16(4):494-591. https://doi.org/10.1561/2200000101
+
+31. Phipson B, Smyth GK. Permutation P-values Should Never Be Zero: Calculating Exact P-values When Permutations Are Randomly Drawn. Statistical Applications in Genetics and Molecular Biology. 2010;9(1). https://doi.org/10.2202/1544-6115.1585
+
+32. Freedman D, Lane D. A Nonstochastic Interpretation of Reported Significance Levels. Journal of Business & Economic Statistics. 1983;1(4):292-298. https://doi.org/10.1080/07350015.1983.10509354
+
+33. Gagnon-Bartsch J, Shem-Tov Y. The classification permutation test: A flexible approach to testing for covariate imbalance in observational studies. Ann. Appl. Stat. 2019;13(3):1464-1483. https://doi.org/10.1214/19-aoas1241
+
+34. Wu Z, Saunders LJ, Daga FB, Diniz-Filho A, Medeiros FA. Frequency of Testing to Detect Visual Field Progression Derived Using a Longitudinal Cohort of Glaucoma Patients. Ophthalmology. 2017;124(6):786-792. https://doi.org/10.1016/j.ophtha.2017.01.027
+
+35. Crabb DP, Garway-Heath DF. Intervals between Visual Field Tests When Monitoring the Glaucomatous Patient: Wait-and-See Approach. Invest. Ophthalmol. Vis. Sci. 2012;53(6):2770. https://doi.org/10.1167/iovs.12-9476
+
+36. Phu J, Kalloniatis M. The Frontloading Fields Study (FFS): Detecting Changes in Mean Deviation in Glaucoma Using Multiple Visual Field Tests Per Clinical Visit. Trans. Vis. Sci. Tech. 2021;10(13):21. https://doi.org/10.1167/tvst.10.13.21
+
+# Tables
+
 **Table 1** Detection of future-confirmed progression (UWHVF test set) and false alarms on true no-change series
 
 | Tests | Detector | Sensitivity, % (95% CI) | Specificity, % (95% CI) | False alarms, true no-change, % (95% CI) | False alarms, shuffle audit, % | Valid |
@@ -226,125 +350,3 @@ n = 27 labelled progressors and 236 non-progressors at 3 tests; 18 and 145 at 4 
 | D10 Self-supervised order net | 20 / 51 / 63 | 5 | 0 / 38 / 51 / 57 | 1 |
 
 Progressors: 26 UWHVF test-set reference progressors; an eye counts as flagged by test k if any look at 3..k tests flagged it. Median tests: '> 6' means fewer than half were flagged by 6 tests. In UWHVF the median interval between tests was 1.0 years, so each extra test is roughly one extra year of follow-up. False flags per 1,000 = 1,000 × true no-change false-alarm rate. Last column: share of 26 reference-stable eyes flagged at least once over the four looks (not pre-registered).
-
-# Discussion
-
-This benchmark asked a simple question: how early can visual-field progression be detected without raising false alarms? The answer, in two clinics, was that the simple trend of mean sensitivity was hard to beat. More complex detectors did flag more progressors in short series. But when they did, they also raised far more false alarms on eyes that truly did not change. The usual check, specificity on reference-stable eyes, missed these false alarms.
-
-The main lesson is about evaluation, not about any one method. Our own development history shows the risk. A pooled-detrended conformal test looked like a clear gain with three tests: it raised sensitivity 3.0-fold, with the same specificity as the trend test on reference-stable eyes. Only the true no-change arm showed that it flagged 22.4% of no-change series. The cause was simple. With three tests, detrending leaves one residual degree of freedom, and the pooled reference does not reflect the eye's own noise. Similar problems can affect any method whose false-alarm rate is set on selected stable eyes rather than on true no-change data.
-
-These findings agree with earlier work. Artes and colleagues used the same retest data to examine the specificity of event-based Guided Progression Analysis [11]. Wu and Medeiros compared pointwise event-based and global trend-based analyses for detecting progression [12]. Machine-learning studies of progression have mostly been evaluated against labels derived from other progression criteria [17–22], and a multicentre study found that results depend strongly on the progression label [26]. Our results add a direct test: with the usual threshold rule, two machine-learning models exceeded the nominal false-alarm rate on true no-change data in short series. The models may still be useful, but their thresholds need to be set on no-change data. Studies of testing frequency show that clinics often need many years to confirm progression [6, 34, 35]. Our real-world measures agree: with about one test per year, the trend test needed a median of 5 tests. Front-loading or clustering tests [5, 36] is therefore likely to help more than a more complex detector.
-
-What should a clinic do? First, the trend of mean sensitivity, with a p-value, remains a sound default. It kept its nominal false-alarm rate and was not beaten by a valid detector. Second, a fast-rate rule without a p-value (D2) had the largest point gain among valid detectors with three tests. But in the external clinic, the same rule raised false positives significantly. Third, before adopting a new detector, a clinic can run a shuffle audit on its own records. In our data the audit caught the largest problems. However, it over-estimated false alarms for rate and event rules and agreed only moderately overall. It is a screen, not a replacement for true no-change data.
-
-For method developers, we suggest three reporting items. Report false alarms on true no-change series, not only specificity on stable eyes. Report sensitivity at a fixed, small number of tests. Report results from a second clinic with its own labels. Our code and data pipeline are open, so new detectors can be added and compared on the same terms.
-
-This study has limitations. First, the reference groups were small (26 progressors and 26 stable eyes), so CIs were wide. We cannot exclude gains of 10–20 percentage points for some valid detectors, such as D2 at three tests and D8 at six tests. Second, the true no-change arm had only 30 patients, tested a week apart. We gave each series the test dates of a clinic eye, which keeps it a valid null but does not reproduce long-term changes in noise, such as cataract or learning. Third, the primary reference is based on mean deviation, which may favour detectors based on mean sensitivity; the PoPLR-based secondary reference gave the same ranking. Fourth, reference-stable eyes were chosen for a very flat course, which makes specificity look better than in typical stable eyes; we regard this as a finding, but it also means our specificity estimates are optimistic. Fifth, UWHVF has no reliability indices or diagnoses, and GRAPE uses a different perimeter, so several detectors had to be re-calibrated or omitted there. Sixth, we re-implemented event analysis and did not test commercial software. Seventh, the machine-learning models used a fixed tuning budget; larger models or other thresholds may behave differently. Finally, we used the Artes data once during development, which we disclose; it did not change the final protocol.
-
-# Conclusions
-
-In this benchmark, no detector with a valid false-alarm rate flagged significantly more future-confirmed progressors than the simple trend of mean sensitivity. Apparent early-detection gains of conformal and machine-learning detectors came with false alarms that specificity on stable eyes did not reveal. Treatment escalation decisions should not rely on a new detector until its false-alarm rate on true no-change data is known. Prospective studies with repeated short-interval testing in more clinics are needed to confirm these findings and to set valid thresholds.
-
-# Declarations
-
-## Acknowledgements
-
-We thank the creators of the UWHVF, GRAPE and Artes retest data sets, and the maintainers of the visualFields R package, for making their data openly available.
-
-## Funding
-
-[AUTHORS TO CONFIRM: No funding or sponsorship was received for this study or publication of this article.] The journal's Rapid Service Fee: [AUTHORS TO CONFIRM WHO PAYS].
-
-## Medical Writing, Editorial and Other Assistance
-
-An AI assistant (Claude, Anthropic) was used to write analysis code and to draft and edit the manuscript under the authors' direction. All numbers were generated by the analysis code from the public data. The authors checked all content and take full responsibility for it.
-
-## Author Contributions
-
-[AUTHORS TO ADD, CRediT format: conceptualisation, methodology, software, formal analysis, writing – original draft, writing – review and editing.]
-
-## Disclosures
-
-[AUTHORS TO ADD. Suggested: The authors declare no competing interests.]
-
-## Compliance With Ethics Guidelines
-
-This study used only publicly available, de-identified data sets released by their custodians under open licences. The original studies obtained ethical approval. No new data were collected, and no further ethical approval was required. This article does not contain any new studies with human participants or animals performed by any of the authors.
-
-## Data Availability
-
-All data sets are public: UWHVF (https://github.com/uw-biomedical-ml/uwhvf), GRAPE (Figshare file 41670009, "VF and clinical information.xlsx", described in [29]) and the Artes retest data (visualFields R package 1.0.7, CRAN). The analysis code, pre-registered protocol, raw per-eye detector outputs and all result files are available from [CODE REPOSITORY URL TO BE ADDED ON SUBMISSION].
-
-# References
-
-1. Tham YC, Li X, Wong TY, Quigley HA, Aung T, Cheng CY. Global Prevalence of Glaucoma and Projections of Glaucoma Burden through 2040. Ophthalmology. 2014;121(11):2081-2090. https://doi.org/10.1016/j.ophtha.2014.05.013
-
-2. Weinreb RN, Aung T, Medeiros FA. The Pathophysiology and Treatment of Glaucoma. JAMA. 2014;311(18):1901. https://doi.org/10.1001/jama.2014.3192
-
-3. Heijl A. Reduction of Intraocular Pressure and Glaucoma Progression. Arch Ophthalmol. 2002;120(10):1268. https://doi.org/10.1001/archopht.120.10.1268
-
-4. Gardiner SK, Swanson WH, Goren D, Mansberger SL, Demirel S. Assessment of the Reliability of Standard Automated Perimetry in Regions of Glaucomatous Damage. Ophthalmology. 2014;121(7):1359-1369. https://doi.org/10.1016/j.ophtha.2014.01.020
-
-5. Chauhan BC, Garway-Heath DF, Goni FJ, Rossetti L, Bengtsson B, Viswanathan AC, et al. Practical recommendations for measuring rates of visual field change in glaucoma. British Journal of Ophthalmology. 2008;92(4):569-573. https://doi.org/10.1136/bjo.2007.135012
-
-6. Stagg BC, Brintz BJ, Stein JD, Hess R, Kawamoto K, Jammal AA, et al. Time to Identify Glaucoma Progression Given Typical Visual Field Testing Frequencies in a US Nationwide Insured Population. Ophthalmology Glaucoma. 2026;9(3):250-256. https://doi.org/10.1016/j.ogla.2025.11.004
-
-7. Foot B, MacEwen C. Surveillance of sight loss due to delay in ophthalmic treatment or review: frequency, cause and outcome. Eye. 2017;31(5):771-775. https://doi.org/10.1038/eye.2017.1
-
-8. O'Leary N, Chauhan BC, Artes PH. Visual Field Progression in Glaucoma: Estimating the Overall Significance of Deterioration with Permutation Analyses of Pointwise Linear Regression (PoPLR). Invest. Ophthalmol. Vis. Sci. 2012;53(11):6776. https://doi.org/10.1167/iovs.12-10049
-
-9. Bengtsson B, Heijl A. A Visual Field Index for Calculation of Glaucoma Rate of Progression. American Journal of Ophthalmology. 2008;145(2):343-353. https://doi.org/10.1016/j.ajo.2007.09.038
-
-10. Mohammadzadeh V, Li L, Fei Z, Davis T, Morales E, Wu K, et al. Efficacy of Smoothing Algorithms to Enhance Detection of Visual Field Progression in Glaucoma. Ophthalmology Science. 2024;4(2):100423. https://doi.org/10.1016/j.xops.2023.100423
-
-11. Artes PH, O'Leary N, Nicolela MT, Chauhan BC, Crabb DP. Visual Field Progression in Glaucoma: What Is the Specificity of the Guided Progression Analysis? Ophthalmology. 2014;121(10):2023-2027. https://doi.org/10.1016/j.ophtha.2014.04.015
-
-12. Wu Z, Medeiros FA. Comparison of Visual Field Point-Wise Event-Based and Global Trend-Based Analysis for Detecting Glaucomatous Progression. Trans. Vis. Sci. Tech. 2018;7(4):20. https://doi.org/10.1167/tvst.7.4.20
-
-13. Heijl A, Bengtsson B, Chauhan BC, Lieberman MF, Cunliffe I, Hyman L, et al. A Comparison of Visual Field Progression Criteria of 3 Major Glaucoma Trials in Early Manifest Glaucoma Trial Patients. Ophthalmology. 2008;115(9):1557-1565. https://doi.org/10.1016/j.ophtha.2008.02.005
-
-14. Zhu H, Crabb DP, Ho T, Garway-Heath DF. More Accurate Modeling of Visual Field Progression in Glaucoma: ANSWERS. Invest. Ophthalmol. Vis. Sci. 2015;56(10):6077. https://doi.org/10.1167/iovs.15-16957
-
-15. Marín-Franch I, Artes PH, Turpin A, Racette L. Visual Field Progression in Glaucoma: Comparison Between PoPLR and ANSWERS. Trans. Vis. Sci. Tech. 2021;10(14):13. https://doi.org/10.1167/tvst.10.14.13
-
-16. Montesano G, Garway-Heath DF, Ometto G, Crabb DP. Hierarchical Censored Bayesian Analysis of Visual Field Progression. Trans. Vis. Sci. Tech. 2021;10(12):4. https://doi.org/10.1167/tvst.10.12.4
-
-17. Saeedi O, Boland MV, D'Acunto L, Swamy R, Hegde V, Gupta S, et al. Development and Comparison of Machine Learning Algorithms to Determine Visual Field Progression. Trans. Vis. Sci. Tech. 2021;10(7):27. https://doi.org/10.1167/tvst.10.7.27
-
-18. Dixit A, Yohannan J, Boland MV. Assessing Glaucoma Progression Using Machine Learning Trained on Longitudinal Visual Field and Clinical Data. Ophthalmology. 2021;128(7):1016-1026. https://doi.org/10.1016/j.ophtha.2020.12.020
-
-19. Wang M, Shen LQ, Pasquale LR, Petrakos P, Formica S, Boland MV, et al. An Artificial Intelligence Approach to Detect Visual Field Progression in Glaucoma Based on Spatial Pattern Analysis. Invest. Ophthalmol. Vis. Sci. 2019;60(1):365. https://doi.org/10.1167/iovs.18-25568
-
-20. Wen JC, Lee CS, Keane PA, Xiao S, Rokem AS, Chen PP, et al. Forecasting future Humphrey Visual Fields using deep learning. PLoS ONE. 2019;14(4):e0214875. https://doi.org/10.1371/journal.pone.0214875
-
-21. Berchuck SI, Mukherjee S, Medeiros FA. Estimating Rates of Progression and Predicting Future Visual Fields in Glaucoma Using a Deep Variational Autoencoder. Sci Rep. 2019;9(1). https://doi.org/10.1038/s41598-019-54653-6
-
-22. Yousefi S, Balasubramanian M, Goldbaum MH, Medeiros FA, Zangwill LM, Weinreb RN, et al. Unsupervised Gaussian Mixture-Model With Expectation Maximization for Detecting Glaucomatous Progression in Standard Automated Perimetry Visual Fields. Trans. Vis. Sci. Tech. 2016;5(3):2. https://doi.org/10.1167/tvst.5.3.2
-
-23. Chen L, Fujita A, Moradi M, Eslami M, Elze T, Zebardast N. Earlier confirmation of glaucoma progression with risk-weighted visual field and OCT scheduling. medRxiv. 2026. https://doi.org/10.64898/2026.11.16.26368187
-
-24. Si W, Lin V, Sun B, Jang KJ, Xing R, Saeed A, et al. Reliable and Interpretable Visual Field Progression Prediction with Diffusion Models and Conformal Risk Control. Lecture Notes in Computer Science. 2025:543-552. https://doi.org/10.1007/978-3-032-05182-0_53
-
-25. Schell GJ, Lavieri MS, Helm JE, Liu X, Musch DC, Van Oyen MP, et al. Using Filtered Forecasting Techniques to Determine Personalized Monitoring Schedules for Patients with Open-Angle Glaucoma. Ophthalmology. 2014;121(8):1539-1546. https://doi.org/10.1016/j.ophtha.2014.02.021
-
-26. Kim H, Kim E, Moon S, Jin SW, Kim JL, Lee SU, et al. Labeling matters: A multicenter machine learning study on visual field progression in Glaucoma. PLoS One. 2026;21(8):e0357179. https://doi.org/10.1371/journal.pone.0357179
-
-27. . TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ. 2024:q902. https://doi.org/10.1136/bmj.q902
-
-28. Montesano G, Chen A, Lu R, Lee CS, Lee AY. UWHVF: A Real-World, Open Source Dataset of Perimetry Tests From the Humphrey Field Analyzer at the University of Washington. Trans. Vis. Sci. Tech. 2022;11(1):2. https://doi.org/10.1167/tvst.11.1.1
-
-29. Huang X, Kong X, Shen Z, Ouyang J, Li Y, Jin K, et al. GRAPE: A multi-modal dataset of longitudinal follow-up visual field and fundus images for glaucoma management. Sci Data. 2023;10(1). https://doi.org/10.1038/s41597-023-02424-4
-
-30. Angelopoulos AN, Bates S. Conformal Prediction: A Gentle Introduction. Foundations and Trends® in Machine Learning. 2023;16(4):494-591. https://doi.org/10.1561/2200000101
-
-31. Phipson B, Smyth GK. Permutation P-values Should Never Be Zero: Calculating Exact P-values When Permutations Are Randomly Drawn. Statistical Applications in Genetics and Molecular Biology. 2010;9(1). https://doi.org/10.2202/1544-6115.1585
-
-32. Freedman D, Lane D. A Nonstochastic Interpretation of Reported Significance Levels. Journal of Business & Economic Statistics. 1983;1(4):292-298. https://doi.org/10.1080/07350015.1983.10509354
-
-33. Gagnon-Bartsch J, Shem-Tov Y. The classification permutation test: A flexible approach to testing for covariate imbalance in observational studies. Ann. Appl. Stat. 2019;13(3):1464-1483. https://doi.org/10.1214/19-aoas1241
-
-34. Wu Z, Saunders LJ, Daga FB, Diniz-Filho A, Medeiros FA. Frequency of Testing to Detect Visual Field Progression Derived Using a Longitudinal Cohort of Glaucoma Patients. Ophthalmology. 2017;124(6):786-792. https://doi.org/10.1016/j.ophtha.2017.01.027
-
-35. Crabb DP, Garway-Heath DF. Intervals between Visual Field Tests When Monitoring the Glaucomatous Patient: Wait-and-See Approach. Invest. Ophthalmol. Vis. Sci. 2012;53(6):2770. https://doi.org/10.1167/iovs.12-9476
-
-36. Phu J, Kalloniatis M. The Frontloading Fields Study (FFS): Detecting Changes in Mean Deviation in Glaucoma Using Multiple Visual Field Tests Per Clinical Visit. Trans. Vis. Sci. Tech. 2021;10(13):21. https://doi.org/10.1167/tvst.10.13.21
