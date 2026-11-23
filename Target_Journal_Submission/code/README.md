@@ -16,6 +16,8 @@ python run_all.py --mode quick     # pipeline check on a validation subset (~1 m
 python run_all.py --mode full      # full benchmark (CPU, ~1-3 h)
 python -m src.statistics.summarise # metrics.json, statistics.json, tables/
 python -m src.visualization.figures
+python -m src.statistics.descriptives   # descriptives.json, realworld.json
+cd ../manuscript && python fill_values.py && python build_docx.py   # manuscript from result files
 ```
 CPU, CUDA and Apple MPS are detected automatically (src/utils.py); all experiments run on CPU.
 Seeds: 0-4 for stochastic detectors; split = salted hash of patient id (no RNG).
