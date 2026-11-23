@@ -1,4 +1,4 @@
-# Detecting Glaucomatous Visual Field Progression From Few Tests Without False Alarms: An Open Benchmark With a True No-Change Arm
+# Detecting Glaucomatous Visual Field Progression From Few Tests Without False Alarms: A Benchmark With a True No-Change Arm
 
 **Article type:** Original Research
 
@@ -46,13 +46,13 @@ Many methods aim to detect progression from fewer tests. Trend methods fit a lin
 
 Two weaknesses run through this literature. First, most new detectors are judged by how many eyes they flag. More flags can mean better sensitivity, or simply more false alarms. Specificity is usually estimated indirectly: by shuffling test order, by using eyes labelled stable by another criterion, or by simulation. Only a few studies have measured false alarms on true no-change data, where the same patients were tested repeatedly over a few weeks [9]. Second, labels for "progression" differ between studies, and models trained on one label may not transfer [23]. As a result, clinicians cannot easily tell whether an earlier flag from a new method is real progression or a false alarm. A false alarm can lead to unnecessary escalation, with extra drops, laser or surgery and their side effects and costs.
 
-We built an open benchmark to answer one practical question: how early can visual-field progression be detected without raising false alarms? The benchmark has a true no-change arm, a future-confirmed reference standard, and an external clinic. We compared ten detectors, from simple trend tests to permutation, conformal, event-based and machine-learning methods. We hypothesised that no detector would flag substantially more future-confirmed progressors than the simple trend test of mean sensitivity while keeping a valid false-alarm rate on true no-change data. We also tested whether a simple "shuffle audit", which any clinic can run on its own records, estimates the true false-alarm rate.
+We built a benchmark to answer one practical question: how early can visual-field progression be detected without raising false alarms? The benchmark has a true no-change arm, a future-confirmed reference standard, and an external clinic. We compared ten detectors, from simple trend tests to permutation, conformal, event-based and machine-learning methods. We hypothesised that no detector would flag substantially more future-confirmed progressors than the simple trend test of mean sensitivity while keeping a valid false-alarm rate on true no-change data. We also tested whether a simple "shuffle audit", which any clinic can run on its own records, estimates the true false-alarm rate.
 
 # Methods
 
 ## Study design and reporting
 
-This was a retrospective benchmark study of public, de-identified data. We followed the TRIPOD+AI reporting guidance where it applies to detection models [24]. The analysis plan, including all ten detectors, thresholds, reference standards and statistical tests, was written down and time-stamped before the final test data were analysed (code repository, `experiments/protocol.md`). Two amendments were made before any final result was seen; both are reported below. Ideas that we developed and abandoned during the study are listed in the Supplementary Material.
+This was a retrospective benchmark study of public, de-identified data. We followed the TRIPOD+AI reporting guidance where it applies to detection models [24]. The analysis plan, including all ten detectors, thresholds, reference standards and statistical tests, was written down and time-stamped before the final test data were analysed (`experiments/protocol.md`, available with the code). Two amendments were made before any final result was seen; both are reported below. Ideas that we developed and abandoned during the study are listed in the Supplementary Material.
 
 ## Data sources
 
@@ -198,7 +198,7 @@ This study has several limitations. The future reference set was small (26 progr
 
 # Conclusion
 
-In this open benchmark, the largest apparent gains in early detection of glaucomatous visual field progression came with false-alarm rates far above the nominal level, and standard specificity estimates did not reveal them. No valid detector beat a simple trend test of mean sensitivity. New detectors should be reported with their false-alarm rate on true no-change data, and clinics can screen a detector with a shuffle audit of their own records before relying on its flags to escalate treatment.
+In this benchmark, the largest apparent gains in early detection of glaucomatous visual field progression came with false-alarm rates far above the nominal level, and standard specificity estimates did not reveal them. No valid detector beat a simple trend test of mean sensitivity. New detectors should be reported with their false-alarm rate on true no-change data, and clinics can screen a detector with a shuffle audit of their own records before relying on its flags to escalate treatment.
 
 # Declarations
 
@@ -208,7 +208,7 @@ We thank the University of Washington team for releasing UWHVF, Paul Artes and c
 
 ## Funding
 
-[AUTHORS TO COMPLETE — e.g. "No funding or sponsorship was received for this study or publication of this article." State who pays the journal's publication fee.]
+No funding or sponsorship was received for this study or publication of this article.
 
 ## Medical Writing, Editorial, and Other Assistance
 
@@ -220,7 +220,7 @@ An AI coding and writing assistant (Claude Code, Anthropic) was used to write an
 
 ## Conflict of Interest
 
-[AUTHORS TO COMPLETE for each author by name.]
+All authors declare that they have no competing interests. [AUTHORS: the journal asks for one statement per author by name, e.g. "[Name] declares that they have no competing interests."]
 
 ## Ethical Approval
 
@@ -228,11 +228,11 @@ This study used only publicly available, de-identified data released by their cu
 
 ## Data Availability
 
-The data sets analysed during the current study are available in public repositories: UWHVF at https://github.com/uw-biomedical-ml/uwhvf; the Artes retest data in the visualFields R package version 1.0.7 at https://cran.r-project.org/package=visualFields; GRAPE at figshare (https://doi.org/10.6084/m9.figshare.c.6406319.v1). Result files generated during the study (per-eye flags for every detector, seed and number of fields) are included in the code repository.
+The data sets analysed during the current study are available in public repositories: UWHVF at https://github.com/uw-biomedical-ml/uwhvf; the Artes retest data in the visualFields R package version 1.0.7 at https://cran.r-project.org/package=visualFields; GRAPE at figshare (https://doi.org/10.6084/m9.figshare.c.6406319.v1). Result files generated during the study (per-eye flags for every detector, seed and number of fields) are available from the corresponding author on reasonable request.
 
 ## Code Availability
 
-All code, the pre-specified analysis plan with its dated amendments, and the scripts that generate every number, table and figure in this article are available at [REPOSITORY URL — TO BE INSERTED; archive a release with a DOI before submission].
+The code, the pre-specified analysis plan with its dated amendments, and the scripts that generate every number, table and figure in this article are available from the corresponding author on request.
 
 # References
 
@@ -312,4 +312,4 @@ All code, the pre-specified analysis plan with its dated amendments, and the scr
 
 # Supplementary Material
 
-Supplementary Table S1: all metrics with 95% confidence intervals (sensitivity, specificity, true no-change and shuffle-audit false-alarm rates, secondary-reference sensitivity, GRAPE results) for every detector and number of fields. Supplementary Table S2: paired comparisons with D1 (difference, bootstrap 95% CI, exact McNemar p, Holm-adjusted p). Supplementary Note S1: development history, including abandoned method ideas.
+Supplementary Table S1: all metrics with 95% confidence intervals (sensitivity, specificity, true no-change and shuffle-audit false-alarm rates, secondary-reference sensitivity, GRAPE results) for every detector and number of fields. Supplementary Table S2: paired comparisons with D1 (difference, bootstrap 95% CI, exact McNemar p, Holm-adjusted p). Supplementary Table S3: fields to first flag among reference progressors, by detector (seed means). Supplementary Note S1: development history, including abandoned method ideas.

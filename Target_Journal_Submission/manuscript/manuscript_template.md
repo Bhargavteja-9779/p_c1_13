@@ -1,4 +1,4 @@
-# Detecting Glaucomatous Visual Field Progression From Few Tests Without False Alarms: An Open Benchmark With a True No-Change Arm
+# Detecting Glaucomatous Visual Field Progression From Few Tests Without False Alarms: A Benchmark With a True No-Change Arm
 
 **Article type:** Original Research
 
@@ -100,7 +100,7 @@ This study has several limitations. The future reference set was small ({{n_prog
 
 # Conclusion
 
-In this open benchmark, the largest apparent gains in early detection of glaucomatous visual field progression came with false-alarm rates far above the nominal level, and standard specificity estimates did not reveal them. No valid detector beat a simple trend test of mean sensitivity. New detectors should be reported with their false-alarm rate on true no-change data, and clinics can screen a detector with a shuffle audit of their own records before relying on its flags to escalate treatment.
+In this benchmark, the largest apparent gains in early detection of glaucomatous visual field progression came with false-alarm rates far above the nominal level, and standard specificity estimates did not reveal them. No valid detector beat a simple trend test of mean sensitivity. New detectors should be reported with their false-alarm rate on true no-change data, and clinics can screen a detector with a shuffle audit of their own records before relying on its flags to escalate treatment.
 
 # Declarations
 
@@ -110,7 +110,7 @@ We thank the University of Washington team for releasing UWHVF, Paul Artes and c
 
 ## Funding
 
-[AUTHORS TO COMPLETE — e.g. "No funding or sponsorship was received for this study or publication of this article." State who pays the journal's publication fee.]
+No funding or sponsorship was received for this study or publication of this article.
 
 ## Medical Writing, Editorial, and Other Assistance
 
@@ -122,7 +122,7 @@ An AI coding and writing assistant (Claude Code, Anthropic) was used to write an
 
 ## Conflict of Interest
 
-[AUTHORS TO COMPLETE for each author by name.]
+All authors declare that they have no competing interests. [AUTHORS: the journal asks for one statement per author by name, e.g. "[Name] declares that they have no competing interests."]
 
 ## Ethical Approval
 
@@ -130,11 +130,11 @@ This study used only publicly available, de-identified data released by their cu
 
 ## Data Availability
 
-The data sets analysed during the current study are available in public repositories: UWHVF at https://github.com/uw-biomedical-ml/uwhvf; the Artes retest data in the visualFields R package version 1.0.7 at https://cran.r-project.org/package=visualFields; GRAPE at figshare (https://doi.org/10.6084/m9.figshare.c.6406319.v1). Result files generated during the study (per-eye flags for every detector, seed and number of fields) are included in the code repository.
+The data sets analysed during the current study are available in public repositories: UWHVF at https://github.com/uw-biomedical-ml/uwhvf; the Artes retest data in the visualFields R package version 1.0.7 at https://cran.r-project.org/package=visualFields; GRAPE at figshare (https://doi.org/10.6084/m9.figshare.c.6406319.v1). Result files generated during the study (per-eye flags for every detector, seed and number of fields) are available from the corresponding author on reasonable request.
 
 ## Code Availability
 
-All code, the pre-specified analysis plan with its dated amendments, and the scripts that generate every number, table and figure in this article are available at [REPOSITORY URL — TO BE INSERTED; archive a release with a DOI before submission].
+The code, the pre-specified analysis plan with its dated amendments, and the scripts that generate every number, table and figure in this article are available from the corresponding author on request.
 
 # References
 

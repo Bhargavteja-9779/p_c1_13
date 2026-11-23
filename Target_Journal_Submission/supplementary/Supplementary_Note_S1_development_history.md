@@ -3,7 +3,7 @@
 This study did not start as a benchmark. We report every idea we tested before the analysis plan was fixed, so that
 readers can judge how many analyses were tried. All pilot analyses below used only the UWHVF training and validation
 sets; the UWHVF test set and the GRAPE data were not used before the final run. The Artes retest data were used once
-during development (round 5) to check false alarms. Full numbers are in the code repository
+during development (round 5) to check false alarms. Full numbers are available from the corresponding author on request
 (journal_selection/novelty_escalation_log.md; results/pilot_v0.json, pilot_v1.json, pilot_v2.json,
 pilot_deferral.json, d6_round5.json).
 
