@@ -1,0 +1,20 @@
+fold 0 D1 OLS-MD seed 0 3s
+fold 0 D2 MD-rate <= -1 dB/yr seed 0 3s
+fold 0 D3 PLR >=3 points seed 0 4s
+fold 0 D4 PoPLR (within-eye permutation) seed 0 18s
+fold 0 D4 PoPLR (within-eye permutation) seed 1 33s
+fold 0 D4 PoPLR (within-eye permutation) seed 2 47s
+fold 0 D4 PoPLR (within-eye permutation) seed 3 62s
+fold 0 D4 PoPLR (within-eye permutation) seed 4 77s
+fold 0 D5 Pooled-shuffle conformal MD seed 0 78s
+fold 0 D5 Pooled-shuffle conformal MD seed 1 79s
+fold 0 D5 Pooled-shuffle conformal MD seed 2 79s
+fold 0 D5 Pooled-shuffle conformal MD seed 3 80s
+fold 0 D5 Pooled-shuffle conformal MD seed 4 81s
+fold 0 D6 Pooled-detrended conformal region-max seed 0 83s
+fold 0 D6 Pooled-detrended conformal region-max seed 1 85s
+fold 0 D6 Pooled-detrended conformal region-max seed 2 88s
+fold 0 D6 Pooled-detrended conformal region-max seed 3 90s
+fold 0 D6 Pooled-detrended conformal region-max seed 4 92s
+fold 0 D7 Event analysis (GPA-like) seed 0 92s
+fold 0 D8 ML-tabular (LightGBM) seed 0 1105s

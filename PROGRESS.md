@@ -72,7 +72,9 @@
   * k=4-6: no valid detector clearly beats D1 (D7 event analysis 50% vs 42% at k=5 with FPR 1.2% - check McNemar).
   * RQ3 shuffle audit vs true null: Spearman 0.65, median |diff| 1.0 pp, 80% of cells within 3 pp (H3 partly met).
   * GRAPE k=3: D1 sens 44% / spec 95%; D8 66% / 61%; D2 59% / 79%.
-## NEXT ACTION (new session)
+## (superseded) NEXT ACTION from Prompt 1
 Skip steps 1-3 above unless re-running is needed (results are committed). Start at step 4: write Results/Discussion/
 Abstract/KSP from metrics.json + statistics.json via a fill script, then build docx, audits, reviews, cover letter,
 risk report. Previous list of steps 4-6 still applies (see git history of this file for data-restore commands).
+
+## PROMPT 2 RUN IN PROGRESS -> read RECHECK/PROGRESS.md (it overrides the NEXT ACTION above)
