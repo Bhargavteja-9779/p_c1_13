@@ -50,6 +50,14 @@
   (doi 10.5061/dryad.8cz8w9h0v) into data_external/; (2) JCR quartile check for Ophthalmol Ther; (3) APC USD 8,050 OK?
   Hugging Face reachable (mostly image datasets).
 
+- FINAL TOPIC (after failed method ideas): open benchmark of 10 glaucoma VF progression detectors with a TRUE
+  NO-CHANGE arm (Artes retest), future reference (UWHVF test split), shuffle audit, external GRAPE. Honest label
+  expected: NOT REMARKABLE (strongest honest result). Protocol: code/experiments/protocol.md (+ amendments A1, A2).
+- Code: code/run_all.py (quick/full), src/models/detectors.py (D1-D10), src/statistics/summarise.py,
+  src/visualization/figures.py, tests/ (5 pass), leakage_audit.md, README.md.
+- Full run launched: `cd code && nohup python3 run_all.py --mode full > ../results/full_run.log &`
+  Output results/raw_results.csv. If interrupted: rerun same command (takes ~1-3 h).
+
 ## NEXT ACTION
-Wait for novelty agent (novelty_map.csv). Then decide final topic (leading: population-calibrated VF progression
-testing valid from 3rd test, with Artes retest true-null + GRAPE external) or one more restart; write protocol.md.
+After full run: python -m src.statistics.summarise; python -m src.visualization.figures; then write manuscript
+(manuscript/Final_Manuscript.docx), citation audit, 10+1 reviews (REVIEW/), cover letter, risk report.

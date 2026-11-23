@@ -1,0 +1,14 @@
+name: vf-truenull-benchmark
+channels: [conda-forge, pytorch]
+dependencies:
+  - python=3.12
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - lightgbm
+  - matplotlib
+  - openpyxl
+  - pytest
+  - pip
+  - pip: [torch, pyreadr, python-docx]

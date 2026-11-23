@@ -1,0 +1,7 @@
+D1 OLS-MD seed 0 done 12s
+D1 OLS-MD GRAPE done 12s
+D2 MD-rate <= -1 dB/yr seed 0 done 13s
+D2 MD-rate <= -1 dB/yr GRAPE done 13s
+D3 PLR >=3 points seed 0 done 17s
+D3 PLR >=3 points GRAPE done 17s
+D4 PoPLR (within-eye permutation) seed 0 done 92s
