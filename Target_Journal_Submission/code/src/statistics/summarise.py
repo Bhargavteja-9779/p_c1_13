@@ -18,7 +18,10 @@ def boot_prop(df, col='flag', seed=0):
     est = s.sum() / n.sum() if n.sum() else np.nan
     rng = np.random.default_rng(seed); idx = rng.integers(0, len(g), size=(B, len(g)))
     bs = s[idx].sum(1) / np.maximum(n[idx].sum(1), 1)
-    return float(est), float(np.quantile(bs, .025)), float(np.quantile(bs, .975)), int(n.sum())
+    lo, hi = float(np.quantile(bs, .025)), float(np.quantile(bs, .975))
+    if hi - lo < 1e-12 and n.sum():   # degenerate bootstrap (all 0 or all 1): exact Clopper-Pearson on the eye/window count
+        ci = stats.binomtest(int(round(s.sum())), int(n.sum())).proportion_ci(method='exact'); lo, hi = float(ci.low), float(ci.high)
+    return float(est), lo, hi, int(n.sum())
 
 def mcnemar(a, b):
     b01 = int(((a == 1) & (b == 0)).sum()); b10 = int(((a == 0) & (b == 1)).sum()); n = b01 + b10
@@ -64,7 +67,10 @@ def main(path=None):
                 if len(j) == 0: continue
                 p, b01, b10 = mcnemar(o[j].to_numpy(), base[j].to_numpy())
                 diff = o[j].to_numpy() - base[j].to_numpy()
-                rng = np.random.default_rng(0); bs = [diff[rng.integers(0, len(diff), len(diff))].mean() for _ in range(B)]
+                cl = pd.Series(diff, index=j).groupby([cluster_of(ev, u) for u in j]).agg(['sum', 'count'])
+                cs, cn = cl['sum'].to_numpy(), cl['count'].to_numpy()          # patient-cluster bootstrap of the paired difference
+                rng = np.random.default_rng(0); ix = rng.integers(0, len(cl), size=(B, len(cl)))
+                bs = cs[ix].sum(1) / cn[ix].sum(1)
                 res.append(dict(k=int(k), endpoint=endpoint, detector=det, n=len(j), diff=float(diff.mean()),
                                 diff_lo=float(np.quantile(bs, .025)), diff_hi=float(np.quantile(bs, .975)), p=p, only_det=b01, only_D1=b10))
             if res:
@@ -72,6 +78,10 @@ def main(path=None):
                 for r, a in zip(res, adj): r['p_holm'] = float(a)
                 tests += res
     T = pd.DataFrame(tests)
+    # sensitivity analysis: Holm across all numbers of fields (all comparisons within an endpoint)
+    T['p_holm_all_k'] = np.nan
+    for ep, g in T.groupby('endpoint'):
+        T.loc[g.index, 'p_holm_all_k'] = holm(g.p.tolist())
     # RQ3 concordance between shuffle audit and true null
     c = M.dropna(subset=['fpr_true_null', 'fpr_shuffle'])
     rho = stats.spearmanr(c.fpr_shuffle, c.fpr_true_null)
@@ -79,6 +89,20 @@ def main(path=None):
     rq3 = dict(n_cells=len(c), spearman_rho=float(rho.statistic), spearman_p=float(rho.pvalue),
                median_abs_diff=float(absdiff.median()), share_within_3pp=float((absdiff <= 0.03).mean()),
                max_abs_diff=float(absdiff.max()))
+    rng = np.random.default_rng(0); bsr = []
+    for _ in range(B):
+        cc = c.iloc[rng.integers(0, len(c), len(c))]
+        if cc.fpr_shuffle.nunique() > 1 and cc.fpr_true_null.nunique() > 1:
+            bsr.append(stats.spearmanr(cc.fpr_shuffle, cc.fpr_true_null).statistic)
+    rq3.update(spearman_lo=float(np.quantile(bsr, .025)), spearman_hi=float(np.quantile(bsr, .975)))
+    nz = c[(c.fpr_true_null > 0) | (c.fpr_shuffle > 0)]                    # drop cells that are zero by construction
+    rq3.update(n_cells_nonzero=len(nz), spearman_rho_nonzero=float(stats.spearmanr(nz.fpr_shuffle, nz.fpr_true_null).statistic))
+    val = lambda lo, hi: (hi <= 0.10) & (lo <= 0.05)
+    tv = val(c.fpr_true_null_lo, c.fpr_true_null_hi); av = val(c.fpr_shuffle_lo, c.fpr_shuffle_hi)
+    rq3.update(audit_invalid_true=int((~tv).sum()), audit_invalid_detected=int((~tv & ~av).sum()),
+               audit_false_warnings=int((tv & ~av).sum()), audit_n_valid_true=int(tv.sum()),
+               audit_missed=[f"{r.detector.split()[0]}@{r.k}" for _, r in c[~tv & av].iterrows()],
+               audit_false_warning_cells=[f"{r.detector.split()[0]}@{r.k}" for _, r in c[tv & ~av].iterrows()])
     os.makedirs(os.path.join(ROOT, 'tables'), exist_ok=True)
     M.to_csv(os.path.join(ROOT, 'tables', 'table_metrics_all.csv'), index=False)
     T.to_csv(os.path.join(ROOT, 'tables', 'table_paired_tests_vs_D1.csv'), index=False)

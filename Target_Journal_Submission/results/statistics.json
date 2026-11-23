@@ -6,12 +6,13 @@
    "detector": "D10 Self-supervised order net + permutation",
    "n": 26,
    "diff": -0.1923076923,
-   "diff_lo": -0.3461538462,
-   "diff_hi": -0.0384615385,
+   "diff_lo": -0.3333333333,
+   "diff_hi": -0.0740079365,
    "p": 0.0625,
    "only_det": 0,
    "only_D1": 5,
-   "p_holm": 0.5
+   "p_holm": 0.5,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -19,12 +20,13 @@
    "detector": "D2 MD-rate <= -1 dB/yr",
    "n": 26,
    "diff": 0.1923076923,
-   "diff_lo": 0.0,
-   "diff_hi": 0.4230769231,
+   "diff_lo": -0.0344827586,
+   "diff_hi": 0.4166666667,
    "p": 0.1796875,
    "only_det": 7,
    "only_D1": 2,
-   "p_holm": 0.71875
+   "p_holm": 0.71875,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -32,12 +34,13 @@
    "detector": "D3 PLR >=3 points",
    "n": 26,
    "diff": -0.1538461538,
-   "diff_lo": -0.3076923077,
-   "diff_hi": -0.0384615385,
+   "diff_lo": -0.2857142857,
+   "diff_hi": -0.04,
    "p": 0.125,
    "only_det": 0,
    "only_D1": 4,
-   "p_holm": 0.625
+   "p_holm": 0.625,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -45,12 +48,13 @@
    "detector": "D4 PoPLR (within-eye permutation)",
    "n": 26,
    "diff": -0.1923076923,
-   "diff_lo": -0.3461538462,
-   "diff_hi": -0.0384615385,
+   "diff_lo": -0.3333333333,
+   "diff_hi": -0.0740079365,
    "p": 0.0625,
    "only_det": 0,
    "only_D1": 5,
-   "p_holm": 0.5
+   "p_holm": 0.5,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -63,7 +67,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -71,12 +76,13 @@
    "detector": "D6 Pooled-detrended conformal region-max",
    "n": 26,
    "diff": 0.3846153846,
-   "diff_lo": 0.1923076923,
-   "diff_hi": 0.5769230769,
+   "diff_lo": 0.1935173697,
+   "diff_hi": 0.5770833333,
    "p": 0.001953125,
    "only_det": 10,
    "only_D1": 0,
-   "p_holm": 0.017578125
+   "p_holm": 0.017578125,
+   "p_holm_all_k": 0.0703125
   },
   {
    "k": 3,
@@ -84,12 +90,13 @@
    "detector": "D7 Event analysis (GPA-like)",
    "n": 26,
    "diff": -0.1923076923,
-   "diff_lo": -0.3461538462,
-   "diff_hi": -0.0384615385,
+   "diff_lo": -0.3333333333,
+   "diff_hi": -0.0740079365,
    "p": 0.0625,
    "only_det": 0,
    "only_D1": 5,
-   "p_holm": 0.5
+   "p_holm": 0.5,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -97,12 +104,13 @@
    "detector": "D8 ML-tabular (LightGBM)",
    "n": 26,
    "diff": 0.0769230769,
-   "diff_lo": -0.1153846154,
+   "diff_lo": -0.1034482759,
    "diff_hi": 0.2692307692,
    "p": 0.6875,
    "only_det": 4,
    "only_D1": 2,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -111,11 +119,12 @@
    "n": 26,
    "diff": -0.0384615385,
    "diff_lo": -0.2307692308,
-   "diff_hi": 0.1538461538,
+   "diff_hi": 0.1666666667,
    "p": 1.0,
    "only_det": 3,
    "only_D1": 4,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -123,12 +132,13 @@
    "detector": "D10 Self-supervised order net + permutation",
    "n": 26,
    "diff": -0.0384615385,
-   "diff_lo": -0.1153846154,
+   "diff_lo": -0.1304347826,
    "diff_hi": 0.0,
    "p": 1.0,
    "only_det": 0,
    "only_D1": 1,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -137,11 +147,12 @@
    "n": 26,
    "diff": 0.0384615385,
    "diff_lo": 0.0,
-   "diff_hi": 0.1153846154,
+   "diff_hi": 0.125,
    "p": 1.0,
    "only_det": 1,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -149,12 +160,13 @@
    "detector": "D3 PLR >=3 points",
    "n": 26,
    "diff": 0.0,
-   "diff_lo": -0.1153846154,
-   "diff_hi": 0.1153846154,
+   "diff_lo": -0.12,
+   "diff_hi": 0.1035406404,
    "p": 1.0,
    "only_det": 1,
    "only_D1": 1,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -162,12 +174,13 @@
    "detector": "D4 PoPLR (within-eye permutation)",
    "n": 26,
    "diff": -0.0384615385,
-   "diff_lo": -0.1153846154,
+   "diff_lo": -0.1304347826,
    "diff_hi": 0.0,
    "p": 1.0,
    "only_det": 0,
    "only_D1": 1,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -180,7 +193,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -193,7 +207,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -201,12 +216,13 @@
    "detector": "D7 Event analysis (GPA-like)",
    "n": 26,
    "diff": -0.0384615385,
-   "diff_lo": -0.1153846154,
+   "diff_lo": -0.1304347826,
    "diff_hi": 0.0,
    "p": 1.0,
    "only_det": 0,
    "only_D1": 1,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -219,7 +235,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -227,12 +244,13 @@
    "detector": "D9 ML-sequence (GRU)",
    "n": 26,
    "diff": -0.0384615385,
-   "diff_lo": -0.1153846154,
+   "diff_lo": -0.1304347826,
    "diff_hi": 0.0,
    "p": 1.0,
    "only_det": 0,
    "only_D1": 1,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -240,12 +258,13 @@
    "detector": "D2 MD-rate <= -1 dB/yr",
    "n": 27,
    "diff": 0.1481481481,
-   "diff_lo": -0.1111111111,
+   "diff_lo": -0.0776785714,
    "diff_hi": 0.3703703704,
    "p": 0.3876953125,
    "only_det": 8,
    "only_D1": 4,
-   "p_holm": 0.775390625
+   "p_holm": 0.775390625,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -253,12 +272,13 @@
    "detector": "D3 PLR >=3 points",
    "n": 27,
    "diff": -0.4074074074,
-   "diff_lo": -0.6296296296,
-   "diff_hi": -0.1851851852,
+   "diff_lo": -0.6153846154,
+   "diff_hi": -0.1923076923,
    "p": 0.0034179688,
    "only_det": 1,
    "only_D1": 12,
-   "p_holm": 0.013671875
+   "p_holm": 0.013671875,
+   "p_holm_all_k": 0.0341796875
   },
   {
    "k": 3,
@@ -266,12 +286,13 @@
    "detector": "D4 PoPLR (within-eye permutation)",
    "n": 27,
    "diff": -0.4444444444,
-   "diff_lo": -0.6296296296,
+   "diff_lo": -0.6538461538,
    "diff_hi": -0.2592592593,
    "p": 0.0004882812,
    "only_det": 0,
    "only_D1": 12,
-   "p_holm": 0.0029296875
+   "p_holm": 0.0029296875,
+   "p_holm_all_k": 0.005859375
   },
   {
    "k": 3,
@@ -279,12 +300,13 @@
    "detector": "D5 Pooled-shuffle conformal MD",
    "n": 27,
    "diff": -0.037037037,
-   "diff_lo": -0.1111111111,
+   "diff_lo": -0.1153846154,
    "diff_hi": 0.0,
    "p": 1.0,
    "only_det": 0,
    "only_D1": 1,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -292,12 +314,13 @@
    "detector": "D7 Event analysis (GPA-like)",
    "n": 27,
    "diff": -0.4444444444,
-   "diff_lo": -0.6296296296,
+   "diff_lo": -0.6538461538,
    "diff_hi": -0.2592592593,
    "p": 0.0004882812,
    "only_det": 0,
    "only_D1": 12,
-   "p_holm": 0.0029296875
+   "p_holm": 0.0029296875,
+   "p_holm_all_k": 0.005859375
   },
   {
    "k": 3,
@@ -306,11 +329,12 @@
    "n": 27,
    "diff": 0.2592592593,
    "diff_lo": 0.0,
-   "diff_hi": 0.4814814815,
+   "diff_hi": 0.5,
    "p": 0.0922851562,
    "only_det": 10,
    "only_D1": 3,
-   "p_holm": 0.2768554688
+   "p_holm": 0.2768554688,
+   "p_holm_all_k": 0.8305664062
   },
   {
    "k": 3,
@@ -318,12 +342,13 @@
    "detector": "D2 MD-rate <= -1 dB/yr",
    "n": 236,
    "diff": 0.1652542373,
-   "diff_lo": 0.1101694915,
-   "diff_hi": 0.2203389831,
+   "diff_lo": 0.1096406883,
+   "diff_hi": 0.2217391304,
    "p": 7.6e-09,
    "only_det": 44,
    "only_D1": 5,
-   "p_holm": 3.8e-08
+   "p_holm": 3.8e-08,
+   "p_holm_all_k": 8.36e-08
   },
   {
    "k": 3,
@@ -331,12 +356,13 @@
    "detector": "D3 PLR >=3 points",
    "n": 236,
    "diff": -0.0042372881,
-   "diff_lo": -0.0381355932,
-   "diff_hi": 0.0254237288,
+   "diff_lo": -0.0416710251,
+   "diff_hi": 0.0334763194,
    "p": 1.0,
    "only_det": 7,
    "only_D1": 8,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -344,12 +370,13 @@
    "detector": "D4 PoPLR (within-eye permutation)",
    "n": 236,
    "diff": -0.0466101695,
-   "diff_lo": -0.0762711864,
-   "diff_hi": -0.0211864407,
+   "diff_lo": -0.0779220779,
+   "diff_hi": -0.0208333333,
    "p": 0.0009765625,
    "only_det": 0,
    "only_D1": 11,
-   "p_holm": 0.00390625
+   "p_holm": 0.00390625,
+   "p_holm_all_k": 0.0087890625
   },
   {
    "k": 3,
@@ -362,7 +389,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 3,
@@ -370,12 +398,13 @@
    "detector": "D7 Event analysis (GPA-like)",
    "n": 236,
    "diff": -0.0466101695,
-   "diff_lo": -0.0762711864,
-   "diff_hi": -0.0211864407,
+   "diff_lo": -0.0779220779,
+   "diff_hi": -0.0208333333,
    "p": 0.0009765625,
    "only_det": 0,
    "only_D1": 11,
-   "p_holm": 0.00390625
+   "p_holm": 0.00390625,
+   "p_holm_all_k": 0.0087890625
   },
   {
    "k": 3,
@@ -383,12 +412,13 @@
    "detector": "D8 ML-tabular (LightGBM)",
    "n": 236,
    "diff": 0.3347457627,
-   "diff_lo": 0.2754237288,
-   "diff_hi": 0.3940677966,
+   "diff_lo": 0.2735042735,
+   "diff_hi": 0.4026725292,
    "p": 3.30872245e-24,
    "only_det": 79,
    "only_D1": 0,
-   "p_holm": 1.98523347e-23
+   "p_holm": 1.98523347e-23,
+   "p_holm_all_k": 3.97046694e-23
   },
   {
    "k": 4,
@@ -396,12 +426,13 @@
    "detector": "D10 Self-supervised order net + permutation",
    "n": 26,
    "diff": -0.1153846154,
-   "diff_lo": -0.3076923077,
-   "diff_hi": 0.0384615385,
+   "diff_lo": -0.28,
+   "diff_hi": 0.04,
    "p": 0.375,
    "only_det": 1,
    "only_D1": 4,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -410,11 +441,12 @@
    "n": 26,
    "diff": -0.0769230769,
    "diff_lo": -0.2307692308,
-   "diff_hi": 0.0769230769,
+   "diff_hi": 0.0714285714,
    "p": 0.625,
    "only_det": 1,
    "only_D1": 3,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -422,12 +454,13 @@
    "detector": "D3 PLR >=3 points",
    "n": 26,
    "diff": -0.1538461538,
-   "diff_lo": -0.3461538462,
+   "diff_lo": -0.3333333333,
    "diff_hi": 0.0,
    "p": 0.21875,
    "only_det": 1,
    "only_D1": 5,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -435,12 +468,13 @@
    "detector": "D4 PoPLR (within-eye permutation)",
    "n": 26,
    "diff": -0.2692307692,
-   "diff_lo": -0.4615384615,
-   "diff_hi": -0.1153846154,
+   "diff_lo": -0.44,
+   "diff_hi": -0.1111111111,
    "p": 0.015625,
    "only_det": 0,
    "only_D1": 7,
-   "p_holm": 0.140625
+   "p_holm": 0.140625,
+   "p_holm_all_k": 0.515625
   },
   {
    "k": 4,
@@ -453,7 +487,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -461,12 +496,13 @@
    "detector": "D6 Pooled-detrended conformal region-max",
    "n": 26,
    "diff": -0.0384615385,
-   "diff_lo": -0.1923076923,
-   "diff_hi": 0.0769230769,
+   "diff_lo": -0.1601666667,
+   "diff_hi": 0.0833333333,
    "p": 1.0,
    "only_det": 1,
    "only_D1": 2,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -475,11 +511,12 @@
    "n": 26,
    "diff": -0.0769230769,
    "diff_lo": -0.2692307692,
-   "diff_hi": 0.1153846154,
+   "diff_hi": 0.1111111111,
    "p": 0.6875,
    "only_det": 2,
    "only_D1": 4,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -487,12 +524,13 @@
    "detector": "D8 ML-tabular (LightGBM)",
    "n": 26,
    "diff": 0.1153846154,
-   "diff_lo": -0.0384615385,
+   "diff_lo": -0.0741452991,
    "diff_hi": 0.3076923077,
    "p": 0.375,
    "only_det": 4,
    "only_D1": 1,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -500,12 +538,13 @@
    "detector": "D9 ML-sequence (GRU)",
    "n": 26,
    "diff": -0.1923076923,
-   "diff_lo": -0.3846153846,
-   "diff_hi": 0.0384615385,
+   "diff_lo": -0.4074074074,
+   "diff_hi": 0.0385,
    "p": 0.1796875,
    "only_det": 2,
    "only_D1": 7,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -518,7 +557,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -527,11 +567,12 @@
    "n": 26,
    "diff": 0.0384615385,
    "diff_lo": 0.0,
-   "diff_hi": 0.1153846154,
+   "diff_hi": 0.125,
    "p": 1.0,
    "only_det": 1,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -544,7 +585,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -557,7 +599,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -570,7 +613,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -583,7 +627,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -596,7 +641,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -609,7 +655,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -622,7 +669,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -630,12 +678,13 @@
    "detector": "D2 MD-rate <= -1 dB/yr",
    "n": 18,
    "diff": 0.2222222222,
-   "diff_lo": -0.0555555556,
-   "diff_hi": 0.5,
+   "diff_lo": -0.0588235294,
+   "diff_hi": 0.5294117647,
    "p": 0.2890625,
    "only_det": 6,
    "only_D1": 2,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -643,12 +692,13 @@
    "detector": "D3 PLR >=3 points",
    "n": 18,
    "diff": -0.2222222222,
-   "diff_lo": -0.3888888889,
-   "diff_hi": -0.0555555556,
+   "diff_lo": -0.4216374269,
+   "diff_hi": -0.0526315789,
    "p": 0.125,
    "only_det": 0,
    "only_D1": 4,
-   "p_holm": 0.75
+   "p_holm": 0.75,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -661,7 +711,8 @@
    "p": 0.5,
    "only_det": 0,
    "only_D1": 2,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -674,7 +725,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -683,11 +735,12 @@
    "n": 18,
    "diff": -0.1666666667,
    "diff_lo": -0.4444444444,
-   "diff_hi": 0.1111111111,
+   "diff_hi": 0.1054093567,
    "p": 0.453125,
    "only_det": 2,
    "only_D1": 5,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -696,11 +749,12 @@
    "n": 18,
    "diff": 0.1666666667,
    "diff_lo": -0.0555555556,
-   "diff_hi": 0.3888888889,
+   "diff_hi": 0.4117647059,
    "p": 0.375,
    "only_det": 4,
    "only_D1": 1,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -708,12 +762,13 @@
    "detector": "D2 MD-rate <= -1 dB/yr",
    "n": 145,
    "diff": 0.0965517241,
-   "diff_lo": 0.0482758621,
-   "diff_hi": 0.1517241379,
+   "diff_lo": 0.040261745,
+   "diff_hi": 0.1608391608,
    "p": 0.0013122559,
    "only_det": 16,
    "only_D1": 2,
-   "p_holm": 0.0065612793
+   "p_holm": 0.0065612793,
+   "p_holm_all_k": 0.009185791
   },
   {
    "k": 4,
@@ -721,12 +776,13 @@
    "detector": "D3 PLR >=3 points",
    "n": 145,
    "diff": -0.0206896552,
-   "diff_lo": -0.0620689655,
-   "diff_hi": 0.0206896552,
+   "diff_lo": -0.0616544639,
+   "diff_hi": 0.0204081633,
    "p": 0.5078125,
    "only_det": 3,
    "only_D1": 6,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -734,12 +790,13 @@
    "detector": "D4 PoPLR (within-eye permutation)",
    "n": 145,
    "diff": 0.0068965517,
-   "diff_lo": -0.0413793103,
-   "diff_hi": 0.0551724138,
+   "diff_lo": -0.0362318841,
+   "diff_hi": 0.0514910131,
    "p": 1.0,
    "only_det": 6,
    "only_D1": 5,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -748,11 +805,12 @@
    "n": 145,
    "diff": 0.0137931034,
    "diff_lo": 0.0,
-   "diff_hi": 0.0344827586,
+   "diff_hi": 0.0352112676,
    "p": 0.5,
    "only_det": 2,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -761,11 +819,12 @@
    "n": 145,
    "diff": 0.0,
    "diff_lo": -0.0482758621,
-   "diff_hi": 0.0482758621,
+   "diff_hi": 0.0476190476,
    "p": 1.0,
    "only_det": 6,
    "only_D1": 6,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 4,
@@ -773,12 +832,13 @@
    "detector": "D8 ML-tabular (LightGBM)",
    "n": 145,
    "diff": 0.1448275862,
-   "diff_lo": 0.0896551724,
-   "diff_hi": 0.2068965517,
+   "diff_lo": 0.0845070423,
+   "diff_hi": 0.2142976989,
    "p": 9.537e-07,
    "only_det": 21,
    "only_D1": 0,
-   "p_holm": 5.722e-06
+   "p_holm": 5.722e-06,
+   "p_holm_all_k": 9.5367e-06
   },
   {
    "k": 5,
@@ -786,12 +846,13 @@
    "detector": "D10 Self-supervised order net + permutation",
    "n": 26,
    "diff": 0.0769230769,
-   "diff_lo": -0.0769230769,
-   "diff_hi": 0.2307692308,
+   "diff_lo": -0.0740740741,
+   "diff_hi": 0.2222222222,
    "p": 0.625,
    "only_det": 3,
    "only_D1": 1,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 5,
@@ -799,12 +860,13 @@
    "detector": "D2 MD-rate <= -1 dB/yr",
    "n": 26,
    "diff": -0.1923076923,
-   "diff_lo": -0.3846153846,
-   "diff_hi": 0.0,
+   "diff_lo": -0.36,
+   "diff_hi": -0.04,
    "p": 0.125,
    "only_det": 1,
    "only_D1": 6,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 5,
@@ -812,12 +874,13 @@
    "detector": "D3 PLR >=3 points",
    "n": 26,
    "diff": -0.1923076923,
-   "diff_lo": -0.3461538462,
-   "diff_hi": -0.0384615385,
+   "diff_lo": -0.3333333333,
+   "diff_hi": -0.0434782609,
    "p": 0.0625,
    "only_det": 0,
    "only_D1": 5,
-   "p_holm": 0.5625
+   "p_holm": 0.5625,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 5,
@@ -825,12 +888,13 @@
    "detector": "D4 PoPLR (within-eye permutation)",
    "n": 26,
    "diff": -0.0384615385,
-   "diff_lo": -0.1153846154,
+   "diff_lo": -0.12,
    "diff_hi": 0.0,
    "p": 1.0,
    "only_det": 0,
    "only_D1": 1,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 5,
@@ -843,7 +907,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 5,
@@ -851,12 +916,13 @@
    "detector": "D6 Pooled-detrended conformal region-max",
    "n": 26,
    "diff": -0.1153846154,
-   "diff_lo": -0.3076923077,
-   "diff_hi": 0.0769230769,
+   "diff_lo": -0.3336206897,
+   "diff_hi": 0.0833333333,
    "p": 0.453125,
    "only_det": 2,
    "only_D1": 5,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 5,
@@ -864,12 +930,13 @@
    "detector": "D7 Event analysis (GPA-like)",
    "n": 26,
    "diff": 0.0769230769,
-   "diff_lo": -0.1153846154,
-   "diff_hi": 0.2692307692,
+   "diff_lo": -0.1034482759,
+   "diff_hi": 0.2608695652,
    "p": 0.6875,
    "only_det": 4,
    "only_D1": 2,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 5,
@@ -878,11 +945,12 @@
    "n": 26,
    "diff": 0.1153846154,
    "diff_lo": 0.0,
-   "diff_hi": 0.2692307692,
+   "diff_hi": 0.25,
    "p": 0.25,
    "only_det": 3,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 5,
@@ -890,12 +958,13 @@
    "detector": "D9 ML-sequence (GRU)",
    "n": 26,
    "diff": 0.0,
-   "diff_lo": -0.2307692308,
-   "diff_hi": 0.2307692308,
+   "diff_lo": -0.2083333333,
+   "diff_hi": 0.2083333333,
    "p": 1.0,
    "only_det": 5,
    "only_D1": 5,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 5,
@@ -908,7 +977,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 5,
@@ -921,7 +991,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 5,
@@ -934,7 +1005,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 5,
@@ -947,7 +1019,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 5,
@@ -960,7 +1033,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 5,
@@ -973,7 +1047,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 5,
@@ -986,7 +1061,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 5,
@@ -999,7 +1075,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 5,
@@ -1008,11 +1085,12 @@
    "n": 26,
    "diff": 0.0769230769,
    "diff_lo": 0.0,
-   "diff_hi": 0.1923076923,
+   "diff_hi": 0.24,
    "p": 0.5,
    "only_det": 2,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 6,
@@ -1021,11 +1099,12 @@
    "n": 26,
    "diff": 0.0,
    "diff_lo": -0.1923076923,
-   "diff_hi": 0.1923076923,
+   "diff_hi": 0.1785714286,
    "p": 1.0,
    "only_det": 3,
    "only_D1": 3,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 6,
@@ -1033,12 +1112,13 @@
    "detector": "D2 MD-rate <= -1 dB/yr",
    "n": 26,
    "diff": -0.3461538462,
-   "diff_lo": -0.5769230769,
-   "diff_hi": -0.1538461538,
+   "diff_lo": -0.5416666667,
+   "diff_hi": -0.1850198413,
    "p": 0.01171875,
    "only_det": 1,
    "only_D1": 10,
-   "p_holm": 0.09375
+   "p_holm": 0.09375,
+   "p_holm_all_k": 0.3984375
   },
   {
    "k": 6,
@@ -1047,11 +1127,12 @@
    "n": 26,
    "diff": -0.3461538462,
    "diff_lo": -0.5384615385,
-   "diff_hi": -0.1923076923,
+   "diff_hi": -0.16,
    "p": 0.00390625,
    "only_det": 0,
    "only_D1": 9,
-   "p_holm": 0.03515625
+   "p_holm": 0.03515625,
+   "p_holm_all_k": 0.13671875
   },
   {
    "k": 6,
@@ -1059,12 +1140,13 @@
    "detector": "D4 PoPLR (within-eye permutation)",
    "n": 26,
    "diff": -0.0769230769,
-   "diff_lo": -0.2692307692,
-   "diff_hi": 0.1153846154,
+   "diff_lo": -0.2693965517,
+   "diff_hi": 0.1034482759,
    "p": 0.6875,
    "only_det": 2,
    "only_D1": 4,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 6,
@@ -1077,7 +1159,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 6,
@@ -1085,12 +1168,13 @@
    "detector": "D6 Pooled-detrended conformal region-max",
    "n": 26,
    "diff": -0.0384615385,
-   "diff_lo": -0.1923076923,
-   "diff_hi": 0.1153846154,
+   "diff_lo": -0.2,
+   "diff_hi": 0.12,
    "p": 1.0,
    "only_det": 2,
    "only_D1": 3,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 6,
@@ -1098,12 +1182,13 @@
    "detector": "D7 Event analysis (GPA-like)",
    "n": 26,
    "diff": 0.0,
-   "diff_lo": -0.1923076923,
-   "diff_hi": 0.1538461538,
+   "diff_lo": -0.2,
+   "diff_hi": 0.1785714286,
    "p": 1.0,
    "only_det": 3,
    "only_D1": 3,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 6,
@@ -1111,12 +1196,13 @@
    "detector": "D8 ML-tabular (LightGBM)",
    "n": 26,
    "diff": 0.1153846154,
-   "diff_lo": -0.0769230769,
-   "diff_hi": 0.3076923077,
+   "diff_lo": -0.08,
+   "diff_hi": 0.3043478261,
    "p": 0.453125,
    "only_det": 5,
    "only_D1": 2,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 6,
@@ -1124,12 +1210,13 @@
    "detector": "D9 ML-sequence (GRU)",
    "n": 26,
    "diff": -0.1153846154,
-   "diff_lo": -0.3846153846,
-   "diff_hi": 0.1153846154,
+   "diff_lo": -0.3461538462,
+   "diff_hi": 0.125,
    "p": 0.548828125,
    "only_det": 4,
    "only_D1": 7,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 6,
@@ -1142,7 +1229,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 6,
@@ -1155,7 +1243,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 6,
@@ -1168,7 +1257,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 6,
@@ -1181,7 +1271,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 6,
@@ -1194,7 +1285,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 6,
@@ -1207,7 +1299,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 6,
@@ -1220,7 +1313,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 6,
@@ -1233,7 +1327,8 @@
    "p": 1.0,
    "only_det": 0,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   },
   {
    "k": 6,
@@ -1242,11 +1337,12 @@
    "n": 26,
    "diff": 0.0769230769,
    "diff_lo": 0.0,
-   "diff_hi": 0.1923076923,
+   "diff_hi": 0.24,
    "p": 0.5,
    "only_det": 2,
    "only_D1": 0,
-   "p_holm": 1.0
+   "p_holm": 1.0,
+   "p_holm_all_k": 1.0
   }
  ],
  "rq3_audit_concordance": {
@@ -1255,6 +1351,26 @@
   "spearman_p": 6.095026327057684e-06,
   "median_abs_diff": 0.009564893387271789,
   "share_within_3pp": 0.8,
-  "max_abs_diff": 0.10391561181434597
+  "max_abs_diff": 0.10391561181434597,
+  "spearman_lo": 0.3540696864521535,
+  "spearman_hi": 0.8525404666333046,
+  "n_cells_nonzero": 37,
+  "spearman_rho_nonzero": 0.5557136083451872,
+  "audit_invalid_true": 8,
+  "audit_invalid_detected": 7,
+  "audit_false_warnings": 7,
+  "audit_n_valid_true": 32,
+  "audit_missed": [
+   "D6@6"
+  ],
+  "audit_false_warning_cells": [
+   "D2@3",
+   "D2@4",
+   "D6@4",
+   "D7@5",
+   "D1@6",
+   "D7@6",
+   "D8@6"
+  ]
  }
 }
