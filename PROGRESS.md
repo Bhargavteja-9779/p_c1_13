@@ -80,6 +80,10 @@
   python3 fill_values.py && python3 build_docx.py && soffice --headless --convert-to pdf Final_Manuscript.docx
   Fixes: Artes data licence is Apache-2.0 (not GPL-3); TRIPOD+AI DOI -> 10.1136/bmj-2023-078378; EMGT authors from PubMed.
   Validity rule (fixed in methods draft commit bd2c2e2 BEFORE results commit 94777b8): CI upper <=10% and lower <=5%.
+- Audits written: REVIEW/claim_evidence_audit.md, REVIEW/citation_audit.md. Reviews delegated to background agents
+  (REVIEW/review_01..10.md, review_summary.md, review_stakeholder.md) - if missing in a new session, redo them.
+- Reproducibility re-run launched (writes results/raw_results.csv + OVERWRITES results/run_meta_full.json -> after it
+  finishes: mv run_meta_full.json run_meta_full_repro.json; git checkout results/run_meta_full.json; compare raw vs gz).
 ## NEXT ACTION
 STEP 5: claim-evidence audit (REVIEW/claim_evidence_audit.md), citation audit (REVIEW/citation_audit.md, use
 manuscript/pubmed_check.json), 10 adversarial reviews + stakeholder review (REVIEW/review_01..10.md, review_stakeholder.md),
