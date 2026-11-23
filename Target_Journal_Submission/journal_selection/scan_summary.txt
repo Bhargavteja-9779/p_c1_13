@@ -1,0 +1,13 @@
+0003-4649 ERR HTTP Error 429: Too Many Requests
+0003-6307 |  |  | n_items=0 no dates
+0006-8101 | The Botanical Review | Springer Science and Business Media LLC | n_items=26 n_dated=23 | median=259 p75=336.0 max=514
+0010-3616 | Communications in Mathematical Physics | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=281 p75=395.0 max=1072
+0010-485X | Computing | Springer Science and Business Media LLC | n_items=120 n_dated=120 | median=155.5 p75=229.0 max=619
+0020-7543 | International Journal of Production Research | Informa UK Limited | n_items=120 n_dated=114 | median=204.5 p75=290.0 max=589
+0020-9910 | Inventiones mathematicae | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=540 p75=846.0 max=2356
+0032-079X | Plant and Soil | Springer Science and Business Media LLC | n_items=120 n_dated=119 | median=130 p75=164.0 max=378
+0032-0935 | Planta | Springer Science and Business Media LLC | n_items=120 n_dated=117 | median=105 p75=148.5 max=668
+0033-5177 | Quality &amp; Quantity | Springer Science and Business Media LLC | n_items=41 no dates
+0042-3114 | Vehicle System Dynamics | Informa UK Limited | n_items=120 n_dated=118 | median=184.5 p75=256.25 max=1154
+0044-7447 | Ambio | Springer Science and Business Media LLC | n_items=120 n_dated=110 | median=165.5 p75=223.0 max=587
+0046-5763 |  |  | n_items=0 no dates

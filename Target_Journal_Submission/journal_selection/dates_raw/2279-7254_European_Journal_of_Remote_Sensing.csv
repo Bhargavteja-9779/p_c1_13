@@ -1,0 +1,142 @@
+title,doi,received,accepted,days
+A google earth engine app to map ground-mounted photovoltaic system and track land use change in Italy,10.1080/22797254.2026.2688128,2025-11-27,2026-06-09,194
+Functional ecosystem properties estimated from satellite PRISMA and Sentinel-2 data in natural European sites,10.1080/22797254.2026.2669420,2025-12-06,2026-04-30,145
+Assessing transferability of a convolutional neural network (CNN) model for the environmental conditions of tidal flats,10.1080/22797254.2026.2726637,2025-10-09,2026-08-25,320
+Rainfall prediction based on CNN-LSTM model under sliding window,10.1080/22797254.2025.2540106,2025-03-24,2025-07-22,120
+A machine learning residual correction framework for enhancing physical-based evapotranspiration estimates over croplands,10.1080/22797254.2026.2695909,2025-11-12,2026-06-15,215
+SAMOIS: efficient fine-tuned SAM with multi-scale enhancement for optical remote sensing image segmentation,10.1080/22797254.2025.2609404,2025-07-21,2025-12-20,152
+Use of Sentinel-2 optical imagery for the reconstruction of coastal bathymetry: a case study in Mozambique,10.1080/22797254.2025.2532543,2024-08-14,2025-06-24,314
+Development of a simple parametric approach to correct fluorescence signal for reabsorption and its implications for GPP estimates: a case study for a,10.1080/22797254.2025.2540962,2024-11-22,2025-07-22,242
+"Spatial-temporal accuracy assessment of TRMM, CHIRPS, PERSIANN and GPM satellites precipitation estimation products over the complex Lebanese territor",10.1080/22797254.2026.2709022,2025-12-09,2026-07-20,223
+A novel significant wave height estimation method combining synthetic aperture radar observations with ERA5 reanalysis data,10.1080/22797254.2026.2706003,2025-10-11,2026-07-06,268
+A method for automatically extracting long-term and large-scale land use and land cover information,10.1080/22797254.2025.2545341,2024-08-15,2025-08-04,354
+Geometric accuracy analysis of Jilin-1 satellite images using different mathematical models,10.1080/22797254.2026.2691804,2025-07-14,2026-06-10,331
+Estimating stand metrics in mountainous temperate forests using UAS and satellite imagery: multiple linear regression or artificial neural networks?,10.1080/22797254.2026.2697337,2026-02-19,2026-06-26,127
+Small area estimation of forest volume using mixed effects random forests and multi-source remote sensing data,10.1080/22797254.2026.2680926,2026-04-24,2026-05-22,28
+"Comprehensive evaluation of Aeolus wind measurements against
+                    <i>in situ</i>
+                    observations and reanalysis datase",10.1080/22797254.2026.2712601,2025-06-11,2026-07-18,402
+"Comparison of shallow and deep learning methods for LiDAR-based aboveground biomass estimation of eucalyptus plantations in Ibu Kota Nusantara, East K",10.1080/22797254.2026.2733157,2025-10-10,2026-09-10,335
+Improving spatial resolution of Aqua MODIS and GCOM-C chlorophyll-a data for Cyprus coastal waters monitoring,10.1080/22797254.2025.2551023,2025-01-20,2025-08-15,207
+Monitoring water reservoirs extent with Segment Anything Model applied to Sentinel imagery,10.1080/22797254.2025.2527248,2025-01-26,2025-06-18,143
+Implementation of machine learning for wind speed retrieval from HY-2B altimeter,10.1080/22797254.2026.2728233,2026-01-14,2026-08-31,229
+Relative performance of super-resolved Sentinel-2 and Copernicus VHR images in mapping built-up areas and building footprints using deep learning,10.1080/22797254.2025.2517381,2025-01-03,2025-06-03,151
+"Integrating Landsat, Sentinel-2 and Sentinel-1 time series for mapping intermediate crops",10.1080/22797254.2025.2507738,2024-10-06,2025-05-13,219
+A deep-level feature fusion architecture via self-attention integrated U-Net combining ultra-hyperspectral image and LiDAR point cloud data towards de,10.1080/22797254.2026.2699998,2025-11-19,2026-06-19,212
+Prediction of soil organic carbon and nitrogen: a WMTR-CatBoost model based on multi-feature fusion,10.1080/22797254.2026.2711851,2025-09-03,2026-06-03,273
+Spatio-temporal dynamics of forest restoration in the karst region: integrating trend analysis and the multi-order adjacency index with Landsat imager,10.1080/22797254.2025.2595364,2025-07-23,2025-11-21,121
+The transferability and cross-use of airborne laser scanning-based leaf-off and leaf-on biomass models,10.1080/22797254.2025.2542870,2025-05-27,2025-07-29,63
+Active and passive reference panels for the validation of solar-induced fluorescence,10.1080/22797254.2026.2725737,2025-07-07,2026-07-18,376
+Chalk grassland mapping in Surrey County using remote sensing and citizen science data: a random forest approach,10.1080/22797254.2026.2691799,2026-04-15,2026-06-15,61
+A robust detection method of apple leaf spectral image Starscream based on CRS-YOLO algorithm,10.1080/22797254.2025.2592452,2025-08-12,2025-11-15,95
+Estimation of winter wheat aboveground biomass by combining unmanned aerial vehicle hyperspectral and textural features with deep learning method,10.1080/22797254.2026.2740473,2025-10-28,2026-09-21,328
+Towards integrated rock support visualisation in 3D point cloud of underground mines,10.1080/22797254.2026.2728772,2026-05-21,2026-09-01,103
+Sentinel-2 time series reveal species-specific responses in temperate conifer dieback,10.1080/22797254.2025.2547386,2025-05-21,2025-08-06,77
+Dead fuel moisture estimation in mountainous areas of South Korea using satellite data and ground-based observations through a tree-based machine lear,10.1080/22797254.2026.2708098,2025-11-19,2026-07-17,240
+Testing the accuracy and characteristics of data acquired using DJI Zenmuse L1 and L2 lidar systems and photogrammetric data acquired using DJI Zenmus,10.1080/22797254.2025.2595361,2025-07-08,2025-11-20,135
+"Urban and agricultural land transformation and ecosystem service trade-offs in İzmir, Türkiye (1985–2075)",10.1080/22797254.2026.2723518,2026-05-08,2026-08-08,92
+SWOT pixel cloud elevation accuracy assessment over synthetic small water bodies,10.1080/22797254.2026.2695384,2026-03-16,2026-06-16,92
+When sharper is not better: super-resolution of Sentinel-2 for multi-index emergent macrophyte mapping,10.1080/22797254.2026.2763975,2026-08-25,2026-11-10,77
+Remote sensing driven multilayer perceptron markov modelling of land use change and ecosystem service decline in the Eastern Mediterranean,10.1080/22797254.2026.2654477,2026-01-22,2026-03-28,65
+Self-attention augmented blind super-resolution with advanced Sobel loss for remote sensing images,10.1080/22797254.2026.2722266,2025-06-30,2026-08-13,409
+A Bayesian framework to make GF-1/6 WFV and Sentinel-2 MSI reflectance consistent with MODIS NBAR,10.1080/22797254.2026.2729917,2026-02-23,2026-09-02,191
+Analysis of vegetation cover change trends and mutation detection in stable vegetation type regions of Northeast China from 2001 to 2022 based on BEAS,10.1080/22797254.2026.2694469,2026-01-18,2026-06-20,153
+Downscaling of soil moisture in the Wujiang River Basin based on integrated decision tree-based machine learning,10.1080/22797254.2026.2641527,2025-07-04,2026-03-02,241
+Automatic evergreen forest mapping based on Harmonised Landsat Sentinel-2 and existing broad-category land cover product within Google Earth Engine,10.1080/22797254.2026.2735509,2026-02-19,2026-09-14,207
+The impact of submerged aquatic vegetation on satellite-derived bathymetry in shallow waters: an accuracy assessment,10.1080/22797254.2026.2667786,2025-06-27,2026-04-20,297
+Assessment of building extraction and geometric corrections from UAV image using Mask R-CNN deep neural network algorithm,10.1080/22797254.2026.2618374,2025-07-05,2026-01-13,192
+Assessment of EnMAP spectral bands for burned area detection using reference data from globally distributed regions,10.1080/22797254.2026.2757966,2025-06-16,2026-10-28,499
+The coupled spatiotemporal evolution of glacier snow line altitude and flow velocity at the early 21st century in the Qilian Mountains,10.1080/22797254.2025.2548302,2025-02-26,2025-08-11,166
+"Spatio-temporal assessment of
+                    <i>Toumeyella parvicornis</i>
+                    spread in mediterranean coastal pine forests throu",10.1080/22797254.2026.2709014,2026-06-10,2026-07-13,33
+"Hybrid deep learning framework for high-precision, real-time monitoring of cauliflower crop health using spectral data",10.1080/22797254.2026.2688134,2025-07-30,2026-06-08,313
+TCMFE-Net for robust tree species identification from terrestrial and personal laser scanning data: the impact of feature fusion and sampling strategi,10.1080/22797254.2026.2761686,2026-03-20,2026-10-31,225
+Riparian vegetation dynamics using satellite imagery and integrated spectral and spatial features: a case study of the Slovak Danube,10.1080/22797254.2026.2627046,2024-04-12,2026-01-31,659
+Tracking the Xinfengjiang Reservoir's hydrologic pulse over three decades: meteorological forcings deciphered by multisensor remote sensing,10.1080/22797254.2026.2662653,2025-11-18,2026-04-15,148
+"Impacts of water quality and quantity in Lake Chapo in the Nord Patagonia, Chile",10.1080/22797254.2026.2616974,2024-09-17,2026-01-11,481
+Explainable cotton mapping in northern and southern Xinjiang using Boruta feature selection and SHAP analysis,10.1080/22797254.2026.2642998,2025-10-13,2026-03-04,142
+Novel linear regression-based approach for correcting underestimated SBAS-InSAR subsidence in high-velocity single-panel mining zones,10.1080/22797254.2026.2730784,2025-12-22,2026-08-26,247
+Automatic detection and classification of agricultural terraces at large scales: a case study of Cyprus,10.1080/22797254.2026.2746905,2025-11-03,2026-10-06,337
+Machine learning-driven mapping of salt-affected soils: integrating laboratory analysis and environmental covariates to establish extent and spatial d,10.1080/22797254.2026.2758461,2026-07-09,2026-10-28,111
+A site-specific survey for EO-based phenological monitoring in regenerative agriculture within LULUCF framework,10.1080/22797254.2025.2515491,2025-03-19,2025-05-30,72
+Multi-decadal satellite monitoring of soil carbon and its role in farm carbon footprint: a case study for the Czech Republic,10.1080/22797254.2025.2562069,2025-03-24,2025-09-06,166
+"Sabkha dynamics as a proxy for shallow groundwater discharge in Al Qatif, Eastern Province, Saudi Arabia: application of optical satellite imagery and",10.1080/22797254.2026.2763211,2026-01-20,2026-11-08,292
+"Spatiotemporal analysis of CO
+                    <sub>2</sub>
+                    emissions in Beijing from 2015 to 2020 based on NPP-VIIRS NTL image",10.1080/22797254.2025.2540104,2023-11-08,2025-07-22,622
+Comparison of Sentinel-2 and MODIS for estimating GPP along an ecosystem gradient in eastern Germany,10.1080/22797254.2026.2650340,2025-11-15,2026-03-19,124
+Machine learning-based classification of Hyrcanian forests using PRISMA data,10.1080/22797254.2026.2748769,2025-11-30,2026-10-07,311
+Close-range and remote sensing applications in tomato crops: a systematic review,10.1080/22797254.2026.2748089,2025-07-23,2026-10-07,441
+GuidedBox: a segmentation-guided box teacher-student approach for weakly supervised road segmentation,10.1080/22797254.2025.2540963,2024-05-13,2025-07-24,437
+A unified AHP-MaxEnt-Machine Learning ensemble for national-scale forest site-suitability and afforestation zoning in Pakistan,10.1080/22797254.2026.2689179,2025-11-04,2026-06-09,217
+"Copernicus for monitoring European forests: strengths, challenges and potential",10.1080/22797254.2025.2540109,2025-03-15,2025-07-22,129
+Satellite-based vessel detection under turbulence and jitter: a degradation-aware comparison,10.1080/22797254.2026.2733093,2026-05-22,2026-08-29,99
+Manifold mesh reconstruction from dense matching points of oblique images,10.1080/22797254.2025.2514610,2022-05-04,2025-05-28,1120
+From mineral exploration to mine closure: a systematic review of multispectral and hyperspectral remote sensing for soil monitoring in mining landscap,10.1080/22797254.2026.2708095,2026-02-04,2026-07-18,164
+"Optimal dataset selection and driving mechanisms of land-use change in the Yellow River basin: integrating PLUS model, geodetector and random forest a",10.1080/22797254.2026.2710735,2025-10-27,2026-07-18,264
+Monitoring in-season biomass nitrogen in diversified cropping systems: a machine learning approach,10.1080/22797254.2026.2727988,2025-08-20,2026-08-28,373
+Tree crown anomaly detection in UAV RGB-NIR imagery using an unsupervised cosine-distance-based approach in hemiboreal forests,10.1080/22797254.2026.2740475,2026-01-21,2026-09-21,243
+Spatiotemporal estimation of daily PM₂.₅ and PM₁₀ in Thailand using MODIS and VIIRS aerosol optical depth,10.1080/22797254.2026.2705537,2026-04-23,2026-07-13,81
+MSA-TCNet: a multi-scale attentional transformer-CNN network for detail-preserving water extraction in remote sensing images,10.1080/22797254.2026.2750622,2025-11-25,2026-10-12,321
+Mapping tree species in a subtropical forest landscape: a deep learning approach using a composite time series index for active–passive remote sensing,10.1080/22797254.2026.2728880,2025-08-25,2026-09-02,373
+Improved extraction method based on YOLODSC-SAM to identify rice seedling nurseries from remote sensing imagery,10.1080/22797254.2026.2744242,2025-11-25,2026-09-30,309
+YOLOv8-SC: an improved seafood target-detection model,10.1080/22797254.2025.2516713,2024-05-02,2025-06-02,396
+Four decades of suspended particulate matter concentrations in the Po River revealed by landsat satellites,10.1080/22797254.2026.2637440,2025-08-19,2026-02-19,184
+Assessing the impact of climate change on the water-energy-food nexus in southeastern Morocco: a case study of the Wadi Guir watershed,10.1080/22797254.2025.2540105,2024-10-07,2025-07-22,288
+Evaluation of spectral features and regression methods for leaf area index estimation,10.1080/22797254.2025.2564880,2025-02-19,2025-09-18,211
+Tracking land cover changes in typical oasis regions based on the alphaearth foundations embedding dataset: a case study of Korla,10.1080/22797254.2026.2701317,2026-03-31,2026-07-04,95
+Early cereal yield prediction using machine learning and Sentinel-1 &amp; Sentinel-2 satellite data,10.1080/22797254.2025.2558614,2025-02-01,2025-09-03,214
+Handcrafted point-voxel feature strategies for semantic classification of urban mobile laser scanning data,10.1080/22797254.2026.2655370,2025-06-24,2026-03-31,280
+Application of remotely piloted aircraft in the evaluation of the vegetative response of coffee trees affected by frost to sun exposure,10.1080/22797254.2026.2691807,2025-09-03,2026-06-15,285
+Tower-based NDVI and fluorescence measurements for estimating GPP seasonality in deciduous and evergreen forests,10.1080/22797254.2026.2760141,2025-09-23,2026-11-02,405
+Semi-supervised change detection of buildings based on consistent regularization and VMamba,10.1080/22797254.2025.2611679,2025-08-27,2025-12-29,124
+"Towards multi-frequency SAR-based soil moisture retrieval: preliminary assessment at the Petacciato landslide, Italy",10.1080/22797254.2026.2658348,2025-11-07,2026-03-18,131
+Combining machine learning and multi-criteria decision analysis for forest fire susceptibility assessment,10.1080/22797254.2026.2646575,2025-10-01,2026-03-11,161
+Unsupervised machine learning for clustering and analyzing InSAR-derived ground deformation: insights from X- and C-band,10.1080/22797254.2025.2564158,2024-12-19,2025-08-11,235
+Spatiotemporal variations of PM2.5 concentrations in the Fen–Wei Plain of China between 2015 and 2020 based on MAIAC,10.1080/22797254.2026.2617740,2025-08-24,2026-01-12,141
+A data-driven approach to estimate leaf area index for Landsat images over China,10.1080/22797254.2026.2654470,2025-09-27,2026-03-22,176
+Advancing spatio-temporal fusion with spectral super-resolution for enhancing remote sensing of marine debris and landfills,10.1080/22797254.2026.2718171,2026-05-12,2026-08-08,88
+"RNFI, RNSI and ISPS: a complementary evaluation system for super-resolution of remote sensing imagery with downstream task relevance",10.1080/22797254.2026.2767342,2026-06-15,2026-11-13,151
+National-scale mapping of temperate forest above-ground biomass in the Czech Republic using Sentinel-1 and Sentinel-2 data,10.1080/22797254.2026.2701998,2026-01-27,2026-07-06,160
+Erosion gully extraction in Southwest China using MSAR-Net: a novel deep learning approach,10.1080/22797254.2026.2713671,2025-10-10,2026-06-26,259
+"Accounting for vertical leaf heterogeneity, sun-view geometry, and foliage traits to retrieve biophysical variables of
+                    <i>Eucalypt",10.1080/22797254.2026.2634413,2025-03-10,2026-02-16,343
+Analysis of Sentinel-1 and Sentinel-2 data for post-earthquake reconstruction monitoring: a case study of the 2024 Noto Peninsula earthquake,10.1080/22797254.2026.2657624,2025-11-24,2026-03-24,120
+Incorrect short-wave infrared to red reflectance ratio affects the application of the dark dense vegetation method for operational atmospheric correct,10.1080/22797254.2026.2741884,2025-07-09,2026-09-25,443
+Optimizing local maxima parameters for UAV-based detection of Pinus merkusii in tropical forest plantations,10.1080/22797254.2026.2697336,2026-01-21,2026-06-26,156
+"Spatio-temporal dynamics and future projections of carbon storage in Ziwuling, China, under rapid urbanization",10.1080/22797254.2026.2641530,2025-08-21,2026-02-27,190
+The dynamic evaluation of cropland resource reserves in Mid-inner Zhejiang under urban network development,10.1080/22797254.2026.2662672,2026-01-27,2026-04-15,78
+Comparative study of near real-time monitoring algorithms for early detection of bark beetle infestations in Germany with Sentinel-2,10.1080/22797254.2026.2662660,2025-11-09,2026-04-15,157
+A systematic review of machine learning-based remote sensing data analysis for geological and mined materials characterisation,10.1080/22797254.2025.2524622,2024-09-25,2025-06-16,264
+Integrating image filters and confidence thresholds to improve cropland data layer for deep learning–based cropland segmentation,10.1080/22797254.2026.2631928,2025-06-26,2026-02-10,229
+Evaluating the maximum cross-correlation method for near-real-time ocean currents estimation using multi-platform AVHRR thermal imagery,10.1080/22797254.2026.2729937,2025-07-16,2026-08-30,410
+Characterising the ill-posedness of PROSAIL inversion for biophysical parameter retrieval,10.1080/22797254.2026.2632518,2025-03-31,2026-02-11,317
+Deep learning applied to urban agriculture: spatial-temporal changes of agricultural land in a rapidly urbanizing Southeast Asian city,10.1080/22797254.2025.2572109,2025-01-24,2025-10-02,251
+Advancing Earth observation: a survey on AI-powered image processing in satellites,10.1080/22797254.2025.2567921,2025-02-06,2025-09-22,228
+A potential technique for SAR ocean surface current speed retrieval based on machine learning,10.1080/22797254.2025.2600152,2024-08-13,2025-12-02,476
+Tillage and biomass detection for estimating winter-time cropland management practices with satellite remote sensing,10.1080/22797254.2025.2525967,2024-08-23,2025-06-18,299
+Urban built-up area extraction using nighttime light data with 120 m spatial resolution,10.1080/22797254.2026.2681869,2025-06-03,2026-03-08,278
+Voxel extremum filtering and QuickHull: a rapid algorithm for individual tree canopy volume estimation,10.1080/22797254.2026.2750621,2025-08-04,2026-10-12,434
+Double cropping detection in the moderate continental climate region of Serbia using machine learning and Sentinel-2 data,10.1080/22797254.2025.2533462,2024-08-12,2025-07-05,327
+Joint use of multi-temporal satellite interferometric and geotechnical data for monitoring and investigating the kinematics of an urbanized relict lan,10.1080/22797254.2026.2620877,2025-06-30,2026-01-19,203
+"Exploring dynamics of Poyang floodplain lakes using fused 8-day, 30-m remote sensing data (2000–2023)",10.1080/22797254.2025.2595821,2025-07-21,2025-11-22,124
+A flexible QGIS plugin for mapping burned areas and burn severity from multispectral remote sensing imagery,10.1080/22797254.2026.2646571,2025-04-28,2026-03-08,314
+Translation from dual-polarization complex-valued SAR to optical satellite images,10.1080/22797254.2026.2699356,2025-09-21,2026-06-19,271
+Enhancing few-shot remote sensing image semantic annotation through spectral super-resolution guided learning,10.1080/22797254.2026.2695913,2025-09-19,2026-06-15,269
+Method for estimating dimensions and visualising changes in multi-epoch point clouds,10.1080/22797254.2026.2621431,2025-07-16,2026-01-20,188
+Efficient 3D convolutional neural networks for Sentinel-2 land cover classification with limited ground truth data,10.1080/22797254.2025.2512531,2024-12-28,2025-04-22,115
+Towards a FAIRer future: insights from Europe's geospatial community,10.1080/22797254.2026.2676254,2026-01-23,2026-05-11,108
+Feature space based monitoring model of rock desertification for karst landscape,10.1080/22797254.2026.2642831,2025-09-16,2026-03-04,169
+Eliminating the influence of moisture to enhance the accuracy of soil salinity estimation using hyperspectral remote sensing,10.1080/22797254.2026.2671832,2025-11-04,2026-05-02,179
+Soil moisture estimation at 1-km resolution over croplands and grasslands using sentinel-1/2 and SMOS-IC data: algorithm and validation,10.1080/22797254.2026.2622132,2025-08-05,2026-01-21,169
+Crop NDVI time series modelling with Sentinel-1: a comparative study of intensity and polarimetric features,10.1080/22797254.2026.2721330,2025-11-18,2026-07-17,241
+On-orbit model training for satellite imagery with label proportions,10.1080/22797254.2025.2570319,2024-02-02,2025-07-22,536
+Satellite-based analysis of maritime traffic effects on water quality indicators in the Mediterranean basin,10.1080/22797254.2026.2650343,2025-11-27,2026-03-19,112
+Hyperspectral observation from Landsat: an optimised spectral enhancement method for water colour remote sensing,10.1080/22797254.2026.2659082,2026-02-09,2026-04-08,58
+Satellite-based SUHI analysis: a methodological review of current practices and standardisation challenges,10.1080/22797254.2026.2721331,2026-05-05,2026-08-08,95
+Cross-domain few-shot hyperspectral image classification with frequency-aware augmentation,10.1080/22797254.2026.2630506,2025-07-08,2026-02-08,215
+MBS-net: a multi-scale attention network for semantic segmentation of high-resolution remote sensing images,10.1080/22797254.2026.2696956,2025-11-16,2026-06-15,211
+Uncertainty modeling and simulation in terrestrial laser scanning of a slope,10.1080/22797254.2025.2567920,2025-01-02,2025-09-21,262
+Beyond monthly composites: maximizing information retention in satellite image time series for forest stand classification,10.1080/22797254.2025.2585241,2025-05-04,2025-10-31,180
+Synthetic generation of hyperspectral data from multispectral data through generative adversarial network model,10.1080/22797254.2026.2730785,2026-03-16,2026-08-25,162

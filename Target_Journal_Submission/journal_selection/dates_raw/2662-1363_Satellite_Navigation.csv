@@ -1,0 +1,69 @@
+title,doi,received,accepted,days
+Attention-guided multi-mission GNSS-R integration for enhanced global soil moisture retrieval,10.1186/s43020-026-00205-z,2026-01-22,2026-06-25,154
+Real-time PPP algorithm considering hourly discontinuous BDS-3 broadcast ephemeris with covariance-adaptive Kalman filter,10.1186/s43020-025-00184-7,2025-10-19,2025-11-10,22
+FAIRS: a factor-adjusted ionospheric residual statistics approach for global ionospheric RMS mapping,10.1186/s43020-026-00209-9,2025-09-15,2026-07-02,290
+CNN-SENet: a GNSS-R ocean wind speed retrieval model integrating CNN and SENet attention mechanism,10.1186/s43020-024-00157-2,2024-04-18,2024-11-06,202
+Generalized integer least-squares success-rate bounds under heavy-tailed distributions,10.1186/s43020-026-00211-1,2026-06-23,2026-07-15,22
+Preliminary analysis for the joint autonomous orbit determination of the BDS-3 MEO satellites and lunar ELFO satellites based on inter-satellite links,10.1186/s43020-026-00217-9,2025-12-30,2026-08-10,223
+Generalized GNSS spoofing detection in unseen scenarios using physics-constrained neural networks with code-carrier consistency,10.1186/s43020-026-00199-8,2025-10-25,2026-05-11,198
+Precise GNSS-acoustic seafloor positioning with sound speed from global ocean analysis,10.1186/s43020-025-00170-z,2024-11-18,2025-05-21,184
+Robust real-time GNSS satellite clock estimation using atomic clock models with anomaly detection and mitigation,10.1186/s43020-026-00225-9,2026-03-04,2026-09-24,204
+A method for monitoring aircraft height above ground across diverse landforms using GNSS reflected signals: a field study,10.1186/s43020-026-00228-6,2026-01-07,2026-09-24,260
+Avnet: learning attitude and velocity for vehicular dead reckoning using smartphone by adapting an invariant EKF,10.1186/s43020-025-00168-7,2024-12-07,2025-05-21,165
+On the role of integer ambiguity resolution in the continuity of IPPP time links,10.1186/s43020-026-00233-9,2026-04-28,2026-10-14,169
+FSS-EMD-MIO: robust map-free magnetic-inertial odometry via Fibonacci sphere-sampled equivalent dipole modeling for indoor navigation,10.1186/s43020-026-00201-3,2026-02-12,2026-05-28,105
+Quantitative belief-guided intelligent decision-making for adaptive multi-sensor fusion navigation,10.1186/s43020-026-00206-y,2026-03-06,2026-07-02,118
+Validation of a multi-layer approach-based ionospheric mapping function supporting PPP-AR,10.1186/s43020-026-00193-0,2025-07-29,2026-02-02,188
+A new sparse representation method for tropospheric grid models,10.1186/s43020-026-00210-2,2026-02-28,2026-07-14,136
+An enhanced sensitivity analysis framework for residual ionospheric error in network RTK geometry-free three-carrier ambiguity resolution,10.1186/s43020-026-00202-2,2026-01-14,2026-05-29,135
+Global ROTI forecasting with a Bayesian model based in long-tail distributions,10.1186/s43020-026-00188-x,2025-08-29,2025-12-22,115
+"An integrated framework for GPS flex power analysis: robust detection, automated localization, and spatiotemporal characteristics",10.1186/s43020-026-00198-9,2025-12-04,2026-05-18,165
+Assessing multi-GNSS PPP-AR using IGS all-frequency products and machine-learning-driven attribution analysis,10.1186/s43020-026-00223-x,2026-05-08,2026-09-15,130
+Geotri-VIO: geometrically consistent multi-prism projection for panoramic imaging in visual-inertial-odometry,10.1186/s43020-025-00171-y,2025-01-04,2025-06-02,149
+Pan-Tropical Land Surface Modulation of CYGNSS GNSS-R DDM Coherence Based on Explainable Machine Learning,10.1186/s43020-026-00221-z,2026-02-06,2026-09-15,221
+BLAC-Q4DIM: a bayesian optimization and LSTM driven adaptive clustering quasi-four-dimensional ionospheric model,10.1186/s43020-026-00213-z,2026-02-16,2026-07-24,158
+Monitoring and correction of errors in state space representation products using PPP float ambiguity deviations and phase residuals in a wide-area net,10.1186/s43020-026-00195-y,2025-11-05,2026-03-30,145
+An innovative outer-loop positioning framework for LEO Doppler observations considering propagation time,10.1186/s43020-026-00189-w,2025-07-16,2026-01-22,190
+Integrated GNSS/LEO precise point positioning using factor graph optimization with heterogeneous graph-based stochastic modeling,10.1186/s43020-026-00218-8,2026-05-01,2026-09-08,130
+5G NR robust tracking and positioning with GNSS assistance,10.1186/s43020-025-00183-8,2025-07-14,2025-11-06,115
+Integrated real-time precise point positioning system with B2b/B2a/B1C services,10.1186/s43020-025-00172-x,2024-11-13,2025-06-09,208
+High-resolution GNSS troposphere tomography through explainable deep learning-based downscaling framework,10.1186/s43020-025-00177-6,2025-04-08,2025-07-08,91
+Study of the SRP model for BDS-3 satellites SVN C223 and C222 to mitigate SLR residual anomalies,10.1186/s43020-025-00166-9,2024-10-10,2025-04-27,199
+Performance gap between archived real-time and post-processed precise products for multi-GNSS and multi-frequency PPP-AR,10.1186/s43020-026-00222-y,2026-04-02,2026-09-17,168
+Performance of PPP and PPP-RTK with new-generation GNSS constellations and signals,10.1186/s43020-025-00169-6,2024-11-24,2025-05-21,178
+3D map-aided smartphone GNSS positioning using TDCP-constrained clustering and factor graph multi-observation fusion,10.1186/s43020-025-00185-6,2025-08-04,2025-11-17,105
+Ionospheric gradient estimation using ground-based GEO observations for monitoring multi-scale ionospheric dynamics,10.1186/s43020-025-00187-4,2025-07-24,2025-11-21,120
+Ionospheric gradient modeling for fast ambiguity resolution in multi-GNSS RTK and NRTK,10.1186/s43020-026-00207-x,2025-12-14,2026-07-02,200
+Mitigating ionospheric disturbances impacts on NRTK positioning: an optimization method for adaptive functional and stochastic models,10.1186/s43020-025-00179-4,2025-05-27,2025-09-09,105
+An in-situ sound speed profile correction scheme for the tight-coupling integration of SINS/USBL in deep-sea ARV navigation,10.1186/s43020-025-00181-w,2025-03-05,2025-11-04,244
+GNSS integrated displacement and attitude determination for structural health monitoring of long-span bridges,10.1186/s43020-025-00174-9,2024-12-22,2025-06-24,184
+Neural network-based clock bias prediction for low earth orbit satellites with a reconstruction fine-tuning mechanism,10.1186/s43020-026-00215-x,2025-12-30,2026-07-28,210
+Detection of GPS and BDS flex power for mitigating its impact on satellite-based services,10.1186/s43020-026-00190-3,2025-10-31,2026-01-27,88
+Goal-directed synergistic fusion navigation for robust localization under cross-scenario spatial uncertainty,10.1186/s43020-026-00208-w,2026-01-14,2026-06-28,165
+Integrated precise orbit determination for LEO constellation and BDS-3 MEO satellites using inter-satellite links and onboard BDS-3 observations,10.1186/s43020-025-00175-8,2024-11-11,2025-07-01,232
+AVC-Init: aggregated visual constraints for decoupled initialization in visual-inertial navigation,10.1186/s43020-026-00224-w,2026-05-06,2026-09-24,141
+Integrated enhancement of BDS-3 precise orbit determination and PPP using multiple CENTISPACE™ LEO satellites,10.1186/s43020-026-00212-0,2026-01-03,2026-07-22,200
+Sea-based JPALS ionospheric gradient monitoring based on multi-reference Boolean collaborative decision rule,10.1186/s43020-026-00204-0,2025-12-08,2026-06-17,191
+"5G control plane-enabled BDS ubiquitous spatiotemporal networks: key technologies, applications, and future challenges",10.1186/s43020-026-00230-y,2026-03-27,2026-09-20,177
+An improved yaw attitude model for GPS Block IIF satellites during eclipse seasons,10.1186/s43020-026-00226-8,2026-02-12,2026-09-24,224
+CLAK:CNN-LSTM-Attention and Kolmogorov-Arnold Networks for non-visual UAV localization in GNSS-denied environments,10.1186/s43020-026-00192-1,2025-09-07,2026-01-19,134
+Precise acoustic seafloor positioning with joint estimation of sound speed field structure using a layered sound speed gradient model,10.1186/s43020-026-00197-w,2026-01-06,2026-04-21,105
+A Comparative study on ranging accuracy and interference robustness of LEO-PNT systems in urban and rural scenarios,10.1186/s43020-025-00186-5,2025-07-07,2025-11-18,134
+Integer ambiguity validation through machine learning for precise point positioning,10.1186/s43020-025-00167-8,2025-01-18,2025-04-28,100
+Information-preserving maximum likelihood noise analysis of GNSS coordinate time series with missing values in the first-differenced domain,10.1186/s43020-026-00220-0,2026-05-12,2026-09-15,126
+An improved track-before-detect method for moving target detection using GNSS reflected signals,10.1186/s43020-025-00176-7,2024-12-19,2025-07-10,203
+INR-MHM: an implicit neural representation framework for continuous hemispherical modeling of GNSS multipath errors,10.1186/s43020-026-00234-8,2026-04-29,2026-10-24,178
+A GNSS PPP framework augmented using asynchronous ground-based positioning systems,10.1186/s43020-026-00200-4,2026-01-19,2026-05-13,114
+Multi-layer ionosphere mapping function for ground and LEO GNSS data and its performance analysis,10.1186/s43020-025-00182-9,2025-07-25,2025-11-11,109
+Study of regional ionospheric structures and their impacts on SPP and PPP with multi-instrument observations in the Asian sector,10.1186/s43020-026-00191-2,2025-09-01,2026-01-19,140
+Quality monitoring of grid-based atmospheric corrections in GNSS PPP-RTK service using leave-one-out cross-validation,10.1186/s43020-025-00178-5,2024-12-02,2025-09-02,274
+Overbounding observation errors considering elevation-related distribution characteristics for maritime RT-PPP integrity monitoring,10.1186/s43020-026-00194-z,2025-10-19,2026-02-02,106
+Enhancing multi-station URTK over long baselines using BDS PPP-B2b and Galileo HAS real-time precise corrections,10.1186/s43020-026-00214-y,2026-04-08,2026-07-27,110
+Satellite constellation design for Titan exploration: orbit design and performance assessment,10.1186/s43020-025-00180-x,2025-03-25,2025-09-18,177
+A cross-epoch ambiguity tracking method for GNSS/INS/Vision-based urban navigation,10.1186/s43020-026-00227-7,2026-01-18,2026-09-24,249
+Towards rapid and reliable GNSS ambiguity resolution using residual-based machine learning in challenging environments,10.1186/s43020-026-00216-w,2026-01-20,2026-08-03,195
+Cross-calibration and performance analysis of the energetic electron flux data from GPS satellite constellation,10.1186/s43020-026-00203-1,2025-10-28,2026-06-08,223
+A physics-guided noise-enhanced adaptive fusion dual-stream network for water level estimation using CYGNSS and Sentinel-1 observations,10.1186/s43020-026-00219-7,2026-02-12,2026-09-08,208
+OiSAM-FGO: an efficient factor graph optimization algorithm for GNSS/INS integrated navigation system,10.1186/s43020-025-00173-w,2025-01-22,2025-06-16,145
+Robust and efficient visual odometry using colored point cloud maps via dual-sparsity and hierarchical optimization,10.1186/s43020-026-00196-x,2025-09-03,2026-03-29,207
+A robust visual localization framework for UAVs using a zero-shot aerial-satellite image matcher and a particle filter,10.1186/s43020-026-00232-w,2026-06-03,2026-10-09,128
