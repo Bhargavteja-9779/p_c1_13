@@ -8,6 +8,7 @@ HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(os.pat
 R = lambda f: json.load(open(os.path.join(ROOT, 'results', f)))
 M, S, C, RW = R('v2/metrics.json'), R('v2/statistics.json'), R('dataset_counts.json'), R('realworld.json')
 X = R('v2/extras.json')
+BB = R('amendB/amendB.json')
 for _m in M:   # aliases so the primary GRAPE label (MD criterion) keeps its v1 key names
     for _a in ('', '_lo', '_hi', '_n'):
         _m['grape_sens' + _a] = _m.get('grape_md_sens' + _a); _m['grape_spec' + _a] = _m.get('grape_md_spec' + _a)
@@ -96,6 +97,51 @@ def val(key):
     if t == 'x' and a[0] == 'years_to_flag':
         return f"{(RW[CODE['D1']]['median_tests_to_first_flag'] - 1) * C['uw_ref_interval_y_median']:.0f}"
     if t == 'rep': return f"{R('reproducibility_check.json')[a[0]]:,}"
+    if t == 'b':      # amendment B
+        sub = a[0]
+        find = lambda lst, **kw: next(r for r in lst if all(str(r[k_]) == str(v_) for k_, v_ in kw.items()))
+        if sub == 'm':    # b.m.D2.5.RC.sens
+            return pct(find(BB['B1_metrics'], detector=CODE[a[1]], k=a[2], calibration=a[3])[a[4]])
+        if sub == 'mci':
+            r = find(BB['B1_metrics'], detector=CODE[a[1]], k=a[2], calibration=a[3]); f = a[4]
+            return f"{pct(r[f])} (95% CI {pnum(r[f + '_lo'])}–{pnum(r[f + '_hi'])}%)"
+        if sub == 'ptci':  # b.ptci.RC.5.D2
+            p = find(BB['B1_paired'], calibration=a[1], k=a[2], detector=CODE[a[3]], endpoint='sensitivity')
+            sgn = '+' if p['diff'] >= 0 else '−'
+            return (f"{sgn}{abs(100 * p['diff']):.1f} percentage points vs D1; 95% CI {100 * p['diff_lo']:.1f} to {100 * p['diff_hi']:.1f}; "
+                    f"Holm-adjusted p {pval(p['p_holm'])}").replace(' -', ' −')
+        if sub == 'range':  # b.range.RC.D6,D8,D9.lo|hi  -> min/max sensitivity diff vs D1 over k
+            ds = [CODE[c] for c in a[2].split('+')]
+            v = [p['diff'] for p in BB['B1_paired'] if p['calibration'] == a[1] and p['endpoint'] == 'sensitivity' and p['detector'] in ds]
+            x = min(v) if a[3] == 'lo' else max(v); return f"{100 * x:+.1f}".replace('-', '−')
+        if sub == 'minholm':
+            ds = [CODE[c] for c in a[2].split('+')]
+            return pval(min(p['p_holm'] for p in BB['B1_paired'] if p['calibration'] == a[1] and p['endpoint'] == 'sensitivity' and p['detector'] in ds))
+        if sub == 'thr': return f"{find(BB['thresholds'], detector=CODE[a[1]], k=a[2])[a[3]]:.2f}"
+        if sub == 'ratioD2':
+            v = [r['ratio_SC_RC'] for r in BB['thresholds'] if r['detector'] == CODE['D2']]; return f"{(min(v) if a[1] == 'lo' else max(v) if a[1] == 'hi' else sum(v) / len(v)):.1f}"
+        if sub == 'ratiomax':
+            v = [r['ratio_SC_RC'] for r in BB['thresholds'] if r['detector'] != CODE['D2']]; return f"{max(v):.2f}"
+        if sub == 'ratiomin':
+            v = [r['ratio_SC_RC'] for r in BB['thresholds'] if r['detector'] != CODE['D2']]; return f"{min(v):.2f}"
+        if sub == 'r2': return pct(find(BB['B1_RC_ref2'], detector=CODE[a[1]], k=a[2])[a[3]])
+        if sub == 'hyp':
+            v = BB['hypotheses'][a[1]]; return pct(v, 0) if isinstance(v, float) else str(v)
+        if sub == 'fprrange':  # b.fprrange.SC.D2.lo|hi
+            v = [r['fpr_true_null'] for r in BB['B1_metrics'] if r['calibration'] == a[1] and r['detector'] == CODE[a[2]]]
+            return pct(min(v) if a[3] == 'lo' else max(v))
+    if t == 'b3':
+        if a[0] == 'c': return f"{BB['B3_counts'][a[1]]:,}"
+        if a[0] == 'm': return pct(next(r for r in BB['B3_metrics'] if r['detector'] == CODE[a[1]] and r['k'] == int(a[2]))[a[3]])
+        if a[0] == 'ptci':
+            p = next(r for r in BB['B3_paired'] if r['detector'] == CODE[a[2]] and r['k'] == int(a[1]) and r['endpoint'] == 'sensitivity')
+            sgn = '+' if p['diff'] >= 0 else '−'
+            return (f"{sgn}{abs(100 * p['diff']):.1f} percentage points vs D1; 95% CI {100 * p['diff_lo']:.1f} to {100 * p['diff_hi']:.1f}; "
+                    f"Holm-adjusted p {pval(p['p_holm'])}").replace(' -', ' −')
+    if t == 'b4':
+        if a[0] == 'range':   # b4.range.D1.lo|hi over variants and k
+            v = [r['fpr'] for r in BB['B4_metrics'] if r['detector'] == CODE[a[1]]]; return pct(min(v) if a[2] == 'lo' else max(v))
+        return pct(next(r for r in BB['B4_metrics'] if r['detector'] == CODE[a[0]] and r['k'] == int(a[1]) and r['variant'] == a[2])['fpr'])
     if t == 'meta': return f"{R('run_meta_full.json')[a[0]]:,.0f}"
     raise KeyError(key)
 
@@ -167,10 +213,49 @@ def table4():
       '| Estimand | Not specified | Seed-averaged flags for proportions and differences; majority flag for McNemar | First analysis used majority flags for differences; corrected after review |',
       '| Paired CI | Patient bootstrap | Patient bootstrap | First analysis resampled eyes; corrected after review |',
       '| Not-applicable detectors | Not specified | D4, D7, D10 at 3 tests excluded from counts and Holm families | Cannot flag by design |',
+      '| Amendment B | — | No-change calibration (RC, SC) of D1, D2, D6, D8, D9; matched comparison; all eligible eyes for D1–D4; time-label check | Written and time-stamped after round-1 results and review, before running; hypotheses HB1–HB3 pre-stated |',
       '| Added analyses | — | Cumulative false alarms over four reviews; future-only reference; GRAPE PLR2/PLR3/any labels in tables | Requested in review; exploratory except GRAPE secondary labels (planned) |',
       '| Development use of data | Artes used once in development | D6 false-alarm excess on Artes known before the plan | D6 result is not confirmatory |',
       '| Quick software check | Quick mode on validation subset | Quick mode also processed Artes and GRAPE files before A1/A2 | Outputs not used for any choice |',
       '| D8 features | Features incl. PoPLR statistic and worst-region slope | 14 features: number of tests, span, level and change of mean sensitivity, its slope and z, share of declining points, mean pointwise −log p, worst-decile pointwise slope, spread measures | PoPLR-type summary (mean −log p) and worst-decile slope used instead; fixed before the final run |'])
+
+def table5():
+    L = ['**Table 5** No-change calibration (amendment B): thresholds set on retest data (RC) or on shuffled clinic records (SC)', '',
+         '| Tests | Detector | RC: false alarms, % (95% CI) | RC: sensitivity, % | RC: difference vs D1, pp (95% CI) | SC: false alarms, % (95% CI) | SC: sensitivity, % | Threshold ratio SC/RC |',
+         '|---|---|---|---|---|---|---|---|']
+    for k in (3, 4, 5, 6):
+        for c in ('D1', 'D2', 'D6', 'D8', 'D9'):
+            cell = []
+            for cal in ('RC', 'SC'):
+                r = next(x for x in BB['B1_metrics'] if x['detector'] == CODE[c] and x['k'] == k and x['calibration'] == cal)
+                cell.append(r)
+            if c == 'D1': dtxt = '—'
+            else:
+                p = next(x for x in BB['B1_paired'] if x['detector'] == CODE[c] and x['k'] == k and x['calibration'] == 'RC' and x['endpoint'] == 'sensitivity')
+                dtxt = f"{100 * p['diff']:+.1f} ({100 * p['diff_lo']:.1f} to {100 * p['diff_hi']:.1f})".replace('-', '−')
+            th = next(x for x in BB['thresholds'] if x['detector'] == CODE[c] and x['k'] == k)
+            L.append(f"| {k} | {c} {SHORT[c]} | {pnum(cell[0]['fpr_true_null'])} ({pnum(cell[0]['fpr_true_null_lo'])}–{pnum(cell[0]['fpr_true_null_hi'])}) | "
+                     f"{pnum(cell[0]['sens'])} | {dtxt} | {pnum(cell[1]['fpr_true_null'])} ({pnum(cell[1]['fpr_true_null_lo'])}–{pnum(cell[1]['fpr_true_null_hi'])}) | "
+                     f"{pnum(cell[1]['sens'])} | {th['ratio_SC_RC']:.2f} |")
+    L += ['', ("Each detector's continuous score was thresholded at the 95th percentile of its scores on no-change series: RC, Artes retest "
+               "windows (false-alarm rate cross-fitted over five patient folds); SC, the clinic's own training eyes with their first k tests "
+               "randomly re-ordered (no labels and no retest data needed). D2 score: minus the slope of mean sensitivity; D6: worst regional "
+               "trend statistic. Sensitivity: 26 UWHVF test-set reference progressors. Differences: paired, patient-level bootstrap CI. pp, "
+               "percentage points. Threshold ratio: SC threshold divided by RC threshold (1 = calibration source does not matter).")]
+    return '\n'.join(L)
+
+def tableS6():
+    L = ['**Table S6** Untrained detectors on all UWHVF eyes with a reference label (amendment B3)', '',
+         '| Tests | Detector | Sensitivity, % (95% CI) | Specificity, % (95% CI) | Sensitivity difference vs D1, pp (95% CI; Holm p) |', '|---|---|---|---|---|']
+    for k in (3, 4, 5, 6):
+        for c in ('D1', 'D2', 'D3', 'D4'):
+            if k == 3 and c == 'D4': continue
+            r = next(x for x in BB['B3_metrics'] if x['detector'] == CODE[c] and x['k'] == k)
+            dt = '—' if c == 'D1' else val(f'b3.ptci.{k}.{c}').replace(' percentage points vs D1', '')
+            L.append(f"| {k} | {c} {SHORT[c]} | {pnum(r['sens'])} ({pnum(r['sens_lo'])}–{pnum(r['sens_hi'])}) | {pnum(r['spec'])} ({pnum(r['spec_lo'])}–{pnum(r['spec_hi'])}) | {dt} |")
+    c3 = BB['B3_counts']
+    L += ['', f"{c3['eyes']} eyes ({c3['progressors']} progressors, {c3['stable']} stable) of {c3['patients']} patients from the training, validation and test sets; D1–D4 need no training. Patient-level bootstrap CIs."]
+    return '\n'.join(L)
 
 def tableS2():
     L = ['**Table S2** Sensitivity, % (95% CI), against the secondary reference (full-series PoPLR p < 0.01)', '',
@@ -243,7 +328,7 @@ def renumber_citations(md):
     return md, reflist, order
 
 def fill(text):
-    for name, fn in (('TABLES2', tableS2), ('TABLES3', tableS3), ('TABLES4', tableS4), ('TABLES5', tableS5), ('TABLE1', table1), ('TABLE2', table2), ('TABLE3', table3), ('TABLE4', table4)):
+    for name, fn in (('TABLES2', tableS2), ('TABLES3', tableS3), ('TABLES4', tableS4), ('TABLES5', tableS5), ('TABLES6', tableS6), ('TABLE1', table1), ('TABLE2', table2), ('TABLE3', table3), ('TABLE4', table4), ('TABLE5', table5)):
         text = text.replace('{{' + name + '}}', fn())
     text = re.sub(r'\{\{(?!REFERENCES)([^}]+)\}\}', lambda m: val(m.group(1).strip()), text)
     left = [x for x in re.findall(r'\{\{[^}]*\}\}', text) if x != '{{REFERENCES}}']

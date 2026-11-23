@@ -30,3 +30,8 @@ Ideas counted: six rounds, nine candidate method variants. Because no developmen
 ## S5 Exploratory future-only reference
 
 {{TABLES5}}
+
+
+## S6 Untrained detectors on all eligible eyes
+
+{{TABLES6}}

@@ -213,3 +213,28 @@ pp, percentage points. Stochastic detectors: majority flag over five seeds. GRAP
 | 6 | D10 Self-supervised order net | 45.0 (4) | 62.5 (16) |
 
 Exploratory: among the E1 eyes (primary or secondary reference), reference recomputed from tests k+1..end only (>= 5 tests required), same thresholds as the primary reference. Sample sizes shrink quickly with k; results are imprecise and shown for completeness.
+
+
+## S6 Untrained detectors on all eligible eyes
+
+**Table S6** Untrained detectors on all UWHVF eyes with a reference label (amendment B3)
+
+| Tests | Detector | Sensitivity, % (95% CI) | Specificity, % (95% CI) | Sensitivity difference vs D1, pp (95% CI; Holm p) |
+|---|---|---|---|---|
+| 3 | D1 OLS-MD | 14.7 (9.5–20.6) | 96.3 (93.2–98.8) | — |
+| 3 | D2 MD rate | 23.3 (16.1–30.9) | 85.4 (79.0–90.9) | +8.7; 95% CI 0.7 to 16.4; Holm-adjusted p = 0.047 |
+| 3 | D3 PLR-3 | 3.3 (0.7–6.4) | 98.2 (95.8–100.0) | −11.3; 95% CI −17.1 to −6.2; Holm-adjusted p < 0.001 |
+| 4 | D1 OLS-MD | 26.7 (19.9–33.8) | 95.7 (92.6–98.8) | — |
+| 4 | D2 MD rate | 20.0 (14.5–26.4) | 89.6 (84.1–94.5) | −6.7; 95% CI −13.4 to 0.0; Holm-adjusted p = 0.11 |
+| 4 | D3 PLR-3 | 10.0 (5.7–15.1) | 97.6 (95.0–99.4) | −16.7; 95% CI −24.5 to −9.4; Holm-adjusted p < 0.001 |
+| 4 | D4 PoPLR | 13.3 (8.4–18.6) | 94.5 (91.0–97.7) | −13.3; 95% CI −20.8 to −6.2; Holm-adjusted p = 0.002 |
+| 5 | D1 OLS-MD | 40.0 (32.2–48.2) | 97.6 (94.9–99.4) | — |
+| 5 | D2 MD rate | 18.7 (12.4–25.5) | 94.5 (90.0–98.2) | −21.3; 95% CI −28.6 to −14.5; Holm-adjusted p < 0.001 |
+| 5 | D3 PLR-3 | 19.3 (13.2–25.7) | 98.2 (96.0–100.0) | −20.7; 95% CI −28.4 to −14.0; Holm-adjusted p < 0.001 |
+| 5 | D4 PoPLR | 33.3 (25.8–41.1) | 97.0 (94.0–99.4) | −6.7; 95% CI −12.8 to −1.3; Holm-adjusted p = 0.052 |
+| 6 | D1 OLS-MD | 57.3 (48.7–66.4) | 99.4 (98.1–100.0) | — |
+| 6 | D2 MD rate | 18.0 (12.2–24.5) | 97.6 (94.4–100.0) | −39.3; 95% CI −47.3 to −31.5; Holm-adjusted p < 0.001 |
+| 6 | D3 PLR-3 | 33.3 (25.8–41.6) | 99.4 (98.1–100.0) | −24.0; 95% CI −32.3 to −15.5; Holm-adjusted p < 0.001 |
+| 6 | D4 PoPLR | 53.3 (45.3–61.9) | 97.6 (95.0–99.4) | −4.0; 95% CI −10.1 to 1.4; Holm-adjusted p = 0.26 |
+
+314 eyes (150 progressors, 164 stable) of 236 patients from the training, validation and test sets; D1–D4 need no training. Patient-level bootstrap CIs.
