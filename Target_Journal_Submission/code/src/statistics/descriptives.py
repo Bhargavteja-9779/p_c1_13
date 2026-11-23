@@ -17,7 +17,7 @@ RES = os.path.join(ROOT, 'results')
 def q(x):
     x = np.asarray(x, float)
     return dict(median=float(np.median(x)), q1=float(np.percentile(x, 25)), q3=float(np.percentile(x, 75)),
-                mean=float(x.mean()), sd=float(x.std(ddof=1)), n=int(len(x)))
+                mean=float(x.mean()), sd=float(x.std(ddof=1)), min=float(x.min()), max=float(x.max()), n=int(len(x)))
 
 
 def uwhvf_block():

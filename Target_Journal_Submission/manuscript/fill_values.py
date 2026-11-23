@@ -112,6 +112,42 @@ V['h2_falsified'] = 'was falsified' if h2 else 'was not falsified'
 V['n_valid_gain10'] = str(int(sum(1 for _, r in T[T.endpoint == 'sensitivity'].iterrows()
                                   if r['diff'] >= 0.10 and bool(M[(M.id == r.id) & (M.k == r.k)].valid.iloc[0]))))
 V['h3_status'] = ('met' if rq3['share_within_3pp'] > 0.5 and rq3['spearman_rho'] >= 0.7 else 'partly met')
+# ---- additions after simulated peer review
+V['dSpall_D6_3'] = pval(float(T[(T.id == 'D6') & (T.k == 3) & (T.endpoint == 'sensitivity')].p_holm_all_k.iloc[0]))
+M['strict'] = M.fpr_true_null_hi <= 0.05; M['excess'] = M.fpr_true_null_lo > 0.05
+V['n_cells_strict'] = str(int(M.strict.sum())); V['n_cells_excess'] = str(int(M.excess.sum()))
+V['excess_list'] = ', '.join(f"{r.id} ({int(r.k)} fields)" for _, r in M[M.excess].sort_values(['k']).iterrows())
+V['D1_hi_range'] = f"{pc(M[M.id == 'D1'].fpr_true_null_hi.min(), 1)}–{pc(M[M.id == 'D1'].fpr_true_null_hi.max(), 1)}"
+sv = T[(T.endpoint == 'sensitivity')].merge(M[['id', 'k', 'valid']], on=['id', 'k'])
+V['max_gain_hi'] = f"{100 * sv[sv.valid].diff_hi.max():.0f}"
+rq3 = ST['rq3_audit_concordance']
+V.update(rq3_lo=f"{rq3['spearman_lo']:.2f}", rq3_hi=f"{rq3['spearman_hi']:.2f}", rq3_rho_nz=f"{rq3['spearman_rho_nonzero']:.2f}",
+         rq3_nz=str(rq3['n_cells_nonzero']), aud_inv=str(rq3['audit_invalid_true']), aud_det=str(rq3['audit_invalid_detected']),
+         aud_fw=str(rq3['audit_false_warnings']), aud_nv=str(rq3['audit_n_valid_true']),
+         aud_missed=', '.join(x.replace('@', ' at ') + ' fields' for x in rq3['audit_missed']) or 'none')
+PH = json.load(open(os.path.join(ROOT, 'results', 'posthoc.json')))
+for r in PH['P2_cumulative_false_alarms']:
+    i = r['detector'].split()[0]; V[f'cum_{i}'] = pc(r['any_flag_3to6']); V[f'cumci_{i}'] = ci(r['lo'], r['hi'])
+for r in PH['P3_ppv']:
+    i = f"{r['detector'].split()[0]}_{r['k']}"
+    if r['ppv_grape'] is not None: V[f'ppvg_{i}'] = pc(r['ppv_grape'])
+    if r['ppv_uw_truenull_10'] is not None: V[f'ppv10_{i}'] = pc(r['ppv_uw_truenull_10'])
+V['grape_prev'] = pc(PH['grape_prevalence_MD'])
+P1 = pd.DataFrame(PH['P1_later_reference']); P1['id'] = P1.detector.str.split().str[0]
+for _, r in P1.iterrows():
+    V[f'lr_s_{r.id}_{r.k}'] = pc(r.sens); V[f'lr_np_{r.k}'] = str(r.n_prog); V[f'lr_ns_{r.k}'] = str(r.n_stable)
+P5 = pd.DataFrame(PH['P5_later_reference_tests']); P5['id'] = P5.detector.str.split().str[0]
+r5 = P5[(P5.id == 'D6') & (P5.k == 3)].iloc[0]
+V['lr_d6_only'] = str(int(r5.only_det)); V['lr_d6_p'] = pval(r5.p_holm)
+V['lr_nsig'] = str(int((P5.p_holm < 0.05).sum()))
+P4 = PH['P4_grape_D1_k3_by_visits']
+V.update(g3_f=str(P4['exactly3']['flagged']), g3_n=str(P4['exactly3']['n']), g4_f=str(P4['ge4']['flagged']), g4_n=str(P4['ge4']['n']),
+         g_n3=str(P4['n_eyes_exactly3']), g_pts_min=str(P4['points_per_eye']['min']), g_pts_below=str(P4['points_per_eye']['n_below_max']))
+for k in (3, 4):
+    r = M[(M.id == 'D1') & (M.k == k)].iloc[0]
+    V[f'g_np_{k}'] = str(int(r.grape_sens_n)); V[f'g_ns_{k}'] = str(int(r.grape_spec_n))
+ab = DS['artes']['span_days']
+V['artes_span_q'] = f"{ab['q1']:.0f}–{ab['q3']:.0f}"; V['artes_span_max'] = f"{ab['max']:.0f}"
 V['REFERENCES'] = '{{REFERENCES}}'  # replaced after renumbering
 
 # ---------------- tables ----------------
@@ -129,7 +165,7 @@ def table1():
             ['Age, years', f"Reference eyes: median {V['ref_age']} (IQR {V['ref_age_iqr']})", 'Not used', f"Median {V['grape_age']} (IQR {V['grape_age_iqr']})"],
             ['Progression label', f"Future reference (≥8 fields): {V['n_prog']} progressors, {V['n_stab']} stable, {V['n_indet']} indeterminate",
              'None (no change by design)', f"Rule-based MD label: {V['grape_md']} progressing ({V['grape_md_pct']}%); PLR2 {V['grape_plr2']}; PLR3 {V['grape_plr3']}"],
-            ['Licence', 'BSD-3-Clause', 'GPL-3 (visualFields R package)', 'CC0']]
+            ['Licence', 'BSD-3-Clause', 'Apache-2.0 (visualFields R package)', 'CC0']]
     return rows
 
 
