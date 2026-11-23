@@ -1074,7 +1074,7 @@
   "lr_s_D10_6": "45",
   "lr_d6_only": "8",
   "lr_d6_p": "= 0.07",
-  "lr_nsig": "0",
+  "lr_nsig": "none of the comparisons with D1 was",
   "g3_f": "8",
   "g3_n": "9",
   "g4_f": "4",

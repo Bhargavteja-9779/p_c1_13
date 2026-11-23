@@ -139,7 +139,7 @@ for _, r in P1.iterrows():
 P5 = pd.DataFrame(PH['P5_later_reference_tests']); P5['id'] = P5.detector.str.split().str[0]
 r5 = P5[(P5.id == 'D6') & (P5.k == 3)].iloc[0]
 V['lr_d6_only'] = str(int(r5.only_det)); V['lr_d6_p'] = pval(r5.p_holm)
-V['lr_nsig'] = str(int((P5.p_holm < 0.05).sum()))
+_n = int((P5.p_holm < 0.05).sum()); V['lr_nsig'] = 'none of the comparisons with D1 was' if _n == 0 else f'{_n} comparisons with D1 were'
 P4 = PH['P4_grape_D1_k3_by_visits']
 V.update(g3_f=str(P4['exactly3']['flagged']), g3_n=str(P4['exactly3']['n']), g4_f=str(P4['ge4']['flagged']), g4_n=str(P4['ge4']['n']),
          g_n3=str(P4['n_eyes_exactly3']), g_pts_min=str(P4['points_per_eye']['min']), g_pts_below=str(P4['points_per_eye']['n_below_max']))

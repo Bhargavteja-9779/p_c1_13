@@ -85,20 +85,14 @@
   Validity rule implemented: FPR CI hi <= 10% AND CI lo <= 5%. H2 not falsified; H3 partly met; H4 supported (4/8 ML cells).
   Author-only items left as [AUTHORS ...] placeholders (names, funding, COI, contributions, repo URL).
 
+- Session 3 final: 10 reviews + stakeholder (REVIEW/), response_to_reviews.md, manuscript revised (disclosures,
+  deviations section, PLS, post-hoc P1-P5, overclaims removed), risk_report.md with FINAL DECISION:
+  READY FOR SUBMISSION after author-only fields; label NOT REMARKABLE (honest strongest result), score 19/30.
+  User choices: journal Ophthalmology and Therapy confirmed; code on request; no funding; no competing interests.
+
 ## NEXT ACTION (new session)
-Rebuild anytime: cd Target_Journal_Submission/manuscript && python3 fill_values.py && python3 build_docx.py
-1. Audits: claim-evidence audit (REVIEW/claim_evidence_audit.md), citation audit (each citation context vs paper),
-   consistency + reproducibility audit (pytest, quick mode), supplementary/ (S1 = table_metrics_all, S2 = paired tests,
-   Note S1 = escalation log summary), figures as TIFF.
-2. 10 adversarial reviews + stakeholder review in REVIEW/ (review_01..10.md, review_stakeholder.md); fix issues.
-3. risk_report.md, final decision (expected NOT REMARKABLE: honest strongest result), show user final package.
-4. Open user requests: JCR quartile check, APC USD 8,050 OK?, author details.
-   USER CONFIRMED journal Ophthalmology and Therapy (2026-11-23; APC/quartile risk explained).
-   USER DECIDED (2026-11-23): code available on request (no public repo); no funding; no competing interests -> applied.
-5. DONE so far: summarise.py fixes (patient-clustered paired CI, exact CI if degenerate, Holm across k, rho CI, audit
-   classification) + code/src/statistics/posthoc.py -> results/posthoc.json (P1-P5, labelled POST HOC). Reviews 01-04,09,10,
-   stakeholder in REVIEW/. NEXT: revise manuscript_template.md per reviews (list below + review_05-08 when done).
-   Reviews 09/10/stakeholder done; 01-08 running/ done? (check REVIEW/). Fixes planned: KSP/abstract 'two detectors that
-   flagged the most' is wrong (D2 38% valid); soften 'strong default'; power/MDE statement; post-hoc reference using only
-   fields after k; cumulative false flags across k=3-6 (E2 same pid|i|d); PPV at GRAPE prevalence; GRAPE circular for D1;
-   D6 Artes FPR known from development (not held-out); shuffle audit rho<0.7; plain-language summary; patient message.
+Package is complete. Only remaining: user fills [AUTHORS ...] fields (names, affiliations, ORCID, address, CRediT,
+per-author COI sentence, confirm AI statement) in manuscript/manuscript_template.md, then rebuild:
+  cd Target_Journal_Submission/manuscript && python3 fill_values.py && python3 build_docx.py
+Optional improvements: STARD flow diagram, Fig. 2 label overlap, trim main text (~5,700 words), pre-submission
+enquiry to editor about scope.

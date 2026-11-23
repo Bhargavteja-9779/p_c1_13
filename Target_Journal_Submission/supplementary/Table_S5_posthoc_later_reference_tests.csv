@@ -1,0 +1,37 @@
+detector,k,n,diff,only_det,only_D1,p,p_holm
+D2 MD-rate <= -1 dB/yr,3,17,0.11764705882352941,3,1,0.625,1.0
+D3 PLR >=3 points,3,17,-0.058823529411764705,0,1,1.0,1.0
+D4 PoPLR (within-eye permutation),3,17,-0.058823529411764705,0,1,1.0,1.0
+D5 Pooled-shuffle conformal MD,3,17,0.0,0,0,1.0,1.0
+D6 Pooled-detrended conformal region-max,3,17,0.47058823529411764,8,0,0.0078125,0.0703125
+D7 Event analysis (GPA-like),3,17,-0.058823529411764705,0,1,1.0,1.0
+D8 ML-tabular (LightGBM),3,17,0.11764705882352941,3,1,0.625,1.0
+D9 ML-sequence (GRU),3,17,0.0,1,1,1.0,1.0
+D10 Self-supervised order net + permutation,3,17,-0.058823529411764705,0,1,1.0,1.0
+D2 MD-rate <= -1 dB/yr,4,14,-0.14285714285714285,0,2,0.5,1.0
+D3 PLR >=3 points,4,14,0.0,1,1,1.0,1.0
+D4 PoPLR (within-eye permutation),4,14,-0.14285714285714285,0,2,0.5,1.0
+D5 Pooled-shuffle conformal MD,4,14,0.0,0,0,1.0,1.0
+D6 Pooled-detrended conformal region-max,4,14,0.0,1,1,1.0,1.0
+D7 Event analysis (GPA-like),4,14,-0.14285714285714285,1,3,0.625,1.0
+D8 ML-tabular (LightGBM),4,14,0.0,1,1,1.0,1.0
+D9 ML-sequence (GRU),4,14,-0.14285714285714285,1,3,0.625,1.0
+D10 Self-supervised order net + permutation,4,14,-0.07142857142857142,1,2,1.0,1.0
+D2 MD-rate <= -1 dB/yr,5,6,-0.16666666666666666,0,1,1.0,1.0
+D3 PLR >=3 points,5,6,0.0,0,0,1.0,1.0
+D4 PoPLR (within-eye permutation),5,6,0.0,0,0,1.0,1.0
+D5 Pooled-shuffle conformal MD,5,6,0.0,0,0,1.0,1.0
+D6 Pooled-detrended conformal region-max,5,6,-0.16666666666666666,0,1,1.0,1.0
+D7 Event analysis (GPA-like),5,6,0.0,2,2,1.0,1.0
+D8 ML-tabular (LightGBM),5,6,0.16666666666666666,1,0,1.0,1.0
+D9 ML-sequence (GRU),5,6,0.16666666666666666,2,1,1.0,1.0
+D10 Self-supervised order net + permutation,5,6,0.16666666666666666,1,0,1.0,1.0
+D2 MD-rate <= -1 dB/yr,6,4,-0.25,0,1,1.0,1.0
+D3 PLR >=3 points,6,4,-0.25,0,1,1.0,1.0
+D4 PoPLR (within-eye permutation),6,4,0.0,0,0,1.0,1.0
+D5 Pooled-shuffle conformal MD,6,4,0.0,0,0,1.0,1.0
+D6 Pooled-detrended conformal region-max,6,4,0.25,1,0,1.0,1.0
+D7 Event analysis (GPA-like),6,4,0.25,1,0,1.0,1.0
+D8 ML-tabular (LightGBM),6,4,0.5,2,0,0.5,1.0
+D9 ML-sequence (GRU),6,4,0.0,1,1,1.0,1.0
+D10 Self-supervised order net + permutation,6,4,0.25,1,0,1.0,1.0

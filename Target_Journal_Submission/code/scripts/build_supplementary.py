@@ -11,10 +11,14 @@ M.to_csv(os.path.join(S, 'Table_S1_all_metrics.csv'), index=False)
 shutil.copy(os.path.join(ROOT, 'tables', 'table_paired_tests_vs_D1.csv'), os.path.join(S, 'Table_S2_paired_tests_vs_D1.csv'))
 D = json.load(open(os.path.join(ROOT, 'results', 'descriptives.json')))
 pd.DataFrame(D['tests_to_first_detection']).to_csv(os.path.join(S, 'Table_S3_tests_to_first_detection.csv'), index=False)
-with pd.ExcelWriter(os.path.join(S, 'Supplementary_Tables_S1-S3.xlsx')) as w:
+for n in ('table_S4_posthoc_later_reference.csv', 'table_S5_posthoc_later_reference_tests.csv'):
+    shutil.copy(os.path.join(ROOT, 'tables', n), os.path.join(S, n.replace('table_', 'Table_')))
+with pd.ExcelWriter(os.path.join(S, 'Supplementary_Tables_S1-S5.xlsx')) as w:
     M.to_excel(w, sheet_name='S1 all metrics', index=False)
     pd.read_csv(os.path.join(S, 'Table_S2_paired_tests_vs_D1.csv')).to_excel(w, sheet_name='S2 paired vs D1', index=False)
     pd.DataFrame(D['tests_to_first_detection']).to_excel(w, sheet_name='S3 tests to first flag', index=False)
+    pd.read_csv(os.path.join(ROOT, 'tables', 'table_S4_posthoc_later_reference.csv')).to_excel(w, sheet_name='S4 post hoc later ref', index=False)
+    pd.read_csv(os.path.join(ROOT, 'tables', 'table_S5_posthoc_later_reference_tests.csv')).to_excel(w, sheet_name='S5 post hoc tests', index=False)
 F = os.path.join(ROOT, 'figures')
 for f in sorted(os.listdir(F)):
     if f.endswith('.png'):
