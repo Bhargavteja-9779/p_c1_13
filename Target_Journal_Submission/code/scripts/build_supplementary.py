@@ -15,9 +15,11 @@ for n, m in (('table_A3a_sct.csv', 'Table_S6a_shuffle_calibration.csv'), ('table
              ('table_A3b_confirmation.csv', 'Table_S7_confirmation.csv'), ('table_A3c_enlarged_reference.csv', 'Table_S8a_enlarged_reference.csv'),
              ('table_A3c_tests_vs_D1.csv', 'Table_S8b_enlarged_reference_tests.csv')):
     shutil.copy(os.path.join(ROOT, 'tables', n), os.path.join(S, m))
+shutil.copy(os.path.join(ROOT, 'tables', 'table3_grape.csv'), os.path.join(S, 'Table_S9_grape_nominal.csv'))
+shutil.copy(os.path.join(ROOT, 'figures', 'fig3_shuffle_audit_vs_true_null.png'), os.path.join(S, 'Fig_S1_shuffle_audit.png'))
 for n in ('table_S4_posthoc_later_reference.csv', 'table_S5_posthoc_later_reference_tests.csv'):
     shutil.copy(os.path.join(ROOT, 'tables', n), os.path.join(S, n.replace('table_', 'Table_')))
-with pd.ExcelWriter(os.path.join(S, 'Supplementary_Tables_S1-S8.xlsx')) as w:
+with pd.ExcelWriter(os.path.join(S, 'Supplementary_Tables_S1-S9.xlsx')) as w:
     M.to_excel(w, sheet_name='S1 all metrics', index=False)
     pd.read_csv(os.path.join(S, 'Table_S2_paired_tests_vs_D1.csv')).to_excel(w, sheet_name='S2 paired vs D1', index=False)
     pd.DataFrame(D['tests_to_first_detection']).to_excel(w, sheet_name='S3 tests to first flag', index=False)
@@ -25,7 +27,7 @@ with pd.ExcelWriter(os.path.join(S, 'Supplementary_Tables_S1-S8.xlsx')) as w:
     pd.read_csv(os.path.join(ROOT, 'tables', 'table_S5_posthoc_later_reference_tests.csv')).to_excel(w, sheet_name='S5 post hoc tests', index=False)
     for n, sh in (('table_A3a_sct.csv', 'S6a shuffle calibration'), ('table_A3a_sct_tests_vs_D1.csv', 'S6b calibration tests'),
                   ('table_A3b_confirmation.csv', 'S7 confirmation'), ('table_A3c_enlarged_reference.csv', 'S8a enlarged reference'),
-                  ('table_A3c_tests_vs_D1.csv', 'S8b enlarged ref tests')):
+                  ('table_A3c_tests_vs_D1.csv', 'S8b enlarged ref tests'), ('table3_grape.csv', 'S9 GRAPE nominal')):
         pd.read_csv(os.path.join(ROOT, 'tables', n)).to_excel(w, sheet_name=sh, index=False)
 F = os.path.join(ROOT, 'figures')
 for f in sorted(os.listdir(F)):

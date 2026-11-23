@@ -40,6 +40,7 @@ def uwhvf_block():
         out[f'{name}_md_baseline'] = q([md_series(s['td'][:1])[0] for s in grp])
         out[f'{name}_interval_first6_yr'] = q([np.diff(s['ages'][:6]).mean() for s in grp])
         out[f'{name}_time_to_test6_yr'] = q([s['ages'][5] - s['ages'][0] for s in grp])
+        out[f'{name}_time_to_test3_yr'] = q([s['ages'][2] - s['ages'][0] for s in grp])
     return out
 
 

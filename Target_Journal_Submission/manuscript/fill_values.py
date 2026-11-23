@@ -75,7 +75,7 @@ V.update(n_uw_fields=fmt_n(u['n_fields']), n_uw_eyes=fmt_n(u['n_eyes']), n_uw_pa
          ref_ntests=f"{u['ref_n_tests']['median']:.0f}", ref_fu=f"{u['ref_followup_yr']['median']:.1f}",
          ref_fu_iqr=f"{u['ref_followup_yr']['q1']:.1f}–{u['ref_followup_yr']['q3']:.1f}",
          ref_int=f"{u['ref_interval_first6_yr']['median']:.1f}", ref_int_iqr=f"{u['ref_interval_first6_yr']['q1']:.1f}–{u['ref_interval_first6_yr']['q3']:.1f}",
-         ref_t6=f"{u['ref_time_to_test6_yr']['median']:.1f}",
+         ref_t6=f"{u['ref_time_to_test6_yr']['median']:.1f}", ref_t3=f"{u['ref_time_to_test3_yr']['median']:.1f}",
          n_artes=str(a['n_patients']), n_artes_fields=str(a['n_fields']), artes_span=f"{a['span_days']['median']:.0f}",
          **{f'artes_win_{k}': str(a['windows'][str(k)]) for k in KS},
          artes_win_draws=fmt_n(10 * sum(a['windows'][str(k)] for k in KS)),
@@ -182,6 +182,29 @@ for _, r in ET.iterrows():
     tag = 'endS' if r.endpoint == 'sensitivity' else 'endF'; s_ = f"{r.id}_{int(r.k)}"
     V[f'{tag}_{s_}'] = f"{abs(100 * r['diff']):.0f}"; V[f'{tag}ci_{s_}'] = f"{100 * r.diff_lo:.0f} to {100 * r.diff_hi:.0f}"; V[f'{tag}p_{s_}'] = pval(r.p_holm)
 V['a3_runtime'] = f"{A3['meta']['runtime_s'] / 60:.0f}"
+# ---- round-2 editor fixes: plain names, clinical-implication table, consistent validity counts
+PLAIN = {'D1': 'trend test (OLS-MD)', 'D2': 'MD-rate rule', 'D3': 'PLR-3', 'D4': 'PoPLR', 'D5': 'pooled conformal test',
+         'D6': 'detrended conformal test', 'D7': 'event analysis', 'D8': 'gradient-boosted trees', 'D9': 'recurrent network',
+         'D10': 'order network'}
+V['ml_invalid'] = str(int((~ml.valid).sum()) if 'valid' in ml else int((~M[M.id.isin(['D8', 'D9'])].valid).sum()))
+V['n_cells_invalid'] = str(int((~M.valid).sum()))
+def ppv(se, fpr, pi=0.10): return se * pi / (se * pi + fpr * (1 - pi)) if se * pi + fpr * (1 - pi) > 0 else float('nan')
+rows = [['Detector (threshold)', 'Sensitivity, 3 fields (%)', 'False flags per 1,000 stable eyes, 3 fields', 'True flags among all flags at 10% prevalence, 3 fields (%)',
+         'Progressors flagged at any of fields 3–6 (%)', 'No-change series falsely flagged at any of fields 3–6 (%)']]
+csv = []
+CUM = {r['detector'].split()[0]: r['any_flag_3to6'] for r in PH['P2_cumulative_false_alarms']}
+for i in IDS:
+    r = M[(M.id == i) & (M.k == 3)].iloc[0]; p_ = ppv(r.sens, r.fpr_true_null)
+    rows.append([f'{i} {PLAIN[i]}, nominal', pc(r.sens), f'{1000 * r.fpr_true_null:.0f}', pc(p_) if r.sens > 0 else '–',
+                 pc(TT[i]['flagged_by6']), pc(CUM[i])])
+    csv.append(dict(detector=i, threshold='nominal', sens3=r.sens, fpr3=r.fpr_true_null, ppv10_3=p_, flagged_by6=TT[i]['flagged_by6'], cum_false=CUM[i]))
+for _, r in X[X.k == 3].iterrows():
+    p_ = ppv(r.sens, r.fpr_true_null)
+    rows.append([f'{r.id} {PLAIN[r.id]}, shuffle-calibrated', pc(r.sens), f'{1000 * r.fpr_true_null:.0f}', pc(p_), '–', '–'])
+    csv.append(dict(detector=r.id, threshold='shuffle-calibrated', sens3=r.sens, fpr3=r.fpr_true_null, ppv10_3=p_))
+    V[f'xppv_{r.id}_3'] = pc(p_)
+pd.DataFrame(csv).to_csv(os.path.join(ROOT, 'tables', 'table3_clinical_implications.csv'), index=False)
+CLIN_ROWS = rows
 V['REFERENCES'] = '{{REFERENCES}}'  # replaced after renumbering
 
 # ---------------- tables ----------------
@@ -237,7 +260,7 @@ def md_table(rows):
     return '\n'.join(['| ' + ' | '.join(rows[0]) + ' |', '|' + '---|' * len(rows[0])] + ['| ' + ' | '.join(r) + ' |' for r in rows[1:]])
 
 
-V['TABLE1'] = md_table(table1()); V['TABLE2'] = md_table(table2()); V['TABLE3'] = md_table(table3())
+V['TABLE_CLIN'] = md_table(CLIN_ROWS); V['TABLE1'] = md_table(table1()); V['TABLE2'] = md_table(table2()); V['TABLE3'] = md_table(table3())
 
 # ---------------- substitution ----------------
 def _minus(v):

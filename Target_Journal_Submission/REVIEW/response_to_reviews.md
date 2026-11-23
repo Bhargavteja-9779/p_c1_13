@@ -52,3 +52,15 @@ Pre-specified in code/experiments/protocol.md (Amendment A3) and committed BEFOR
   p = 0.047) but D2 also +11 pp false positives in stable eyes.
 Manuscript reframed: title, abstract, KSP, PLS, Results (new sections), Discussion (mechanism + practical recipe),
 Fig. 5 (new), Supplementary Tables S6-S8. Main text shortened from ~5,700 to ~5,000 words (incl. tables).
+
+## Round 3 — editor desk check (REVIEW/review_round2_editor.md): "send to review after quick pre-review revision"
+Applied (no new data): title reframed around treatment escalation; plain detector names in text; three plain
+questions instead of RQ/H codes; new Table 3 (clinical implications: false flags per 1,000, share of true flags at
+10% prevalence, cumulative false flags, progressors flagged by field 6); claims softened ("largest apparent gains
+came with excess false alarms", "not evidence of equivalence", MD-rate rule's non-significant valid gain reported);
+A3 labelled exploratory and its result-dependent detector choice disclosed; calibration cost in abstract/KSP
+(external sensitivity 10% vs 44%); abstract leads with D8 (independent) instead of D6; time scale in abstract
+(3 fields = median years); PPV reported; validity counts made consistent (invalid per primary rule); Fig. 3 (audit)
+and GRAPE table moved to supplement (Fig. S1, Table S9); Fig. 2 shared x-axis; Fig. 4 (calibration) now shows
+external sensitivity as well as specificity; PLS "about weekly". Main text ~4,070 words excluding tables.
+Not applied: public code deposit (user decided "on request").

@@ -97,6 +97,9 @@
 - A3 DONE (a3_raw.csv.gz, a3_summary.json, fig5). Manuscript rewritten around shuffle calibration (title changed),
   supplementary S6-S8, response_to_reviews round 2, risk_report rescored 22/30.
 
+- Round-2 editor desk review applied (see response_to_reviews.md Round 3). Title now "False Progression Flags and
+  Treatment Escalation in Glaucoma: ...". Main text ~4,070 words excl. tables; 4 main figures, 3 main tables.
+
 ## NEXT ACTION (new session)
-1. Optional fresh editor/desk review of the new version (REVIEW/review_round2_editor.md) and fix.
-2. User fills [AUTHORS ...] fields; rebuild: cd Target_Journal_Submission/manuscript && python3 fill_values.py && python3 build_docx.py
+User fills [AUTHORS ...] fields; rebuild: cd Target_Journal_Submission/manuscript && python3 fill_values.py && python3 build_docx.py
+Remaining risks in risk_report.md (scope, small reference, exploratory A3, code on request).

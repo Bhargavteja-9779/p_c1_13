@@ -15,7 +15,8 @@ plt.rcParams.update({'font.size': 9, 'axes.spines.top': False, 'axes.spines.righ
 def short(det): return det.split()[0]
 
 def fig_validity_power(M):
-    ks = sorted(M.k.unique()); fig, axs = plt.subplots(1, len(ks), figsize=(3.0 * len(ks), 3.2), sharey=True)
+    ks = sorted(M.k.unique()); fig, axs = plt.subplots(1, len(ks), figsize=(3.0 * len(ks), 3.2), sharey=True, sharex=True)
+    xmax = float(M.fpr_true_null_hi.max()) * 1.05
     axs = np.atleast_1d(axs)
     for ax, k in zip(axs, ks):
         m = M[M.k == k].dropna(subset=['sens', 'fpr_true_null'])
@@ -27,7 +28,7 @@ def fig_validity_power(M):
                         capsize=0, mec='white', mew=1.2, zorder=3)
             ax.annotate(short(r.detector), (r.fpr_true_null, r.sens), xytext=(4, 3), textcoords='offset points', fontsize=7, color='#0b0b0b')
         ax.set_title(f'{k} tests', fontsize=9); ax.set_xlabel('False-alarm rate, true no-change')
-        ax.set_xlim(left=0); ax.set_ylim(0, 1); ax.grid(axis='y', color='#e9e9e6', lw=0.6)
+        ax.set_xlim(0, xmax); ax.set_ylim(0, 1); ax.grid(axis='y', color='#e9e9e6', lw=0.6)
     axs[0].set_ylabel('Sensitivity, future-confirmed progressors')
     hs = [plt.Line2D([], [], marker=v[2], ls='', color=v[1], label=v[0]) for v in {v[0]: v for v in FAM.values()}.values()]
     fig.legend(handles=hs, loc='upper center', ncol=4, frameon=False, bbox_to_anchor=(0.5, 1.04))
@@ -100,15 +101,17 @@ def fig_sct(M):
         ax.set_xlabel('False-alarm rate, true no-change', fontsize=8)
         if i == 0: ax.set_ylabel('Sensitivity, future-confirmed progressors')
     ax = fig.add_subplot(gs[0, 4]); g3 = S[(S.k == 3) & S.grape_spec.notna()]
-    bars = [('D1', M[(M.k == 3) & M.detector.str.startswith('D1 ')].iloc[0].grape_spec, '#2a78d6', None)]
+    d1g = M[(M.k == 3) & M.detector.str.startswith('D1 ')].iloc[0]
+    items = [('D1', d1g.grape_sens, d1g.grape_spec, '#2a78d6', None)]
     for _, r in g3.iterrows():
         nm = r.detector.split()[0]; o = M[(M.k == 3) & (M.detector == r.detector)].iloc[0]; col = FAM[nm][1]
-        bars += [(f'{nm}\nnom.', o.grape_spec, col, '//'), (f'{nm}\ncal.', r.grape_spec, col, None)]
-    for j, (lab, v, col, h) in enumerate(bars):
-        ax.bar(j, v, color='white' if h else col, edgecolor=col, hatch=h, lw=1.0)
-        ax.text(j, v + 0.015, f'{100 * v:.0f}', ha='center', fontsize=7)
-    ax.set_xticks(range(len(bars))); ax.set_xticklabels([b[0] for b in bars], fontsize=7); ax.set_ylim(0, 1.08)
-    ax.set_ylabel('Specificity, GRAPE (3 fields)', labelpad=2); ax.set_title('External data set', fontsize=9)
+        items += [(f'{nm}\nnom.', o.grape_sens, o.grape_spec, col, '//'), (f'{nm}\ncal.', r.grape_sens, r.grape_spec, col, None)]
+    for j2, (lab, se, sp, col, h) in enumerate(items):
+        for off, v, a_ in ((-0.2, sp, 1.0), (0.2, se, 0.45)):
+            ax.bar(j2 + off, v, width=0.38, color='white' if h else col, edgecolor=col, hatch=h, lw=1.0, alpha=a_ if not h else 1.0)
+            ax.text(j2 + off, v + 0.015, f'{100 * v:.0f}', ha='center', fontsize=6)
+    ax.set_xticks(range(len(items))); ax.set_xticklabels([b[0] for b in items], fontsize=7); ax.set_ylim(0, 1.1)
+    ax.set_ylabel('GRAPE, 3 fields', labelpad=2); ax.set_title('External: specificity (left) / sensitivity (right)', fontsize=8)
     hs = [plt.Line2D([], [], marker='o', ls='', mfc='white', mec='#52514e', label='nominal threshold'),
           plt.Line2D([], [], marker='o', ls='', color='#52514e', label='shuffle-calibrated threshold')]
     fig.legend(handles=hs, loc='upper center', ncol=2, frameon=False, bbox_to_anchor=(0.42, 1.06), fontsize=8)
