@@ -1,0 +1,118 @@
+title,doi,received,accepted,days
+A knowledge-driven deep learning system for amplitude window selection in seismic signals,10.1007/s10618-026-01237-4,2026-01-16,2026-06-17,152
+Trace alignment algorithm optimization,10.1007/s10618-025-01130-6,2024-06-09,2025-07-02,388
+A multi-class imbalanced data stream classification algorithm based on sample weighting and adaptive oversampling,10.1007/s10618-026-01197-9,2025-09-27,2026-02-27,153
+SimHawNet: a modified Hawkes process for temporal network simulation,10.1007/s10618-025-01119-1,2025-04-15,2025-06-08,54
+JammyTS: joint attention and memory network for temporal scoping of facts,10.1007/s10618-025-01156-w,2024-02-25,2025-08-06,528
+Emp: enhance memory in data pruning,10.1007/s10618-025-01183-7,2024-12-18,2025-12-16,363
+Label-free dataset profiling for federated client clustering,10.1007/s10618-026-01240-9,2026-01-12,2026-06-20,159
+Multimodal knowledge graph completion method for addressing imbalance of modal information,10.1007/s10618-026-01272-1,2025-08-08,2026-08-31,388
+Parallelization of incremental aggregations over sliding windows,10.1007/s10618-026-01252-5,2023-08-11,2026-08-05,1090
+On the number of iterations of the DBA algorithm,10.1007/s10618-025-01116-4,2024-12-18,2025-06-08,172
+"Crypsis: an elitism-driven observer-based approach for detection and mitigation of concept drift, concept evolution, and label drift",10.1007/s10618-026-01191-1,2024-10-20,2026-02-03,471
+Detecting and reacting to smart home novelties,10.1007/s10618-025-01158-8,2023-06-13,2025-08-18,797
+Leveraging internal representations of GNNs with Shapley values,10.1007/s10618-025-01159-7,2025-02-01,2025-08-20,200
+Improve contrastive clustering performance by multiple fusing-augmenting ViT blocks,10.1007/s10618-026-01186-y,2024-12-27,2026-01-04,373
+Explainable course recommendation with knowledge graphs: a comparative audit of diverse modeling paradigms,10.1007/s10618-026-01261-4,2025-10-27,2026-08-29,306
+Focused PU learning from imbalanced data,10.1007/s10618-026-01264-1,2025-09-30,2026-08-31,335
+Gradient boosted bagging for evolving data stream regression,10.1007/s10618-025-01147-x,2025-06-08,2025-07-20,42
+Entropy-regularized multimodal fusion for robust and explainable knowledge graph completion,10.1007/s10618-026-01198-8,2025-10-26,2026-03-08,133
+Localization-aware chest X-ray classification via segmentation and gradient-based attention,10.1007/s10618-026-01214-x,2025-11-05,2026-04-16,162
+Steering the LoCoMotif: Using domain knowledge in time series motif discovery,10.1007/s10618-025-01143-1,2025-06-20,2025-07-19,29
+Adaptive interactive network component ensemble for streaming data with concept drift,10.1007/s10618-025-01125-3,2024-02-23,2025-06-09,472
+"Detection of unobserved common causes under additive noise models based on NML code for discrete, mixed, and continuous variables",10.1007/s10618-025-01166-8,2024-02-28,2025-10-09,589
+Combating confirmation bias: a unified pseudo-labeling framework for entity alignment,10.1007/s10618-025-01128-0,2023-07-07,2025-06-13,707
+OLIVANDER: a counterfactual-based method to generate adversarial Windows PE malware,10.1007/s10618-025-01127-1,2025-02-13,2025-06-09,116
+Hamming encoder: mining discriminative k-mers for discrete sequence classification,10.1007/s10618-025-01113-7,2023-10-21,2025-05-22,579
+A regional representation method based on modeling bidirectional interrelationships between pairwise POI categories,10.1007/s10618-025-01179-3,2025-04-17,2025-11-26,223
+Poisson subspace clustering: focusing on the essentials in count data,10.1007/s10618-026-01230-x,2025-10-30,2026-05-27,209
+A clustering framework for skewed features with low true cluster separation,10.1007/s10618-026-01238-3,2025-08-28,2026-06-19,295
+Towards fair evaluation of digital skills training on career adaptability and outcomes,10.1007/s10618-026-01223-w,2025-10-29,2026-05-12,195
+Does user-end work? User-item-aware knowledge graph convolutional networks for recommendation,10.1007/s10618-025-01138-y,2024-01-31,2025-07-12,528
+Unpacking the trend: decomposition as a catalyst to enhance time series forecasting models,10.1007/s10618-025-01120-8,2025-04-02,2025-06-08,67
+Overlapping community detection with a new modularity measure in directed weighted networks,10.1007/s10618-025-01153-z,2024-11-12,2025-07-29,259
+Bmqexpander: ontology-guided query expansion for biomedical document retrieval using large language models,10.1007/s10618-026-01220-z,2025-10-30,2026-05-10,192
+MOUFLON: multi-group modularity-based fairness-aware community detection,10.1007/s10618-026-01260-5,2025-10-13,2026-08-26,317
+Spatiotemporal attention-based real-time video watermarking,10.1007/s10618-025-01129-z,2025-02-06,2025-07-02,146
+Learning curvature-aware multimodal representations with bicomplex embeddings,10.1007/s10618-026-01257-0,2026-03-17,2026-08-19,155
+PersAD: adversarial protection against text-based personality inference,10.1007/s10618-025-01144-0,2025-05-28,2025-07-19,52
+Instance space of clustering validation measures,10.1007/s10618-026-01195-x,2025-05-26,2026-02-09,259
+Topic-aware influence maximization with deep reinforcement learning and graph attention networks,10.1007/s10618-025-01133-3,2025-04-21,2025-07-09,79
+FastPACE: Fast PlAnning of Counterfactual Explanations for time series classification,10.1007/s10618-026-01242-7,2026-01-15,2026-06-22,158
+RMIDDM: an unsupervised and interpretable concept drift detection method for data streams,10.1007/s10618-025-01155-x,2024-08-02,2025-08-04,367
+Indexing demand response potential at multiple temporal granularity using network theory based analysis,10.1007/s10618-025-01164-w,2024-11-23,2025-09-07,288
+Structured temporal representation in time series classification with ROCKETs and hyperdimensional computing,10.1007/s10618-025-01162-y,2024-12-07,2025-08-31,267
+Metadata supported scale space attention networks for multivariate timeseries prediction,10.1007/s10618-025-01151-1,2024-05-14,2025-07-27,439
+Shift-level regulated continual test-time adaptation framework,10.1007/s10618-026-01222-x,2025-12-07,2026-05-10,154
+Fitter: post-mining user-preferred co-location patterns interactively,10.1007/s10618-025-01175-7,2024-06-03,2025-11-03,518
+Quantitative evaluation of motif sets in time series,10.1007/s10618-025-01169-5,2024-12-12,2025-10-12,304
+Minimum length estimation in longest frequent itemsets mining,10.1007/s10618-026-01270-3,2025-04-21,2026-08-31,497
+Weighting disagreements with likelihood for boolean matrix factorization and correlation clustering,10.1007/s10618-026-01278-9,2026-01-15,2026-09-30,258
+Efficient training of deep networks using guided spectral data selection: a step toward learning what you need,10.1007/s10618-026-01215-w,2025-04-16,2026-04-21,370
+One-step tensor low-frequency learning for incomplete multi-view clustering,10.1007/s10618-026-01263-2,2026-04-06,2026-08-31,147
+CODAC: Constraint-based Deep Active Clustering,10.1007/s10618-026-01229-4,2025-10-31,2026-05-25,206
+Relation prediction based on the attention-enhanced fusion of graph strcuture and multi-hop neighborhood information in knowledge graphs,10.1007/s10618-025-01141-3,2024-10-22,2025-07-12,263
+Automatic discovery of disease subgroups by contrasting with healthy controls,10.1007/s10618-026-01233-8,2026-01-13,2026-06-03,141
+Evolving digital skill demands before and after generative AI: a global network analysis via upwork data,10.1007/s10618-026-01271-2,2025-08-26,2026-08-31,370
+Exploring zero-shot essay scoring: from feature-based to LLM-based approaches,10.1007/s10618-026-01193-z,2025-10-07,2026-02-05,121
+Fastere: a fast framework for entity relation extractions,10.1007/s10618-025-01146-y,2025-04-21,2025-07-19,89
+ARM-stream: active recovery of miscategorizations in clustering-based data stream classifiers,10.1007/s10618-025-01124-4,2025-04-24,2025-06-09,46
+Clustering of count data using nested multinomial Dirichlet finite mixture model and its extensions,10.1007/s10618-026-01250-7,2026-07-27,2026-07-28,1
+DiaSeg: diagonal segment extraction from DTW paths for interpretable gait analysis,10.1007/s10618-026-01276-x,2026-05-04,2026-09-19,138
+A novel graph-based patient embedding method for the diagnosis of Alzheimer’s disease from microRNA expression data,10.1007/s10618-026-01275-y,2025-10-30,2026-09-19,324
+Critical node identification through triplet node influence in complex networks,10.1007/s10618-026-01285-w,2025-07-08,2026-09-30,449
+Online transfer learning framework for label scarcity in evolving data streams,10.1007/s10618-025-01167-7,2025-02-17,2025-10-12,237
+Greatmeta: gradient-aware adaptive meta-learning for cold-start recommendations,10.1007/s10618-025-01123-5,2025-04-13,2025-06-09,57
+On the definition and detection of cherry-picking in counterfactual explanations,10.1007/s10618-026-01234-7,2026-01-12,2026-06-03,142
+Large-scale structured subspace clustering,10.1007/s10618-026-01268-x,2025-10-22,2026-08-31,313
+Entity completion for industrial knowledge graph based on zero-shot learning,10.1007/s10618-025-01160-0,2023-07-29,2025-08-25,758
+A framework fusing entity concepts and GAN negative sampling for improving knowledge reasoning,10.1007/s10618-026-01207-w,2023-07-05,2026-04-01,1001
+Direction-aware multi-label feature selection via paired signed-deviation lifting,10.1007/s10618-026-01265-0,2026-03-31,2026-08-31,153
+Fed-FUEL: fairness and utility enhancing agnostic federated learning framework,10.1007/s10618-025-01152-0,2025-02-08,2025-07-27,169
+Multi-hop reasoning model for knowledge graph completion on the example of the telecommunications domain,10.1007/s10618-026-01206-x,2025-10-13,2026-03-19,157
+Topology only pre-training: towards generalised multi-domain graph models,10.1007/s10618-026-01210-1,2025-10-23,2026-04-03,162
+Inductive influence estimation and maximization over unseen social networks under two diffusion models,10.1007/s10618-025-01137-z,2024-03-24,2025-07-12,475
+Certifying robustness of graph convolutional networks for node perturbation with polyhedra abstract interpretation,10.1007/s10618-025-01180-w,2024-10-09,2025-11-27,414
+Large language models are zero-shot point-of-interest recommenders,10.1007/s10618-025-01148-w,2025-06-10,2025-07-20,40
+When subgraphs outperform graphs: a scalable training strategy for churn prediction on large class-imbalanced networks,10.1007/s10618-025-01184-6,2025-10-20,2025-12-16,57
+T-TExTS (Teaching Text Expansion for Teacher Scaffolding): Enhancing Text Selection in High School Literature through Knowledge Graph-Based Recommenda,10.1007/s10618-026-01228-5,2025-06-06,2026-05-21,349
+Recgp: gradient penalization for transferable adversarial attacks in recommendation systems,10.1007/s10618-026-01253-4,2025-05-07,2026-08-09,459
+Differentiable parameter-less co-clustering using graph neural networks,10.1007/s10618-026-01211-0,2025-10-27,2026-04-03,158
+TEOKGC: text embedding optimization for knowledge graph completion,10.1007/s10618-026-01226-7,2025-03-09,2026-05-13,430
+ReLiB-100k: a real-world 100k-scale dataset and comprehensive benchmark for capacity estimation of retired lithium-ion batteries,10.1007/s10618-026-01204-z,2025-11-05,2026-03-19,134
+Deep unsupervised domain adaptation for time series classification: a benchmark,10.1007/s10618-025-01108-4,2024-07-12,2025-04-28,290
+Feature selection for partial multi-label learning via noise removal and dynamic label correlation,10.1007/s10618-026-01279-8,2026-05-13,2026-09-30,140
+Scalable multi-view clustering via explicit kernel features maps,10.1007/s10618-026-01187-x,2025-08-28,2026-01-15,140
+Time series classification with random convolution kernels: pooling operators and input representations matter,10.1007/s10618-026-01269-w,2025-06-13,2026-08-31,444
+Utility-driven knowledge graph summarization with structural-semantic fidelity,10.1007/s10618-026-01256-1,2025-10-06,2026-08-10,308
+Extending PPCEF: probabilistically plausible counterfactual explanations for regression and heterogeneous tabular data,10.1007/s10618-026-01286-9,2026-02-10,2026-10-04,236
+Multi-relational knowledge graph contrastive learning for link prediction,10.1007/s10618-025-01161-z,2023-08-07,2025-08-25,749
+Hierarchical graph networks for breast cancer subtype classification,10.1007/s10618-026-01259-y,2025-10-13,2026-08-25,316
+A method for the systematic generation of graph XAI benchmarks via Weisfeiler–Leman coloring,10.1007/s10618-026-01212-z,2025-10-29,2026-04-04,157
+Rock the KASBA: blazingly fast and accurate time series clustering,10.1007/s10618-026-01189-9,2025-09-08,2026-01-19,133
+Fish swarm parameter self-tuning for data streams,10.1007/s10618-025-01174-8,2024-11-02,2025-11-01,364
+An event-adaptive incremental framework for transient community detection in temporal networks,10.1007/s10618-026-01254-3,2025-05-23,2026-08-09,443
+Classifier chains for multi-label learning: a systematic review and taxonomy,10.1007/s10618-026-01266-z,2026-03-24,2026-08-31,160
+Hybrid federated continual graph contrastive learning for evolving money laundering threats,10.1007/s10618-026-01192-0,2025-10-31,2026-02-03,95
+"Federated learning with multiple, intersectional and multiclass fairness guarantees under performance budgets",10.1007/s10618-026-01243-6,2025-11-05,2026-07-08,245
+Graph-enhanced bidirectional GRU for anomaly detection in power generation environments,10.1007/s10618-026-01262-3,2025-05-02,2026-08-31,486
+Fine-grained multi-prompt essay scoring with multi-level disentanglement,10.1007/s10618-025-01126-2,2025-04-12,2025-06-09,58
+Optirefine: densest subgraphs and maximum cuts with k refinements,10.1007/s10618-025-01142-2,2024-09-04,2025-07-13,312
+"When, how long and how much? Interpretable neural networks for time series regression by learning to mask and aggregate",10.1007/s10618-026-01267-y,2026-01-20,2026-08-31,223
+Towards automated self-supervised learning for truly unsupervised graph anomaly detection,10.1007/s10618-025-01115-5,2024-05-22,2025-06-08,382
+A enhanced fuzzy clustering algorithm for probability density functions and image clustering using Inception Resnet-v2 features,10.1007/s10618-025-01136-0,2024-11-15,2025-07-10,237
+Efficient pruning strategies for mining high utility co-location patterns with negative utility features,10.1007/s10618-025-01177-5,2024-11-28,2025-11-12,349
+Stable graph based decision route explanation in siamese neural networks,10.1007/s10618-025-01154-y,2023-12-02,2025-07-30,606
+Relation-aware multimodal data hashing for scalable recommendation systems,10.1007/s10618-026-01202-1,2025-10-13,2026-03-14,152
+Crossmamba: multivariate time series forecasting model for cross-temporal and cross-dimensional dependencies with Mamba,10.1007/s10618-025-01149-9,2025-05-09,2025-07-20,72
+Anomaly detection via mean shift density enhancement,10.1007/s10618-026-01244-5,2026-01-14,2026-07-10,177
+Large language models are few-shot multivariate time series classifiers,10.1007/s10618-025-01145-z,2025-06-08,2025-07-19,41
+Sequential pattern detection: similarities and differences across various fields,10.1007/s10618-025-01110-w,2024-05-10,2025-04-29,354
+DNetEx: FDR-controlled differential network analysis for knowledge discovery from graphs,10.1007/s10618-026-01245-4,2025-10-07,2026-07-13,279
+Palauner: policy-based active learning to augment named entity recognition datasets,10.1007/s10618-026-01239-2,2026-01-15,2026-06-20,156
+Lift what you can: green online learning with heterogeneous ensembles,10.1007/s10618-026-01200-3,2025-10-31,2026-03-10,130
+How robust is your fair model? Exploring the robustness of prominent fairness strategies,10.1007/s10618-025-01112-8,2023-05-17,2025-05-06,720
+Taking lessons from history: Memory Augmented Self Distillation for graph neural networks,10.1007/s10618-026-01258-z,2024-05-02,2026-08-19,839
+Graph neural networks based log anomaly detection and explanation,10.1007/s10618-026-01235-6,2025-10-12,2026-06-09,240
+Dynamic continuous progressive neural networks for evolving streaming time series,10.1007/s10618-026-01213-y,2025-02-17,2026-04-14,421
+Sparse oblique rule boosting for simpler additive rule ensembles,10.1007/s10618-026-01241-8,2025-10-31,2026-06-20,232

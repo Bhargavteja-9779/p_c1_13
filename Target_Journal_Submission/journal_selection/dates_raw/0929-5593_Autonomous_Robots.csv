@@ -1,0 +1,71 @@
+title,doi,received,accepted,days
+Task-oriented overlapping coalition formation: a game-theoretic framework for heterogeneous UAV task allocation,10.1007/s10514-026-10244-9,2025-06-08,2026-03-14,279
+Towards balanced behavior cloning from imbalanced datasets,10.1007/s10514-025-10237-0,2025-08-07,2025-12-31,146
+Inverse k-visibility for RSSI-based Indoor geometric mapping,10.1007/s10514-026-10243-w,2025-06-21,2026-03-14,266
+Human-drone collaboration via mixed-reality for efficient navigation and interaction in constrained environments: a comprehensive user case study,10.1007/s10514-025-10222-7,2025-07-09,2025-10-04,87
+Global feature enhancement and skip-connected fusion for grasping detection,10.1007/s10514-026-10242-x,2025-07-17,2026-03-14,240
+A tree-based exploration method: utilizing the topology of the map as the basis of goal selection,10.1007/s10514-025-10223-6,2024-11-11,2025-10-13,336
+Cognition-inspired Robot Learning and Manipulation for Assembly in Semi-structured Environments,10.1007/s10514-026-10259-2,2026-02-11,2026-06-01,110
+Adaptive exploration under localization uncertainty using multi-fidelity Gaussian processes,10.1007/s10514-025-10235-2,2025-04-12,2025-12-03,235
+Decentralized multi-robot exploration under low-bandwidth communications,10.1007/s10514-025-10234-3,2024-09-11,2025-12-03,448
+Greedy heuristics for sampling-based motion planning in high-dimensional state spaces,10.1007/s10514-026-10269-0,2025-11-27,2026-08-31,277
+"Multi-object active search and tracking by multiple agents in untrusted, dynamically changing environments",10.1007/s10514-025-10218-3,2024-07-29,2025-09-21,419
+"Multi-robot navigation in social mini-games: definitions, taxonomy, and algorithms",10.1007/s10514-026-10251-w,2025-09-10,2026-03-14,185
+2D construction planning for swarms of simple earthmover robots,10.1007/s10514-025-10226-3,2025-05-16,2025-10-22,159
+DynaLOAM: robust LiDAR odometry and mapping in dynamic environments,10.1007/s10514-025-10213-8,2024-09-28,2025-08-21,327
+Optical communication-based identification for multi-UAV systems: theory and practice,10.1007/s10514-025-10208-5,2023-10-16,2025-08-04,658
+Adaptive ergodic search with energy-aware scheduling for persistent multi-robot missions,10.1007/s10514-025-10215-6,2025-05-09,2025-09-08,122
+Feasibility-aware whole-body control for terrain-adaptive humanoid locomotion,10.1007/s10514-026-10263-6,2026-04-21,2026-08-09,110
+Robust robotic exploration and mapping using generative occupancy map synthesis,10.1007/s10514-025-10229-0,2025-03-11,2025-10-30,233
+Tactile-based object retrieval from granular media,10.1007/s10514-025-10212-9,2024-12-19,2025-08-20,244
+Enhanced spatial distribution for robust Gaussian SLAM with view-consistency optimization,10.1007/s10514-025-10241-4,2025-09-06,2025-12-31,116
+Planned synchronization for multi-robot systems with active observations,10.1007/s10514-025-10225-4,2025-05-22,2025-10-16,147
+"Robot-relay: building-wide, calibration-less visual servoing with learned sensor handover networks",10.1007/s10514-025-10227-2,2025-06-05,2025-10-22,139
+Autonomous robotic manipulation for grasping a target object in cluttered environments,10.1007/s10514-025-10214-7,2025-07-13,2025-08-25,43
+DisCo: distributed contact-rich trajectory optimization for forceful multi-robot collaboration,10.1007/s10514-026-10260-9,2025-05-30,2026-06-17,383
+DMPC-Swarm: distributed model predictive control on nano UAV swarms,10.1007/s10514-025-10211-w,2025-02-26,2025-08-15,170
+Aerial robots persistent monitoring and target detection: deployment and assessment in the field,10.1007/s10514-025-10239-y,2025-04-22,2025-12-31,253
+PERSCO: Perceived safe control of mobile robots in human groups with active learning,10.1007/s10514-026-10262-7,2026-01-16,2026-07-27,192
+StealthBAT: Crafting stealthy blackbox adaptive adversarial triggers for monocular UAS navigation and tracking,10.1007/s10514-026-10250-x,2024-09-24,2026-03-14,536
+Vision-based manipulation from single human video with open-world object graphs,10.1007/s10514-026-10253-8,2025-09-06,2026-03-31,206
+Fast k-connectivity restoration in multi-robot systems for robust communication maintenance: algorithmic and learning-based solutions,10.1007/s10514-025-10224-5,2025-05-12,2025-10-16,157
+Multi-robot exploration for the CADRE mission,10.1007/s10514-025-10199-3,2024-01-13,2025-04-06,449
+VARS: value-aware robotic sorting of waste streams via orienteering with time windows,10.1007/s10514-026-10272-5,2026-04-20,2026-10-12,175
+Efficient and compliant control framework for versatile human-humanoid collaborative transportation,10.1007/s10514-026-10271-6,2026-01-21,2026-10-12,264
+Autonomous underwater vehicle sampling for hotspots in chlorophyll A,10.1007/s10514-026-10264-5,2025-12-03,2026-08-13,253
+Agile assistive hospital robot for suboptimal Task execution in dynamic environments,10.1007/s10514-026-10255-6,2025-10-02,2026-04-07,187
+"Visual localization in 3D maps: comparing point cloud, mesh, and NeRF representations",10.1007/s10514-025-10232-5,2024-10-19,2025-11-24,401
+Online learning for vibration suppression in physical robot interaction using power tools,10.1007/s10514-026-10252-9,2025-08-06,2026-03-31,237
+Online estimation and manipulation of articulated objects,10.1007/s10514-025-10233-4,2025-06-13,2025-11-24,164
+Robotic group formation with phosphorescent trails,10.1007/s10514-026-10261-8,2025-10-17,2026-06-28,254
+Enhancing loop closure detection with object semantic scan context,10.1007/s10514-026-10270-7,2026-01-29,2026-08-31,214
+Risk-averse traversal of graphs with stochastic and correlated edge costs for safe global planetary mobility,10.1007/s10514-025-10240-5,2025-05-16,2025-12-31,229
+L2D2: Robot Learning from 2D drawings,10.1007/s10514-025-10210-x,2025-05-17,2025-08-13,88
+Time-discounted ergodicity on graphs for active robotic inspection of confined spaces,10.1007/s10514-026-10256-5,2025-12-02,2026-04-11,130
+Reconfiguration and locomotion with joint movements in the amoebot model,10.1007/s10514-025-10204-9,2025-03-10,2025-07-01,113
+Estimating map completeness in robot exploration,10.1007/s10514-025-10221-8,2025-04-25,2025-10-04,162
+A RGB-D SLAM method based on contact experience in dynamic environment,10.1007/s10514-026-10268-1,2025-11-02,2026-08-31,302
+System identification and adaptive input estimation on the Jaiabot micro autonomous underwater vehicle,10.1007/s10514-025-10220-9,2025-02-17,2025-09-24,219
+Impact-invariant control: maximizing control authority during impacts,10.1007/s10514-025-10206-7,2025-02-09,2025-07-28,169
+Decentralized Information-driven Approach for Tracking Multiple Moving Targets with Multi-Robot Networks,10.1007/s10514-026-10249-4,2025-07-18,2026-03-14,239
+Es-cbf: an energy sufficiency extension for sample based path planners to enable long term autonomy,10.1007/s10514-025-10203-w,2024-10-06,2025-06-03,240
+Bugs with features: vision-based fault-tolerant collective motion inspired by nature,10.1007/s10514-025-10230-7,2025-05-25,2025-10-30,158
+Reconfigurable robot swarms for terrain traversal with passive coupling mechanisms,10.1007/s10514-025-10205-8,2025-01-21,2025-07-10,170
+Robots influencing humans to reveal their goals during collaboration and competition,10.1007/s10514-026-10267-2,2025-12-11,2026-08-14,246
+Civil: causal and intuitive visual imitation learning,10.1007/s10514-026-10266-3,2025-10-21,2026-08-14,297
+COVER: cross-vehicle transition framework for quadrotor control in air-ground cooperation,10.1007/s10514-025-10209-4,2025-04-13,2025-08-11,120
+Online insertion trajectory correction for robot peg-in-hole assembly with floating targets,10.1007/s10514-026-10245-8,2025-08-04,2026-03-14,222
+Distributed spatial awareness for robot swarms,10.1007/s10514-025-10228-1,2025-05-16,2025-10-30,167
+Probabilistic multi-robot planning with temporal tasks and communication constraints,10.1007/s10514-025-10231-6,2025-05-12,2025-11-05,177
+Persistent multi-resource coverage with heterogeneous multi-robot teams,10.1007/s10514-025-10207-6,2024-10-08,2025-07-29,294
+EAST: environment-aware safe tracking for robot navigation in dynamic environments,10.1007/s10514-025-10219-2,2025-06-03,2025-09-23,112
+STEM: Semantic target search and exploration using MAVs in cluttered environments,10.1007/s10514-026-10247-6,2025-09-12,2026-03-14,183
+Wild visual navigation: fast traversability learning via pre-trained models and online self-supervision,10.1007/s10514-025-10202-x,2024-02-10,2025-05-12,457
+Large language models for multi-robot systems: a survey,10.1007/s10514-026-10257-4,2025-09-13,2026-05-02,231
+"Collaborative, time-varying macroscopic ensemble allocation in dynamic environments",10.1007/s10514-025-10238-z,2025-05-13,2025-12-31,232
+Diver interest via pointing in three dimensions: 3D pointing reconstruction for diver-AUV communication,10.1007/s10514-026-10246-7,2025-06-30,2026-03-14,257
+Implicit semantic control manifolds for learning-enabled multi-UAV coordination,10.1007/s10514-026-10265-4,2026-03-11,2026-08-13,155
+EVS-SLAM: a lightweight visual SLAM system for autonomous robots in dynamic environments,10.1007/s10514-026-10273-4,2026-02-07,2026-10-12,247
+Autonomous learning-free grasping and robot-to-robot handover of unknown objects,10.1007/s10514-025-10201-y,2024-01-15,2025-05-12,483
+The effects of robot learning on human teachers for learning from demonstration,10.1007/s10514-025-10216-5,2025-07-01,2025-09-14,75
+Dual-Stage LiDAR-Inertial SLAM with Hierarchical Dynamic Object Removal in Dynamic Environments,10.1007/s10514-026-10248-5,2025-08-28,2026-03-14,198

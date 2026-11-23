@@ -1,0 +1,88 @@
+title,doi,received,accepted,days
+Finding Locally Densest Subgraphs: Convex Programming with Edge and Triangle Density,10.1007/s00778-025-00958-0,2025-05-19,2025-12-09,204
+CompactLTJ: Space &amp; Time Efficient Leapfrog Triejoin on Graph Databases,10.1007/s00778-025-00945-5,2025-04-01,2025-09-17,169
+Cohort query processing without misleading aging effects,10.1007/s00778-025-00948-2,2024-12-31,2025-10-06,279
+Text indexing for long patterns using locally consistent anchors,10.1007/s00778-025-00935-7,2024-07-16,2025-07-01,350
+BioGITOM: Matching Biomedical Ontologies with Graph Isomorphism Transformer,10.1007/s00778-025-00943-7,2024-04-01,2025-09-10,527
+PIM-tree: A Skew-resistant Index for Processing-in-Memory,10.1007/s00778-025-00937-5,2024-10-01,2025-07-17,289
+LEON+: towards robust ML-aided query optimization,10.1007/s00778-026-00973-9,2024-11-18,2026-03-10,477
+PPG: a public-private graph evaluation framework for efficient querying and analysis,10.1007/s00778-026-00991-7,2025-04-26,2026-05-27,396
+Simple Adaptive Query Processing vs. Learned Query Optimizers: Observations and Analysis,10.1007/s00778-025-00936-6,2024-09-30,2025-07-17,290
+CoVis: Neural and LLM-Driven Multi-Turn Interactions for Conversational Text-to-Visualization Generation,10.1007/s00778-025-00954-4,2024-12-27,2025-11-09,317
+PINE: Extracting Correlated Token Pairs for Explainable Entity Matching,10.1007/s00778-026-00995-3,2025-10-07,2026-06-13,249
+Efficient Task Assignment for Multi-Workerset Crowdsourcing with Time and Expense Considerations,10.1007/s00778-026-00969-5,2025-01-16,2026-02-20,400
+Superrocket: efficient kernel-based transformation selection for fast and accurate time series classification,10.1007/s00778-026-01008-z,2025-12-29,2026-09-07,252
+Mine Graph Rule: A New GQL Operator for Mining Association Rules in Property Graph Databases,10.1007/s00778-025-00934-8,2025-01-27,2025-06-17,141
+Efficient maximum signed biclique and biplex identification in signed bipartite graphs,10.1007/s00778-025-00939-3,2024-12-27,2025-07-29,214
+Intra-query runtime elasticity,10.1007/s00778-026-01016-z,2026-02-06,2026-10-10,246
+DIST: Efficient k-Clique Listing via Induced Subgraph Trie,10.1007/s00778-026-00966-8,2025-04-01,2026-02-09,314
+Missing Value Imputation in Tabular Data Lakes Unleashed: A Hybrid Approach,10.1007/s00778-025-00957-1,2025-03-28,2025-11-30,247
+Towards GPU memory-aware efficient contrastive shapelet learning for unsupervised representation learning in multivariate time series,10.1007/s00778-026-00996-2,2025-12-17,2026-06-15,180
+Towards robust and interactive text-to-visualization translation: enhancing model robustness and mitigating ambiguity in natural language queries,10.1007/s00778-026-00992-6,2025-06-19,2026-05-28,343
+Programmable Dataflows: Abstraction and Programming Model for Data Sharing,10.1007/s00778-025-00961-5,2025-05-08,2025-12-24,230
+TablePuppet: Towards a Generic Framework for Learning over Relational Tables,10.1007/s00778-025-00956-2,2025-02-07,2025-11-17,283
+Distributed Truss Decomposition over Large Directed Graphs,10.1007/s00778-025-00938-4,2024-11-25,2025-07-27,244
+Less is more: re-architecting the reachability query processing pipeline,10.1007/s00778-026-01017-y,2026-04-08,2026-10-15,190
+PrivMDC: leveraging multi-dimensional correlations to answer differentially private range queries,10.1007/s00778-026-01001-6,2025-09-15,2026-07-24,312
+An Efficient Two-Round Distributed Transaction Processing Approach over Heterogeneous Networks,10.1007/s00778-025-00929-5,2024-09-01,2025-05-28,269
+Efficiently querying connected components in large temporal graphs via scalable and maintainable indices,10.1007/s00778-026-00977-5,2025-04-07,2026-04-01,359
+Hypergraph decomposition with intersection bounds,10.1007/s00778-026-00985-5,2025-06-22,2026-05-11,323
+Verifiable Authenticated Data Structure (V-ADS) for Analytic Queries,10.1007/s00778-025-00952-6,2024-05-11,2025-10-30,537
+KOG: A secret sharing-based scalable privacy-preserving training framework for decision trees,10.1007/s00778-025-00959-z,2024-09-26,2025-12-24,454
+Multi-modal knowledge graph entity alignment: a comprehensive survey,10.1007/s00778-026-00986-4,2025-07-22,2026-05-09,291
+Personalized w-event privacy for infinite stream estimation,10.1007/s00778-026-01004-3,2025-06-20,2026-08-05,411
+On Efficient Top-k Empirical Variance Computation: A Once-For-All Progressive Sampling Approach,10.1007/s00778-026-00987-3,2025-01-13,2026-05-11,483
+TFB-2: benchmarking and automated ensemble for time series forecasting,10.1007/s00778-026-01007-0,2025-06-25,2026-09-07,439
+ResidualPlanner+: a scalable matrix mechanism for marginals and beyond.,10.1007/s00778-026-00981-9,2025-06-11,2026-04-28,321
+CardOOD: robust query-driven cardinality estimation under out-of-distribution,10.1007/s00778-026-00979-3,2025-06-25,2026-04-12,291
+Generating adversarial SQL queries for evaluating cardinality estimators,10.1007/s00778-026-00967-7,2024-12-16,2026-02-19,430
+Static and streaming algorithms for random sampling over spatial range joins,10.1007/s00778-026-00997-1,2025-12-15,2026-07-05,202
+Balancing Relevance and Diversity in k-Maximum Inner Product Search,10.1007/s00778-026-00982-8,2024-12-05,2026-05-05,516
+Efficient graph embedding at scale: optimizing CPU-GPU-SSD integration,10.1007/s00778-026-00974-8,2025-05-30,2026-03-11,285
+On Querying Historical Connectivity in Large-scale Temporal Graphs,10.1007/s00778-025-00951-7,2025-02-27,2025-10-28,243
+FOSS: A learned doctor for query optimization,10.1007/s00778-025-00947-3,2025-03-03,2025-09-21,202
+Efficient distinctiveness maximization in datasets assemblage: from homogeneous to heterogeneous datasets,10.1007/s00778-026-01005-2,2025-12-13,2026-08-04,234
+Dynamic Hub Labeling for Shortest Distance Queries on Structured Encrypted Graphs,10.1007/s00778-025-00955-3,2024-08-25,2025-11-17,449
+A framework for top-k queries with constrained preferences,10.1007/s00778-026-00972-w,2025-07-23,2026-03-04,224
+MSAD: A deep dive into model selection for time series anomaly detection,10.1007/s00778-025-00949-1,2024-10-31,2025-10-09,343
+Measuring approximate functional dependencies: a comparative study,10.1007/s00778-025-00931-x,2024-09-25,2025-06-16,264
+Towards A Generalizable and Expressive Graph Neural Network for Graph-Level Tasks with Theoretical Guarantees,10.1007/s00778-026-00978-4,2025-09-25,2026-04-12,199
+MetaStore: A system for effectively analyzing deep learning meta-data at scale,10.1007/s00778-026-00980-w,2025-08-15,2026-04-21,249
+Efficient discovery of co-movement patterns from video data,10.1007/s00778-026-00964-w,2025-08-17,2026-02-05,172
+State Migration in Styx: Towards Serverless Transactional Functions,10.1007/s00778-026-00971-x,2025-07-11,2026-03-01,233
+Efficient and cost-effective influence and blocker minimization,10.1007/s00778-026-01003-4,2025-09-01,2026-08-02,335
+Fast construction of partitioned learned Bloom filter with theoretical guarantees,10.1007/s00778-026-01011-4,2026-02-12,2026-09-23,223
+Revisiting data analysis with Pre-trained foundation models,10.1007/s00778-025-00953-5,2024-12-30,2025-10-30,304
+Parajoin: A Parallelism-aware approximate filtered similarity join method in vector databases,10.1007/s00778-026-01012-3,2026-01-25,2026-09-23,241
+Duster: a deduplication framework for efficient point cloud storage and retrieval,10.1007/s00778-026-01002-5,2026-01-29,2026-07-29,181
+Efficient prompt learning for traffic forecasting,10.1007/s00778-026-00983-7,2025-07-05,2026-05-07,306
+"Languages and systems for RDF stream processing, a survey",10.1007/s00778-025-00927-7,2024-03-19,2025-04-25,402
+The Status-Quo in nested data processing for high-energy physics,10.1007/s00778-025-00924-w,2024-06-30,2025-02-11,226
+Lamba: A pretrained model for latency prediction over distributed databases,10.1007/s00778-026-00970-y,2025-06-21,2026-02-27,251
+Privacy-Utility Balanced Cooperative Online Matching in Spatial Crowdsourcing,10.1007/s00778-025-00944-6,2024-08-28,2025-09-14,382
+Can large language models be a cardinality estimator? An empirical study,10.1007/s00778-026-00975-7,2025-03-19,2026-03-24,370
+Distilled documentation for dialect-specific SQL generation,10.1007/s00778-026-00993-5,2025-09-16,2026-05-28,254
+Towards caching time-series semantically on hybrid storage,10.1007/s00778-026-00988-2,2025-09-02,2026-05-20,260
+Route optimization with collective spatial keywords: A skyline-based approach,10.1007/s00778-025-00940-w,2024-12-30,2025-08-11,224
+GARF+: self-supervised and interpretable data cleaning with sequence generative adversarial networks,10.1007/s00778-025-00941-9,2024-09-20,2025-08-20,334
+DHL: an efficient hierarchical index for shortest distance querying in time-dependent road networks,10.1007/s00778-025-00946-4,2025-04-02,2025-09-19,170
+Conceptual schema inference for tabular datasets using large language models,10.1007/s00778-026-01000-7,2025-11-01,2026-07-20,261
+Threshold queries in theory and in the wild,10.1007/s00778-025-00916-w,2024-06-27,2025-03-24,270
+An efficient and scalable graph database with built-in temporal support,10.1007/s00778-025-00932-w,2024-09-30,2025-06-16,259
+Editorial for Special Issue: VLDB 2022,10.1007/s00778-025-00930-y,2025-05-08,2025-06-05,28
+On topology and time: efficient evaluation for temporal-clique subgraph queries,10.1007/s00778-026-00963-x,2025-02-26,2026-01-27,335
+$$\textsf{IACS}^{+}$$: Inductive Attributed Community Search via Learning across Graphs,10.1007/s00778-026-00990-8,2025-01-31,2026-05-25,479
+LMG index: a robust and efficient learned index framework for balancing multiple performance dimensions,10.1007/s00778-026-01014-1,2026-03-18,2026-09-28,194
+PTSSP: privacy-preserving top-k spatial keyword similarity query with priority matching,10.1007/s00778-026-00965-9,2024-11-04,2026-02-09,462
+Beyond influence: voting theory for opinion maximization,10.1007/s00778-025-00933-9,2024-08-18,2025-04-23,248
+OmniSketch: Multi-dimensional update stream analytics with arbitrary predicates,10.1007/s00778-025-00960-6,2025-08-24,2025-12-24,122
+On querying minimum spanning tree in temporal graphs,10.1007/s00778-026-00989-1,2025-04-13,2026-05-25,407
+Efficient discovery of arbitrary cycles in large-scale networks,10.1007/s00778-026-00994-4,2025-11-12,2026-06-09,209
+BQSched$$^{+}$$: A generalizable RL-based scheduler for varying batch concurrent queries,10.1007/s00778-026-00976-6,2025-03-26,2026-04-01,371
+Density decomposition on large static and dynamic graphs: algorithms and applications,10.1007/s00778-025-00942-8,2025-01-04,2025-08-28,236
+An Evaluation of B-tree Compression Techniques,10.1007/s00778-025-00950-8,2024-11-12,2025-10-27,349
+SEFRQO-Plus: a self-evolving query optimizer via large language models and retrieval-augmented generation,10.1007/s00778-026-00999-z,2025-11-24,2026-07-20,238
+Scalable lighting-fast temporal indexing,10.1007/s00778-026-00968-6,2025-05-22,2026-02-19,273
+LLM-powered clustering for entity resolution,10.1007/s00778-026-01006-1,2025-09-16,2026-08-12,330
+Best of both worlds: contextual feature explanation,10.1007/s00778-026-00998-0,2025-10-20,2026-07-07,260
+Efficient shortest path counting in dynamic road network,10.1007/s00778-026-01015-0,2025-11-01,2026-10-01,334

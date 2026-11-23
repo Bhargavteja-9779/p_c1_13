@@ -1,0 +1,120 @@
+title,doi,received,accepted,days
+Knowledge-driven safety risk assessment for dismantling decommissioned power batteries,10.1007/s10845-026-02829-z,2025-06-09,2026-02-15,251
+Integrating transformer and PPO for multi-objective assembly sequence planning of dual-arm space robots,10.1007/s10845-026-02907-2,2025-11-27,2026-06-10,195
+The RAASCEMAN Approach: Resilient and Adaptive Supply Chains for Capability-based Manufacturing as a Service Networks,10.1007/s10845-026-02828-0,2025-07-10,2026-02-12,217
+Grey box modeling to predict tensile properties in laser powder bed fusion,10.1007/s10845-026-02969-2,2025-05-29,2026-08-19,447
+Horizontal accuracy prediction model of CNC machine tool using regression algorithm and multi-point load feedback,10.1007/s10845-026-02790-x,2025-06-17,2026-01-02,199
+Analysis of the performance of LSTM-DNN models with the consideration of signal complexity in milling processes,10.1007/s10845-025-02646-w,2024-11-15,2025-06-23,220
+A multi-functional autonomous cobot system for large-scale aerospace precision machining,10.1007/s10845-025-02761-8,2025-07-04,2025-12-05,154
+BenDFM: A taxonomy and synthetic CAD dataset for manufacturability assessment in sheet metal bending,10.1007/s10845-026-02857-9,2025-12-02,2026-03-18,106
+Few-shot working condition classification within a meta-learning framework based on multi-head attention autoencoder,10.1007/s10845-025-02617-1,2025-02-10,2025-04-22,71
+Rapid digital twin modeling method and system for equipment,10.1007/s10845-025-02699-x,2025-05-01,2025-09-22,144
+A dual-branch transformer-BiLSTM network with error compensation for tool wear prediction,10.1007/s10845-026-02914-3,2026-02-12,2026-06-13,121
+Solving flexible job shop scheduling problem under parallel batch-processing and time lag by a proximal policy optimization-assisted memetic algorithm,10.1007/s10845-026-03002-2,2026-01-16,2026-09-21,248
+Surface topography reconstruction of highly reflective wafers for in-line inspection via deep learning and Fizeau interferometry,10.1007/s10845-025-02769-0,2025-08-12,2025-12-08,118
+A graph neural network-based optimization framework for nonconforming product recovery in multistage manufacturing systems,10.1007/s10845-025-02780-5,2025-05-29,2025-12-23,208
+CLIP-MDC: CLIP encoder based multimodal defect classification with synthetic anomaly generation for real-time surface defect detection,10.1007/s10845-025-02773-4,2025-07-21,2025-12-11,143
+Surface reconstruction of glass bottles using neural implicit representations for manufacturing system,10.1007/s10845-025-02668-4,2025-02-14,2025-08-03,170
+Digital twin-enhanced domain generalization for diagnosing few-shot faults in face gears,10.1007/s10845-026-02842-2,2025-10-20,2026-01-27,99
+A review of the application of functional data analysis methods in industrial intelligent systems,10.1007/s10845-026-02840-4,2025-11-24,2026-03-02,98
+A novel data augmentation method for few-shot industrial surface defect detection based on segment anything model adapter,10.1007/s10845-025-02658-6,2024-05-26,2025-07-14,414
+Development of an edge-IoT-enabled in-situ vision inspection system for real-time steel coil shape anomaly detection,10.1007/s10845-026-02989-y,2026-07-01,2026-09-08,69
+A zone-based Wi-Fi fingerprinting indoor positioning system for factory noise mapping,10.1007/s10845-025-02660-y,2025-03-15,2025-07-15,122
+A method for reconstructing large-scale part models based on feature point cloud data,10.1007/s10845-025-02717-y,2025-04-13,2025-10-13,183
+Dual Siamese neural network for discriminative tool-wear feature learning: a metric-learning approach,10.1007/s10845-025-02776-1,2025-09-10,2025-12-12,93
+A digital twin system for thermal error compensation of numerical control machine tools based on multi-algorithm collaborative modeling,10.1007/s10845-026-02791-w,2025-06-09,2025-12-24,198
+Intelligent fastening assistant system (IFAS): deep learning-driven angle and sequence supervision for manual assembly,10.1007/s10845-026-02807-5,2025-07-17,2026-01-24,191
+A cognition-inspired hierarchical meta-learning framework for cross-condition few-shot bearing fault diagnosis,10.1007/s10845-026-03000-4,2026-04-28,2026-09-18,143
+Monitoring centerless grinding processes for workpiece roundness prediction using internal machine sensors and Bayesian sparse regression models,10.1007/s10845-026-02981-6,2026-02-16,2026-08-28,193
+A study on degradation prediction modeling method for mechanical rotating components based on multi-modal data and improved structured state-space seq,10.1007/s10845-025-02636-y,2025-01-26,2025-05-25,119
+AG-DPF: adaptive gating-based dual-prototype fusion framework for metal anomaly detection,10.1007/s10845-026-02932-1,2025-11-27,2026-07-13,228
+Model predictive force control in five-axis positional milling using a table dynamometer,10.1007/s10845-026-02875-7,2025-10-21,2026-04-14,175
+A novel thermal error compensation framework towards precision manufacturing: integrating digital twin technology and edge server deployment,10.1007/s10845-025-02783-2,2025-10-27,2025-12-21,55
+Machine learning-based throughput prediction for serial production lines,10.1007/s10845-026-02972-7,2025-12-12,2026-08-20,251
+Statistically-aligned feature augmentation for robust unsupervised domain adaptation in industrial fault diagnosis,10.1007/s10845-025-02733-y,2025-08-31,2025-10-29,59
+Natural language-driven digital twin scene generation in industrial workcells,10.1007/s10845-026-02970-9,2026-03-24,2026-08-19,148
+Visualizing the landscape of virtual assembly bibliometric studies via CiteSpace,10.1007/s10845-026-02923-2,2025-07-10,2026-06-24,349
+Manifold-informed meta-learning for out-of-distribution detection and classification in small-scale industrial datasets,10.1007/s10845-026-02873-9,2025-10-03,2026-04-10,189
+AI agent-driven process automation for dynamic production efficiency and intelligent equipment integration,10.1007/s10845-025-02706-1,2025-05-09,2025-09-29,143
+Tuning anomaly detection models to leverage low-cost thermal imaging in large-format additive manufacturing,10.1007/s10845-026-02943-y,2025-09-29,2026-07-21,295
+A vision-driven framework for robotic garment stitching: edge-aware perception and trajectory planning,10.1007/s10845-026-02941-0,2026-04-29,2026-07-20,82
+Neural CDE-driven multi-sensor fusion framework for continuous-time prediction of tool wear and surface integrity in intelligent CNC machining systems,10.1007/s10845-026-02953-w,2026-03-19,2026-07-28,131
+Detection and localization system for surface defects of automotive forgings based on machine vision,10.1007/s10845-025-02678-2,2025-03-23,2025-08-13,143
+A digital twin-based architecture for human-humanoid-machine interaction (DT-H2MI) in smart manufacturing,10.1007/s10845-026-03024-w,2025-07-27,2026-10-20,450
+A scalable random forest (SRF) approach for non-linear predictive modelling using small manufacturing datasets,10.1007/s10845-026-02834-2,2025-04-25,2026-01-17,267
+A robust optimization model for the supplier portfolio selection problem using a combination of artificial fish swarm algorithm and simulated annealin,10.1007/s10845-025-02675-5,2023-06-13,2025-08-11,790
+Automated detection and classification of soldering defects in printed circuit boards using deep learning and optical and thermal imaging,10.1007/s10845-025-02691-5,2025-04-23,2025-09-06,136
+Development of a semi-automated data acquisition and processing architecture for machine learning applications in grinding,10.1007/s10845-026-02867-7,2025-10-07,2026-03-30,174
+Anomaly image detection method based on one-step denoising diffusion model with high- and low-frequency information enhanced,10.1007/s10845-025-02666-6,2025-02-27,2025-07-25,148
+Dgfnet: deformable attention and flow-guided feature learning for fine-grained surface defect segmentation,10.1007/s10845-025-02743-w,2025-08-09,2025-11-10,93
+At-dicnet: a novel framework based speckle pattern for non-contact micron-level tool vibration deformation precision measurement,10.1007/s10845-025-02723-0,2024-10-17,2025-10-21,369
+Adaptive transformer-augmented network for multi-type defect detection in ball grid array assemblies,10.1007/s10845-026-02856-w,2025-05-01,2026-03-18,321
+High-precision online monitoring of powder bed defects of additive manufacturing using deep learning with wavelet feature fusion,10.1007/s10845-026-02852-0,2025-09-07,2026-03-13,187
+Multi-source feature augmentation adversarial domain generalization method for tool wear condition monitoring on unseen machine tools,10.1007/s10845-025-02685-3,2025-01-23,2025-09-04,224
+KDACL: A knowledge-data fusion-driven method for interpretable anomaly causal chain construction in process industries using large language models,10.1007/s10845-026-02830-6,2025-10-22,2026-02-20,121
+Ricci curvature enhance the vision graph neural network for defect detection,10.1007/s10845-025-02781-4,2025-06-19,2025-12-21,185
+Large language models for extrapolative modeling of manufacturing processes,10.1007/s10845-025-02638-w,2025-02-05,2025-05-26,110
+MRG: A multi-instance point cloud registration method for multi-robot digital scene generation,10.1007/s10845-026-02812-8,2025-06-02,2026-01-31,243
+Optimization of scanning path in laser powder bed fusion: training and application of deep learning model using small dataset,10.1007/s10845-025-02629-x,2024-11-05,2025-05-17,193
+Self-optimization of machining parameters for intelligent manufacturing: an offline multi-objective deep reinforcement learning framework,10.1007/s10845-026-02860-0,2025-05-26,2026-03-23,301
+Machine-learning-driven synergistic optimization of multi-objective mechanical properties in steel materials,10.1007/s10845-025-02735-w,2025-05-14,2025-11-01,171
+Quality improvement in sand casting process: a hybrid approach based on machine learning and metaheuristic optimization methods,10.1007/s10845-025-02698-y,2025-04-16,2025-09-23,160
+Employing natural language processing to build a knowledge graph in the realm of additive manufacturing,10.1007/s10845-025-02628-y,2024-12-26,2025-05-12,137
+Digital twin enabled robot collision detection using time series forecasting,10.1007/s10845-026-02803-9,2025-09-17,2026-01-19,124
+Digital twin-enabled real-time control for robot arm-based manufacturing via reinforcement learning,10.1007/s10845-025-02728-9,2025-05-23,2025-10-23,153
+"Artificial intelligence in metal additive manufacturing: current status, challenges, and future developments",10.1007/s10845-025-02771-6,2025-07-24,2025-12-09,138
+Hybrid graph attention network-LSTM models for causal-aware supply chain forecasting,10.1007/s10845-025-02782-3,2025-09-20,2025-12-23,94
+A CNN-LSTM model for strain-geometry state prediction and defect control in multi-pass flow forming of thick-walled tubes,10.1007/s10845-026-02793-8,2025-09-29,2026-01-07,100
+Examining and Mitigating Underspecification in Neural Network-based Wafer Defect Pattern Classification,10.1007/s10845-026-02890-8,2025-11-11,2026-05-22,192
+"Review of wafer defect detection in semiconductor manufacturing: Algorithms, systems, and data",10.1007/s10845-026-02845-z,2025-11-04,2026-03-06,122
+StatGraph-Net: a multichannel statistical-graph framework for compound fault diagnosis in milling machines,10.1007/s10845-026-02998-x,2026-06-25,2026-09-18,85
+FA3D: a fault-aware monitoring framework for 3D printing using vision-language models (VLMs),10.1007/s10845-026-02935-y,2026-02-16,2026-07-15,149
+A physics‑guided Bayesian‑weighted loss‑function framework for robust geometry‑to‑process inversion in wire arc additive manufacturing,10.1007/s10845-026-03009-9,2026-06-16,2026-10-03,109
+Methodology for selecting an information source for online diagnostics of cutting tool edge condition,10.1007/s10845-026-03013-z,2026-03-19,2026-10-05,200
+ISP-AD: a large-scale real-world dataset for advancing industrial anomaly detection with synthetic and real defects,10.1007/s10845-025-02778-z,2025-03-04,2025-12-15,286
+A novel physics-constrained prediction method for bidirectional surface residual stress fields based on the spatial distribution of effective milling ,10.1007/s10845-026-02921-4,2026-04-05,2026-06-22,78
+Digital twin-inspired geometry-aware monocular depth estimation for cluttered stacking parts,10.1007/s10845-026-02952-x,2026-03-16,2026-07-28,134
+Shaping the digital brain for Industry 5.0: a review of industrial world models,10.1007/s10845-026-03014-y,2026-05-08,2026-10-09,154
+An intelligent decision framework for multi-stage milling parameters to sustainable manufacturing,10.1007/s10845-026-03019-7,2026-08-13,2026-10-14,62
+$${\textrm{D}}^3$$Net: Sparse-aware generation and domain-guided attention for hot-rolled strip steel surface defect recognition,10.1007/s10845-026-02882-8,2026-01-14,2026-04-17,93
+LEIS-net: lightweight and efficient industrial surface defect detection network,10.1007/s10845-025-02653-x,2025-02-17,2025-07-08,141
+Digital twin-driven automatic docking monitoring for large-scale equipment final assembly,10.1007/s10845-026-02878-4,2025-07-21,2026-04-24,277
+Synchronization-State driven rescheduling for multi-resource constrained production-logistics in cyber-physical modular integrated construction,10.1007/s10845-026-02871-x,2025-04-10,2026-04-07,362
+Quasi-real-time digital twin for robotic assembly: a physics-based multi-fidelity framework,10.1007/s10845-026-02879-3,2026-01-19,2026-04-24,95
+S2GA-VM: self-supervised and global-aware virtual metrology for accurate film thickness prediction in semiconductor manufacturing,10.1007/s10845-025-02683-5,2025-04-19,2025-08-26,129
+Improving rotating machinery fault diagnosis across heterogeneous machines with domain adversarial perturbation in semi-supervised domain adaptation s,10.1007/s10845-025-02635-z,2025-01-08,2025-05-27,139
+A physics-guided Bayesian meta-learning method for surface quality prediction under data-scarce industrial conditions,10.1007/s10845-026-02908-1,2025-12-24,2026-06-10,168
+Online surface roughness monitoring in thin-wall milling under time-varying conditions based on TRMKAE and MSNTL,10.1007/s10845-026-02815-5,2025-05-09,2026-02-02,269
+Smart control and optimization of the printing sequences in laser powder bed fusion,10.1007/s10845-026-02898-0,2025-01-03,2026-05-29,511
+Detection of random porosity using high-resolution in-situ monitoring and AI-based data mining in metal laser powder bed fusion,10.1007/s10845-026-02925-0,2025-12-19,2026-07-03,196
+No label left behind: a unified surface defect detection model for all supervision regimes,10.1007/s10845-025-02680-8,2025-03-01,2025-08-21,173
+Physics-guided denoiser network for enhanced additive manufacturing data quality,10.1007/s10845-026-02919-y,2025-10-03,2026-06-18,258
+DeepMachining: online prediction of machining errors of lathe machines,10.1007/s10845-025-02694-2,2025-05-04,2025-09-17,136
+PINN-based laser cladding morphology prediction for digital twin framework,10.1007/s10845-026-02954-9,2026-02-22,2026-07-31,159
+"Automated neural network generation for industrial datasets, application to laser powder bed fusion",10.1007/s10845-025-02707-0,2025-05-20,2025-10-02,135
+Physics-guided deep learning for real-time resonance diagnostics and predictive maintenance in pulsed water jet manufacturing systems,10.1007/s10845-026-02947-8,2026-02-23,2026-07-24,151
+Cold spray-based secure and unique product identification with neural encoding: A full-stack framework for scalable authentication in manufacturing,10.1007/s10845-026-02864-w,2025-08-17,2026-03-26,221
+Cross-scene object relationship-driven object detection for flexible printed circuit production,10.1007/s10845-025-02688-0,2024-12-20,2025-09-06,260
+A scientometric review of digital twin in 3G to 6G networks: industry applications and trends,10.1007/s10845-025-02679-1,2025-02-24,2025-08-16,173
+"A multi-agent intelligent framework for real-time manufacturing process optimization: integrating XGBoost, deep reinforcement learning, and contract n",10.1007/s10845-026-02993-2,2026-06-21,2026-09-13,84
+One-shot learning for rapid generation of structured robotic manipulation tasks from 3D video demonstrations,10.1007/s10845-025-02673-7,2025-03-17,2025-08-06,142
+DS-IIEG: a dual-stage industrial image enhancement and generation framework for robust surface defect detection in manufacturing with limited data,10.1007/s10845-025-02774-3,2025-08-20,2025-12-11,113
+System and system-of-systems digital twins for predictive maintenance and root cause analysis,10.1007/s10845-025-02789-w,2025-07-30,2025-12-30,153
+A review of AI and machine learning applications in manufacturing processes,10.1007/s10845-026-02826-2,2025-08-07,2025-12-21,136
+Joint geometry-texture decoupled diffusion for few-shot industrial anomaly synthesis,10.1007/s10845-026-02821-7,2025-12-13,2026-02-08,57
+A learning coevolutionary framework with property-based knowledge for a bucket brigade Seru scheduling problem,10.1007/s10845-026-02926-z,2026-01-30,2026-07-03,154
+"Artificial intelligence in advanced manufacturing: a comprehensive review of machine learning, generative AI, and agentic AI systems",10.1007/s10845-026-03022-y,2026-04-22,2026-10-20,181
+Data-driven based intelligent grinding process system: construction strategies and applications,10.1007/s10845-025-02687-1,2025-05-25,2025-09-04,102
+ZSCIAD: a preliminary exploration of zero-shot class incremental anomaly detection method,10.1007/s10845-025-02682-6,2025-04-01,2025-08-26,147
+Hybrid knowledge-based deep learning method for tool wear state monitoring,10.1007/s10845-025-02618-0,2024-12-12,2025-04-28,137
+Uncertainty-aware future trajectory prediction and collision risk assessment for moving objects in manufacturing workspaces,10.1007/s10845-026-02974-5,2026-07-05,2026-08-22,48
+Offline-online multi-level transfer learning for open-set remaining useful life prediction in multiple target domains,10.1007/s10845-026-02838-y,2025-07-18,2026-02-26,223
+Reverse distillation with auxiliary contrastive learning for robust industrial anomaly detection,10.1007/s10845-025-02762-7,2025-08-14,2025-12-05,113
+Systematic review and future directions in dynamic flexible job shop scheduling: a decade of research,10.1007/s10845-025-02645-x,2024-09-26,2025-06-23,270
+Transductive zero-shot learning for mixed-type defect classification in wafer maps,10.1007/s10845-025-02775-2,2025-10-04,2025-12-12,69
+Hierarchical adaptive correlation network for few-shot metal surface defect segmentation with cross-domain generalization,10.1007/s10845-026-02874-8,2026-01-05,2026-04-10,95
+Deep learning model for automated visual inspection of electronic boards,10.1007/s10845-025-02748-5,2025-07-12,2025-11-19,130
+Dta-qc: an AI-driven framework for adaptive quality control and intelligent test optimization in 5 G manufacturing,10.1007/s10845-025-02745-8,2025-07-04,2025-11-17,136
+Data–driven prediction and uncertainty quantification of process–structure–property relationships for additively manufactured continuous carbon fiber ,10.1007/s10845-026-02843-1,2025-10-06,2026-03-06,151
+Mechanism-fused Gaussian process regression model for tool-tip operational modes prediction in complex milling,10.1007/s10845-025-02661-x,2024-07-11,2025-07-16,370
+Evolution modeling of product families for innovative design: a dynamic network-based approach,10.1007/s10845-025-02756-5,2025-05-19,2025-12-03,198

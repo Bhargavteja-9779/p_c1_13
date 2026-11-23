@@ -1,0 +1,117 @@
+title,doi,received,accepted,days
+The shifted boundary collocation immersogeometric method: an application to Poisson problems,10.1007/s00466-026-02824-4,2026-02-18,2026-06-30,132
+A phase-field approach for modeling plastic hinges in Euler–Bernoulli beams,10.1007/s00466-025-02659-5,2024-11-28,2025-05-27,180
+Impact of mapping techniques and element formulation on PFEM simulations,10.1007/s00466-026-02785-8,2025-12-11,2026-04-02,112
+Innovative structural topology optimization method via spatial points control technology,10.1007/s00466-025-02720-3,2025-09-13,2025-11-07,55
+Autoencoder-based non-intrusive model order reduction for anisotropic and multi-physics problems,10.1007/s00466-026-02870-y,2025-09-02,2026-09-22,385
+Novel adaptive reduced order spectral non-deterministic FEM approach to problems with general interval-fuzzy-stochastic uncertainties,10.1007/s00466-025-02658-6,2024-12-18,2025-05-22,155
+Asymptotic reduction modelling for partially saturated soil based on the Theory of Porous Media,10.1007/s00466-026-02761-2,2025-10-16,2026-02-03,110
+Shear-locking-free Bergan–Wang element for nonlinear thermal buckling analysis of laminated composite plates,10.1007/s00466-026-02811-9,2025-11-30,2026-05-23,174
+Iterative convergence in phase-field brittle fracture computations: exact line search is all you need,10.1007/s00466-026-02779-6,2025-11-28,2026-03-20,112
+Research on performance degradation of through-silicon via interconnect structures based on irreversible entropy,10.1007/s00466-026-02764-z,2025-12-02,2026-02-12,72
+DEM framework for large-scale concave and convex polyhedral particle systems with multiple GPUs,10.1007/s00466-026-02781-y,2026-02-09,2026-03-26,45
+A localized mesh-free radial basis function-finite difference framework with shape parameter adaptive damping for stable time-domain wave simulation i,10.1007/s00466-026-02767-w,2025-10-03,2026-02-21,141
+A sigmoid function-based discrete-continuous parameterization (S-DCP) method for concurrent optimization of structural topology and material orientati,10.1007/s00466-026-02841-3,2026-05-27,2026-07-31,65
+Neural network-based prediction of plastic strain-hardening in metal additive manufacturing,10.1007/s00466-025-02732-z,2025-07-09,2025-11-29,143
+Topology optimization of flexure hinge mechanism based on moving morphable components with hinge features,10.1007/s00466-026-02753-2,2025-09-10,2026-01-22,134
+Practical multi-fidelity machine learning: fusion of deterministic and Bayesian models,10.1007/s00466-026-02799-2,2026-01-19,2026-05-02,103
+Design for additive manufacturing: simultaneous optimization of structural integrity and minimal support structures using SIMP,10.1007/s00466-026-02863-x,2026-06-12,2026-09-03,83
+FCM-FEM hybrid scheme equipped with a ghost element coupler for liquid–gas–solid three phase simulation,10.1007/s00466-025-02709-y,2025-06-02,2025-10-09,129
+A fast solver for entropy-regularized damage transport,10.1007/s00466-026-02816-4,2026-04-05,2026-06-15,71
+A symmetric boundary integral formulation for time–domain acoustic-elastic scattering,10.1007/s00466-025-02684-4,2025-02-23,2025-08-15,173
+Localization in gradient damage models through degradation of the damage driving force,10.1007/s00466-026-02814-6,2026-02-11,2026-06-07,116
+"Cable isogeometric analysis with bending, torsion, and contact with Coulomb friction",10.1007/s00466-026-02819-1,2026-04-23,2026-06-15,53
+On inverse finite strain elastoplasticity: formulation and computational aspects,10.1007/s00466-026-02821-7,2026-05-06,2026-06-23,48
+Optimal design of perforated plates,10.1007/s00466-026-02862-y,2026-03-23,2026-08-30,160
+Parametric phase-field brittle fracture computations with convolutional Fourier neural operators,10.1007/s00466-026-02858-8,2026-05-15,2026-08-25,102
+"Rethinking compliant mechanism design via topology optimization: a mechanics-based analysis of similarity, boundary conditions, and operating-conditio",10.1007/s00466-026-02888-2,2026-08-02,2026-11-05,95
+Predicting crack width after self-healing for experimental concrete mixture samples containing environmentally friendly supplementary cementitious mat,10.1007/s00466-025-02657-7,2025-03-03,2025-06-01,90
+A shell-in-shell homogenization approach for internally resolved structures,10.1007/s00466-026-02859-7,2026-05-28,2026-08-30,94
+Tension-compression asymmetry based on different energy decompositions within a gradient-extended two-surface damage-plasticity framework,10.1007/s00466-025-02652-y,2024-12-18,2025-05-11,144
+Multi-phase-field elasticity model based on partial rank-one energy relaxation on pairwise interfaces,10.1007/s00466-026-02782-x,2025-09-19,2026-03-25,187
+An iterative bar &amp; hinge formulation to model the nonlinear dynamics of origami structures,10.1007/s00466-026-02800-y,2025-07-29,2026-05-02,277
+Temporal hierarchical modal neural network for structural strain prediction,10.1007/s00466-025-02671-9,2025-01-10,2025-07-07,178
+Predicting smooth body flow separation with finite-element-based variational multiscale formulation,10.1007/s00466-025-02650-0,2025-01-29,2025-04-29,90
+A local RBF-based meshfree method for the three-dimensional space-fractional advection-dispersion equation on irregular convex domains,10.1007/s00466-025-02724-z,2025-06-08,2025-11-14,159
+Space-time energetic Galerkin BEM for the numerical solution of 3D elastodynamic problems: overcoming challenges of the strongly singular integral ope,10.1007/s00466-025-02668-4,2025-04-14,2025-07-05,82
+Three-dimensional non-uniform discretization peridynamics with constant horizon for simulating cracking behaviours,10.1007/s00466-025-02710-5,2025-05-29,2025-10-15,139
+Bayesian Updating of constitutive parameters under hybrid uncertainties with a novel surrogate model applied to biofilms,10.1007/s00466-026-02777-8,2025-09-03,2026-03-20,198
+Lightweight return-mapping surrogates for multiscale plasticity: a practical guide,10.1007/s00466-026-02849-9,2026-07-17,2026-08-12,26
+Virtual element method with non-matching and adaptive meshes for phase field fracture,10.1007/s00466-025-02665-7,2025-03-05,2025-06-22,109
+Unbiased higher-order frictional contact using midplane and patch based segment-to-segment penalty method,10.1007/s00466-025-02727-w,2025-06-30,2025-11-21,144
+The comparison of two-dimensional and three-dimensional electro-magneto-thermo-mechanical analysis for the electromagnetic launch rail structure,10.1007/s00466-025-02653-x,2024-10-26,2025-05-12,198
+Analysis of membrane structures by an alternative pseudo-solid positional FEM formulation,10.1007/s00466-025-02725-y,2025-05-15,2025-11-21,190
+GPU-accelerated multi-material FVM–SPH with immersed boundary method for high-fidelity modeling of shock–structure interactions,10.1007/s00466-025-02706-1,2025-05-26,2025-09-23,120
+An advanced preconditioning strategy for multi-domain fast multipole BEM with complex interfaces,10.1007/s00466-025-02703-4,2025-04-17,2025-09-20,156
+Coupled phase-field and viscoplasticity modeling of ductile fracture in solid propellants under confining pressure and strain rate effects,10.1007/s00466-025-02695-1,2025-05-20,2025-09-09,112
+Eliminating empirical stabilization: a two-dimensional C1 stabilization-free virtual element method for modified couple stress theory,10.1007/s00466-026-02783-w,2026-01-11,2026-03-27,75
+On efficient numerical integration for peridynamic modeling,10.1007/s00466-025-02667-5,2025-03-29,2025-07-01,94
+On the complementary roles of anisotropic crack density and anisotropic crack driving force in phase-field modeling of mixed-mode fracture,10.1007/s00466-026-02846-y,2026-04-18,2026-08-07,111
+Overview of eXtended IsoGeometrical FEM for non-deterministic problems,10.1007/s00466-025-02700-7,2024-10-22,2025-09-11,324
+Reduced order shear projection virtual element method for Mindlin plates,10.1007/s00466-026-02770-1,2025-11-07,2026-02-20,105
+On the effectiveness of convolutive type variational principles in the numerical solution of the heat conduction problem,10.1007/s00466-025-02683-5,2024-10-11,2025-08-16,309
+299-line topology optimization code of nearly incompressible hyperelastic materials using three-field mixed finite element,10.1007/s00466-025-02741-y,2025-08-26,2025-12-11,107
+A nonlinear 10-node tetrahedral element based on a Hu-Washizu variational formulation,10.1007/s00466-026-02825-3,2026-04-14,2026-07-02,79
+Time-dependent non-probabilistic reliability topology optimization considering the field uncertainty based on Spatial Points Control Technology (SPCT),10.1007/s00466-026-02755-0,2025-12-01,2026-01-22,52
+Discovering uncertainty: Gaussian constitutive neural networks with correlated weights,10.1007/s00466-025-02660-y,2025-03-16,2025-06-04,80
+"Finite elements of multiscale mixtures (FE2M) in three dimensions: theory, numerical implementation, and analyses",10.1007/s00466-025-02669-3,2024-08-16,2025-07-06,324
+Assessment of element type on fatigue damage prediction using crystal plasticity finite element simulations,10.1007/s00466-026-02843-1,2026-04-14,2026-08-04,112
+Splinenet: an isogeometric deep learning method for complex shells,10.1007/s00466-026-02874-8,2026-07-07,2026-09-29,84
+Effective reduced-order approximation for fast and robust MCRE-based parametric identification of nonlinear history-dependent material laws,10.1007/s00466-026-02754-1,2025-11-16,2026-01-22,67
+Physically based interaction model of cold spray particle bonding via smoothed particle hydrodynamics,10.1007/s00466-025-02714-1,2025-07-15,2025-10-18,95
+Nonlinear path-following via the asymptotic numerical method on a quantum processor,10.1007/s00466-026-02852-0,2026-04-28,2026-08-21,115
+A hybrid model–data framework for elastoplasticity with kinematic and isotropic hardening,10.1007/s00466-026-02878-4,2026-03-18,2026-10-07,203
+An accelerated phase field model for fatigue fracture in elastoplastic solids,10.1007/s00466-025-02651-z,2025-03-26,2025-05-04,39
+Non-periodic density functional perturbation theory calculations with finite elements,10.1007/s00466-026-02882-8,2026-06-01,2026-10-15,136
+Local projection stabilization of deformation gradient regularization for third medium contact,10.1007/s00466-026-02885-5,2026-08-19,2026-10-30,72
+3D concave polyhedral elements for elasticity problem using cell-based smoothed finite element method,10.1007/s00466-026-02839-x,2026-05-15,2026-07-29,75
+B-spline-enhanced space-fractional finite element method with application to limit state analysis of 3D scale-sensitive truss structures,10.1007/s00466-026-02840-4,2025-10-11,2026-07-29,291
+An explainable artificial intelligence framework enabled by a separable neural architecture,10.1007/s00466-025-02719-w,2025-07-30,2025-11-07,100
+A stabilization strategy for peridynamic correspondence models of hyperelastic materials,10.1007/s00466-025-02699-x,2025-03-31,2025-09-14,167
+A Wachspress-based transfinite formulation for exactly enforcing Dirichlet boundary conditions on convex polygonal domains in physics-informed neural ,10.1007/s00466-026-02789-4,2026-01-04,2026-04-14,100
+Investigation of interfacial adhesion and pore formation in cold spray using the updated Lagrangian SPH method,10.1007/s00466-026-02813-7,2025-11-17,2026-06-05,200
+Graph neural networks for full waveform inversion,10.1007/s00466-026-02796-5,2025-11-30,2026-04-22,143
+Thermodynamics-informed graph neural networks for real-time simulation of digital human twins,10.1007/s00466-025-02633-1,2024-12-16,2025-04-03,108
+"Thermomechanical coupling in peridynamics: a review of theory, numerics, and mechanical-engineering applications",10.1007/s00466-026-02798-3,2025-09-08,2026-04-26,230
+Coupling of peridynamics with finite elements: a case study,10.1007/s00466-025-02745-8,2025-06-06,2025-12-30,207
+A new generalized displacement control for nonlinear spectral stochastic finite element problems,10.1007/s00466-026-02772-z,2025-11-08,2026-02-20,104
+A penalty-based coupling method for shell-to-solid interaction in smoothed particle hydrodynamics,10.1007/s00466-026-02844-0,2026-04-08,2026-07-31,114
+Novel coupled Lagrangian–Eulerian peridynamics: a unified framework for modeling explosive responses with solid and gas interactions,10.1007/s00466-026-02750-5,2025-10-09,2026-01-14,97
+An adaptive multi-resolution framework for the meshless local Petrov-Galerkin method,10.1007/s00466-025-02723-0,2025-08-12,2025-11-13,93
+Temporal stability and accuracy of least squares meshfree collocation method for transient heat conduction analysis,10.1007/s00466-025-02687-1,2025-04-21,2025-08-15,116
+A manifold learning approach to nonlinear model order reduction of quasi-static problems in solid mechanics: proof of concept and parameter study,10.1007/s00466-025-02696-0,2025-03-06,2025-09-09,187
+Clustering analysis accounting for boundary conditions,10.1007/s00466-025-02655-9,2024-12-28,2025-05-19,142
+Adaptive tolerances for staggered solution algorithms in fluid-structure interaction,10.1007/s00466-025-02689-z,2025-02-20,2025-08-21,182
+Limitations and merits of wavelet discretizations in FFT-based computational micromechanics,10.1007/s00466-026-02752-3,2025-12-30,2026-01-19,20
+Multi-objective optimization for global parameter design of impact-resistant metamaterials,10.1007/s00466-026-02790-x,2025-11-27,2026-04-16,140
+Digital-twins for drone imaging and stealth technologies,10.1007/s00466-026-02808-4,2026-03-10,2026-05-15,66
+MD-PINNs: a domain decomposition strategy for inverse identification of property distributions in heterogeneous composites,10.1007/s00466-026-02801-x,2025-12-20,2026-05-06,137
+Solving contact problems using Fiber Monte Carlo,10.1007/s00466-026-02822-6,2026-02-23,2026-06-26,123
+Sensitivity of blast responses in a reinforced concrete slab to damage evolution parameters,10.1007/s00466-026-02836-0,2026-05-14,2026-07-27,74
+Hyperelastic constitutive model discovery with differentiable finite elements and structure-preserving neural networks,10.1007/s00466-026-02850-2,2026-07-06,2026-08-20,45
+Adaptive von mises–fisher–nakagami importance sampling for high-dimensional rare event simulation,10.1007/s00466-026-02823-5,2026-02-07,2026-06-28,141
+U-net architected deep material network training with microstructure local field information,10.1007/s00466-025-02744-9,2025-08-12,2025-12-27,137
+T-splines mesh generation for complex geometries: Multipatch-NURBS to product-form-T-splines conversion,10.1007/s00466-025-02678-2,2025-06-07,2025-07-25,48
+A correction method for crack area overestimation in phase-field fracture,10.1007/s00466-026-02834-2,2026-05-11,2026-07-16,66
+Adaptive reduced order modeling to assess peak stresses in heterogeneous arterial sections,10.1007/s00466-025-02713-2,2025-06-12,2025-10-11,121
+T-splines mesh generation for complex geometries: Spacecraft parachute aerodynamics,10.1007/s00466-025-02679-1,2025-06-17,2025-07-25,38
+Hysteresis effect using an enthalpy-based lattice-Boltzmann model,10.1007/s00466-026-02746-1,2025-08-16,2025-12-18,124
+An efficient proper generalized decomposition framework with high-order absorbing boundaries for 3D viscoelastic seismic wave modeling,10.1007/s00466-026-02867-7,2026-04-30,2026-09-15,138
+"A primal–dual active set framework for adhesive contact of structured interfaces with arbitrary tip geometry, roughness, and buckling",10.1007/s00466-026-02872-w,2026-05-11,2026-09-25,137
+Phase-field modeling of hydraulic fracturing in porous media using the finite volume method with adaptive mesh refinement,10.1007/s00466-025-02729-8,2025-08-08,2025-11-26,110
+A nonlinear adaptive pyramid model for contact problems with contact-point pivoting,10.1007/s00466-026-02851-1,2026-05-07,2026-08-17,102
+Enforcement of non-conforming dirichlet boundary conditions in the implicit material point method using the direct elimination method,10.1007/s00466-025-02663-9,2024-11-29,2025-06-10,193
+Multigrid-accelerated sharp-interface immersed boundary method for large-scale incompressible fluid–particle interaction,10.1007/s00466-026-02786-7,2026-01-04,2026-04-01,87
+A polytopal composite finite element method for the frictional contact problem with hyperelastic large deformation,10.1007/s00466-025-02728-9,2025-03-19,2025-11-22,248
+Conforming/nonconforming virtual elements and application to elasticity problems in curved three-dimensional domains,10.1007/s00466-026-02847-x,2026-05-27,2026-08-11,76
+A novel variationally consistent nodal integration method based on quadrature weight correction for meshfree reproducing kernel particle method,10.1007/s00466-026-02864-w,2026-03-14,2026-09-03,173
+Solving the nonlinear membrane problem with the Chebyshev collocation method,10.1007/s00466-026-02810-w,2026-03-02,2026-05-21,80
+Perfectly matched layers for transient multiphase flow in deformable porous media,10.1007/s00466-026-02820-8,2026-03-09,2026-06-22,105
+Homogenization of one-dimensional periodic rod networks as special Cosserat rods,10.1007/s00466-026-02856-w,2026-03-27,2026-08-25,151
+A hybrid OpenMP/MPI parallel automated multilevel substructuring method for finite element modal analysis,10.1007/s00466-026-02771-0,2025-08-05,2026-02-27,206
+Accurate and consistent composite voxel methods for digital images in computational micromechanics,10.1007/s00466-025-02716-z,2025-07-22,2025-10-23,93
+From legacy finite element modeling to explainable simulation: Technical requirements for XAI in computational mechanics,10.1007/s00466-026-02845-z,2026-05-31,2026-08-05,66
+Coupling of data-driven approaches integrating material and structural data for composite structures,10.1007/s00466-026-02797-4,2025-10-07,2026-04-26,201
+Peridynamics-based quasi-static fracture analysis: a novel approach integrating SBFEM shape function reconstruction,10.1007/s00466-025-02680-8,2025-06-06,2025-07-31,55
+Mechanism study of hybrid discrete analysis with different curve connections between NURBS and Lagrange subdomain elements,10.1007/s00466-026-02780-z,2025-07-03,2026-03-23,263
+A polygonal Reissner–Mindlin plate element based on the scaled boundary finite element method,10.1007/s00466-025-02742-x,2025-09-18,2025-12-11,84

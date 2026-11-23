@@ -1,0 +1,118 @@
+title,doi,received,accepted,days
+Impact of Beidou-3 upgrades and maintenance on code/phase biases estimation and PPP ambiguity resolution,10.1007/s10291-025-01970-1,2025-03-10,2025-09-22,196
+Analysis of GNSS radio frequency interference and impacts on GNSS receiver parameters,10.1007/s10291-025-01953-2,2025-02-14,2025-08-24,191
+Mitigation of multipath effects in global single-epoch multi-constellation and multi-frequency precise point positioning cascading ambiguity resolutio,10.1007/s10291-025-01940-7,2024-05-13,2025-07-15,428
+HUTG: a next-generation IGS real‑time combined GIM via two‑step global and regional correction with robust weighting from HENU and UPC‑IonSAT,10.1007/s10291-026-02069-x,2025-09-15,2026-03-18,184
+An external-aid-free GNSS signal classification and stochastic model optimization method for urban multipath environments,10.1007/s10291-026-02108-7,2025-09-05,2026-06-08,276
+Ionospheric nonlinear interpolation model for Mid- and Low-latitude network RTK during solar maxima,10.1007/s10291-025-01976-9,2025-06-25,2025-10-03,100
+A supervised feature update method for real-time monitoring of GPS flex power,10.1007/s10291-026-02046-4,2025-04-09,2026-02-06,303
+A flexible ionospheric function model constructed with the aid of NeQuick model,10.1007/s10291-025-01881-1,2024-06-14,2025-05-09,329
+Enhancing smartphone-based vehicle navigation in deep urban areas using machine learning-aided PPP-RTK,10.1007/s10291-025-01896-8,2024-07-28,2025-05-29,305
+Precise positioning on the moon using lunar GNSS and UWB network,10.1007/s10291-026-02088-8,2024-09-28,2026-04-22,571
+Seismic shaking simultaneously recorded in GNSS TEC and surface displacements: a case study of the 2024 M 7.4 Hualien earthquake,10.1007/s10291-026-02067-z,2025-07-23,2026-03-14,234
+Exploiting ERA5-augmented GNSS/SINS post-processing methodology to improve vertical positioning accuracy for airborne surveying,10.1007/s10291-026-02034-8,2025-02-25,2026-01-18,327
+LEO satellite clock prediction using deep learning: a wavelet–LSTM method with autoformer and LSTM comparisons,10.1007/s10291-026-02110-z,2026-01-27,2026-06-09,133
+PyROEX: a python-based open-source software toolkit for GNSS radio occultation data preprocessing in ROEX format,10.1007/s10291-026-02095-9,2025-08-19,2026-05-06,260
+M_ISSION: a MATLAB-based software for multi-GNSS ionospheric scintillation index calculation and analysis,10.1007/s10291-025-01971-0,2025-02-26,2025-09-22,208
+A real-time moving baseline RTK framework for cooperative positioning of UAVs and ground vehicles,10.1007/s10291-025-02005-5,2025-01-15,2025-11-25,314
+CEEMD-UNet: feature-preserving deep-denoising method for high-rate GNSS coseismic displacement,10.1007/s10291-026-02157-y,2026-02-04,2026-09-24,232
+Refinement of the solar radiation pressure model for the BDS-3 satellites with considering illuminated antennas,10.1007/s10291-025-01913-w,2024-08-31,2025-06-12,285
+Accurate topside ionospheric TEC estimation using LEO satellites with onboard GPS observations,10.1007/s10291-026-02107-8,2024-12-05,2026-06-04,546
+An online incremental learning support vector regression for INS/GPS integrated navigation system during long-time GPS outage,10.1007/s10291-025-01900-1,2024-12-09,2025-06-01,174
+Performance of GNSS dual-frequency combinations in estimating TEC based on ROTI,10.1007/s10291-025-01987-6,2025-03-21,2025-10-20,213
+"Evaluation of uncalibrated phase delays estimated based on orbit determination, clock estimation, and precise point positioning",10.1007/s10291-025-02000-w,2025-03-10,2025-11-15,250
+Analyzing the stochastic properties of code observation using various low-cost GNSS receivers,10.1007/s10291-025-01926-5,2025-03-19,2025-07-01,104
+Accuracy assessment of measurements by laser RTK compared to precise total station and GNSS reference,10.1007/s10291-026-02060-6,2025-12-02,2026-03-03,91
+A novel real-time integrated navigation system based on the S-Transformer and A-SRCKF during GPS outages,10.1007/s10291-025-01898-6,2024-11-05,2025-06-01,208
+An augmented zenith tropospheric delay model for marine scenarios and its PPP application,10.1007/s10291-026-02158-x,2025-04-17,2026-10-04,535
+An undifferenced and uncombined phase-only PPP model for time transfer,10.1007/s10291-026-02125-6,2025-10-23,2026-06-27,247
+Incremental learning-enhanced LSTM for spoofing detection in GNSS signals,10.1007/s10291-025-01996-5,2025-06-05,2025-11-10,158
+Site-specific GNSS observation quality assessment and adaptive weighting using LightGBM for RTK deformation monitoring,10.1007/s10291-026-02162-1,2026-05-20,2026-10-08,141
+Deep reinforcement learning with robust spatial–temporal representation for improving GNSS positioning correction,10.1007/s10291-026-02103-y,2025-07-26,2026-05-29,307
+Comparison and combination of BDS-3 satellite clock offsets from L-band ground-tracking and Ka-band inter-satellite link measurements,10.1007/s10291-026-02171-0,2026-01-07,2026-10-18,284
+Preliminary validation of Tianmu-1 multi-GNSS reflections for snow water equivalent retrieval using a MBF-SWENet model,10.1007/s10291-026-02055-3,2026-01-06,2026-02-26,51
+A robust ambiguity resolution framework integrating PAR and BIE with modified CRAIM strategies,10.1007/s10291-026-02130-9,2025-04-13,2026-07-21,464
+Ionospheric TEC prediction using the non-stationary inverted transformer fusion model and its performance in Chinese region,10.1007/s10291-025-01966-x,2025-03-25,2025-09-15,174
+Research on the ambiguity resolution method for the GNSS compass with pitch angle constraint,10.1007/s10291-026-02024-w,2025-04-23,2026-01-08,260
+INSTINCT: a flow-based open-source PNT framework for satellite navigation and sensor fusion,10.1007/s10291-025-01927-4,2025-02-05,2025-07-01,146
+A novel real-time GPS flex power detection method based on the linear relationship between carrier-to-noise ratios,10.1007/s10291-025-01919-4,2024-12-23,2025-06-23,182
+Multi-constellation instantaneous single difference triple-carrier ambiguity resolution in urban environments,10.1007/s10291-025-01946-1,2025-02-27,2025-08-05,159
+Short-term forecast of ionospheric sporadic E intensity fusing physical parameters via deep learning,10.1007/s10291-025-01947-0,2024-05-25,2025-08-13,445
+An optimal method for GNSS water vapor tomography based on parameter adaptation,10.1007/s10291-025-02006-4,2024-01-17,2025-11-26,679
+Characterization and performance assessment of the GLONASS ionosphere model,10.1007/s10291-025-01939-0,2025-05-19,2025-07-15,57
+Correcting geocenter motion in GNSS solutions by combining with satellite laser ranging data,10.1007/s10291-025-01920-x,2025-04-07,2025-06-23,77
+From SPP to RTK: promoting the satellite navigation potential of acoustically excited antenna,10.1007/s10291-025-02018-0,2025-03-24,2025-12-17,268
+Enhancing the BDGIM model for ionospheric delay correction using GNSS LEO occultation data during high solar activity,10.1007/s10291-025-01908-7,2025-02-10,2025-06-11,121
+Improved methods for precise orbit determination of LEO satellites under geomagnetic storm conditions,10.1007/s10291-026-02133-6,2026-02-14,2026-07-22,158
+DeepTCAR: deep learning enhanced three-carrier ambiguity resolution for BeiDou RTK in urban environments,10.1007/s10291-026-02128-3,2026-01-12,2026-07-07,176
+Impact of piece-wise linear receiver clock modeling on sub-daily PPP coordinates for highly stable IGS H-maser stations,10.1007/s10291-026-02147-0,2026-01-16,2026-09-06,233
+Feasibility of recapturing millimeter-level vibrations by fusing mass-market GNSS and MEMS accelerometer,10.1007/s10291-026-02161-2,2025-11-16,2026-10-07,325
+Space-efficient vertical choke rings for geodetic-grade multipath mitigation in GNSS antennas,10.1007/s10291-025-01944-3,2024-08-30,2025-07-30,334
+Evaluation of the VMF3-FC and prior variance modeling: implications for PPP/PPP-IAR performance,10.1007/s10291-025-01922-9,2024-12-12,2025-06-25,195
+ML-test: validating machine learning for GNSS integer ambiguity resolution in quad-constellation dual-frequency observations of Hong Kong,10.1007/s10291-025-01904-x,2024-08-14,2025-06-01,291
+An instantaneous and reliable precise point positioning integer ambiguity resolution method based on multistage residual tests,10.1007/s10291-025-01974-x,2024-07-24,2025-09-25,428
+MGAMNet: a multi-granularity aware and hierarchically mixed network for BDS-3 satellite clock bias prediction,10.1007/s10291-025-01984-9,2025-07-08,2025-10-07,91
+Optimized random pursuit strategy for enhancing predictability of on-board atomic clocks,10.1007/s10291-026-02035-7,2025-03-25,2026-01-19,300
+A new ZTD modeling method for areas with sparse GNSS stations by fusing surface meteorological observations,10.1007/s10291-025-01999-2,2024-08-23,2025-11-12,446
+Improving the accuracy of zenith tropospheric delay in TUW-VMF3 and GFZ-VMF3 using feedforward neural networks,10.1007/s10291-025-01914-9,2024-11-04,2025-06-12,220
+OpATOM: an open-source toolbox for tomographic reconstruction of atmospheric wet refractivity model using GNSS observations,10.1007/s10291-025-01960-3,2024-09-03,2025-09-09,371
+Persistent GNSS loss-of-lock from Swarm mission during high solar activity and regional interference: when space science meets geopolitics,10.1007/s10291-026-02159-w,2026-04-19,2026-10-05,169
+GNSS multipath mitigation via spatial domain averaging for enhanced positioning precision,10.1007/s10291-026-02042-8,2025-08-07,2026-02-02,179
+"Evaluation of GNSS ionosphere prediction models Klobuchar-GPS, NTCM-G, and BDGIM: methodology and results for 2021–2024",10.1007/s10291-025-01905-w,2025-02-13,2025-06-02,109
+Forecasting one-day global ionospheric TEC maps based on a modified 3D convolution U-Net incorporating fused index features,10.1007/s10291-025-02011-7,2025-05-19,2025-12-03,198
+From prediction to mechanistic understanding: SHAP-based interpretation of a low-latitude ionospheric three-dimensional electron density model,10.1007/s10291-026-02071-3,2025-09-14,2026-03-18,185
+Study on the ISB existence among BDS orbit types and the influence on precise point positioning performance,10.1007/s10291-026-02068-y,2025-08-20,2026-03-14,206
+DIA-Estimator and Multidimensional Model Misspecifications: GNSS-based Positioning Safety Analysis for UAVs,10.1007/s10291-026-02029-5,2025-04-19,2026-01-13,269
+GNSS-RTK time series denoising based on deep learning and mode decomposition techniques for offshore platform,10.1007/s10291-025-01892-y,2024-06-20,2025-05-20,334
+Decimeter-level vehicular positioning in urban environments with factor graph-based PPP and robust regression,10.1007/s10291-025-01893-x,2024-11-18,2025-05-26,189
+PRX: a python RINEX pre-processing tool to facilitate raw GNSS observation processing,10.1007/s10291-026-02129-2,2025-08-25,2026-07-09,318
+Analysis of multi-system and multi-polarization GNSS-R sensitivity to sea surface wind speed retrieval using Tianmu-1 data,10.1007/s10291-025-02015-3,2025-07-07,2025-12-13,159
+Integrated GNSS positioning and attitude determination with unscented Kalman filter,10.1007/s10291-025-01948-z,2025-02-23,2025-08-13,171
+Determination of multi-GNSS differential code biases with satellite antenna phase center corrections,10.1007/s10291-025-01983-w,2024-11-15,2025-10-03,322
+"Global GNSS IWV diurnal variability over 6,000 stations and its implications for assessing the impact of artificial ERA5 discontinuities",10.1007/s10291-026-02093-x,2025-11-28,2026-05-02,155
+Iridium NEXT/Orbcomm combined doppler positioning using semi-parametric regression method with additional system parameters,10.1007/s10291-026-02033-9,2024-12-30,2026-01-18,384
+Characteristics of inter-frequency clock bias for new GLONASS-M+/K1B/K2 satellites and its contribution to uncombined PPP,10.1007/s10291-025-02008-2,2025-03-14,2025-11-30,261
+Traceable method for differential code bias estimation in PPP one-way timing,10.1007/s10291-026-02126-5,2025-09-09,2026-06-27,291
+Detection and mitigation of GNSS time synchronization attacks based on dual CNN-LSTM neural networks,10.1007/s10291-026-02122-9,2025-08-18,2026-06-27,313
+Continuity-constrained height-segmented correction of the NeQuick topside model using ISIS-2 satellite observations,10.1007/s10291-026-02135-4,2026-03-13,2026-08-11,151
+"Nottingham smartphone GNSS Raw to RINEX (NSGRX) Converter: a new smartphone data converter: principles, methodology and experimental evaluation",10.1007/s10291-026-02141-6,2025-10-10,2026-08-21,315
+Spatiotemporal prediction of ionospheric TEC based on denoising wavelet transform convolution,10.1007/s10291-025-01891-z,2025-01-14,2025-05-20,126
+Resilient strategies for static and kinematic PPP-RTK under ionospheric disturbance,10.1007/s10291-026-02026-8,2024-05-01,2026-01-09,618
+"Advanced, 3D map aided (3DMA) GNSS simulations for NRTK performance prediction",10.1007/s10291-025-01962-1,2025-04-09,2025-09-10,154
+Neural network-compensated satellite clock bias prediction for Low Earth Orbit (LEO) satellites,10.1007/s10291-025-02019-z,2025-07-01,2025-12-30,182
+Improving real-time PPP time transfer with the augmentation of predicted tropospheric products,10.1007/s10291-026-02131-8,2026-03-15,2026-07-21,128
+The study on consistency and reliability of GNSS receiver antenna type-mean and individual phase center corrections,10.1007/s10291-026-02174-x,2026-01-28,2026-10-20,265
+Integrated ionospheric delay processing strategy for PPP-RTK: improving uncertainty estimation accuracy and mitigating delay errors,10.1007/s10291-025-01978-7,2025-03-12,2025-10-03,205
+The influence of native temporal resolution on the performance of real-time global ionospheric maps,10.1007/s10291-026-02113-w,2025-07-23,2026-06-12,324
+GNSS multipath mitigation in direct position estimation: algorithm design and implementation strategies,10.1007/s10291-025-01899-5,2024-09-12,2025-06-01,262
+Improving GNSS data accuracy: Implementing Non-tidal Corrections at the Observation-level in GNSS data,10.1007/s10291-025-01921-w,2024-09-28,2025-06-23,268
+A virtual-signal method for enhancing the efficacy of GNSS tropospheric tomography using artificial neural network technique,10.1007/s10291-025-01935-4,2024-05-31,2025-07-14,409
+Least squares Fourier filter for processing incomplete and heterogeneous GNSS position time series,10.1007/s10291-025-01885-x,2024-09-11,2025-05-12,243
+Improved estimates of GNSS-inverted TWS through a benchmarking approach: a case study for the Seine river basin,10.1007/s10291-026-02090-0,2025-10-04,2026-05-01,209
+Estimating urban building height based on smartphone GNSS LOS/NLOS signal classification,10.1007/s10291-025-01906-9,2024-02-01,2025-06-03,488
+Pseudorange error prediction and correction using PSO-KELM for smartphone GNSS urban positioning,10.1007/s10291-025-01988-5,2025-05-26,2025-10-20,147
+TurboUNet: secure code estimation for non-cooperative GNSS spoofing,10.1007/s10291-026-02118-5,2025-12-30,2026-06-19,171
+A modified threshold model of HMW combination for detecting cycle slips in high-latitude regions during ionospheric scintillation periods,10.1007/s10291-026-02137-2,2026-02-01,2026-08-15,195
+"GNSS-interferometric reflectometry for sea level and ice freeboard measurements over the seasonal landfast ice cycles at Pituffik, Greenland",10.1007/s10291-026-02092-y,2025-05-19,2026-05-02,348
+Impact of the October 2024 G4 geomagnetic storm on GNSS performance: observations and physical mechanisms,10.1007/s10291-026-02101-0,2025-08-16,2026-05-27,284
+GREAT-PVT: an open‑source software for multi-frequency and multi-GNSS PPP-AR and RTK,10.1007/s10291-025-01923-8,2025-03-02,2025-06-25,115
+Application of combination of denoising methods and Complementary Ensemble Empirical Mode Decomposition in GNSS time series analysis,10.1007/s10291-025-01895-9,2024-07-16,2025-05-28,316
+Revisiting relativistic clock drift in GNSS: from constant model to dynamic model,10.1007/s10291-025-02007-3,2025-07-31,2025-11-27,119
+Improved tightly-coupled PPP/MEMS-INS integration with adaptive code pseudorange weighting and LSTM-based smoothing for urban canyon navigation,10.1007/s10291-025-01977-8,2025-04-30,2025-10-03,156
+Automatic orbital maneuver detection and thrust model establishment for Beidou GEO/IGSO satellites,10.1007/s10291-026-02045-5,2025-05-06,2026-02-04,274
+GACE-BOC: a generalized dual-frequency constant-envelope multiplexing for next-generation GNSS,10.1007/s10291-026-02063-3,2025-09-29,2026-03-06,158
+Platform-terminal interactive VRS observation generation method for GNSS network RTK positioning,10.1007/s10291-026-02098-6,2025-03-12,2026-05-18,432
+Refined functional model of precise orbit determination to capture the dynamics of receiver-dependent biases of low earth orbit satellite,10.1007/s10291-026-02041-9,2025-09-08,2026-02-02,147
+Precise autonomous navigation of LEO constellations based on PPP-B2b signals and inter-satellite ranging measurements,10.1007/s10291-025-01882-0,2024-09-15,2025-05-12,239
+An enhanced GNSS/INS positioning method with position and attitude constraints in urban environments,10.1007/s10291-025-01975-w,2025-04-17,2025-09-29,165
+GNSS interference monitoring based on LEO: suitability study of single-satellite and triple-satellite formation systems,10.1007/s10291-025-01982-x,2025-03-01,2025-10-03,216
+Enhancing GNSS spoofing detection by carrier-smoothing pseudorange double difference measurements,10.1007/s10291-025-01945-2,2025-03-13,2025-08-02,142
+An investigation into the impact of optical clock stability on PPP-RTK,10.1007/s10291-026-02123-8,2025-12-15,2026-06-29,196
+"A generalized, outage period-aware CNN-BiLSTM architecture for real-world INS/GPS deployment under extended GNSS denials",10.1007/s10291-026-02139-0,2025-12-29,2026-08-21,235
+Characterizing ionospheric perturbations with refined gradient ionosphere indices,10.1007/s10291-026-02143-4,2026-01-23,2026-08-27,216
+Deep learning for tropospheric prediction: an integration of knowledge and data-driven approaches,10.1007/s10291-026-02025-9,2025-06-27,2026-01-08,195
+Quantum sensors for enhanced positioning and navigation: a comprehensive review,10.1007/s10291-026-02030-y,2025-05-20,2026-01-13,238
+"First smartwatch RTK results: performance analysis of instantaneous, single-frequency multi-GNSS cm-level positioning with comparison to Google Pixel ",10.1007/s10291-025-01965-y,2025-07-09,2025-09-12,65
+Analyzing the impact of geometric constraints on GNSS positioning accuracy using realistic stochastic model,10.1007/s10291-025-01928-3,2024-11-09,2025-07-07,240
+A clustered-user PPP-RTK method,10.1007/s10291-026-02115-8,2025-10-16,2026-06-15,242
+Global characterisation of GNSS-PWV behaviour stratified by the Köppen-Geiger climate classification,10.1007/s10291-026-02091-z,2026-01-08,2026-05-02,114

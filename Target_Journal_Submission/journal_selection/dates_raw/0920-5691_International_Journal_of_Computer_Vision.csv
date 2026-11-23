@@ -1,0 +1,119 @@
+title,doi,received,accepted,days
+Associative Recurrent Bilinear Optimization for Domain-Generalized Binary Neural Networks,10.1007/s11263-026-02762-x,2024-11-22,2026-01-19,423
+Image-based Morphological Characterization of Filamentous Biological Structures with Non-constant Curvature Shape Feature,10.1007/s11263-025-02593-2,2025-04-04,2025-11-28,238
+Improving Object Detection Models via LLM-Based Training Data Synthesis,10.1007/s11263-025-02560-x,2024-10-01,2025-07-29,301
+ReBac: Current-to-Past Residual Background Correction for Class-Incremental Semantic Segmentation,10.1007/s11263-026-02827-x,2025-10-13,2026-03-18,156
+Image Captions are Natural Prompts for Training Data Synthesis,10.1007/s11263-025-02436-0,2024-08-20,2025-03-23,215
+SMPL-IKS: A Mixed Analytical-Neural Inverse Kinematics Solver for 3D Human Mesh Recovery,10.1007/s11263-025-02574-5,2024-12-18,2025-08-23,248
+End-to-End LiDAR-Camera Calibration via Multi-Modal Correspondences Estimation and Explicit BEV Alignment,10.1007/s11263-026-02921-0,2026-01-07,2026-06-11,155
+Towards Robust Temporal Action Detection: Benchmark and A Strong Baseline,10.1007/s11263-026-02956-3,2025-03-25,2026-07-06,468
+Context-Aware Dynamic Actor-Critic for Multimodal Visual Reinforcement Learning,10.1007/s11263-026-02955-4,2025-06-28,2026-07-06,373
+Learning Refractive-Diffractive Optics with Unidirectional Transformer for Large Field-of-View Imaging,10.1007/s11263-025-02546-9,2025-01-26,2025-07-24,179
+Affective Image Editing: Shaping Emotional Factors via Text Descriptions,10.1007/s11263-025-02678-y,2025-04-12,2025-09-21,162
+Advancing Aesthetic Image Generation via Composition Transfer,10.1007/s11263-026-02862-8,2025-07-22,2026-04-17,269
+Uncertainty-Aware and Decoupled Distillation for Semantic Segmentation,10.1007/s11263-025-02585-2,2025-06-18,2025-12-03,168
+TEPR: Thermal Edge-Prompted Geometry Learning for Multi-View 3D Reconstruction,10.1007/s11263-026-02997-8,2026-01-16,2026-08-04,200
+MMRL++: Parameter-Efficient and Interaction-Aware Representation Learning for Vision-Language Models,10.1007/s11263-025-02586-1,2025-05-14,2025-12-02,202
+Beyond Image Prior: Embedding Noise Prior into Latent Space of Conditional Denoising Transformer,10.1007/s11263-025-02553-w,2024-12-23,2025-07-29,218
+RS-vHeat+: An Efficient Remote Sensing Foundation Model Guided by Multi-Modal Fine-Grained Visual Semantics via Heat Conduction,10.1007/s11263-026-03070-0,2026-02-12,2026-09-23,223
+Blind Omnidirectional Image Quality Assessment: Embracing the Magic Power of Multimodal Large Language Models,10.1007/s11263-025-02626-w,2025-03-03,2025-11-03,245
+FourierMIL: Fourier Filtering-based Multiple Instance Learning for Whole Slide Image Analysis,10.1007/s11263-025-02679-x,2025-03-10,2025-09-21,195
+GRAIL: Granularity Adaptive Representation for Class-Incremental Learning with Granular-Ball,10.1007/s11263-026-03091-9,2026-03-25,2026-09-30,189
+TokenPacker: Efficient Visual Projector for Multimodal LLM,10.1007/s11263-025-02491-7,2024-08-01,2025-05-22,294
+E$$^2$$MA-VFI: Enhancing Video Frame Interpolation with Inter-Frame Attention,10.1007/s11263-026-03101-w,2025-12-30,2026-10-05,279
+LLM-Powered Query Expansion for Enhancing Boundary Prediction in Language-Driven Action Localization,10.1007/s11263-026-03083-9,2025-05-29,2026-09-28,487
+RGB-D Indiscernible Object Counting in Underwater Scenes,10.1007/s11263-026-02846-8,2025-04-18,2026-04-05,352
+EventEgo3D++: 3D Human Motion Capture from A Head-Mounted Event Camera,10.1007/s11263-025-02489-1,2024-09-18,2025-05-21,245
+Are Minimal Radial Distortion Solvers Really Necessary for Relative Pose Estimation?,10.1007/s11263-025-02657-3,2025-04-21,2025-10-07,169
+Explicit Geometry-Reflectance Domain Shift Modeling for Robust LiDAR Segmentation in Adverse Weather,10.1007/s11263-026-02959-0,2025-12-23,2026-07-07,196
+OPONeRF: One-Point-One NeRF for Robust Few-shot Rendering,10.1007/s11263-025-02602-4,2024-07-22,2025-11-24,490
+ImageBind Guided Progressive Transformation Network for Alignment-free RGBT Video Object Detection,10.1007/s11263-026-02935-8,2025-08-13,2026-06-18,309
+RDG-GS: Relative Depth Guidance with Gaussian Splatting for Real-time Sparse-View 3D Rendering,10.1007/s11263-025-02594-1,2025-01-22,2025-11-28,310
+Oulu Remote-photoplethysmography Presentation Attacks Database (OR-PAD),10.1007/s11263-025-02588-z,2025-04-08,2025-12-02,238
+"Unsupervised Robust Domain Adaptation: Paradigm, Theory and Algorithm",10.1007/s11263-025-02614-0,2024-12-15,2025-11-12,332
+MICTracker: Modality Informativeness Controlled Multi-modal Fusion for Adaptive RGB-D Visual Tracking,10.1007/s11263-026-03048-y,2025-05-13,2026-09-05,480
+Blurring Modal Boundaries: A Unified Survey from Single- to Multi-modal Person Re-ldentification,10.1007/s11263-026-03069-7,2026-03-26,2026-09-23,181
+Taming Data and Transformers for Audio Generation,10.1007/s11263-025-02632-y,2025-04-15,2025-10-14,182
+Materialist: Physically Based Editing Using Single-Image Inverse Rendering,10.1007/s11263-026-02833-z,2025-08-06,2026-03-24,230
+3D CoCa v2: Contrastive Learners with Test-Time Search for Generalizable Spatial Intelligence,10.1007/s11263-026-03114-5,2026-01-10,2026-10-19,282
+Exploring Decoupled Spatio-Temporal Consistency Learning and Self-Prompting Evolution for Self-Supervised Tracking,10.1007/s11263-026-02974-1,2026-01-11,2026-07-16,186
+Multi-modal Prompt Alignment with Fine-grained LLM Knowledge for Unsupervised Domain Adaptation,10.1007/s11263-025-02497-1,2024-06-26,2025-06-03,342
+MedSegFM: A Generative Perspective for Lesion Segmentation via Flow Matching,10.1007/s11263-026-02863-7,2025-09-26,2026-04-17,203
+AnyPattern: Towards In-context Image Copy Detection,10.1007/s11263-025-02633-x,2024-09-28,2025-10-23,390
+Multi-Modal Few-Shot Object Detection with Meta-Learning-Based Cross-Modal Prompting,10.1007/s11263-025-02592-3,2023-02-13,2025-12-02,1023
+Incremental Learning of Vision-Language Models via Task Subspace Projection and Dynamic LoRA,10.1007/s11263-026-03079-5,2025-12-02,2026-09-29,301
+EKPC: Elastic Knowledge Preservation and Compensation for Class-Incremental Learning,10.1007/s11263-026-02820-4,2025-04-02,2026-03-17,349
+E-RGB-D: Real-Time Event-Based Perception with Structured Light,10.1007/s11263-026-03001-z,2025-12-11,2026-08-11,243
+Two-Stage Multi-Modal Fusion with Adaptive Alignment for Action Quality Assessment,10.1007/s11263-026-02960-7,2025-12-18,2026-07-07,201
+IPDiff: Diffusion-driven ORSI Salient Object Detection with Information Reconstruction and Multi-Prior Guidance,10.1007/s11263-026-02931-y,2025-08-29,2026-06-17,292
+Fast Sampling Through The Reuse Of Attention Maps In Diffusion Models,10.1007/s11263-025-02463-x,2024-04-17,2025-04-25,373
+Skim then Focus: Integrating Contextual and Fine-grained Views for Repetitive Action Counting,10.1007/s11263-025-02471-x,2024-04-26,2025-05-02,371
+Unveiling Representation Expansion: A New Lens on Out-of-Distribution Detection,10.1007/s11263-026-03036-2,2026-03-27,2026-08-30,156
+DLCL: Deep Learning-Enabled Cooperative Localization for UAV-UGV Team with Adaptive Perception Recovery,10.1007/s11263-026-03028-2,2025-03-17,2026-08-28,529
+CoFi-M$$^{2}$$AR: A Coarse-to-Fine Multimodal Framework for Micro-Action Recognition,10.1007/s11263-026-03090-w,2026-04-24,2026-09-30,159
+Real-Time Neural Radiance Talking Portrait Synthesis via Audio-Spatial Decomposition,10.1007/s11263-025-02481-9,2024-04-26,2025-05-09,378
+Is Contrastive Distillation Enough for Learning Comprehensive 3D Representations?,10.1007/s11263-026-02879-z,2024-12-12,2026-05-04,508
+Human–AI Divergence in Ego-Centric Action Recognition Under Spatial and Spatiotemporal Manipulations,10.1007/s11263-026-03077-7,2026-03-02,2026-09-28,210
+Test-Time Computing for Referring Multimodal Large Language Models,10.1007/s11263-026-03100-x,2025-12-25,2026-10-04,283
+Knowledge-Guided Adversarial Training for Infrared Object Detection via Thermal Radiation Modeling,10.1007/s11263-026-02835-x,2025-11-26,2026-03-26,120
+SAVSR++: An All-Stage Scale-Aware and Temporal Omniscient Framework for Arbitrary-Scale Video Super-Resolution,10.1007/s11263-026-02812-4,2025-07-14,2026-03-14,243
+Query-Free Black-Box Universal Adversarial Attacks on Gait Recognition,10.1007/s11263-026-02982-1,2025-12-14,2026-07-21,219
+AEMIM: Adversarial Examples Meet Masked Image Modeling,10.1007/s11263-026-02741-2,2024-07-16,2026-01-01,534
+DI-Retinex: Digital-Imaging Retinex Model for Low-Light Image Enhancement,10.1007/s11263-025-02542-z,2023-07-30,2025-07-24,725
+Fix Your Downsampling ASAP! Aliasing and Sinc Artifact Free Pooling in the Fourier Domain,10.1007/s11263-026-03005-9,2025-04-14,2026-08-11,484
+PointHPS: Cascaded 3D Human Pose and Shape Estimation from Point Clouds,10.1007/s11263-026-02750-1,2024-01-02,2026-01-06,735
+MRM++: Enhanced Masked Relation Modeling for Multi-Modal Medical Pre-training,10.1007/s11263-026-02938-5,2024-10-01,2026-06-22,629
+Dream2Learn: Structured Generative Dreaming for Continual Learning,10.1007/s11263-026-02958-1,2026-02-28,2026-07-07,129
+Generalized Image Retrieval with Off-The-Shelf Quantizer,10.1007/s11263-026-02857-5,2025-08-09,2026-04-15,249
+Model-based Metric 3D Shape and Motion Reconstruction of Wild Bottlenose Dolphins in Drone-Shot Videos,10.1007/s11263-026-02906-z,2025-09-29,2026-05-18,231
+CEDFlow++: Latent Contour Enhancement for Dark Optical Flow Estimation,10.1007/s11263-025-02528-x,2024-06-07,2025-07-07,395
+Dr.V : A Hierarchical Perception-Temporal-Cognition Framework to Diagnose Video Hallucination by Fine-Grained Spatial-Temporal Grounding,10.1007/s11263-026-02831-1,2025-08-07,2026-03-23,228
+A Traditional Approach for Color Constancy and Color Assimilation Illusions with Its Applications to Low-Light Image Enhancement,10.1007/s11263-025-02595-0,2025-04-04,2025-11-28,238
+HENet++: Hybrid Encoding and Multi-task Learning for 3D Perception and Planning in Autonomous Driving,10.1007/s11263-026-03078-6,2026-02-16,2026-09-28,224
+CorrCLIPv2: Harnessing Unlabeled Images for Open-Vocabulary Semantic Segmentation,10.1007/s11263-026-03027-3,2026-02-28,2026-08-28,181
+Reconstructing a Sphere and the Camera Focal Length from a Single View by Fitting Planes,10.1007/s11263-025-02697-9,2025-03-04,2025-09-03,183
+Privacy-Preserving SAM Quantization for Efficient Edge Intelligence in Healthcare,10.1007/s11263-026-02791-6,2024-10-20,2026-02-13,481
+Point-In-Context: Understanding Point Cloud via In-Context Learning,10.1007/s11263-026-02799-y,2024-12-01,2026-02-27,453
+Senna: Bridging Large Vision-Language Models and End-to-End Autonomous Driving,10.1007/s11263-026-03002-y,2025-12-09,2026-08-11,245
+Mouse Lockbox Dataset: Behavior Recognition for Mice Solving Lockboxes,10.1007/s11263-026-02908-x,2025-09-01,2026-05-26,267
+UMCL: Unimodal-generated Multimodal Contrastive Learning for Cross-compression-rate Deepfake Detection,10.1007/s11263-025-02606-0,2025-03-01,2025-11-16,260
+Reasoning Segmentation for Images and Videos: A Survey,10.1007/s11263-026-02903-2,2025-05-26,2026-05-16,355
+HR-INR: Continuous Space-Time Video Super-Resolution via Event Camera,10.1007/s11263-026-03034-4,2025-02-23,2026-08-28,551
+G2S2-IR: Glocal Gaussian Splatting with Surface Awareness for Inverse Rendering,10.1007/s11263-026-03022-8,2025-03-18,2026-08-25,525
+TAME-MA: Taming Mobile Agents via Trajectory-Level Trustworthiness Under Jailbreak Manipulations,10.1007/s11263-026-03015-7,2025-12-12,2026-08-24,255
+A Novel Dataset and Lightweight Distillation Baseline for Highlight Transparent Object Detection,10.1007/s11263-025-02718-7,2024-09-27,2025-12-15,444
+DM-PCL: Text-Driven Dual-Modal Prototype Consistency Learning for Weakly-Supervised Few-Shot Part Segmentation,10.1007/s11263-025-02545-w,2024-11-07,2025-07-24,259
+Evidence-Grounded Trustworthy Multimodal Reasoning and Evaluation Benchmark in Complex Urban Scenes,10.1007/s11263-026-02980-3,2026-01-13,2026-07-21,189
+SWAP: Towards Copyright Auditing of Soft Prompts via Sequential Watermarking,10.1007/s11263-026-02896-y,2025-11-05,2026-05-13,189
+Sports-QA: A Large-Scale Video Question Answering Benchmark for Complex and Professional Sports,10.1007/s11263-026-02734-1,2024-12-10,2026-01-01,387
+DASR+: Training Domain Distance Aware Network for Unsupervised Image Super-Resolution,10.1007/s11263-026-02822-2,2025-04-03,2026-03-18,349
+Flexible Camera Calibration using a Collimator System,10.1007/s11263-025-02576-3,2025-04-03,2025-08-23,142
+MUG: Multi-human Graph Network for 3D Mesh Reconstruction from 2D Pose,10.1007/s11263-026-02942-9,2024-11-12,2026-06-29,594
+SGDNI: Sensitivity Guided Dynamic Noise Injection for Robust Quantization of Deep Neural Networks,10.1007/s11263-026-02870-8,2025-03-17,2026-04-27,406
+Graph in Graph Neural Network,10.1007/s11263-026-02731-4,2024-05-25,2026-01-01,586
+GuidedVDM: Controllable Video Generation with Long-Term Consistency,10.1007/s11263-026-02901-4,2024-07-29,2026-05-16,656
+Curvature Learning for Generalization of Hyperbolic Neural Networks,10.1007/s11263-025-02567-4,2025-04-28,2025-08-07,101
+Event-based Simultaneous Localization and Mapping: A Comprehensive Survey,10.1007/s11263-026-02845-9,2024-02-20,2026-04-05,775
+BehaVERT: A Transformer-Based Motion Language Model for Decoding Behavioral Semantics in Mice,10.1007/s11263-026-02834-y,2025-10-19,2026-03-24,156
+Rethinking Personalized T2I Diffusion Models from the Perspective of Redundancy,10.1007/s11263-026-02801-7,2025-04-09,2026-02-27,324
+An HMM-Based Framework for Identity-Aware Long-Term Multi-Object Tracking From Sparse and Uncertain Identification: Use Case on Long-Term Tracking in ,10.1007/s11263-025-02711-0,2024-09-20,2025-09-01,346
+Knowing Where to Focus: Attention-Guided Alignment for Text-based Person Search,10.1007/s11263-025-02717-8,2025-05-27,2025-12-15,202
+Disco4D: Towards Prior-Free Motion Representation Learning for Point Cloud Videos Via Self-Disentangled Contrastive Pre-Training,10.1007/s11263-026-03008-6,2026-01-08,2026-08-24,228
+FovEx: Human-Inspired Explanations for Vision Transformers and Convolutional Neural Networks,10.1007/s11263-025-02543-y,2024-08-07,2025-07-24,351
+Learning Robust Event-Guided Representations for Person Re-Identification,10.1007/s11263-025-02670-6,2024-10-29,2025-09-26,332
+Clothing Purification with Causality Meets Vision-Language Pretraining Models,10.1007/s11263-025-02548-7,2024-04-08,2025-07-24,472
+LEAD++: Unsupervised Fine-Grained Visual Representation Learning with Multi-context Enhanced Entropy-Based Adaptive Distillation,10.1007/s11263-026-03123-4,2026-01-14,2026-10-30,289
+Boosting Filter Optimization and Prompt-Guided Decoding for Mixed Degradation Image Restoration,10.1007/s11263-026-02832-0,2025-07-21,2026-03-24,246
+BBoxMaskPose v2: Expanding Mutual Conditioning to 3D,10.1007/s11263-026-03113-6,2026-01-15,2026-10-19,277
+Zero-Shot Domain Generalization via Domain Prompt Learning,10.1007/s11263-026-03088-4,2025-01-30,2026-09-28,606
+Feed-Forward Gaussian Splatting from Asymmetric Dual-Lens Stereo,10.1007/s11263-026-03117-2,2025-12-02,2026-10-19,321
+Reconstruction and Restoration of 4D Light Fields via Super-resolved Inverse Image-Based Rendering,10.1007/s11263-026-03111-8,2026-01-15,2026-10-16,274
+GoClick: Lightweight Element Grounding Model for Autonomous GUI Interaction,10.1007/s11263-026-03031-7,2025-03-15,2026-08-28,531
+Uncertainty-guided Open-Set Source-Free Unsupervised Domain Adaptation with Target-private Class Segregation,10.1007/s11263-025-02683-1,2025-02-10,2025-09-18,220
+Predictive Display for Teleoperation Based on Vector Fields Using Lidar-Camera Fusion,10.1007/s11263-025-02550-z,2025-02-20,2025-07-29,159
+MPANet: Motion Pattern Aggregation Network for Gait Recognition,10.1007/s11263-026-02912-1,2026-01-20,2026-05-26,126
+Haze Hue and Haze Saturation Priors for Single Image Dehazing,10.1007/s11263-025-02655-5,2025-04-08,2025-10-07,182
+Fine-Grained Multimodal Alignment for Image-Text Retrieval via Graph Learning,10.1007/s11263-025-02686-y,2025-05-13,2025-09-17,127
+Generic Scene Graph Generation Model with Hierarchical Prompt Learning,10.1007/s11263-025-02499-z,2025-02-28,2025-06-04,96
+From Forest to Zoo: Great Ape Behavior Recognition with ChimpBehave,10.1007/s11263-025-02484-6,2024-09-21,2025-05-13,234
+Mutually Causal Semantic Distillation Network for Zero-Shot Learning,10.1007/s11263-026-02814-2,2024-12-21,2026-03-17,451

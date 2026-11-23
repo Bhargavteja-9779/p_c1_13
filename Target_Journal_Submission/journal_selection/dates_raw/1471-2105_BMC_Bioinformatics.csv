@@ -1,0 +1,120 @@
+title,doi,received,accepted,days
+Prior knowledge on context-driven DNA fragmentation probabilities can improve de novo genome assembly algorithms,10.1186/s12859-025-06267-1,2024-07-11,2025-09-05,421
+Statistical modelling of an outcome variable with integrated multi-omics,10.1186/s12859-025-06349-0,2025-06-13,2025-12-04,174
+Varaps: a python package for estimating SARS-CoV-2 lineages proportions from pooled sequencing data (ANRS0160),10.1186/s12859-025-06299-7,2025-05-22,2025-10-13,144
+Investigate synergistic and competitive regulation between miRNAs by using a multivariate information measurement,10.1186/s12859-026-06471-7,2025-08-13,2026-05-05,265
+A densely connected framework for cancer subtype classification,10.1186/s12859-025-06230-0,2025-03-15,2025-07-10,117
+GraphPepTox: a structure-aware pre-trained framework for peptide toxicity prediction using geometric graph transformer and LoRA-based fine-tuning,10.1186/s12859-026-06744-1,2026-08-09,2026-10-26,78
+CREMA: recovery of high clonal fraction mosaic chromosomal alterations missed by phase-based detection,10.1186/s12859-026-06751-2,2026-07-27,2026-10-30,95
+Reduction of supervision for biomedical knowledge discovery,10.1186/s12859-025-06187-0,2024-12-26,2025-06-11,167
+Multi-task genomic prediction using gated residual variable selection neural networks,10.1186/s12859-025-06188-z,2025-04-05,2025-06-12,68
+scStyling: quantile-based transformation of bulk RNA-seq into single-cell-like profiles,10.1186/s12859-026-06602-0,2026-03-03,2026-08-07,157
+"KhufuEnv, an auxiliary toolkit for building computational pipelines for plant and animal breeding",10.1186/s12859-026-06499-9,2025-07-16,2026-05-18,306
+Ionizing radiation-induced repair foci identification using deep convolutional neural networks,10.1186/s12859-026-06662-2,2026-05-09,2026-09-14,128
+A leakage-controlled cold-start benchmark for drug-combination synergy classification,10.1186/s12859-026-06665-z,2026-06-07,2026-09-15,100
+PCRpanel: automated design of ultra-multiplex PCR panels for targeted amplicon sequencing,10.1186/s12859-026-06648-0,2026-05-28,2026-09-04,99
+MUUMI: an R package for statistical and network-based meta-analysis for multi-omics data integration,10.1186/s12859-026-06394-3,2025-09-01,2026-01-29,150
+Talk2Biomodels: AI agent-based open-source LLM initiative for kinetic biological models,10.1186/s12859-025-06310-1,2025-07-08,2025-10-22,106
+NetStart 2.0: prediction of eukaryotic translation initiation sites using a protein language model,10.1186/s12859-025-06220-2,2025-04-01,2025-07-04,94
+DCI-SiteDTA: drug-target affinity prediction based on binding sites detection and site-aware dual cross-interaction block,10.1186/s12859-026-06446-8,2026-01-15,2026-04-08,83
+pSLiM: Clustering of protein language model embeddings enables hypothesis‑driven identification and prioritization of short protein motifs,10.1186/s12859-026-06752-1,2026-05-21,2026-11-02,165
+Virus variant quantification with Orthanq,10.1186/s12859-026-06387-2,2025-11-21,2026-01-23,63
+MOV&amp;RSim: computational modelling of cancer-specific variants and sequencing reads characteristics for realistic tumoral sample simulation,10.1186/s12859-025-06292-0,2025-02-03,2025-10-01,240
+easyClock: a user-friendly desktop application for circadian rhythm analysis and visualization,10.1186/s12859-025-06340-9,2025-09-22,2025-11-26,65
+scDIG: an R Shiny application for interactive density-based gating of single-cell proteomic and transcriptomic data,10.1186/s12859-026-06718-3,2026-05-27,2026-10-12,138
+Spatialgater: an R Shiny webtool for in situ gating of cells in spatial omics experiments,10.1186/s12859-026-06620-y,2026-05-13,2026-08-20,99
+Enhancing CAR-T cell activity prediction via fine-tuning protein language models with generated CAR sequences,10.1186/s12859-026-06401-7,2025-07-28,2026-02-06,193
+Towards improved missense variant prioritization through automated structure-assisted interpretation,10.1186/s12859-026-06694-8,2026-04-17,2026-09-30,166
+Representation learning from similarity networks improves the prediction of disease-associated microRNAs,10.1186/s12859-026-06554-5,2025-10-15,2026-07-03,261
+Cell-type-specific explainable spatial features extracted from digitized H&amp;E slides explain gene expression variability beyond cell-type compositi,10.1186/s12859-026-06741-4,2026-08-10,2026-10-23,74
+Efficient and generalizable deep attention with weighted residuals for drug-target interaction prediction,10.1186/s12859-026-06734-3,2026-04-23,2026-10-21,181
+TOMOC: a topology-driven multi-objective evolutionary framework for robust overlapping protein complex detection in noisy PPI networks,10.1186/s12859-026-06603-z,2026-03-05,2026-08-10,158
+MetaTree: an interactive web platform for aligned hierarchical data visualization and multi-group comparison,10.1186/s12859-026-06475-3,2026-03-03,2026-05-06,64
+AllergenAI: a deep learning model predicting allergenicity based on protein sequence,10.1186/s12859-025-06302-1,2025-05-21,2025-10-15,147
+A two-phase clustering procedure based on allele specific expression,10.1186/s12859-026-06398-z,2025-05-14,2026-02-05,267
+SPICEY: an R package for quantifying tissue specificity from single cell multi-omics data,10.1186/s12859-026-06418-y,2025-11-13,2026-03-03,110
+PELICAN: a new bacteriophage genome annotation tool,10.1186/s12859-026-06703-w,2026-03-05,2026-10-06,215
+Multimodal learning on heterogeneous subgraphs and LLMs representation for MHC-peptide binding affinity prediction,10.1186/s12859-026-06407-1,2025-11-10,2026-02-13,95
+GPU-accelerated MitoGraph for high-throughput three-dimensional mitochondrial morphology analysis,10.1186/s12859-026-06441-z,2025-12-20,2026-03-31,101
+Pairwise ratio transformation of gene expression data leads to improved checkpoint response prediction in lung cancer patients,10.1186/s12859-025-06332-9,2024-03-05,2025-11-14,619
+GenPTM: a generalizable framework for protein post-translational modification information extraction from the scientific literature,10.1186/s12859-026-06663-1,2026-04-30,2026-09-14,137
+Helixpr: a helix-aware periodic representation of DNA sequence for enhancer identification,10.1186/s12859-026-06563-4,2026-04-27,2026-07-14,78
+Rprot-Vec: a deep learning approach for fast protein structure similarity calculation,10.1186/s12859-025-06213-1,2025-03-04,2025-07-02,120
+Machine learning for multi-omics data integration in crop improvement: a systematic review,10.1186/s12859-026-06438-8,2025-08-02,2026-03-30,240
+CGA-DTA: interaction-conditioned graph topology and cross-graph attention for drug--target affinity prediction,10.1186/s12859-026-06647-1,2026-07-03,2026-09-04,63
+Impact of U2-type introns on splice site prediction in A. thaliana species using deep learning,10.1186/s12859-025-06315-w,2025-07-16,2025-10-29,105
+BDDN: bayesian dynamic differential network analysis in cancer proteomics,10.1186/s12859-026-06371-w,2025-06-25,2026-01-06,195
+MysteryMaster: scraping the bottom of the barrel of barcoded Oxford nanopore reads,10.1186/s12859-025-06266-2,2025-06-01,2025-09-03,94
+A multi-tissue mendelian randomization method based on eQTL data for mapping tissue-specific disease genes,10.1186/s12859-026-06451-x,2026-01-26,2026-04-14,78
+A multi-target drug design method based on target feature fusion,10.1186/s12859-026-06449-5,2025-04-30,2026-04-13,348
+A new SNP comparison (SnpC) method for detecting unique/enriched gene-SNP variants and comparing population gene mutation diversity,10.1186/s12859-026-06381-8,2025-06-21,2026-01-15,208
+Point cloud deformation modeling for particle selection following cryo-EM 2D classification,10.1186/s12859-026-06384-5,2025-09-03,2026-01-16,135
+A deep learning framework for threshold-free relative gene expression ranking from histone modification signals,10.1186/s12859-026-06553-6,2026-02-02,2026-07-03,151
+Phylograd: fast column-specific calculation of substitution model gradients,10.1186/s12859-025-06353-4,2025-09-04,2025-12-11,98
+Hyb-Adam-UA: additivity-aware refinement of minimax-initialized mtDNA distance matrices,10.1186/s12859-026-06629-3,2026-03-08,2026-08-27,172
+Systematic detection of predictive gene sets by semantics-based selection,10.1186/s12859-026-06570-5,2025-12-08,2026-07-17,221
+ResynPy: a software for selecting pairs of complementary inbred lines to resynthesize valuable heterozygous genotypes,10.1186/s12859-025-06279-x,2023-08-14,2025-09-23,771
+VESNA: an open-source tool for automated 3D vessel segmentation and network analysis,10.1186/s12859-025-06270-6,2025-03-14,2025-09-09,179
+RNA modular expression laboratory (RNAmel): an integrated R/Shiny platform for reproducible bulk RNA-seq analysis and interpretation,10.1186/s12859-026-06710-x,2026-08-04,2026-10-07,64
+"MetaServe: a lightweight, metadata-aware governance and delivery layer for pre-publication research omics data",10.1186/s12859-026-06522-z,2026-02-02,2026-06-01,119
+Dual channel drug-drug interactions extraction based on cross attention,10.1186/s12859-026-06531-y,2024-10-01,2026-06-03,610
+GeneRiskCalc: a web-based tool for genetic risk association analysis in case–control studies,10.1186/s12859-025-06207-z,2025-04-03,2025-06-27,85
+Bayesian inference of mixed Gaussian phylogenetic models,10.1186/s12859-026-06399-y,2025-05-14,2026-02-05,267
+GGAR: gradient guided adaptive regularization enhances deep learning classification of brassica species using codon usage bias,10.1186/s12859-026-06440-0,2025-08-16,2026-03-31,227
+JINet: easy and secure private data analysis for everyone,10.1186/s12859-025-06244-8,2024-09-14,2025-07-30,319
+Extracting structure–activity relationships from patents with large language models,10.1186/s12859-026-06587-w,2026-01-23,2026-07-28,186
+Model-based quantification of protein–protein interaction aberrations for exploring dysregulated signalling pathways through pathway maps and gene exp,10.1186/s12859-026-06543-8,2026-04-01,2026-06-22,82
+Seq2DomML: Protein domain boundary prediction from bacterial protein sequences using a machine learning framework,10.1186/s12859-026-06666-y,2026-07-14,2026-09-15,63
+Deep Neurite Analysis Tool (DeNAT): a machine-learning framework for high-sensitivity automated neurite outgrowth measurement,10.1186/s12859-026-06661-3,2025-11-18,2026-09-14,300
+DualGCN-GE: integration of spatiotemporal representations from whole-blood expression data with dual-view graph convolution network to identify Parkin,10.1186/s12859-025-06181-6,2024-10-04,2025-06-02,241
+A deep learning architecture for combining and imputing heterogeneous metabolomics datasets,10.1186/s12859-026-06560-7,2025-11-05,2026-07-10,247
+Continuous immune composition retains longitudinal information beyond coarse ecological-context labels in pediatric leukemia,10.1186/s12859-026-06679-7,2026-07-24,2026-09-24,62
+Autoencoders with shared and specific embeddings for multi-omics data integration,10.1186/s12859-025-06245-7,2025-02-23,2025-07-30,157
+Preference-guided CT projection correction for surface-based feather morphometrics,10.1186/s12859-026-06716-5,2026-06-08,2026-10-12,126
+Spliceread: improving canonical and non-canonical splice site prediction with residual blocks and synthetic data augmentation,10.1186/s12859-026-06486-0,2026-02-05,2026-05-12,96
+"H3NGST: a fully automated, web-based platform for end-to-end ChIP-seq analysis",10.1186/s12859-025-06247-5,2025-05-02,2025-08-01,91
+EMD-HVG: a normalization-independent method for highly variable gene selection based on Earth mover’s distance,10.1186/s12859-026-06527-8,2025-06-04,2026-06-02,363
+THC-net: an attention-based deep learning model for chromatin compartment prediction from histone modifications,10.1186/s12859-026-06504-1,2025-10-30,2026-05-21,203
+Interpretable modeling of channelrhodopsin variant properties using AlphaFold-derived molecular fields,10.1186/s12859-026-06625-7,2026-05-26,2026-08-24,90
+CNVision: a computational framework for functional interpretation of intragenic copy number variants,10.1186/s12859-026-06753-0,2026-07-30,2026-11-02,95
+A weight-sharing Bayesian neural network for consistent feature selection with applications in cancer gene expression data,10.1186/s12859-026-06397-0,2025-03-27,2026-02-04,314
+Aryana-bs: context-aware alignment of bisulfite-sequencing reads,10.1186/s12859-025-06182-5,2025-03-15,2025-06-04,81
+PhyloScape: interactive and scalable visualization platform for phylogenetic trees,10.1186/s12859-025-06203-3,2024-09-25,2025-06-24,272
+SPGA: graph representation learning and attention fusion for enhanced disease-associated snoRNA prediction,10.1186/s12859-026-06419-x,2025-11-25,2026-03-04,99
+Hierarchical clustering-based coarse-to-fine classification framework for microbial protein function prediction,10.1186/s12859-025-06326-7,2025-08-27,2025-11-11,76
+"CRESCENT, a comprehensive RNA-Seq expression, splicing, and coding/non-coding element network tool",10.1186/s12859-026-06368-5,2025-06-05,2026-01-02,211
+CB-Search: a method for searching for similar protein motifs with biased compositions,10.1186/s12859-026-06509-w,2026-02-14,2026-05-25,100
+DVNDTA: a dual virtual node based heterogeneous interaction model for accurate prediction of drug-target affinity,10.1186/s12859-026-06481-5,2025-06-02,2026-05-08,340
+MGANSL: multi-network representation generating with generative adversarial network for synthetic lethality prediction,10.1186/s12859-025-06345-4,2025-09-02,2025-12-01,90
+SVhet: towards accurate detection of germline heterozygous deletions using short reads,10.1186/s12859-025-06342-7,2025-06-30,2025-11-27,150
+Modeling and classifying neuronal activity with a fusion of mathematical and machine learning techniques,10.1186/s12859-026-06487-z,2025-09-25,2026-05-12,229
+Node and edge control strategy identification via trap spaces in Boolean networks,10.1186/s12859-025-06135-y,2022-03-21,2025-04-04,1110
+MultiModalGraphics: an R package for graphical integration of multi-omics datasets,10.1186/s12859-025-06265-3,2025-01-15,2025-09-02,230
+A shrinkage-based statistical method for testing group mean differences in quantitative bottom-up proteomics,10.1186/s12859-025-06275-1,2025-02-21,2025-09-17,208
+Transfer learning models for bacterial strain dissemination biomarkers using weighted non-parallel proximal support vector machines,10.1186/s12859-025-06221-1,2024-11-13,2025-07-07,236
+"TADDM-WMHHGCN: a weighted multi-head hypergraph convolutional network for predicting triple associations among drugs, diseases, and miRNAs",10.1186/s12859-026-06763-y,2026-04-29,2026-11-03,188
+RFhap: accurate alignment-free long-read phasing for improved diploid de novo assembly,10.1186/s12859-026-06735-2,2026-04-20,2026-10-21,184
+matrans: an R package for parameter-transfer learning of multi-source cancer prognosis data,10.1186/s12859-026-06678-8,2026-05-08,2026-09-22,137
+Adaptive causal discovery with ordering–based reinforcement learning-approach for type 2 diabetes mellitus risk factors,10.1186/s12859-026-06578-x,2024-03-05,2026-07-24,871
+Decision tree with randomized grid search-based hyperparameter tuning and optimal feature scaling for diabetes diagnosis,10.1186/s12859-026-06507-y,2026-02-17,2026-05-25,97
+Introducing GalaxyR: an easy-to-use R implementation of the Galaxy API,10.1186/s12859-026-06591-0,2026-02-20,2026-07-31,161
+Systems-level modeling of cell migration using spatially-resolved single-cell data,10.1186/s12859-026-06649-z,2026-04-19,2026-09-04,138
+"CountASAP: a lightweight, easy to use python package for processing ASAPseq data",10.1186/s12859-025-06311-0,2024-05-23,2025-10-24,519
+MARTS-DB: a database of mechanisms and reactions of terpene synthases,10.1186/s12859-025-06341-8,2025-07-31,2025-11-26,118
+A causal reinforcement learning framework for reliable gene regulatory network inference,10.1186/s12859-026-06511-2,2026-02-07,2026-05-26,108
+lncRNA Seeker Hub: cohort-level RNA-seq visualization and manual transcript reconstruction for weak lncRNA discovery,10.1186/s12859-026-06671-1,2026-05-18,2026-09-16,121
+PG2: algorithms and a web-based tool for effective layout and visual analysis of pangenome graphs,10.1186/s12859-026-06555-4,2026-02-23,2026-07-06,133
+Determining gene specificity from multivariate single-cell RNA sequencing data,10.1186/s12859-026-06740-5,2026-07-31,2026-10-22,83
+Ephaptic coupling between neurons: a systematic review of mathematical models,10.1186/s12859-026-06618-6,2025-10-21,2026-08-19,302
+Class-balanced negative training sets for improving classifier model predictions of enhancer-promoter interactions,10.1186/s12859-025-06171-8,2025-03-28,2025-05-16,49
+ChromAcS: an automated and flexible GUI for end-to-end reproducible ATAC-seq analysis across multiple species,10.1186/s12859-026-06382-7,2025-11-20,2026-01-16,57
+Adaptive gradient scaling: integrating Adam and landscape modification for protein structure prediction,10.1186/s12859-025-06185-2,2024-08-14,2025-06-06,296
+"ToxBench: a leakage-audited multi-task benchmark for predictive toxicology with calibration, uncertainty, and applicability domain analysis",10.1186/s12859-026-06621-x,2026-03-03,2026-08-20,170
+CORE clonotypes: a reproducible structural component of the peripheral TCR repertoire revealed through variation in blood processing times,10.1186/s12859-026-06715-6,2026-06-01,2026-10-12,133
+MoleMap: fast alignment-free molecule mapping for long-read and linked-read sequencing data,10.1186/s12859-026-06709-4,2026-04-22,2026-10-07,168
+Protein and ligand novelty in drug–target interaction prediction: a dual-encoder fusion strategy for more interpretable and generalizable modeling,10.1186/s12859-026-06457-5,2026-02-09,2026-04-17,67
+CPPAtools: a computation toolset for chimera protein prediction and analysis,10.1186/s12859-026-06598-7,2026-02-02,2026-08-05,184
+Pytrf: a python package for finding tandem repeats from genomic sequences,10.1186/s12859-025-06168-3,2024-12-09,2025-05-15,157
+A directed weighted network-based method for drug combinations identification using drug-target and inter-target regulation,10.1186/s12859-025-06321-y,2025-03-12,2025-11-06,239
+Delineating markers of disease-disease interaction: a systematic methodology and its application to multiple diabetes-helminth cohorts,10.1186/s12859-025-06226-w,2024-01-18,2025-07-07,536
+Ensemble machine learning-based pre-trained annotation approach for scRNA-seq data using gradient boosting with genetic optimizer,10.1186/s12859-025-06151-y,2025-03-17,2025-04-30,44

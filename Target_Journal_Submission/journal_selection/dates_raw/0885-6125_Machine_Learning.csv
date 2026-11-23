@@ -1,0 +1,119 @@
+title,doi,received,accepted,days
+A software architecture for verifiable and explainable classification,10.1007/s10994-026-07006-0,2022-08-01,2026-01-31,1279
+Optimal Control of Fluid Restless Multi-armed Bandits: A Machine Learning Approach,10.1007/s10994-026-07022-0,2024-09-03,2026-02-18,533
+Confidence Controls Deep Metric Learning,10.1007/s10994-026-07032-y,2025-07-14,2026-03-14,243
+Weakly Supervised Classification with Pre-Trained Models: A Robust Fine-Tuning Approach,10.1007/s10994-025-06966-z,2025-09-11,2025-12-18,98
+Search or split: policy gradient with adaptive policy space,10.1007/s10994-025-06820-2,2025-05-01,2025-06-15,45
+Neural Probabilistic Circuits: Enabling Compositional and Interpretable Predictions Through Logical Reasoning,10.1007/s10994-026-07118-7,2025-01-12,2026-07-02,536
+Fedflow: a personalized federated learning framework for passenger flow prediction,10.1007/s10994-025-06795-0,2025-02-07,2025-05-05,87
+Performance Estimation in Binary Classification Using Calibrated Confidence,10.1007/s10994-025-06970-3,2025-05-31,2025-12-18,201
+Source-free domain adaptation requires penalized diversity,10.1007/s10994-025-06863-5,2022-11-02,2025-07-31,1002
+Addressing Methodological Challenges in Time Series Anomaly Detection,10.1007/s10994-026-07183-y,2026-02-19,2026-09-28,221
+CausalCACTUS: A Causally Consistent and Context-Aware Framework for Counterfactual Explanations,10.1007/s10994-026-07155-2,2026-02-27,2026-08-25,179
+Offline reinforcement learning for learning to dispatch for job shop scheduling,10.1007/s10994-025-06826-w,2025-04-13,2025-06-23,71
+SCI-IDEA: Context-Aware Scientific Ideation Using Token and Sentence Embeddings,10.1007/s10994-026-07036-8,2025-10-31,2026-03-23,143
+Causal CSSE: integrating counterfactuals and causality in the explanation of machine learning models,10.1007/s10994-025-06856-4,2025-04-03,2025-07-28,116
+Obstructive Sleep Apnea Prediction: A Comprehensive Review and Comparative Study,10.1007/s10994-025-06937-4,2025-04-11,2025-11-25,228
+Attribute Completion for Heterogeneous Graphs Based on Heterogeneous Relation Context Aware and Noisy Node Filtering,10.1007/s10994-026-07047-5,2025-09-06,2026-04-05,211
+GSM-Identity: Evaluating Mathematical Reasoning in LLMs via Equivalence Transformations,10.1007/s10994-026-07029-7,2025-04-03,2026-03-10,341
+KARAMEL: Knowledge-Aware Ranking for Multimodal Entity Linking in the Arts via Heterogeneous Graphs,10.1007/s10994-026-07172-1,2026-02-20,2026-09-16,208
+Automated Scientific Discovery: From Equation Discovery to Autonomous Discovery Systems,10.1007/s10994-025-06955-2,2025-04-24,2025-12-12,232
+The FFN as a Key-Value Memory: Functional Specialization in Transformer Computation,10.1007/s10994-025-06948-1,2025-09-14,2025-12-04,81
+DTSformer: A Dual-Branch Transformer with Multi-scale Decomposition for Long-Term Time Series Forecasting,10.1007/s10994-025-06961-4,2025-05-26,2025-12-18,206
+Activation Trained Layer Based Controls Continual Knowledge Editing Approach,10.1007/s10994-026-07100-3,2025-12-03,2026-06-06,185
+The KANDY benchmark: Incremental neuro-symbolic learning and reasoning with Kandinsky patterns,10.1007/s10994-025-06798-x,2023-12-14,2025-05-09,512
+ReliFuse: Reliability-Calibrated Posterior Fusion for Histological Vessel Segmentation,10.1007/s10994-026-07154-3,2026-03-08,2026-08-25,170
+ISA3: a 3-dimensional expansion of instance space analysis,10.1007/s10994-025-06871-5,2025-01-20,2025-08-12,204
+Common abductive explanations in first order logic,10.1007/s10994-025-06869-z,2024-08-13,2025-08-11,363
+Mitigating Security Risks in Large Language Models: A Full Lifecycle Perspective,10.1007/s10994-025-06930-x,2025-03-01,2025-10-31,244
+An Interpretable Model for Multi-target Predictions with Ordinal Outputs,10.1007/s10994-026-07021-1,2025-02-03,2026-02-18,380
+Learning to Process Relational Information for Cloud Computing Task Scheduling,10.1007/s10994-026-07043-9,2025-10-29,2026-03-31,153
+Optimal Confidence Bounds for Sparse Random Projections,10.1007/s10994-026-07057-3,2025-11-01,2026-04-20,170
+Neural MCTS with LLM Guidance for Effective Program Synthesis on Abstraction and Reasoning Corpus,10.1007/s10994-026-07110-1,2025-10-30,2026-06-24,237
+Uncertainty Quantification in Pairwise Difference Learning for Classification,10.1007/s10994-025-06949-0,2025-04-03,2025-12-09,250
+Improving Selective Classification with Pairwise Queries for Binary Classification,10.1007/s10994-026-07078-y,2025-10-31,2026-05-14,195
+Transforming Customer Support in a Startup Environment: From Machine Learning Classification to Retrieval-Augmented Generation,10.1007/s10994-026-07073-3,2026-02-10,2026-05-12,91
+CASE: Contrastive Activation for Class-Sensitive Explanations,10.1007/s10994-026-07169-w,2025-06-10,2026-09-10,457
+Counterfactual Explanation Bake-Off: A Review and Experimental Evaluation for Time Series Classification,10.1007/s10994-026-07056-4,2025-04-14,2026-04-17,368
+Moving average randomized tree,10.1007/s10994-025-06978-9,2025-06-02,2025-12-18,199
+Automated Membership Inference via Prompt-Based Attacks in Generative Models,10.1007/s10994-026-07010-4,2025-04-18,2026-02-08,296
+Squared Wasserstein-2 loss functions for efficient learning of stochastic differential equations,10.1007/s10994-025-06908-9,2025-07-03,2025-09-24,83
+On the Communication Complexity of Decentralized Stochastic Bilevel Optimization,10.1007/s10994-026-07040-y,2025-10-11,2026-03-30,170
+Automated Machine Learning for Unsupervised Tabular Tasks,10.1007/s10994-025-06984-x,2025-05-30,2025-12-18,202
+MZEN: Multi-zoom Enhanced NeRF for 3-D Reconstruction with Unknown Camera Poses,10.1007/s10994-026-07114-x,2025-10-30,2026-06-30,243
+Reducing Aleatoric and Epistemic Uncertainty Through Multi-modal Data Acquisition,10.1007/s10994-026-07042-w,2025-10-27,2026-03-31,155
+Predicate Renaming via Large Language Models,10.1007/s10994-026-07075-1,2025-03-24,2026-05-12,414
+Integrating human knowledge for explainable AI,10.1007/s10994-025-06879-x,2025-04-03,2025-08-25,144
+Improving GraphRAG with Multi-hop Knowledge Graph Completion on the Example of the Telecommunications Domain,10.1007/s10994-026-07141-8,2026-02-10,2026-08-04,175
+Discovery of Exact Equations via Computing the Gröbner Basis,10.1007/s10994-026-07112-z,2025-04-23,2026-06-25,428
+"If Concept Bottlenecks are the Question, are Foundation Models the Answer?",10.1007/s10994-026-06999-y,2025-04-16,2026-01-19,278
+Expanding Data-Agnostic Pivotal Instances Selection Models with Proximity Trees and Ensemble Learning,10.1007/s10994-026-07065-3,2025-04-14,2026-05-02,383
+"On Convex Clustering: Convexity, Bounding Balls and Characteristics",10.1007/s10994-026-07013-1,2025-03-28,2026-02-09,318
+Low-Rank Fully-Connected Tensor Network Learning for Tensor-on-Tensor Regression,10.1007/s10994-025-06942-7,2025-03-06,2025-11-27,266
+Expanding Domain Generalization Theory: Error Bound Beyond Convex Combination Assumption,10.1007/s10994-026-07003-3,2024-10-28,2026-01-27,456
+Similarity-Promoting Resilient Adaptive Aggregation in Peer-to-Peer Machine Learning,10.1007/s10994-026-07162-3,2025-06-11,2026-09-02,448
+Grid-based Decision Tree Learning,10.1007/s10994-026-07165-0,2024-05-22,2026-09-03,834
+Adaptive collaborative minority oversampling for multi-class imbalanced classification,10.1007/s10994-025-06899-7,2025-04-01,2025-09-17,169
+Surface Target Detection Method Based on YOLO with Wavelet Analysis,10.1007/s10994-026-07106-x,2025-11-09,2026-06-19,222
+Towards interpretable and robust UAV-based foundation model for endangered species monitoring in complex ecosystems,10.1007/s10994-025-06787-0,2025-03-01,2025-04-23,53
+Optimized YOLOv8 for lightweight and high-precision metal surface defect detection in industrial applications,10.1007/s10994-025-06857-3,2025-01-06,2025-07-28,203
+A Temporal Graph Learning Framework for Lead-Lag Detection in Financial Markets,10.1007/s10994-026-07113-y,2026-01-15,2026-06-29,165
+LLiMe: enhancing text classifier explanations with large language models,10.1007/s10994-025-06920-z,2025-04-03,2025-10-13,193
+MbExplainer: Multilevel bandit-based explanations for downstream models with augmented graph embeddings,10.1007/s10994-025-06830-0,2024-12-26,2025-06-25,181
+Fast Rashomon Sets of Sparse Rule Sets,10.1007/s10994-026-07108-9,2026-01-15,2026-06-22,158
+Causal Post-hoc XAI: Categorisation and Systematic Literature Review,10.1007/s10994-026-07103-0,2025-03-25,2026-06-11,443
+Investment Universe Complex Network: A Framework for Optimizing Asset Selection in Dynamic Financial Markets,10.1007/s10994-026-07124-9,2025-03-14,2026-07-09,482
+FUSE: Fast Semi-Supervised Node Embedding Learning via Structural and Label-Aware Optimization,10.1007/s10994-026-07111-0,2026-01-14,2026-06-25,162
+Tuning Derivatives for Causal Fairness in Machine Learning,10.1007/s10994-026-07061-7,2025-08-09,2026-04-27,261
+Machine Learning to Identify a New Digital Biomarker to Monitor Everyday Upper Limb Use in Children with Unilateral Cerebral Palsy,10.1007/s10994-025-06950-7,2025-04-12,2025-12-09,241
+Minimal learning machine for multi-label learning,10.1007/s10994-025-06923-w,2023-05-09,2025-10-14,889
+The urban impact of AI: modelling feedback loops in location-based recommender systems,10.1007/s10994-025-06904-z,2025-04-10,2025-09-23,166
+Auction-based incentive mechanism with personalized privacy protection in federated learning,10.1007/s10994-025-06836-8,2024-09-15,2025-07-09,297
+Knockoff-Guided Compressive Sensing: A Statistical Machine Learning Framework for Support-Assured Signal Recovery,10.1007/s10994-026-07167-y,2025-10-20,2026-09-04,319
+Beyond Lipschitz: generalization and optimization analysis for adversarial training under Hölder-type conditions,10.1007/s10994-026-07181-0,2026-03-14,2026-09-25,195
+Advancing Rotation and Scale-Invariant Trajectory Representations for Maritime and Aviation Mobility Data Analysis,10.1007/s10994-026-07199-4,2026-03-07,2026-10-26,233
+Learning Fair Policies in Multi-objective Preference-Based Reinforcement Learning,10.1007/s10994-025-06959-y,2025-06-17,2025-12-16,182
+TRAIL: Trajectory-Based Representation and Integration for Limiting Over-Smoothing,10.1007/s10994-026-07015-z,2025-07-30,2026-02-09,194
+Adaptive differentiable trees for transparent learning on data streams,10.1007/s10994-025-06906-x,2025-04-22,2025-09-23,154
+Attention-Enhanced Cross-Modality Alignment for Adapting Vision-Language Models,10.1007/s10994-025-06952-5,2024-12-30,2025-12-10,345
+On the Evaluation of Machine Unlearning Methods: A Multi-domain Classification Benchmark,10.1007/s10994-026-07094-y,2026-01-16,2026-06-01,136
+Contrastive Learning for Explanation Ranking,10.1007/s10994-026-07099-7,2026-01-16,2026-06-04,139
+Differentially-private data synthetisation for efficient re-identification risk control,10.1007/s10994-025-06799-w,2024-02-12,2025-05-11,454
+"Federated Learning for Large Language Models: Opportunities, Challenges, and Open Research Directions",10.1007/s10994-026-07142-7,2026-04-08,2026-08-04,118
+Learning from Dynamic Protein Interaction Networks with State-Memory Temporal Graph Neural Networks,10.1007/s10994-026-07122-x,2026-02-27,2026-07-08,131
+Reinforcement Learning Guided Neural Deconstruction Search for Flexible Job Scheduling,10.1007/s10994-026-07116-9,2026-01-19,2026-06-30,162
+Enhancing workforce attendance evaluation in vocational schools: a decision support framework powered by explainable machine learning,10.1007/s10994-025-06882-2,2025-03-15,2025-09-01,170
+LEAP: Linear equations for classifier accuracy prediction under prior probability shift,10.1007/s10994-025-06878-y,2025-04-07,2025-08-25,140
+A Regularization Framework for Gender Bias Mitigation in Dense Neural Rankers,10.1007/s10994-025-06964-1,2025-06-01,2025-12-18,200
+Leveraging differentiable NAS and abstract genetic algorithms for optimizing on-mobile VSR performance,10.1007/s10994-025-06801-5,2024-07-24,2025-05-16,296
+HFIA: a parasitic feature inference attack and gradient-based defense strategy in SplitNN-based vertical federated learning,10.1007/s10994-025-06804-2,2024-09-22,2025-05-26,246
+Towards Adaptive and Communication-Efficient Dynamic Federated Learning,10.1007/s10994-026-07102-1,2026-03-15,2026-06-10,87
+Pasco (PArallel Structured COarsening): an overlay to speed up graph clustering algorithms,10.1007/s10994-025-06837-7,2025-04-11,2025-07-09,89
+Less is More: Unlabeled Data Selection for Efficient Tabular Self-supervised Learning,10.1007/s10994-026-07133-8,2026-02-27,2026-07-23,146
+Weighted UnLearning from Experience for Improved Spurious Correlation Robustness,10.1007/s10994-026-07164-1,2026-03-11,2026-09-02,175
+CLAIRE: clustering evaluation based on item response theory and model agreement,10.1007/s10994-025-06911-0,2025-05-28,2025-09-27,122
+MMT: Achieving Exact Federated Unlearning with Improved Post-unlearning Performance,10.1007/s10994-026-07117-8,2025-10-31,2026-07-02,244
+Morphing-Based Sensitivity Analysis: A Comparative Study of Linear and Non-linear Temporal Transformations in TSC Robustness,10.1007/s10994-026-07132-9,2026-02-27,2026-07-22,145
+Federated Learning on Riemannian Manifolds with Differential Privacy,10.1007/s10994-026-07018-w,2025-06-16,2026-02-13,242
+Logarithmic Tri-factorized Tensor Low-Rank Representation for Robust Subspace Clustering,10.1007/s10994-026-07194-9,2026-07-09,2026-10-20,103
+Segmentation and feature extraction-based classification of pavement damages using hybrid computer vision and machine learning approaches,10.1007/s10994-025-06803-3,2024-12-23,2025-05-19,147
+FicClaim: A Framework for Claim Verification in Fictional Domains Using Synthetic Data Generation,10.1007/s10994-026-07012-2,2025-04-03,2026-02-09,312
+Approximating Shapley Interactions with Marginal Contributions,10.1007/s10994-026-07062-6,2025-10-31,2026-04-29,180
+Enhancing interpretability in generative modeling: statistically disentangled latent spaces guided by generative factors in scientific datasets,10.1007/s10994-025-06816-y,2024-12-11,2025-06-07,178
+Novel applications of item response theory for analysing data set complexity and benchmark selection,10.1007/s10994-025-06873-3,2024-10-24,2025-08-13,293
+Generalization Error Bounds for Multiple-Source Domain Adaptation,10.1007/s10994-026-07120-z,2025-10-21,2026-07-03,255
+Impartial Games: A Challenge for Reinforcement Learning,10.1007/s10994-026-06996-1,2025-08-03,2026-01-15,165
+A Deep Dive into Feature Engineering and Class Imbalance in Customer Purchase Prediction: A Systematic Literature Review,10.1007/s10994-025-06991-y,2025-01-16,2025-12-22,340
+TACCO: Actor–Critic Contrastive Optimization for OOD Action Mitigation in Offline Reinforcement Learning,10.1007/s10994-026-07170-3,2025-10-01,2026-09-14,348
+Query Selection with Proper Latent-Representation Similarity in Preference-Based Reinforcement Learning,10.1007/s10994-026-07197-6,2025-08-28,2026-10-23,421
+Regression-Based Estimation of Causal Effects in the Presence of Selection Bias and Confounding,10.1007/s10994-026-07054-6,2025-10-31,2026-04-14,165
+Searching to Evolve for Heterophily-Agnostic Network Learning,10.1007/s10994-026-07014-0,2024-09-21,2026-02-09,506
+Unboxing the Black Box: A Survey on Mechanistic Interpretability for Algorithmic Understanding of Neural Networks,10.1007/s10994-026-07129-4,2025-05-09,2026-07-16,433
+Disentangling Faithfulness Hallucinations in Retrieval-Augmented Generation: A Systematic Benchmark and Analysis,10.1007/s10994-026-07121-y,2025-04-24,2026-07-07,439
+Certainty-Aware Partition and Sufficient Utilization of Noisy Samples,10.1007/s10994-026-07138-3,2025-10-31,2026-07-29,271
+Revealing vulnerable regions through diverse adversarial examples,10.1007/s10994-025-06788-z,2024-08-02,2025-04-23,264
+Grid-Mapping Pseudo-Count Constraint for Offline Reinforcement Learning,10.1007/s10994-025-06925-8,2025-02-17,2025-10-19,244
+Extended UCB Policies for Multi-armed Bandit Problems,10.1007/s10994-025-06943-6,2025-06-30,2025-11-29,152
+When Redundancy Matters: Machine Teaching of Representations,10.1007/s10994-025-06954-3,2025-02-06,2025-12-10,307
+DeNAV: Decentralized Self-Supervised Learning with a Training Navigator,10.1007/s10994-025-06965-0,2025-06-02,2025-12-18,199
+An Objective Function for Order Preserving Hierarchical Clustering,10.1007/s10994-026-07046-6,2025-01-16,2026-04-01,440

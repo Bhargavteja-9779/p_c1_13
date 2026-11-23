@@ -1,0 +1,117 @@
+title,doi,received,accepted,days
+Detection of hidden privilege escalations in android,10.1007/s10515-025-00542-4,2025-04-06,2025-07-13,98
+Safety-critical scenario generation for automated testing of autonomous driving systems,10.1007/s10515-026-00631-y,2025-08-24,2026-05-09,258
+DIR-SMOTE: a density-influence resampling framework for imbalanced code smell detection,10.1007/s10515-026-00624-x,2025-10-22,2026-04-08,168
+TLSS_ICFS: A novel two-stage cross-project defect prediction approach,10.1007/s10515-026-00686-x,2025-06-23,2026-09-09,443
+A layered formal verification of ChaCha20-Poly1305 in TLS implementations,10.1007/s10515-026-00674-1,2026-02-26,2026-08-21,176
+A study of privacy-related data collected by Android apps,10.1007/s10515-025-00589-3,2024-11-14,2025-12-11,392
+BugRepro: enhancing android bug reproduction with domain-specific knowledge integration,10.1007/s10515-026-00636-7,2025-05-30,2026-06-07,373
+LLMs-based decision making for service recommendations and process automation under evolving ecosystem,10.1007/s10515-026-00602-3,2025-07-04,2026-02-06,217
+CodeGAN-MPC: a multi-pattern conditional GAN with differentiable conformance loss for automated test input generation,10.1007/s10515-026-00658-1,2026-05-21,2026-07-31,71
+Intelligent support for agile release planning: an empirical evaluation of ProjectION,10.1007/s10515-026-00591-3,2025-04-25,2026-01-04,254
+Semi-supervised software vulnerability assessment via code lexical and structural information fusion,10.1007/s10515-025-00526-4,2024-08-12,2025-05-17,278
+Toward efficient testing of graph neural networks via test input prioritization,10.1007/s10515-025-00554-0,2024-10-14,2025-08-22,312
+Automatic assistance to mitigate rollback inconsistencies in collaborative edits,10.1007/s10515-025-00583-9,2025-04-09,2025-12-01,236
+VulFileHunter: leveraging description augmentation with large language models for vulnerability-relevant file uncovery,10.1007/s10515-026-00678-x,2025-11-26,2026-08-29,276
+Two birds one stone: Effective static detection of resource and communication deadlocks in Rust programs,10.1007/s10515-026-00614-z,2024-09-11,2026-03-06,541
+CodeCritic: towards effective code quality evaluation with large language models,10.1007/s10515-026-00632-x,2024-12-04,2025-12-01,362
+Metrics for modularity evaluation in modular ontologies,10.1007/s10515-026-00666-1,2026-05-21,2026-08-09,80
+How developer coreness influences the patch-review process: A mixed-method study,10.1007/s10515-026-00634-9,2025-11-11,2026-05-20,190
+MCL-VD: Multi-modal contrastive learning with LoRA-enhanced GraphCodeBERT for effective vulnerability detection,10.1007/s10515-025-00543-3,2024-12-23,2025-07-20,209
+Automatic techniques for issue report classification: A systematic mapping study,10.1007/s10515-026-00616-x,2025-04-25,2026-03-16,325
+"AI-driven digital twin-based security orchestration, automation and response for critical infrastructures",10.1007/s10515-026-00612-1,2025-07-21,2026-02-21,215
+DESCG: data encoding scheme classification with GNN in binary analysis,10.1007/s10515-025-00538-0,2024-09-18,2025-07-05,290
+HMF: Enhancing reentrancy vulnerability detection and repair with a hybrid model framework,10.1007/s10515-025-00546-0,2025-02-07,2025-07-27,170
+"Architecting open, accountable, and trustworthy AI-IDEs",10.1007/s10515-026-00608-x,2025-10-08,2026-02-21,136
+Design and optimization of a test case generation algorithm for real-time embedded systems based on adaptive Q-Learning,10.1007/s10515-026-00598-w,2025-04-16,2026-01-18,277
+Deeply fusing transformer model and information retrieval with cross attention for source code summarization,10.1007/s10515-026-00604-1,2025-06-19,2026-02-14,240
+Qualifying AI software quality evaluators: a measurement systems analysis protocol for LLM code review and automated quality gates,10.1007/s10515-026-00701-1,2026-07-06,2026-10-29,115
+Style2Code: A dual-modal contrastive learning framework for style-controllable code generation,10.1007/s10515-026-00704-y,2026-01-24,2026-10-29,278
+Mobile application review summarization using chain of density prompting,10.1007/s10515-025-00533-5,2024-09-10,2025-06-07,270
+Automating code generation for a new ecosystem: establishing baselines with large language model based code generation for ArkTS and HarmonyOS,10.1007/s10515-026-00599-9,2025-08-13,2026-01-25,165
+New criteria for test case prioritization for software product lines. A replication and extension study,10.1007/s10515-026-00619-8,2025-07-10,2026-03-26,259
+Graph neural networks for precise bug localization through structural program analysis,10.1007/s10515-025-00556-y,2024-11-02,2025-09-02,304
+Automatic Code Generation Techniques: A Systematic Literature Review,10.1007/s10515-025-00551-3,2025-01-20,2025-08-11,203
+Causal modeling in software defect prediction: bridging expert knowledge and novice insight,10.1007/s10515-026-00625-w,2025-06-19,2026-04-24,309
+Type recovery in stripped binaries: a comprehensive survey of inference tools and methods,10.1007/s10515-026-00677-y,2026-03-10,2026-08-21,164
+Configuration-sensitive evaluation of cross-project defect prediction under strict target isolation: Evidence from a go benchmark,10.1007/s10515-026-00691-0,2026-04-27,2026-09-26,152
+BRMDS: an LLM-based multi-dimensional summary generation approach for bug reports,10.1007/s10515-025-00553-1,2025-01-30,2025-08-22,204
+Advancing research software engineering with AI: a research framework,10.1007/s10515-026-00621-0,2025-07-21,2026-04-03,256
+"Methodological pitfalls in predictive mutation testing: threats, impact and open challenges",10.1007/s10515-026-00626-9,2025-11-15,2026-04-24,160
+SENTRY: an adversarial robust anomaly detection approach in system log based on pattern unit extraction and time-step masking,10.1007/s10515-026-00637-6,2025-09-30,2026-06-14,257
+Enhancing mutation testing for deep neural networks: a novel approach to generating high-quality mutants,10.1007/s10515-025-00581-x,2025-02-04,2025-11-18,287
+Meta-predictive ensembles of LLM pipelines for automated named entity recognition in aerospace software requirements,10.1007/s10515-026-00694-x,2026-01-06,2026-10-06,273
+Assessing the effectiveness of recent closed-source large language models in fault localization and automated program repair,10.1007/s10515-025-00549-x,2025-01-29,2025-07-30,182
+Domain-constrained synthesis of inconsistent key aspects in textual vulnerability descriptions,10.1007/s10515-025-00582-w,2025-05-19,2025-11-18,183
+Train-Trust: trustworthiness-guided loss optimization for AI-driven vulnerability detection,10.1007/s10515-026-00665-2,2026-05-24,2026-08-09,77
+A meta-feature benchmark dataset for causal discovery algorithm selection,10.1007/s10515-026-00706-w,2026-09-30,2026-11-07,38
+Generating verified BPMN models with large language models and formal verification,10.1007/s10515-026-00707-9,2025-12-19,2026-11-07,323
+Bridging traditional try-catch-finally and modern try-with-resources via automatic refactoring for Java exception handling,10.1007/s10515-026-00689-8,2025-10-17,2026-09-26,344
+A deep learning framework for vulnerability detection in open-source repositories using code embeddings,10.1007/s10515-026-00639-4,2026-01-07,2026-06-14,158
+DC-GAR: detecting vulnerabilities by utilizing graph properties and random walks to uncover richer features,10.1007/s10515-025-00532-6,2025-01-15,2025-06-04,140
+Envisioning responsible quantum software engineering and quantum artificial intelligence,10.1007/s10515-025-00541-5,2025-03-15,2025-07-13,120
+GPTVD: vulnerability detection and analysis method based on LLM’s chain of thoughts,10.1007/s10515-025-00550-4,2025-03-21,2025-08-04,136
+Measuring security posture of NAS third-party packages ecosystem: an empirical analysis,10.1007/s10515-026-00615-y,2025-09-23,2026-03-16,174
+Robust vulnerability detection with limited data via training-efficient adversarial reprogramming,10.1007/s10515-026-00590-4,2025-02-26,2026-01-04,312
+BlindSpotFuzz: testing autonomous driving systems through blind-spot-guided fuzzing,10.1007/s10515-026-00597-x,2025-03-05,2026-01-18,319
+The arts and crafts of android adware across a decade,10.1007/s10515-025-00575-9,2025-03-31,2025-10-28,211
+Bug Classification in quantum software: a rule-based framework and its evaluation,10.1007/s10515-025-00585-7,2025-06-05,2025-12-01,179
+Multi-SALLM: a multilingual security assessment of generated code,10.1007/s10515-026-00646-5,2025-09-29,2026-07-13,287
+DMG: Dual-Stream multiple instance learning network for hunting vulnerable smart contracts via adaptive granularity fusion,10.1007/s10515-026-00687-w,2025-09-18,2026-09-26,373
+Unveiling hidden permissions: an LLM framework for detecting privacy and security concerns in AI mobile apps reviews,10.1007/s10515-025-00567-9,2025-04-17,2025-10-11,177
+JDExtractor: an automated approach for efficient extraction of defect-related methods in Java projects,10.1007/s10515-025-00563-z,2024-12-24,2025-09-16,266
+SemanCall: recovery of indirect calls in binaries via semantic graph deep matching,10.1007/s10515-026-00647-4,2026-01-20,2026-07-13,174
+Automating transparent learner profiling through explainable AI,10.1007/s10515-025-00574-w,2025-04-11,2025-10-18,190
+Assessing the effectiveness of large language models for Java vulnerability repair: A comparative study,10.1007/s10515-026-00622-z,2025-07-21,2026-04-03,256
+SE4SC-LLM: an LLM-Augmented symbolic execution framework for smart contracts,10.1007/s10515-026-00681-2,2025-12-21,2026-08-29,251
+POLYMER: an adaptable process for simultaneous n-way model merging,10.1007/s10515-026-00671-4,2025-12-18,2026-08-12,237
+Building and validating deep learning models for forecasting the quality of cloud services,10.1007/s10515-026-00630-z,2025-10-10,2026-05-04,206
+Causes and effects of fitness landscapes in system test generation: a replication study,10.1007/s10515-025-00539-z,2025-01-31,2025-07-13,163
+Automating software size measurement from python code using language models,10.1007/s10515-025-00571-z,2025-07-18,2025-10-12,86
+Automated detection of affected libraries from vulnerability reports,10.1007/s10515-025-00540-6,2025-04-02,2025-07-13,102
+A method of modeling and clustering program “Golden Run” to predict its fault behavior,10.1007/s10515-026-00606-z,2025-04-04,2026-02-14,316
+SPVR: syntax-to-prompt vulnerability repair based on large language models,10.1007/s10515-025-00579-5,2025-03-30,2025-11-11,226
+Decomposition then watermarking: Enhancing code traceability with dual-channel code watermarking,10.1007/s10515-025-00561-1,2025-04-02,2025-09-13,164
+From noisy feedback to evidence-aware issue specifications: an agent-governed retrieval-augmented generation approach,10.1007/s10515-026-00640-x,2026-02-16,2026-06-18,122
+Towards integrated dashboards for better management of human-centric issues in software development,10.1007/s10515-025-00565-x,2024-11-15,2025-10-11,330
+From code to insight: studying code representation techniques for ML-based God class detection to support intelligent IDEs,10.1007/s10515-025-00534-4,2025-01-31,2025-07-05,155
+Leveraging text generation for enhanced user story quality,10.1007/s10515-026-00641-w,2025-04-11,2026-07-12,457
+Enhanced neighborhood metric for spreadsheet fault prediction,10.1007/s10515-025-00552-2,2025-04-11,2025-08-22,133
+StructFix: a structure-aware reasoning framework for automated program repair with code property graphs,10.1007/s10515-026-00667-0,2026-07-02,2026-08-09,38
+Hallucination detection in LLM code generation: A sampling-based consensus verification approach,10.1007/s10515-026-00605-0,2025-08-19,2026-02-14,179
+Benchmarking security and governance obligation gaps in AI-generated integration code for public-service APIs,10.1007/s10515-026-00700-2,2026-06-06,2026-10-26,142
+Reproducing UI contexts described in app reviews with large language models,10.1007/s10515-026-00660-7,2026-06-07,2026-08-09,63
+Capacity vs. architecture: an evaluation of SLMs for automated docstring generation,10.1007/s10515-026-00675-0,2026-05-08,2026-08-21,105
+Enhancing search-based testing with LLMs for finding bugs in system simulators,10.1007/s10515-025-00531-7,2024-08-30,2025-05-29,272
+LEDGE : Leveraging dependency graphs for enhanced context aware documentation generation,10.1007/s10515-026-00596-y,2025-06-05,2026-01-18,227
+PIONEER: improving the robustness of student models when compressing pre-trained models of code,10.1007/s10515-025-00560-2,2025-02-15,2025-09-13,210
+MicroViSim: Lightweight design-time simulation and visualization for Kubernetes-based microservice architecture evolution,10.1007/s10515-026-00698-7,2026-05-15,2026-10-08,146
+Automated testing of prevalent 3D user interactions in virtual reality applications,10.1007/s10515-026-00620-1,2026-01-30,2026-03-26,55
+Harnessing large language models for virtual reality exploration testing: a case study,10.1007/s10515-025-00535-3,2025-01-08,2025-07-05,178
+MultiMend: multilingual program repair with context augmentation and multi-hunk patch generation,10.1007/s10515-026-00611-2,2025-06-27,2026-02-21,239
+A systematic exploration of C-to-rust code translation based on large language models: prompt strategies and automated repair,10.1007/s10515-025-00570-0,2025-04-25,2025-10-12,170
+RISA: Engineering runtime integrity for tool-using large language model agents,10.1007/s10515-026-00708-8,2026-08-01,2026-11-07,98
+What information contributes to log-based anomaly detection? Insights from a configurable transformer-based approach,10.1007/s10515-025-00527-3,2024-09-30,2025-05-17,229
+On the role of search budgets in model-based software refactoring optimization,10.1007/s10515-025-00564-y,2025-05-07,2025-09-21,137
+Synthesizing behavioural models of cyber-physical systems using automata learning and statistical machine learning,10.1007/s10515-026-00650-9,2026-07-10,2026-07-18,8
+HSF-Vul: hierarchical semantic fusion for vulnerability detection,10.1007/s10515-026-00653-6,2025-09-16,2026-07-30,317
+Enhancing test data generation via path-grouped reusable prioritized DQN and PSO for mutation testing,10.1007/s10515-026-00692-z,2026-03-08,2026-09-26,202
+VulMamba: multi-dimensional state space modeling for software vulnerability detection via self-supervised contrastive learning,10.1007/s10515-026-00643-8,2026-03-09,2026-07-13,126
+From perception to performance: An empirical study of student team collaboration and success in an agile software engineering course,10.1007/s10515-026-00633-w,2025-09-22,2026-05-20,240
+LMFuzz: Program repair fuzzing based on large language models,10.1007/s10515-025-00568-8,2025-03-10,2025-10-12,216
+From interaction to evolution: A behavior-driven framework for automated software requirements elicitation,10.1007/s10515-026-00593-1,2025-07-20,2026-01-04,168
+ReviewTestFuse: Fusing review-guided and direct test generation for deployable regression testing,10.1007/s10515-026-00669-y,2026-07-13,2026-08-12,30
+SAGE: Semantic-aware gray-box game regression testing with large language models,10.1007/s10515-026-00635-8,2025-11-03,2026-06-01,210
+Stacked feed forward neural network for gestational diabetes prediction,10.1007/s10515-026-00661-6,2026-06-16,2026-08-09,54
+Fine-tuning as Jailbreaking: A data-centric red teaming framework via logic injection,10.1007/s10515-026-00659-0,2026-01-20,2026-08-09,201
+Combating toxic language: A review of LLM-based strategies for software engineering,10.1007/s10515-026-00651-8,2026-07-10,2026-07-18,8
+Exploring the security of short-term and long-term contextual memory in industrial smart customer agent,10.1007/s10515-026-00628-7,2025-08-15,2026-04-24,252
+Toward intelligent runtime adaptation in microservices: Empirical trade-off analysis and a hybrid AI framework,10.1007/s10515-026-00627-8,2025-07-22,2026-04-24,276
+Graph based transfer learning with orthogonal tunning for functionality size insights,10.1007/s10515-025-00562-0,2025-03-31,2025-09-14,167
+Predicting software defects using an extreme gradient boosting model tuned with reinforcement learning based spider wasp optimizer,10.1007/s10515-025-00572-y,2025-03-03,2025-10-12,223
+NexuSym: Marrying symbolic path finders with large language models,10.1007/s10515-025-00529-1,2025-01-06,2025-05-17,131
+Effort estimation in scrum using AI,10.1007/s10515-026-00607-y,2025-06-04,2026-02-14,255
+AMCD: an adjacency matrix-based code clone detection method,10.1007/s10515-026-00685-y,2025-08-02,2026-09-09,403
+CoFiLoc: A Coarse-to-fine LLM-based framework for method-level bug localization,10.1007/s10515-026-00649-2,2026-02-07,2026-07-18,161
+QuaRUM: qualitative data analysis-based retrieval-augmented UML domain model from requirements documents,10.1007/s10515-025-00587-5,2025-04-29,2025-12-02,217
+Goanna: a novel approach for automated type error debugging,10.1007/s10515-026-00656-3,2025-05-09,2026-07-30,447
