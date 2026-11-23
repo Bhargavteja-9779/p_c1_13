@@ -83,7 +83,20 @@
   claim_check_log.txt -> build_docx.py -> Final_Manuscript.docx/.pdf (27 pp), cover_letter.docx/.pdf.
   Abstract 283 words; main text ~3,500 words; 34 refs. TRIPOD+AI DOI fixed (bmj-2023-078378).
   Author names/affiliations/funding/COI/repo URL left as [TO BE COMPLETED BY THE AUTHORS] (cannot be fabricated).
+- Step 5 DONE (session 3): REVIEW/review_01-10.md + stakeholder_review.md (independent agent; R01-R09 major, R10 reject),
+  REVIEW/summary_of_issues.md, REVIEW/response_to_reviews.md. Revision: post hoc analyses in
+  code/src/statistics/sensitivity.py -> results/posthoc_sensitivity.json (future-only reference, GRAPE >= k+2 visits +
+  PLR labels, exact CIs, cluster CIs, MDD = 9 discordant ~35 pp); summarise.py paired CIs now patient-cluster;
+  three validity readings; honest reframing (D6 = own dev variant known invalid; H3 not supported; "time-stamped plan",
+  quick-run disclosure). Key new fact: future-only reference DOES lower D6/D8 specificity (83% vs 94% D1 at k3).
+  audits/citation_audit.md, audits/reproducibility_audit.md, risk_report.md.
+  FINAL DECISION: NOT READY FOR SUBMISSION (author-only items + open scientific items I08, I10-I12, I21);
+  label NOT REMARKABLE: honest strongest result.
 ## NEXT ACTION
-Step 5: REVIEW/ (10 adversarial reviews + stakeholder review by an independent agent), claim-evidence audit,
-citation audit, consistency + reproducibility audit, fix issues (edit templates, re-run fill_values.py + build_docx.py
-+ soffice --headless --convert-to pdf), then risk_report.md and final decision. Step 6 user requests remain open.
+1. Full re-run reproducibility check was running in scratch (lost if session ended): to redo, copy code/ to a temp dir,
+   `python run_all.py --mode full`, compare results/metrics.json with committed one; record in audits/reproducibility_audit.md.
+2. Optional scientific upgrades (REVIEW/response_to_reviews.md OPEN rows): GRAPE shuffle audit, variance-inflated null,
+   nested-CV ML thresholds, VFI/ANSWERS comparators. After any change: python -m src.statistics.summarise;
+   python -m src.statistics.descriptives; python -m src.statistics.sensitivity; cd ../manuscript; python fill_values.py;
+   python build_docx.py; soffice --headless --convert-to pdf Final_Manuscript.docx.
+3. Author items: names/affiliations/funding/COI/AI-verification statement/repo URL; JCR quartile; APC decision.
