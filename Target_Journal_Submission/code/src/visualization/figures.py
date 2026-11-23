@@ -57,23 +57,27 @@ def fig_grape(M):
                         yerr=[[r.grape_sens - r.grape_sens_lo], [r.grape_sens_hi - r.grape_sens]], fmt=mk, color=col, ms=6,
                         elinewidth=0.8, mec='white', mew=1.2)
             ax.annotate(short(r.detector), (1 - r.grape_spec, r.grape_sens), xytext=(4, 3), textcoords='offset points', fontsize=7)
-        ax.set_title(f'GRAPE, {k} tests', fontsize=9); ax.set_xlabel('1 - specificity (clinician label)'); ax.set_xlim(left=0); ax.set_ylim(0, 1)
+        ax.set_title(f'GRAPE, {k} tests', fontsize=9); ax.set_xlabel('1 - specificity (MD-criterion label)'); ax.set_xlim(left=0); ax.set_ylim(0, 1)
         ax.grid(axis='y', color='#e9e9e6', lw=0.6)
-    axs[0].set_ylabel('Sensitivity (clinician MD criterion)')
+    axs[0].set_ylabel('Sensitivity (MD-criterion label)')
     fig.tight_layout(); fig.savefig(os.path.join(FIG, 'fig4_grape_external.png'), bbox_inches='tight'); plt.close(fig)
 
 def fig_design():
     fig, ax = plt.subplots(figsize=(7.2, 2.6)); ax.axis('off')
     boxes = [(0.02, 0.55, 'UWHVF (Seattle)\n24-2, 28,943 fields\npatient split 60/20/20'), (0.02, 0.08, 'Artes retest (Halifax)\n30 patients x 12 weekly\nfields: true no change'),
-             (0.36, 0.55, '10 detectors\nclassical, permutation,\nconformal, event, ML'), (0.36, 0.08, 'GRAPE (Hangzhou)\n263 eyes, clinician\nprogression labels'),
+             (0.36, 0.55, '10 detectors\nclassical, permutation,\nconformal, event, ML'), (0.36, 0.08, 'GRAPE (Hangzhou)\n263 eyes, criterion\nprogression labels'),
              (0.70, 0.70, 'E1 sensitivity / specificity\nvs future reference'), (0.70, 0.40, 'E2 false alarms on\ntrue no-change series'),
-             (0.70, 0.10, 'E3 shuffle audit  |  E4 external\n(first 3-6 tests only)')]
+             (0.70, 0.10, 'E3 shuffle audit\nE4 external clinic\n(first 3-6 tests only)')]
     for x, y, s in boxes:
         ax.add_patch(plt.Rectangle((x, y), 0.27, 0.3, fc='#f3f3f1', ec='#52514e', lw=0.8, transform=ax.transAxes))
         ax.text(x + 0.135, y + 0.15, s, ha='center', va='center', fontsize=7.5, transform=ax.transAxes)
-    for (x0, y0, x1, y1) in [(0.29, 0.70, 0.36, 0.70), (0.29, 0.23, 0.36, 0.60), (0.63, 0.70, 0.70, 0.85), (0.63, 0.66, 0.70, 0.55),
+    for (x0, y0, x1, y1) in [(0.29, 0.70, 0.36, 0.70), (0.63, 0.70, 0.70, 0.85), (0.63, 0.66, 0.70, 0.55),
                              (0.63, 0.62, 0.70, 0.25), (0.63, 0.23, 0.70, 0.22)]:
         ax.annotate('', xy=(x1, y1), xytext=(x0, y0), xycoords='axes fraction', arrowprops=dict(arrowstyle='->', color='#52514e', lw=0.8))
+    # Artes data are evaluation-only (E2): route the arrow through the gap between the middle boxes
+    ax.annotate('', xy=(0.70, 0.47), xytext=(0.155, 0.385), xycoords='axes fraction',
+                arrowprops=dict(arrowstyle='->', color='#52514e', lw=0.8, linestyle='--'))
+    ax.text(0.495, 0.47, 'evaluation only', ha='center', va='bottom', fontsize=6.5, color='#52514e', transform=ax.transAxes)
     fig.savefig(os.path.join(FIG, 'fig1_study_design.png'), bbox_inches='tight'); plt.close(fig)
 
 def main():

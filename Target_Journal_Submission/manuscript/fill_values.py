@@ -23,7 +23,7 @@ import os, re, json, html
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(os.path.join(HERE, '..'))
 J = lambda *p: json.load(open(os.path.join(ROOT, *p)))
 M = J('results', 'metrics.json'); S = J('results', 'statistics.json'); DESC = J('results', 'descriptives.json')
-RW = J('results', 'realworld.json'); META = J('results', 'run_meta_full.json'); REFS = J('manuscript', 'references.json')
+RW = J('results', 'realworld.json'); PH = J('results', 'posthoc_sensitivity.json'); META = J('results', 'run_meta_full.json'); REFS = J('manuscript', 'references.json')
 CHECKS = []
 
 def det(code):
@@ -73,6 +73,14 @@ def resolve(key):
         v = S['rq3_audit_concordance'][a[1]]
         return f"{v:.2f}" if a[1] == 'spearman_rho' else pval(v) if a[1] == 'spearman_p' else f"{v:g}" if a[1] == 'n_cells' else pct(v) if a[1] == 'share_within_3pp' else f"{100 * v:.1f}"
     if t == 'rq3ci': c = RW['rq3_rho_ci']; return f"{c['rho_ci_lo']:.2f} to {c['rho_ci_hi']:.2f}"
+    if t == 'ph_mdd': return str(PH['min_discordant_all_one_direction_for_holm']['n_discordant'])
+    if t == 'ph_mdd_pp': return f"{PH['min_discordant_all_one_direction_for_holm']['as_pp_of_26']:.0f}"
+    if t == 'fo':
+        r = [x for x in PH['future_only_reference'] if x['detector'] == det(a[1]) and x['k'] == int(a[2])][0]; return pct(r[a[3]])
+    if t == 'focount': return str(PH['future_only_counts'][a[1]][a[2]])
+    if t == 'gr':
+        r = [x for x in PH['grape_restricted_and_labels'] if x['detector'] == det(a[1]) and x['k'] == int(a[2]) and x['label'] == a[3] and x['restricted'] == (a[4] == 'r')][0]
+        return str(r[a[5]]) if a[5] in ('n', 'n_pos') else pct(r[a[5]])
     if t == 'meta': v = META[a[1]]; return f"{v:,}" if isinstance(v, int) else f"{v:.0f}"
     if t == 'check':
         kind = a[1]
@@ -82,6 +90,8 @@ def resolve(key):
         elif kind == 'sig': ok = pair(a[2], a[3], a[4])['p_holm'] < 0.05
         elif kind == 'gt': ok = met(a[2], a[3])[a[4]] > float(a[5])
         elif kind == 'lt': ok = met(a[2], a[3])[a[4]] < float(a[5])
+        elif kind == 'above': ok = met(a[2], a[3])['fpr_true_null_lo'] > 0.05
+        elif kind == 'notabove': ok = met(a[2], a[3])['fpr_true_null_lo'] <= 0.05
         elif kind == 'same': ok = all(pair(a[2], k, 'sensitivity')['only_det'] == 0 == pair(a[2], k, 'sensitivity')['only_D1'] for k in (3, 4, 5, 6))
         elif kind == 'pairhi_gt': ok = pair(a[2], a[3], a[4])['diff_hi'] > float(a[5])
         elif kind == 'minspec': ok = min(m['spec'] for m in M if m['detector'].split()[0] in ('D8', 'D9')) == met(a[2], a[3])['spec']
@@ -98,12 +108,12 @@ SHORT = {'D1': 'D1 OLS-MD', 'D2': 'D2 MD rate', 'D3': 'D3 PLR-3', 'D4': 'D4 PoPL
 ci = lambda m, key: '–' if m.get(key) is None else f"{100 * m[key]:.1f} ({100 * m[key + '_lo']:.1f}–{100 * m[key + '_hi']:.1f})"
 
 def table1():
-    rows = ['| Tests | Detector | Sensitivity, % (95% CI) | Specificity, % (95% CI) | False alarms, true no-change, % (95% CI) | False alarms, shuffle audit, % | Valid |',
+    rows = ['| Tests | Detector | Sensitivity, % (95% CI) | Specificity, % (95% CI) | False alarms, true no-change, % (95% CI) | False alarms, shuffle audit, % | Above 5% (i) / rule (ii) / strict (iii) |',
             '|---|---|---|---|---|---|---|']
     for k in (3, 4, 5, 6):
         for c in ORDER:
             m = met(c, k); v = valid(c, k)
-            rows.append(f"| {k} | {SHORT[c]} | {ci(m, 'sens')} | {ci(m, 'spec')} | {ci(m, 'fpr_true_null')} | {100 * m['fpr_shuffle']:.1f} | {'Yes' if v else '**No**'} |")
+            rows.append(f"| {k} | {SHORT[c]} | {ci(m, 'sens')} | {ci(m, 'spec')} | {ci(m, 'fpr_true_null')} | {100 * m['fpr_shuffle']:.1f} | {'**Yes**' if m['fpr_true_null_lo'] > 0.05 else 'No'} / {'met' if v else 'not met'} / {'met' if m['fpr_true_null_hi'] <= 0.05 else 'not met'} |")
     return '\n'.join(rows)
 
 def table2():
@@ -136,11 +146,30 @@ def supp_tables():
         for c in ORDER:
             m = met(c, k)
             out.append(f"| {k} | {SHORT[c]} | {100 * m['sens_seed_sd']:.1f} | {100 * m['fpr_true_null_seed_sd']:.1f} | {ci(m, 'sens_ref2')} | {'Yes' if m['fpr_true_null_hi'] <= 0.05 else 'No'} |")
+    EX = {(e['detector'], e['k']): e for e in PH['exact_e1']}
+    out[0] = out[0].replace(' | Valid under strict', ' | Sensitivity, exact 95% CI | Specificity, exact 95% CI | Valid under strict')
+    out[1] = '|---|---|---|---|---|---|---|---|'
+    for i in range(2, len(out)):
+        c = out[i].split(' | '); k = int(c[0].strip('| ')); code = [x for x in ORDER if SHORT[x] == c[1]][0]; e = EX[(det(code), k)]
+        f = lambda x, n, iv: f"{x}/{n} ({100 * iv[0]:.1f}–{100 * iv[1]:.1f})"
+        c.insert(5, f(e['sens_x'], e['sens_n'], e['sens_cp'])); c.insert(6, f(e['spec_x'], e['spec_n'], e['spec_cp'])); out[i] = ' | '.join(c)
     pt = ['| Tests | Endpoint | Detector | n | Difference vs D1, pp (95% CI) | Only detector / only D1 | McNemar p | Holm p |', '|---|---|---|---|---|---|---|---|']
     for t in S['paired_tests']:
         c = t['detector'].split()[0]
         pt.append(f"| {t['k']} | {t['endpoint']} | {SHORT[c]} | {t['n']} | {100 * t['diff']:+.1f} ({100 * t['diff_lo']:.1f} to {100 * t['diff_hi']:.1f}) | {t['only_det']} / {t['only_D1']} | {pval(t['p'])} | {pval(t['p_holm'])} |")
-    return '\n'.join(out), '\n'.join(pt)
+    fo = ['| Tests | Detector | Sensitivity, % (95% CI) | Specificity, stable = p > 0.5, % (95% CI) | Specificity, stable = no evidence of progression, % (95% CI) |', '|---|---|---|---|---|']
+    for k in (3, 4, 5, 6):
+        for c in ORDER:
+            r = [x for x in PH['future_only_reference'] if x['detector'] == det(c) and x['k'] == k]
+            if not r: continue
+            r = r[0]; g = lambda key: '–' if key not in r else f"{100 * r[key]:.1f} ({100 * r[key + '_lo']:.1f}–{100 * r[key + '_hi']:.1f})"
+            fo.append(f"| {k} | {SHORT[c]} | {g('sens')} | {g('spec_p05')} | {g('spec_noev')} |")
+    cnt = '; '.join(f"{k} tests: {v['n_eyes']} eyes, {v['prog']} progressors, {v['stable_p05']} stable (p > 0.5), {v['stable_noev']} with no evidence of progression" for k, v in PH['future_only_counts'].items())
+    gr = ['| Tests | Detector | Label | Eyes ≥ k+2 visits only | n (positive) | Sensitivity, % (95% CI) | Specificity, % (95% CI) |', '|---|---|---|---|---|---|---|']
+    for r in PH['grape_restricted_and_labels']:
+        g = lambda key: '–' if key not in r else f"{100 * r[key]:.1f} ({100 * r[key + '_lo']:.1f}–{100 * r[key + '_hi']:.1f})"
+        gr.append(f"| {r['k']} | {SHORT[r['detector'].split()[0]]} | {r['label']} | {'yes' if r['restricted'] else 'no'} | {r['n']} ({r['n_pos']}) | {g('sens')} | {g('spec')} |")
+    return '\n'.join(out), '\n'.join(pt), '\n'.join(fo), cnt, '\n'.join(gr)
 
 CIT = re.compile(r'\[(\d+(?:\s*[,–-]\s*\d+)*)\]')
 def expand(g):
@@ -173,7 +202,7 @@ def renumber(text):
 def fill(text):
     def sub(mm):
         k = mm.group(1).strip()
-        if k in ('TABLE1', 'TABLE2', 'TABLE3', 'REFS', 'SUPP_T1', 'SUPP_T2', 'INTRO_METHODS'): return mm.group(0)
+        if k in ('TABLE1', 'TABLE2', 'TABLE3', 'REFS', 'SUPP_T1', 'SUPP_T2', 'SUPP_T3', 'SUPP_T3N', 'SUPP_T4', 'INTRO_METHODS'): return mm.group(0)
         return resolve(k)
     return re.sub(r'\{\{([^}]+)\}\}', sub, text)
 
@@ -190,8 +219,8 @@ if __name__ == '__main__':
         src = open(os.path.join(HERE, f'template_{name}.{"md" if name == "cover_letter" else "json"}')).read()
         src = fill(src); assert '{{' not in src
         open(os.path.join(HERE, f'{name}_filled.md' if name == 'cover_letter' else 'figure_legends.json'), 'w').write(src)
-    st1, st2 = supp_tables()
-    sup = fill(open(os.path.join(HERE, 'template_supplementary.md')).read()).replace('{{SUPP_T1}}', st1).replace('{{SUPP_T2}}', st2)
+    st1, st2, st3, cnt, st4 = supp_tables()
+    sup = fill(open(os.path.join(HERE, 'template_supplementary.md')).read()).replace('{{SUPP_T1}}', st1).replace('{{SUPP_T2}}', st2).replace('{{SUPP_T3}}', st3).replace('{{SUPP_T3N}}', cnt).replace('{{SUPP_T4}}', st4)
     os.makedirs(os.path.join(ROOT, 'supplementary'), exist_ok=True)
     open(os.path.join(ROOT, 'supplementary', 'Supplementary_Material.md'), 'w').write(sup)
     open(os.path.join(HERE, 'claim_check_log.txt'), 'w').write('\n'.join(CHECKS) + f"\n{len(CHECKS)} checks passed\nreferences cited (original ids in order): {order}\n")

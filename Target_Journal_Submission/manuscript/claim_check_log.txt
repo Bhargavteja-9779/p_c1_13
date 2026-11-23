@@ -1,28 +1,21 @@
-PASS check:valid:D1:3
-PASS check:valid:D1:4
-PASS check:valid:D1:5
-PASS check:valid:D1:6
-PASS check:valid:D2:3
-PASS check:valid:D3:3
-PASS check:valid:D4:3
-PASS check:valid:D5:3
-PASS check:valid:D7:3
-PASS check:valid:D10:3
-PASS check:invalid:D6:3
-PASS check:invalid:D6:6
-PASS check:invalid:D8:3
-PASS check:invalid:D8:4
-PASS check:invalid:D8:5
-PASS check:invalid:D9:3
-PASS check:invalid:D9:5
+PASS check:notabove:D1:3
+PASS check:notabove:D1:4
+PASS check:notabove:D1:5
+PASS check:notabove:D1:6
+PASS check:above:D6:3
+PASS check:above:D8:3
+PASS check:above:D8:4
+PASS check:above:D8:5
+PASS check:above:D9:3
 PASS check:sig:D6:3:sensitivity
 PASS check:ns:D2:3:sensitivity
+PASS check:notabove:D2:3
 PASS check:ns:D6:4:sensitivity
 PASS check:ns:D7:5:sensitivity
 PASS check:ns:D8:6:sensitivity
 PASS check:ns:D10:5:sensitivity
 PASS check:sig:D3:6:sensitivity
-PASS check:valid:D8:6
+PASS check:notabove:D8:6
 PASS check:same:D5
 PASS check:pairhi_gt:D2:3:sensitivity:0.2
 PASS check:pairhi_gt:D8:4:sensitivity:0.2
@@ -39,6 +32,5 @@ PASS check:ns:D2:4:gsens
 PASS check:ns:D8:4:gsens
 PASS check:sig:D2:4:gfp
 PASS check:sig:D8:4:gfp
-PASS check:gt:D6:3:fpr_true_null:0.2
-42 checks passed
-references cited (original ids in order): [1, 2, 3, 8, 4, 5, 6, 12, 7, 11, 13, 9, 10, 35, 16, 17, 18, 19, 20, 21, 23, 24, 22, 32, 14, 15, 31, 30, 33, 25, 26, 28, 36, 34]
+34 checks passed
+references cited (original ids in order): [1, 2, 3, 8, 4, 5, 6, 12, 7, 11, 13, 9, 10, 35, 16, 17, 18, 19, 20, 21, 23, 24, 22, 32, 14, 15, 31, 30, 33, 25, 26, 36, 34]

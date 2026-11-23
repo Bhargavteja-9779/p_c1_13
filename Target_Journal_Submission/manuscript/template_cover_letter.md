@@ -16,7 +16,7 @@ The main findings are:
 - No detector with valid false alarms beat the simple trend test at three to six tests, in either clinic.
 - A simple "shuffle audit", which any clinic can run on its own records, tracked the true false-alarm rate (Spearman ρ = {{s:spearman_rho}}).
 
-We believe these results are directly useful to clinicians who must decide when to escalate treatment, and to those who evaluate new progression tools. The analysis plan was written and time-stamped before the final analysis; all data are public and all code will be released.
+We believe these results are directly useful to clinicians who must decide when to escalate treatment, and to those who evaluate new progression tools. The analysis plan was time-stamped in version control before the final analysis, and all deviations are reported; all data are public and all code will be released.
 
 This manuscript has not been published and is not under consideration elsewhere. All authors have approved the submission. [DECLARATIONS OF INTEREST AND FUNDING – TO BE COMPLETED BY THE AUTHORS.]
 

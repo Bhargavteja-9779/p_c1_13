@@ -64,7 +64,11 @@ def main(path=None):
                 if len(j) == 0: continue
                 p, b01, b10 = mcnemar(o[j].to_numpy(), base[j].to_numpy())
                 diff = o[j].to_numpy() - base[j].to_numpy()
-                rng = np.random.default_rng(0); bs = [diff[rng.integers(0, len(diff), len(diff))].mean() for _ in range(B)]
+                # patient-cluster bootstrap of the paired difference (revision after review I05; was eye-level)
+                cl = pd.Series(diff, index=[cluster_of(ev, u) for u in j]).groupby(level=0).agg(['sum', 'count'])
+                cs, cn = cl['sum'].to_numpy(), cl['count'].to_numpy()
+                rng = np.random.default_rng(0); idx = rng.integers(0, len(cl), size=(B, len(cl)))
+                bs = cs[idx].sum(1) / cn[idx].sum(1)
                 res.append(dict(k=int(k), endpoint=endpoint, detector=det, n=len(j), diff=float(diff.mean()),
                                 diff_lo=float(np.quantile(bs, .025)), diff_hi=float(np.quantile(bs, .975)), p=p, only_det=b01, only_D1=b10))
             if res:
