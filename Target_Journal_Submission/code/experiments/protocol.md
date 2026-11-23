@@ -76,3 +76,20 @@ GRAPE was measured with a different perimeter (59 analysable points after removi
 from Humphrey). Therefore on GRAPE: D5 calibration pool and D7 change limits come from GRAPE itself by 5-fold
 patient-level cross-fitting ("own-clinic calibration"); D8 is the UWHVF-trained model applied unchanged (transfer
 test, grid-agnostic features); D6, D9, D10 (24-2 specific) are not evaluated on GRAPE.
+
+## Amendment A3 (2026-11-23, Prompt-2 re-check run; written AFTER run-1 test results were known -> all A3 analyses are
+## labelled "post hoc, pre-specified before their own execution")
+Reasons: (1) run-1 reference sets were small (26 progressors / 26 stable on the locked test split); (2) the primary
+reference uses the full series including the first k tests the detector sees (shared-noise circularity); (3) a mechanism
+for the ML false alarms needs testing; (4) a fix for (3) is proposed.
+A3.1 Whole-cohort 5-fold patient-level cross-fitting on UWHVF (fold = salted SHA-256 of patient id, salt "uwhvf-cf-v1");
+     trainable detectors fit on the 4 other folds (inner validation = 25% of their patients by hash). D1-D8 + D11.
+     D9/D10 (24-2 deep models) are evaluated on the locked split only (cost).
+A3.2 Future-only reference E1F: MD slope from tests k+1..end (>= 5 future tests), same thresholds (progressor slope <
+     -0.3 dB/yr and one-sided p < 0.01; stable one-sided p > 0.5). E1S: same progressors; stable = |future slope| <= 0.2
+     dB/yr (symmetric "no change" definition that does not select improving eyes).
+A3.3 New detector D11 "null-calibrated ML": D8's LightGBM score with a conformal threshold from shuffled validation
+     series (5 shuffles per eye, Mondrian strata = mean-sensitivity tertile), alpha = 0.05. Reported whatever its result.
+A3.4 Artes arm: 2 donor-spacing draws per window per fold (10 in total); shuffle audit: 2 shuffles per eye.
+Primary A3 endpoints: D11 vs D1 and D8 vs D1 sensitivity (E1, E1F) with exact McNemar + Holm and patient-cluster
+bootstrap CI; true-null FPR with patient-cluster bootstrap CI. Seeds 0-4.

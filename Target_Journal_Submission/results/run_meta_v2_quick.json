@@ -1,0 +1,43 @@
+{
+ "mode": "quick",
+ "ks": [
+  3,
+  4,
+  5,
+  6
+ ],
+ "seeds": [
+  0
+ ],
+ "folds": [
+  0
+ ],
+ "n_eyes": 4452,
+ "n_ref_full": {
+  "prog": 150,
+  "stable": 164
+ },
+ "n_ref_future": {
+  "3": {
+   "prog": 95,
+   "stable": 187,
+   "stable_sym": 314
+  },
+  "4": {
+   "prog": 67,
+   "stable": 119,
+   "stable_sym": 204
+  },
+  "5": {
+   "prog": 43,
+   "stable": 91,
+   "stable_sym": 143
+  },
+  "6": {
+   "prog": 34,
+   "stable": 73,
+   "stable_sym": 96
+  }
+ },
+ "runtime_s": 102.88466334342957
+}
