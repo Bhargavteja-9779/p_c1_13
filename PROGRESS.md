@@ -58,6 +58,24 @@
 - Full run launched: `cd code && nohup python3 run_all.py --mode full > ../results/full_run.log &`
   Output results/raw_results.csv. If interrupted: rerun same command (takes ~1-3 h).
 
-## NEXT ACTION
-After full run: python -m src.statistics.summarise; python -m src.visualization.figures; then write manuscript
-(manuscript/Final_Manuscript.docx), citation audit, 10+1 reviews (REVIEW/), cover letter, risk report.
+- 2026-11-23 handover: full benchmark run was IN PROGRESS when the session ended (container is ephemeral, so the run
+  and data_raw/ are lost). Manuscript drafts: manuscript/sections_intro_methods.md (placeholders {{...}}),
+  manuscript/build_docx.py (python-docx builder; expects manuscript_filled.md, cover_letter_filled.md,
+  figure_legends.json), manuscript/references.json (36 verified DOIs; numbering in intro = order of DOIS list in
+  code/scripts/build_refs.py).
+
+## NEXT ACTION (new session: do these in order)
+1. Restore data (all public):
+   GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/uw-biomedical-ml/uwhvf /home/user/uw-biomedical-ml/uwhvf
+   mkdir -p data_raw/ext/grape && cd data_raw/ext && curl -sLO https://cloud.r-project.org/src/contrib/visualFields_1.0.7.tar.gz && tar xzf visualFields_1.0.7.tar.gz
+   curl -sL -o grape/vf_clinical.xlsx https://ndownloader.figshare.com/files/41670009
+   pip install scikit-learn scipy lightgbm matplotlib pyreadr openpyxl python-docx; pip install torch --index-url https://download.pytorch.org/whl/cpu
+2. cd Target_Journal_Submission/code && python -m pytest -q tests && nohup python3 run_all.py --mode full > ../results/full_run.log 2>&1 &
+   (~20-40 min on 4 CPUs; writes results/raw_results.csv). Commit results when done.
+3. python -m src.statistics.summarise ; python -m src.visualization.figures ; commit.
+4. Write Results/Discussion/Abstract/Key Summary Points from metrics.json/statistics.json (fill script must insert
+   numbers; never hand-type), assemble manuscript_filled.md, figure_legends.json, cover_letter_filled.md, run
+   build_docx.py, render to PDF and inspect.
+5. Claim-evidence + citation audit, 10 reviews + stakeholder review in REVIEW/, risk_report.md, final decision.
+   Honest label expected: "NOT REMARKABLE: honest strongest result" (see novelty_escalation_log.md).
+6. Open user requests: manual Dryad download (AMD_longitudinal_MEH_v4.csv), JCR quartile check, APC USD 8,050 OK?
