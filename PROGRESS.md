@@ -84,8 +84,26 @@
   (REVIEW/review_01..10.md, review_summary.md, review_stakeholder.md) - if missing in a new session, redo them.
 - Reproducibility re-run launched (writes results/raw_results.csv + OVERWRITES results/run_meta_full.json -> after it
   finishes: mv run_meta_full.json run_meta_full_repro.json; git checkout results/run_meta_full.json; compare raw vs gz).
+- REVIEW ROUND 1 DONE (REVIEW/review_01..10.md, review_summary.md, review_stakeholder.md): 9x major, 1x reject.
+  FATAL: F1 validity rule not the protocol's literal rule (literal rule -> D1 invalid at every k); F2 reference includes
+  the first k tests (incorporation/MD circularity); F3 failing "complex" detectors are own implementations -> claims too
+  general. Key MAJOR: M1 majority-vote vs seed-mean estimands; M4 paired bootstrap by eye not patient; M5 "stable" =
+  positive slope; M7 cumulative true-null FA missing; M8/M9 GRAPE PLR2/PLR3 labels unreported (D1 weak on PLR2);
+  M11-M13 disclosure (quick mode touched Artes/GRAPE; D6 failure known from dev; "pre-registered" = git file);
+  M16 D4/D7/D10 not applicable at k=3; M14 A1 time-label sensitivity. Decision: NOT READY -> revision R1.
 ## NEXT ACTION
-STEP 5: claim-evidence audit (REVIEW/claim_evidence_audit.md), citation audit (REVIEW/citation_audit.md, use
-manuscript/pubmed_check.json), 10 adversarial reviews + stakeholder review (REVIEW/review_01..10.md, review_stakeholder.md),
-fix what reviews find, then STEP 6: consistency + reproducibility audit, risk_report.md, final decision.
-Open user items: author names/affiliations, funding, disclosures, code repo URL, JCR quartile check, APC OK?
+REVISION R1 (do in order, commit after each):
+ 1. summarise.py v2 (new file summarise_v2.py, keep v1 outputs): one estimand (seed-mean flags) for proportions AND
+    paired differences; patient-cluster paired bootstrap; McNemar on majority flags (disclosed); N/A at k=3 for D4/D7/D10
+    (excluded from Holm family); both validity rules (literal protocol: CI upper <=5%; operational A3: upper<=10% &
+    lower<=5%; plus 'anti-conservative' = lower>5%) written to JSON; bootstrap CI for audit rho; GRAPE PLR2/PLR3/any
+    labels; secondary-reference specificity; cumulative Artes FA over looks k=3..6 (same window start).
+ 2. Exploratory future-only reference (tests k+1..end) on the evaluated E1 eyes.
+ 3. Rewrite manuscript: deviations table (A3 validity rule, quick-mode exposure, majority vote, bootstrap fix),
+    'analysis plan committed before final run (commit c0dedb5)' instead of 'pre-registered', restrict claims to tested
+    implementations, estimation language (no 'hard to beat'), define 'stable' = non-declining slope, GRAPE labels
+    'criterion-based', M10 wording, S1 correction (rounds 4-5 used other data), stronger AI statement, plain-language
+    summary (draft in review_stakeholder.md).
+ 4. Rebuild docx/pdf, re-run claim audit, second (shorter) review round, risk_report.md, final decision.
+Open user items: author names/affiliations, funding, disclosures, code repo URL, JCR quartile check, APC OK?,
+ scope (M24: consider a perimetry/methods journal instead).
