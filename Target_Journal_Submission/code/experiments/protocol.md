@@ -76,3 +76,26 @@ GRAPE was measured with a different perimeter (59 analysable points after removi
 from Humphrey). Therefore on GRAPE: D5 calibration pool and D7 change limits come from GRAPE itself by 5-fold
 patient-level cross-fitting ("own-clinic calibration"); D8 is the UWHVF-trained model applied unchanged (transfer
 test, grid-agnostic features); D6, D9, D10 (24-2 specific) are not evaluated on GRAPE.
+
+## Amendment A3 (2026-11-23, written and committed BEFORE running any A3 analysis; prompted by simulated review)
+Status: exploratory, post-review. The locked UWHVF test split is touched once more for these new candidates; all A3
+results will be reported as post-review analyses, whatever they show.
+
+A3a Shuffle-calibrated thresholds (SCT). For detectors whose nominal threshold proved invalid or time-scale dependent
+  (D2 MD-rate, D6, D8, D9), replace the threshold by the 95th percentile of the detector's own score on SHUFFLED
+  series of the clinic's VALIDATION eyes (first k fields, 10 random orders per eye; for D6 the score is its conformal
+  p-value, flag if below the 5th percentile). Models and calibration pools are otherwise unchanged (same seeds 0-4).
+  GRAPE: D2-SCT and D8-SCT thresholds from shuffled GRAPE series by 5-fold patient-level cross-fitting.
+  H5: with SCT, the true no-change false-alarm rate of D2, D6, D8, D9 is valid (lower CI <= 5%, upper CI <= 10%) at
+      every k. Falsified if any cell has lower CI > 5%.
+  H6: no SCT detector has sensitivity >= D1 + 10 pp with Holm-adjusted McNemar p < 0.05 (Holm over the SCT detectors
+      within k). Falsified if one does.
+  H6b (GRAPE): D8-SCT specificity is within 5 pp of D1 at k = 3.
+A3b Confirmation rule. A flag at k counts only if the detector also flagged at k-1 (k = 4, 5, 6), computed from the
+  existing full-run flags (E1, and E2 nested windows with the same start and time draw).
+  H7: confirmation brings the true no-change false-alarm rate of D6 and D8 to <= 5% (point estimate) at k = 4-6,
+      at a sensitivity cost relative to unconfirmed D1.
+A3c Enlarged reference for training-free detectors (D1 OLS-MD, D2 MD-rate, D3 PLR-3, D4 PoPLR): the same reference
+  rule applied to ALL UWHVF eyes with >= 8 fields (train + validation + test), because these detectors use no training
+  data. Paired exact McNemar vs D1, patient-cluster bootstrap CIs, Holm within k.
+  H8: D2 at k = 3 flags more reference progressors than D1 (Holm p < 0.05). (Pilot point estimate +19 pp.)
