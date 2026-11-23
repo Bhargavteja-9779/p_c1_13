@@ -76,3 +76,19 @@ GRAPE was measured with a different perimeter (59 analysable points after removi
 from Humphrey). Therefore on GRAPE: D5 calibration pool and D7 change limits come from GRAPE itself by 5-fold
 patient-level cross-fitting ("own-clinic calibration"); D8 is the UWHVF-trained model applied unchanged (transfer
 test, grid-agnostic features); D6, D9, D10 (24-2 specific) are not evaluated on GRAPE.
+
+## Post hoc analysis plan P (written 2026-11-23 after internal review, BEFORE running these analyses)
+These are post hoc (results of the main analysis were known) and will be reported as such. Seed 0 only.
+P1 GRAPE shuffle audit (review I12): grid-agnostic detectors (D1-D5, D7, D8) with the same GRAPE cross-fitting as E4;
+   first k (3, 4) tests of each GRAPE eye randomly re-ordered 10 times. Expectation: D2 and D8 flag > 10% of shuffled
+   series at k = 3; D1 about 5%.
+P2 No-change arm with added long-term fluctuation (review I08): sigma_UW = median over UW TRAIN reference-stable eyes of
+   the residual SD of mean sensitivity around its OLS line; sigma_Artes = median over Artes eyes of the SD of mean
+   sensitivity over the 12 weeks. Added global visit shift ~ N(0, s^2), s = sqrt(max(sigma_UW^2 - sigma_Artes^2, 0)),
+   same shift for all locations of one visit; Artes windows with donor test times as in A1 (10 draws per window).
+   Expectation: false alarms rise for all detectors; rate rules without a p-value (D2, D3, D7) and supervised ML
+   (D8, D9) rise more than p-value tests (D1, D4, D5).
+P3 Shuffle-calibrated ML threshold (review I10; exploratory fix): D8 refitted as before, but its threshold is the 95th
+   percentile of its scores on shuffled TRAIN series (first k tests, 20 shuffles per eye with >= k tests). Evaluate
+   E1 (sensitivity/specificity vs D1, exact McNemar), E2 (true no-change false alarms). Expectation: false alarms near
+   5%, sensitivity not significantly different from D1.
