@@ -66,6 +66,10 @@ def val(key):
         return 'none' if not x else x[0] if len(x) == 1 else ', '.join(x[:-1]) + ' and ' + x[-1]
     if t == 'nvalid': return str(sum(valid(met(c, a[0])) for c in CODE))
     if t == 'ratio': return f"{met(a[0], a[1])[a[2]] / met('D1', a[1])[a[2]]:.1f}"
+    if t == 'x' and a[0].startswith('refcorr'):
+        from scipy.stats import spearmanr
+        r = [spearmanr([m['sens'] for m in M if m['k'] == k], [m['sens_ref2'] for m in M if m['k'] == k])[0] for k in (3, 4, 5, 6)]
+        return f"{(min(r) if a[0] == 'refcorr_min' else max(r)):.2f}"
     if t == 'meta': return f"{R('run_meta_full.json')[a[0]]:,.0f}"
     raise KeyError(key)
 
