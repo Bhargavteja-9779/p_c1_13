@@ -76,7 +76,20 @@
   matplotlib pyreadr python-docx openpyxl). New script code/src/statistics/descriptives.py -> results/descriptives.json
   (Table 1 counts + pre-registered real-world measures: tests-to-first-detection, false flags per 1,000). Notable:
   UWHVF reference eyes median test interval 1.29 yr (6 tests ~ 6.5 yr) -> interpret k in years.
+- Session 3 (cont.): manuscript/fill_values.py fills manuscript_template.md (+ sections_intro_methods.md included via
+  <<INTRO_METHODS>>), cover_letter_template.md, figure_legends_template.json from results/*.json -> manuscript_filled.md,
+  values.json, tables/table2_main.csv, table3_grape.csv; renumbers citations by first appearance (template uses
+  references.json indices; ref 37 visualFields pkg added). build_docx.py -> Final_Manuscript.docx/.pdf, cover_letter.docx.
+  Corrections made: GRAPE = Octopus 900 G1 perimeter, labels are RULE-BASED (MD slope p<0.05, PLR2, PLR3 via visualFields),
+  not clinician judgement (verified from Sci Data paper text). GRAPE figshare DOI 10.6084/m9.figshare.c.6406319.v1 verified.
+  Validity rule implemented: FPR CI hi <= 10% AND CI lo <= 5%. H2 not falsified; H3 partly met; H4 supported (4/8 ML cells).
+  Author-only items left as [AUTHORS ...] placeholders (names, funding, COI, contributions, repo URL).
+
 ## NEXT ACTION (new session)
-Skip steps 1-3 above unless re-running is needed (results are committed). Start at step 4: write Results/Discussion/
-Abstract/KSP from metrics.json + statistics.json via a fill script, then build docx, audits, reviews, cover letter,
-risk report. Previous list of steps 4-6 still applies (see git history of this file for data-restore commands).
+Rebuild anytime: cd Target_Journal_Submission/manuscript && python3 fill_values.py && python3 build_docx.py
+1. Audits: claim-evidence audit (REVIEW/claim_evidence_audit.md), citation audit (each citation context vs paper),
+   consistency + reproducibility audit (pytest, quick mode), supplementary/ (S1 = table_metrics_all, S2 = paired tests,
+   Note S1 = escalation log summary), figures as TIFF.
+2. 10 adversarial reviews + stakeholder review in REVIEW/ (review_01..10.md, review_stakeholder.md); fix issues.
+3. risk_report.md, final decision (expected NOT REMARKABLE: honest strongest result), show user final package.
+4. Open user requests: JCR quartile check, APC USD 8,050 OK?, author details.

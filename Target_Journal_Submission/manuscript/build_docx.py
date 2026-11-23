@@ -77,8 +77,8 @@ def build_manuscript(md_path, out_path, figures):
     add_markdown(d, md)
     # figures at the end, one per page, with legends (journal asks figures as separate files too)
     for fpath, legend in figures:
-        p = d.add_paragraph(); p.add_run().add_break(WD_BREAK.PAGE)
-        d.add_picture(fpath, width=Cm(16)); cap = d.add_paragraph(); add_runs(cap, legend)
+        p = d.add_paragraph(); r = p.add_run(); r.add_break(WD_BREAK.PAGE); r.add_picture(fpath, width=Cm(16))
+        cap = d.add_paragraph(); add_runs(cap, legend)
     d.save(out_path)
 
 def build_letter(md_path, out_path):
