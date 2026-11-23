@@ -68,19 +68,21 @@ def T_main():
     return '\n'.join(out)
 
 def T_cohort():
-    P, S, A, G = DE['ref_progressors'], DE['ref_stable'], DE['artes'], DE['grape']
+    P, S, F, A, G = DE['s2_progressors'], DE['s2_stable'], DE['s2_flat_stable'], DE['artes'], DE['grape']
     mq = lambda q, d=1: f"{q['median']:.{d}f} ({q['q1']:.{d}f}{' to ' if q['q1'] < 0 else '–'}{q['q3']:.{d}f})"
+    fp = lambda x: f"{x['female_patients']} ({100 * x['female_patients'] / x['n_patients']:.0f}%)"
     return '\n'.join([
-        '| Characteristic | UWHVF reference progressors | UWHVF reference stable | Artes retest (true no change) | GRAPE (external) |', '|---|---|---|---|---|',
-        f"| Patients / eyes, n | {P['n_patients']} / {P['n_eyes']} | {S['n_patients']} / {S['n_eyes']} | {A['n_patients']} / {A['n_series']} | {G['n_patients']} / {G['n_eyes']} |",
-        f"| Age at first test, years | {mq(P['age0'])} | {mq(S['age0'])} | not used | {mq(G['age'])} |",
-        f"| Female patients, n (%) | {P['female_patients']} ({100 * P['female_patients'] / P['n_patients']:.0f}%) | {S['female_patients']} ({100 * S['female_patients'] / S['n_patients']:.0f}%) | not available | {G['female_patients']} ({100 * G['female_patients'] / G['n_patients']:.0f}%) |",
-        f"| Tests per eye, n | {mq(P['n_tests'], 0)} | {mq(S['n_tests'], 0)} | {A['n_fields'] // A['n_series']} | {mq(G['n_visits'], 0)} |",
-        f"| Follow-up, years | {mq(P['followup_y'])} | {mq(S['followup_y'])} | {mq(dict((k, v / 365.25) for k, v in A['span_days'].items() if k in ('median', 'q1', 'q3')), 2)} | {mq(G['followup_y'])} |",
-        f"| Time from first to third test, years | {mq(P['years_to_test3'])} | {mq(S['years_to_test3'])} | 2 weeks by design | not computed |",
-        f"| Mean total deviation at first test, dB | {mq(P['md_baseline_proxy'])} | {mq(S['md_baseline_proxy'])} | not available | not available |",
-        f"| Mean sensitivity, dB | not shown | not shown | {mq(A['md_proxy'])} | not shown |",
-        f"| Progression label positive, n | {P['n_eyes']} (reference) | 0 | 0 (by design) | {G['md_label_pos']} (MD criterion) |"])
+        '| Characteristic | UWHVF progressors (R1) | UWHVF stable (R1) | UWHVF flat stable (R2) | Artes retest (true no change) | GRAPE (external) |', '|---|---|---|---|---|---|',
+        f"| Patients / eyes, n | {P['n_patients']} / {P['n_eyes']} | {S['n_patients']} / {S['n_eyes']} | {F['n_patients']} / {F['n_eyes']} | {A['n_patients']} / {A['n_series']} | {G['n_patients']} / {G['n_eyes']} |",
+        f"| Of which in Study 1 test split, eyes | {DE['ref_progressors']['n_eyes']} | {DE['ref_stable']['n_eyes']} | — | — | — |",
+        f"| Female patients, n (%) | {fp(P)} | {fp(S)} | {fp(F)} | not available | {fp(G)} |",
+        f"| Age at first test, years | {mq(P['age0'])} | {mq(S['age0'])} | {mq(F['age0'])} | not used | {mq(G['age'])} |",
+        f"| Tests per eye, n | {mq(P['n_tests'], 0)} | {mq(S['n_tests'], 0)} | {mq(F['n_tests'], 0)} | {A['n_fields'] // A['n_series']} | {mq(G['n_visits'], 0)} |",
+        f"| Follow-up, years | {mq(P['followup_y'])} | {mq(S['followup_y'])} | {mq(F['followup_y'])} | {mq(dict((k, v / 365.25) for k, v in A['span_days'].items() if k in ('median', 'q1', 'q3')), 2)} | {mq(G['followup_y'])} |",
+        f"| Time from first to sixth test, years | {mq(P['years_to_test6'])} | {mq(S['years_to_test6'])} | {mq(F['years_to_test6'])} | about 5 weeks by design | not computed |",
+        f"| Mean total deviation at first test, dB | {mq(P['md_baseline_proxy'])} | {mq(S['md_baseline_proxy'])} | {mq(F['md_baseline_proxy'])} | not available | not available |",
+        f"| Mean sensitivity, dB | not shown | not shown | not shown | {mq(A['md_proxy'])} | not shown |",
+        f"| Progression label positive, n | {P['n_eyes']} (reference) | 0 | 0 | 0 (by design) | {G['md_label_pos']} (MD criterion) |"])
 
 def T_grape():
     out = ['| Detector | k | Sensitivity, % (95% CI) | Specificity, % (95% CI) |', '|---|---|---|---|']
@@ -92,7 +94,73 @@ def T_grape():
                        f"{pc(r['grape_spec'])} ({pc(r['grape_spec_lo'])}–{pc(r['grape_spec_hi'])}) |")
     return '\n'.join(out)
 
-TABLES = dict(main=T_main, cohort=T_cohort, grape=T_grape)
+
+# ================= Study 2 =================
+S2 = J('results', 'study2_metrics.json'); S2META = J('results', 'study2_meta_full.json')
+S2M, S2C, S2P, S2G, S2H = S2['metrics'], S2['cumulative'], S2['paired'], S2['grape'], S2['paired_cum']
+S2HOLM = ['D7', 'S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7']
+S2NAMES = {'D1': 'D1 Trend', 'D7': 'D7 Event analysis', 'S1': 'S1 SC trend', 'S2': 'S2 SC rate', 'S3': 'S3 SC PoPLR',
+           'S4': 'S4 SC event', 'S5': 'S5 SC LightGBM', 'S6': 'S6 Order LightGBM', 'S7': 'S7 SC GRU', 'B8': 'B8 LightGBM, 95% spec'}
+def s2row(code, k):
+    r = [x for x in S2M if x['detector'].split()[0] == code and x['k'] == int(k)]; assert len(r) == 1, (code, k); return r[0]
+def s2pair(ep, code, k):
+    r = [x for x in S2P if x['detector'].split()[0] == code and x['k'] == int(k) and x['endpoint'] == ep]; assert len(r) == 1, (ep, code, k); return r[0]
+def s2cum(det, k):
+    r = [x for x in S2C if x['detector'] == det and x['k'] == int(k)]; assert len(r) == 1, (det, k); return r[0]
+def s2h(det):
+    r = [x for x in S2H if x['detector'] == det]; assert len(r) == 1; return r[0]
+def s2g(det, k):
+    r = [x for x in S2G if x['detector'] == det and x['k'] == int(k)]; assert len(r) == 1, (det, k); return r[0]
+def s2valid(code, k):
+    r = s2row(code, k); return r['fa_lo'] <= 0.05 and r['fa_hi'] <= 0.10
+def pdt(r, holm=True):
+    sg = '+' if r['diff'] > 0 else '−' if r['diff'] < 0 else ''
+    pp = r['p_holm'] if (holm and r.get('p_holm') is not None) else r['p']
+    lab = 'Holm-adjusted p' if (holm and r.get('p_holm') is not None) else 'p'
+    return f"{sg}{abs(100 * r['diff']):.1f} percentage points, 95% CI {100 * r['diff_lo']:.1f} to {100 * r['diff_hi']:.1f}, {lab} {pv(pp)}"
+def qmaxhi():
+    import math
+    v = max(x['diff_hi'] for x in S2P if x['endpoint'] == 'sens' and x['detector'].split()[0] in S2HOLM)
+    return math.ceil(1000 * v) / 10
+
+def T_s2main():
+    out = ['| Detector | k | Sensitivity, % (95% CI) | Gain vs D1, pp (Holm p) | Spec R1, % | Spec R2, % | False alarms, true no-change, % (95% CI) | Valid |',
+           '|---|---|---|---|---|---|---|---|']
+    for k in (3, 4, 5, 6):
+        for code in ['D1', 'D7', 'S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7', 'B8']:
+            r = s2row(code, k)
+            if code == 'D1': g = '—'
+            else:
+                pr = s2pair('sens', code, k); pp = pr['p_holm'] if pr.get('p_holm') is not None else pr['p']
+                g = f"{100 * pr['diff']:+.1f} ({'<0.001' if pp < 0.001 else f'{pp:.2f}'})".replace('-', '−')
+            out.append(f"| {S2NAMES[code]} | {k} | {pc(r['sens'])} ({pc(r['sens_lo'])}–{pc(r['sens_hi'])}) | {g} | {pc(r['spec'])} | {pc(r['spec_R2'])} | "
+                       f"{pc(r['fa'])} ({pc(r['fa_lo'])}–{pc(r['fa_hi'])}) | {'yes' if s2valid(code, k) else '**no**'} |")
+    return '\n'.join(out)
+
+CUMNAMES = {'D1-repeated': 'D1 trend, every review', 'D7-repeated': 'D7 event, every review', 'Q1 Sequential trend': 'Q1 Sequential trend',
+            'Q2 Confirmed trend': 'Q2 Confirmed trend', 'Q3 Confirmed SC-Event': 'Q3 Confirmed SC event', 'Q4 Sequential Order-LightGBM': 'Q4 Sequential order LightGBM'}
+def T_s2cum():
+    out = ['| Detector | Progressors flagged by test 6, % (95% CI) | Difference vs D1, pp (95% CI) | Flat-stable eyes flagged, % | True no-change series flagged, % (95% CI) |',
+           '|---|---|---|---|---|']
+    for det, nm in CUMNAMES.items():
+        r = s2cum(det, 6)
+        dd = '—' if det == 'D1-repeated' else f"{100 * s2h(det)['diff']:+.1f} ({100 * s2h(det)['lo95']:.1f} to {100 * s2h(det)['hi95']:.1f})".replace('-', '−')
+        out.append(f"| {nm} | {pc(r['sens'])} ({pc(r['sens_lo'])}–{pc(r['sens_hi'])}) | {dd} | {pc(1 - r['spec_R2'])} | {pc(r['fa'])} ({pc(r['fa_lo'])}–{pc(r['fa_hi'])}) |")
+    return '\n'.join(out)
+
+GNAMES = [('D1 OLS-MD', 'D1 Trend'), ('B8 LightGBM-95spec', 'B8 LightGBM, 95% spec (UW threshold)'),
+          ('S1 SC-Trend (UW threshold)', 'S1 SC trend, UW threshold'), ('S1 SC-Trend (local threshold)', 'S1 SC trend, local threshold'),
+          ('S5 SC-LightGBM (UW threshold)', 'S5 SC LightGBM, UW threshold'), ('S5 SC-LightGBM (local threshold)', 'S5 SC LightGBM, local threshold'),
+          ('S6 Order-LightGBM (UW threshold)', 'S6 Order LightGBM, UW threshold'), ('S6 Order-LightGBM (local threshold)', 'S6 Order LightGBM, local threshold')]
+def T_s2grape():
+    out = ['| Detector | k | Sensitivity, % (95% CI) | Specificity, % (95% CI) |', '|---|---|---|---|']
+    for k in (3, 4):
+        for det, nm in GNAMES:
+            r = s2g(det, k)
+            out.append(f"| {nm} | {k} | {pc(r['sens_MD'])} ({pc(r['sens_MD_lo'])}–{pc(r['sens_MD_hi'])}) | {pc(r['spec_MD'])} ({pc(r['spec_MD_lo'])}–{pc(r['spec_MD_hi'])}) |")
+    return '\n'.join(out)
+
+TABLES = dict(main=T_main, cohort=T_cohort, grape=T_grape, s2main=T_s2main, s2cum=T_s2cum, s2grape=T_s2grape)
 
 def sub(m):
     a = m.group(1).split(':'); t = a[0]
@@ -107,8 +175,8 @@ def sub(m):
     if t == 'f1000': return f"{1000 * val('fpr_true_null', a[1], a[2]):.0f}"
     if t == 'dt':
         r = pair(*a[1:]); sg = '+' if r['diff'] > 0 else '−' if r['diff'] < 0 else ''
-        return (f"{sg}{abs(100 * r['diff']):.1f} percentage points (95% CI {100 * r['diff_lo']:.1f} to {100 * r['diff_hi']:.1f}; "
-                f"Holm-adjusted p {pv(r['p_holm'])})")
+        return (f"{sg}{abs(100 * r['diff']):.1f} percentage points, 95% CI {100 * r['diff_lo']:.1f} to {100 * r['diff_hi']:.1f}, "
+                f"Holm-adjusted p {pv(r['p_holm'])}")
     if t == 'ttd': return f"{100 * DE['time_to_detection_ref_progressors'][det_name(a[1])]['detected_by6_mean']:.0f}%"
     if t == 'table': return TABLES[a[1]]()
     if t == 'x':
@@ -128,6 +196,37 @@ def sub(m):
         if w == 'sec_ref_prog': return str(int(row('D1', 3)['sens_ref2_n']))
         raise KeyError(m.group(0))
     if t == 'REFERENCES': return m.group(0)
+    if t == 'q': return pc(s2row(a[2], a[3])[a[1]]) + '%'
+    if t == 'qci':
+        r = s2row(a[2], a[3]); c = a[1]; return f"{pc(r[c])}% (95% CI {pc(r[c + '_lo'])}–{pc(r[c + '_hi'])}%)"
+    if t == 'qn': return f"{s2row(a[2], a[3])[a[1] + '_n']:,}"
+    if t == 'qd': return f"{100 * s2pair(a[1], a[2], a[3])['diff']:.1f}"
+    if t == 'qdlo': return f"{100 * s2pair(a[1], a[2], a[3])['diff_lo']:.1f}"
+    if t == 'qdhi': return f"{100 * s2pair(a[1], a[2], a[3])['diff_hi']:.1f}"
+    if t == 'qdt': return pdt(s2pair(a[1], a[2], a[3]))
+    if t == 'qrange':
+        v = [s2row(a[2], k)[a[1]] for k in (3, 4, 5, 6)]; return f"{pc(min(v))}–{pc(max(v))}%"
+    if t == 'qmaxhi': return f"{qmaxhi():.1f}"
+    if t == 'qmaxfa_b8': return pc(max(s2row('B8', k)['fa'] for k in (3, 4, 5, 6))) + '%'
+    if t == 'qc': return pc(s2cum(a[2], a[3])[a[1]]) + '%'
+    if t == 'qcci':
+        r = s2cum(a[2], a[3]); c = a[1]; return f"{pc(r[c])}% (95% CI {pc(r[c + '_lo'])}–{pc(r[c + '_hi'])}%)"
+    if t == 'qcrange_fa':
+        v = [s2cum(d, 6)['fa'] for d in ('Q1 Sequential trend', 'Q2 Confirmed trend', 'Q3 Confirmed SC-Event', 'Q4 Sequential Order-LightGBM')]
+        return f"{pc(min(v))}% and {pc(max(v))}%"
+    if t == 'qhc':
+        r = s2h(a[1]); return f"{100 * r['diff']:.1f} percentage points; 95% CI {100 * r['lo95']:.1f} to {100 * r['hi95']:.1f}"
+    if t == 'qhcmin': return f"{min(-100 * x['diff'] for x in S2H):.1f}"
+    if t == 'qhcmax': return f"{max(-100 * x['diff'] for x in S2H):.1f}"
+    if t == 'qmissq2': return str(s2h('Q2 Confirmed trend')['only_D1'])
+    if t == 'qd1det': return str([x for x in S2['time_to_first_flag'] if x['detector'] == 'D1-repeated'][0]['n_detected'])
+    if t == 'qr3max':
+        v = max(s2row(c, k)['sens_R3'] - s2row('D1', k)['sens_R3'] for c in S2HOLM for k in (3, 4, 5, 6)); return f"{100 * v:.1f}"
+    if t == 'qg': return pc(s2g(a[2], a[3])[a[1]]) + '%'
+    if t == 'qgci':
+        r = s2g(a[2], a[3]); c = a[1]; return f"{pc(r[c])}% (95% CI {pc(r[c + '_lo'])}–{pc(r[c + '_hi'])}%)"
+    if t == 'qgn': return str(s2g(a[2], a[3])[a[1] + '_n'])
+    if t == 'q2': return f"{S2META['runtime_s'] / 60:.0f}"
     raise KeyError(m.group(0))
 
 def fill(text):
@@ -191,6 +290,33 @@ def CHECKS():
     c['GRAPE PLR2 spec D8 < D1'] = EX['grape_secondary_labels']['D8@3']['PLR2']['spec'] < EX['grape_secondary_labels']['D1@3']['PLR2']['spec']
     c['D1 misses most at k3,k4'] = val('sens', 'D1', 3) < 0.5 and val('sens', 'D1', 4) < 0.5
     c['D8 highest sens at k6'] = max(val('sens', d, 6) for d in ['D1'] + others) == val('sens', 'D8', 6)
+    # ---------------- Study 2 claims
+    s2k = (3, 4, 5, 6); allc = S2HOLM
+    c['S2: no calibrated detector significantly more sensitive than D1'] = not any(s2pair('sens', d, k)['p_holm'] < 0.05 and s2pair('sens', d, k)['diff'] > 0 for d in allc for k in s2k)
+    c['S2: 32 comparisons'] = len([1 for d in allc for k in s2k]) == 32
+    c['S2: B8 gains significant at k4-6 (unadjusted)'] = all(s2pair('sens', 'B8', k)['p'] < 0.05 and s2pair('sens', 'B8', k)['diff'] > 0 for k in (4, 5, 6))
+    c['S2: B8 invalid at all k'] = not any(s2valid('B8', k) for k in s2k)
+    c['S2: B8 lower spec R2 at k6'] = s2pair('spec_R2', 'B8', 6)['diff'] < 0 and s2pair('spec_R2', 'B8', 6)['p'] < 0.05
+    c['S2: only S5@3 and S5@5 invalid among calibrated'] = sorted((d, k) for d in allc for k in s2k if not s2valid(d, k)) == [('S5', 3), ('S5', 5)]
+    c['S2: S5 upper limits slightly >10%'] = all(0.10 < s2row('S5', k)['fa_hi'] < 0.11 for k in (3, 5))
+    c['S2: S2,S3,S4 FA <= 1% all k'] = all(s2row(d, k)['fa'] <= 0.01 for d in ('S2', 'S3', 'S4') for k in s2k)
+    gains = sorted(((s2pair('sens', d, k)['diff'], d, k) for d in allc for k in s2k), reverse=True)
+    c['S2: largest gains S1@4 then S5@6'] = [(g[1], g[2]) for g in gains[:2]] == [('S1', 4), ('S5', 6)]
+    c['S2: S4,S7 significantly less sensitive at k5,6'] = all(s2pair('sens', d, k)['p_holm'] < 0.05 and s2pair('sens', d, k)['diff'] < 0 for d in ('S4', 'S7') for k in (5, 6))
+    c['S2: S6 not sig at k3, sig lower at k4'] = s2pair('sens', 'S6', 3)['p_holm'] >= 0.05 and s2pair('sens', 'S6', 4)['p_holm'] < 0.05 and s2pair('sens', 'S6', 4)['diff'] < 0
+    c['S2: S3 matches D1 at k3-5 (|diff|<2pp, ns)'] = all(abs(s2pair('sens', 'S3', k)['diff']) < 0.02 and s2pair('sens', 'S3', k)['p_holm'] >= 0.05 for k in (3, 4, 5))
+    c['S2: S3 conservative'] = all(s2row('S3', k)['fa'] < 0.05 for k in s2k)
+    c['S2: H8 rejected for all'] = not any(x['noninferior_10pp'] for x in S2H)
+    c['S2: Q detectors cumulative FA <= ~5.5%'] = all(s2cum(d, 6)['fa'] <= 0.055 for d in ('Q1 Sequential trend', 'Q2 Confirmed trend', 'Q3 Confirmed SC-Event', 'Q4 Sequential Order-LightGBM'))
+    c['S2: D1-repeated cum FA > 10%'] = s2cum('D1-repeated', 6)['fa'] > 0.10
+    c['S2: H9 local S5 spec >= 90% and > UW and > B8'] = s2g('S5 SC-LightGBM (local threshold)', 3)['spec_MD'] >= 0.90 and s2g('S5 SC-LightGBM (local threshold)', 3)['spec_MD'] > s2g('S5 SC-LightGBM (UW threshold)', 3)['spec_MD'] > s2g('B8 LightGBM-95spec', 3)['spec_MD']
+    c['S2: local S5 sens < D1 sens GRAPE k3'] = s2g('S5 SC-LightGBM (local threshold)', 3)['sens_MD'] < s2g('D1 OLS-MD', 3)['sens_MD']
+    c['S2: S1 behaves like D1 in GRAPE (within 3pp)'] = all(abs(s2g(n, k)[m] - s2g('D1 OLS-MD', k)[m]) < 0.03 for n in ('S1 SC-Trend (UW threshold)', 'S1 SC-Trend (local threshold)') for k in (3, 4) for m in ('sens_MD', 'spec_MD'))
+    c['S2: B8 FA higher than S5 at every k'] = all(s2row('B8', k)['fa'] > s2row('S5', k)['fa'] for k in s2k)
+    c['S2: >300 reference eyes'] = DE['s2_progressors']['n_eyes'] + DE['s2_stable']['n_eyes'] > 300
+    c['S2: B8 still higher R3 sens, lower R3 spec than D1 at k6'] = s2row('B8', 6)['sens_R3'] > s2row('D1', 6)['sens_R3'] and s2row('B8', 6)['spec_R3'] < s2row('D1', 6)['spec_R3']
+    c['S2: 21 detector variants'] = 10 + 7 + 4 == 21
+    c['S2: D7 repeated cum FA lower than D1 repeated'] = s2cum('D7-repeated', 6)['fa'] < s2cum('D1-repeated', 6)['fa']
     bad = [k for k, v in c.items() if not v]
     assert not bad, f'CLAIM CHECK FAILED: {bad}'
     return c

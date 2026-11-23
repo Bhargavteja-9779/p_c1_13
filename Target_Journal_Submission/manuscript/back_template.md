@@ -26,7 +26,7 @@ This study used only publicly available, de-identified data sets released by the
 
 ## Data Availability
 
-All data used are publicly available. UWHVF: https://github.com/uw-biomedical-ml/uwhvf. GRAPE: figshare, https://ndownloader.figshare.com/files/41670009 (described in Huang et al., Sci Data 2023). Artes retest data: visualFields R package version 1.0.7 on CRAN. The code, the pre-specified protocol, the patient-level split, all raw detector outputs and the scripts that generate every number, table and figure in this article are available at [PUBLIC REPOSITORY URL — to be added by the authors before submission].
+All three data sets analysed are publicly available from their custodians: UWHVF (https://github.com/uw-biomedical-ml/uwhvf), GRAPE (figshare file https://ndownloader.figshare.com/files/41670009, described in Huang et al., Sci Data 2023) and the Artes retest data (visualFields R package version 1.0.7 on CRAN). The analysis code, the two time-stamped protocols, the patient-level split and fold assignments, and all raw detector outputs are available from the corresponding author on reasonable request.
 
 # References
 

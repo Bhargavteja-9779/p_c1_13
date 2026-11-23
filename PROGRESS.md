@@ -99,6 +99,14 @@
   background: `cd code && python3 study2.py --mode full > ../results/study2_full.log` (~1 h). If lost: rerun.
   Rotterdam longitudinal VF data (139 pts) would be a strong 2nd cohort but rodrep.com unreachable -> ask user.
 
+- STUDY 2 DONE (2026-11-23, 441 s): results/study2_*.json, tables/study2_*.csv, figs 5-6 (Fig 3-4 in paper).
+  Key: at matched (shuffle-calibrated) FA no detector beats D1 (all upper CI < 8.4 pp; 150/164 eyes); B8 usual threshold
+  +18-22 pp sens with 14-26% true-null FA; S5 calibrated FA 2.6-8.1% (invalid by hair at k3,k5); H8 rejected (cum
+  control costs 17-52 pp); H9 supported (local recal spec 93%) but sens collapses. Manuscript fully rewritten
+  (new title "Apparent Gains ... Disappear at Matched False-Alarm Rates: A Two-Stage Benchmark"); 73 claim checks;
+  data/code "available on request". Supplement rebuilt (Tables S1-S7, Figs S1-S2).
+
 ## NEXT ACTION (new session)
-1. If results/study2_raw.csv missing: rerun study2.py --mode full. 2. python3 scripts/summarise_study2.py.
-3. Rewrite manuscript around Study 1 + Study 2 (fill script + checks), data availability "on request", reviews round 2.
+Review round 2 (fresh agents) on revised manuscript -> fix -> rebuild -> update risk_report.md, cover letter, final decision.
+Rebuild: cd manuscript && python3 fill_values.py && python3 build_supplementary.py && python3 build_docx.py && soffice ...
+Ask user: can they download Rotterdam longitudinal VF data (rodrep.com) manually? (would add a 2nd routine-care cohort)

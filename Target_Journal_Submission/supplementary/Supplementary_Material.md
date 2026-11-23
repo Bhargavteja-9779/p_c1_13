@@ -1,10 +1,10 @@
 # Supplementary Material
 
-How Early Can Glaucomatous Visual-Field Progression Be Detected Without False Alarms? An Open Benchmark With a True No-Change Arm
+Apparent Gains in Detecting Glaucomatous Visual-Field Progression Disappear at Matched False-Alarm Rates: A Two-Stage Benchmark
 
 ## S1. Development history, including abandoned ideas
 
-This section reproduces the development log kept during the study. All pilot numbers were computed on the training and validation splits of UWHVF (and, in round 5, on the Artes retest data), never on the locked test split. The benchmark reported in the main text was specified after round 5. Round 4 explored a different clinical problem (neovascular age-related macular degeneration) and was abandoned.
+This section reproduces the development log kept before Study 1. Pilot numbers were computed on the training and validation splits of UWHVF (and, in round 5, on the Artes retest data), never on the locked test split. Study 1 was specified after round 5; Study 2 was specified after Study 1 (protocol_v2). Round 4 explored a different clinical problem and was abandoned.
 
 ## Round 0 (2026-11-23) — topic: glaucoma visual-field (VF) progression DETECTION with fewer tests
 Data: UWHVF (28,943 24-2 VFs, 7,428 eyes, 3,871 patients). Locked patient-level split by salted hash (60/20/20),
@@ -75,7 +75,7 @@ true-no-change check reveals. New topic framing (N4 benchmark + N5 protocol + N7
 an open benchmark for glaucoma VF progression detection with a TRUE NO-CHANGE arm, testing classical, permutation,
 pooled-null and machine-learning detectors at 3-6 tests. Honest label expected: NOT REMARKABLE (strongest honest result).
 
-## S2. Protocol amendments (made before any final result)
+## S2. Study 1 protocol amendments (made before any final result)
 
 ### Amendment A1 (2026-11-23, before any final result)
 Artes tests are one week apart. Rate-based rules (D2, D3, D7, D8, D9) are not invariant to the time scale, so each
@@ -89,54 +89,107 @@ patient-level cross-fitting ("own-clinic calibration"); D8 is the UWHVF-trained 
 test, grid-agnostic features); D6, D9, D10 (24-2 specific) are not evaluated on GRAPE.
 
 
-## S3. Full results
+## S3. Study 1 statistical methods in full, including the validity-rule deviation
 
-Table S1. All metrics by detector and number of tests (k). Seed SD: standard deviation across five seeds (stochastic detectors only). FA, false-alarm rate; PoPLR ref, secondary reference standard; pp, percentage points. Detector names are the internal code names; D1 OLS-MD = trend test of mean sensitivity, D2 MD-rate = rate rule on mean sensitivity.
+In Study 1, proportions are reported with 95% confidence intervals from 2,000 bootstrap resamples of patients, which accounts for two eyes per patient and repeated windows per patient. We compared each detector with D1 on the same eyes using the exact McNemar test and corrected p-values for the nine comparisons within each number of tests and endpoint with the Holm method. For stochastic detectors, the paired tests used each eye's majority flag across seeds. Confidence intervals for paired differences came from 2,000 bootstrap resamples of eyes. Because of the majority flag, paired differences can differ slightly from differences between the seed-averaged percentages in the tables. With 26 progressors and nine comparisons, a sensitivity gain over D1 could reach Holm-adjusted significance only if at least 9 more progressors were flagged (34.6 percentage points). The protocol stated that validity would be judged by comparing the upper confidence limit of the false-alarm rate on true no-change data with 5%. Read literally (upper limit at or below 5%), this rule could not be met even by D1, whose false-alarm rate was close to the nominal 5%, because the true no-change arm has only 30 patients. Before the final results were available, the analysis plan in our draft Methods specified a working rule: the upper limit must not exceed 10% and the point estimate must not exceed 5% by more than sampling error. After the results were available, we made the second part operational as "the lower confidence limit is at or below 5%". We call a detector valid under this rule, and we report the strict literal rule as a sensitivity analysis. This sequence is a deviation from the protocol. To express false alarms in clinical units, we report the expected number of false progression flags per 1,000 stable eyes at one review. We also report, among reference progressors, the share flagged at least once by the sixth test, and, as a matching measure, the share of true no-change series flagged at least once across the looks at three to six tests (window starting at the first test). These cumulative measures, the strict validity rule, a confidence interval for the shuffle-audit correlation (resampling detector–test-number cells) and the GRAPE results for the PLR labels were added after internal review and were not in the protocol. Agreement between the shuffle audit and the true no-change false-alarm rate was summarised by the Spearman correlation across detector–test-number cells and by their absolute difference. Analyses used Python 3.13 with NumPy, SciPy, pandas, scikit-learn, LightGBM and PyTorch. The Study 1 run took 24 minutes on a 4-core CPU without a graphics card.
 
-| Detector | k | Sens % | Seed SD | Spec % | FA true null % | Seed SD | FA shuffle % | Sens, PoPLR ref % | GRAPE sens % | GRAPE spec % |
+
+
+Under the strict literal rule (upper 95% limit of the false-alarm rate at or below 5%), only the following detector–k cells were valid in Study 1: D10@3, D2@3, D3@3, D4@3, D7@3, D2@4, D3@4, D4@4, D7@4, D9@4, D2@5, D3@5, D7@5, D2@6, D3@6, D7@6; D1 failed it at every k (upper limits 6.3%, 6.2%, 7.5%, 8.1%), and no strict-valid detector was significantly more sensitive than D1. With 26 progressors, the smallest significant gain was 9 eyes (34.6 percentage points). Bootstrap 95% CI of the shuffle-audit Spearman correlation, resampling detector–k cells: 0.35 to 0.85.
+
+## S4. Supplementary tables
+
+Table S1. Study 1: all metrics by detector and number of tests (k). Seed SD across five seeds; FA, false-alarm rate; PoPLR ref, secondary reference; detector names are internal code names (D1 OLS-MD = trend test; D2 MD-rate = rate rule on mean sensitivity).
+
+| Detector | k | Sens % (95% CI) | Seed SD | Spec % | FA true null % (95% CI) | FA shuffle % | Sens, PoPLR ref % | GRAPE sens % | GRAPE spec % |
+|---|---|---|---|---|---|---|---|---|---|
+| D1 OLS-MD | 3 | 19.2 (7.4–33.3) | 0.0 | 96.2 | 4.4 (2.8–6.3) | 4.8 | 10.3 | 44.4 | 95.3 |
+| D2 MD-rate <= -1 dB/yr | 3 | 38.5 (20.0–56.5) | 0.0 | 92.3 | 2.6 (1.5–3.9) | 11.7 | 24.1 | 59.3 | 78.8 |
+| D3 PLR >=3 points | 3 | 3.8 (0.0–12.5) | 0.0 | 96.2 | 1.4 (1.0–1.8) | 1.8 | 1.7 | 3.7 | 95.8 |
+| D4 PoPLR (within-eye permutation) | 3 | 0.0 (0.0–0.0) | 0.0 | 100.0 | 0.0 (0.0–0.0) | 0.0 | 0.0 | 0.0 | 100.0 |
+| D5 Pooled-shuffle conformal MD | 3 | 19.2 (7.4–33.3) | 0.0 | 96.2 | 4.0 (2.7–5.6) | 4.6 | 10.0 | 41.5 | 95.4 |
+| D6 Pooled-detrended conformal region-max | 3 | 56.9 (37.0–76.2) | 1.7 | 96.2 | 22.4 (19.3–25.7) | 22.5 | 46.2 |  |  |
+| D7 Event analysis (GPA-like) | 3 | 0.0 (0.0–0.0) | 0.0 | 100.0 | 0.0 (0.0–0.0) | 0.0 | 0.0 | 0.0 | 100.0 |
+| D8 ML-tabular (LightGBM) | 3 | 26.2 (12.3–43.2) | 5.0 | 94.6 | 27.7 (22.7–32.9) | 17.3 | 24.1 | 65.9 | 61.2 |
+| D9 ML-sequence (GRU) | 3 | 12.3 (2.4–24.8) | 5.0 | 95.4 | 12.7 (6.2–20.0) | 8.5 | 9.7 |  |  |
+| D10 Self-supervised order net + permutation | 3 | 0.0 (0.0–0.0) | 0.0 | 100.0 | 0.0 (0.0–0.0) | 0.0 | 0.0 |  |  |
+| D1 OLS-MD | 4 | 30.8 (14.3–48.1) | 0.0 | 100.0 | 3.8 (1.9–6.2) | 4.7 | 20.7 | 33.3 | 95.9 |
+| D2 MD-rate <= -1 dB/yr | 4 | 23.1 (8.0–40.0) | 0.0 | 96.2 | 0.6 (0.4–0.9) | 6.4 | 12.1 | 55.6 | 86.2 |
+| D3 PLR >=3 points | 4 | 15.4 (3.6–30.8) | 0.0 | 100.0 | 0.2 (0.0–0.3) | 1.5 | 10.3 | 11.1 | 97.9 |
+| D4 PoPLR (within-eye permutation) | 4 | 3.8 (0.0–12.5) | 0.0 | 100.0 | 3.3 (1.8–4.9) | 4.1 | 8.6 | 22.2 | 95.2 |
+| D5 Pooled-shuffle conformal MD | 4 | 30.8 (14.3–48.1) | 0.0 | 100.0 | 3.6 (1.8–5.9) | 4.9 | 20.7 | 33.3 | 94.5 |
+| D6 Pooled-detrended conformal region-max | 4 | 25.4 (10.3–44.0) | 2.1 | 100.0 | 5.1 (3.4–7.2) | 5.5 | 16.6 |  |  |
+| D7 Event analysis (GPA-like) | 4 | 23.1 (7.7–40.0) | 0.0 | 100.0 | 1.1 (0.0–2.6) | 5.2 | 13.8 | 16.7 | 95.9 |
+| D8 ML-tabular (LightGBM) | 4 | 41.5 (23.7–59.2) | 5.0 | 99.2 | 9.4 (6.3–12.9) | 7.7 | 24.8 | 48.9 | 81.5 |
+| D9 ML-sequence (GRU) | 4 | 11.5 (2.8–23.2) | 3.8 | 99.2 | 2.0 (0.6–3.7) | 4.7 | 7.2 |  |  |
+| D10 Self-supervised order net + permutation | 4 | 20.0 (7.7–35.8) | 4.2 | 100.0 | 3.8 (2.5–5.1) | 4.1 | 12.1 |  |  |
+| D1 OLS-MD | 5 | 42.3 (23.1–61.5) | 0.0 | 100.0 | 4.7 (2.2–7.5) | 5.1 | 27.6 |  |  |
+| D2 MD-rate <= -1 dB/yr | 5 | 23.1 (7.7–41.4) | 0.0 | 100.0 | 0.8 (0.5–1.2) | 3.6 | 13.8 |  |  |
+| D3 PLR >=3 points | 5 | 23.1 (8.0–40.0) | 0.0 | 100.0 | 0.5 (0.1–1.1) | 1.4 | 15.5 |  |  |
+| D4 PoPLR (within-eye permutation) | 5 | 38.5 (20.0–57.7) | 0.0 | 100.0 | 3.9 (1.9–6.2) | 4.3 | 24.1 |  |  |
+| D5 Pooled-shuffle conformal MD | 5 | 42.3 (23.1–61.5) | 0.0 | 100.0 | 4.3 (2.0–7.1) | 4.9 | 27.6 |  |  |
+| D6 Pooled-detrended conformal region-max | 5 | 31.5 (16.0–48.5) | 1.7 | 100.0 | 6.2 (3.7–8.9) | 5.0 | 21.0 |  |  |
+| D7 Event analysis (GPA-like) | 5 | 50.0 (30.4–69.6) | 0.0 | 100.0 | 1.2 (0.0–2.9) | 7.9 | 31.0 |  |  |
+| D8 ML-tabular (LightGBM) | 5 | 56.2 (36.1–74.8) | 2.1 | 99.2 | 18.8 (13.1–24.9) | 16.1 | 38.3 |  |  |
+| D9 ML-sequence (GRU) | 5 | 40.8 (22.8–59.2) | 8.9 | 93.8 | 7.5 (2.8–13.3) | 8.1 | 25.9 |  |  |
+| D10 Self-supervised order net + permutation | 5 | 43.8 (28.0–60.0) | 3.4 | 100.0 | 5.1 (2.9–7.6) | 4.2 | 27.9 |  |  |
+| D1 OLS-MD | 6 | 57.7 (38.4–76.9) | 0.0 | 100.0 | 5.1 (2.5–8.1) | 5.9 | 37.9 |  |  |
+| D2 MD-rate <= -1 dB/yr | 6 | 23.1 (8.3–38.5) | 0.0 | 100.0 | 1.0 (0.6–1.5) | 2.8 | 15.5 |  |  |
+| D3 PLR >=3 points | 6 | 23.1 (7.7–41.7) | 0.0 | 100.0 | 0.3 (0.0–0.8) | 1.2 | 15.5 |  |  |
+| D4 PoPLR (within-eye permutation) | 6 | 50.0 (30.8–67.9) | 0.0 | 100.0 | 5.0 (2.4–8.4) | 4.8 | 36.2 |  |  |
+| D5 Pooled-shuffle conformal MD | 6 | 56.9 (37.7–76.0) | 1.7 | 100.0 | 5.0 (2.4–7.9) | 5.0 | 37.6 |  |  |
+| D6 Pooled-detrended conformal region-max | 6 | 53.8 (37.0–71.4) | 0.0 | 100.0 | 7.6 (4.5–11.1) | 4.9 | 43.1 |  |  |
+| D7 Event analysis (GPA-like) | 6 | 57.7 (36.0–77.8) | 0.0 | 100.0 | 1.9 (0.5–3.8) | 11.7 | 39.7 |  |  |
+| D8 ML-tabular (LightGBM) | 6 | 70.8 (51.7–88.8) | 3.4 | 100.0 | 3.6 (1.7–6.0) | 8.7 | 42.1 |  |  |
+| D9 ML-sequence (GRU) | 6 | 37.7 (22.3–53.8) | 13.2 | 91.5 | 5.9 (2.3–10.0) | 8.6 | 21.0 |  |  |
+| D10 Self-supervised order net + permutation | 6 | 54.6 (36.9–70.8) | 3.2 | 99.2 | 5.7 (3.0–9.2) | 4.7 | 43.1 |  |  |
+
+Table S2. Study 2: all per-review metrics. R1, primary reference; R2, flat-stable reference; R3, future-only reference (n shown); FA, false-alarm rate on true no-change series; strict valid, upper 95% limit at or below 5%.
+
+| Detector | k | Sens R1 % (95% CI) | Seed SD | Spec R1 % | Spec R2 % | Sens R3 % (n) | Spec R3 % (n) | FA true null % (95% CI) | Valid | Strict valid |
 |---|---|---|---|---|---|---|---|---|---|---|
-| D1 OLS-MD | 3 | 19.2 | 0.0 | 96.2 | 4.4 | 0.0 | 4.8 | 10.3 | 44.4 | 95.3 |
-| D2 MD-rate <= -1 dB/yr | 3 | 38.5 | 0.0 | 92.3 | 2.6 | 0.0 | 11.7 | 24.1 | 59.3 | 78.8 |
-| D3 PLR >=3 points | 3 | 3.8 | 0.0 | 96.2 | 1.4 | 0.0 | 1.8 | 1.7 | 3.7 | 95.8 |
-| D4 PoPLR (within-eye permutation) | 3 | 0.0 | 0.0 | 100.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 100.0 |
-| D5 Pooled-shuffle conformal MD | 3 | 19.2 | 0.0 | 96.2 | 4.0 | 0.4 | 4.6 | 10.0 | 41.5 | 95.4 |
-| D6 Pooled-detrended conformal region-max | 3 | 56.9 | 1.7 | 96.2 | 22.4 | 0.7 | 22.5 | 46.2 |  |  |
-| D7 Event analysis (GPA-like) | 3 | 0.0 | 0.0 | 100.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 100.0 |
-| D8 ML-tabular (LightGBM) | 3 | 26.2 | 5.0 | 94.6 | 27.7 | 5.1 | 17.3 | 24.1 | 65.9 | 61.2 |
-| D9 ML-sequence (GRU) | 3 | 12.3 | 5.0 | 95.4 | 12.7 | 3.8 | 8.5 | 9.7 |  |  |
-| D10 Self-supervised order net + permutation | 3 | 0.0 | 0.0 | 100.0 | 0.0 | 0.0 | 0.0 | 0.0 |  |  |
-| D1 OLS-MD | 4 | 30.8 | 0.0 | 100.0 | 3.8 | 0.0 | 4.7 | 20.7 | 33.3 | 95.9 |
-| D2 MD-rate <= -1 dB/yr | 4 | 23.1 | 0.0 | 96.2 | 0.6 | 0.0 | 6.4 | 12.1 | 55.6 | 86.2 |
-| D3 PLR >=3 points | 4 | 15.4 | 0.0 | 100.0 | 0.2 | 0.0 | 1.5 | 10.3 | 11.1 | 97.9 |
-| D4 PoPLR (within-eye permutation) | 4 | 3.8 | 0.0 | 100.0 | 3.3 | 0.2 | 4.1 | 8.6 | 22.2 | 95.2 |
-| D5 Pooled-shuffle conformal MD | 4 | 30.8 | 0.0 | 100.0 | 3.6 | 0.3 | 4.9 | 20.7 | 33.3 | 94.5 |
-| D6 Pooled-detrended conformal region-max | 4 | 25.4 | 2.1 | 100.0 | 5.1 | 0.4 | 5.5 | 16.6 |  |  |
-| D7 Event analysis (GPA-like) | 4 | 23.1 | 0.0 | 100.0 | 1.1 | 0.0 | 5.2 | 13.8 | 16.7 | 95.9 |
-| D8 ML-tabular (LightGBM) | 4 | 41.5 | 5.0 | 99.2 | 9.4 | 2.3 | 7.7 | 24.8 | 48.9 | 81.5 |
-| D9 ML-sequence (GRU) | 4 | 11.5 | 3.8 | 99.2 | 2.0 | 1.5 | 4.7 | 7.2 |  |  |
-| D10 Self-supervised order net + permutation | 4 | 20.0 | 4.2 | 100.0 | 3.8 | 0.6 | 4.1 | 12.1 |  |  |
-| D1 OLS-MD | 5 | 42.3 | 0.0 | 100.0 | 4.7 | 0.0 | 5.1 | 27.6 |  |  |
-| D2 MD-rate <= -1 dB/yr | 5 | 23.1 | 0.0 | 100.0 | 0.8 | 0.0 | 3.6 | 13.8 |  |  |
-| D3 PLR >=3 points | 5 | 23.1 | 0.0 | 100.0 | 0.5 | 0.0 | 1.4 | 15.5 |  |  |
-| D4 PoPLR (within-eye permutation) | 5 | 38.5 | 0.0 | 100.0 | 3.9 | 0.2 | 4.3 | 24.1 |  |  |
-| D5 Pooled-shuffle conformal MD | 5 | 42.3 | 0.0 | 100.0 | 4.3 | 0.2 | 4.9 | 27.6 |  |  |
-| D6 Pooled-detrended conformal region-max | 5 | 31.5 | 1.7 | 100.0 | 6.2 | 0.2 | 5.0 | 21.0 |  |  |
-| D7 Event analysis (GPA-like) | 5 | 50.0 | 0.0 | 100.0 | 1.2 | 0.0 | 7.9 | 31.0 |  |  |
-| D8 ML-tabular (LightGBM) | 5 | 56.2 | 2.1 | 99.2 | 18.8 | 2.2 | 16.1 | 38.3 |  |  |
-| D9 ML-sequence (GRU) | 5 | 40.8 | 8.9 | 93.8 | 7.5 | 4.1 | 8.1 | 25.9 |  |  |
-| D10 Self-supervised order net + permutation | 5 | 43.8 | 3.4 | 100.0 | 5.1 | 0.3 | 4.2 | 27.9 |  |  |
-| D1 OLS-MD | 6 | 57.7 | 0.0 | 100.0 | 5.1 | 0.0 | 5.9 | 37.9 |  |  |
-| D2 MD-rate <= -1 dB/yr | 6 | 23.1 | 0.0 | 100.0 | 1.0 | 0.0 | 2.8 | 15.5 |  |  |
-| D3 PLR >=3 points | 6 | 23.1 | 0.0 | 100.0 | 0.3 | 0.0 | 1.2 | 15.5 |  |  |
-| D4 PoPLR (within-eye permutation) | 6 | 50.0 | 0.0 | 100.0 | 5.0 | 0.2 | 4.8 | 36.2 |  |  |
-| D5 Pooled-shuffle conformal MD | 6 | 56.9 | 1.7 | 100.0 | 5.0 | 0.2 | 5.0 | 37.6 |  |  |
-| D6 Pooled-detrended conformal region-max | 6 | 53.8 | 0.0 | 100.0 | 7.6 | 0.4 | 4.9 | 43.1 |  |  |
-| D7 Event analysis (GPA-like) | 6 | 57.7 | 0.0 | 100.0 | 1.9 | 0.0 | 11.7 | 39.7 |  |  |
-| D8 ML-tabular (LightGBM) | 6 | 70.8 | 3.4 | 100.0 | 3.6 | 0.7 | 8.7 | 42.1 |  |  |
-| D9 ML-sequence (GRU) | 6 | 37.7 | 13.2 | 91.5 | 5.9 | 4.2 | 8.6 | 21.0 |  |  |
-| D10 Self-supervised order net + permutation | 6 | 54.6 | 3.2 | 99.2 | 5.7 | 0.5 | 4.7 | 43.1 |  |  |
+| D1 OLS-MD | 3 | 14.7 (9.3–20.5) | 0.0 | 96.3 | 95.2 | 8.4 (95) | 93.0 (187) | 4.2 (2.8–5.7) | yes | no |
+| D1 OLS-MD | 4 | 26.7 (19.7–34.0) | 0.0 | 95.7 | 93.2 | 13.4 (67) | 89.1 (119) | 3.9 (2.1–6.2) | yes | no |
+| D1 OLS-MD | 5 | 40.0 (32.2–47.9) | 0.0 | 97.6 | 94.5 | 27.9 (43) | 89.0 (91) | 4.5 (2.0–7.2) | yes | no |
+| D1 OLS-MD | 6 | 57.3 (49.0–66.4) | 0.0 | 99.4 | 94.8 | 32.4 (34) | 82.2 (73) | 5.5 (2.9–8.4) | yes | no |
+| D7 Event | 3 | 0.0 (0.0–0.0) | 0.0 | 100.0 | 100.0 | 0.0 (95) | 100.0 (187) | 0.0 (0.0–0.0) | yes | yes |
+| D7 Event | 4 | 16.0 (10.3–22.7) | 0.0 | 93.3 | 96.1 | 1.5 (67) | 90.8 (119) | 0.8 (0.0–1.9) | yes | yes |
+| D7 Event | 5 | 32.7 (24.8–41.4) | 0.0 | 90.9 | 93.9 | 16.3 (43) | 90.1 (91) | 0.9 (0.0–2.1) | yes | yes |
+| D7 Event | 6 | 46.0 (37.8–54.7) | 0.0 | 89.0 | 91.0 | 26.5 (34) | 84.9 (73) | 1.5 (0.3–3.1) | yes | yes |
+| S1 SC-Trend | 3 | 15.3 (9.9–21.4) | 0.0 | 96.3 | 95.2 | 8.4 (95) | 92.5 (187) | 4.6 (3.1–6.2) | yes | no |
+| S1 SC-Trend | 4 | 29.3 (22.1–36.9) | 0.7 | 95.3 | 92.9 | 16.9 (67) | 87.7 (119) | 4.2 (2.2–6.6) | yes | no |
+| S1 SC-Trend | 5 | 40.4 (32.4–48.4) | 0.4 | 97.6 | 94.5 | 27.9 (43) | 89.0 (91) | 4.6 (2.1–7.4) | yes | no |
+| S1 SC-Trend | 6 | 56.7 (48.4–65.6) | 0.7 | 99.4 | 95.1 | 30.4 (34) | 83.6 (73) | 5.5 (2.9–8.4) | yes | no |
+| S2 SC-Rate | 3 | 5.3 (1.9–9.7) | 0.0 | 89.6 | 96.1 | 4.2 (95) | 90.7 (187) | 0.7 (0.4–0.9) | yes | yes |
+| S2 SC-Rate | 4 | 16.0 (10.7–21.6) | 0.0 | 93.3 | 97.1 | 4.5 (67) | 89.1 (119) | 0.6 (0.4–0.8) | yes | yes |
+| S2 SC-Rate | 5 | 24.7 (18.1–32.4) | 0.0 | 94.5 | 96.9 | 18.6 (43) | 92.3 (91) | 0.6 (0.4–0.8) | yes | yes |
+| S2 SC-Rate | 6 | 34.0 (26.7–41.9) | 0.0 | 97.0 | 97.7 | 14.7 (34) | 87.7 (73) | 0.5 (0.4–0.7) | yes | yes |
+| S3 SC-PoPLR | 3 | 16.0 (9.7–22.6) | 0.0 | 91.5 | 91.6 | 8.4 (95) | 87.2 (187) | 0.1 (0.0–0.2) | yes | yes |
+| S3 SC-PoPLR | 4 | 27.3 (20.7–34.7) | 0.0 | 89.8 | 88.5 | 14.9 (67) | 83.2 (119) | 0.2 (0.0–0.4) | yes | yes |
+| S3 SC-PoPLR | 5 | 39.6 (31.3–47.8) | 0.4 | 96.1 | 92.3 | 35.7 (43) | 84.2 (91) | 0.5 (0.0–1.3) | yes | yes |
+| S3 SC-PoPLR | 6 | 47.8 (39.1–56.9) | 0.4 | 97.4 | 90.6 | 26.5 (34) | 75.3 (73) | 0.1 (0.0–0.3) | yes | yes |
+| S4 SC-Event | 3 | 5.3 (2.0–9.6) | 0.0 | 95.7 | 98.1 | 3.2 (95) | 95.7 (187) | 0.0 (0.0–0.0) | yes | yes |
+| S4 SC-Event | 4 | 13.3 (8.0–19.4) | 0.0 | 95.1 | 97.4 | 0.0 (67) | 91.6 (119) | 0.2 (0.0–0.7) | yes | yes |
+| S4 SC-Event | 5 | 18.7 (12.4–25.2) | 0.0 | 95.7 | 97.1 | 9.3 (43) | 93.4 (91) | 0.0 (0.0–0.0) | yes | yes |
+| S4 SC-Event | 6 | 22.2 (15.8–29.2) | 1.4 | 99.0 | 99.1 | 1.0 (34) | 92.7 (73) | 0.0 (0.0–0.0) | yes | yes |
+| S5 SC-LightGBM | 3 | 14.2 (9.3–19.7) | 1.5 | 97.4 | 95.6 | 8.8 (95) | 95.9 (187) | 8.1 (6.2–10.1) | no | no |
+| S5 SC-LightGBM | 4 | 18.0 (12.6–24.0) | 1.3 | 97.8 | 95.9 | 12.9 (67) | 94.7 (119) | 7.0 (4.8–9.5) | yes | no |
+| S5 SC-LightGBM | 5 | 28.9 (22.3–36.1) | 2.0 | 98.2 | 94.8 | 23.3 (43) | 89.7 (91) | 7.6 (5.0–10.5) | no | no |
+| S5 SC-LightGBM | 6 | 59.6 (51.1–68.5) | 0.4 | 99.0 | 94.5 | 34.3 (34) | 79.5 (73) | 2.6 (1.1–4.4) | yes | yes |
+| S6 Order-LightGBM | 3 | 15.3 (10.7–20.5) | 2.0 | 90.9 | 92.6 | 6.0 (95) | 88.1 (187) | 2.2 (1.6–2.8) | yes | yes |
+| S6 Order-LightGBM | 4 | 20.2 (14.9–26.0) | 3.3 | 93.7 | 92.3 | 11.4 (67) | 90.5 (119) | 2.3 (1.5–3.2) | yes | yes |
+| S6 Order-LightGBM | 5 | 35.1 (28.6–42.2) | 1.0 | 96.3 | 92.7 | 22.5 (43) | 84.6 (91) | 2.8 (1.8–4.0) | yes | yes |
+| S6 Order-LightGBM | 6 | 54.2 (46.5–62.4) | 0.8 | 97.0 | 91.2 | 33.3 (34) | 78.1 (73) | 4.4 (2.8–6.4) | yes | no |
+| S7 SC-GRU | 3 | 6.9 (3.5–10.9) | 1.4 | 94.5 | 96.0 | 3.5 (95) | 94.7 (187) | 2.9 (1.1–5.3) | yes | no |
+| S7 SC-GRU | 4 | 8.0 (4.4–12.2) | 0.0 | 93.9 | 96.2 | 1.5 (67) | 93.8 (119) | 1.5 (0.5–2.6) | yes | yes |
+| S7 SC-GRU | 5 | 18.2 (12.6–24.7) | 2.1 | 95.9 | 96.3 | 10.9 (43) | 91.2 (91) | 2.2 (0.9–3.8) | yes | yes |
+| S7 SC-GRU | 6 | 20.7 (14.8–27.4) | 2.3 | 95.7 | 96.3 | 5.9 (34) | 90.4 (73) | 1.6 (0.5–2.9) | yes | yes |
+| B8 LightGBM-95spec | 3 | 18.7 (12.7–25.4) | 1.2 | 94.7 | 91.8 | 11.2 (95) | 92.0 (187) | 13.9 (10.9–17.1) | no | no |
+| B8 LightGBM-95spec | 4 | 44.9 (36.6–53.2) | 1.0 | 90.0 | 86.9 | 26.4 (67) | 77.3 (119) | 21.7 (17.3–26.1) | no | no |
+| B8 LightGBM-95spec | 5 | 58.9 (51.7–66.4) | 1.7 | 90.9 | 86.1 | 53.5 (43) | 72.2 (91) | 26.4 (20.9–31.8) | no | no |
+| B8 LightGBM-95spec | 6 | 79.3 (72.7–86.2) | 0.0 | 88.8 | 79.0 | 60.8 (34) | 60.3 (73) | 15.3 (11.5–19.1) | no | no |
 
-Table S2. All paired comparisons with D1 (exact McNemar test; Holm correction within each k and endpoint).
+Table S3. Study 1: paired comparisons with D1 (exact McNemar; Holm within k and endpoint).
 
 | k | Endpoint | Detector | n | Difference vs D1, pp (95% CI) | Only detector | Only D1 | p | Holm p |
 |---|---|---|---|---|---|---|---|---|
@@ -237,30 +290,122 @@ Table S2. All paired comparisons with D1 (exact McNemar test; Holm correction wi
 | 6 | false positives (1-spec) | D8 ML-tabular (LightGBM) | 26 | 0.0 (0.0 to 0.0) | 0 | 0 | 1 | 1 |
 | 6 | false positives (1-spec) | D9 ML-sequence (GRU) | 26 | 7.7 (0.0 to 19.2) | 2 | 0 | 0.5 | 1 |
 
-Table S3. External clinic (GRAPE): agreement with the secondary PLR2 and PLR3 progression labels (point estimates; seed means for D8).
+Table S4. Study 2: paired comparisons with D1 (sensitivity R1, specificity R1 and R2; Holm across D7 and S1–S7 within k; B8 unadjusted).
 
-| Detector | k | PLR2 sens % (n+) | PLR2 spec % (n−) | PLR3 sens % (n+) | PLR3 spec % (n−) |
-|---|---|---|---|---|---|
-| D1 | 3 | 17.5 (40) | 92.8 (223) | 21.4 (14) | 92.0 (249) |
-| D2 | 3 | 45.0 (40) | 78.5 (223) | 57.1 (14) | 76.7 (249) |
-| D3 | 3 | 17.5 (40) | 98.2 (223) | 28.6 (14) | 97.2 (249) |
-| D4 | 3 | 0.0 (40) | 100.0 (223) | 0.0 (14) | 100.0 (249) |
-| D5 | 3 | 17.5 (40) | 93.3 (223) | 21.4 (14) | 92.4 (249) |
-| D7 | 3 | 0.0 (40) | 100.0 (223) | 0.0 (14) | 100.0 (249) |
-| D8 | 3 | 61.0 (40) | 61.9 (223) | 72.9 (14) | 60.2 (249) |
-| D1 | 4 | 16.1 (31) | 94.7 (132) | 16.7 (12) | 93.4 (151) |
-| D2 | 4 | 38.7 (31) | 86.4 (132) | 50.0 (12) | 84.1 (151) |
-| D3 | 4 | 16.1 (31) | 100.0 (132) | 33.3 (12) | 99.3 (151) |
-| D4 | 4 | 22.6 (31) | 97.0 (132) | 33.3 (12) | 95.4 (151) |
-| D5 | 4 | 20.6 (31) | 94.2 (132) | 23.3 (12) | 92.6 (151) |
-| D7 | 4 | 16.1 (31) | 97.0 (132) | 33.3 (12) | 96.7 (151) |
-| D8 | 4 | 43.9 (31) | 83.3 (132) | 53.3 (12) | 80.7 (151) |
+| k | Endpoint | Detector | n | Difference vs D1, pp (95% CI) | Only detector | Only D1 | p | Holm p |
+|---|---|---|---|---|---|---|---|---|
+| 3 | sens | D7 Event | 150 | -14.7 (-20.5 to -9.3) | 0 | 22 | 4.77e-07 | 3.81e-06 |
+| 3 | sens | S1 SC-Trend | 150 | 0.7 (0.0 to 2.1) | 1 | 0 | 1 | 1 |
+| 3 | sens | S2 SC-Rate | 150 | -9.3 (-16.0 to -3.3) | 6 | 20 | 0.00936 | 0.0561 |
+| 3 | sens | S3 SC-PoPLR | 150 | 1.3 (-4.5 to 7.1) | 12 | 10 | 0.832 | 1 |
+| 3 | sens | S4 SC-Event | 150 | -9.3 (-15.5 to -3.4) | 4 | 18 | 0.00434 | 0.0304 |
+| 3 | sens | S5 SC-LightGBM | 150 | -0.4 (-7.4 to 6.4) | 14 | 14 | 1 | 1 |
+| 3 | sens | S6 Order-LightGBM | 150 | 0.7 (-5.0 to 5.8) | 12 | 11 | 1 | 1 |
+| 3 | sens | S7 SC-GRU | 150 | -7.8 (-14.4 to -1.5) | 8 | 20 | 0.0357 | 0.178 |
+| 3 | sens | B8 LightGBM-95spec | 150 | 4.0 (-3.4 to 11.0) | 18 | 13 | 0.473 |  |
+| 3 | spec_R1 | D7 Event | 164 | 3.7 (1.2 to 6.7) | 0 | 6 | 0.0312 | 0.188 |
+| 3 | spec_R1 | S1 SC-Trend | 164 | -0.0 (-0.0 to -0.0) | 0 | 0 | 1 | 1 |
+| 3 | spec_R1 | S2 SC-Rate | 164 | -6.7 (-11.7 to -1.8) | 13 | 2 | 0.00739 | 0.0591 |
+| 3 | spec_R1 | S3 SC-PoPLR | 164 | -4.9 (-9.4 to -1.2) | 9 | 1 | 0.0215 | 0.15 |
+| 3 | spec_R1 | S4 SC-Event | 164 | -0.6 (-5.3 to 3.8) | 6 | 5 | 1 | 1 |
+| 3 | spec_R1 | S5 SC-LightGBM | 164 | 1.0 (-2.7 to 4.9) | 4 | 6 | 0.754 | 1 |
+| 3 | spec_R1 | S6 Order-LightGBM | 164 | -5.5 (-9.2 to -1.9) | 12 | 3 | 0.0352 | 0.188 |
+| 3 | spec_R1 | S7 SC-GRU | 164 | -1.8 (-6.1 to 2.6) | 7 | 5 | 0.774 | 1 |
+| 3 | spec_R1 | B8 LightGBM-95spec | 164 | -1.6 (-6.0 to 2.4) | 8 | 6 | 0.791 |  |
+| 3 | spec_R2 | D7 Event | 310 | 4.8 (2.6 to 7.1) | 0 | 15 | 6.1e-05 | 0.000488 |
+| 3 | spec_R2 | S1 SC-Trend | 310 | -0.0 (-0.0 to -0.0) | 0 | 0 | 1 | 1 |
+| 3 | spec_R2 | S2 SC-Rate | 310 | 1.0 (-1.6 to 3.5) | 7 | 10 | 0.629 | 1 |
+| 3 | spec_R2 | S3 SC-PoPLR | 310 | -3.5 (-7.1 to -0.0) | 19 | 8 | 0.0522 | 0.366 |
+| 3 | spec_R2 | S4 SC-Event | 310 | 2.9 (-0.0 to 5.7) | 5 | 14 | 0.0636 | 0.381 |
+| 3 | spec_R2 | S5 SC-LightGBM | 310 | 0.4 (-2.5 to 3.3) | 11 | 13 | 0.839 | 1 |
+| 3 | spec_R2 | S6 Order-LightGBM | 310 | -2.6 (-5.8 to 0.6) | 19 | 12 | 0.281 | 1 |
+| 3 | spec_R2 | S7 SC-GRU | 310 | 0.9 (-2.6 to 4.0) | 11 | 14 | 0.69 | 1 |
+| 3 | spec_R2 | B8 LightGBM-95spec | 310 | -3.3 (-6.7 to -0.1) | 19 | 11 | 0.2 |  |
+| 4 | sens | D7 Event | 150 | -10.7 (-17.9 to -3.3) | 10 | 26 | 0.0113 | 0.0567 |
+| 4 | sens | S1 SC-Trend | 150 | 2.7 (0.7 to 5.3) | 5 | 0 | 0.0625 | 0.125 |
+| 4 | sens | S2 SC-Rate | 150 | -10.7 (-18.0 to -3.8) | 10 | 26 | 0.0113 | 0.0567 |
+| 4 | sens | S3 SC-PoPLR | 150 | 0.7 (-6.3 to 8.3) | 15 | 14 | 1 | 1 |
+| 4 | sens | S4 SC-Event | 150 | -13.3 (-20.1 to -6.8) | 7 | 27 | 0.000821 | 0.00493 |
+| 4 | sens | S5 SC-LightGBM | 150 | -8.7 (-16.3 to -0.7) | 13 | 27 | 0.0385 | 0.115 |
+| 4 | sens | S6 Order-LightGBM | 150 | -6.4 (-11.4 to -1.4) | 2 | 18 | 0.000402 | 0.00282 |
+| 4 | sens | S7 SC-GRU | 150 | -18.7 (-26.2 to -11.6) | 5 | 34 | 2.43e-06 | 1.94e-05 |
+| 4 | sens | B8 LightGBM-95spec | 150 | 18.2 (9.7 to 26.8) | 38 | 11 | 0.000142 |  |
+| 4 | spec_R1 | D7 Event | 164 | -2.4 (-7.9 to 2.5) | 9 | 5 | 0.424 | 1 |
+| 4 | spec_R1 | S1 SC-Trend | 164 | -0.4 (-1.3 to -0.0) | 1 | 0 | 1 | 1 |
+| 4 | spec_R1 | S2 SC-Rate | 164 | -2.4 (-7.7 to 2.4) | 9 | 5 | 0.424 | 1 |
+| 4 | spec_R1 | S3 SC-PoPLR | 164 | -5.9 (-9.5 to -2.6) | 10 | 0 | 0.00195 | 0.0156 |
+| 4 | spec_R1 | S4 SC-Event | 164 | -0.6 (-5.1 to 3.7) | 6 | 5 | 1 | 1 |
+| 4 | spec_R1 | S5 SC-LightGBM | 164 | 2.0 (-1.0 to 5.2) | 2 | 5 | 0.453 | 1 |
+| 4 | spec_R1 | S6 Order-LightGBM | 164 | -2.0 (-5.2 to 1.4) | 5 | 5 | 1 | 1 |
+| 4 | spec_R1 | S7 SC-GRU | 164 | -1.8 (-7.0 to 2.7) | 9 | 7 | 0.804 | 1 |
+| 4 | spec_R1 | B8 LightGBM-95spec | 164 | -5.7 (-10.5 to -1.2) | 12 | 3 | 0.0352 |  |
+| 4 | spec_R2 | D7 Event | 310 | 2.9 (-0.3 to 6.3) | 8 | 17 | 0.108 | 0.539 |
+| 4 | spec_R2 | S1 SC-Trend | 310 | -0.3 (-1.0 to -0.0) | 1 | 0 | 1 | 1 |
+| 4 | spec_R2 | S2 SC-Rate | 310 | 3.9 (1.0 to 6.8) | 5 | 17 | 0.0169 | 0.101 |
+| 4 | spec_R2 | S3 SC-PoPLR | 310 | -4.7 (-8.0 to -1.6) | 22 | 7 | 0.00813 | 0.0576 |
+| 4 | spec_R2 | S4 SC-Event | 310 | 4.2 (1.5 to 7.2) | 4 | 17 | 0.0072 | 0.0576 |
+| 4 | spec_R2 | S5 SC-LightGBM | 310 | 2.7 (-0.4 to 5.8) | 9 | 17 | 0.169 | 0.598 |
+| 4 | spec_R2 | S6 Order-LightGBM | 310 | -1.0 (-3.4 to 1.6) | 10 | 11 | 1 | 1 |
+| 4 | spec_R2 | S7 SC-GRU | 310 | 3.0 (-0.4 to 6.4) | 11 | 20 | 0.15 | 0.598 |
+| 4 | spec_R2 | B8 LightGBM-95spec | 310 | -6.3 (-10.6 to -2.6) | 32 | 12 | 0.00366 |  |
+| 5 | sens | D7 Event | 150 | -7.3 (-15.0 to 0.0) | 12 | 23 | 0.0895 | 0.358 |
+| 5 | sens | S1 SC-Trend | 150 | 0.4 (0.0 to 1.4) | 1 | 0 | 1 | 1 |
+| 5 | sens | S2 SC-Rate | 150 | -15.3 (-23.0 to -8.1) | 8 | 31 | 0.000294 | 0.00176 |
+| 5 | sens | S3 SC-PoPLR | 150 | -0.4 (-8.1 to 6.9) | 16 | 17 | 1 | 1 |
+| 5 | sens | S4 SC-Event | 150 | -21.3 (-29.8 to -13.7) | 7 | 39 | 1.83e-06 | 1.47e-05 |
+| 5 | sens | S5 SC-LightGBM | 150 | -11.1 (-18.5 to -3.7) | 11 | 28 | 0.00948 | 0.0474 |
+| 5 | sens | S6 Order-LightGBM | 150 | -4.9 (-10.7 to 0.5) | 10 | 19 | 0.136 | 0.408 |
+| 5 | sens | S7 SC-GRU | 150 | -21.8 (-29.8 to -13.7) | 9 | 42 | 3.39e-06 | 2.37e-05 |
+| 5 | sens | B8 LightGBM-95spec | 150 | 18.9 (12.0 to 25.6) | 34 | 5 | 2.43e-06 |  |
+| 5 | spec_R1 | D7 Event | 164 | -6.7 (-12.6 to -1.3) | 13 | 2 | 0.00739 | 0.0591 |
+| 5 | spec_R1 | S1 SC-Trend | 164 | -0.0 (-0.0 to -0.0) | 0 | 0 | 1 | 1 |
+| 5 | spec_R1 | S2 SC-Rate | 164 | -3.0 (-7.6 to 1.2) | 7 | 2 | 0.18 | 1 |
+| 5 | spec_R1 | S3 SC-PoPLR | 164 | -1.4 (-4.0 to 0.8) | 3 | 1 | 0.625 | 1 |
+| 5 | spec_R1 | S4 SC-Event | 164 | -1.8 (-5.8 to 1.9) | 6 | 3 | 0.508 | 1 |
+| 5 | spec_R1 | S5 SC-LightGBM | 164 | 0.6 (-2.4 to 3.7) | 3 | 4 | 1 | 1 |
+| 5 | spec_R1 | S6 Order-LightGBM | 164 | -1.2 (-3.5 to 1.0) | 3 | 1 | 0.625 | 1 |
+| 5 | spec_R1 | S7 SC-GRU | 164 | -1.6 (-5.2 to 1.4) | 4 | 2 | 0.688 | 1 |
+| 5 | spec_R1 | B8 LightGBM-95spec | 164 | -6.7 (-11.4 to -2.2) | 12 | 2 | 0.0129 |  |
+| 5 | spec_R2 | D7 Event | 310 | -0.6 (-4.4 to 3.1) | 16 | 14 | 0.856 | 1 |
+| 5 | spec_R2 | S1 SC-Trend | 310 | -0.0 (-0.0 to -0.0) | 0 | 0 | 1 | 1 |
+| 5 | spec_R2 | S2 SC-Rate | 310 | 2.4 (-0.7 to 5.5) | 8 | 15 | 0.21 | 1 |
+| 5 | spec_R2 | S3 SC-PoPLR | 310 | -2.3 (-4.8 to 0.3) | 13 | 6 | 0.167 | 1 |
+| 5 | spec_R2 | S4 SC-Event | 310 | 2.6 (-0.3 to 6.0) | 7 | 15 | 0.134 | 1 |
+| 5 | spec_R2 | S5 SC-LightGBM | 310 | 0.3 (-2.4 to 3.2) | 10 | 10 | 1 | 1 |
+| 5 | spec_R2 | S6 Order-LightGBM | 310 | -1.8 (-4.2 to 0.4) | 11 | 6 | 0.332 | 1 |
+| 5 | spec_R2 | S7 SC-GRU | 310 | 1.8 (-1.4 to 4.9) | 7 | 14 | 0.189 | 1 |
+| 5 | spec_R2 | B8 LightGBM-95spec | 310 | -8.4 (-12.2 to -4.8) | 32 | 8 | 0.000182 |  |
+| 6 | sens | D7 Event | 150 | -11.3 (-18.5 to -4.1) | 8 | 25 | 0.00455 | 0.0228 |
+| 6 | sens | S1 SC-Trend | 150 | -0.7 (-1.8 to 0.0) | 0 | 1 | 1 | 1 |
+| 6 | sens | S2 SC-Rate | 150 | -23.3 (-31.4 to -15.8) | 4 | 39 | 3.11e-08 | 1.86e-07 |
+| 6 | sens | S3 SC-PoPLR | 150 | -9.6 (-17.9 to -1.8) | 9 | 23 | 0.0201 | 0.0802 |
+| 6 | sens | S4 SC-Event | 150 | -35.1 (-43.4 to -27.3) | 2 | 54 | 4.43e-14 | 3.55e-13 |
+| 6 | sens | S5 SC-LightGBM | 150 | 2.2 (-2.9 to 7.1) | 10 | 7 | 0.629 | 1 |
+| 6 | sens | S6 Order-LightGBM | 150 | -3.1 (-9.2 to 2.7) | 10 | 14 | 0.541 | 1 |
+| 6 | sens | S7 SC-GRU | 150 | -36.7 (-45.7 to -27.5) | 7 | 62 | 4.1e-12 | 2.87e-11 |
+| 6 | sens | B8 LightGBM-95spec | 150 | 22.0 (15.3 to 28.5) | 35 | 1 | 1.08e-09 |  |
+| 6 | spec_R1 | D7 Event | 164 | -10.4 (-16.2 to -5.1) | 17 | 0 | 1.53e-05 | 0.000122 |
+| 6 | spec_R1 | S1 SC-Trend | 164 | -0.0 (-0.0 to -0.0) | 0 | 0 | 1 | 1 |
+| 6 | spec_R1 | S2 SC-Rate | 164 | -2.4 (-6.0 to 0.6) | 5 | 1 | 0.219 | 1 |
+| 6 | spec_R1 | S3 SC-PoPLR | 164 | -2.0 (-4.4 to -0.2) | 3 | 0 | 0.25 | 1 |
+| 6 | spec_R1 | S4 SC-Event | 164 | -0.4 (-1.9 to 0.6) | 1 | 0 | 1 | 1 |
+| 6 | spec_R1 | S5 SC-LightGBM | 164 | -0.4 (-1.3 to -0.0) | 1 | 0 | 1 | 1 |
+| 6 | spec_R1 | S6 Order-LightGBM | 164 | -2.4 (-4.4 to -0.8) | 2 | 0 | 0.5 | 1 |
+| 6 | spec_R1 | S7 SC-GRU | 164 | -3.7 (-7.1 to -0.6) | 6 | 1 | 0.125 | 0.875 |
+| 6 | spec_R1 | B8 LightGBM-95spec | 164 | -10.6 (-15.1 to -6.4) | 17 | 0 | 1.53e-05 |  |
+| 6 | spec_R2 | D7 Event | 310 | -3.9 (-7.7 to -0.0) | 24 | 12 | 0.0652 | 0.391 |
+| 6 | spec_R2 | S1 SC-Trend | 310 | 0.2 (-0.0 to 0.7) | 0 | 1 | 1 | 1 |
+| 6 | spec_R2 | S2 SC-Rate | 310 | 2.9 (-0.0 to 6.0) | 7 | 16 | 0.0931 | 0.466 |
+| 6 | spec_R2 | S3 SC-PoPLR | 310 | -4.2 (-6.9 to -1.5) | 17 | 4 | 0.0072 | 0.0504 |
+| 6 | spec_R2 | S4 SC-Event | 310 | 4.3 (1.9 to 7.1) | 2 | 15 | 0.00235 | 0.0188 |
+| 6 | spec_R2 | S5 SC-LightGBM | 310 | -0.3 (-2.7 to 2.2) | 8 | 7 | 1 | 1 |
+| 6 | spec_R2 | S6 Order-LightGBM | 310 | -3.7 (-6.0 to -1.2) | 12 | 5 | 0.143 | 0.574 |
+| 6 | spec_R2 | S7 SC-GRU | 310 | 1.5 (-1.5 to 4.8) | 8 | 14 | 0.286 | 0.859 |
+| 6 | spec_R2 | B8 LightGBM-95spec | 310 | -15.8 (-20.0 to -11.7) | 50 | 1 | 4.62e-14 |  |
 
-## S4. Analyses added after internal review (not in the protocol)
+Table S5. Study 1: false alarms over repeated reviews on true no-change series (approximate; analysis added after internal review).
 
-Table S4. Cumulative false alarms on true no-change series (Artes windows starting at the first test; same donor-date draw index across k, donor dates redrawn for each k, so the estimate is approximate).
-
-| Detector | Flagged at least once, k = 3–6, % | Mean per-look false-alarm rate, % |
+| Detector | Flagged at least once, k = 3–6, % | Mean per-review false-alarm rate, % |
 |---|---|---|
 | D1 | 15.3 | 5.2 |
 | D2 | 6.7 | 1.7 |
@@ -273,4 +418,36 @@ Table S4. Cumulative false alarms on true no-change series (Artes windows starti
 | D9 | 22.9 | 8.1 |
 | D10 | 11.6 | 3.5 |
 
-Validity under the strict literal protocol rule (upper 95% CI limit of the false-alarm rate at or below 5%) was met only by: D10@3, D2@3, D3@3, D4@3, D7@3, D2@4, D3@4, D4@4, D7@4, D9@4, D2@5, D3@5, D7@5, D2@6, D3@6, D7@6. The smallest sensitivity gain over D1 that could reach Holm-adjusted significance was 9 of 26 progressors (34.6 percentage points). Bootstrap 95% CI for the shuffle-audit Spearman correlation, resampling detector–k cells: 0.35 to 0.85.
+Table S6. Study 2, external clinic (GRAPE): agreement with the mean-deviation, PLR2 and PLR3 labels.
+
+| Detector | k | Sens MD % | Spec MD % | Sens PLR2 % | Spec PLR2 % | Sens PLR3 % | Spec PLR3 % |
+|---|---|---|---|---|---|---|---|
+| B8 LightGBM-95spec | 3 | 36.5 | 74.1 | 25.8 | 72.8 | 38.1 | 73.6 |
+| D1 OLS-MD | 3 | 44.4 | 95.3 | 17.5 | 92.8 | 21.4 | 92.0 |
+| S1 SC-Trend (UW threshold) | 3 | 46.4 | 95.3 | 18.8 | 92.8 | 25.2 | 92.0 |
+| S1 SC-Trend (local threshold) | 3 | 44.4 | 95.2 | 17.5 | 92.7 | 21.4 | 91.9 |
+| S5 SC-LightGBM (UW threshold) | 3 | 24.0 | 83.5 | 15.7 | 82.5 | 23.8 | 83.1 |
+| S5 SC-LightGBM (local threshold) | 3 | 7.4 | 93.2 | 6.5 | 93.1 | 11.0 | 93.4 |
+| S6 Order-LightGBM (UW threshold) | 3 | 13.1 | 96.7 | 9.0 | 96.6 | 15.2 | 96.3 |
+| S6 Order-LightGBM (local threshold) | 3 | 18.5 | 95.0 | 13.5 | 94.9 | 19.0 | 94.4 |
+| B8 LightGBM-95spec | 4 | 70.4 | 60.0 | 58.9 | 60.3 | 66.7 | 58.5 |
+| D1 OLS-MD | 4 | 33.3 | 95.9 | 16.1 | 94.7 | 16.7 | 93.4 |
+| S1 SC-Trend (UW threshold) | 4 | 33.3 | 94.9 | 18.5 | 94.2 | 21.7 | 92.8 |
+| S1 SC-Trend (local threshold) | 4 | 33.3 | 94.6 | 18.7 | 93.9 | 23.3 | 92.7 |
+| S5 SC-LightGBM (UW threshold) | 4 | 36.3 | 82.7 | 34.4 | 84.1 | 37.8 | 82.1 |
+| S5 SC-LightGBM (local threshold) | 4 | 16.7 | 92.2 | 15.1 | 92.7 | 10.0 | 91.3 |
+| S6 Order-LightGBM (UW threshold) | 4 | 22.2 | 94.0 | 15.5 | 94.0 | 20.0 | 93.2 |
+| S6 Order-LightGBM (local threshold) | 4 | 23.0 | 93.1 | 16.3 | 93.1 | 20.0 | 92.2 |
+
+Table S7. Study 2: time of first flag among R1 progressors flagged by the sixth test (detectors applied at every review). Groups differ between detectors, so medians are descriptive only.
+
+| Detector (every review) | Progressors flagged by test 6, n / N | Median review of first flag (test number) | Median years from first test to first flag |
+|---|---|---|---|
+| D1-repeated | 97 / 150 | 4 | 4.5 |
+| D7-repeated | 69 / 150 | 5 | 5.4 |
+| Q1 Sequential trend | 62 / 150 | 5 | 5.8 |
+| Q2 Confirmed trend | 72 / 150 | 5 | 5.6 |
+| Q3 Confirmed SC-Event | 19 / 150 | 5 | 6.7 |
+| Q4 Sequential Order-LightGBM | 55 / 150 | 5 | 6.5 |
+
+## S5. Supplementary figures
