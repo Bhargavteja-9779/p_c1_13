@@ -11,3 +11,10 @@ D4 PoPLR (within-eye permutation) seed 3 done 320s
 D4 PoPLR (within-eye permutation) seed 4 done 393s
 D4 PoPLR (within-eye permutation) GRAPE done 394s
 D5 Pooled-shuffle conformal MD seed 0 done 396s
+D5 Pooled-shuffle conformal MD seed 1 done 398s
+D5 Pooled-shuffle conformal MD seed 2 done 400s
+D5 Pooled-shuffle conformal MD seed 3 done 402s
+D5 Pooled-shuffle conformal MD seed 4 done 404s
+D5 Pooled-shuffle conformal MD GRAPE done 405s
+D6 Pooled-detrended conformal region-max seed 0 done 412s
+D6 Pooled-detrended conformal region-max seed 1 done 418s
