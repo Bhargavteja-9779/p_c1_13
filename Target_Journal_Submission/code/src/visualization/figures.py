@@ -63,17 +63,24 @@ def fig_grape(M):
     fig.tight_layout(); fig.savefig(os.path.join(FIG, 'fig4_grape_external.png'), bbox_inches='tight'); plt.close(fig)
 
 def fig_design():
-    fig, ax = plt.subplots(figsize=(7.2, 2.6)); ax.axis('off')
-    boxes = [(0.02, 0.55, 'UWHVF (Seattle)\n24-2, 28,943 fields\npatient split 60/20/20'), (0.02, 0.08, 'Artes retest (Halifax)\n30 patients x 12 weekly\nfields: true no change'),
-             (0.36, 0.55, '10 detectors\nclassical, permutation,\nconformal, event, ML'), (0.36, 0.08, 'GRAPE (Hangzhou)\n263 eyes, clinician\nprogression labels'),
-             (0.70, 0.70, 'E1 sensitivity / specificity\nvs future reference'), (0.70, 0.40, 'E2 false alarms on\ntrue no-change series'),
-             (0.70, 0.10, 'E3 shuffle audit (UWHVF)\nE4 external clinic (GRAPE)\nall: first 3-6 tests only')]
-    for x, y, s in boxes:
-        ax.add_patch(plt.Rectangle((x, y), 0.27, 0.3, fc='#f3f3f1', ec='#52514e', lw=0.8, transform=ax.transAxes))
-        ax.text(x + 0.135, y + 0.15, s, ha='center', va='center', fontsize=7.5, transform=ax.transAxes)
-    for (x0, y0, x1, y1) in [(0.29, 0.70, 0.36, 0.70), (0.29, 0.23, 0.36, 0.60), (0.63, 0.70, 0.70, 0.85), (0.63, 0.66, 0.70, 0.55),
-                             (0.63, 0.62, 0.70, 0.25), (0.63, 0.23, 0.70, 0.22)]:
+    fig, ax = plt.subplots(figsize=(7.4, 3.6)); ax.axis('off')
+    def box(x, y, w, hgt, txt, fc='#f3f3f1'):
+        ax.add_patch(plt.Rectangle((x, y), w, hgt, fc=fc, ec='#52514e', lw=0.8, transform=ax.transAxes))
+        ax.text(x + w / 2, y + hgt / 2, txt, ha='center', va='center', fontsize=7.2, transform=ax.transAxes)
+    def arrow(x0, y0, x1, y1):
         ax.annotate('', xy=(x1, y1), xytext=(x0, y0), xycoords='axes fraction', arrowprops=dict(arrowstyle='->', color='#52514e', lw=0.8))
+    box(0.0, 0.70, 0.24, 0.24, 'UWHVF (Seattle)\n28,943 fields, 7,428 eyes\nroutine care')
+    box(0.0, 0.38, 0.24, 0.24, 'Artes retest (Halifax)\n30 patients, 12 fields\nin ~3 months: no change')
+    box(0.0, 0.06, 0.24, 0.24, 'GRAPE (Hangzhou)\n263 eyes, other perimeter\nprogression labels')
+    box(0.32, 0.56, 0.30, 0.40, 'Study 1 (locked test split)\n10 detectors, first 3-6 tests\n26 progressing / 26 stable eyes\nE1 reference, E2 true no-change,\nE3 shuffle audit, E4 external', fc='#e8f0fb')
+    box(0.32, 0.04, 0.30, 0.46, 'Study 2 (new protocol)\n5-fold cross-fitting, all UWHVF\n150 progressing / 164 stable eyes\nshuffle calibration: every detector\nheld to 5% false alarms\n+ repeated-look control\n+ local recalibration in GRAPE', fc='#eef7f1')
+    box(0.70, 0.62, 0.30, 0.30, 'Finding 1: detectors that looked\nbetter raised false alarms\n(true no-change data)')
+    box(0.70, 0.28, 0.30, 0.28, 'Finding 2: at matched false alarms\nno detector beat the trend test')
+    box(0.70, 0.02, 0.30, 0.22, 'Finding 3: repeated-look and\nexternal trade-offs quantified')
+    for y in (0.82, 0.50): arrow(0.24, y, 0.32, 0.76)
+    for y in (0.82, 0.50, 0.18): arrow(0.24, y, 0.32, 0.27)
+    arrow(0.24, 0.18, 0.32, 0.70)
+    arrow(0.62, 0.76, 0.70, 0.77); arrow(0.62, 0.30, 0.70, 0.42); arrow(0.62, 0.15, 0.70, 0.13)
     fig.savefig(os.path.join(FIG, 'fig1_study_design.png'), bbox_inches='tight'); plt.close(fig)
 
 def main():

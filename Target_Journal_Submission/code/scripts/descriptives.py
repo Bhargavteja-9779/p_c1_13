@@ -47,6 +47,18 @@ def main():
     for part in ('train', 'val'):
         labs = [reference(s) for s in S if sp[s['pid']] == part and len(s['ages']) >= 8]
         out[f'labelled_{part}'] = dict(progressors=sum(l == 1 for l in labs), stable=sum(l == 0 for l in labs))
+    # Study 2 cross-fitted reference cohort (all UWHVF eyes with >= 8 tests)
+    rp = os.path.join(RES, 'study2_refs.csv')
+    if os.path.exists(rp):
+        R2 = pd.read_csv(rp, dtype={'unit': str, 'pid': str}); byu = {s['pid'] + s['eye']: s for s in S}
+        for lab, val, name in (('R1', 1, 's2_progressors'), ('R1', 0, 's2_stable'), ('R2', 0, 's2_flat_stable')):
+            g = R2[R2[lab] == val]; ss = [byu[u] for u in g.unit]
+            out[name] = dict(n_eyes=len(g), n_patients=int(g.pid.nunique()), age0=q([x['ages'][0] for x in ss]),
+                             n_tests=q([len(x['ages']) for x in ss]), followup_y=q([x['ages'][-1] - x['ages'][0] for x in ss]),
+                             md_baseline_proxy=q([md_series(x['td'])[0] for x in ss]),
+                             years_to_test3=q([x['ages'][2] - x['ages'][0] for x in ss]), years_to_test6=q([x['ages'][5] - x['ages'][0] for x in ss]),
+                             female_patients=int(len({x['pid'] for x in ss if str(x['gender']).upper().startswith('F')})))
+        out['s2_all'] = dict(n_eyes=len(R2), n_patients=int(R2.pid.nunique()))
     # Artes
     A = load_artes()
     out['artes'] = dict(n_patients=len({a['pid'] for a in A}), n_series=len(A), n_fields=int(sum(len(a['t']) for a in A)),

@@ -3637,6 +3637,50 @@
   }
  ],
  "seed_sd": [],
+ "time_to_first_flag": [
+  {
+   "detector": "D1-repeated",
+   "n_detected": 97,
+   "n": 150,
+   "median_years": 4.465434633812464,
+   "median_look": 4.0
+  },
+  {
+   "detector": "D7-repeated",
+   "n_detected": 69,
+   "n": 150,
+   "median_years": 5.385352498288846,
+   "median_look": 5.0
+  },
+  {
+   "detector": "Q1 Sequential trend",
+   "n_detected": 62,
+   "n": 150,
+   "median_years": 5.835728952772076,
+   "median_look": 5.0
+  },
+  {
+   "detector": "Q2 Confirmed trend",
+   "n_detected": 72,
+   "n": 150,
+   "median_years": 5.605749486652979,
+   "median_look": 5.0
+  },
+  {
+   "detector": "Q3 Confirmed SC-Event",
+   "n_detected": 19,
+   "n": 150,
+   "median_years": 6.70773442847365,
+   "median_look": 5.0
+  },
+  {
+   "detector": "Q4 Sequential Order-LightGBM",
+   "n_detected": 55,
+   "n": 150,
+   "median_years": 6.5051334702258785,
+   "median_look": 5.0
+  }
+ ],
  "study1_test_subset": [
   {
    "detector": "D1 OLS-MD",

@@ -106,6 +106,17 @@ def main(suffix=''):
         out['paired_cum'].append(dict(detector=det, diff=float(dlt.mean()), lo_one_sided_95=float(np.quantile(bs, .05)),
                                       lo95=float(np.quantile(bs, .025)), hi95=float(np.quantile(bs, .975)), p_mcnemar=pv,
                                       only_det=b01, only_D1=b10, noninferior_10pp=bool(np.quantile(bs, .05) > -0.10)))
+    # time of first flag (years from first test) among R1 progressors flagged by look 6 (majority over seeds/folds)
+    from src.data.uwhvf import load_series as _ls
+    tt = {s['pid'] + s['eye']: s['ages'] - s['ages'][0] for s in _ls()}
+    ttf = []
+    for det in CUM:
+        x = cu1[(cu1.detector == det) & (cu1.R1 == 1)].pivot_table(index='unit', columns='k', values='maj')
+        first = x.apply(lambda r: next((k for k in KS if r[k] == 1), None), axis=1).dropna()
+        yrs = [tt[u][int(k) - 1] for u, k in first.items()]
+        ttf.append(dict(detector=det, n_detected=int(len(first)), n=int(len(x)), median_years=float(np.median(yrs)) if yrs else None,
+                        median_look=float(np.median(first.values)) if len(first) else None))
+    out['time_to_first_flag'] = ttf
     # ---------- GRAPE
     e4 = d[d['eval'] == 'E4'].copy()
     e4['pid'] = e4.unit.str.extract(r'^(\d+)')[0]
@@ -138,7 +149,7 @@ def main(suffix=''):
     print(M[['detector', 'k', 'sens', 'spec', 'spec_R2', 'fa', 'fa_hi', 'valid']].round(3).to_string())
     print(pd.DataFrame(out['cumulative'])[['detector', 'k', 'sens', 'spec_R2', 'fa']].round(3).to_string())
     P = pd.DataFrame(out['paired']); print(P[(P.endpoint == 'sens')][['k', 'detector', 'diff', 'diff_lo', 'diff_hi', 'p_holm']].round(3).to_string())
-    print(pd.DataFrame(out['paired_cum']).round(3).to_string())
+    print(pd.DataFrame(out['paired_cum']).round(3).to_string()); print(pd.DataFrame(ttf).round(2).to_string())
     print(pd.DataFrame(out['grape'])[['detector', 'k', 'sens_MD', 'spec_MD', 'spec_PLR2']].round(3).to_string())
 
 if __name__ == '__main__':
