@@ -51,13 +51,16 @@ def fmt(v, f):
     if f == 'pp': return f"{100 * v:.1f} percentage points"
     return f"{v:.{int(f)}f}"
 
+SHORT = {'D1': 'D1 Trend, MD', 'D2': 'D2 MD rate', 'D3': 'D3 PLR-3', 'D4': 'D4 PoPLR', 'D5': 'D5 Pooled conformal',
+         'D6': 'D6 Pooled-detrended', 'D7': 'D7 Event', 'D8': 'D8 LightGBM', 'D9': 'D9 GRU', 'D10': 'D10 Order net'}
+
 def T_main():
     ks = sorted({r['k'] for r in M}); out = ['| Detector | k | Sensitivity, % (95% CI) | Specificity, % | False alarms, true no-change, % (95% CI) | False alarms, shuffle audit, % | Valid |',
                                             '|---|---|---|---|---|---|---|']
     for k in ks:
         for code in [f'D{i}' for i in range(1, 11)]:
             r = row(code, k)
-            out.append(f"| {det_name(code)} | {k} | {pc(r['sens'])} ({pc(r['sens_lo'])}–{pc(r['sens_hi'])}) | {pc(r['spec'])} | "
+            out.append(f"| {SHORT[code]} | {k} | {pc(r['sens'])} ({pc(r['sens_lo'])}–{pc(r['sens_hi'])}) | {pc(r['spec'])} | "
                        f"{pc(r['fpr_true_null'])} ({pc(r['fpr_true_null_lo'])}–{pc(r['fpr_true_null_hi'])}) | {pc(r['fpr_shuffle'])} | {'yes' if valid(code, k) else '**no**'} |")
     return '\n'.join(out)
 
@@ -81,7 +84,7 @@ def T_grape():
         for code in ['D1', 'D2', 'D3', 'D4', 'D5', 'D7', 'D8']:
             r = row(code, k)
             if r.get('grape_sens') is None: continue
-            out.append(f"| {det_name(code)} | {k} | {pc(r['grape_sens'])} ({pc(r['grape_sens_lo'])}–{pc(r['grape_sens_hi'])}) | "
+            out.append(f"| {SHORT[code]} | {k} | {pc(r['grape_sens'])} ({pc(r['grape_sens_lo'])}–{pc(r['grape_sens_hi'])}) | "
                        f"{pc(r['grape_spec'])} ({pc(r['grape_spec_lo'])}–{pc(r['grape_spec_hi'])}) |")
     return '\n'.join(out)
 

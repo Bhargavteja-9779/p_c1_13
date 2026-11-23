@@ -67,7 +67,7 @@ def fig_design():
     boxes = [(0.02, 0.55, 'UWHVF (Seattle)\n24-2, 28,943 fields\npatient split 60/20/20'), (0.02, 0.08, 'Artes retest (Halifax)\n30 patients x 12 weekly\nfields: true no change'),
              (0.36, 0.55, '10 detectors\nclassical, permutation,\nconformal, event, ML'), (0.36, 0.08, 'GRAPE (Hangzhou)\n263 eyes, clinician\nprogression labels'),
              (0.70, 0.70, 'E1 sensitivity / specificity\nvs future reference'), (0.70, 0.40, 'E2 false alarms on\ntrue no-change series'),
-             (0.70, 0.10, 'E3 shuffle audit  |  E4 external\n(first 3-6 tests only)')]
+             (0.70, 0.10, 'E3 shuffle audit (UWHVF)\nE4 external clinic (GRAPE)\nall: first 3-6 tests only')]
     for x, y, s in boxes:
         ax.add_patch(plt.Rectangle((x, y), 0.27, 0.3, fc='#f3f3f1', ec='#52514e', lw=0.8, transform=ax.transAxes))
         ax.text(x + 0.135, y + 0.15, s, ha='center', va='center', fontsize=7.5, transform=ax.transAxes)

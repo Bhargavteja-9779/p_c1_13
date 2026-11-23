@@ -72,7 +72,18 @@
   * k=4-6: no valid detector clearly beats D1 (D7 event analysis 50% vs 42% at k=5 with FPR 1.2% - check McNemar).
   * RQ3 shuffle audit vs true null: Spearman 0.65, median |diff| 1.0 pp, 80% of cells within 3 pp (H3 partly met).
   * GRAPE k=3: D1 sens 44% / spec 95%; D8 66% / 61%; D2 59% / 79%.
+- STEP 4 DONE (2026-11-23, session 3): data restored; code/scripts/descriptives.py -> results/descriptives.json (cohort,
+  Artes windows, GRAPE, time-to-detection). manuscript/fill_values.py fills front_template.md + sections_intro_methods.md +
+  results_discussion_template.md + back_template.md -> manuscript_filled.md (37 automated claim checks in claim_checks.json;
+  citations renumbered in first-citation order; all 36 refs cited). build_docx.py -> Final_Manuscript.docx/.pdf, cover_letter.docx.
+  build_supplementary.py -> supplementary/Supplementary_Material.{md,docx,pdf}. Fig 1 label fixed.
+  Rebuild: cd manuscript && python3 fill_values.py && python3 build_supplementary.py && python3 build_docx.py &&
+  soffice --headless --convert-to pdf Final_Manuscript.docx
+  Key wording facts: D9 k=6 FPR upper CI 10.0002% -> invalid by rule (text says "only just exceeded"); D5 = D1 sens at k3-5.
+  Placeholders left for AUTHORS: names/affiliations, funding, contributions, COI, repo URL, prior presentation.
+
 ## NEXT ACTION (new session)
-Skip steps 1-3 above unless re-running is needed (results are committed). Start at step 4: write Results/Discussion/
-Abstract/KSP from metrics.json + statistics.json via a fill script, then build docx, audits, reviews, cover letter,
-risk report. Previous list of steps 4-6 still applies (see git history of this file for data-restore commands).
+Step 5: REVIEW/ folder: 10 adversarial reviews + stakeholder review (agents may have written some: check REVIEW/), then fix
+round on templates (never hand-type numbers), citation-content audit (REVIEW/citation_audit.md), consistency +
+reproducibility audit, risk_report.md, final decision (expected label NOT REMARKABLE: honest strongest result).
+Step 6: open user requests: Dryad AMD file (no longer needed), JCR quartile check, APC USD 8,050 OK?

@@ -145,46 +145,46 @@ Three detectors could not flag any eye at three tests: PoPLR (D4) and the self-s
 
 | Detector | k | Sensitivity, % (95% CI) | Specificity, % | False alarms, true no-change, % (95% CI) | False alarms, shuffle audit, % | Valid |
 |---|---|---|---|---|---|---|
-| D1 OLS-MD | 3 | 19.2 (7.4–33.3) | 96.2 | 4.4 (2.8–6.3) | 4.8 | yes |
-| D2 MD-rate <= −1 dB/yr | 3 | 38.5 (20.0–56.5) | 92.3 | 2.6 (1.5–3.9) | 11.7 | yes |
-| D3 PLR >=3 points | 3 | 3.8 (0.0–12.5) | 96.2 | 1.4 (1.0–1.8) | 1.8 | yes |
-| D4 PoPLR (within-eye permutation) | 3 | 0.0 (0.0–0.0) | 100.0 | 0.0 (0.0–0.0) | 0.0 | yes |
-| D5 Pooled-shuffle conformal MD | 3 | 19.2 (7.4–33.3) | 96.2 | 4.0 (2.7–5.6) | 4.6 | yes |
-| D6 Pooled-detrended conformal region-max | 3 | 56.9 (37.0–76.2) | 96.2 | 22.4 (19.3–25.7) | 22.5 | **no** |
-| D7 Event analysis (GPA-like) | 3 | 0.0 (0.0–0.0) | 100.0 | 0.0 (0.0–0.0) | 0.0 | yes |
-| D8 ML-tabular (LightGBM) | 3 | 26.2 (12.3–43.2) | 94.6 | 27.7 (22.7–32.9) | 17.3 | **no** |
-| D9 ML-sequence (GRU) | 3 | 12.3 (2.4–24.8) | 95.4 | 12.7 (6.2–20.0) | 8.5 | **no** |
-| D10 Self-supervised order net + permutation | 3 | 0.0 (0.0–0.0) | 100.0 | 0.0 (0.0–0.0) | 0.0 | yes |
-| D1 OLS-MD | 4 | 30.8 (14.3–48.1) | 100.0 | 3.8 (1.9–6.2) | 4.7 | yes |
-| D2 MD-rate <= −1 dB/yr | 4 | 23.1 (8.0–40.0) | 96.2 | 0.6 (0.4–0.9) | 6.4 | yes |
-| D3 PLR >=3 points | 4 | 15.4 (3.6–30.8) | 100.0 | 0.2 (0.0–0.3) | 1.5 | yes |
-| D4 PoPLR (within-eye permutation) | 4 | 3.8 (0.0–12.5) | 100.0 | 3.3 (1.8–4.9) | 4.1 | yes |
-| D5 Pooled-shuffle conformal MD | 4 | 30.8 (14.3–48.1) | 100.0 | 3.6 (1.8–5.9) | 4.9 | yes |
-| D6 Pooled-detrended conformal region-max | 4 | 25.4 (10.3–44.0) | 100.0 | 5.1 (3.4–7.2) | 5.5 | yes |
-| D7 Event analysis (GPA-like) | 4 | 23.1 (7.7–40.0) | 100.0 | 1.1 (0.0–2.6) | 5.2 | yes |
-| D8 ML-tabular (LightGBM) | 4 | 41.5 (23.7–59.2) | 99.2 | 9.4 (6.3–12.9) | 7.7 | **no** |
-| D9 ML-sequence (GRU) | 4 | 11.5 (2.8–23.2) | 99.2 | 2.0 (0.6–3.7) | 4.7 | yes |
-| D10 Self-supervised order net + permutation | 4 | 20.0 (7.7–35.8) | 100.0 | 3.8 (2.5–5.1) | 4.1 | yes |
-| D1 OLS-MD | 5 | 42.3 (23.1–61.5) | 100.0 | 4.7 (2.2–7.5) | 5.1 | yes |
-| D2 MD-rate <= −1 dB/yr | 5 | 23.1 (7.7–41.4) | 100.0 | 0.8 (0.5–1.2) | 3.6 | yes |
-| D3 PLR >=3 points | 5 | 23.1 (8.0–40.0) | 100.0 | 0.5 (0.1–1.1) | 1.4 | yes |
-| D4 PoPLR (within-eye permutation) | 5 | 38.5 (20.0–57.7) | 100.0 | 3.9 (1.9–6.2) | 4.3 | yes |
-| D5 Pooled-shuffle conformal MD | 5 | 42.3 (23.1–61.5) | 100.0 | 4.3 (2.0–7.1) | 4.9 | yes |
-| D6 Pooled-detrended conformal region-max | 5 | 31.5 (16.0–48.5) | 100.0 | 6.2 (3.7–8.9) | 5.0 | yes |
-| D7 Event analysis (GPA-like) | 5 | 50.0 (30.4–69.6) | 100.0 | 1.2 (0.0–2.9) | 7.9 | yes |
-| D8 ML-tabular (LightGBM) | 5 | 56.2 (36.1–74.8) | 99.2 | 18.8 (13.1–24.9) | 16.1 | **no** |
-| D9 ML-sequence (GRU) | 5 | 40.8 (22.8–59.2) | 93.8 | 7.5 (2.8–13.3) | 8.1 | **no** |
-| D10 Self-supervised order net + permutation | 5 | 43.8 (28.0–60.0) | 100.0 | 5.1 (2.9–7.6) | 4.2 | yes |
-| D1 OLS-MD | 6 | 57.7 (38.4–76.9) | 100.0 | 5.1 (2.5–8.1) | 5.9 | yes |
-| D2 MD-rate <= −1 dB/yr | 6 | 23.1 (8.3–38.5) | 100.0 | 1.0 (0.6–1.5) | 2.8 | yes |
-| D3 PLR >=3 points | 6 | 23.1 (7.7–41.7) | 100.0 | 0.3 (0.0–0.8) | 1.2 | yes |
-| D4 PoPLR (within-eye permutation) | 6 | 50.0 (30.8–67.9) | 100.0 | 5.0 (2.4–8.4) | 4.8 | yes |
-| D5 Pooled-shuffle conformal MD | 6 | 56.9 (37.7–76.0) | 100.0 | 5.0 (2.4–7.9) | 5.0 | yes |
-| D6 Pooled-detrended conformal region-max | 6 | 53.8 (37.0–71.4) | 100.0 | 7.6 (4.5–11.1) | 4.9 | **no** |
-| D7 Event analysis (GPA-like) | 6 | 57.7 (36.0–77.8) | 100.0 | 1.9 (0.5–3.8) | 11.7 | yes |
-| D8 ML-tabular (LightGBM) | 6 | 70.8 (51.7–88.8) | 100.0 | 3.6 (1.7–6.0) | 8.7 | yes |
-| D9 ML-sequence (GRU) | 6 | 37.7 (22.3–53.8) | 91.5 | 5.9 (2.3–10.0) | 8.6 | **no** |
-| D10 Self-supervised order net + permutation | 6 | 54.6 (36.9–70.8) | 99.2 | 5.7 (3.0–9.2) | 4.7 | yes |
+| D1 Trend, MD | 3 | 19.2 (7.4–33.3) | 96.2 | 4.4 (2.8–6.3) | 4.8 | yes |
+| D2 MD rate | 3 | 38.5 (20.0–56.5) | 92.3 | 2.6 (1.5–3.9) | 11.7 | yes |
+| D3 PLR-3 | 3 | 3.8 (0.0–12.5) | 96.2 | 1.4 (1.0–1.8) | 1.8 | yes |
+| D4 PoPLR | 3 | 0.0 (0.0–0.0) | 100.0 | 0.0 (0.0–0.0) | 0.0 | yes |
+| D5 Pooled conformal | 3 | 19.2 (7.4–33.3) | 96.2 | 4.0 (2.7–5.6) | 4.6 | yes |
+| D6 Pooled-detrended | 3 | 56.9 (37.0–76.2) | 96.2 | 22.4 (19.3–25.7) | 22.5 | **no** |
+| D7 Event | 3 | 0.0 (0.0–0.0) | 100.0 | 0.0 (0.0–0.0) | 0.0 | yes |
+| D8 LightGBM | 3 | 26.2 (12.3–43.2) | 94.6 | 27.7 (22.7–32.9) | 17.3 | **no** |
+| D9 GRU | 3 | 12.3 (2.4–24.8) | 95.4 | 12.7 (6.2–20.0) | 8.5 | **no** |
+| D10 Order net | 3 | 0.0 (0.0–0.0) | 100.0 | 0.0 (0.0–0.0) | 0.0 | yes |
+| D1 Trend, MD | 4 | 30.8 (14.3–48.1) | 100.0 | 3.8 (1.9–6.2) | 4.7 | yes |
+| D2 MD rate | 4 | 23.1 (8.0–40.0) | 96.2 | 0.6 (0.4–0.9) | 6.4 | yes |
+| D3 PLR-3 | 4 | 15.4 (3.6–30.8) | 100.0 | 0.2 (0.0–0.3) | 1.5 | yes |
+| D4 PoPLR | 4 | 3.8 (0.0–12.5) | 100.0 | 3.3 (1.8–4.9) | 4.1 | yes |
+| D5 Pooled conformal | 4 | 30.8 (14.3–48.1) | 100.0 | 3.6 (1.8–5.9) | 4.9 | yes |
+| D6 Pooled-detrended | 4 | 25.4 (10.3–44.0) | 100.0 | 5.1 (3.4–7.2) | 5.5 | yes |
+| D7 Event | 4 | 23.1 (7.7–40.0) | 100.0 | 1.1 (0.0–2.6) | 5.2 | yes |
+| D8 LightGBM | 4 | 41.5 (23.7–59.2) | 99.2 | 9.4 (6.3–12.9) | 7.7 | **no** |
+| D9 GRU | 4 | 11.5 (2.8–23.2) | 99.2 | 2.0 (0.6–3.7) | 4.7 | yes |
+| D10 Order net | 4 | 20.0 (7.7–35.8) | 100.0 | 3.8 (2.5–5.1) | 4.1 | yes |
+| D1 Trend, MD | 5 | 42.3 (23.1–61.5) | 100.0 | 4.7 (2.2–7.5) | 5.1 | yes |
+| D2 MD rate | 5 | 23.1 (7.7–41.4) | 100.0 | 0.8 (0.5–1.2) | 3.6 | yes |
+| D3 PLR-3 | 5 | 23.1 (8.0–40.0) | 100.0 | 0.5 (0.1–1.1) | 1.4 | yes |
+| D4 PoPLR | 5 | 38.5 (20.0–57.7) | 100.0 | 3.9 (1.9–6.2) | 4.3 | yes |
+| D5 Pooled conformal | 5 | 42.3 (23.1–61.5) | 100.0 | 4.3 (2.0–7.1) | 4.9 | yes |
+| D6 Pooled-detrended | 5 | 31.5 (16.0–48.5) | 100.0 | 6.2 (3.7–8.9) | 5.0 | yes |
+| D7 Event | 5 | 50.0 (30.4–69.6) | 100.0 | 1.2 (0.0–2.9) | 7.9 | yes |
+| D8 LightGBM | 5 | 56.2 (36.1–74.8) | 99.2 | 18.8 (13.1–24.9) | 16.1 | **no** |
+| D9 GRU | 5 | 40.8 (22.8–59.2) | 93.8 | 7.5 (2.8–13.3) | 8.1 | **no** |
+| D10 Order net | 5 | 43.8 (28.0–60.0) | 100.0 | 5.1 (2.9–7.6) | 4.2 | yes |
+| D1 Trend, MD | 6 | 57.7 (38.4–76.9) | 100.0 | 5.1 (2.5–8.1) | 5.9 | yes |
+| D2 MD rate | 6 | 23.1 (8.3–38.5) | 100.0 | 1.0 (0.6–1.5) | 2.8 | yes |
+| D3 PLR-3 | 6 | 23.1 (7.7–41.7) | 100.0 | 0.3 (0.0–0.8) | 1.2 | yes |
+| D4 PoPLR | 6 | 50.0 (30.8–67.9) | 100.0 | 5.0 (2.4–8.4) | 4.8 | yes |
+| D5 Pooled conformal | 6 | 56.9 (37.7–76.0) | 100.0 | 5.0 (2.4–7.9) | 5.0 | yes |
+| D6 Pooled-detrended | 6 | 53.8 (37.0–71.4) | 100.0 | 7.6 (4.5–11.1) | 4.9 | **no** |
+| D7 Event | 6 | 57.7 (36.0–77.8) | 100.0 | 1.9 (0.5–3.8) | 11.7 | yes |
+| D8 LightGBM | 6 | 70.8 (51.7–88.8) | 100.0 | 3.6 (1.7–6.0) | 8.7 | yes |
+| D9 GRU | 6 | 37.7 (22.3–53.8) | 91.5 | 5.9 (2.3–10.0) | 8.6 | **no** |
+| D10 Order net | 6 | 54.6 (36.9–70.8) | 99.2 | 5.7 (3.0–9.2) | 4.7 | yes |
 
 *Table 2. Sensitivity against the future-confirmed reference (26 progressors), specificity (26 stable eyes), and false-alarm rates on true no-change series (Artes) and in the shuffle audit (UWHVF test set), using only the first k tests. Values for stochastic detectors are means over five seeds. 95% CIs from patient-level bootstrap. "Valid" means that the lower limit of the false-alarm CI was at or below 5% and the upper limit at or below 10%.*
 
@@ -210,20 +210,20 @@ In GRAPE (Table 3, Fig. 4), D1 detected 44.4% (95% CI 25.9–65.4%) of eyes labe
 
 | Detector | k | Sensitivity, % (95% CI) | Specificity, % (95% CI) |
 |---|---|---|---|
-| D1 OLS-MD | 3 | 44.4 (25.9–65.4) | 95.3 (92.2–97.9) |
-| D2 MD-rate <= −1 dB/yr | 3 | 59.3 (40.7–76.9) | 78.8 (73.5–83.9) |
-| D3 PLR >=3 points | 3 | 3.7 (0.0–11.5) | 95.8 (92.7–98.3) |
-| D4 PoPLR (within-eye permutation) | 3 | 0.0 (0.0–0.0) | 100.0 (100.0–100.0) |
-| D5 Pooled-shuffle conformal MD | 3 | 41.5 (23.8–60.0) | 95.4 (92.4–98.0) |
-| D7 Event analysis (GPA-like) | 3 | 0.0 (0.0–0.0) | 100.0 (100.0–100.0) |
-| D8 ML-tabular (LightGBM) | 3 | 65.9 (50.8–80.0) | 61.2 (54.6–67.1) |
-| D1 OLS-MD | 4 | 33.3 (11.8–55.0) | 95.9 (92.2–98.6) |
-| D2 MD-rate <= −1 dB/yr | 4 | 55.6 (35.3–76.5) | 86.2 (79.4–92.1) |
-| D3 PLR >=3 points | 4 | 11.1 (0.0–25.0) | 97.9 (95.2–100.0) |
-| D4 PoPLR (within-eye permutation) | 4 | 22.2 (5.9–41.2) | 95.2 (91.4–98.0) |
-| D5 Pooled-shuffle conformal MD | 4 | 33.3 (11.8–55.0) | 94.5 (90.8–97.7) |
-| D7 Event analysis (GPA-like) | 4 | 16.7 (0.0–33.3) | 95.9 (92.4–98.7) |
-| D8 ML-tabular (LightGBM) | 4 | 48.9 (31.8–65.9) | 81.5 (74.2–87.9) |
+| D1 Trend, MD | 3 | 44.4 (25.9–65.4) | 95.3 (92.2–97.9) |
+| D2 MD rate | 3 | 59.3 (40.7–76.9) | 78.8 (73.5–83.9) |
+| D3 PLR-3 | 3 | 3.7 (0.0–11.5) | 95.8 (92.7–98.3) |
+| D4 PoPLR | 3 | 0.0 (0.0–0.0) | 100.0 (100.0–100.0) |
+| D5 Pooled conformal | 3 | 41.5 (23.8–60.0) | 95.4 (92.4–98.0) |
+| D7 Event | 3 | 0.0 (0.0–0.0) | 100.0 (100.0–100.0) |
+| D8 LightGBM | 3 | 65.9 (50.8–80.0) | 61.2 (54.6–67.1) |
+| D1 Trend, MD | 4 | 33.3 (11.8–55.0) | 95.9 (92.2–98.6) |
+| D2 MD rate | 4 | 55.6 (35.3–76.5) | 86.2 (79.4–92.1) |
+| D3 PLR-3 | 4 | 11.1 (0.0–25.0) | 97.9 (95.2–100.0) |
+| D4 PoPLR | 4 | 22.2 (5.9–41.2) | 95.2 (91.4–98.0) |
+| D5 Pooled conformal | 4 | 33.3 (11.8–55.0) | 94.5 (90.8–97.7) |
+| D7 Event | 4 | 16.7 (0.0–33.3) | 95.9 (92.4–98.7) |
+| D8 LightGBM | 4 | 48.9 (31.8–65.9) | 81.5 (74.2–87.9) |
 
 *Table 3. External clinic (GRAPE): agreement with clinicians' mean-deviation progression label using the first k tests (27 labelled progressors and 236 non-progressors with at least three tests). D5 and D7 were calibrated on GRAPE by patient-level cross-fitting; D8 was trained on UWHVF only. 95% CIs from patient-level bootstrap.*
 
