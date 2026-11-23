@@ -64,18 +64,15 @@
   figure_legends.json), manuscript/references.json (36 verified DOIs; numbering in intro = order of DOIS list in
   code/scripts/build_refs.py).
 
-## NEXT ACTION (new session: do these in order)
-1. Restore data (all public):
-   GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/uw-biomedical-ml/uwhvf /home/user/uw-biomedical-ml/uwhvf
-   mkdir -p data_raw/ext/grape && cd data_raw/ext && curl -sLO https://cloud.r-project.org/src/contrib/visualFields_1.0.7.tar.gz && tar xzf visualFields_1.0.7.tar.gz
-   curl -sL -o grape/vf_clinical.xlsx https://ndownloader.figshare.com/files/41670009
-   pip install scikit-learn scipy lightgbm matplotlib pyreadr openpyxl python-docx; pip install torch --index-url https://download.pytorch.org/whl/cpu
-2. cd Target_Journal_Submission/code && python -m pytest -q tests && nohup python3 run_all.py --mode full > ../results/full_run.log 2>&1 &
-   (~20-40 min on 4 CPUs; writes results/raw_results.csv). Commit results when done.
-3. python -m src.statistics.summarise ; python -m src.visualization.figures ; commit.
-4. Write Results/Discussion/Abstract/Key Summary Points from metrics.json/statistics.json (fill script must insert
-   numbers; never hand-type), assemble manuscript_filled.md, figure_legends.json, cover_letter_filled.md, run
-   build_docx.py, render to PDF and inspect.
-5. Claim-evidence + citation audit, 10 reviews + stakeholder review in REVIEW/, risk_report.md, final decision.
-   Honest label expected: "NOT REMARKABLE: honest strongest result" (see novelty_escalation_log.md).
-6. Open user requests: manual Dryad download (AMD_longitudinal_MEH_v4.csv), JCR quartile check, APC USD 8,050 OK?
+- FULL RUN COMPLETED (2026-11-23, 1458 s). results/raw_results.csv.gz (gunzip before re-summarising), metrics.json,
+  statistics.json, tables/table_metrics_all.csv, tables/table_paired_tests_vs_D1.csv, figures/fig1-4 committed.
+  Test refs: 26 progressors / 26 stable (small -> wide CIs). Key findings (from metrics.json):
+  * k=3: D1 OLS-MD sens 19.2%, true-null FPR 4.4% (valid); D6 pooled-detrended sens 56.9% but FPR 22.4% (invalid);
+    D8 LightGBM FPR 27.7% at k=3, 18.8% at k=5 (invalid; supports H4); D4 PoPLR and D7 cannot flag at k=3.
+  * k=4-6: no valid detector clearly beats D1 (D7 event analysis 50% vs 42% at k=5 with FPR 1.2% - check McNemar).
+  * RQ3 shuffle audit vs true null: Spearman 0.65, median |diff| 1.0 pp, 80% of cells within 3 pp (H3 partly met).
+  * GRAPE k=3: D1 sens 44% / spec 95%; D8 66% / 61%; D2 59% / 79%.
+## NEXT ACTION (new session)
+Skip steps 1-3 above unless re-running is needed (results are committed). Start at step 4: write Results/Discussion/
+Abstract/KSP from metrics.json + statistics.json via a fill script, then build docx, audits, reviews, cover letter,
+risk report. Previous list of steps 4-6 still applies (see git history of this file for data-restore commands).
