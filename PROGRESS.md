@@ -72,7 +72,16 @@
   * k=4-6: no valid detector clearly beats D1 (D7 event analysis 50% vs 42% at k=5 with FPR 1.2% - check McNemar).
   * RQ3 shuffle audit vs true null: Spearman 0.65, median |diff| 1.0 pp, 80% of cells within 3 pp (H3 partly met).
   * GRAPE k=3: D1 sens 44% / spec 95%; D8 66% / 61%; D2 59% / 79%.
-## NEXT ACTION (new session)
-Skip steps 1-3 above unless re-running is needed (results are committed). Start at step 4: write Results/Discussion/
-Abstract/KSP from metrics.json + statistics.json via a fill script, then build docx, audits, reviews, cover letter,
-risk report. Previous list of steps 4-6 still applies (see git history of this file for data-restore commands).
+- 2026-11-23 (session 3): STEP 4 DONE. Data restored (UWHVF clone, GRAPE xlsx, visualFields tarball in data_raw/ext).
+  New code/src/statistics/describe.py -> results/dataset_counts.json, results/realworld.json (pre-registered real-world
+  measures + exploratory cumulative stable-eye flags). manuscript/manuscript_template.md + fill_values.py (all numbers
+  are placeholders; citations [@n] renumbered by first use) -> manuscript_filled.md, Final_Manuscript.docx/.pdf,
+  cover_letter.docx/.pdf, supplementary/Supplementary_Material.md, tables/table*_*.md. Rebuild: cd manuscript &&
+  python3 fill_values.py && python3 build_docx.py && soffice --headless --convert-to pdf Final_Manuscript.docx
+  Fixes: Artes data licence is Apache-2.0 (not GPL-3); TRIPOD+AI DOI -> 10.1136/bmj-2023-078378; EMGT authors from PubMed.
+  Validity rule (fixed in methods draft commit bd2c2e2 BEFORE results commit 94777b8): CI upper <=10% and lower <=5%.
+## NEXT ACTION
+STEP 5: claim-evidence audit (REVIEW/claim_evidence_audit.md), citation audit (REVIEW/citation_audit.md, use
+manuscript/pubmed_check.json), 10 adversarial reviews + stakeholder review (REVIEW/review_01..10.md, review_stakeholder.md),
+fix what reviews find, then STEP 6: consistency + reproducibility audit, risk_report.md, final decision.
+Open user items: author names/affiliations, funding, disclosures, code repo URL, JCR quartile check, APC OK?
