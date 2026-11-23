@@ -48,3 +48,23 @@ blocked by Dryad's anti-bot check). Tested whether year-1 injection rhythm adds 
 ## Status after restart 1 (glaucoma detection/deferral) and part of restart 2
 No "remarkable" candidate yet. Best methodological candidate: population-calibrated (conformal) progression
 testing that is valid from the 3rd field (gain limited to 3-4 tests).
+
+## Round 5 (validation + Artes true-null; results/d6_round5.json) — pre-stated hypotheses H5a (noise strata add
+power) and H5b (weighted / regional statistics add power); falsifier: no sensitivity gain at matched specificity.
+Key result (alpha 0.05):
+ k=3: MD detrended-pooled sens 19.4% BUT false-alarm rate 13.2% on shuffled and 12.7% on TRUE no-change (Artes) data;
+      region-max detrended: sens 35.5%, FPR 20-22% -> INVALID (anti-conservative). Valid pooled shuffle null: sens 3-6%.
+      OLS MD parametric: sens 3.2%, Artes FPR 4.0%.
+ k=4: OLS MD sens 22.6% / spec 87.2% / Artes FPR 2.6% == best valid conformal variants (19-26%).
+ k=5: all valid methods ~41.9%.
+ Weighted MD had a division-by-zero bug (zero variance at floor) -> results void; to fix in final code.
+=> The earlier "valid from the 3rd test" gain was a false-alarm artefact of detrending with 1 residual df.
+   H5a, H5b REJECTED. Population-calibrated testing gives NO gain over plain OLS-MD p-values.
+Note: Artes data were used here during development (only to check FPR); disclosed in the paper.
+
+## Decision after restart 1 exhausted (6 rounds, glaucoma) + restart 2 pilot (nAMD) failed
+No method idea reached the "remarkable" bar. The robust, generalisable finding is an EVALUATION finding:
+apparent early-detection gains of more complex methods are explained by inflated false alarms that only a
+true-no-change check reveals. New topic framing (N4 benchmark + N5 protocol + N7 finding + N6 two clinics):
+an open benchmark for glaucoma VF progression detection with a TRUE NO-CHANGE arm, testing classical, permutation,
+pooled-null and machine-learning detectors at 3-6 tests. Honest label expected: NOT REMARKABLE (strongest honest result).
