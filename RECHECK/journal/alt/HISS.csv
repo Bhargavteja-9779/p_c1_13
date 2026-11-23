@@ -1,0 +1,86 @@
+title,doi,volume,issue,published,received,accepted,days,openalex_type,research_article
+"Reasoning with large language models in medicine: a systematic review of techniques, challenges and clinical integration",10.1007/s13755-025-00403-0,14,1,2025-11-26,2025-08-01,2025-11-11,102,review,0
+CURENet: combining unified representations for efficient chronic disease prediction,10.1007/s13755-025-00396-w,14,1,2025-11-27,2025-04-28,2025-11-02,188,article,1
+Construction of performance score dynamic prediction system for clinical departments using explainable machine learning,10.1007/s13755-025-00394-y,14,1,2025-12-2,2024-11-05,2025-11-05,365,article,1
+Magnetic resonance image enhancement and segmentation using conventional and deep learning denoising techniques for dynamic cerebral angiography,10.1007/s13755-025-00406-x,14,1,2025-12-5,2025-08-05,2025-11-11,98,article,1
+Utilizing multimodal models to forecast Alzheimer's disease progression and clinical subtypes,10.1007/s13755-025-00407-w,14,1,2025-12-8,2025-05-15,2025-11-23,192,article,1
+Interpretable large language models for early prediction of antimicrobial multidrug resistance,10.1007/s13755-025-00401-2,14,1,2025-12-9,2025-04-30,2025-11-09,193,article,1
+Heartbeat audio signal analysis for cardiovascular abnormality diagnosis using neural-networks,10.1007/s13755-025-00409-8,14,1,2025-12-13,2024-09-03,2025-11-27,450,article,1
+Design and validation of a responsible artificial intelligence-based system for the referral of diabetic retinopathy patients,10.1007/s13755-025-00405-y,14,1,2025-12-14,2025-03-03,2025-11-21,263,article,1
+An interpretable approach for schizophrenia classification using fMRI and sMRI features,10.1007/s13755-025-00413-y,14,1,2025-12-16,2025-06-22,2025-12-08,169,article,1
+DA3-LUNGNET: a multi-stage deep framework with adaptive attention for early detection of subcentimeter pulmonary nodules,10.1007/s13755-025-00414-x,14,1,2025-12-17,2025-03-30,2025-12-05,250,article,1
+A vision-language model–based approach for lung cancer diagnosis using lossless 3D CT images: evaluation of GPT-4.1 and GPT-4o for patient-level malignancy assessment,10.1007/s13755-025-00417-8,14,1,2025-12-21,2025-07-31,2025-12-11,133,article,1
+Toward intelligent clinical support for personalized sport training rehabilitation via large language models,10.1007/s13755-025-00416-9,14,1,2025-12-22,2025-08-03,2025-12-11,130,article,1
+Conformal uncertainty quantification to evaluate predictive fairness of foundation AI model for skin lesion classes across patient demographics,10.1007/s13755-025-00412-z,14,1,2025-12-24,2025-03-11,2025-12-09,273,article,1
+DiabeRules: a transparent rule based expert system for managing diabetes,10.1007/s13755-025-00418-7,14,1,2025-12-26,2024-08-03,2025-12-14,498,article,1
+Predicting lung cancer survival with attention-based CT slices combination,10.1007/s13755-025-00404-z,14,1,2026-1-4,2025-03-12,2025-11-17,250,article,1
+Hierarchical agent reflection for aligning LLM reasoning with clinical diagnostic processes,10.1007/s13755-025-00410-1,14,1,2026-1-5,2025-08-01,2025-10-09,69,article,1
+Determination of cardiopulmonary resuscitation quality based on machine learning algorithms using various biological signals,10.1007/s13755-025-00419-6,14,1,2026-1-6,2024-12-12,2025-12-20,373,article,1
+Computational and statistical insights for leveraging biomarker-driven machine learning models in predicting COVID-19 patient outcomes,10.1007/s13755-025-00421-y,14,1,2026-1-6,2024-11-28,2025-12-20,387,article,1
+Leveraging electronic health records for atrial fibrillation cohort generation,10.1007/s13755-025-00415-w,14,1,2026-1-7,2025-07-03,2025-12-11,161,article,1
+Quantum variational graph-driven neural framework for genomic-clinical integration in precision diagnosis,10.1007/s13755-025-00424-9,14,1,2026-1-7,2025-08-29,2025-12-24,117,article,1
+Retrieval augmented large language model system for comprehensive drug contraindications,10.1007/s13755-025-00420-z,14,1,2026-1-11,2025-08-08,2025-12-20,134,article,1
+Inter-clinician diagnostic agreement of shock etiology: a multicenter observational study,10.1007/s13755-025-00423-w,14,1,2026-1-12,2025-07-03,2025-12-22,172,article,1
+Protein–protein interaction extraction enhanced by entity semantic representation,10.1007/s13755-025-00426-7,14,1,2026-1-13,2025-11-24,2025-12-27,33,article,1
+Healthcare utilization and chronic condition clusters in multimorbidity patients using weighted k-means: a register-based study in Denmark,10.1007/s13755-026-00427-0,14,1,2026-1-15,2025-08-04,2025-12-30,148,article,1
+HeteroMed: a heterogeneous graph knowledge-enhanced model for medication recommendation,10.1007/s13755-026-00430-5,14,1,2026-1-19,2025-11-18,2026-01-03,46,article,0
+Consistent explainable image quality assessment for medical imaging,10.1007/s13755-025-00411-0,14,1,2026-1-20,2024-11-14,2025-12-09,390,article,1
+Large language models and conditional rules in clinical decision support systems,10.1007/s13755-026-00428-z,14,1,2026-1-21,2025-03-30,2026-01-05,281,article,1
+Machine learning models for volume and weight estimation in breast reconstruction planning,10.1007/s13755-025-00408-9,14,1,2026-1-24,2025-09-11,2025-11-24,74,article,1
+Optimizing ED patient disposition predictions through clinical narratives with advanced pre-trained language models,10.1007/s13755-026-00431-4,14,1,2026-1-26,2025-03-29,2026-01-06,283,article,1
+Exploring the potential of large language models in healthcare: a focus on cardiovascular disease analysis,10.1007/s13755-026-00432-3,14,1,2026-1-31,2025-12-13,2026-01-10,28,article,1
+Pose2met: a unified spatiotemporal framework for 3D human pose estimation and energy expenditure estimation,10.1007/s13755-025-00422-x,14,1,2026-2-1,2025-05-02,2025-12-20,232,article,1
+A data fusion deep learning approach for accurate organelle-based classification of cancer cells,10.1007/s13755-025-00425-8,14,1,2026-2-6,2025-01-21,2025-12-24,337,article,1
+Big data in healthcare and medicine revisited: design and managerial challenges in the age of artificial intelligence,10.1007/s13755-026-00433-2,14,1,2026-2-6,2025-12-20,2026-01-21,32,article,1
+ACD2W-InceptionNeXt: adjacent class distinguished and class distance weighted InceptionNeXt-based computer-aided mayo endoscopic scoring system for still images and video segments,10.1007/s13755-026-00435-0,14,1,2026-2-15,2025-02-12,2026-02-06,359,article,1
+MedGAITS: a graph autoencoder network for modeling irregular time series data in electronic medical records,10.1007/s13755-026-00434-1,14,1,2026-2-16,2025-10-28,2026-02-01,96,article,1
+LDComKG: an LLM-powered dual-enhanced framework for community-aware knowledge graph completion in traditional Chinese medicine,10.1007/s13755-026-00429-y,14,1,2026-2-18,2025-07-23,2026-01-04,165,article,1
+Complex temporal network analysis based on the difference visibility graph for epilepsy with and without electrical status epilepticus during sleep (ESES) patients,10.1007/s13755-026-00436-z,14,1,2026-2-18,2025-04-24,2026-02-06,288,article,1
+An enhanced heart disease prediction model based on linear Diophantine fuzzy-integrated supervised machine learning,10.1007/s13755-026-00438-x,14,1,2026-2-24,2025-11-11,2026-02-08,89,article,1
+An augmented ECG data based classification for arrhythmia using optimal feature set,10.1007/s13755-026-00440-3,14,1,2026-3-1,2024-06-19,2026-02-17,608,article,1
+MSER: an emotion recognition method based on multi-signal information fusion,10.1007/s13755-026-00439-w,14,1,2026-3-5,2025-01-29,2026-02-12,379,article,1
+Prognostic value of stress hyperglycemia ratio in critically Ill patients with acute kidney injury: a machine learning-driven retrospective cohort analysis,10.1007/s13755-026-00443-0,14,1,2026-3-18,2025-11-09,2026-03-05,116,article,1
+RQA-based identification of emotions from electrocargiogram signals for emotion regulation in children with autism spectrum disorder,10.1007/s13755-026-00444-z,14,1,2026-3-19,2025-03-09,2026-03-10,366,article,1
+Enhancing explainability and performance of the depression detection model on social media utilizing feature engineering and LLMs,10.1007/s13755-026-00446-x,14,1,2026-3-23,2025-09-11,2026-03-11,181,article,1
+DALI-Syn: integrating chemical LLMs with multi-level attention architectures for synergistic drug combination prediction,10.1007/s13755-026-00441-2,14,1,2026-4-5,2025-08-26,2026-02-25,183,article,1
+ConsTCM: aligning fundus images with constitution differentiation in multimodal language model for Traditional Chinese Medicine,10.1007/s13755-026-00442-1,14,1,2026-4-6,2025-10-31,2026-03-02,122,article,1
+Enhancing LLM-based medical decision-making by test-time knowledge acquisition,10.1007/s13755-026-00449-8,14,1,2026-4-6,2025-11-08,2026-03-26,138,article,1
+UMEval: a unified framework for explainable medical term semantic evaluation with large language models,10.1007/s13755-026-00448-9,14,1,2026-4-7,2025-08-28,2026-03-26,210,article,1
+Detecting stress from videos via intra-subject and inter-subject learning,10.1007/s13755-026-00450-1,14,1,2026-4-7,2026-03-03,2026-03-28,25,article,1
+Parameter-efficient fine-tuning with layer pruning on medical sequence-to-sequence modeling,10.1007/s13755-026-00453-y,14,1,2026-4-10,2025-09-19,2026-04-03,196,article,1
+Multi-omics data integration for disease phenotype prediction using adversarial vision graph networks,10.1007/s13755-026-00445-y,14,1,2026-4-11,2025-07-09,2026-03-10,244,article,1
+ProsthetiX-AI: An LLM-based clinical decision support system for evidence-based prosthetic recommendations,10.1007/s13755-026-00454-x,14,1,2026-4-11,2025-05-29,2026-04-03,309,article,1
+PKFAR: psychiatry knowledge-fused augmented reasoning with large language models,10.1007/s13755-026-00447-w,14,1,2026-4-12,2025-07-30,2026-03-26,239,article,1
+PhenoRareAI: Phenotype-based intelligent diagnosis for rare neuromuscular disorders of glycogen storage disease and spinal muscular atrophy,10.1007/s13755-026-00455-w,14,1,2026-4-18,2025-11-25,2026-04-03,129,article,1
+An explainable hybrid deep-learning and machine learning framework for automatic coeliac disease detection from duodenal endoscopy images,10.1007/s13755-026-00457-8,14,1,2026-4-21,2025-11-09,2026-04-06,148,article,1
+Fine-grained evaluation of a domain-specific Q&amp;A dataset to support trustworthy medical language models,10.1007/s13755-026-00458-7,14,1,2026-4-24,2025-07-15,2026-04-11,270,article,1
+From EHR chaos to clinical clarity: enhancing foundational encoders with task-specific attention for domain-oriented representation learning in downstream clinical applications,10.1007/s13755-026-00452-z,14,1,2026-4-24,2025-04-17,2026-03-31,348,article,1
+A unsupervised data-driven characterization of cardiovascular disease by self-organizing maps (SOM) approach,10.1007/s13755-026-00459-6,14,1,2026-5-3,2025-02-27,2026-04-20,417,article,1
+Development and application of an intelligent management and home care system for geriatric diseases under the ‘Internet Plus’ model: big data-based risk prediction and personalized intervention,10.1007/s13755-026-00437-y,14,1,2026-5-5,2025-08-07,2026-02-08,185,article,1
+Construction and application of a traditional Chinese medicine syndrome differentiation and treatment model grounded in knowledge distillation and reinforcement learning,10.1007/s13755-026-00451-0,14,1,2026-5-13,2025-04-23,2026-03-28,339,article,1
+An ECG early prediction algorithm integrating autonomic imbalance and repolarization energospectral shift,10.1007/s13755-026-00460-z,14,1,2026-5-14,2026-01-27,2026-04-28,91,article,1
+Self-supervised fusion of clinical expertise and interpersonal skills for enhanced physician recommendation,10.1007/s13755-026-00461-y,14,1,2026-6-2,2025-03-31,2026-05-12,407,article,0
+PLETHSOMNet: automated identification of insomnia using deep neural network technique with photoplethysmography (PPG) signals,10.1007/s13755-026-00464-9,14,1,2026-6-9,2025-02-26,2026-05-27,455,article,1
+A noval 4D graph temporal brain network model for EEG-based depression detection,10.1007/s13755-026-00463-w,14,1,2026-6-11,2024-12-21,2026-05-20,515,article,1
+SPSGL: uncovering psychiatric network mechanisms via structural-prior guided synaptic graph learning,10.1007/s13755-026-00467-6,14,1,2026-6-21,2026-05-11,2026-06-11,31,article,1
+Multi-dimensional alignment framework with geometric intraoral constraints for precise occlusal registration,10.1007/s13755-026-00466-7,14,1,2026-6-30,2026-04-30,2026-06-10,41,article,1
+AutoBiGluNet: transformer-based time series modeling for blood glucose prediction in Type 1 diabetes patients,10.1007/s13755-026-00469-4,14,1,2026-7-1,2025-09-09,2026-06-17,281,article,1
+Hybridization of fuzzy logic based relevance vector and multi kernel image enhancement for Alzheimer′s disease diagnosis,10.1007/s13755-026-00465-8,14,1,2026-7-5,2025-04-26,2026-06-09,409,article,1
+A novel deep learning approach for privacy-preserving encoded EEG-based brain-computer interfaces with clinical LLM applications,10.1007/s13755-026-00470-x,14,1,2026-7-8,2025-05-24,2026-06-19,391,article,1
+BioRENLI: enhancing large language models for biomedical relation extraction through preference-aligned natural language inference,10.1007/s13755-026-00473-8,14,1,2026-7-13,2026-05-07,2026-06-30,54,article,1
+PCOS detection from ovarian ultrasound images using feature fusion and hybrid classification approaches,10.1007/s13755-026-00472-9,14,1,2026-7-16,2025-09-28,2026-06-26,271,article,1
+Detection of cardiac pathologies in electrocardiogram signals using empirical mode decomposition and neural networks,10.1007/s13755-026-00471-w,14,1,2026-7-16,2025-03-04,2026-06-26,479,article,1
+SpeechDETECT: an explainable automated speech processing pipeline for early detection of neurological and health changes,10.1007/s13755-026-00468-5,14,1,2026-7-24,2025-03-08,2026-06-17,466,article,1
+Mmf-re: psychological medicine entity relation extraction model based on multi-level feature enhancement,10.1007/s13755-026-00462-x,14,1,2026-8-1,2025-11-30,2026-05-14,165,article,1
+ToxicFreeMed: BERT-enhanced BPR algorithm for toxic-free medication recommendation,10.1007/s13755-026-00475-6,14,1,2026-8-1,2026-01-28,2026-07-21,174,article,0
+Dermel: a light weight meta-learning technique for skin disease diagnosis,10.1007/s13755-026-00474-7,14,1,2026-8-2,2024-04-09,2026-07-19,831,article,1
+Medrecord-CLIP: enhancing fundus disease diagnosis via EHR-guided vision-language pre-training,10.1007/s13755-026-00476-5,14,1,2026-8-21,2026-04-02,2026-08-10,130,article,1
+Surgfm-Slam: robust surgical scene reconstruction via 3D foundation adaptation model,10.1007/s13755-026-00478-3,14,1,2026-8-24,2026-05-21,2026-08-10,81,article,1
+Machine learning-ready genomic biomarkers: ATF3 polymorphisms predict postoperative analgesic demand through AI-compatible phenotyping,10.1007/s13755-026-00480-9,14,1,2026-9-2,2026-05-20,2026-08-17,89,article,1
+Hybrid quaternion-based denoising and deep feature fusion for early Alzheimer’s prognosis,10.1007/s13755-026-00481-8,14,1,2026-9-17,2025-06-19,2026-08-25,432,article,1
+Language-supervised electrocardiogram interpretation with vision transformer,10.1007/s13755-026-00482-7,14,1,2026-10-13,2026-07-31,2026-09-22,53,article,1
+Explainable AI for resource-aware intervention prioritization of digital burnout in healthcare workplaces,10.1007/s13755-026-00485-4,14,1,2026-10-15,2026-06-23,2026-10-01,100,article,1
+CoT-CC: chain-of-thought reasoning and contrastive correction for zero-shot medical relation extraction,10.1007/s13755-026-00479-2,14,1,2026-10-18,2026-05-06,2026-08-11,97,article,0
+Interpretable fundus image-based glaucoma classification using aCDR-guided vascular tortuosity analysis,10.1007/s13755-026-00484-5,14,1,2026-10-19,2026-07-04,2026-09-28,86,article,1
+RLAgent: retrieval-augmented LLM agents for code-free RNA region–ligand interaction modeling,10.1007/s13755-026-00483-6,14,1,2026-10-20,2025-11-30,2026-09-29,303,article,1
+Do specific cancer types show higher expression of depression and anxiety linked genes? A transparent computational study,10.1007/s13755-026-00486-3,14,1,2026-11-16,2026-06-17,2026-11-09,145,article,1
