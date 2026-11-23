@@ -90,9 +90,12 @@
   READY FOR SUBMISSION after author-only fields; label NOT REMARKABLE (honest strongest result), score 19/30.
   User choices: journal Ophthalmology and Therapy confirmed; code on request; no funding; no competing interests.
 
+- User said "it will get desk rejected, improvise more". Response: protocol Amendment A3 committed BEFORE running
+  (shuffle-calibrated thresholds SCT for D2/D6/D8/D9; confirmation rule; enlarged reference for training-free D1-D4).
+  Scripts: code/experiments/amendment_a3.py (-> results/a3_raw.csv.gz, ~15 min) and summarise_a3.py (-> a3_summary.json).
+
 ## NEXT ACTION (new session)
-Package is complete. Only remaining: user fills [AUTHORS ...] fields (names, affiliations, ORCID, address, CRediT,
-per-author COI sentence, confirm AI statement) in manuscript/manuscript_template.md, then rebuild:
-  cd Target_Journal_Submission/manuscript && python3 fill_values.py && python3 build_docx.py
-Optional improvements: STARD flow diagram, Fig. 2 label overlap, trim main text (~5,700 words), pre-submission
-enquiry to editor about scope.
+1. If results/a3_raw.csv.gz missing: cd code && python3 experiments/amendment_a3.py ; then python3 experiments/summarise_a3.py
+2. Rewrite manuscript around constructive message (SCT fix + confirmation + powered comparison of rule-based detectors),
+   trim to ~4,000-4,500 words, report A3 as post-review pre-specified amendment, whatever the results.
+3. Rebuild docx, update response_to_reviews.md / risk_report.md, commit.

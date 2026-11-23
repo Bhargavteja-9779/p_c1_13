@@ -1,0 +1,7 @@
+D2 MD-rate <= -1 dB/yr seed 0 UW/Artes done 4s
+D6 Pooled-detrended conformal region-max seed 0 UW/Artes done 10s
+D6 Pooled-detrended conformal region-max seed 1 UW/Artes done 16s
+D6 Pooled-detrended conformal region-max seed 2 UW/Artes done 21s
+D6 Pooled-detrended conformal region-max seed 3 UW/Artes done 27s
+D6 Pooled-detrended conformal region-max seed 4 UW/Artes done 33s
+D8 ML-tabular (LightGBM) seed 0 UW/Artes done 75s
