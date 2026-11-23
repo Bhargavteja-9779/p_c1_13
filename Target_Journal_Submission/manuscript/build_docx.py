@@ -31,7 +31,8 @@ def styled_doc():
     st.paragraph_format.space_after = Pt(6); st.paragraph_format.line_spacing = 2.0
     for name, size in (('Heading 1', 14), ('Heading 2', 12), ('Heading 3', 12), ('Title', 16)):
         h = d.styles[name]; h.font.name = 'Times New Roman'; h.font.size = Pt(size); h.font.bold = True
-        h.font.color.rgb = RGBColor(0, 0, 0); h.element.rPr.rFonts.set(qn('w:eastAsia'), 'Times New Roman')
+        h.font.color.rgb = RGBColor(0, 0, 0)
+        for att in ('w:ascii', 'w:hAnsi', 'w:eastAsia', 'w:cs'): h.element.rPr.rFonts.set(qn(att), 'Times New Roman')
         h.paragraph_format.space_before = Pt(12); h.paragraph_format.space_after = Pt(6); h.paragraph_format.keep_with_next = True
         if name == 'Heading 3': h.font.italic = True
     sec = d.sections[0]; sec.page_height, sec.page_width = Cm(29.7), Cm(21.0)
@@ -58,6 +59,9 @@ def add_markdown(d, md):
         if all(l.lstrip().startswith(('- ', '* ')) for l in lines):
             for l in lines:
                 p = d.add_paragraph(style='List Bullet'); add_runs(p, l.lstrip()[2:])
+        elif all(re.match(r'^\d+\. ', l) for l in lines):
+            for l in lines:
+                p = d.add_paragraph(); p.paragraph_format.line_spacing = 1.5; add_runs(p, l.strip())
         elif lines[0].startswith('|'):
             rows = [[c.strip() for c in l.strip().strip('|').split('|')] for l in lines if not re.match(r'^\|\s*-', l)]
             t = d.add_table(rows=len(rows), cols=len(rows[0])); t.style = 'Table Grid'

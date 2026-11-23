@@ -19,7 +19,7 @@ Citations are written with the numbers of code/scripts/build_refs.py (references
 in order of first appearance (Vancouver).
 Usage: python fill_values.py  -> manuscript_filled.md, cover_letter_filled.md, figure_legends.json,
        ../supplementary/Supplementary_Material.md, claim_check_log.txt"""
-import os, re, json
+import os, re, json, html
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(os.path.join(HERE, '..'))
 J = lambda *p: json.load(open(os.path.join(ROOT, *p)))
 M = J('results', 'metrics.json'); S = J('results', 'statistics.json'); DESC = J('results', 'descriptives.json')
@@ -166,7 +166,7 @@ def renumber(text):
             if n not in order: order.append(n)
     new = {o: i + 1 for i, o in enumerate(order)}
     text = CIT.sub(lambda mm: '[' + compress([new[n] for n in expand(mm.group(1))]) + ']', text)
-    refs = '\n'.join(f"{new[o]}. {REFS[o - 1]['vancouver']}" for o in order)
+    refs = '\n'.join(f"{new[o]}. {html.unescape(REFS[o - 1]['vancouver'])}" for o in order)
     assert all(REFS[o - 1]['verified'] for o in order)
     return text, refs, order
 
