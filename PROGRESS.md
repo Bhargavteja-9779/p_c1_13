@@ -77,7 +77,13 @@
   (pre-registered real-world measures: false flags/1,000, tests to first detection; bootstrap CI for RQ3 rho 0.35-0.85).
   Note: D5 flags identical to D1 on E1 at every k (conformal pool reproduces the t-test) - report honestly.
   H2 note: D8 k=6 sens 70.8 vs D1 57.7 (+11.5 pp, Holm p=1.0, FPR 3.6% valid) -> not significant; H2 not falsified.
-## NEXT ACTION (new session)
-Skip steps 1-3 above unless re-running is needed (results are committed). Start at step 4: write Results/Discussion/
-Abstract/KSP from metrics.json + statistics.json via a fill script, then build docx, audits, reviews, cover letter,
-risk report. Previous list of steps 4-6 still applies (see git history of this file for data-restore commands).
+- Step 4 DONE (session 3): manuscript/template_main.md + template_cover_letter.md + template_figure_legends.json +
+  template_supplementary.md -> fill_values.py (resolver placeholders, 42 claim checks, Vancouver renumbering) ->
+  manuscript_filled.md, cover_letter_filled.md, figure_legends.json, supplementary/Supplementary_Material.md,
+  claim_check_log.txt -> build_docx.py -> Final_Manuscript.docx/.pdf (27 pp), cover_letter.docx/.pdf.
+  Abstract 283 words; main text ~3,500 words; 34 refs. TRIPOD+AI DOI fixed (bmj-2023-078378).
+  Author names/affiliations/funding/COI/repo URL left as [TO BE COMPLETED BY THE AUTHORS] (cannot be fabricated).
+## NEXT ACTION
+Step 5: REVIEW/ (10 adversarial reviews + stakeholder review by an independent agent), claim-evidence audit,
+citation audit, consistency + reproducibility audit, fix issues (edit templates, re-run fill_values.py + build_docx.py
++ soffice --headless --convert-to pdf), then risk_report.md and final decision. Step 6 user requests remain open.
