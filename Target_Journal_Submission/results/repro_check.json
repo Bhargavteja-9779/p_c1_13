@@ -1,0 +1,14 @@
+{
+ "D1 OLS-MD": {
+  "n": 336,
+  "agree": 336
+ },
+ "D2 MD-rate <= -1 dB/yr": {
+  "n": 336,
+  "agree": 336
+ },
+ "D3 PLR >=3 points": {
+  "n": 336,
+  "agree": 336
+ }
+}

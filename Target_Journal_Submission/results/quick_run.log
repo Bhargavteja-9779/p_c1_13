@@ -1,0 +1,22 @@
+D1 OLS-MD seed 0 done 6s
+D1 OLS-MD GRAPE done 6s
+D2 MD-rate <= -1 dB/yr seed 0 done 6s
+D2 MD-rate <= -1 dB/yr GRAPE done 6s
+D3 PLR >=3 points seed 0 done 6s
+D3 PLR >=3 points GRAPE done 6s
+D4 PoPLR (within-eye permutation) seed 0 done 6s
+D4 PoPLR (within-eye permutation) GRAPE done 6s
+D5 Pooled-shuffle conformal MD seed 0 done 6s
+D5 Pooled-shuffle conformal MD GRAPE done 6s
+D6 Pooled-detrended conformal region-max seed 0 done 7s
+D7 Event analysis (GPA-like) seed 0 done 7s
+D7 Event analysis (GPA-like) GRAPE done 7s
+D8 ML-tabular (LightGBM) seed 0 done 9s
+D8 ML-tabular (LightGBM) GRAPE done 12s
+D9 ML-sequence (GRU) seed 0 done 17s
+D10 Self-supervised order net + permutation seed 0 done 19s
+{"mode": "quick", "ks": [4], "seeds": [0], "n_train": 441, "n_val": 313, "n_test": 314, "n_test_ref": 29, "n_test_prog": 13, "n_test_stable": 16, "n_artes": 30, "n_grape": 263, "runtime_s": 18.791516542434692}
+
+real	0m20.738s
+user	0m36.063s
+sys	0m1.171s
