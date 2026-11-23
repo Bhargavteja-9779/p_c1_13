@@ -93,8 +93,12 @@ Rebuild anytime: cd Target_Journal_Submission/manuscript && python3 fill_values.
 2. 10 adversarial reviews + stakeholder review in REVIEW/ (review_01..10.md, review_stakeholder.md); fix issues.
 3. risk_report.md, final decision (expected NOT REMARKABLE: honest strongest result), show user final package.
 4. Open user requests: JCR quartile check, APC USD 8,050 OK?, author details.
+   USER CONFIRMED journal Ophthalmology and Therapy (2026-11-23; APC/quartile risk explained).
    USER DECIDED (2026-11-23): code available on request (no public repo); no funding; no competing interests -> applied.
-5. Reviews 09/10/stakeholder done; 01-08 running/ done? (check REVIEW/). Fixes planned: KSP/abstract 'two detectors that
+5. DONE so far: summarise.py fixes (patient-clustered paired CI, exact CI if degenerate, Holm across k, rho CI, audit
+   classification) + code/src/statistics/posthoc.py -> results/posthoc.json (P1-P5, labelled POST HOC). Reviews 01-04,09,10,
+   stakeholder in REVIEW/. NEXT: revise manuscript_template.md per reviews (list below + review_05-08 when done).
+   Reviews 09/10/stakeholder done; 01-08 running/ done? (check REVIEW/). Fixes planned: KSP/abstract 'two detectors that
    flagged the most' is wrong (D2 38% valid); soften 'strong default'; power/MDE statement; post-hoc reference using only
    fields after k; cumulative false flags across k=3-6 (E2 same pid|i|d); PPV at GRAPE prevalence; GRAPE circular for D1;
    D6 Artes FPR known from development (not held-out); shuffle audit rho<0.7; plain-language summary; patient message.
