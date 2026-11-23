@@ -1,5 +1,5 @@
 """Artes et al. 2014 short-term retest data: 30 glaucoma patients x 12 weekly 24-2 fields (Halifax).
-Distributed in the visualFields R package (data/vfpwgRetest24d2.rda, GPL-3)."""
+Distributed in the visualFields R package (data/vfpwgRetest24d2.rda; package licence Apache-2.0)."""
 import os, numpy as np
 RDA = os.environ.get('ARTES_RDA', '/home/user/p_c1_13/data_raw/ext/visualFields/data/vfpwgRetest24d2.rda')
 

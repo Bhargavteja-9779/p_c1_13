@@ -51,16 +51,17 @@
   "year": 2012,
   "venue": "Invest. Ophthalmol. Vis. Sci.",
   "type": "journal-article",
-  "vancouver": "O'Leary N, Chauhan BC, Artes PH. Visual Field Progression in Glaucoma: Estimating the Overall Significance of Deterioration with Permutation Analyses of Pointwise Linear Regression (PoPLR). Invest. Ophthalmol. Vis. Sci.. 2012;53(11):6776. https://doi.org/10.1167/iovs.12-10049"
+  "vancouver": "O'Leary N, Chauhan BC, Artes PH. Visual Field Progression in Glaucoma: Estimating the Overall Significance of Deterioration with Permutation Analyses of Pointwise Linear Regression (PoPLR). Invest. Ophthalmol. Vis. Sci. 2012;53(11):6776. https://doi.org/10.1167/iovs.12-10049"
  },
  {
   "doi": "10.1016/j.ophtha.2014.04.015",
   "verified": true,
-  "title": "Visual Field Progression in Glaucoma",
+  "title": "Visual Field Progression in Glaucoma: What Is the Specificity of the Guided Progression Analysis?",
   "year": 2014,
   "venue": "Ophthalmology",
   "type": "journal-article",
-  "vancouver": "Artes PH, O'Leary N, Nicolela MT, Chauhan BC, Crabb DP. Visual Field Progression in Glaucoma. Ophthalmology. 2014;121(10):2023-2027. https://doi.org/10.1016/j.ophtha.2014.04.015"
+  "vancouver": "Artes PH, O'Leary N, Nicolela MT, Chauhan BC, Crabb DP. Visual Field Progression in Glaucoma: What Is the Specificity of the Guided Progression Analysis?. Ophthalmology. 2014;121(10):2023-2027. https://doi.org/10.1016/j.ophtha.2014.04.015",
+  "note": "Crossref title lacks subtitle; full title taken from visualFields 1.0.7 documentation (man/vfpwgRetest24d2.Rd)."
  },
  {
   "doi": "10.1016/j.ophtha.2014.01.020",
@@ -78,7 +79,7 @@
   "year": 2015,
   "venue": "Invest. Ophthalmol. Vis. Sci.",
   "type": "journal-article",
-  "vancouver": "Zhu H, Crabb DP, Ho T, Garway-Heath DF. More Accurate Modeling of Visual Field Progression in Glaucoma: ANSWERS. Invest. Ophthalmol. Vis. Sci.. 2015;56(10):6077. https://doi.org/10.1167/iovs.15-16957"
+  "vancouver": "Zhu H, Crabb DP, Ho T, Garway-Heath DF. More Accurate Modeling of Visual Field Progression in Glaucoma: ANSWERS. Invest. Ophthalmol. Vis. Sci. 2015;56(10):6077. https://doi.org/10.1167/iovs.15-16957"
  },
  {
   "doi": "10.1167/tvst.10.14.13",
@@ -87,7 +88,7 @@
   "year": 2021,
   "venue": "Trans. Vis. Sci. Tech.",
   "type": "journal-article",
-  "vancouver": "Mar\u00edn-Franch I, Artes PH, Turpin A, Racette L. Visual Field Progression in Glaucoma: Comparison Between PoPLR and ANSWERS. Trans. Vis. Sci. Tech.. 2021;10(14):13. https://doi.org/10.1167/tvst.10.14.13"
+  "vancouver": "Mar\u00edn-Franch I, Artes PH, Turpin A, Racette L. Visual Field Progression in Glaucoma: Comparison Between PoPLR and ANSWERS. Trans. Vis. Sci. Tech. 2021;10(14):13. https://doi.org/10.1167/tvst.10.14.13"
  },
  {
   "doi": "10.1167/tvst.7.4.20",
@@ -96,7 +97,7 @@
   "year": 2018,
   "venue": "Trans. Vis. Sci. Tech.",
   "type": "journal-article",
-  "vancouver": "Wu Z, Medeiros FA. Comparison of Visual Field Point-Wise Event-Based and Global Trend-Based Analysis for Detecting Glaucomatous Progression. Trans. Vis. Sci. Tech.. 2018;7(4):20. https://doi.org/10.1167/tvst.7.4.20"
+  "vancouver": "Wu Z, Medeiros FA. Comparison of Visual Field Point-Wise Event-Based and Global Trend-Based Analysis for Detecting Glaucomatous Progression. Trans. Vis. Sci. Tech. 2018;7(4):20. https://doi.org/10.1167/tvst.7.4.20"
  },
  {
   "doi": "10.1016/j.ajo.2007.09.038",
@@ -123,7 +124,7 @@
   "year": 2022,
   "venue": "Trans. Vis. Sci. Tech.",
   "type": "journal-article",
-  "vancouver": "Montesano G, Chen A, Lu R, Lee CS, Lee AY. UWHVF: A Real-World, Open Source Dataset of Perimetry Tests From the Humphrey Field Analyzer at the University of Washington. Trans. Vis. Sci. Tech.. 2022;11(1):2. https://doi.org/10.1167/tvst.11.1.1"
+  "vancouver": "Montesano G, Chen A, Lu R, Lee CS, Lee AY. UWHVF: A Real-World, Open Source Dataset of Perimetry Tests From the Humphrey Field Analyzer at the University of Washington. Trans. Vis. Sci. Tech. 2022;11(1):2. https://doi.org/10.1167/tvst.11.1.1"
  },
  {
   "doi": "10.1038/s41597-023-02424-4",
@@ -141,7 +142,7 @@
   "year": 2021,
   "venue": "Trans. Vis. Sci. Tech.",
   "type": "journal-article",
-  "vancouver": "Saeedi O, Boland MV, D'Acunto L, Swamy R, Hegde V, Gupta S, et al. Development and Comparison of Machine Learning Algorithms to Determine Visual Field Progression. Trans. Vis. Sci. Tech.. 2021;10(7):27. https://doi.org/10.1167/tvst.10.7.27"
+  "vancouver": "Saeedi O, Boland MV, D'Acunto L, Swamy R, Hegde V, Gupta S, et al. Development and Comparison of Machine Learning Algorithms to Determine Visual Field Progression. Trans. Vis. Sci. Tech. 2021;10(7):27. https://doi.org/10.1167/tvst.10.7.27"
  },
  {
   "doi": "10.1016/j.ophtha.2020.12.020",
@@ -159,7 +160,7 @@
   "year": 2019,
   "venue": "Invest. Ophthalmol. Vis. Sci.",
   "type": "journal-article",
-  "vancouver": "Wang M, Shen LQ, Pasquale LR, Petrakos P, Formica S, Boland MV, et al. An Artificial Intelligence Approach to Detect Visual Field Progression in Glaucoma Based on Spatial Pattern Analysis. Invest. Ophthalmol. Vis. Sci.. 2019;60(1):365. https://doi.org/10.1167/iovs.18-25568"
+  "vancouver": "Wang M, Shen LQ, Pasquale LR, Petrakos P, Formica S, Boland MV, et al. An Artificial Intelligence Approach to Detect Visual Field Progression in Glaucoma Based on Spatial Pattern Analysis. Invest. Ophthalmol. Vis. Sci. 2019;60(1):365. https://doi.org/10.1167/iovs.18-25568"
  },
  {
   "doi": "10.1371/journal.pone.0214875",
@@ -186,7 +187,7 @@
   "year": 2016,
   "venue": "Trans. Vis. Sci. Tech.",
   "type": "journal-article",
-  "vancouver": "Yousefi S, Balasubramanian M, Goldbaum MH, Medeiros FA, Zangwill LM, Weinreb RN, et al. Unsupervised Gaussian Mixture-Model With Expectation Maximization for Detecting Glaucomatous Progression in Standard Automated Perimetry Visual Fields. Trans. Vis. Sci. Tech.. 2016;5(3):2. https://doi.org/10.1167/tvst.5.3.2"
+  "vancouver": "Yousefi S, Balasubramanian M, Goldbaum MH, Medeiros FA, Zangwill LM, Weinreb RN, et al. Unsupervised Gaussian Mixture-Model With Expectation Maximization for Detecting Glaucomatous Progression in Standard Automated Perimetry Visual Fields. Trans. Vis. Sci. Tech. 2016;5(3):2. https://doi.org/10.1167/tvst.5.3.2"
  },
  {
   "doi": "10.1371/journal.pone.0357179",
@@ -231,7 +232,7 @@
   "year": 2012,
   "venue": "Invest. Ophthalmol. Vis. Sci.",
   "type": "journal-article",
-  "vancouver": "Crabb DP, Garway-Heath DF. Intervals between Visual Field Tests When Monitoring the Glaucomatous Patient: Wait-and-See Approach. Invest. Ophthalmol. Vis. Sci.. 2012;53(6):2770. https://doi.org/10.1167/iovs.12-9476"
+  "vancouver": "Crabb DP, Garway-Heath DF. Intervals between Visual Field Tests When Monitoring the Glaucomatous Patient: Wait-and-See Approach. Invest. Ophthalmol. Vis. Sci. 2012;53(6):2770. https://doi.org/10.1167/iovs.12-9476"
  },
  {
   "doi": "10.1016/j.ogla.2025.11.004",
@@ -249,7 +250,7 @@
   "year": 2021,
   "venue": "Trans. Vis. Sci. Tech.",
   "type": "journal-article",
-  "vancouver": "Phu J, Kalloniatis M. The Frontloading Fields Study (FFS): Detecting Changes in Mean Deviation in Glaucoma Using Multiple Visual Field Tests Per Clinical Visit. Trans. Vis. Sci. Tech.. 2021;10(13):21. https://doi.org/10.1167/tvst.10.13.21"
+  "vancouver": "Phu J, Kalloniatis M. The Frontloading Fields Study (FFS): Detecting Changes in Mean Deviation in Glaucoma Using Multiple Visual Field Tests Per Clinical Visit. Trans. Vis. Sci. Tech. 2021;10(13):21. https://doi.org/10.1167/tvst.10.13.21"
  },
  {
   "doi": "10.2202/1544-6115.1585",
@@ -267,7 +268,7 @@
   "year": 1983,
   "venue": "Journal of Business &amp; Economic Statistics",
   "type": "journal-article",
-  "vancouver": "Freedman D, Lane D. A Nonstochastic Interpretation of Reported Significance Levels. Journal of Business &amp; Economic Statistics. 1983;1(4):292-298. https://doi.org/10.1080/07350015.1983.10509354"
+  "vancouver": "Freedman D, Lane D. A Nonstochastic Interpretation of Reported Significance Levels. Journal of Business & Economic Statistics. 1983;1(4):292-298. https://doi.org/10.1080/07350015.1983.10509354"
  },
  {
   "doi": "10.1561/2200000101",
@@ -294,7 +295,7 @@
   "year": 2019,
   "venue": "Ann. Appl. Stat.",
   "type": "journal-article",
-  "vancouver": "Gagnon-Bartsch J, Shem-Tov Y. The classification permutation test: A flexible approach to testing for covariate imbalance in observational studies. Ann. Appl. Stat.. 2019;13(3):1464-1483. https://doi.org/10.1214/19-aoas1241"
+  "vancouver": "Gagnon-Bartsch J, Shem-Tov Y. The classification permutation test: A flexible approach to testing for covariate imbalance in observational studies. Ann. Appl. Stat. 2019;13(3):1464-1483. https://doi.org/10.1214/19-aoas1241"
  },
  {
   "doi": "10.1016/j.ophtha.2014.02.021",
@@ -312,7 +313,7 @@
   "year": 2021,
   "venue": "Trans. Vis. Sci. Tech.",
   "type": "journal-article",
-  "vancouver": "Montesano G, Garway-Heath DF, Ometto G, Crabb DP. Hierarchical Censored Bayesian Analysis of Visual Field Progression. Trans. Vis. Sci. Tech.. 2021;10(12):4. https://doi.org/10.1167/tvst.10.12.4"
+  "vancouver": "Montesano G, Garway-Heath DF, Ometto G, Crabb DP. Hierarchical Censored Bayesian Analysis of Visual Field Progression. Trans. Vis. Sci. Tech. 2021;10(12):4. https://doi.org/10.1167/tvst.10.12.4"
  },
  {
   "doi": "10.1016/j.xops.2023.100423",
