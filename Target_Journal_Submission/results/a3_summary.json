@@ -1,0 +1,2204 @@
+{
+ "A3a_sct": [
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 3,
+   "sens": 0.0384615385,
+   "sens_lo": 0.0,
+   "sens_hi": 0.125,
+   "sens_n": 26,
+   "sens_seed_range": [
+    0.0384615385,
+    0.0384615385
+   ],
+   "spec": 0.9615384615,
+   "spec_lo": 0.8695652174,
+   "spec_hi": 1.0,
+   "spec_n": 26,
+   "spec_seed_range": [
+    0.0384615385,
+    0.0384615385
+   ],
+   "fpr_true_null": 0.0033333333,
+   "fpr_true_null_lo": 0.0013333333,
+   "fpr_true_null_hi": 0.0056666667,
+   "fpr_true_null_n": 3000,
+   "fpr_true_null_seed_range": [
+    0.0033333333,
+    0.0033333333
+   ],
+   "grape_sens": 0.1851851852,
+   "grape_sens_lo": 0.0384615385,
+   "grape_sens_hi": 0.3333333333,
+   "grape_sens_n": 27.0,
+   "grape_sens_seed_range": [
+    0.1851851852,
+    0.1851851852
+   ],
+   "grape_spec": 0.9533898305,
+   "grape_spec_lo": 0.9257641921,
+   "grape_spec_hi": 0.9786324786,
+   "grape_spec_n": 236.0,
+   "grape_spec_seed_range": [
+    0.0466101695,
+    0.0466101695
+   ],
+   "valid": true,
+   "excess": false
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 4,
+   "sens": 0.1153846154,
+   "sens_lo": 0.0,
+   "sens_hi": 0.24,
+   "sens_n": 26,
+   "sens_seed_range": [
+    0.1153846154,
+    0.1153846154
+   ],
+   "spec": 1.0,
+   "spec_lo": 0.8677253955,
+   "spec_hi": 1.0,
+   "spec_n": 26,
+   "spec_seed_range": [
+    0.0,
+    0.0
+   ],
+   "fpr_true_null": 0.0048148148,
+   "fpr_true_null_lo": 0.0022222222,
+   "fpr_true_null_hi": 0.0081481481,
+   "fpr_true_null_n": 2700,
+   "fpr_true_null_seed_range": [
+    0.0048148148,
+    0.0048148148
+   ],
+   "grape_sens": 0.1666666667,
+   "grape_sens_lo": 0.0,
+   "grape_sens_hi": 0.3333333333,
+   "grape_sens_n": 18.0,
+   "grape_sens_seed_range": [
+    0.1666666667,
+    0.1666666667
+   ],
+   "grape_spec": 0.9379310345,
+   "grape_spec_lo": 0.8943661972,
+   "grape_spec_hi": 0.9727937121,
+   "grape_spec_n": 145.0,
+   "grape_spec_seed_range": [
+    0.0620689655,
+    0.0620689655
+   ],
+   "valid": true,
+   "excess": false
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 5,
+   "sens": 0.1923076923,
+   "sens_lo": 0.0740740741,
+   "sens_hi": 0.3448275862,
+   "sens_n": 26,
+   "sens_seed_range": [
+    0.1923076923,
+    0.1923076923
+   ],
+   "spec": 1.0,
+   "spec_lo": 0.8677253955,
+   "spec_hi": 1.0,
+   "spec_n": 26,
+   "spec_seed_range": [
+    0.0,
+    0.0
+   ],
+   "fpr_true_null": 0.0066666667,
+   "fpr_true_null_lo": 0.0033333333,
+   "fpr_true_null_hi": 0.0108333333,
+   "fpr_true_null_n": 2400,
+   "fpr_true_null_seed_range": [
+    0.0066666667,
+    0.0066666667
+   ],
+   "grape_sens": null,
+   "grape_sens_lo": null,
+   "grape_sens_hi": null,
+   "grape_sens_n": null,
+   "grape_sens_seed_range": null,
+   "grape_spec": null,
+   "grape_spec_lo": null,
+   "grape_spec_hi": null,
+   "grape_spec_n": null,
+   "grape_spec_seed_range": null,
+   "valid": true,
+   "excess": false
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 6,
+   "sens": 0.3076923077,
+   "sens_lo": 0.12,
+   "sens_hi": 0.5,
+   "sens_n": 26,
+   "sens_seed_range": [
+    0.3076923077,
+    0.3076923077
+   ],
+   "spec": 1.0,
+   "spec_lo": 0.8677253955,
+   "spec_hi": 1.0,
+   "spec_n": 26,
+   "spec_seed_range": [
+    0.0,
+    0.0
+   ],
+   "fpr_true_null": 0.0071428571,
+   "fpr_true_null_lo": 0.0028571429,
+   "fpr_true_null_hi": 0.0123809524,
+   "fpr_true_null_n": 2100,
+   "fpr_true_null_seed_range": [
+    0.0071428571,
+    0.0071428571
+   ],
+   "grape_sens": null,
+   "grape_sens_lo": null,
+   "grape_sens_hi": null,
+   "grape_sens_n": null,
+   "grape_sens_seed_range": null,
+   "grape_spec": null,
+   "grape_spec_lo": null,
+   "grape_spec_hi": null,
+   "grape_spec_n": null,
+   "grape_spec_seed_range": null,
+   "valid": true,
+   "excess": false
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 3,
+   "sens": 0.1461538462,
+   "sens_lo": 0.0333333333,
+   "sens_hi": 0.272,
+   "sens_n": 26,
+   "sens_seed_range": [
+    0.1153846154,
+    0.1538461538
+   ],
+   "spec": 0.9615384615,
+   "spec_lo": 0.8695652174,
+   "spec_hi": 1.0,
+   "spec_n": 26,
+   "spec_seed_range": [
+    0.0384615385,
+    0.0384615385
+   ],
+   "fpr_true_null": 0.0472,
+   "fpr_true_null_lo": 0.0367983333,
+   "fpr_true_null_hi": 0.0594116667,
+   "fpr_true_null_n": 3000,
+   "fpr_true_null_seed_range": [
+    0.04,
+    0.0543333333
+   ],
+   "grape_sens": null,
+   "grape_sens_lo": null,
+   "grape_sens_hi": null,
+   "grape_sens_n": null,
+   "grape_sens_seed_range": null,
+   "grape_spec": null,
+   "grape_spec_lo": null,
+   "grape_spec_hi": null,
+   "grape_spec_n": null,
+   "grape_spec_seed_range": null,
+   "valid": true,
+   "excess": false
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 4,
+   "sens": 0.2615384615,
+   "sens_lo": 0.1070568783,
+   "sens_hi": 0.4416666667,
+   "sens_n": 26,
+   "sens_seed_range": [
+    0.2307692308,
+    0.2692307692
+   ],
+   "spec": 1.0,
+   "spec_lo": 0.8677253955,
+   "spec_hi": 1.0,
+   "spec_n": 26,
+   "spec_seed_range": [
+    0.0,
+    0.0
+   ],
+   "fpr_true_null": 0.0548148148,
+   "fpr_true_null_lo": 0.0376296296,
+   "fpr_true_null_hi": 0.0765925926,
+   "fpr_true_null_n": 2700,
+   "fpr_true_null_seed_range": [
+    0.0503703704,
+    0.0596296296
+   ],
+   "grape_sens": null,
+   "grape_sens_lo": null,
+   "grape_sens_hi": null,
+   "grape_sens_n": null,
+   "grape_sens_seed_range": null,
+   "grape_spec": null,
+   "grape_spec_lo": null,
+   "grape_spec_hi": null,
+   "grape_spec_n": null,
+   "grape_spec_seed_range": null,
+   "valid": true,
+   "excess": false
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 5,
+   "sens": 0.3153846154,
+   "sens_lo": 0.16,
+   "sens_hi": 0.4847,
+   "sens_n": 26,
+   "sens_seed_range": [
+    0.3076923077,
+    0.3461538462
+   ],
+   "spec": 1.0,
+   "spec_lo": 0.8677253955,
+   "spec_hi": 1.0,
+   "spec_n": 26,
+   "spec_seed_range": [
+    0.0,
+    0.0
+   ],
+   "fpr_true_null": 0.0614166667,
+   "fpr_true_null_lo": 0.0364979167,
+   "fpr_true_null_hi": 0.0893333333,
+   "fpr_true_null_n": 2400,
+   "fpr_true_null_seed_range": [
+    0.0566666667,
+    0.07
+   ],
+   "grape_sens": null,
+   "grape_sens_lo": null,
+   "grape_sens_hi": null,
+   "grape_sens_n": null,
+   "grape_sens_seed_range": null,
+   "grape_spec": null,
+   "grape_spec_lo": null,
+   "grape_spec_hi": null,
+   "grape_spec_n": null,
+   "grape_spec_seed_range": null,
+   "valid": true,
+   "excess": false
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 6,
+   "sens": 0.5384615385,
+   "sens_lo": 0.3703703704,
+   "sens_hi": 0.7142857143,
+   "sens_n": 26,
+   "sens_seed_range": [
+    0.5384615385,
+    0.5384615385
+   ],
+   "spec": 1.0,
+   "spec_lo": 0.8677253955,
+   "spec_hi": 1.0,
+   "spec_n": 26,
+   "spec_seed_range": [
+    0.0,
+    0.0
+   ],
+   "fpr_true_null": 0.0766666667,
+   "fpr_true_null_lo": 0.0462857143,
+   "fpr_true_null_hi": 0.11,
+   "fpr_true_null_n": 2100,
+   "fpr_true_null_seed_range": [
+    0.0719047619,
+    0.0833333333
+   ],
+   "grape_sens": null,
+   "grape_sens_lo": null,
+   "grape_sens_hi": null,
+   "grape_sens_n": null,
+   "grape_sens_seed_range": null,
+   "grape_spec": null,
+   "grape_spec_lo": null,
+   "grape_spec_hi": null,
+   "grape_spec_n": null,
+   "grape_spec_seed_range": null,
+   "valid": false,
+   "excess": false
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 3,
+   "sens": 0.1538461538,
+   "sens_lo": 0.0416594828,
+   "sens_hi": 0.296,
+   "sens_n": 26,
+   "sens_seed_range": [
+    0.1153846154,
+    0.1923076923
+   ],
+   "spec": 1.0,
+   "spec_lo": 0.8677253955,
+   "spec_hi": 1.0,
+   "spec_n": 26,
+   "spec_seed_range": [
+    0.0,
+    0.0
+   ],
+   "fpr_true_null": 0.0660666667,
+   "fpr_true_null_lo": 0.0468,
+   "fpr_true_null_hi": 0.088935,
+   "fpr_true_null_n": 3000,
+   "fpr_true_null_seed_range": [
+    0.0556666667,
+    0.0763333333
+   ],
+   "grape_sens": 0.1037037037,
+   "grape_sens_lo": 0.0,
+   "grape_sens_hi": 0.2232142857,
+   "grape_sens_n": 27.0,
+   "grape_sens_seed_range": [
+    0.0740740741,
+    0.1111111111
+   ],
+   "grape_spec": 0.9491525424,
+   "grape_spec_lo": 0.9224078416,
+   "grape_spec_hi": 0.9727677962,
+   "grape_spec_n": 236.0,
+   "grape_spec_seed_range": [
+    0.0466101695,
+    0.0550847458
+   ],
+   "valid": true,
+   "excess": false
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 4,
+   "sens": 0.3307692308,
+   "sens_lo": 0.1555128205,
+   "sens_hi": 0.5076923077,
+   "sens_n": 26,
+   "sens_seed_range": [
+    0.2692307692,
+    0.4230769231
+   ],
+   "spec": 1.0,
+   "spec_lo": 0.8677253955,
+   "spec_hi": 1.0,
+   "spec_n": 26,
+   "spec_seed_range": [
+    0.0,
+    0.0
+   ],
+   "fpr_true_null": 0.0620740741,
+   "fpr_true_null_lo": 0.0378481481,
+   "fpr_true_null_hi": 0.0897055556,
+   "fpr_true_null_n": 2700,
+   "fpr_true_null_seed_range": [
+    0.0507407407,
+    0.0703703704
+   ],
+   "grape_sens": 0.1333333333,
+   "grape_sens_lo": 0.0222222222,
+   "grape_sens_hi": 0.2888888889,
+   "grape_sens_n": 18.0,
+   "grape_sens_seed_range": [
+    0.0555555556,
+    0.1666666667
+   ],
+   "grape_spec": 0.9034482759,
+   "grape_spec_lo": 0.8503594607,
+   "grape_spec_hi": 0.9496688742,
+   "grape_spec_n": 145.0,
+   "grape_spec_seed_range": [
+    0.0827586207,
+    0.1034482759
+   ],
+   "valid": true,
+   "excess": false
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 5,
+   "sens": 0.3615384615,
+   "sens_lo": 0.2065,
+   "sens_hi": 0.5153846154,
+   "sens_n": 26,
+   "sens_seed_range": [
+    0.2692307692,
+    0.4230769231
+   ],
+   "spec": 1.0,
+   "spec_lo": 0.8677253955,
+   "spec_hi": 1.0,
+   "spec_n": 26,
+   "spec_seed_range": [
+    0.0,
+    0.0
+   ],
+   "fpr_true_null": 0.0558333333,
+   "fpr_true_null_lo": 0.02908125,
+   "fpr_true_null_hi": 0.08591875,
+   "fpr_true_null_n": 2400,
+   "fpr_true_null_seed_range": [
+    0.0525,
+    0.0608333333
+   ],
+   "grape_sens": null,
+   "grape_sens_lo": null,
+   "grape_sens_hi": null,
+   "grape_sens_n": null,
+   "grape_sens_seed_range": null,
+   "grape_spec": null,
+   "grape_spec_lo": null,
+   "grape_spec_hi": null,
+   "grape_spec_n": null,
+   "grape_spec_seed_range": null,
+   "valid": true,
+   "excess": false
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 6,
+   "sens": 0.6384615385,
+   "sens_lo": 0.4416594828,
+   "sens_hi": 0.824025,
+   "sens_n": 26,
+   "sens_seed_range": [
+    0.5769230769,
+    0.6538461538
+   ],
+   "spec": 1.0,
+   "spec_lo": 0.8677253955,
+   "spec_hi": 1.0,
+   "spec_n": 26,
+   "spec_seed_range": [
+    0.0,
+    0.0
+   ],
+   "fpr_true_null": 0.0222857143,
+   "fpr_true_null_lo": 0.006952381,
+   "fpr_true_null_hi": 0.0416238095,
+   "fpr_true_null_n": 2100,
+   "fpr_true_null_seed_range": [
+    0.0176190476,
+    0.0257142857
+   ],
+   "grape_sens": null,
+   "grape_sens_lo": null,
+   "grape_sens_hi": null,
+   "grape_sens_n": null,
+   "grape_sens_seed_range": null,
+   "grape_spec": null,
+   "grape_spec_lo": null,
+   "grape_spec_hi": null,
+   "grape_spec_n": null,
+   "grape_spec_seed_range": null,
+   "valid": true,
+   "excess": false
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 3,
+   "sens": 0.1076923077,
+   "sens_lo": 0.0214285714,
+   "sens_hi": 0.2230769231,
+   "sens_n": 26,
+   "sens_seed_range": [
+    0.0384615385,
+    0.1538461538
+   ],
+   "spec": 0.9846153846,
+   "spec_lo": 0.952,
+   "spec_hi": 1.0,
+   "spec_n": 26,
+   "spec_seed_range": [
+    0.0,
+    0.0769230769
+   ],
+   "fpr_true_null": 0.0418666667,
+   "fpr_true_null_lo": 0.014665,
+   "fpr_true_null_hi": 0.0746016667,
+   "fpr_true_null_n": 3000,
+   "fpr_true_null_seed_range": [
+    0.022,
+    0.0646666667
+   ],
+   "grape_sens": null,
+   "grape_sens_lo": null,
+   "grape_sens_hi": null,
+   "grape_sens_n": null,
+   "grape_sens_seed_range": null,
+   "grape_spec": null,
+   "grape_spec_lo": null,
+   "grape_spec_hi": null,
+   "grape_spec_n": null,
+   "grape_spec_seed_range": null,
+   "valid": true,
+   "excess": false
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 4,
+   "sens": 0.1153846154,
+   "sens_lo": 0.0413448276,
+   "sens_hi": 0.2076923077,
+   "sens_n": 26,
+   "sens_seed_range": [
+    0.0769230769,
+    0.1923076923
+   ],
+   "spec": 0.9846153846,
+   "spec_lo": 0.952,
+   "spec_hi": 1.0,
+   "spec_n": 26,
+   "spec_seed_range": [
+    0.0,
+    0.0384615385
+   ],
+   "fpr_true_null": 0.022,
+   "fpr_true_null_lo": 0.0085166667,
+   "fpr_true_null_hi": 0.0382222222,
+   "fpr_true_null_n": 2700,
+   "fpr_true_null_seed_range": [
+    0.0003703704,
+    0.0603703704
+   ],
+   "grape_sens": null,
+   "grape_sens_lo": null,
+   "grape_sens_hi": null,
+   "grape_sens_n": null,
+   "grape_sens_seed_range": null,
+   "grape_spec": null,
+   "grape_spec_lo": null,
+   "grape_spec_hi": null,
+   "grape_spec_n": null,
+   "grape_spec_seed_range": null,
+   "valid": true,
+   "excess": false
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 5,
+   "sens": 0.2692307692,
+   "sens_lo": 0.119962963,
+   "sens_hi": 0.4370726496,
+   "sens_n": 26,
+   "sens_seed_range": [
+    0.2307692308,
+    0.3076923077
+   ],
+   "spec": 0.9692307692,
+   "spec_lo": 0.904,
+   "spec_hi": 1.0,
+   "spec_n": 26,
+   "spec_seed_range": [
+    0.0,
+    0.0769230769
+   ],
+   "fpr_true_null": 0.036,
+   "fpr_true_null_lo": 0.008,
+   "fpr_true_null_hi": 0.0729208333,
+   "fpr_true_null_n": 2400,
+   "fpr_true_null_seed_range": [
+    0.01,
+    0.0608333333
+   ],
+   "grape_sens": null,
+   "grape_sens_lo": null,
+   "grape_sens_hi": null,
+   "grape_sens_n": null,
+   "grape_sens_seed_range": null,
+   "grape_spec": null,
+   "grape_spec_lo": null,
+   "grape_spec_hi": null,
+   "grape_spec_n": null,
+   "grape_spec_seed_range": null,
+   "valid": true,
+   "excess": false
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 6,
+   "sens": 0.2076923077,
+   "sens_lo": 0.1,
+   "sens_hi": 0.3304347826,
+   "sens_n": 26,
+   "sens_seed_range": [
+    0.1153846154,
+    0.3846153846
+   ],
+   "spec": 0.9230769231,
+   "spec_lo": 0.76,
+   "spec_hi": 1.0,
+   "spec_n": 26,
+   "spec_seed_range": [
+    0.0769230769,
+    0.0769230769
+   ],
+   "fpr_true_null": 0.013047619,
+   "fpr_true_null_lo": 0.0014285714,
+   "fpr_true_null_hi": 0.030097619,
+   "fpr_true_null_n": 2100,
+   "fpr_true_null_seed_range": [
+    0.0066666667,
+    0.0223809524
+   ],
+   "grape_sens": null,
+   "grape_sens_lo": null,
+   "grape_sens_hi": null,
+   "grape_sens_n": null,
+   "grape_sens_seed_range": null,
+   "grape_spec": null,
+   "grape_spec_lo": null,
+   "grape_spec_hi": null,
+   "grape_spec_n": null,
+   "grape_spec_seed_range": null,
+   "valid": true,
+   "excess": false
+  }
+ ],
+ "A3a_tests": [
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 3,
+   "endpoint": "sensitivity",
+   "n": 26,
+   "diff": -0.1538461538,
+   "diff_lo": -0.32,
+   "diff_hi": 0.0,
+   "only_det": 1,
+   "only_D1": 5,
+   "p": 0.21875,
+   "p_holm": 0.875
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 3,
+   "endpoint": "sensitivity",
+   "n": 26,
+   "diff": -0.0384615385,
+   "diff_lo": -0.2083333333,
+   "diff_hi": 0.12,
+   "only_det": 3,
+   "only_D1": 4,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 3,
+   "endpoint": "sensitivity",
+   "n": 26,
+   "diff": -0.0384615385,
+   "diff_lo": -0.16,
+   "diff_hi": 0.0833333333,
+   "only_det": 1,
+   "only_D1": 2,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 3,
+   "endpoint": "sensitivity",
+   "n": 26,
+   "diff": -0.0384615385,
+   "diff_lo": -0.2307692308,
+   "diff_hi": 0.1666666667,
+   "only_det": 3,
+   "only_D1": 4,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 3,
+   "endpoint": "GRAPE sensitivity",
+   "n": 27,
+   "diff": -0.2592592593,
+   "diff_lo": -0.5,
+   "diff_hi": 0.0,
+   "only_det": 3,
+   "only_D1": 10,
+   "p": 0.0922851562,
+   "p_holm": 0.0922851562
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 3,
+   "endpoint": "GRAPE sensitivity",
+   "n": 27,
+   "diff": -0.3333333333,
+   "diff_lo": -0.5185185185,
+   "diff_hi": -0.1724137931,
+   "only_det": 0,
+   "only_D1": 9,
+   "p": 0.00390625,
+   "p_holm": 0.0078125
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 3,
+   "endpoint": "GRAPE false positives",
+   "n": 236,
+   "diff": 0.0,
+   "diff_lo": -0.038301964,
+   "diff_hi": 0.0344827586,
+   "only_det": 9,
+   "only_D1": 9,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 3,
+   "endpoint": "GRAPE false positives",
+   "n": 236,
+   "diff": 0.0042372881,
+   "diff_lo": -0.0300429185,
+   "diff_hi": 0.037037037,
+   "only_det": 8,
+   "only_D1": 7,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 4,
+   "endpoint": "sensitivity",
+   "n": 26,
+   "diff": -0.1923076923,
+   "diff_lo": -0.375,
+   "diff_hi": 0.0,
+   "only_det": 1,
+   "only_D1": 6,
+   "p": 0.125,
+   "p_holm": 0.5
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 4,
+   "endpoint": "sensitivity",
+   "n": 26,
+   "diff": -0.0384615385,
+   "diff_lo": -0.1601666667,
+   "diff_hi": 0.0833333333,
+   "only_det": 1,
+   "only_D1": 2,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 4,
+   "endpoint": "sensitivity",
+   "n": 26,
+   "diff": 0.0,
+   "diff_lo": -0.2307692308,
+   "diff_hi": 0.2307692308,
+   "only_det": 4,
+   "only_D1": 4,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 4,
+   "endpoint": "sensitivity",
+   "n": 26,
+   "diff": -0.1923076923,
+   "diff_lo": -0.4074074074,
+   "diff_hi": 0.0385,
+   "only_det": 2,
+   "only_D1": 7,
+   "p": 0.1796875,
+   "p_holm": 0.5390625
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 4,
+   "endpoint": "GRAPE sensitivity",
+   "n": 18,
+   "diff": -0.1666666667,
+   "diff_lo": -0.4705882353,
+   "diff_hi": 0.1111111111,
+   "only_det": 2,
+   "only_D1": 5,
+   "p": 0.453125,
+   "p_holm": 0.75
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 4,
+   "endpoint": "GRAPE sensitivity",
+   "n": 18,
+   "diff": -0.1666666667,
+   "diff_lo": -0.3888888889,
+   "diff_hi": 0.0588235294,
+   "only_det": 1,
+   "only_D1": 4,
+   "p": 0.375,
+   "p_holm": 0.75
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 4,
+   "endpoint": "GRAPE false positives",
+   "n": 145,
+   "diff": 0.0206896552,
+   "diff_lo": -0.025986927,
+   "diff_hi": 0.0666778523,
+   "only_det": 7,
+   "only_D1": 4,
+   "p": 0.548828125,
+   "p_holm": 0.548828125
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 4,
+   "endpoint": "GRAPE false positives",
+   "n": 145,
+   "diff": 0.0620689655,
+   "diff_lo": 0.006801572,
+   "diff_hi": 0.1208053691,
+   "only_det": 12,
+   "only_D1": 3,
+   "p": 0.03515625,
+   "p_holm": 0.0703125
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 5,
+   "endpoint": "sensitivity",
+   "n": 26,
+   "diff": -0.2307692308,
+   "diff_lo": -0.4,
+   "diff_hi": -0.08,
+   "only_det": 1,
+   "only_D1": 7,
+   "p": 0.0703125,
+   "p_holm": 0.28125
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 5,
+   "endpoint": "sensitivity",
+   "n": 26,
+   "diff": -0.1153846154,
+   "diff_lo": -0.3336206897,
+   "diff_hi": 0.0833333333,
+   "only_det": 2,
+   "only_D1": 5,
+   "p": 0.453125,
+   "p_holm": 0.90625
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 5,
+   "endpoint": "sensitivity",
+   "n": 26,
+   "diff": -0.0384615385,
+   "diff_lo": -0.1111111111,
+   "diff_hi": 0.0,
+   "only_det": 0,
+   "only_D1": 1,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 5,
+   "endpoint": "sensitivity",
+   "n": 26,
+   "diff": -0.1923076923,
+   "diff_lo": -0.3846153846,
+   "diff_hi": 0.0,
+   "only_det": 2,
+   "only_D1": 7,
+   "p": 0.1796875,
+   "p_holm": 0.5390625
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 6,
+   "endpoint": "sensitivity",
+   "n": 26,
+   "diff": -0.2692307692,
+   "diff_lo": -0.48,
+   "diff_hi": -0.0740740741,
+   "only_det": 1,
+   "only_D1": 8,
+   "p": 0.0390625,
+   "p_holm": 0.1171875
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 6,
+   "endpoint": "sensitivity",
+   "n": 26,
+   "diff": -0.0384615385,
+   "diff_lo": -0.2,
+   "diff_hi": 0.12,
+   "only_det": 2,
+   "only_D1": 3,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 6,
+   "endpoint": "sensitivity",
+   "n": 26,
+   "diff": 0.0769230769,
+   "diff_lo": -0.1308776167,
+   "diff_hi": 0.28,
+   "only_det": 5,
+   "only_D1": 3,
+   "p": 0.7265625,
+   "p_holm": 1.0
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 6,
+   "endpoint": "sensitivity",
+   "n": 26,
+   "diff": -0.3461538462,
+   "diff_lo": -0.56,
+   "diff_hi": -0.1111111111,
+   "only_det": 2,
+   "only_D1": 11,
+   "p": 0.0224609375,
+   "p_holm": 0.08984375
+  }
+ ],
+ "A3a_thresholds": [
+  {
+   "det": "D2 MD-rate <= -1 dB/yr",
+   "k": 3,
+   "extra": [
+    2.4395094438
+   ]
+  },
+  {
+   "det": "D2 MD-rate <= -1 dB/yr",
+   "k": 4,
+   "extra": [
+    1.4659227573
+   ]
+  },
+  {
+   "det": "D2 MD-rate <= -1 dB/yr",
+   "k": 5,
+   "extra": [
+    1.0634349238
+   ]
+  },
+  {
+   "det": "D2 MD-rate <= -1 dB/yr",
+   "k": 6,
+   "extra": [
+    0.7588297686
+   ]
+  },
+  {
+   "det": "D6 Pooled-detrended conformal region-max",
+   "k": 3,
+   "extra": [
+    -0.0105777805,
+    -0.0091325605,
+    -0.0105470311,
+    -0.0105316565,
+    -0.0106700286
+   ]
+  },
+  {
+   "det": "D6 Pooled-detrended conformal region-max",
+   "k": 4,
+   "extra": [
+    -0.0500769554,
+    -0.0562260698,
+    -0.0506809384,
+    -0.0524159321,
+    -0.0499020568
+   ]
+  },
+  {
+   "det": "D6 Pooled-detrended conformal region-max",
+   "k": 5,
+   "extra": [
+    -0.0504756959,
+    -0.0497794523,
+    -0.0553679831,
+    -0.0521042221,
+    -0.049382716
+   ]
+  },
+  {
+   "det": "D6 Pooled-detrended conformal region-max",
+   "k": 6,
+   "extra": [
+    -0.0503174153,
+    -0.0485741929,
+    -0.0563181978,
+    -0.0496804533,
+    -0.0490533023
+   ]
+  },
+  {
+   "det": "D8 ML-tabular (LightGBM)",
+   "k": 3,
+   "extra": [
+    0.8995942662,
+    0.903539287,
+    0.9124295866,
+    0.8999646767,
+    0.9009727509
+   ]
+  },
+  {
+   "det": "D8 ML-tabular (LightGBM)",
+   "k": 4,
+   "extra": [
+    0.9609993641,
+    0.9570832402,
+    0.9349151747,
+    0.9634430658,
+    0.9594191053
+   ]
+  },
+  {
+   "det": "D8 ML-tabular (LightGBM)",
+   "k": 5,
+   "extra": [
+    0.9931566581,
+    0.9992016166,
+    0.9998539085,
+    0.999860118,
+    0.9991587092
+   ]
+  },
+  {
+   "det": "D8 ML-tabular (LightGBM)",
+   "k": 6,
+   "extra": [
+    0.9770668216,
+    0.9998817348,
+    0.9997067894,
+    0.9978096149,
+    0.9998915634
+   ]
+  },
+  {
+   "det": "D9 ML-sequence (GRU)",
+   "k": 3,
+   "extra": [
+    1.2444956005,
+    1.1204833686,
+    0.0462661088,
+    1.0019023836,
+    0.2709548533
+   ]
+  },
+  {
+   "det": "D9 ML-sequence (GRU)",
+   "k": 4,
+   "extra": [
+    1.8853434682,
+    0.6812523007,
+    1.1860686362,
+    1.6486645222,
+    0.8077124983
+   ]
+  },
+  {
+   "det": "D9 ML-sequence (GRU)",
+   "k": 5,
+   "extra": [
+    1.4952575803,
+    2.1693251014,
+    2.2323592424,
+    1.8320747554,
+    1.3064552009
+   ]
+  },
+  {
+   "det": "D9 ML-sequence (GRU)",
+   "k": 6,
+   "extra": [
+    1.9836362422,
+    3.1120391369,
+    2.0204836726,
+    2.0829883099,
+    2.6480214357
+   ]
+  }
+ ],
+ "H5_supported": true,
+ "H5_all_valid": false,
+ "H6_falsified": false,
+ "A3b_confirmation": [
+  {
+   "detector": "D1 OLS-MD",
+   "k": 4,
+   "measure": "sens_confirmed",
+   "est": 0.1153846154,
+   "lo": 0.0,
+   "hi": 0.25,
+   "n": 26
+  },
+  {
+   "detector": "D1 OLS-MD",
+   "k": 5,
+   "measure": "sens_confirmed",
+   "est": 0.2307692308,
+   "lo": 0.0769230769,
+   "hi": 0.4,
+   "n": 26
+  },
+  {
+   "detector": "D1 OLS-MD",
+   "k": 6,
+   "measure": "sens_confirmed",
+   "est": 0.3461538462,
+   "lo": 0.1851851852,
+   "hi": 0.5004310345,
+   "n": 26
+  },
+  {
+   "detector": "D1 OLS-MD",
+   "k": 4,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0077777778,
+   "lo": 0.0018518519,
+   "hi": 0.0151851852,
+   "n": 2700
+  },
+  {
+   "detector": "D1 OLS-MD",
+   "k": 5,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0125,
+   "lo": 0.0029166667,
+   "hi": 0.0254166667,
+   "n": 2400
+  },
+  {
+   "detector": "D1 OLS-MD",
+   "k": 6,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.019047619,
+   "lo": 0.0042857143,
+   "hi": 0.0380952381,
+   "n": 2100
+  },
+  {
+   "detector": "D10 Self-supervised order net + permutation",
+   "k": 4,
+   "measure": "sens_confirmed",
+   "est": 0.0,
+   "lo": 0.0,
+   "hi": 0.1322746045,
+   "n": 26
+  },
+  {
+   "detector": "D10 Self-supervised order net + permutation",
+   "k": 5,
+   "measure": "sens_confirmed",
+   "est": 0.1307692308,
+   "lo": 0.0357142857,
+   "hi": 0.257172619,
+   "n": 26
+  },
+  {
+   "detector": "D10 Self-supervised order net + permutation",
+   "k": 6,
+   "measure": "sens_confirmed",
+   "est": 0.3692307692,
+   "lo": 0.216,
+   "hi": 0.5185185185,
+   "n": 26
+  },
+  {
+   "detector": "D10 Self-supervised order net + permutation",
+   "k": 4,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0,
+   "lo": 0.0,
+   "hi": 0.0013653188,
+   "n": 2700
+  },
+  {
+   "detector": "D10 Self-supervised order net + permutation",
+   "k": 5,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0084166667,
+   "lo": 0.00325,
+   "hi": 0.015,
+   "n": 2400
+  },
+  {
+   "detector": "D10 Self-supervised order net + permutation",
+   "k": 6,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0201904762,
+   "lo": 0.0053333333,
+   "hi": 0.0393380952,
+   "n": 2100
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 4,
+   "measure": "sens_confirmed",
+   "est": 0.2307692308,
+   "lo": 0.08,
+   "hi": 0.4001851852,
+   "n": 26
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 5,
+   "measure": "sens_confirmed",
+   "est": 0.1538461538,
+   "lo": 0.0384615385,
+   "hi": 0.3076923077,
+   "n": 26
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 6,
+   "measure": "sens_confirmed",
+   "est": 0.1923076923,
+   "lo": 0.0740740741,
+   "hi": 0.3448275862,
+   "n": 26
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 4,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0003703704,
+   "lo": 0.0,
+   "hi": 0.0011111111,
+   "n": 2700
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 5,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0,
+   "lo": 0.0,
+   "hi": 0.0015358525,
+   "n": 2400
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 6,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0004761905,
+   "lo": 0.0,
+   "hi": 0.0014285714,
+   "n": 2100
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 4,
+   "measure": "sens_confirmed",
+   "est": 0.0,
+   "lo": 0.0,
+   "hi": 0.1322746045,
+   "n": 26
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 5,
+   "measure": "sens_confirmed",
+   "est": 0.0769230769,
+   "lo": 0.0,
+   "hi": 0.2,
+   "n": 26
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 6,
+   "measure": "sens_confirmed",
+   "est": 0.1538461538,
+   "lo": 0.0357142857,
+   "hi": 0.32,
+   "n": 26
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 4,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0003703704,
+   "lo": 0.0,
+   "hi": 0.0011111111,
+   "n": 2700
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 5,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0,
+   "lo": 0.0,
+   "hi": 0.0015358525,
+   "n": 2400
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 6,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0004761905,
+   "lo": 0.0,
+   "hi": 0.0014285714,
+   "n": 2100
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 4,
+   "measure": "sens_confirmed",
+   "est": 0.0,
+   "lo": 0.0,
+   "hi": 0.1322746045,
+   "n": 26
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 5,
+   "measure": "sens_confirmed",
+   "est": 0.0384615385,
+   "lo": 0.0,
+   "hi": 0.125,
+   "n": 26
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 6,
+   "measure": "sens_confirmed",
+   "est": 0.3461538462,
+   "lo": 0.16,
+   "hi": 0.535782967,
+   "n": 26
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 4,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0,
+   "lo": 0.0,
+   "hi": 0.0013653188,
+   "n": 2700
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 5,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0066666667,
+   "lo": 0.00208125,
+   "hi": 0.0126666667,
+   "n": 2400
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 6,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0118095238,
+   "lo": 0.0022857143,
+   "hi": 0.026002381,
+   "n": 2100
+  },
+  {
+   "detector": "D5 Pooled-shuffle conformal MD",
+   "k": 4,
+   "measure": "sens_confirmed",
+   "est": 0.1153846154,
+   "lo": 0.0,
+   "hi": 0.25,
+   "n": 26
+  },
+  {
+   "detector": "D5 Pooled-shuffle conformal MD",
+   "k": 5,
+   "measure": "sens_confirmed",
+   "est": 0.2307692308,
+   "lo": 0.0769230769,
+   "hi": 0.4,
+   "n": 26
+  },
+  {
+   "detector": "D5 Pooled-shuffle conformal MD",
+   "k": 6,
+   "measure": "sens_confirmed",
+   "est": 0.3461538462,
+   "lo": 0.1851851852,
+   "hi": 0.5004310345,
+   "n": 26
+  },
+  {
+   "detector": "D5 Pooled-shuffle conformal MD",
+   "k": 4,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0074074074,
+   "lo": 0.0022962963,
+   "hi": 0.0133333333,
+   "n": 2700
+  },
+  {
+   "detector": "D5 Pooled-shuffle conformal MD",
+   "k": 5,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0095,
+   "lo": 0.00225,
+   "hi": 0.0209208333,
+   "n": 2400
+  },
+  {
+   "detector": "D5 Pooled-shuffle conformal MD",
+   "k": 6,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.016952381,
+   "lo": 0.0041880952,
+   "hi": 0.0336190476,
+   "n": 2100
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 4,
+   "measure": "sens_confirmed",
+   "est": 0.2461538462,
+   "lo": 0.0959076923,
+   "hi": 0.4286571429,
+   "n": 26
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 5,
+   "measure": "sens_confirmed",
+   "est": 0.1769230769,
+   "lo": 0.043432971,
+   "hi": 0.344,
+   "n": 26
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 6,
+   "measure": "sens_confirmed",
+   "est": 0.2769230769,
+   "lo": 0.12,
+   "hi": 0.4444444444,
+   "n": 26
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 4,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0281481481,
+   "lo": 0.016,
+   "hi": 0.0445944444,
+   "n": 2700
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 5,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0159166667,
+   "lo": 0.0056645833,
+   "hi": 0.0302520833,
+   "n": 2400
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 6,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0251428571,
+   "lo": 0.0115214286,
+   "hi": 0.0414309524,
+   "n": 2100
+  },
+  {
+   "detector": "D7 Event analysis (GPA-like)",
+   "k": 4,
+   "measure": "sens_confirmed",
+   "est": 0.0,
+   "lo": 0.0,
+   "hi": 0.1322746045,
+   "n": 26
+  },
+  {
+   "detector": "D7 Event analysis (GPA-like)",
+   "k": 5,
+   "measure": "sens_confirmed",
+   "est": 0.2307692308,
+   "lo": 0.0769230769,
+   "hi": 0.4,
+   "n": 26
+  },
+  {
+   "detector": "D7 Event analysis (GPA-like)",
+   "k": 6,
+   "measure": "sens_confirmed",
+   "est": 0.5,
+   "lo": 0.3042391304,
+   "hi": 0.6957608696,
+   "n": 26
+  },
+  {
+   "detector": "D7 Event analysis (GPA-like)",
+   "k": 4,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0,
+   "lo": 0.0,
+   "hi": 0.0013653188,
+   "n": 2700
+  },
+  {
+   "detector": "D7 Event analysis (GPA-like)",
+   "k": 5,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0125,
+   "lo": 0.0,
+   "hi": 0.0291666667,
+   "n": 2400
+  },
+  {
+   "detector": "D7 Event analysis (GPA-like)",
+   "k": 6,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0142857143,
+   "lo": 0.0,
+   "hi": 0.0333333333,
+   "n": 2100
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 4,
+   "measure": "sens_confirmed",
+   "est": 0.1615384615,
+   "lo": 0.0428571429,
+   "hi": 0.3076923077,
+   "n": 26
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 5,
+   "measure": "sens_confirmed",
+   "est": 0.3538461538,
+   "lo": 0.175,
+   "hi": 0.5334,
+   "n": 26
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 6,
+   "measure": "sens_confirmed",
+   "est": 0.5230769231,
+   "lo": 0.328,
+   "hi": 0.7154166667,
+   "n": 26
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 4,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0367407407,
+   "lo": 0.0218518519,
+   "hi": 0.0542222222,
+   "n": 2700
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 5,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0396666667,
+   "lo": 0.02008125,
+   "hi": 0.062,
+   "n": 2400
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 6,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0204761905,
+   "lo": 0.0073333333,
+   "hi": 0.0363833333,
+   "n": 2100
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 4,
+   "measure": "sens_confirmed",
+   "est": 0.0769230769,
+   "lo": 0.0,
+   "hi": 0.1833333333,
+   "n": 26
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 5,
+   "measure": "sens_confirmed",
+   "est": 0.0692307692,
+   "lo": 0.0153846154,
+   "hi": 0.14,
+   "n": 26
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 6,
+   "measure": "sens_confirmed",
+   "est": 0.2307692308,
+   "lo": 0.1083333333,
+   "hi": 0.3555952381,
+   "n": 26
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 4,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0102222222,
+   "lo": 0.001037037,
+   "hi": 0.0217777778,
+   "n": 2700
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 5,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.00825,
+   "lo": 0.0016666667,
+   "hi": 0.018,
+   "n": 2400
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 6,
+   "measure": "fpr_true_null_confirmed",
+   "est": 0.0168571429,
+   "lo": 0.0025714286,
+   "hi": 0.0356190476,
+   "n": 2100
+  }
+ ],
+ "A3c_enlarged": [
+  {
+   "detector": "D1 OLS-MD",
+   "k": 3,
+   "sens": 0.1466666667,
+   "sens_lo": 0.0949355539,
+   "sens_hi": 0.2064516129,
+   "n_prog": 150,
+   "spec": 0.9634146341,
+   "spec_lo": 0.9320987654,
+   "spec_hi": 0.9880952381,
+   "n_stable": 164
+  },
+  {
+   "detector": "D1 OLS-MD",
+   "k": 4,
+   "sens": 0.2666666667,
+   "sens_lo": 0.1987157534,
+   "sens_hi": 0.3378378378,
+   "n_prog": 150,
+   "spec": 0.9573170732,
+   "spec_lo": 0.9263803681,
+   "spec_hi": 0.987501941,
+   "n_stable": 164
+  },
+  {
+   "detector": "D1 OLS-MD",
+   "k": 5,
+   "sens": 0.4,
+   "sens_lo": 0.3223629018,
+   "sens_hi": 0.4817709663,
+   "n_prog": 150,
+   "spec": 0.9756097561,
+   "spec_lo": 0.9487096774,
+   "spec_hi": 0.9941520468,
+   "n_stable": 164
+  },
+  {
+   "detector": "D1 OLS-MD",
+   "k": 6,
+   "sens": 0.5733333333,
+   "sens_lo": 0.4871753247,
+   "sens_hi": 0.6644295302,
+   "n_prog": 150,
+   "spec": 0.993902439,
+   "spec_lo": 0.9810096348,
+   "spec_hi": 1.0,
+   "n_stable": 164
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 3,
+   "sens": 0.2333333333,
+   "sens_lo": 0.1610738255,
+   "sens_hi": 0.3092388838,
+   "n_prog": 150,
+   "spec": 0.8536585366,
+   "spec_lo": 0.7898080124,
+   "spec_hi": 0.9090909091,
+   "n_stable": 164
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 4,
+   "sens": 0.2,
+   "sens_lo": 0.1447347733,
+   "sens_hi": 0.2638311055,
+   "n_prog": 150,
+   "spec": 0.8963414634,
+   "spec_lo": 0.8414459375,
+   "spec_hi": 0.9447852761,
+   "n_stable": 164
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 5,
+   "sens": 0.1866666667,
+   "sens_lo": 0.1242225876,
+   "sens_hi": 0.2551724138,
+   "n_prog": 150,
+   "spec": 0.9451219512,
+   "spec_lo": 0.8999852071,
+   "spec_hi": 0.9817100887,
+   "n_stable": 164
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 6,
+   "sens": 0.18,
+   "sens_lo": 0.1216216216,
+   "sens_hi": 0.2448979592,
+   "n_prog": 150,
+   "spec": 0.9756097561,
+   "spec_lo": 0.9440906444,
+   "spec_hi": 1.0,
+   "n_stable": 164
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 3,
+   "sens": 0.0333333333,
+   "sens_lo": 0.0069444444,
+   "sens_hi": 0.0641129032,
+   "n_prog": 150,
+   "spec": 0.9817073171,
+   "spec_lo": 0.9580838323,
+   "spec_hi": 1.0,
+   "n_stable": 164
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 4,
+   "sens": 0.1,
+   "sens_lo": 0.0566037736,
+   "sens_hi": 0.1513157895,
+   "n_prog": 150,
+   "spec": 0.9756097561,
+   "spec_lo": 0.95,
+   "spec_hi": 0.9940828402,
+   "n_stable": 164
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 5,
+   "sens": 0.1933333333,
+   "sens_lo": 0.132072196,
+   "sens_hi": 0.2567567568,
+   "n_prog": 150,
+   "spec": 0.9817073171,
+   "spec_lo": 0.9599942529,
+   "spec_hi": 1.0,
+   "n_stable": 164
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 6,
+   "sens": 0.3333333333,
+   "sens_lo": 0.258272805,
+   "sens_hi": 0.4161213647,
+   "n_prog": 150,
+   "spec": 0.993902439,
+   "spec_lo": 0.9808917197,
+   "spec_hi": 1.0,
+   "n_stable": 164
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 3,
+   "sens": 0.0,
+   "sens_lo": 0.0,
+   "sens_hi": 0.0242925972,
+   "n_prog": 150,
+   "spec": 1.0,
+   "spec_lo": 0.9777579178,
+   "spec_hi": 1.0,
+   "n_stable": 164
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 4,
+   "sens": 0.1333333333,
+   "sens_lo": 0.0838709677,
+   "sens_hi": 0.1859051724,
+   "n_prog": 150,
+   "spec": 0.9451219512,
+   "spec_lo": 0.9096385542,
+   "spec_hi": 0.976744186,
+   "n_stable": 164
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 5,
+   "sens": 0.3333333333,
+   "sens_lo": 0.2582781457,
+   "sens_hi": 0.4109589041,
+   "n_prog": 150,
+   "spec": 0.9695121951,
+   "spec_lo": 0.9397590361,
+   "spec_hi": 0.9939393939,
+   "n_stable": 164
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 6,
+   "sens": 0.5333333333,
+   "sens_lo": 0.4528270015,
+   "sens_hi": 0.6190643863,
+   "n_prog": 150,
+   "spec": 0.9756097561,
+   "spec_lo": 0.95,
+   "spec_hi": 0.9941520468,
+   "n_stable": 164
+  }
+ ],
+ "A3c_tests": [
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 3,
+   "endpoint": "sensitivity",
+   "n": 150,
+   "diff": 0.0866666667,
+   "diff_lo": 0.0066214273,
+   "diff_hi": 0.1635411051,
+   "only_det": 25,
+   "only_D1": 12,
+   "p": 0.0470310274,
+   "p_holm": 0.0470310274
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 3,
+   "endpoint": "sensitivity",
+   "n": 150,
+   "diff": -0.1133333333,
+   "diff_lo": -0.1710526316,
+   "diff_hi": -0.0624785959,
+   "only_det": 1,
+   "only_D1": 18,
+   "p": 7.62939e-05,
+   "p_holm": 0.0001525879
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 3,
+   "endpoint": "sensitivity",
+   "n": 150,
+   "diff": -0.1466666667,
+   "diff_lo": -0.2064516129,
+   "diff_hi": -0.0949355539,
+   "only_det": 0,
+   "only_D1": 22,
+   "p": 4.768e-07,
+   "p_holm": 1.4305e-06
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 3,
+   "endpoint": "false positives",
+   "n": 164,
+   "diff": 0.1097560976,
+   "diff_lo": 0.0548697339,
+   "diff_hi": 0.1676656005,
+   "only_det": 19,
+   "only_D1": 1,
+   "p": 4.00543e-05,
+   "p_holm": 0.000120163
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 3,
+   "endpoint": "false positives",
+   "n": 164,
+   "diff": -0.0182926829,
+   "diff_lo": -0.0465155039,
+   "diff_hi": 0.0060615299,
+   "only_det": 2,
+   "only_D1": 5,
+   "p": 0.453125,
+   "p_holm": 0.453125
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 3,
+   "endpoint": "false positives",
+   "n": 164,
+   "diff": -0.0365853659,
+   "diff_lo": -0.0679012346,
+   "diff_hi": -0.0119047619,
+   "only_det": 0,
+   "only_D1": 6,
+   "p": 0.03125,
+   "p_holm": 0.0625
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 4,
+   "endpoint": "sensitivity",
+   "n": 150,
+   "diff": -0.0666666667,
+   "diff_lo": -0.1338134512,
+   "diff_hi": 0.0,
+   "only_det": 11,
+   "only_D1": 21,
+   "p": 0.1101841652,
+   "p_holm": 0.1101841652
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 4,
+   "endpoint": "sensitivity",
+   "n": 150,
+   "diff": -0.1666666667,
+   "diff_lo": -0.2447588126,
+   "diff_hi": -0.0939544883,
+   "only_det": 6,
+   "only_D1": 31,
+   "p": 4.12576e-05,
+   "p_holm": 0.0001237728
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 4,
+   "endpoint": "sensitivity",
+   "n": 150,
+   "diff": -0.1333333333,
+   "diff_lo": -0.2077987449,
+   "diff_hi": -0.0620689655,
+   "only_det": 7,
+   "only_D1": 27,
+   "p": 0.0008213953,
+   "p_holm": 0.0016427906
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 4,
+   "endpoint": "false positives",
+   "n": 164,
+   "diff": 0.0609756098,
+   "diff_lo": 0.006097561,
+   "diff_hi": 0.11905885,
+   "only_det": 14,
+   "only_D1": 4,
+   "p": 0.0308837891,
+   "p_holm": 0.0926513672
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 4,
+   "endpoint": "false positives",
+   "n": 164,
+   "diff": -0.0182926829,
+   "diff_lo": -0.050955414,
+   "diff_hi": 0.0124223602,
+   "only_det": 2,
+   "only_D1": 5,
+   "p": 0.453125,
+   "p_holm": 0.90625
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 4,
+   "endpoint": "false positives",
+   "n": 164,
+   "diff": 0.012195122,
+   "diff_lo": -0.024691358,
+   "diff_hi": 0.049697205,
+   "only_det": 6,
+   "only_D1": 4,
+   "p": 0.75390625,
+   "p_holm": 0.90625
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 5,
+   "endpoint": "sensitivity",
+   "n": 150,
+   "diff": -0.2133333333,
+   "diff_lo": -0.2857142857,
+   "diff_hi": -0.1446348582,
+   "only_det": 5,
+   "only_D1": 37,
+   "p": 4.434e-07,
+   "p_holm": 1.0059e-06
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 5,
+   "endpoint": "sensitivity",
+   "n": 150,
+   "diff": -0.2066666667,
+   "diff_lo": -0.2837837838,
+   "diff_hi": -0.1398601399,
+   "only_det": 4,
+   "only_D1": 35,
+   "p": 3.353e-07,
+   "p_holm": 1.0059e-06
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 5,
+   "endpoint": "sensitivity",
+   "n": 150,
+   "diff": -0.0666666667,
+   "diff_lo": -0.1275383185,
+   "diff_hi": -0.0131578947,
+   "only_det": 6,
+   "only_D1": 16,
+   "p": 0.0524787903,
+   "p_holm": 0.0524787903
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 5,
+   "endpoint": "false positives",
+   "n": 164,
+   "diff": 0.0304878049,
+   "diff_lo": -0.011979677,
+   "diff_hi": 0.0759614609,
+   "only_det": 7,
+   "only_D1": 2,
+   "p": 0.1796875,
+   "p_holm": 0.5390625
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 5,
+   "endpoint": "false positives",
+   "n": 164,
+   "diff": -0.006097561,
+   "diff_lo": -0.0299446288,
+   "diff_hi": 0.0122699387,
+   "only_det": 1,
+   "only_D1": 2,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 5,
+   "endpoint": "false positives",
+   "n": 164,
+   "diff": 0.006097561,
+   "diff_lo": 0.0,
+   "diff_hi": 0.0189903652,
+   "only_det": 1,
+   "only_D1": 0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 6,
+   "endpoint": "sensitivity",
+   "n": 150,
+   "diff": -0.3933333333,
+   "diff_lo": -0.472972973,
+   "diff_hi": -0.3146707459,
+   "only_det": 1,
+   "only_D1": 60,
+   "p": 5.377642776e-17,
+   "p_holm": 1.613292833e-16
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 6,
+   "endpoint": "sensitivity",
+   "n": 150,
+   "diff": -0.24,
+   "diff_lo": -0.3228186381,
+   "diff_hi": -0.1554054054,
+   "only_det": 6,
+   "only_D1": 42,
+   "p": 1.009e-07,
+   "p_holm": 2.017e-07
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 6,
+   "endpoint": "sensitivity",
+   "n": 150,
+   "diff": -0.04,
+   "diff_lo": -0.1006711409,
+   "diff_hi": 0.0135158117,
+   "only_det": 7,
+   "only_D1": 13,
+   "p": 0.2631759644,
+   "p_holm": 0.2631759644
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 6,
+   "endpoint": "false positives",
+   "n": 164,
+   "diff": 0.0182926829,
+   "diff_lo": -0.0063301217,
+   "diff_hi": 0.0532544379,
+   "only_det": 4,
+   "only_D1": 1,
+   "p": 0.375,
+   "p_holm": 0.75
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 6,
+   "endpoint": "false positives",
+   "n": 164,
+   "diff": 0.0,
+   "diff_lo": -0.0181818182,
+   "diff_hi": 0.0179640719,
+   "only_det": 1,
+   "only_D1": 1,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 6,
+   "endpoint": "false positives",
+   "n": 164,
+   "diff": 0.0182926829,
+   "diff_lo": 0.0,
+   "diff_hi": 0.0419224803,
+   "only_det": 3,
+   "only_D1": 0,
+   "p": 0.25,
+   "p_holm": 0.75
+  }
+ ],
+ "H8_supported": true,
+ "meta": {
+  "runtime_s": 423.4872372150421,
+  "n_allref": 314,
+  "n_allref_prog": 150,
+  "n_allref_stable": 164
+ }
+}

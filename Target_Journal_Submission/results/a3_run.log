@@ -5,3 +5,17 @@ D6 Pooled-detrended conformal region-max seed 2 UW/Artes done 21s
 D6 Pooled-detrended conformal region-max seed 3 UW/Artes done 27s
 D6 Pooled-detrended conformal region-max seed 4 UW/Artes done 33s
 D8 ML-tabular (LightGBM) seed 0 UW/Artes done 75s
+D8 ML-tabular (LightGBM) seed 1 UW/Artes done 138s
+D8 ML-tabular (LightGBM) seed 2 UW/Artes done 203s
+D8 ML-tabular (LightGBM) seed 3 UW/Artes done 264s
+D8 ML-tabular (LightGBM) seed 4 UW/Artes done 324s
+D9 ML-sequence (GRU) seed 0 UW/Artes done 360s
+D9 ML-sequence (GRU) seed 1 UW/Artes done 375s
+D9 ML-sequence (GRU) seed 2 UW/Artes done 390s
+D9 ML-sequence (GRU) seed 3 UW/Artes done 404s
+D9 ML-sequence (GRU) seed 4 UW/Artes done 418s
+D1 OLS-MD enlarged reference done 419s
+D2 MD-rate <= -1 dB/yr enlarged reference done 419s
+D3 PLR >=3 points enlarged reference done 419s
+D4 PoPLR (within-eye permutation) enlarged reference done 423s
+done 423.48753571510315
