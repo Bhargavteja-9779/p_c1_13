@@ -93,8 +93,7 @@
   FINAL DECISION: NOT READY FOR SUBMISSION (author-only items + open scientific items I08, I10-I12, I21);
   label NOT REMARKABLE: honest strongest result.
 ## NEXT ACTION
-1. Full re-run reproducibility check was running in scratch (lost if session ended): to redo, copy code/ to a temp dir,
-   `python run_all.py --mode full`, compare results/metrics.json with committed one; record in audits/reproducibility_audit.md.
+1. Full re-run reproducibility check DONE: raw results identical (audits/reproducibility_audit.md).
 2. Optional scientific upgrades (REVIEW/response_to_reviews.md OPEN rows): GRAPE shuffle audit, variance-inflated null,
    nested-CV ML thresholds, VFI/ANSWERS comparators. After any change: python -m src.statistics.summarise;
    python -m src.statistics.descriptives; python -m src.statistics.sensitivity; cd ../manuscript; python fill_values.py;
