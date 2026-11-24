@@ -105,5 +105,5 @@
   (REVIEW/review_round2_amendmentB.md: no number mismatches, novelty 3/5); post-hoc robustness (amendment_b_robust.py).
   Title now "...A Benchmark With True No-Change Calibration". Zip rebuilt (119 files).
 ## NEXT ACTION
-Wait for user: second author name/department/e-mail, date, suggested reviewers. Optional: shorten main text
+Authors complete (Rajay Vedaraj I S, rajay@vit.ac.in, corresponding). Optional: department names, suggested reviewers. Optional: shorten main text
 (~5,500 words vs ~4,000 guide). Auto-resume scheduled task fires 2026-11-24T02:05Z: if nothing new, just report status.

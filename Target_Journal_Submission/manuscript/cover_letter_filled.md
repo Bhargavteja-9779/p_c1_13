@@ -1,4 +1,4 @@
-[DATE]
+24 November 2026
 
 The Editor-in-Chief
 *Ophthalmology and Therapy*
@@ -19,8 +19,8 @@ Suggested reviewers (expertise only; names to be added by the authors): (1) stat
 
 Yours sincerely,
 
-[SECOND AUTHOR NAME] (corresponding author)
-[Department], Vellore Institute of Technology (VIT), Vellore 632014, Tamil Nadu, India
-[CORRESPONDING AUTHOR E-MAIL]
+Rajay Vedaraj I S (corresponding author)
+Vellore Institute of Technology (VIT), Vellore 632014, Tamil Nadu, India
+rajay@vit.ac.in
 
-On behalf of P N Bhargav Teja and [SECOND AUTHOR NAME]
+On behalf of P N Bhargav Teja and Rajay Vedaraj I S

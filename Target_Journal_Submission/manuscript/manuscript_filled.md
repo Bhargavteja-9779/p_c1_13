@@ -2,11 +2,11 @@
 
 **Running title:** False alarms in visual-field progression detection
 
-**Authors:** P N Bhargav Teja¹; [SECOND AUTHOR NAME]¹∗
+**Authors:** P N Bhargav Teja¹; Rajay Vedaraj I S¹∗
 
-¹ [Department], Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India
+¹ Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India
 
-**Corresponding author (marked ∗):** [SECOND AUTHOR NAME], [Department], Vellore Institute of Technology (VIT), Vellore 632014, Tamil Nadu, India. E-mail: [CORRESPONDING AUTHOR E-MAIL]
+**Corresponding author (marked ∗):** Rajay Vedaraj I S, Vellore Institute of Technology (VIT), Vellore 632014, Tamil Nadu, India. E-mail: rajay@vit.ac.in
 
 **Article type:** Original Research
 
@@ -206,11 +206,11 @@ During this work the authors used an AI-based assistant (Claude, Anthropic) to h
 
 ## Author Contributions
 
-P N Bhargav Teja: conceptualisation, methodology, software, data curation, formal analysis, visualisation, writing – original draft. [SECOND AUTHOR NAME]: supervision, validation, writing – review and editing. Both authors read and approved the final manuscript.
+P N Bhargav Teja: conceptualisation, methodology, software, data curation, formal analysis, visualisation, writing – original draft. Rajay Vedaraj I S: supervision, validation, writing – review and editing. Both authors read and approved the final manuscript.
 
 ## Disclosures
 
-P N Bhargav Teja and [SECOND AUTHOR NAME] declare that they have no competing interests.
+P N Bhargav Teja and Rajay Vedaraj I S declare that they have no competing interests.
 
 ## Compliance With Ethics Guidelines
 
