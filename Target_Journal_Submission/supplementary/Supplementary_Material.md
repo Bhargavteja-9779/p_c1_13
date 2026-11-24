@@ -238,3 +238,29 @@ Exploratory: among the E1 eyes (primary or secondary reference), reference recom
 | 6 | D4 PoPLR | 53.3 (45.3–61.9) | 97.6 (95.0–99.4) | −4.0; 95% CI −10.1 to 1.4; Holm-adjusted p = 0.26 |
 
 314 eyes (150 progressors, 164 stable) of 236 patients from the training, validation and test sets; D1–D4 need no training. Patient-level bootstrap CIs.
+
+
+## S7 Post-hoc robustness of the calibrated rate rule
+
+**Table S7** Post-hoc robustness: retest-calibrated D1 and D2 on all UWHVF eyes with at least eight tests, under four reference definitions
+
+| Reference | Tests | Progressors / stable eyes | D1 sensitivity, % | D2 sensitivity, % | Difference, pp (95% CI) | D1 specificity, % | D2 specificity, % |
+|---|---|---|---|---|---|---|---|
+| Primary (−0.3 dB/yr) | 3 | 150 / 164 | 15.3 | 32.0 | +16.7 (9.1 to 24.2) | 96.3 | 82.3 |
+| Primary (−0.3 dB/yr) | 4 | 150 / 164 | 32.7 | 52.7 | +20.0 (11.9 to 28.5) | 95.1 | 79.9 |
+| Primary (−0.3 dB/yr) | 5 | 150 / 164 | 42.0 | 68.0 | +26.0 (19.4 to 32.9) | 97.6 | 84.1 |
+| Primary (−0.3 dB/yr) | 6 | 150 / 164 | 56.0 | 81.3 | +25.3 (18.4 to 32.5) | 99.4 | 90.2 |
+| Cut-off −0.5 dB/yr | 3 | 93 / 164 | 19.4 | 38.7 | +19.4 (10.0 to 29.0) | 96.3 | 82.3 |
+| Cut-off −0.5 dB/yr | 4 | 93 / 164 | 41.9 | 65.6 | +23.7 (14.4 to 34.1) | 95.1 | 79.9 |
+| Cut-off −0.5 dB/yr | 5 | 93 / 164 | 50.5 | 76.3 | +25.8 (17.2 to 35.2) | 97.6 | 84.1 |
+| Cut-off −0.5 dB/yr | 6 | 93 / 164 | 65.6 | 89.2 | +23.7 (15.3 to 32.6) | 99.4 | 90.2 |
+| Cut-off −1.0 dB/yr | 3 | 23 / 164 | 21.7 | 47.8 | +26.1 (8.7 to 43.5) | 96.3 | 82.3 |
+| Cut-off −1.0 dB/yr | 4 | 23 / 164 | 34.8 | 65.2 | +30.4 (13.0 to 47.8) | 95.1 | 79.9 |
+| Cut-off −1.0 dB/yr | 5 | 23 / 164 | 47.8 | 78.3 | +30.4 (13.0 to 47.8) | 97.6 | 84.1 |
+| Cut-off −1.0 dB/yr | 6 | 23 / 164 | 56.5 | 91.3 | +34.8 (17.4 to 56.5) | 99.4 | 90.2 |
+| Future-only (tests k+1 to end) | 3 | 95 / 187 | 8.4 | 18.9 | +10.5 (4.0 to 17.5) | 92.5 | 76.5 |
+| Future-only (tests k+1 to end) | 4 | 67 / 119 | 19.4 | 37.3 | +17.9 (8.6 to 28.6) | 86.6 | 73.9 |
+| Future-only (tests k+1 to end) | 5 | 43 / 91 | 27.9 | 58.1 | +30.2 (16.7 to 44.5) | 89.0 | 65.9 |
+| Future-only (tests k+1 to end) | 6 | 34 / 73 | 29.4 | 61.8 | +32.4 (17.1 to 48.5) | 84.9 | 63.0 |
+
+Post-hoc (review round 2). RC thresholds from amendB.json; eyes from all splits (D1, D2 untrained). Patient-level bootstrap CIs. Indeterminate eyes (primary reference): see main text.

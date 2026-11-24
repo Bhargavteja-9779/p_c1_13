@@ -9,6 +9,7 @@ R = lambda f: json.load(open(os.path.join(ROOT, 'results', f)))
 M, S, C, RW = R('v2/metrics.json'), R('v2/statistics.json'), R('dataset_counts.json'), R('realworld.json')
 X = R('v2/extras.json')
 BB = R('amendB/amendB.json')
+RB = R('amendB/robust.json')
 for _m in M:   # aliases so the primary GRAPE label (MD criterion) keeps its v1 key names
     for _a in ('', '_lo', '_hi', '_n'):
         _m['grape_sens' + _a] = _m.get('grape_md_sens' + _a); _m['grape_spec' + _a] = _m.get('grape_md_spec' + _a)
@@ -25,6 +26,12 @@ def met(code, k):
     return next(m for m in M if m['detector'] == CODE[code] and m['k'] == int(k))
 def pair(k, ep, code):
     return next(p for p in S['paired_tests'] if p['k'] == int(k) and p['endpoint'] == EP[ep] and p['detector'] == CODE[code])
+def holm_adj(ps):
+    import numpy as np
+    o = np.argsort(ps); m = len(ps); adj = np.empty(m); run = 0
+    for i, j in enumerate(o):
+        run = max(run, min(1, (m - i) * ps[j])); adj[j] = run
+    return adj
 def pct(x, dp=1): return 'n/a' if x is None else f'{100 * x:.{dp}f}%'
 def pnum(x, dp=1): return f'{100 * x:.{dp}f}'
 def pval(p): return '< 0.001' if p < 0.001 else f'= {p:.3f}' if p < 0.1 else f'= {p:.2f}'
@@ -142,6 +149,22 @@ def val(key):
         if a[0] == 'range':   # b4.range.D1.lo|hi over variants and k
             v = [r['fpr'] for r in BB['B4_metrics'] if r['detector'] == CODE[a[1]]]; return pct(min(v) if a[2] == 'lo' else max(v))
         return pct(next(r for r in BB['B4_metrics'] if r['detector'] == CODE[a[0]] and r['k'] == int(a[1]) and r['variant'] == a[2])['fpr'])
+    if t == 'rb':   # rb.range.<field>.<lo|hi>[.ref]  over k (and reference if given); rb.ind.<D1|D2>.<lo|hi>
+        if a[0] == 'range':
+            REFN = {'primary': 'cut-0.3', 'cut05': 'cut-0.5', 'cut10': 'cut-1.0', 'future': 'future'}
+            rs = [r for r in RB['by_reference'] if len(a) < 4 or r['reference'] == REFN[a[3]]]
+            v = [r[a[1]] for r in rs]; x = min(v) if a[2] == 'lo' else max(v)
+            return f"{100 * x:.0f}"
+        if a[0] == 'ind':
+            v = [r[a[1] + '_flag'] for r in RB['indeterminate']]; return f"{100 * (min(v) if a[2] == 'lo' else max(v)):.0f}"
+        if a[0] == 'nind': return f"{RB['indeterminate'][0]['n']:,}"
+    if t == 'd8k6':
+        p = next(x for x in BB['B1_paired'] if x['calibration'] == 'RC' and x['k'] == 6 and x['detector'] == CODE['D8'] and x['endpoint'] == 'sensitivity')
+        return f"{100 * p['diff']:+.1f} percentage points; 95% CI {100 * p['diff_lo']:.1f} to {100 * p['diff_hi']:.1f}; Holm-adjusted p {pval(p['p_holm'])}"
+    if t == 'hb3global':
+        ps = [x['p'] for x in BB['B1_paired'] if x['calibration'] == 'RC' and x['endpoint'] == 'sensitivity']
+        return pval(min(holm_adj(ps)))
+    if t == 'x' and a[0] == 'nhb3': return str(sum(1 for x in BB['B1_paired'] if x['calibration'] == 'RC' and x['endpoint'] == 'sensitivity'))
     if t == 'meta': return f"{R('run_meta_full.json')[a[0]]:,.0f}"
     raise KeyError(key)
 
@@ -214,6 +237,7 @@ def table4():
       '| Paired CI | Patient bootstrap | Patient bootstrap | First analysis resampled eyes; corrected after review |',
       '| Not-applicable detectors | Not specified | D4, D7, D10 at 3 tests excluded from counts and Holm families | Cannot flag by design |',
       '| Amendment B | — | No-change calibration (RC, SC) of D1, D2, D6, D8, D9; matched comparison; all eligible eyes for D1–D4; time-label check | Written and time-stamped after round-1 results and review, before running; hypotheses HB1–HB3 pre-stated |',
+      '| Post-hoc robustness | — | Retest-calibrated D1 and D2 applied to all eyes, alternative reference cut-offs, future-only reference, indeterminate eyes | Requested in review round 2; exploratory |',
       '| Added analyses | — | Cumulative false alarms over four reviews; future-only reference; GRAPE PLR2/PLR3/any labels in tables | Requested in review; exploratory except GRAPE secondary labels (planned) |',
       '| Development use of data | Artes used once in development | D6 false-alarm excess on Artes known before the plan | D6 result is not confirmatory |',
       '| Quick software check | Quick mode on validation subset | Quick mode also processed Artes and GRAPE files before A1/A2 | Outputs not used for any choice |',
@@ -255,6 +279,16 @@ def tableS6():
             L.append(f"| {k} | {c} {SHORT[c]} | {pnum(r['sens'])} ({pnum(r['sens_lo'])}–{pnum(r['sens_hi'])}) | {pnum(r['spec'])} ({pnum(r['spec_lo'])}–{pnum(r['spec_hi'])}) | {dt} |")
     c3 = BB['B3_counts']
     L += ['', f"{c3['eyes']} eyes ({c3['progressors']} progressors, {c3['stable']} stable) of {c3['patients']} patients from the training, validation and test sets; D1–D4 need no training. Patient-level bootstrap CIs."]
+    return '\n'.join(L)
+
+def tableS7():
+    L = ['**Table S7** Post-hoc robustness: retest-calibrated D1 and D2 on all UWHVF eyes with at least eight tests, under four reference definitions', '',
+         '| Reference | Tests | Progressors / stable eyes | D1 sensitivity, % | D2 sensitivity, % | Difference, pp (95% CI) | D1 specificity, % | D2 specificity, % |', '|---|---|---|---|---|---|---|---|']
+    names = {'cut-0.3': 'Primary (−0.3 dB/yr)', 'cut-0.5': 'Cut-off −0.5 dB/yr', 'cut-1.0': 'Cut-off −1.0 dB/yr', 'future': 'Future-only (tests k+1 to end)'}
+    for r in RB['by_reference']:
+        L.append(f"| {names[r['reference']]} | {r['k']} | {r['n_sens']} / {r['n_spec']} | {pnum(r['D1_sens'])} | {pnum(r['D2_sens'])} | "
+                 f"{100 * r['diff_sens']:+.1f} ({100 * r['diff_lo']:.1f} to {100 * r['diff_hi']:.1f}) | {pnum(r['D1_spec'])} | {pnum(r['D2_spec'])} |")
+    L += ['', RB['note'] + ' Patient-level bootstrap CIs. Indeterminate eyes (primary reference): see main text.']
     return '\n'.join(L)
 
 def tableS2():
@@ -328,7 +362,7 @@ def renumber_citations(md):
     return md, reflist, order
 
 def fill(text):
-    for name, fn in (('TABLES2', tableS2), ('TABLES3', tableS3), ('TABLES4', tableS4), ('TABLES5', tableS5), ('TABLES6', tableS6), ('TABLE1', table1), ('TABLE2', table2), ('TABLE3', table3), ('TABLE4', table4), ('TABLE5', table5)):
+    for name, fn in (('TABLES2', tableS2), ('TABLES3', tableS3), ('TABLES4', tableS4), ('TABLES5', tableS5), ('TABLES6', tableS6), ('TABLES7', tableS7), ('TABLE1', table1), ('TABLE2', table2), ('TABLE3', table3), ('TABLE4', table4), ('TABLE5', table5)):
         text = text.replace('{{' + name + '}}', fn())
     text = re.sub(r'\{\{(?!REFERENCES)([^}]+)\}\}', lambda m: val(m.group(1).strip()), text)
     left = [x for x in re.findall(r'\{\{[^}]*\}\}', text) if x != '{{REFERENCES}}']

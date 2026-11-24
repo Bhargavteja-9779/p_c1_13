@@ -35,3 +35,8 @@ Ideas counted: six rounds, nine candidate method variants. Because no developmen
 ## S6 Untrained detectors on all eligible eyes
 
 {{TABLES6}}
+
+
+## S7 Post-hoc robustness of the calibrated rate rule
+
+{{TABLES7}}
