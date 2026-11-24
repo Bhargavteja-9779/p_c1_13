@@ -11,6 +11,7 @@ python3 -m src.statistics.summarise_v2                 # revised statistics used
 python3 -m src.statistics.describe                     # cohort counts and real-world measures
 python3 experiments/amendment_b.py                    # amendment B scores (~7 min)
 python3 -m src.statistics.amendment_b_stats
+python3 -m src.statistics.amendment_b_robust            # post-hoc robustness (review round 2)
 python3 -m src.visualization.figures
 python3 -m src.visualization.fig5_calibration
 cd ../manuscript && python3 fill_values.py && python3 build_docx.py

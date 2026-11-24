@@ -45,3 +45,18 @@ Package complete and internally consistent (all numbers machine-generated, citat
 By the brief's strict standard the study is **NOT READY** as a high-confidence Q1 submission (items 1–3 above). It can be
 submitted as is with the risks above, or improved first (recommended next steps: M3 analysis on all eligible eyes, A1
 sensitivity analysis, one published comparator).
+
+## Update 2026-11-24: novelty extension (amendment B) and review round 2
+- Amendment B (protocol committed 249b675 before running): no-change calibration of thresholds on retest data (RC) or
+  shuffled clinic records (SC); matched-false-alarm comparison; all-eligible-eyes analysis; time-label check.
+- Results: HB1 supported (RC removes excess false alarms); HB2 not supported (SC within 3 pp in 70% of cells);
+  HB3 falsified by the retest-calibrated rate score (+30.8 pp at 5 and 6 tests, Holm within k p = 0.031; across all
+  16 comparisons p = 0.12). Conformal/ML detectors: no significant gain at matched false alarms.
+- Post-hoc robustness (review round 2): the rate score's sensitivity gain holds under every reference definition
+  (+11 to +35 pp) but costs specificity in clinic stable eyes (80-90% vs 95-99%) -> a trade-off, not a winner.
+- New, clinically usable message: compare detectors at matched false alarms on no-change data that match clinic
+  intervals; the self-normalised trend test is the safe default.
+- Novelty (round-2 reviewer): 3/5 (up from benchmark-only). Remaining desk-rejection risks: small n (26/26 test set),
+  post-hoc/in-house benchmark, no long-interval no-change data, length (main text ~5,500 words vs ~4,000 guide).
+- Decision: package complete and consistent; honest label upgraded from "NOT REMARKABLE" to "moderate novelty,
+  submittable with stated risks".

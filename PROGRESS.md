@@ -101,8 +101,9 @@
 - 2026-11-23 21:05 User asked for more novelty. Protocol amendment B committed (249b675) BEFORE running: B1 no-change
   calibration (shuffle SC / retest RC thresholds) for D1,D2,D6,D8,D9; HB1-HB3 incl. matched-false-alarm comparison;
   B3 all eligible eyes for D1-D4; B4 time-label sensitivity. Scheduled auto-resume 'continue' at 2026-11-24T02:05Z.
+- 2026-11-24: Amendment B done (results/amendB/*), Fig. 5, Table 5, S6, S7; round-2 review
+  (REVIEW/review_round2_amendmentB.md: no number mismatches, novelty 3/5); post-hoc robustness (amendment_b_robust.py).
+  Title now "...A Benchmark With True No-Change Calibration". Zip rebuilt (119 files).
 ## NEXT ACTION
-1. If results/amendB/scores.csv.gz etc. missing: cd code && python3 experiments/amendment_b.py (~1 h).
-2. python3 -m src.statistics.amendment_b_stats -> results/amendB/amendB.json; commit.
-3. Add amendment B to manuscript (new Results section + Table 5 + figure 5), update abstract/KSP/discussion honestly
-   (report HB1-HB3 outcomes whatever they are), rebuild docx/pdf, rebuild zip, commit.
+Wait for user: second author name/department/e-mail, date, suggested reviewers. Optional: shorten main text
+(~5,500 words vs ~4,000 guide). Auto-resume scheduled task fires 2026-11-24T02:05Z: if nothing new, just report status.
