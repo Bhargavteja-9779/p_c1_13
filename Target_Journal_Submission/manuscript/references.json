@@ -326,5 +326,50 @@
   "venue": "Ophthalmology Science",
   "type": "journal-article",
   "vancouver": "Mohammadzadeh V, Li L, Fei Z, Davis T, Morales E, Wu K, et al. Efficacy of Smoothing Algorithms to Enhance Detection of Visual Field Progression in Glaucoma. Ophthalmology Science. 2024;4(2):100423. https://doi.org/10.1016/j.xops.2023.100423"
+ },
+ {
+  "doi": "10.2202/1544-6115.1027",
+  "verified": true,
+  "title": "Linear Models and Empirical Bayes Methods for Assessing Differential Expression in Microarray Experiments",
+  "year": 2004,
+  "venue": "Statistical Applications in Genetics and Molecular Biology",
+  "type": "journal-article",
+  "vancouver": "Smyth GK. Linear Models and Empirical Bayes Methods for Assessing Differential Expression in Microarray Experiments. Statistical Applications in Genetics and Molecular Biology. 2004;3(1):1-25. https://doi.org/10.2202/1544-6115.1027"
+ },
+ {
+  "doi": "10.1167/tvst.2.6.2",
+  "verified": true,
+  "title": "Detecting the Progression of Eye Disease: CUSUM Charts for Assessing the Visual Field and Retinal Nerve Fiber Layer Thickness",
+  "year": 2013,
+  "venue": "Translational Vision Science & Technology",
+  "type": "journal-article",
+  "vancouver": "Ledolter J, Kardon R. Detecting the Progression of Eye Disease: CUSUM Charts for Assessing the Visual Field and Retinal Nerve Fiber Layer Thickness. Translational Vision Science & Technology. 2013;2(6):2. https://doi.org/10.1167/tvst.2.6.2"
+ },
+ {
+  "doi": "10.1167/tvst.7.3.22",
+  "verified": true,
+  "title": "Development of a Visual Field Simulation Model of Longitudinal Point-Wise Sensitivity Changes From a Clinical Glaucoma Cohort",
+  "year": 2018,
+  "venue": "Translational Vision Science & Technology",
+  "type": "journal-article",
+  "vancouver": "Wu Z, Medeiros FA. Development of a Visual Field Simulation Model of Longitudinal Point-Wise Sensitivity Changes From a Clinical Glaucoma Cohort. Translational Vision Science & Technology. 2018;7(3):22. https://doi.org/10.1167/tvst.7.3.22"
+ },
+ {
+  "doi": "10.1136/bjo.86.5.560",
+  "verified": true,
+  "title": "Frequency of testing for detecting visual field progression",
+  "year": 2002,
+  "venue": "British Journal of Ophthalmology",
+  "type": "journal-article",
+  "vancouver": "Gardiner SK, Crabb DP. Frequency of testing for detecting visual field progression. British Journal of Ophthalmology. 2002;86(5):560-564. https://doi.org/10.1136/bjo.86.5.560"
+ },
+ {
+  "doi": "10.1167/tvst.12.6.27",
+  "verified": true,
+  "title": "A Data-Driven Model for Simulating Longitudinal Visual Field Tests in Glaucoma",
+  "year": 2023,
+  "venue": "Translational Vision Science & Technology",
+  "type": "journal-article",
+  "vancouver": "Li Y, Eizenman M, Shi RB, Buys YM, Trope GE, Wong W. A Data-Driven Model for Simulating Longitudinal Visual Field Tests in Glaucoma. Translational Vision Science & Technology. 2023;12(6):27. https://doi.org/10.1167/tvst.12.6.27"
  }
 ]

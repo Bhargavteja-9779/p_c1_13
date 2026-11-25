@@ -6,3 +6,5 @@ __pycache__/
 Target_Journal_Submission/results/full_run_repro.log
 results/amendB/*.log
 Target_Journal_Submission/results/amendB/run.log
+Target_Journal_Submission/results/amendC/scores.pkl
+Target_Journal_Submission/results/amendC_run.log
