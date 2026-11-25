@@ -60,3 +60,13 @@ sensitivity analysis, one published comparator).
   post-hoc/in-house benchmark, no long-interval no-change data, length (main text ~5,500 words vs ~4,000 guide).
 - Decision: package complete and consistent; honest label upgraded from "NOT REMARKABLE" to "moderate novelty,
   submittable with stated risks".
+
+## Update 2026-11-25 (amendment C, retarget to TVST)
+- Previous rejections (Int J Forecasting, J Operations Management) were scope mismatches; retargeted to Translational
+  Vision Science & Technology (journal_selection/retarget_2026-11-25.md).
+- Amendment C added (pre-registered, commit a827dcc; results 3700efb): clinic-noise null calibration, 690-eye
+  cross-fitted matched comparison, moderated trend test (negative in real eyes), semi-synthetic truth, budgeted
+  monitoring. Novelty rescored 24/30 (journal_selection/novelty_scorecard_v3.md); label still NOT REMARKABLE.
+- Open author items: verify TVST word/figure limits and APC; JCR quartile (UNVERIFIED); confirm the manuscript is not
+  under consideration elsewhere; add department names and suggested reviewer names; decide whether to cut to ~5,000 words.
+- Decision: READY FOR SUBMISSION after the author items above (no open scientific blocker; limitations disclosed).

@@ -1,7 +1,7 @@
 {
- "abstract_words": 295,
- "main_text_words": 5498,
- "references": 36,
+ "abstract_words": 249,
+ "main_text_words": 6855,
+ "references": 40,
  "cited_old_indices": [
   1,
   2,
@@ -29,6 +29,10 @@
   24,
   34,
   22,
+  39,
+  41,
+  38,
+  37,
   32,
   14,
   15,
@@ -38,7 +42,9 @@
   33,
   25,
   26,
-  28
+  40
  ],
- "uncited": []
+ "uncited": [
+  28
+ ]
 }

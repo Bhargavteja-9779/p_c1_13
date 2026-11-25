@@ -40,3 +40,11 @@ Ideas counted: six rounds, nine candidate method variants. Because no developmen
 ## S7 Post-hoc robustness of the calibrated rate rule
 
 {{TABLES7}}
+
+## S8 Semi-synthetic sensitivity (amendment C)
+
+{{TABLES8}}
+
+## S9 Literature search for amendment C (prior art)
+
+On 25 November 2026 we searched OpenAlex (titles and abstracts), Crossref, Europe PMC and the web for combinations of "visual field", "progression", "moderated t", "empirical Bayes", "variance shrinkage", "sequential monitoring", "CUSUM", "cumulative false positive", "repeated testing" and "simulation". The closest prior work was: CUSUM charts for visual fields and nerve-fibre-layer thickness (Ledolter and Kardon, 2013); hierarchical Bayesian models, which shrink slopes and model variance (Montesano et al., 2021; Mohammadzadeh et al., 2025); and data-driven simulation of longitudinal fields from clinic residuals (Wu and Medeiros, 2018; Li et al., 2023). We found no study that used a clinic-residual null to set detector thresholds, compared threshold sources on true no-change data, applied a closed-form empirical-Bayes moderated trend test to visual fields, or calibrated a monitoring rule to a cumulative false-alarm budget. Google Scholar, Scopus and Web of Science could not be searched from our computing environment, so this claim is limited to the sources named.

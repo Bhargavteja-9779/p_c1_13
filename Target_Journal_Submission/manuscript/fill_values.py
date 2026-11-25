@@ -10,6 +10,95 @@ M, S, C, RW = R('v2/metrics.json'), R('v2/statistics.json'), R('dataset_counts.j
 X = R('v2/extras.json')
 BB = R('amendB/amendB.json')
 RB = R('amendB/robust.json')
+CC = R('amendC/amendC.json')
+
+def ccval(key):
+    """Amendment C placeholders: {{cc:path/with/slashes:fmt}}; fmt p|ci|d|pv|pp|f1|f2|raw|n|ppd."""
+    path, fmt = (key[3:].rsplit(':', 1) + ['p'])[:2] if key.count(':') >= 2 else (key[3:], 'p')
+    v = CC
+    for part in path.split('/'): v = v[part]
+    def fmtnum(x, d=1): return f'{x:.{d}f}'.replace('-', '−')
+    if fmt == 'p': return pct(v[0] if isinstance(v, list) else v)
+    if fmt == 'ci': return f"{pct(v[0])} (95% CI {pnum(v[1])}–{pnum(v[2])}%)"
+    if fmt == 'd': return (f"{100 * v[0]:+.1f} percentage points; 95% CI {100 * v[1]:.1f} to {100 * v[2]:.1f}").replace('-', '−')
+    if fmt == 'pv': return pval(v)
+    if fmt == 'pp': return fmtnum(100 * (v[0] if isinstance(v, list) else v))
+    if fmt == 'ppd': return fmtnum(abs(100 * (v[0] if isinstance(v, list) else v)))
+    if fmt in ('f1', 'f2'): return fmtnum(v, int(fmt[1]))
+    if fmt == 'n': return f'{int(v):,}'
+    if fmt == 'yn': return 'supported' if v else 'not supported'
+    return str(v)
+
+def ccx(key):
+    """Computed amendment C summaries: {{ccx:name}}."""
+    n = key[4:]; K = ('3', '4', '5', '6')
+    if n.startswith('horange.'):           # ccx:horange.RC.D2c.lo
+        _, src, d, e = n.split('.'); v = [CC['ho_cnn'][src][d][k][0] for k in K]
+        return pnum(min(v) if e == 'lo' else max(v))
+    if n.startswith('realdiff.'):          # ccx:realdiff.CNN.D2c.lo  (most negative/positive point difference vs D1, k 3-6)
+        _, src, d, e = n.split('.'); v = [CC['real'][src][k][d]['sens_diff_vs_D1'][0] for k in K]
+        return f"{100 * (min(v) if e == 'lo' else max(v)):+.1f}".replace('-', '−')
+    if n.startswith('minholm.'):           # ccx:minholm.CNN.D11
+        _, src, d = n.split('.'); return pval(min(CC['real'][src][k][d]['mcnemar_p_holm'] for k in K))
+    if n.startswith('gamma.'):
+        g = CC['seq'][n.split('.')[1]]['budget_gamma']; return f'{100 * sum(g) / len(g):.1f}'
+    if n.startswith('d0.'):
+        v = [pr[1][0] for f in CC['prior'].values() for pr in [(None, x) for x in f['prior']]]
+        return f"{(min(v) if n.endswith('lo') else max(v)):.1f}"
+    if n.startswith('rcspec.') or n.startswith('rcindet.'):   # range over D2c and D11, k 3-6, RC thresholds
+        f = 'spec' if n.startswith('rcspec') else 'indet_flag'
+        v = [CC['real']['RC'][k][d][f][0] for k in K for d in ('D2c', 'D11')]
+        return pnum(min(v) if n.endswith('lo') else max(v))
+    if n == 'ncal':
+        v = [f['n_cal_cnn'] for f in CC['meta']['folds'].values()]; return f'{min(v):,}–{max(v):,}'
+    if n.startswith('artesrange.'):        # ccx:artesrange.D11.hi
+        _, d, e = n.split('.'); v = [CC['artes'][d][k][0] for k in K]; return pnum(min(v) if e == 'lo' else max(v))
+    raise KeyError(n)
+
+def tableS8():
+    L = ['**Table S8** Semi-synthetic sensitivity (amendment C): held-out clinic-noise null series with a known injected loss; thresholds from the clinic-noise null (5% false alarms)', '',
+         '| Pattern | Loss, dB/yr | Detector | 3 tests | 4 tests | 5 tests | 6 tests |', '|---|---|---|---|---|---|---|']
+    for key in CC['syn']:
+        pat, r = key.split('_')
+        for d in ('D1', 'D2c', 'D6s', 'D8c', 'D11'):
+            L.append(f"| {'Global' if pat == 'global' else 'Localised'} | {r} | {d} | " + ' | '.join(f"{100 * CC['syn'][key][d][k][0]:.1f}" for k in ('3', '4', '5', '6')) + ' |')
+    L += ['', 'Values are % of series flagged. Global: equal loss at every location; localised: loss concentrated in one of four regions with the same loss in mean sensitivity. Patient-cluster bootstrap CIs are in results/amendC/amendC.json.']
+    return '\n'.join(L)
+
+def table6():
+    L = ['**Table 6** Clinic-noise calibration (amendment C): out-of-fold results in all UWHVF eyes with at least eight tests', '',
+         '| Tests | Detector | False alarms on held-out clinic-noise null, % (RC / SC / CNN thresholds) | False alarms on true no-change retests, % (95% CI), CNN | Sensitivity, % (95% CI), CNN | Difference vs D1, pp (95% CI), CNN | Holm p | Specificity, % (95% CI), CNN | Indeterminate eyes flagged, %, CNN |',
+         '|---|---|---|---|---|---|---|---|---|']
+    f = lambda v: f"{100 * v[0]:.1f} ({100 * v[1]:.1f}–{100 * v[2]:.1f})"
+    for k in ('3', '4', '5', '6'):
+        for d in ('D1', 'D2c', 'D6s', 'D8c', 'D11'):
+            e = CC['real']['CNN'][k][d]
+            ho = ' / '.join(f"{100 * CC['ho_cnn'][s][d][k][0]:.1f}" for s in ('RC', 'SC', 'CNN'))
+            df = '—' if d == 'D1' else f"{100 * e['sens_diff_vs_D1'][0]:+.1f} ({100 * e['sens_diff_vs_D1'][1]:.1f} to {100 * e['sens_diff_vs_D1'][2]:.1f})".replace('-', '−')
+            hp = '—' if d == 'D1' else pval(e['mcnemar_p_holm']).replace('= ', '')
+            L.append(f"| {k} | {d} | {ho} | {f(CC['artes'][d][k])} | {f(e['sens'])} | {df} | {hp} | {f(e['spec'])} | {100 * e['indet_flag'][0]:.1f} |")
+    n = CC['real']['n']
+    L += ['', f"{n['progressors']} reference progressors, {n['stable']} reference-stable and {n['indeterminate']} indeterminate eyes ({n['eyes8']} eyes with at least eight tests). "
+          "RC, thresholds from weekly retests (Artes); SC, from shuffled clinic records; CNN, from the clinic-noise null (detrended residual resampling). "
+          "Every eye was evaluated with thresholds and models fitted on the other four patient folds. Holm correction within number of tests over D2c, D6s, D8c and D11 (exact McNemar). "
+          "D2c, calibrated slope of mean sensitivity; D6s, worst regional trend statistic; D8c, cross-fitted LightGBM; D11, moderated trend test; pp, percentage points."]
+    return '\n'.join(L)
+
+def table7():
+    L = ['**Table 7** Monitoring over reviews after tests 3 to 8 (amendment C): cumulative false alarms and detection', '',
+         '| Detector | Rule | Cumulative false alarms, retests, % (95% CI) | Cumulative false alarms, held-out clinic-noise null, % | Progressors flagged by test 8, % (95% CI) | Stable eyes flagged by test 8, % | Indeterminate eyes flagged by test 8, % | Median tests to first flag (progressors) | Synthetic 1 dB/yr flagged by test 8, global / localised, % |',
+         '|---|---|---|---|---|---|---|---|---|']
+    f = lambda v: f"{100 * v[0]:.1f} ({100 * v[1]:.1f}–{100 * v[2]:.1f})"
+    RN = {'naive': 'Every review at 5%', 'confirm': 'Confirm on next test', 'budget': '5% budget over six reviews'}
+    for d in ('D1', 'D2c', 'D6s', 'D8c', 'D11'):
+        for r in ('naive', 'confirm', 'budget'):
+            e = CC['seq'][d][r]
+            L.append(f"| {d} | {RN[r]} | {f(e['artes_cum_fa'])} | {100 * e['ho_cnn_cum_fa'][0]:.1f} | {f(e['prog_by8'])} | {100 * e['stable_by8'][0]:.1f} | "
+                     f"{100 * e['indet_by8'][0]:.1f} | {e['prog_median_tests']} | {100 * e['syn_global_1.0_by8'][0]:.1f} / {100 * e['syn_local_1.0_by8'][0]:.1f} |")
+    L += ['', 'Rules: every review at 5%, flag at the first review whose score exceeds its per-review 5% clinic-noise threshold; confirm on next test, '
+          'flag when two consecutive reviews exceed their 5% thresholds; 5% budget over six reviews (new), one common per-review level chosen on the calibration '
+          'clinic-noise null so that at most 5% of no-change series are ever flagged. Retest false alarms use 8-test windows of the Artes data with clinic test dates.']
+    return '\n'.join(L)
 for _m in M:   # aliases so the primary GRAPE label (MD criterion) keeps its v1 key names
     for _a in ('', '_lo', '_hi', '_n'):
         _m['grape_sens' + _a] = _m.get('grape_md_sens' + _a); _m['grape_spec' + _a] = _m.get('grape_md_spec' + _a)
@@ -41,6 +130,8 @@ def valid(m):
 def excessive(m): return m['clearly_excessive']
 
 def val(key):
+    if key.startswith('cc:'): return ccval(key)
+    if key.startswith('ccx:'): return ccx(key)
     t, *a = key.split('.')
     if t == 'm': return pct(met(a[0], a[1])[a[2]])
     if t == 'mci':
@@ -239,6 +330,7 @@ def table4():
       '| Amendment B | — | No-change calibration (RC, SC) of D1, D2, D6, D8, D9; matched comparison; all eligible eyes for D1–D4; time-label check | Written and time-stamped after round-1 results and review, before running; hypotheses HB1–HB3 pre-stated |',
       '| Post-hoc robustness | — | Retest-calibrated D1 and D2 applied to all eyes, alternative reference cut-offs, future-only reference, indeterminate eyes | Requested in review round 2; exploratory |',
       '| Added analyses | — | Cumulative false alarms over four reviews; future-only reference; GRAPE PLR2/PLR3/any labels in tables | Requested in review; exploratory except GRAPE secondary labels (planned) |',
+      '| Amendment C | — | Clinic-noise null calibration; moderated trend test (D11); 5-fold patient cross-fitting over all UWHVF eyes; semi-synthetic truth; three monitoring rules over reviews 3–8 | Written and committed on 2026-11-25 before running, after the earlier results and two journal rejections; hypotheses HC1–HC5 pre-stated; the UWHVF test split had already been used, so amendment C is not a locked-test analysis; D8c used one seed; GRAPE not analysed (series too short for a clinic-noise null) |',
       '| Development use of data | Artes used once in development | D6 false-alarm excess on Artes known before the plan | D6 result is not confirmatory |',
       '| Quick software check | Quick mode on validation subset | Quick mode also processed Artes and GRAPE files before A1/A2 | Outputs not used for any choice |',
       '| D8 features | Features incl. PoPLR statistic and worst-region slope | 14 features: number of tests, span, level and change of mean sensitivity, its slope and z, share of declining points, mean pointwise −log p, worst-decile pointwise slope, spread measures | PoPLR-type summary (mean −log p) and worst-decile slope used instead; fixed before the final run |'])
@@ -362,7 +454,7 @@ def renumber_citations(md):
     return md, reflist, order
 
 def fill(text):
-    for name, fn in (('TABLES2', tableS2), ('TABLES3', tableS3), ('TABLES4', tableS4), ('TABLES5', tableS5), ('TABLES6', tableS6), ('TABLES7', tableS7), ('TABLE1', table1), ('TABLE2', table2), ('TABLE3', table3), ('TABLE4', table4), ('TABLE5', table5)):
+    for name, fn in (('TABLES2', tableS2), ('TABLES3', tableS3), ('TABLES4', tableS4), ('TABLES5', tableS5), ('TABLES6', tableS6), ('TABLES7', tableS7), ('TABLES8', tableS8), ('TABLE1', table1), ('TABLE2', table2), ('TABLE3', table3), ('TABLE4', table4), ('TABLE5', table5), ('TABLE6', table6), ('TABLE7', table7)):
         text = text.replace('{{' + name + '}}', fn())
     text = re.sub(r'\{\{(?!REFERENCES)([^}]+)\}\}', lambda m: val(m.group(1).strip()), text)
     left = [x for x in re.findall(r'\{\{[^}]*\}\}', text) if x != '{{REFERENCES}}']

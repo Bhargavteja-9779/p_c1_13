@@ -14,4 +14,7 @@ python3 -m src.statistics.amendment_b_stats
 python3 -m src.statistics.amendment_b_robust            # post-hoc robustness (review round 2)
 python3 -m src.visualization.figures
 python3 -m src.visualization.fig5_calibration
+python3 experiments/amendment_c.py                    # amendment C scores (~1-2 min)
+python3 -m src.statistics.amendment_c_stats
+python3 -m src.visualization.fig6_clinic_noise
 cd ../manuscript && python3 fill_values.py && python3 build_docx.py

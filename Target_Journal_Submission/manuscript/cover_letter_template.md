@@ -1,21 +1,21 @@
-24 November 2026
+25 November 2026
 
 The Editor-in-Chief
-*Ophthalmology and Therapy*
+*Translational Vision Science & Technology*
 
 Dear Editor,
 
-Please consider our Original Research article, "How Early Can Glaucoma Visual-Field Progression Be Detected Without False Alarms? A Benchmark With True No-Change Calibration", for publication in *Ophthalmology and Therapy*.
+Please consider our Article, "Which Noise Should Set the Alarm? Calibrating Glaucoma Visual-Field Progression Detectors to Clinic Noise, With True No-Change Data and Cumulative False-Alarm Control", for publication in *Translational Vision Science & Technology*.
 
-Clinicians escalate glaucoma treatment when the visual field gets worse. Many new methods, including machine-learning models, claim to detect this earlier. Few have been checked on eyes that truly did not change, and a false progression flag can lead to unnecessary drops, laser or surgery.
+Every visual-field progression detector needs a threshold, and that threshold is set on some kind of no-change data. We show that this choice, which papers rarely discuss, decides which detector looks best. Thresholds set on weekly retests, the only true no-change data available, raised false alarms on {{ccx:horange.RC.D2c.lo}}–{{ccx:horange.RC.D2c.hi}}% of held-out clinic-noise series for a rate-of-change rule, against a nominal 5%. With these thresholds, rate-based rules appeared to beat the standard trend test by up to {{ccx:realdiff.RC.D2c.hi}} percentage points. These gains vanished when all detectors were calibrated on a label-free clinic-noise null that any clinic can build from its own records. In {{cc:real/n/eyes8:n}} eyes with patient-level cross-fitting, no detector then beat the trend of mean sensitivity, including a new moderated trend test whose clear gain in semi-synthetic data did not carry over to real eyes. We also quantify a problem every clinic faces: testing every review at 5% let {{cc:seq/D1/naive/artes_cum_fa:p}} of true no-change series be flagged over six reviews. A calibrated 5% budget, or confirmation on the next test, restored control at the cost of about one extra test.
 
-We compared ten detectors in three public data sets, following an analysis plan committed before the final run. The benchmark includes a true no-change arm (patients tested weekly for 12 weeks), a future-confirmed reference and an external clinic in China. With three tests, the most sensitive conformal and machine-learning detectors raised false alarms on {{m.D6.3.fpr_true_null}} and {{m.D8.3.fpr_true_null}} of true no-change series, although they looked as specific as the simple trend test on reference-stable eyes. Even the simple trend test flagged {{cum.D1.p}} of no-change series at least once over four reviews. In a pre-specified extension, we re-set every detector's threshold on no-change data so that all could be compared at the same false-alarm rate. The conformal and machine-learning detectors then lost their significant advantage, and a rate-of-change rule ranked first or last depending on which no-change data set its threshold. The simple trend test was the most robust to this choice. This gives clinicians and developers a concrete rule for evaluating new detectors. We report all results, including negative ones, the methods we developed and abandoned, and every deviation from the analysis plan.
+We believe the work suits TVST because it is translational in the journal's sense. It turns a statistical problem into a procedure that clinics and device makers can apply to any detector, and it builds directly on resources and methods published in TVST, including the UWHVF data set, CUSUM monitoring of visual fields and data-driven visual-field simulation.
 
-We believe the study fits the journal's interest in real-world evidence on decisions about glaucoma therapy. Its practical message is that a new detector should not drive treatment escalation until its false-alarm rate on true no-change data is known. All code, per-eye outputs and result files are provided.
+All analyses use public data. The extension reported in this version (amendment C) was planned after our earlier results and was committed to the repository before it was run; its five hypotheses were pre-stated, and we report the two that were not supported. All code, analysis plans, per-eye outputs and result files are provided.
 
 The manuscript has not been published and is not under consideration elsewhere. Both authors approved the submission. No funding was received, and the authors declare no competing interests. The use of an AI-based assistant for code and drafting is disclosed in the manuscript.
 
-Suggested reviewers (expertise only; names to be added by the authors): (1) statistical methods for visual-field progression; (2) machine learning in perimetry; (3) clinical glaucoma management and test frequency.
+Suggested reviewers (expertise only; names to be added by the authors): (1) statistical methods for visual-field progression; (2) visual-field variability and simulation; (3) clinical glaucoma management and test frequency.
 
 Yours sincerely,
 

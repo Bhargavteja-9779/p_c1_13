@@ -18,5 +18,9 @@
  [
   "fig5_no_change_calibration.png",
   "**Fig. 5** No-change calibration (amendment B). Each detector's continuous score was thresholded at the 95th percentile of its scores on no-change series, and sensitivity for future-confirmed progressors (UWHVF test set) is shown by number of tests. **A** Thresholds set on the Artes weekly retest data; every detector then had about 5% false alarms on held-out retest patients. **B** Thresholds set on the clinic's own training eyes with their tests randomly re-ordered; false alarms on the retest data then ranged from very low (D2) to slightly above 5% (Table 5). The rate-of-change rule (D2) ranks first or last depending on the calibration source; the trend test (D1) is nearly unchanged. Values are means over five seeds for D8 and D9."
+ ],
+ [
+  "fig6_clinic_noise_calibration.png",
+  "**Fig. 6** Clinic-noise calibration (amendment C; all UWHVF eyes, five-fold patient cross-fitting). **A** False alarms on held-out clinic-noise null series when thresholds were set on weekly retests, shuffled clinic records or the clinic-noise null (mean over 3\u20136 tests; dashed line, nominal 5%). **B** Sensitivity at clinic-noise-calibrated thresholds in real reference progressors (solid lines) and in semi-synthetic series with a known global loss of 1 dB per year (dotted lines). **C** Cumulative false alarms over reviews after tests 3\u20138 on held-out clinic-noise null series against the share of reference progressors flagged by test 8, for three monitoring rules. D2c, calibrated rate of change; D6s, worst regional trend; D8c, cross-fitted tree model; D11, moderated trend test (new)."
  ]
 ]

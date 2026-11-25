@@ -264,3 +264,46 @@ Exploratory: among the E1 eyes (primary or secondary reference), reference recom
 | Future-only (tests k+1 to end) | 6 | 34 / 73 | 29.4 | 61.8 | +32.4 (17.1 to 48.5) | 84.9 | 63.0 |
 
 Post-hoc (review round 2). RC thresholds from amendB.json; eyes from all splits (D1, D2 untrained). Patient-level bootstrap CIs. Indeterminate eyes (primary reference): see main text.
+
+## S8 Semi-synthetic sensitivity (amendment C)
+
+**Table S8** Semi-synthetic sensitivity (amendment C): held-out clinic-noise null series with a known injected loss; thresholds from the clinic-noise null (5% false alarms)
+
+| Pattern | Loss, dB/yr | Detector | 3 tests | 4 tests | 5 tests | 6 tests |
+|---|---|---|---|---|---|---|
+| Global | 0.5 | D1 | 12.6 | 26.6 | 43.4 | 57.1 |
+| Global | 0.5 | D2c | 7.4 | 10.2 | 16.4 | 30.6 |
+| Global | 0.5 | D6s | 11.6 | 24.2 | 39.8 | 57.4 |
+| Global | 0.5 | D8c | 7.6 | 9.2 | 22.6 | 49.9 |
+| Global | 0.5 | D11 | 16.6 | 32.1 | 47.9 | 60.5 |
+| Global | 1.0 | D1 | 21.8 | 49.6 | 70.5 | 81.9 |
+| Global | 1.0 | D2c | 11.9 | 29.4 | 70.5 | 88.2 |
+| Global | 1.0 | D6s | 18.3 | 44.5 | 67.7 | 82.1 |
+| Global | 1.0 | D8c | 10.1 | 8.8 | 31.7 | 80.2 |
+| Global | 1.0 | D11 | 35.2 | 59.7 | 75.5 | 84.7 |
+| Global | 2.0 | D1 | 37.1 | 74.3 | 89.1 | 93.9 |
+| Global | 2.0 | D2c | 45.5 | 88.5 | 95.4 | 97.6 |
+| Global | 2.0 | D6s | 30.5 | 69.4 | 87.6 | 93.7 |
+| Global | 2.0 | D8c | 8.9 | 4.7 | 23.8 | 90.4 |
+| Global | 2.0 | D11 | 63.4 | 84.1 | 91.9 | 94.8 |
+| Localised | 0.5 | D1 | 12.5 | 26.3 | 43.2 | 56.5 |
+| Localised | 0.5 | D2c | 7.3 | 10.1 | 16.2 | 30.3 |
+| Localised | 0.5 | D6s | 14.4 | 47.8 | 71.8 | 83.5 |
+| Localised | 0.5 | D8c | 11.6 | 24.9 | 45.3 | 62.9 |
+| Localised | 0.5 | D11 | 16.6 | 32.1 | 47.7 | 60.0 |
+| Localised | 1.0 | D1 | 21.3 | 47.8 | 66.6 | 76.3 |
+| Localised | 1.0 | D2c | 11.7 | 27.7 | 59.0 | 75.9 |
+| Localised | 1.0 | D6s | 23.1 | 68.5 | 85.9 | 93.1 |
+| Localised | 1.0 | D8c | 16.5 | 38.4 | 60.4 | 79.2 |
+| Localised | 1.0 | D11 | 34.6 | 58.1 | 72.4 | 79.7 |
+| Localised | 2.0 | D1 | 31.4 | 59.0 | 71.0 | 74.8 |
+| Localised | 2.0 | D2c | 37.9 | 65.8 | 72.6 | 75.9 |
+| Localised | 2.0 | D6s | 28.1 | 61.9 | 69.8 | 75.3 |
+| Localised | 2.0 | D8c | 19.6 | 23.6 | 34.8 | 74.8 |
+| Localised | 2.0 | D11 | 60.0 | 76.1 | 80.9 | 81.8 |
+
+Values are % of series flagged. Global: equal loss at every location; localised: loss concentrated in one of four regions with the same loss in mean sensitivity. Patient-cluster bootstrap CIs are in results/amendC/amendC.json.
+
+## S9 Literature search for amendment C (prior art)
+
+On 25 November 2026 we searched OpenAlex (titles and abstracts), Crossref, Europe PMC and the web for combinations of "visual field", "progression", "moderated t", "empirical Bayes", "variance shrinkage", "sequential monitoring", "CUSUM", "cumulative false positive", "repeated testing" and "simulation". The closest prior work was: CUSUM charts for visual fields and nerve-fibre-layer thickness (Ledolter and Kardon, 2013); hierarchical Bayesian models, which shrink slopes and model variance (Montesano et al., 2021; Mohammadzadeh et al., 2025); and data-driven simulation of longitudinal fields from clinic residuals (Wu and Medeiros, 2018; Li et al., 2023). We found no study that used a clinic-residual null to set detector thresholds, compared threshold sources on true no-change data, applied a closed-form empirical-Bayes moderated trend test to visual fields, or calibrated a monitoring rule to a cumulative false-alarm budget. Google Scholar, Scopus and Web of Science could not be searched from our computing environment, so this claim is limited to the sources named.

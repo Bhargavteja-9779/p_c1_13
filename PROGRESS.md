@@ -104,6 +104,24 @@
 - 2026-11-24: Amendment B done (results/amendB/*), Fig. 5, Table 5, S6, S7; round-2 review
   (REVIEW/review_round2_amendmentB.md: no number mismatches, novelty 3/5); post-hoc robustness (amendment_b_robust.py).
   Title now "...A Benchmark With True No-Change Calibration". Zip rebuilt (119 files).
+- 2026-11-25 (session 5, branch pnbt/serene-ramanujan-dwwpw4; merged claude/admiring-davinci-a5lmri first):
+  USER REPORT: paper rejected at Int J Forecasting and J Operations Management ("limited novelty", "not our journal/level")
+  -> diagnosed as SCOPE mismatch (glaucoma paper sent to forecasting/OM journals). Retargeted to Translational Vision
+  Science & Technology (journal_selection/retarget_2026-11-25.md; TVST abstract format verified from a 2025 TVST article;
+  limits/APC/JCR UNVERIFIED - author page 403).
+  Amendment C pre-registered (protocol.md, commit a827dcc) BEFORE running; code experiments/amendment_c.py (~1 min),
+  src/statistics/amendment_c_stats.py -> results/amendC/amendC.json (scores.pkl gitignored, regenerate), Fig. 6,
+  Tables 6-7, Table S8, S9 (prior-art search). Results: HC2/HC4/HC5 supported; HC1 partly (SC part failed);
+  HC3 NOT supported (new moderated test D11 = D1 in real eyes; +13 pp only in synthetic). Key: retest thresholds give
+  17-20% false alarms on clinic noise; per-review 5% -> 18% cumulative over 6 reviews; 5% budget/confirm restore ~5%.
+  Manuscript rewritten for TVST (template backups *_R2_ophthalther.md), 5 new Crossref-verified refs (37-41),
+  cover letter for TVST, docx/pdf rebuilt, Submission_Package.zip rebuilt (113 files), tests 7 pass,
+  REVIEW/review_round3_amendmentC.md, novelty_scorecard_v3.md (24/30, NOT REMARKABLE), risk_report.md updated.
+  Data restore: UWHVF clone -> /home/user/uwhvf (set UWHVF_JSON); visualFields tarball -> /home/user/data_raw/ext
+  (ARTES_RDA); GRAPE via https://api.figshare.com/v2/file/download/41670009 (ndownloader is 403).
+
 ## NEXT ACTION
-Authors complete (Rajay Vedaraj I S, rajay@vit.ac.in, corresponding). Optional: department names, suggested reviewers. Optional: shorten main text
-(~5,500 words vs ~4,000 guide). Auto-resume scheduled task fires 2026-11-24T02:05Z: if nothing new, just report status.
+Author items only: verify TVST limits/APC (https://tvst.arvojournals.org/ss/forauthors.aspx), JCR quartile, add
+department names + suggested reviewer names, confirm no parallel submission. Optional: shorten main text from ~6,850
+words (cut RQ3 shuffle-audit detail, GRAPE second paragraph, move detector list to supplement). Then submit to TVST;
+fallbacks Ophthalmology Science -> Ophthalmology Glaucoma -> Journal of Glaucoma.
