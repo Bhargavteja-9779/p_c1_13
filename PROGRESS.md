@@ -72,7 +72,56 @@
   * k=4-6: no valid detector clearly beats D1 (D7 event analysis 50% vs 42% at k=5 with FPR 1.2% - check McNemar).
   * RQ3 shuffle audit vs true null: Spearman 0.65, median |diff| 1.0 pp, 80% of cells within 3 pp (H3 partly met).
   * GRAPE k=3: D1 sens 44% / spec 95%; D8 66% / 61%; D2 59% / 79%.
-## NEXT ACTION (new session)
-Skip steps 1-3 above unless re-running is needed (results are committed). Start at step 4: write Results/Discussion/
-Abstract/KSP from metrics.json + statistics.json via a fill script, then build docx, audits, reviews, cover letter,
-risk report. Previous list of steps 4-6 still applies (see git history of this file for data-restore commands).
+- 2026-11-23 (session 3): STEP 4 DONE. Data restored (UWHVF clone, GRAPE xlsx, visualFields tarball in data_raw/ext).
+  New code/src/statistics/describe.py -> results/dataset_counts.json, results/realworld.json (pre-registered real-world
+  measures + exploratory cumulative stable-eye flags). manuscript/manuscript_template.md + fill_values.py (all numbers
+  are placeholders; citations [@n] renumbered by first use) -> manuscript_filled.md, Final_Manuscript.docx/.pdf,
+  cover_letter.docx/.pdf, supplementary/Supplementary_Material.md, tables/table*_*.md. Rebuild: cd manuscript &&
+  python3 fill_values.py && python3 build_docx.py && soffice --headless --convert-to pdf Final_Manuscript.docx
+  Fixes: Artes data licence is Apache-2.0 (not GPL-3); TRIPOD+AI DOI -> 10.1136/bmj-2023-078378; EMGT authors from PubMed.
+  Validity rule (fixed in methods draft commit bd2c2e2 BEFORE results commit 94777b8): CI upper <=10% and lower <=5%.
+- Audits written: REVIEW/claim_evidence_audit.md, REVIEW/citation_audit.md. Reviews delegated to background agents
+  (REVIEW/review_01..10.md, review_summary.md, review_stakeholder.md) - if missing in a new session, redo them.
+- Reproducibility re-run launched (writes results/raw_results.csv + OVERWRITES results/run_meta_full.json -> after it
+  finishes: mv run_meta_full.json run_meta_full_repro.json; git checkout results/run_meta_full.json; compare raw vs gz).
+- REVIEW ROUND 1 DONE (REVIEW/review_01..10.md, review_summary.md, review_stakeholder.md): 9x major, 1x reject.
+  FATAL: F1 validity rule not the protocol's literal rule (literal rule -> D1 invalid at every k); F2 reference includes
+  the first k tests (incorporation/MD circularity); F3 failing "complex" detectors are own implementations -> claims too
+  general. Key MAJOR: M1 majority-vote vs seed-mean estimands; M4 paired bootstrap by eye not patient; M5 "stable" =
+  positive slope; M7 cumulative true-null FA missing; M8/M9 GRAPE PLR2/PLR3 labels unreported (D1 weak on PLR2);
+  M11-M13 disclosure (quick mode touched Artes/GRAPE; D6 failure known from dev; "pre-registered" = git file);
+  M16 D4/D7/D10 not applicable at k=3; M14 A1 time-label sensitivity. Decision: NOT READY -> revision R1.
+- REVISION R1 DONE (commits up to 'Title page and heading font fixes'): results/v2/* (summarise_v2.py), manuscript
+  rewritten (Table 4 deviations), authors set by user: P N Bhargav Teja (1st, all code) + [SECOND AUTHOR] (supervision,
+  corresponding), both VIT Vellore; no funding; no competing interests. User asked to remove AI mentions: kept one short
+  AI-use disclosure (Springer Nature policy requires it) - explained to user. risk_report.md: NOT READY (strict), package
+  complete; remaining risks: small n, no published comparator, A1 sensitivity, scope.
+- Repro re-run: all 1,106,158 per-eye flags identical (results/reproducibility_check.json). Submission_Package.zip built
+  (Target_Journal_Submission/Submission_Package.zip; 99 files; excludes REVIEW/ and journal_selection/).
+- 2026-11-23 21:05 User asked for more novelty. Protocol amendment B committed (249b675) BEFORE running: B1 no-change
+  calibration (shuffle SC / retest RC thresholds) for D1,D2,D6,D8,D9; HB1-HB3 incl. matched-false-alarm comparison;
+  B3 all eligible eyes for D1-D4; B4 time-label sensitivity. Scheduled auto-resume 'continue' at 2026-11-24T02:05Z.
+- 2026-11-24: Amendment B done (results/amendB/*), Fig. 5, Table 5, S6, S7; round-2 review
+  (REVIEW/review_round2_amendmentB.md: no number mismatches, novelty 3/5); post-hoc robustness (amendment_b_robust.py).
+  Title now "...A Benchmark With True No-Change Calibration". Zip rebuilt (119 files).
+- 2026-11-25 (session 5, branch pnbt/serene-ramanujan-dwwpw4; merged claude/admiring-davinci-a5lmri first):
+  USER REPORT: paper rejected at Int J Forecasting and J Operations Management ("limited novelty", "not our journal/level")
+  -> diagnosed as SCOPE mismatch (glaucoma paper sent to forecasting/OM journals). Retargeted to Translational Vision
+  Science & Technology (journal_selection/retarget_2026-11-25.md; TVST abstract format verified from a 2025 TVST article;
+  limits/APC/JCR UNVERIFIED - author page 403).
+  Amendment C pre-registered (protocol.md, commit a827dcc) BEFORE running; code experiments/amendment_c.py (~1 min),
+  src/statistics/amendment_c_stats.py -> results/amendC/amendC.json (scores.pkl gitignored, regenerate), Fig. 6,
+  Tables 6-7, Table S8, S9 (prior-art search). Results: HC2/HC4/HC5 supported; HC1 partly (SC part failed);
+  HC3 NOT supported (new moderated test D11 = D1 in real eyes; +13 pp only in synthetic). Key: retest thresholds give
+  17-20% false alarms on clinic noise; per-review 5% -> 18% cumulative over 6 reviews; 5% budget/confirm restore ~5%.
+  Manuscript rewritten for TVST (template backups *_R2_ophthalther.md), 5 new Crossref-verified refs (37-41),
+  cover letter for TVST, docx/pdf rebuilt, Submission_Package.zip rebuilt (113 files), tests 7 pass,
+  REVIEW/review_round3_amendmentC.md, novelty_scorecard_v3.md (24/30, NOT REMARKABLE), risk_report.md updated.
+  Data restore: UWHVF clone -> /home/user/uwhvf (set UWHVF_JSON); visualFields tarball -> /home/user/data_raw/ext
+  (ARTES_RDA); GRAPE via https://api.figshare.com/v2/file/download/41670009 (ndownloader is 403).
+
+## NEXT ACTION
+Author items only: verify TVST limits/APC (https://tvst.arvojournals.org/ss/forauthors.aspx), JCR quartile, add
+department names + suggested reviewer names, confirm no parallel submission. Optional: shorten main text from ~6,850
+words (cut RQ3 shuffle-audit detail, GRAPE second paragraph, move detector list to supplement). Then submit to TVST;
+fallbacks Ophthalmology Science -> Ophthalmology Glaucoma -> Journal of Glaucoma.

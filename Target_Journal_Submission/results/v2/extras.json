@@ -1,0 +1,582 @@
+{
+ "rq3_all_cells": {
+  "n_cells": 40,
+  "spearman_rho": 0.6482732732732731,
+  "rho_lo": 0.5060805149642096,
+  "rho_hi": 0.7210538663663661,
+  "median_abs_diff": 0.009564893387271789,
+  "share_within_3pp": 0.8,
+  "bootstrap": "500 joint resamples of Artes and UWHVF patients"
+ },
+ "rq3_applicable_cells": {
+  "n_cells": 37,
+  "spearman_rho": 0.5557136083451872,
+  "rho_lo": 0.38595305832147936,
+  "rho_hi": 0.6476469890943574,
+  "median_abs_diff": 0.010505494505494505,
+  "share_within_3pp": 0.7837837837837838,
+  "bootstrap": "500 joint resamples of Artes and UWHVF patients"
+ },
+ "cumulative_true_null_any_flag_k3to6": {
+  "D1 OLS-MD": {
+   "est": 0.12571428571428572,
+   "lo": 0.08046428571428572,
+   "hi": 0.17857142857142858,
+   "n": 2100
+  },
+  "D10 Self-supervised order net + permutation": {
+   "est": 0.11384,
+   "lo": 0.07537399999999998,
+   "hi": 0.1607545714285714,
+   "n": 2100
+  },
+  "D2 MD-rate <= -1 dB/yr": {
+   "est": 0.04428571428571428,
+   "lo": 0.03190476190476191,
+   "hi": 0.05858333333333327,
+   "n": 2100
+  },
+  "D3 PLR >=3 points": {
+   "est": 0.02619047619047619,
+   "lo": 0.017142857142857144,
+   "hi": 0.03666666666666667,
+   "n": 2100
+  },
+  "D4 PoPLR (within-eye permutation)": {
+   "est": 0.0916647619047619,
+   "lo": 0.054757904761904765,
+   "hi": 0.1340025714285714,
+   "n": 2100
+  },
+  "D5 Pooled-shuffle conformal MD": {
+   "est": 0.12155733333333334,
+   "lo": 0.0760688380952381,
+   "hi": 0.17212358095238092,
+   "n": 2100
+  },
+  "D6 Pooled-detrended conformal region-max": {
+   "est": 0.298288,
+   "lo": 0.2461207619047619,
+   "hi": 0.3538565904761905,
+   "n": 2100
+  },
+  "D7 Event analysis (GPA-like)": {
+   "est": 0.01904761904761905,
+   "lo": 0.004761904761904762,
+   "hi": 0.0380952380952381,
+   "n": 2100
+  },
+  "D8 ML-tabular (LightGBM)": {
+   "est": 0.4370125714285715,
+   "lo": 0.36150855238095236,
+   "hi": 0.5114986095238093,
+   "n": 2100
+  },
+  "D9 ML-sequence (GRU)": {
+   "est": 0.20947809523809524,
+   "lo": 0.10757398095238095,
+   "hi": 0.3167019619047618,
+   "n": 2100
+  }
+ },
+ "cumulative_note": "Windows starting at tests 1-7 (so tests 1..6 of the window exist); each look k uses the first k tests of the window with its own donor time labels (draw index d); seed-mean flags treated as per-look flag probabilities, combined as 1 - prod(1 - p).",
+ "future_only_reference": [
+  {
+   "detector": "D1 OLS-MD",
+   "k": 3,
+   "sens_future": 0.058823529411764705,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.1875,
+   "sens_future_n": 17,
+   "spec_future": 0.9444444444444444,
+   "spec_future_lo": 0.8235294117647058,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 18
+  },
+  {
+   "detector": "D1 OLS-MD",
+   "k": 4,
+   "sens_future": 0.21428571428571427,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.46153846153846156,
+   "sens_future_n": 14,
+   "spec_future": 0.9230769230769231,
+   "spec_future_lo": 0.7272727272727273,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 13
+  },
+  {
+   "detector": "D1 OLS-MD",
+   "k": 5,
+   "sens_future": 0.3333333333333333,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.6666666666666666,
+   "sens_future_n": 6,
+   "spec_future": 0.8571428571428572,
+   "spec_future_lo": 0.6428571428571428,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 14
+  },
+  {
+   "detector": "D1 OLS-MD",
+   "k": 6,
+   "sens_future": 0.25,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.75,
+   "sens_future_n": 4,
+   "spec_future": 0.75,
+   "spec_future_lo": 0.5,
+   "spec_future_hi": 0.9411764705882353,
+   "spec_future_n": 16
+  },
+  {
+   "detector": "D10 Self-supervised order net + permutation",
+   "k": 3,
+   "sens_future": 0.0,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.0,
+   "sens_future_n": 17,
+   "spec_future": 1.0,
+   "spec_future_lo": 1.0,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 18
+  },
+  {
+   "detector": "D10 Self-supervised order net + permutation",
+   "k": 4,
+   "sens_future": 0.1285714285714286,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.29333333333333333,
+   "sens_future_n": 14,
+   "spec_future": 1.0,
+   "spec_future_lo": 1.0,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 13
+  },
+  {
+   "detector": "D10 Self-supervised order net + permutation",
+   "k": 5,
+   "sens_future": 0.4000000000000001,
+   "sens_future_lo": 0.09999999999999999,
+   "sens_future_hi": 0.7333333333333334,
+   "sens_future_n": 6,
+   "spec_future": 0.7857142857142857,
+   "spec_future_lo": 0.5384615384615384,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 14
+  },
+  {
+   "detector": "D10 Self-supervised order net + permutation",
+   "k": 6,
+   "sens_future": 0.45,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.9,
+   "sens_future_n": 4,
+   "spec_future": 0.625,
+   "spec_future_lo": 0.37328571428571455,
+   "spec_future_hi": 0.8666666666666667,
+   "spec_future_n": 16
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 3,
+   "sens_future": 0.17647058823529413,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.35294117647058826,
+   "sens_future_n": 17,
+   "spec_future": 0.8888888888888888,
+   "spec_future_lo": 0.7218137254901983,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 18
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 4,
+   "sens_future": 0.07142857142857142,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.23076923076923078,
+   "sens_future_n": 14,
+   "spec_future": 0.9230769230769231,
+   "spec_future_lo": 0.7272727272727273,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 13
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 5,
+   "sens_future": 0.16666666666666666,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.5,
+   "sens_future_n": 6,
+   "spec_future": 0.9285714285714286,
+   "spec_future_lo": 0.75,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 14
+  },
+  {
+   "detector": "D2 MD-rate <= -1 dB/yr",
+   "k": 6,
+   "sens_future": 0.0,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.0,
+   "sens_future_n": 4,
+   "spec_future": 0.75,
+   "spec_future_lo": 0.5,
+   "spec_future_hi": 0.9411764705882353,
+   "spec_future_n": 16
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 3,
+   "sens_future": 0.0,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.0,
+   "sens_future_n": 17,
+   "spec_future": 1.0,
+   "spec_future_lo": 1.0,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 18
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 4,
+   "sens_future": 0.21428571428571427,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.41218487394957753,
+   "sens_future_n": 14,
+   "spec_future": 1.0,
+   "spec_future_lo": 1.0,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 13
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 5,
+   "sens_future": 0.3333333333333333,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.6666666666666666,
+   "sens_future_n": 6,
+   "spec_future": 0.8571428571428572,
+   "spec_future_lo": 0.6428571428571428,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 14
+  },
+  {
+   "detector": "D3 PLR >=3 points",
+   "k": 6,
+   "sens_future": 0.0,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.0,
+   "sens_future_n": 4,
+   "spec_future": 0.875,
+   "spec_future_lo": 0.6666666666666667,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 16
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 3,
+   "sens_future": 0.0,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.0,
+   "sens_future_n": 17,
+   "spec_future": 1.0,
+   "spec_future_lo": 1.0,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 18
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 4,
+   "sens_future": 0.07142857142857142,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.23076923076923078,
+   "sens_future_n": 14,
+   "spec_future": 1.0,
+   "spec_future_lo": 1.0,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 13
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 5,
+   "sens_future": 0.3333333333333333,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.6666666666666666,
+   "sens_future_n": 6,
+   "spec_future": 0.8571428571428572,
+   "spec_future_lo": 0.6428571428571428,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 14
+  },
+  {
+   "detector": "D4 PoPLR (within-eye permutation)",
+   "k": 6,
+   "sens_future": 0.25,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.75,
+   "sens_future_n": 4,
+   "spec_future": 0.75,
+   "spec_future_lo": 0.5333333333333333,
+   "spec_future_hi": 0.9375,
+   "spec_future_n": 16
+  },
+  {
+   "detector": "D5 Pooled-shuffle conformal MD",
+   "k": 3,
+   "sens_future": 0.058823529411764705,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.1875,
+   "sens_future_n": 17,
+   "spec_future": 0.9444444444444444,
+   "spec_future_lo": 0.8235294117647058,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 18
+  },
+  {
+   "detector": "D5 Pooled-shuffle conformal MD",
+   "k": 4,
+   "sens_future": 0.21428571428571427,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.46153846153846156,
+   "sens_future_n": 14,
+   "spec_future": 0.9230769230769231,
+   "spec_future_lo": 0.7272727272727273,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 13
+  },
+  {
+   "detector": "D5 Pooled-shuffle conformal MD",
+   "k": 5,
+   "sens_future": 0.3333333333333333,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.6666666666666666,
+   "sens_future_n": 6,
+   "spec_future": 0.8571428571428572,
+   "spec_future_lo": 0.6428571428571428,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 14
+  },
+  {
+   "detector": "D5 Pooled-shuffle conformal MD",
+   "k": 6,
+   "sens_future": 0.25,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.75,
+   "sens_future_n": 4,
+   "spec_future": 0.7625,
+   "spec_future_lo": 0.5142857142857142,
+   "spec_future_hi": 0.9444444444444444,
+   "spec_future_n": 16
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 3,
+   "sens_future": 0.5294117647058824,
+   "sens_future_lo": 0.3125,
+   "sens_future_hi": 0.75,
+   "sens_future_n": 17,
+   "spec_future": 0.8333333333333334,
+   "spec_future_lo": 0.625,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 18
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 4,
+   "sens_future": 0.21428571428571427,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.41218487394957753,
+   "sens_future_n": 14,
+   "spec_future": 0.9230769230769231,
+   "spec_future_lo": 0.7272727272727273,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 13
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 5,
+   "sens_future": 0.16666666666666666,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.5,
+   "sens_future_n": 6,
+   "spec_future": 0.8571428571428572,
+   "spec_future_lo": 0.6428571428571428,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 14
+  },
+  {
+   "detector": "D6 Pooled-detrended conformal region-max",
+   "k": 6,
+   "sens_future": 0.5,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 1.0,
+   "sens_future_n": 4,
+   "spec_future": 0.625,
+   "spec_future_lo": 0.3529411764705882,
+   "spec_future_hi": 0.875,
+   "spec_future_n": 16
+  },
+  {
+   "detector": "D7 Event analysis (GPA-like)",
+   "k": 3,
+   "sens_future": 0.0,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.0,
+   "sens_future_n": 17,
+   "spec_future": 1.0,
+   "spec_future_lo": 1.0,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 18
+  },
+  {
+   "detector": "D7 Event analysis (GPA-like)",
+   "k": 4,
+   "sens_future": 0.07142857142857142,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.23076923076923078,
+   "sens_future_n": 14,
+   "spec_future": 0.9230769230769231,
+   "spec_future_lo": 0.7272727272727273,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 13
+  },
+  {
+   "detector": "D7 Event analysis (GPA-like)",
+   "k": 5,
+   "sens_future": 0.3333333333333333,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.6666666666666666,
+   "sens_future_n": 6,
+   "spec_future": 0.7857142857142857,
+   "spec_future_lo": 0.5384615384615384,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 14
+  },
+  {
+   "detector": "D7 Event analysis (GPA-like)",
+   "k": 6,
+   "sens_future": 0.5,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 1.0,
+   "sens_future_n": 4,
+   "spec_future": 0.6875,
+   "spec_future_lo": 0.4285714285714286,
+   "spec_future_hi": 0.8888888888888888,
+   "spec_future_n": 16
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 3,
+   "sens_future": 0.16470588235294117,
+   "sens_future_lo": 0.037500000000000006,
+   "sens_future_hi": 0.3375,
+   "sens_future_n": 17,
+   "spec_future": 0.8222222222222222,
+   "spec_future_lo": 0.625,
+   "spec_future_hi": 0.9578947368421052,
+   "spec_future_n": 18
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 4,
+   "sens_future": 0.19999999999999998,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.38571428571428573,
+   "sens_future_n": 14,
+   "spec_future": 0.8307692307692307,
+   "spec_future_lo": 0.6,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 13
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 5,
+   "sens_future": 0.5,
+   "sens_future_lo": 0.16666666666666666,
+   "sens_future_hi": 0.8333333333333334,
+   "sens_future_n": 6,
+   "spec_future": 0.7285714285714286,
+   "spec_future_lo": 0.46153846153846156,
+   "spec_future_hi": 0.941218487394958,
+   "spec_future_n": 14
+  },
+  {
+   "detector": "D8 ML-tabular (LightGBM)",
+   "k": 6,
+   "sens_future": 0.75,
+   "sens_future_lo": 0.25,
+   "sens_future_hi": 1.0,
+   "sens_future_n": 4,
+   "spec_future": 0.6625,
+   "spec_future_lo": 0.44278571428571467,
+   "spec_future_hi": 0.8571848739495799,
+   "spec_future_n": 16
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 3,
+   "sens_future": 0.07058823529411766,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.18823529411764706,
+   "sens_future_n": 17,
+   "spec_future": 0.9333333333333333,
+   "spec_future_lo": 0.8525657894736846,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 18
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 4,
+   "sens_future": 0.05714285714285715,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.18461538461538465,
+   "sens_future_n": 14,
+   "spec_future": 0.9384615384615385,
+   "spec_future_lo": 0.8333333333333334,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 13
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 5,
+   "sens_future": 0.4000000000000001,
+   "sens_future_lo": 0.09999999999999999,
+   "sens_future_hi": 0.7333333333333334,
+   "sens_future_n": 6,
+   "spec_future": 0.8285714285714285,
+   "spec_future_lo": 0.6125,
+   "spec_future_hi": 1.0,
+   "spec_future_n": 14
+  },
+  {
+   "detector": "D9 ML-sequence (GRU)",
+   "k": 6,
+   "sens_future": 0.15,
+   "sens_future_lo": 0.0,
+   "sens_future_hi": 0.44999999999999996,
+   "sens_future_n": 4,
+   "spec_future": 0.7,
+   "spec_future_lo": 0.43529411764705883,
+   "spec_future_hi": 0.9333333333333333,
+   "spec_future_n": 16
+  }
+ ],
+ "future_only_note": "Exploratory: among the E1 eyes (primary or secondary reference), reference recomputed from tests k+1..end only (>= 5 tests required), same thresholds as the primary reference.",
+ "reference_slopes_dB_per_year": {
+  "1": {
+   "n": 26,
+   "median": -0.5442306954369791,
+   "q1": -0.9341368059111081,
+   "q3": -0.4433420041806091,
+   "share_positive": 0.0
+  },
+  "0": {
+   "n": 26,
+   "median": 0.07297738587741634,
+   "q1": 0.03484497984343461,
+   "q3": 0.12294526950117733,
+   "share_positive": 1.0
+  }
+ }
+}

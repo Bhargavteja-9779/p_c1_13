@@ -9,14 +9,15 @@ Reproduces every number, table and figure of the manuscript.
 3. GRAPE (CC0): `https://ndownloader.figshare.com/files/41670009` -> set `GRAPE_XLSX=/path/vf_clinical.xlsx`.
 
 ## Run
+One command (about 30-45 min on 4 CPU cores):
 ```
 pip install -r requirements.txt
-python -m pytest -q tests
-python run_all.py --mode quick     # pipeline check on a validation subset (~1 min)
-python run_all.py --mode full      # full benchmark (CPU, ~1-3 h)
-python -m src.statistics.summarise # metrics.json, statistics.json, tables/
-python -m src.visualization.figures
+bash reproduce.sh
 ```
-CPU, CUDA and Apple MPS are detected automatically (src/utils.py); all experiments run on CPU.
-Seeds: 0-4 for stochastic detectors; split = salted hash of patient id (no RNG).
-Pre-registered protocol: experiments/protocol.md. Development history incl. failed ideas: ../journal_selection/novelty_escalation_log.md.
+Steps inside reproduce.sh: unit tests -> run_all.py --mode full (raw per-eye flags) -> summarise.py (first-round
+statistics, kept for the record) -> summarise_v2.py (revised statistics used in the paper: results/v2/) -> describe.py
+(cohort counts, real-world measures) -> figures -> manuscript/fill_values.py (inserts every number) -> build_docx.py.
+`python run_all.py --mode quick` is a fast pipeline check on a validation subset.
+CPU, CUDA and Apple MPS are detected automatically (src/utils.py); all experiments ran on CPU.
+Seeds: 0-4 for detectors with a random component; split = salted hash of patient id (no RNG).
+Analysis plan: experiments/protocol.md (committed before the final run). Deviations: manuscript Table 4.

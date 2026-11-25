@@ -1,0 +1,9 @@
+{
+ "rows_orig": 1106158,
+ "rows_repro": 1106158,
+ "rows_matched": 1106158,
+ "flag_mismatches": 0,
+ "mismatch_share": 0.0,
+ "mismatch_by_detector": {},
+ "note": "Re-run in a fresh container (2026-11-23) with versions in code/requirements_pinned.txt."
+}

@@ -76,3 +76,82 @@ GRAPE was measured with a different perimeter (59 analysable points after removi
 from Humphrey). Therefore on GRAPE: D5 calibration pool and D7 change limits come from GRAPE itself by 5-fold
 patient-level cross-fitting ("own-clinic calibration"); D8 is the UWHVF-trained model applied unchanged (transfer
 test, grid-agnostic features); D6, D9, D10 (24-2 specific) are not evaluated on GRAPE.
+
+## Amendment B (2026-11-23, written and committed BEFORE any of the analyses below were run)
+Motivation: round-1 results showed that detectors thresholded on reference-stable eyes (D6, D8, D9) have excess false
+alarms on true no-change data, and that comparisons at unequal false-alarm rates are uninformative. Amendment B tests a
+remedy and a fair comparison. All analyses below are NEW and labelled as such in the paper.
+
+B1 No-change calibration (NCC). For each continuous-score detector — D1 (trend z statistic), D2 (minus MD slope),
+   D6 (raw worst-region trend statistic, no pooled p-value), D8 (LightGBM probability), D9 (GRU output) — replace the
+   original threshold by the 95th percentile of the detector's score on no-change series, from two label-free sources:
+   (a) SHUFFLE calibration (SC): scores on the clinic's own TRAIN eyes with their first k tests randomly re-ordered
+       (5 shuffles per eye); needs no retest data and no labels;
+   (b) RETEST calibration (RC): scores on Artes windows (same 10 donor time-label draws per window as E2), with 5-fold
+       patient-level cross-fitting so that every Artes window is evaluated with a threshold from other patients.
+   Seeds: D6, D8, D9 seeds 0-4 (models re-fitted with the same code/seeds as the main run); D1, D2 deterministic.
+B2 Outcomes (k = 3..6): true no-change false-alarm rate (Artes; for RC the cross-fitted rate), sensitivity and
+   specificity on UW-test reference eyes (E1); RC threshold for E1 = 95th percentile over ALL Artes windows.
+Hypotheses (pre-stated):
+   HB1: after RC, every detector's Artes false-alarm 95% CI includes 5% (no excess false alarms) at every k.
+   HB2: after SC, false-alarm rates are within 3 percentage points of 5% for most detector x k cells (>= 75%).
+   HB3 (matched-false-alarm comparison, the main new test): at RC thresholds, no detector flags >= 10 percentage points
+        more reference progressors than RC-calibrated D1 with Holm-adjusted exact McNemar p < 0.05 (Holm within k over
+        D2, D6, D8, D9). Falsified if one does.
+B3 All eligible eyes (precision for untrained detectors): D1, D2, D3, D4 need no training, so their sensitivity and
+   specificity are also computed on ALL UWHVF eyes with >= 8 tests (train + val + test), same reference; paired
+   comparisons vs D1 as in the main analysis. Exploratory.
+B4 Time-label sensitivity analysis (A1): Artes false-alarm rates for D1, D2, D3, D7 recomputed with (i) the real weekly
+   Artes dates rescaled to annual spacing (test i at year i-1) and (ii) donors restricted to reference-stable eyes.
+   Exploratory.
+Statistics as in the main analysis (patient-cluster bootstrap 2,000; seed-averaged flags; McNemar on majority flags).
+No threshold, reference, detector or seed will be changed after seeing B results.
+
+## Amendment C (2026-11-25, written and committed BEFORE any of the analyses below were run)
+Context: the paper was rejected (scope) at two operations/forecasting journals; reviewers and our own audit flagged limited
+novelty and low power (26 vs 26 reference eyes). Amendment B left an open problem: retest (RC) and shuffle (SC) calibration
+disagree ~3-fold for rate rules, because weekly retests under-represent long-interval clinic noise and shuffled clinic series
+contain real progression. Amendment C tests a fix for that problem, a new variance-borrowing test, and calibrated
+sequential monitoring, with far more eyes. All C analyses are NEW and will be labelled as such.
+
+C0 Cohort and cross-fitting. All UWHVF eyes (train+val+test; the test split was already used, so C is not a locked-test
+   analysis). Patients are assigned to 5 folds by a salted SHA-256 hash ("amendC-fold"). Everything that is fitted or
+   calibrated (null pools, variance prior, LightGBM, thresholds) uses the 4 other folds; each eye is evaluated once, out of
+   fold. Reference labels as in the main protocol (whole-series MD-slope reference, eyes >= 8 tests).
+C1 Clinic-noise null (CNN; new calibration source). For every calibration eye with n >= 8 tests: fit pointwise OLS over
+   the whole series; residuals R are inflated by sqrt(n/(n-2)); a null series of length K is (fitted value at the first
+   test) + K residual rows drawn without replacement in random order, clipped at 0 dB, with the eye's own first K test
+   times. 20 null series per eye. It keeps long-interval, spatially correlated, level-dependent noise and removes the
+   eye's linear trend. Non-linear progression inflates the residuals, so CNN is expected to be conservative.
+C2 Detectors (continuous scores, each calibrated per k at the 95th percentile of its null scores):
+   D1 trend t statistic; D2c minus MD slope; D6s worst-region trend statistic; D8c LightGBM probability (D8 features and
+   12-config grid, trained on calibration-fold labelled eyes, model chosen by inner patient split AUC, seed 0);
+   D11 MODERATED TREND TEST (new): t statistic of the MD slope with residual variance replaced by
+   s~2 = (d0*s0^2 + (k-2)*s^2)/(d0 + k-2), where s0^2 (per baseline-level tertile) and d0 are estimated from the
+   calibration eyes' long-series MD residual variances by the empirical-Bayes moment method of Smyth (2004).
+   Calibration sources per k: CNN (primary), RC (Artes windows with donor times), SC (shuffled first k tests).
+C3 Evaluations. (a) Real clinic, all labelled eyes: sensitivity (progressors), specificity (stable), flag rate in
+   indeterminate eyes, k = 3..6. (b) Artes true no-change: false-alarm rate per k (thresholds from CNN on all UWHVF; donor
+   times from random UWHVF eyes, 10 draws per window). (c) Held-out CNN null: false-alarm rate per k for each source.
+   (d) Semi-synthetic truth: held-out CNN null series + injected loss with MD rate r in {0.5, 1.0, 2.0} dB/yr, either
+   global (all points) or localised (one of four regions, chosen at random, points losing r*52/|region| dB/yr);
+   sensitivity per k. (e) Sequential monitoring over reviews after tests 3..8: NAIVE (per-review 5% threshold, flag at
+   first exceedance), CONFIRM (two consecutive exceedances of per-review 5% thresholds), BUDGET (new: one common per-review
+   quantile level chosen on calibration CNN so that P(any flag over reviews 3..8) = 5%). Outcomes: cumulative false
+   alarms on Artes (8-test windows) and held-out CNN; share of real progressors and stable eyes flagged by test 8;
+   median tests to first flag; semi-synthetic detection by test 8 (r = 1.0).
+Hypotheses (pre-stated; each will be reported as supported / not supported):
+   HC1 Calibration transfer: on held-out CNN null, RC-calibrated D2c has false alarms > 10% at every k and SC-calibrated
+       D2c < 2.5% at every k; CNN-calibrated detectors are within 2 pp of 5% in >= 90% of detector x k cells.
+   HC2 Safety: CNN-calibrated detectors have no excess false alarms on Artes (95% CI not entirely above 5%) in every cell.
+   HC3 New test: CNN-calibrated D11 flags more real reference progressors than CNN-calibrated D1 at k = 3 and k = 4
+       (paired difference > 0 with cluster-bootstrap 95% CI excluding 0, and exact McNemar Holm-adjusted p < 0.05,
+       Holm over k = 3..6), with specificity in reference-stable eyes not lower by more than 5 pp.
+   HC4 Multiplicity: NAIVE monitoring with D1 over reviews 3..8 gives cumulative Artes false alarms >= 15%; BUDGET keeps
+       held-out CNN cumulative false alarms within 3-7% and Artes cumulative false alarms without excess.
+   HC5 Cost of control: for D11, BUDGET flags at most 15 pp fewer real progressors by test 8 than NAIVE.
+   Exploratory: matched-CNN comparison of D2c, D6s, D8c, D11 vs D1 in real eyes (Holm within k over 4 comparisons) and in
+   semi-synthetic data; future-only reference (slope of tests k+1..end, eyes with >= k+5 tests).
+Statistics: patient-cluster bootstrap (2,000) for CIs; exact McNemar on paired flags; Holm as stated. Not done: GRAPE
+(series too short to build a clinic-noise null; different perimeter). No threshold, detector, rate, pattern or seed will be
+changed after seeing C results; any deviation will be listed in the paper.
